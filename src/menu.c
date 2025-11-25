@@ -78,7 +78,8 @@ static const u8 sTextSpeedFrameDelays[] =
 {
     [OPTIONS_TEXT_SPEED_SLOW] = 8,
     [OPTIONS_TEXT_SPEED_MID]  = 4,
-    [OPTIONS_TEXT_SPEED_FAST] = 1
+    [OPTIONS_TEXT_SPEED_FAST] = 1,
+    [OPTIONS_TEXT_SPEED_INSTANT] = 1
 };
 
 static const struct WindowTemplate sStandardTextBox_WindowTemplates[] = 
@@ -402,10 +403,15 @@ void DisplayYesNoMenuWithDefault(void)
 
 u8 GetPlayerTextSpeedDelay(void)
 {
-    if (gSaveBlock2Ptr->optionsTextSpeed > OPTIONS_TEXT_SPEED_FAST)
-        gSaveBlock2Ptr->optionsTextSpeed = OPTIONS_TEXT_SPEED_MID;
-    return sTextSpeedFrameDelays[gSaveBlock2Ptr->optionsTextSpeed];
+    u32 speed = gSaveBlock2Ptr->optionsTextSpeed;
+
+    if (speed > OPTIONS_TEXT_SPEED_INSTANT)
+        speed = OPTIONS_TEXT_SPEED_FAST;
+
+    return sTextSpeedFrameDelays[speed];
 }
+
+
 
 u8 AddStartMenuWindow(u8 height)
 {

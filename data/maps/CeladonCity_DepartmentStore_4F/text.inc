@@ -1,18 +1,17 @@
 CeladonCity_DepartmentStore_4F_Text_GettingPokeDollAsPresent::
-    .string "I'm getting a present for my\n"
-    .string "girlfriend.\p"
-    .string "I guess a POKé DOLL will be it.\n"
-    .string "It's the popular thing.$"
+    .string "I heard that some evolution\n"
+    .string "items can only be obtained at the\p"
+    .string "GAME CORNER. Too bad I'm not\n"
+    .string "much of a gambler.$"
 
 CeladonCity_DepartmentStore_4F_Text_CanRunAwayWithPokeDoll::
-    .string "I heard something useful.\p"
-    .string "If a wild POKéMON appears, you can\n"
-    .string "distract it with a POKé DOLL.\p"
-    .string "You can run away while the wild\n"
-    .string "POKéMON is distracted.$"
+    .string "Thanks to ERIKA and the ladies\n"
+    .string "from the GYM, we have access to\p"
+    .string "a lot of berries, seeds, and\n"
+    .string "herbs here in CELADON.$"
 
 CeladonCity_DepartmentStore_4F_Text_FloorSign::
     .string "Express yourself with gifts!\n"
     .string "4F: WISE MAN GIFTS\p"
     .string "Evolution Special!\n"
-    .string "Element STONES on sale now!$"
+    .string "Berries, Herbs and Seeds!$"

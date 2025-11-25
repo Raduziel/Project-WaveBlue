@@ -935,6 +935,7 @@ extern const u8 gText_OptionMenuCancel[];
 extern const u8 gText_TextSpeedSlow[];
 extern const u8 gText_TextSpeedMid[];
 extern const u8 gText_TextSpeedFast[];
+extern const u8 gText_TextSpeedInstant[];
 extern const u8 gText_BattleSceneOn[];
 extern const u8 gText_BattleSceneOff[];
 extern const u8 gText_BattleStyleShift[];
@@ -1647,5 +1648,7 @@ extern const u8 gText_DexSortSmallestDescription[];
 extern const u8 gText_DexEmptyString[];
 extern const u8 gText_DexSearchDontSpecify[];
 extern const u8 gText_DexSearchTypeNone[];
+extern const u8 gText_InfiniteRepelOn[];
+extern const u8 gText_InfiniteRepelOff[];
 
 #endif //GUARD_STRINGS_H

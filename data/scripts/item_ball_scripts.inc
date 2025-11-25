@@ -438,8 +438,8 @@ RockTunnel_1F_EventScript_ItemPearl::
 	finditem ITEM_PEARL
 	end
 
-RockTunnel_1F_EventScript_ItemEscapeRope::
-	finditem ITEM_ESCAPE_ROPE
+RockTunnel_1F_EventScript_ItemSuperPotion::
+	finditem ITEM_SUPER_POTION
 	end
 
 RockTunnel_B1F_EventScript_ItemRevive::

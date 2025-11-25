@@ -45,6 +45,8 @@ EventScript_PkmnCenterNurse_ReturnPkmn::
 	applymovement VAR_LAST_TALKED, Movement_Bow
 	waitmovement 0
 	msgbox Text_WeHopeToSeeYouAgain
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_TurnPlayerDownAndStepDown
+	waitmovement 0
 	return
 
 EventScript_PkmnCenterNurse_PlayerWaitingInUnionRoom::
@@ -69,4 +71,9 @@ Movement_Bow::
 
 Movement_PkmnCenterNurse_Turn:
 	walk_in_place_faster_left
+	step_end
+
+.align 2
+Movement_TurnPlayerDownAndStepDown:
+	walk_down 
 	step_end

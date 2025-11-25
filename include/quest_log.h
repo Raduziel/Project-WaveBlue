@@ -1,3 +1,5 @@
+
+
 #ifndef GUARD_QUEST_LOG_H
 #define GUARD_QUEST_LOG_H
 
@@ -242,3 +244,4 @@ bool8 QL_TryRepeatEvent(const u16 *);
 void QL_RecordWait(u16);
 
 #endif //GUARD_QUEST_LOG_H
+

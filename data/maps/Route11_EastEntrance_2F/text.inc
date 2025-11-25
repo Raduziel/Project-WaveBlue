@@ -1,20 +1,14 @@
 Route11_EastEntrance_2F_Text_GiveItemfinderIfCaught30::
     .string "Hi! Remember me?\n"
     .string "I'm one of PROF. OAK's AIDES.\p"
-    .string "If your POKéDEX has complete data\n"
-    .string "on {STR_VAR_1} species, I'm supposed to\l"
-    .string "give you a reward.\p"
+    .string "I'm supposed to give you a gift.\p"
     .string "PROF. OAK entrusted me with the\n"
     .string "{STR_VAR_2} for you.\p"
     .string "So, {PLAYER}, let me ask you.\p"
-    .string "Have you gathered data on at least\n"
-    .string "{STR_VAR_1} kinds of POKéMON?$"
+    .string "Do you want the {STR_VAR_2}?$"
 
 Route11_EastEntrance_2F_Text_GreatHereYouGo::
-    .string "Great! You have caught or owned\n"
-    .string "{STR_VAR_3} kinds of POKéMON!\p"
-    .string "Congratulations!\n"
-    .string "Here you go!$"
+    .string "Congratulations! Here you go!$"
 
 Route11_EastEntrance_2F_Text_ReceivedItemfinderFromAide::
     .string "{PLAYER} received the {STR_VAR_2}\n"
@@ -23,7 +17,7 @@ Route11_EastEntrance_2F_Text_ReceivedItemfinderFromAide::
 Route11_EastEntrance_2F_Text_ExplainItemfinder::
     .string "There are items on the ground that\n"
     .string "may be hidden from view.\p"
-    .string "Use the ITEMFINDER to detect any\n"
+    .string "Use the {STR_VAR_2} to detect any\n"
     .string "hidden items close to you.\p"
     .string "The machine is a bit limited.\n"
     .string "It can't pinpoint item locations.\p"

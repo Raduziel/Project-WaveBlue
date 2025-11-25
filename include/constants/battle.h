@@ -119,7 +119,8 @@ enum BattleSide
 #define BATTLE_TWO_VS_ONE_TEST              (BATTLE_TYPE_IS_MASTER | BATTLE_TYPE_TRAINER | BATTLE_TYPE_INGAME_PARTNER | BATTLE_TYPE_MULTI)
 
 #define RIVAL_BATTLE_HEAL_AFTER  1
-#define RIVAL_BATTLE_TUTORIAL    3
+//#define RIVAL_BATTLE_TUTORIAL  3
+#define RIVAL_BATTLE_TUTORIAL    0
 
 // Battle Outcome defines
 #define B_OUTCOME_WON                  1

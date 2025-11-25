@@ -36,7 +36,7 @@ enum TitleScreenScene
 };
 
 #if   defined(FIRERED)
-#define TITLE_SPECIES SPECIES_CHARIZARD
+#define TITLE_SPECIES SPECIES_BLASTOISE
 #elif defined(LEAFGREEN)
 #define TITLE_SPECIES SPECIES_VENUSAUR
 #endif
@@ -93,9 +93,25 @@ static const u8 sBorderBgMap[] = INCBIN_U8("graphics/title_screen/leafgreen/bord
 static const u32 sSlash_Gfx[] = INCBIN_U32("graphics/title_screen/slash.4bpp.lz");
 
 #if defined(FIRERED)
+
+/*
 static const u16 sFlames_Pal[] = INCBIN_U16("graphics/title_screen/firered/flames.gbapal");
 static const u32 sFlames_Gfx[] = INCBIN_U32("graphics/title_screen/firered/flames.4bpp.lz");
 static const u32 sBlankFlames_Gfx[] = INCBIN_U32("graphics/title_screen/firered/blank_flames.4bpp.lz");
+*/
+
+static const u16 sRain_Pal[] = {
+    RGB(0, 0, 0),       // Transparent
+    RGB(15, 25, 31),    // Dark Blue
+    RGB(20, 28, 31),    // Mid Blue
+    RGB(25, 30, 31),    // Light Blue (White-ish)
+    RGB(0, 0, 0), 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 // Padding
+};
+
+static const u32 sFlames_Gfx[] = INCBIN_U32("graphics/weather/rain.4bpp.lz"); 
+static const u32 sBlankFlames_Gfx[] = INCBIN_U32("graphics/weather/rain.4bpp.lz");
+
+
 #elif defined(LEAFGREEN)
 static const u16 sLeaves_Pal[] = INCBIN_U16("graphics/title_screen/leafgreen/leaves.gbapal");
 static const u32 sLeaves_Gfx[] = INCBIN_U32("graphics/title_screen/leafgreen/leaves.4bpp.lz");
@@ -112,6 +128,8 @@ static const struct OamData sOamData_FlameOrLeaf = {
 };
 
 #if defined(FIRERED)
+
+/*
 static const union AnimCmd sSpriteAnim_Flame[] = {
     ANIMCMD_FRAME(0, 3),
     ANIMCMD_FRAME(4, 6),
@@ -137,6 +155,19 @@ static const union AnimCmd sSpriteAnim_Flame_Unused[] = {
 static const union AnimCmd *const sSpriteAnim_FlameOrLeaf[] = {
     sSpriteAnim_Flame,
     sSpriteAnim_Flame_Unused,
+};
+
+*/
+
+static const union AnimCmd sAnim_RainDrop[] =
+{
+    ANIMCMD_FRAME(0, 30), // Show frame 0
+    ANIMCMD_END,
+};
+
+static const union AnimCmd *const sAnims_RainDrop[] =
+{
+    sAnim_RainDrop,
 };
 
 #elif defined(LEAFGREEN)
@@ -173,11 +204,13 @@ enum {
     PAL_TAG_SLASH,
 };
 
-static const struct SpriteTemplate sSpriteTemplate_FlameOrLeaf = {
+static const struct SpriteTemplate sSpriteTemplate_FlameOrLeaf = 
+{
     .tileTag = TILE_TAG_FLAME_OR_LEAF,
     .paletteTag = PAL_TAG_DEFAULT,
     .oam = &sOamData_FlameOrLeaf,
-    .anims = sSpriteAnim_FlameOrLeaf,
+  //.anims = sSpriteAnim_FlameOrLeaf,
+    .anims = sAnims_RainDrop,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCallbackDummy
@@ -188,7 +221,7 @@ static const struct SpriteTemplate sSpriteTemplate_BlankFlame = {
     .tileTag = TILE_TAG_BLANK_OR_STREAK,
     .paletteTag = PAL_TAG_DEFAULT,
     .oam = &sOamData_FlameOrLeaf,
-    .anims = sSpriteAnim_FlameOrLeaf,
+    .anims = sAnims_RainDrop,
     .images = NULL,
     .affineAnims = gDummySpriteAffineAnimTable,
     .callback = SpriteCallbackDummy
@@ -304,7 +337,8 @@ static const struct CompressedSpriteSheet sSpriteSheets[] = {
 };
 
 static const struct SpritePalette sSpritePals[] = {
-    {sFlames_Pal,            PAL_TAG_DEFAULT},
+  //{sFlames_Pal,            PAL_TAG_DEFAULT},
+    {sRain_Pal,            PAL_TAG_DEFAULT},
     {gTitleScreen_Slash_Pal, PAL_TAG_SLASH},
     {}
 };
@@ -966,7 +1000,7 @@ static void LoadSpriteGfxAndPals(void)
 #define sSpeedY    data[3]
 
 static void SpriteCallback_TitleScreenFlame(struct Sprite *sprite)
-{
+/*{
     s16 *data = sprite->data;
     sPosX -= sSpeedX;
     sprite->x = sPosX >> 4;
@@ -991,6 +1025,29 @@ static void SpriteCallback_TitleScreenFlame(struct Sprite *sprite)
     {
         StartSpriteAnim(sprite, 0);
         sprite->invisible = FALSE;
+    }
+}*/
+
+{
+    s16 *data = sprite->data;
+    
+    sPosX += sSpeedX;
+    sprite->x = sPosX >> 4;
+
+    sPosY += sSpeedY; 
+    sprite->y = sPosY >> 4;
+
+    if (sprite->y > 168)
+    {
+        DestroySprite(sprite);
+        return;
+    }
+
+    // Animation logic
+    if (sprite->animEnded)
+    {
+        DestroySprite(sprite);
+        return;
     }
 }
 
@@ -1025,11 +1082,11 @@ static bool32 CreateFlameSprite(s32 x, s32 y, s32 xspeed, s32 yspeed, bool32 cre
 #define tState       data[0]
 #define tTimer       data[1]
 #define tDelay       data[2]
-#define tOff_Seed       3   // data[3] and data[4]
+#define tOff_Seed         3   // data[3] and data[4]
 #define tOffsetX     data[5]
 
 static void Task_FlameSpawner(u8 taskId)
-{
+/*{
     s16 *data = gTasks[taskId].data;
     s32 x, y, xspeed, yspeed;
     s32 i;
@@ -1073,6 +1130,49 @@ static void Task_FlameSpawner(u8 taskId)
             tOffsetX++;
             if (tOffsetX > 3)
                 tOffsetX = 0;
+        }
+    }
+}*/
+
+{
+    s16 *data = gTasks[taskId].data;
+    s32 x, y, xspeed, yspeed;
+
+    switch (tState)
+    {
+    case 0:
+        TitleScreen_srand(taskId, 3, 30840);
+        tState++;
+        break;
+    case 1:
+        tTimer++;
+        if (tTimer >= tDelay)
+        {
+            tTimer = 0;
+            tDelay = 4; 
+
+            xspeed = (TitleScreen_rand(taskId, 3) % 16) - 4;
+            
+            yspeed = (TitleScreen_rand(taskId, 3) % 64) + 96; 
+
+            y = -16; 
+            
+            x = TitleScreen_rand(taskId, 3) % 240;
+
+            CreateFlameSprite(
+                x,
+                y,
+                xspeed,
+                yspeed,
+                TRUE
+            );
+            
+            if (TitleScreen_rand(taskId, 3) % 2 == 0) 
+            {
+                 x = TitleScreen_rand(taskId, 3) % 240;
+                 yspeed = (TitleScreen_rand(taskId, 3) % 64) + 96; 
+                 CreateFlameSprite(x, y, xspeed, yspeed, TRUE);
+            }
         }
     }
 }

@@ -353,6 +353,20 @@ void ItemUseOutOfBattle_Fusion(u8 taskId)
     SetUpItemUseCallback(taskId);
 }
 
+void ItemUseOutOfBattle_InfiniteRepel(u8 taskId)
+{
+     if (FlagGet(OW_FLAG_NO_ENCOUNTER))
+    {
+        FlagClear(OW_FLAG_NO_ENCOUNTER);
+        DisplayItemMessage(taskId, FONT_NORMAL, gText_InfiniteRepelOff, CloseItemMessage);
+    }
+    else
+    {
+        FlagSet(OW_FLAG_NO_ENCOUNTER);
+        PlaySE(SE_REPEL);
+        DisplayItemMessage(taskId, FONT_NORMAL, gText_InfiniteRepelOn, CloseItemMessage);
+    }
+}
 
 static bool8 CanFish(void)
 {

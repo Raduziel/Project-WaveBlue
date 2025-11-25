@@ -20,7 +20,7 @@ FourIsland_Mart_Items::
 	.2byte ITEM_REVIVE
 	.2byte ITEM_ICE_HEAL
 	.2byte ITEM_FULL_HEAL
-	.2byte ITEM_ESCAPE_ROPE
+	.2byte ITEM_MAX_LURE
 	.2byte ITEM_MAX_REPEL
 	.2byte ITEM_NONE
 	release

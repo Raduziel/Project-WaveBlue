@@ -7,8 +7,8 @@ Aide_Text_HaventCaughtEnoughMonsForItem::
 
 Aide_Text_GetEnoughMonsComeBackForItem::
 	.string "…Oh. I see.\p"
-	.string "When you get {STR_VAR_1} kinds of POKéMON,\n"
-	.string "come back for the {STR_VAR_2}.$"
+	.string "When you decide to accept the gift,\n"
+	.string "please come back for it.$"
 
 Aide_Text_DontHaveAnyRoomForItem::
 	.string "Oh! I see you don't have any\n"

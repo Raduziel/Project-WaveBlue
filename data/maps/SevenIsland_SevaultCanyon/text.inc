@@ -49,7 +49,7 @@ SevenIsland_SevaultCanyon_Text_KatelynDefeat::
 
 SevenIsland_SevaultCanyon_Text_KatelynPostBattle::
     .string "Your mom bought those snazzy\n"
-    .string "RUNNING SHOES for you?\p"
+    .string "EXP. SHARE for you?\p"
     .string "She must adore you.$"
 
 SevenIsland_SevaultCanyon_Text_LeroyIntro::

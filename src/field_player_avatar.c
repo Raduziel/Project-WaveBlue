@@ -484,6 +484,9 @@ static void PlayerNotOnBikeMoving(u8 direction, u16 heldKeys)
 {
     u8 collision = CheckForPlayerAvatarCollision(direction);
 
+    // -------------------------------
+    // COLLISION HANDLING
+    // -------------------------------
     if (collision != COLLISION_NONE)
     {
         if (collision == COLLISION_LEDGE_JUMP)
@@ -495,16 +498,18 @@ static void PlayerNotOnBikeMoving(u8 direction, u16 heldKeys)
             PlayerFaceDirection(direction);
         }
         else if (collision != COLLISION_STOP_SURFING
-              && collision != COLLISION_LEDGE_JUMP
-              && collision != COLLISION_PUSHED_BOULDER
-              && collision != COLLISION_DIRECTIONAL_STAIR_WARP)
+              && collision != COLLISION_PUSHED_BOULDER)
         {
             PlayerNotOnBikeCollide(direction);
         }
         return;
     }
-    
+
     gPlayerAvatar.creeping = FALSE;
+
+    // -------------------------------
+    // SURFING (unchanged)
+    // -------------------------------
     if (gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_SURFING)
     {
         if (FlagGet(DN_FLAG_SEARCHING) && (heldKeys & A_BUTTON))
@@ -514,33 +519,45 @@ static void PlayerNotOnBikeMoving(u8 direction, u16 heldKeys)
         }
         else
         {
-            // Same speed as running
             PlayerWalkFast(direction);
         }
         return;
     }
 
-    if ((heldKeys & B_BUTTON) && FlagGet(FLAG_SYS_B_DASH)
-        && !IsRunningDisallowed(gObjectEvents[gPlayerAvatar.objectEventId].currentMetatileBehavior))
+    // -------------------------------
+    // WALK (Hold B)
+    // -------------------------------
+    if (heldKeys & B_BUTTON)
     {
         if (ObjectMovingOnRockStairs(&gObjectEvents[gPlayerAvatar.objectEventId], direction))
-            PlayerRunSlow(direction);
+            PlayerWalkSlower(direction);   // slow walk on stairs
         else
-            PlayerRun(direction);
-        gPlayerAvatar.flags |= PLAYER_AVATAR_FLAG_DASH;
+            PlayerWalkNormal(direction);       // normal walk
+
         return;
     }
-    else if (FlagGet(DN_FLAG_SEARCHING) && (heldKeys & A_BUTTON))
+
+    // -------------------------------
+    // CREEP (Hold A while searching)
+    // -------------------------------
+    if (FlagGet(DN_FLAG_SEARCHING) && (heldKeys & A_BUTTON))
     {
         gPlayerAvatar.creeping = TRUE;
         PlayerWalkSlow(direction);
+        return;
+    }
+
+    // -------------------------------
+    // DEFAULT = RUN
+    // -------------------------------
+    if (ObjectMovingOnRockStairs(&gObjectEvents[gPlayerAvatar.objectEventId], direction))
+    {
+        PlayerRunSlow(direction);               // slow run on stairs
     }
     else
     {
-        if (ObjectMovingOnRockStairs(&gObjectEvents[gPlayerAvatar.objectEventId], direction))
-            PlayerWalkSlow(direction);
-        else
-            PlayerWalkNormal(direction);
+        gPlayerAvatar.flags |= PLAYER_AVATAR_FLAG_DASH;
+        PlayerRun(direction);                   // full run
     }
 }
 
