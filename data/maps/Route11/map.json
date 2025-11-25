@@ -241,6 +241,16 @@
       "elevation": 3,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Route11_EventScript_DiglettsCaveSign"
+    },
+    {
+      "type": "hidden_item",
+      "x": 58,
+      "y": 5,
+      "elevation": 0,
+      "item": "ITEM_SUPER_POTION",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE11_SUPER_POTION",
+      "quantity": 1,
+      "underfoot": false
     }
   ]
 }
