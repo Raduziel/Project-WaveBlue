@@ -397,6 +397,14 @@ struct BattleTowerData // Leftover from R/S
     /*0x04D1, 0x0581*/ u8 filler_4D1[0x317];
 }; /* size = 0x7E8 */
 
+#define PERMANENT_OBJECT_COUNT 1024
+#define PERMANENT_OBJECT_BYTES (PERMANENT_OBJECT_COUNT / 8)
+
+struct PermanentDestructibleObjects
+{
+    u8 destroyed[PERMANENT_OBJECT_BYTES];
+};
+
 struct SaveBlock2
 {
     /*0x000*/ u8 playerName[PLAYER_NAME_LENGTH + 1];
@@ -430,8 +438,9 @@ struct SaveBlock2
     /*0xB00*/ struct PokemonJumpRecords pokeJump;
 #endif //FREE_POKEMON_JUMP
     /*0xB10*/ struct BerryPickingResults berryPick;
-    /*0x169C*/ struct BerryTree berryTrees[BERRY_TREES_COUNT]; // moved to SaveBlock2 due to QuestLogScene taking up SaveBlock1
-    /*0x???*/ u8 filler_90[212];
+    /*0x169C*/  struct BerryTree berryTrees[BERRY_TREES_COUNT]; // moved to SaveBlock2 due to QuestLogScene taking up SaveBlock1
+    /*0x???*/   struct PermanentDestructibleObjects permanentObjects;
+    /*0x???*/ u8 filler_90[84];
 }; // size: 0xF24
 
 extern struct SaveBlock2 *gSaveBlock2Ptr;

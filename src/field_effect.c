@@ -45,6 +45,7 @@ static void SpriteCB_PokeballGlow(struct Sprite *sprite);
 static void SpriteCB_PokecenterMonitor(struct Sprite *sprite);
 static void SpriteCB_HallOfFameMonitor(struct Sprite *sprite);
 static u32 FldEff_Nop(void);
+static u32 FldEff_Null(void);
 
 // Unused
 static const u16 sNewGameOakObject_Gfx[] = INCBIN_U16("graphics/field_effects/pics/new_game_oak.4bpp");
@@ -78,7 +79,7 @@ static const u32 (*const sFieldEffectFuncs[FLDEFF_COUNT]) (void) =
     [FLDEFF_SHADOW]                       = FldEff_Shadow,
     [FLDEFF_TALL_GRASS]                   = FldEff_TallGrass,
     [FLDEFF_RIPPLE]                       = FldEff_Ripple,
-    [FLDEFF_FIELD_MOVE_SHOW_MON]          = FldEff_FieldMoveShowMon,
+    [FLDEFF_FIELD_MOVE_SHOW_MON]          = FldEff_Null,
     [FLDEFF_ASH]                          = FldEff_Ash,
     [FLDEFF_SURF_BLOB]                    = FldEff_SurfBlob,
     [FLDEFF_USE_SURF]                     = FldEff_UseSurf,
@@ -131,7 +132,7 @@ static const u32 (*const sFieldEffectFuncs[FLDEFF_COUNT]) (void) =
     [FLDEFF_SECRET_POWER_TREE]            = FldEff_Nop,
     [FLDEFF_SECRET_POWER_SHRUB]           = FldEff_Nop,
     [FLDEFF_CUT_GRASS]                    = FldEff_CutGrass,
-    [FLDEFF_FIELD_MOVE_SHOW_MON_INIT]     = FldEff_FieldMoveShowMonInit,
+    [FLDEFF_FIELD_MOVE_SHOW_MON_INIT]     = FldEff_Null,
     [FLDEFF_USE_FLY_ANCIENT_TOMB]         = FldEff_Nop,
     [FLDEFF_PCTURN_ON]                    = FldEff_Nop,
     [FLDEFF_HALL_OF_FAME_RECORD]          = FldEff_HallOfFameRecord,
@@ -4042,6 +4043,11 @@ u32 FldEff_PhotoFlash(void)
 }
 
 static u32 FldEff_Nop()
+{
+    return 0;
+}
+
+static u32 FldEff_Null(void)
 {
     return 0;
 }

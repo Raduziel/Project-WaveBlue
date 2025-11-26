@@ -47,6 +47,7 @@
 #include "constants/field_move.h"
 #include "constants/maps.h"
 #include "constants/sound.h"
+#include "permanent_objects.h"
 
 typedef void (*NativeFunc)(struct ScriptContext *ctx);
 
@@ -1361,6 +1362,22 @@ bool8 ScrCmd_removeobject(struct ScriptContext * ctx)
 
     Script_RequestEffects(SCREFF_V1 | SCREFF_SAVE | SCREFF_HARDWARE);
 
+    {
+        u8 objectEventId = GetObjectEventIdByLocalIdAndMap(localId, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup);
+
+        if (objectEventId != OBJECT_EVENTS_COUNT)
+        {
+            const struct ObjectEvent *obj = &gObjectEvents[objectEventId];
+            u16 gfx = obj->graphicsId;
+
+            if (gfx == OBJ_EVENT_GFX_CUT_TREE || gfx == OBJ_EVENT_GFX_ROCK_SMASH_ROCK)
+            {
+                u16 permId = GetPermanentObjectId(gSaveBlock1Ptr->location.mapGroup, gSaveBlock1Ptr->location.mapNum, localId);
+                SetPermanentObjectDestroyed(permId);
+            }
+        }
+    }
+  
     RemoveObjectEventByLocalIdAndMap(localId, gSaveBlock1Ptr->location.mapNum, gSaveBlock1Ptr->location.mapGroup);
     return FALSE;
 }

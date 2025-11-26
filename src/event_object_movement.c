@@ -35,6 +35,8 @@
 #include "constants/trainer_types.h"
 #include "constants/union_room.h"
 #include "constants/weather.h"
+#include "permanent_objects.h"
+#include "constants/event_objects.h"
 
 static void MoveCoordsInDirection(u32, s16 *, s16 *, s16, s16);
 static bool8 ObjectEventExecSingleMovementAction(struct ObjectEvent *, struct Sprite *);
@@ -1864,6 +1866,15 @@ static u8 TrySpawnObjectEventTemplate(const struct ObjectEventTemplate *objectEv
     CopyObjectGraphicsInfoToSpriteTemplate_WithMovementType(graphicsId, objectEventTemplate->movementType, &spriteTemplate, &subspriteTables);
     spriteFrameImage.size = graphicsInfo->size;
     spriteTemplate.images = &spriteFrameImage;
+
+    if (graphicsId == OBJ_EVENT_GFX_CUT_TREE || graphicsId == OBJ_EVENT_GFX_ROCK_SMASH_ROCK)
+    {
+        u8 localId = objectEventTemplate->localId;
+        u16 permanentId = GetPermanentObjectId(mapGroup, mapNum, localId);
+        if (IsPermanentObjectDestroyed(permanentId))
+            return OBJECT_EVENTS_COUNT;
+    }
+
     objectEventId = TrySetupObjectEventSprite(objectEventTemplate, &spriteTemplate, mapNum, mapGroup, cameraX, cameraY);
     if (objectEventId == OBJECT_EVENTS_COUNT)
         return OBJECT_EVENTS_COUNT;
