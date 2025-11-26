@@ -13,7 +13,7 @@
   "show_map_name": true,
   "floor_number": 0,
   "battle_scene": "MAP_BATTLE_SCENE_INDOOR_1",
-  "connections": 0,
+  "connections": null,
   "object_events": [
     {
       "local_id": "LOCALID_TANOBY_KEY_BOULDER1",
@@ -195,7 +195,5 @@
       "script": "SevenIsland_SevaultCanyon_TanobyKey_EventScript_Switch2"
     }
   ],
-  "bg_events": [
-
-  ]
+  "bg_events": []
 }
