@@ -202,7 +202,7 @@ static u8 CheckTrainer(u8 objectEventId)
     struct ScriptContext ctx;
     if (RunScriptImmediatelyUntilEffect(SCREFF_V1 | SCREFF_SAVE | SCREFF_HARDWARE | SCREFF_TRAINERBATTLE, scriptPtr, &ctx))
     {
-        if (*ctx.scriptPtr == 0x5c) // trainerbattle
+        if (*ctx.scriptPtr == SCR_OP_TRAINERBATTLE) // trainerbattle
             trainerBattlePtr = ctx.scriptPtr;
         else
             trainerBattlePtr = NULL;
