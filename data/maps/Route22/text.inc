@@ -64,3 +64,71 @@ Route22_Text_LeagueGateSign::
 	.string "POKéMON LEAGUE\n"
 	.string "Front Gate$"
 
+HyperTraining_Greeting:
+    .string "Ah... potential. My favorite thing to\n"
+    .string "polish.\p"
+    .string "Show me a partner and I will see\n"
+    .string "what shines.$"
+
+HyperTraining_NoItems:
+    .string "Hmm... you have no Bottle Cap or\n"
+    .string "Gold Bottle Cap.\p"
+    .string "Bring one of those items and I\n"
+    .string "will help you.$"
+
+HyperTraining_NoTrainableStats:
+    .string "This partner has nothing left for me\n"
+    .string "to refine.$"
+
+HyperTraining_StatAlreadyMaxed:
+    .string "That stat cannot be improved any further.$"
+
+HyperTraining_ExplainCaps:
+    .string "A Bottle Cap improves one stat.\p"
+    .string "A Gold Bottle Cap improves all stats\n"
+    .string "at once.$"
+
+HyperTraining_ConfirmBottleCap:
+    .string "You want to use a Bottle Cap?\n"
+    .string "It will refine one stat to its peak.$"
+
+HyperTraining_ConfirmGoldCap:
+    .string "You want to use a Gold Bottle Cap?\n"
+    .string "It will refine all stats at once!$"
+
+HyperTraining_ChooseStatText:
+    .string "Very well.\n"
+    .string "Which stat shall I refine?$"
+
+HyperTraining_SuccessOne:
+    .string "Done. That stat is now refined.$"
+
+HyperTraining_SuccessAll:
+    .string "Excellent. Every stat that could\n"
+    .string "improve has been refined.$"
+
+HyperTraining_AskAnotherStat:
+    .string "Would you like to refine another stat?$"
+
+HyperTraining_AskAnotherPokemon:
+    .string "Would you like to train a different\n"
+    .string "Pokémon?$"
+
+HyperTraining_CanceledText:
+    .string "Changed your mind? That happens.\p"
+    .string "Come back anytime.$"
+
+HyperTraining_NoBottleCap_HaveGoldBottleCap:
+    .string "Apparently you're out of\n"
+	.string "Bottle Caps.\p"
+    .string "Wants to use a Gold Bottle Cap\n"
+	.string "instead?$"
+
+HyperTraining_NoGoldBottleCap_HaveBottleCap:
+    .string "Apparently you're out of\n" 
+	.string "Gold Bottle Caps.\p"
+    .string "Wants to use Bottle Cap instead?$"
+
+HyperTraining_Comeback:
+    .string "Come back anytime, just don't\n"
+    .string "forget my caps.$"

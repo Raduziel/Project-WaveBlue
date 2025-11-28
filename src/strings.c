@@ -1391,11 +1391,12 @@ const u8 gText_ExpShareOn[] = _("The Exp. Share has been turned on.{PAUSE_UNTIL_
 const u8 gText_ExpShareOff[] = _("The Exp. Share has been turned off.{PAUSE_UNTIL_PRESS}");
 
 // stats
+const u8 gText_HP[] = _("HP");
 const u8 gText_Attack[] = _("ATTACK");
 const u8 gText_Defense[] = _("DEFENSE");
-const u8 gText_Speed[] = _("SPEED");
 const u8 gText_SpAtk[] = _("SP. ATK");
 const u8 gText_SpDef[] = _("SP. DEF");
+const u8 gText_Speed[] = _("SPEED");
 
 const u8 gText_AM[] = _("AM");
 const u8 gText_PM[] = _("PM");
@@ -1446,3 +1447,5 @@ const u8 gText_DexSearchDontSpecify[] = _("DON'T SPECIFY.");
 const u8 gText_DexSearchTypeNone[] = _("NONE");
 const u8 gText_InfiniteRepelOn[] = _("Infinite Repel activated!\nWild {PKMN} will no longer appear.{PAUSE_UNTIL_PRESS}");
 const u8 gText_InfiniteRepelOff[] = _("Infinite Repel deactivated!\nWild {PKMN} may appear again.{PAUSE_UNTIL_PRESS}");
+const u8 gText_UseBottleCap[] = _("Use Bottle Cap");
+const u8 gText_UseGoldBottleCap[] = _("Use Gold Bottle Cap");

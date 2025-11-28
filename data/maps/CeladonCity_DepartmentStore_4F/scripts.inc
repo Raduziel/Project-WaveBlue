@@ -55,7 +55,6 @@ CeladonCity_DepartmentStore_4F_Items::
 	.2byte ITEM_SUN_STONE
 	.2byte ITEM_MOON_STONE
 	.2byte ITEM_SHINY_STONE
-	.2byte ITEM_DAWN_STONE
 	.2byte ITEM_DUSK_STONE
 	.2byte ITEM_PROTECTOR
 	.2byte ITEM_MAGMARIZER
@@ -74,7 +73,6 @@ CeladonCity_DepartmentStore_4F_Herbs_1::
 	.2byte ITEM_ASPEAR_BERRY
 	.2byte ITEM_LEPPA_BERRY
 	.2byte ITEM_PERSIM_BERRY
-	.2byte ITEM_ORAN_BERRY
 	.2byte ITEM_SITRUS_BERRY
 	.2byte ITEM_FIGY_BERRY
 	.2byte ITEM_WIKI_BERRY
@@ -123,15 +121,10 @@ CeladonCity_DepartmentStore_4F_Herbs_2::
 	.2byte ITEM_SALAC_BERRY
 	.2byte ITEM_PETAYA_BERRY
 	.2byte ITEM_APICOT_BERRY
+	.2byte ITEM_LANSAT_BERRY
 	.2byte ITEM_KEE_BERRY
 	.2byte ITEM_MARANGA_BERRY
-    .2byte ITEM_POMEG_BERRY
-	.2byte ITEM_KELPSY_BERRY
-	.2byte ITEM_QUALOT_BERRY
-	.2byte ITEM_HONDEW_BERRY
-	.2byte ITEM_GREPA_BERRY
-	.2byte ITEM_TAMATO_BERRY  
-	.2byte ITEM_NONE
+ 	.2byte ITEM_NONE
 	release
 	end
 

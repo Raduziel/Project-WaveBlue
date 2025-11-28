@@ -1564,6 +1564,7 @@ extern const u8 gText_ExpShareOn[];
 extern const u8 gText_ExpShareOff[];
 
 // stats
+extern const u8 gText_HP[];
 extern const u8 gText_Attack[];
 extern const u8 gText_Defense[];
 extern const u8 gText_SpAtk[];
@@ -1648,7 +1649,11 @@ extern const u8 gText_DexSortSmallestDescription[];
 extern const u8 gText_DexEmptyString[];
 extern const u8 gText_DexSearchDontSpecify[];
 extern const u8 gText_DexSearchTypeNone[];
+
+//New strings
 extern const u8 gText_InfiniteRepelOn[];
 extern const u8 gText_InfiniteRepelOff[];
+extern const u8 gText_UseBottleCap[];
+extern const u8 gText_UseGoldBottleCap[];
 
 #endif //GUARD_STRINGS_H

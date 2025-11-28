@@ -232,3 +232,255 @@ Route22_Movement_LateRivalExit::
 Route22_EventScript_LeagueGateSign::
 	msgbox Route22_Text_LeagueGateSign, MSGBOX_SIGN
 	end
+
+HyperTrainingGuy::
+    lock
+    faceplayer
+    msgbox HyperTraining_Greeting, MSGBOX_DEFAULT
+    checkitem ITEM_GOLD_BOTTLE_CAP, 1
+    copyvar VAR_TEMP_5, VAR_RESULT
+    checkitem ITEM_BOTTLE_CAP, 1
+    copyvar VAR_TEMP_6, VAR_RESULT
+    compare VAR_TEMP_5, 0
+    goto_if_ne HT_CheckItems_HasSomething
+    compare VAR_TEMP_6, 0
+    goto_if_ne HT_CheckItems_HasSomething
+    msgbox HyperTraining_NoItems, MSGBOX_DEFAULT
+    release
+    end
+
+HT_CheckItems_HasSomething:
+    compare VAR_TEMP_5, 1
+    goto_if_ne HT_CheckSingleItem
+    compare VAR_TEMP_6, 1
+    goto_if_ne HT_CheckSingleItem
+    goto HT_MenuDual
+
+HT_CheckSingleItem:
+    compare VAR_TEMP_5, 1
+    goto_if_eq HT_AskGoldOnly
+    goto HT_AskBottleOnly
+
+HT_MenuDual:
+    msgbox HyperTraining_ExplainCaps, MSGBOX_DEFAULT
+    waitmessage
+    multichoice 0, 0, MULTICHOICE_HYPER_CAP_CHOICE, FALSE
+    switch VAR_RESULT
+    case 0, HT_SetBottlePath
+    case 1, HT_SetGoldPath
+    case 2, HT_Exit
+    case 127, HT_Exit
+    goto HT_Exit
+
+HT_AskGoldOnly:
+    msgbox HyperTraining_ConfirmGoldCap, MSGBOX_YESNO
+    compare VAR_RESULT, NO
+    goto_if_eq HT_Exit
+    goto HT_SetGoldPath
+
+HT_AskBottleOnly:
+    msgbox HyperTraining_ConfirmBottleCap, MSGBOX_YESNO
+    compare VAR_RESULT, NO
+    goto_if_eq HT_Exit
+    goto HT_SetBottlePath
+
+HT_SetBottlePath:
+    setvar VAR_TEMP_4, 0
+    goto HT_SelectPokemon
+
+HT_SetGoldPath:
+    setvar VAR_TEMP_4, 1
+    goto HT_SelectPokemon
+
+HT_SelectPokemon:
+    special ChoosePartyMon
+    waitstate
+    compare VAR_0x8004, PARTY_SIZE
+    goto_if_ge HT_Exit
+    copyvar VAR_TEMP_1, VAR_0x8004
+    setvar VAR_0x8006, 0
+    canhypertrain 0, VAR_TEMP_1
+    call_if_eq VAR_RESULT, TRUE, HT_IncCount
+    canhypertrain 1, VAR_TEMP_1
+    call_if_eq VAR_RESULT, TRUE, HT_IncCount
+    canhypertrain 2, VAR_TEMP_1
+    call_if_eq VAR_RESULT, TRUE, HT_IncCount
+    canhypertrain 3, VAR_TEMP_1
+    call_if_eq VAR_RESULT, TRUE, HT_IncCount
+    canhypertrain 4, VAR_TEMP_1
+    call_if_eq VAR_RESULT, TRUE, HT_IncCount
+    canhypertrain 5, VAR_TEMP_1
+    call_if_eq VAR_RESULT, TRUE, HT_IncCount
+    compare VAR_0x8006, 0
+    goto_if_eq HT_AllStatsMaxed
+    compare VAR_TEMP_4, 1
+    goto_if_eq HT_Exec_Gold
+    goto HT_Menu_Bottle
+
+HT_IncCount:
+    addvar VAR_0x8006, 1
+    return
+
+HT_AllStatsMaxed:
+    msgbox HyperTraining_NoTrainableStats, MSGBOX_DEFAULT
+    goto HT_SelectPokemon
+
+HT_Exec_Gold:
+    checkitem ITEM_GOLD_BOTTLE_CAP, 1
+    compare VAR_RESULT, FALSE
+    goto_if_eq HT_NoItemError
+
+HT_Exec_Gold_Direct:
+    removeitem ITEM_GOLD_BOTTLE_CAP, 1
+    playfanfare FANFARE_LEVEL_UP
+    waitfanfare
+    hypertrain 0, VAR_TEMP_1
+    hypertrain 1, VAR_TEMP_1
+    hypertrain 2, VAR_TEMP_1
+    hypertrain 3, VAR_TEMP_1
+    hypertrain 4, VAR_TEMP_1
+    hypertrain 5, VAR_TEMP_1
+    msgbox HyperTraining_SuccessAll, MSGBOX_DEFAULT
+    checkitem ITEM_GOLD_BOTTLE_CAP, 1
+    compare VAR_RESULT, TRUE
+    goto_if_eq HT_AskNewMon
+    checkitem ITEM_BOTTLE_CAP, 1
+    compare VAR_RESULT, TRUE
+    goto_if_eq HT_Suggest_Bottle_Swap
+    goto HT_Farewell
+
+HT_Suggest_Bottle_Swap:
+    msgbox HyperTraining_NoGoldBottleCap_HaveBottleCap, MSGBOX_YESNO
+    compare VAR_RESULT, YES
+    goto_if_eq HT_SwapToBottle_Action
+    goto HT_Farewell
+
+HT_Menu_Bottle:
+    checkitem ITEM_BOTTLE_CAP, 1
+    compare VAR_RESULT, FALSE
+    goto_if_eq HT_NoItemError
+    msgbox HyperTraining_ChooseStatText, MSGBOX_DEFAULT
+    waitmessage
+    multichoice 0, 0, MULTICHOICE_HYPER_STATS, FALSE
+    compare VAR_RESULT, 6
+    goto_if_eq HT_Exit
+    compare VAR_RESULT, 127
+    goto_if_eq HT_Exit
+    switch VAR_RESULT
+    case 0, HT_Try_HP
+    case 1, HT_Try_Atk
+    case 2, HT_Try_Def
+    case 3, HT_Try_SpAtk
+    case 4, HT_Try_SpDef
+    case 5, HT_Try_Speed
+    goto HT_Exit
+
+HT_Try_HP:
+    canhypertrain 0, VAR_TEMP_1
+    compare VAR_RESULT, FALSE
+    goto_if_eq HT_StatFull
+    call HT_DoTrain_Bottle
+    hypertrain 0, VAR_TEMP_1
+    goto HT_Bottle_PostTrain
+
+HT_Try_Atk:
+    canhypertrain 1, VAR_TEMP_1
+    compare VAR_RESULT, FALSE
+    goto_if_eq HT_StatFull
+    call HT_DoTrain_Bottle
+    hypertrain 1, VAR_TEMP_1
+    goto HT_Bottle_PostTrain
+
+HT_Try_Def:
+    canhypertrain 2, VAR_TEMP_1
+    compare VAR_RESULT, FALSE
+    goto_if_eq HT_StatFull
+    call HT_DoTrain_Bottle
+    hypertrain 2, VAR_TEMP_1
+    goto HT_Bottle_PostTrain
+
+HT_Try_Speed:
+    canhypertrain 3, VAR_TEMP_1
+    compare VAR_RESULT, FALSE
+    goto_if_eq HT_StatFull
+    call HT_DoTrain_Bottle
+    hypertrain 3, VAR_TEMP_1
+    goto HT_Bottle_PostTrain
+
+HT_Try_SpAtk:
+    canhypertrain 4, VAR_TEMP_1
+    compare VAR_RESULT, FALSE
+    goto_if_eq HT_StatFull
+    call HT_DoTrain_Bottle
+    hypertrain 4, VAR_TEMP_1
+    goto HT_Bottle_PostTrain
+
+HT_Try_SpDef:
+    canhypertrain 5, VAR_TEMP_1
+    compare VAR_RESULT, FALSE
+    goto_if_eq HT_StatFull
+    call HT_DoTrain_Bottle
+    hypertrain 5, VAR_TEMP_1
+    goto HT_Bottle_PostTrain
+
+HT_DoTrain_Bottle:
+    removeitem ITEM_BOTTLE_CAP, 1
+    playfanfare FANFARE_LEVEL_UP
+    waitfanfare
+    return
+
+HT_StatFull:
+    msgbox HyperTraining_StatAlreadyMaxed, MSGBOX_DEFAULT
+    goto HT_Menu_Bottle
+
+HT_Bottle_PostTrain:
+    msgbox HyperTraining_SuccessOne, MSGBOX_DEFAULT
+    checkitem ITEM_BOTTLE_CAP, 1
+    compare VAR_RESULT, TRUE
+    goto_if_eq HT_Bottle_AskMore
+    checkitem ITEM_GOLD_BOTTLE_CAP, 1
+    compare VAR_RESULT, TRUE
+    goto_if_eq HT_Suggest_Gold_Swap
+    goto HT_Farewell
+
+HT_Bottle_AskMore:
+    msgbox HyperTraining_AskAnotherStat, MSGBOX_YESNO
+    compare VAR_RESULT, YES
+    goto_if_eq HT_Menu_Bottle
+    goto HT_AskNewMon
+
+HT_Suggest_Gold_Swap:
+    msgbox HyperTraining_NoBottleCap_HaveGoldBottleCap, MSGBOX_YESNO
+    compare VAR_RESULT, YES
+    goto_if_eq HT_SwapToGold_Action
+    goto HT_AskNewMon
+
+HT_SwapToBottle_Action:
+    setvar VAR_TEMP_4, 0
+    goto HT_SelectPokemon
+
+HT_SwapToGold_Action:
+    setvar VAR_TEMP_4, 1
+    goto HT_Exec_Gold_Direct
+
+HT_AskNewMon:
+    msgbox HyperTraining_AskAnotherPokemon, MSGBOX_YESNO
+    compare VAR_RESULT, YES
+    goto_if_eq HT_SelectPokemon
+    goto HT_Farewell
+
+HT_NoItemError:
+    msgbox HyperTraining_NoItems, MSGBOX_DEFAULT
+    release
+    end
+
+HT_Farewell:
+    msgbox HyperTraining_Comeback, MSGBOX_DEFAULT
+    release
+    end
+
+HT_Exit:
+    msgbox HyperTraining_CanceledText, MSGBOX_DEFAULT
+    release
+    end
+	

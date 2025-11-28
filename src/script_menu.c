@@ -553,6 +553,22 @@ static const struct MenuAction sMultichoiceList_TrainerTowerMode[] = {
     { gOtherText_Exit }
 };
 
+static const struct MenuAction sMultichoiceList_HyperStats[] = {
+    { gText_HP },
+    { gText_Attack },
+    { gText_Defense },
+    { gText_SpAtk },
+    { gText_SpDef },
+    { gText_Speed },
+    { gOtherText_Exit }
+};
+
+static const struct MenuAction sMultichoiceList_HyperCapChoice[] = {
+    { gText_UseBottleCap },
+    { gText_UseGoldBottleCap },
+    { gOtherText_Exit }
+};
+
 static const struct MenuAction sMultichoiceList_Exit[] = {
     { gOtherText_Exit }
 };
@@ -623,6 +639,8 @@ static const struct MultichoiceListStruct sMultichoiceLists[] = {
     [MULTICHOICE_62]                                         = MULTICHOICE(sMultichoiceList_62),
     [MULTICHOICE_JOIN_OR_LEAD]                               = MULTICHOICE(sMultichoiceList_JoinOrLead),
     [MULTICHOICE_TRAINER_TOWER_MODE]                         = MULTICHOICE(sMultichoiceList_TrainerTowerMode),
+    [MULTICHOICE_HYPER_CAP_CHOICE]                           = MULTICHOICE(sMultichoiceList_HyperCapChoice),
+    [MULTICHOICE_HYPER_STATS]                                = MULTICHOICE(sMultichoiceList_HyperStats),
 };
 
 // From Cool to Berries goes unused

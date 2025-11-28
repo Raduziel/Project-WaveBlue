@@ -55,7 +55,9 @@ static void HealPlayerBoxes(void)
 
 void CanHyperTrain(struct ScriptContext *ctx)
 {
+
     u32 stat = ScriptReadByte(ctx);
+
     u32 partyIndex = VarGet(ScriptReadHalfword(ctx));
 
     Script_RequestEffects(SCREFF_V1);
@@ -83,6 +85,7 @@ void HyperTrain(struct ScriptContext *ctx)
     if (stat < NUM_STATS && partyIndex < PARTY_SIZE)
     {
         bool32 data = TRUE;
+
         SetMonData(&gPlayerParty[partyIndex], MON_DATA_HYPER_TRAINED_HP + stat, &data);
         CalculateMonStats(&gPlayerParty[partyIndex]);
     }
