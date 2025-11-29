@@ -52,6 +52,11 @@ PokeMansion_EventScript_Porygon::
 
 PokeMansion_EventScript_FoughtPorygon::
 	msgbox Text_Porygon_Disappears, MSGBOX_DEFAULT
+	closemessage
+	fadescreen FADE_TO_WHITE
+	playse SE_WARP_IN
 	removeobject VAR_LAST_TALKED
+	delay 60
+	fadescreen FADE_FROM_WHITE
 	release
 	end

@@ -247,8 +247,8 @@
       "x": 58,
       "y": 5,
       "elevation": 0,
-      "item": "ITEM_SUPER_POTION",
-      "flag": "FLAG_HIDDEN_ITEM_ROUTE11_SUPER_POTION",
+      "item": "ITEM_BOTTLE_CAP",
+      "flag": "FLAG_HIDDEN_ITEM_ROUTE11_BOTTLE_CAP",
       "quantity": 1,
       "underfoot": false
     }
