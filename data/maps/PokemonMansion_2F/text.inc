@@ -31,3 +31,9 @@ PokemonMansion_1F_Text_ChristenedDiscoveredMonMew::
     .string "We christened the newly discovered\l"
     .string "POKéMON, MEW.$"
 
+Text_Porygon_Cry::
+    .string "{COLOR LIGHT_RED}{SHADOW RED}Gyyyy-zzzt!1010!$"
+
+Text_Porygon_Disappears::
+    .string "Porygon disappeared into digital\n"
+    .string "fragments...$"

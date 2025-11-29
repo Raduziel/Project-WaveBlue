@@ -190,17 +190,17 @@
 #define FLAG_HIDE_SAFFRON_CITY_POKECENTER_SABRINA_JOURNALS 0x0AE
 
 // Unused?
-#define I_EXP_SHARE_FLAG           0x0AF //Exp Share
-#define VAR_LAST_REPEL_LURE_USED   0x0B0 //Repel/Lure
-#define B_FLAG_FOLLOWERS_DISABLED  0x0B1 //Enable/Disable Following Pokémon
-#define OW_FLAG_NO_ENCOUNTER       0x0B2 //No Encounters
-#define OW_FLAG_POKE_RIDER         0x0B3 //Fly from Town Map
-#define P_FLAG_EGG_MOVES           0x0B4 //Egg Move Relearner
-#define OW_FLAG_NO_TRAINER_SEE     0x0B5 //No Trainer Battles
-#define OW_FLAG_NO_COLLISION       0x0B6 //No collisions
-#define FLAG_DELIVERED_ESCAPE_ROPE 0x0B7 //Escape Rope Cutscene
-#define FLAG_0x0B8                 0x0B8
-#define FLAG_0x0B9                 0x0B9
+#define I_EXP_SHARE_FLAG              0x0AF //Exp Share
+#define VAR_LAST_REPEL_LURE_USED      0x0B0 //Repel/Lure
+#define B_FLAG_FOLLOWERS_DISABLED     0x0B1 //Enable/Disable Following Pokémon
+#define OW_FLAG_NO_ENCOUNTER          0x0B2 //No Encounters
+#define OW_FLAG_POKE_RIDER            0x0B3 //Fly from Town Map
+#define P_FLAG_EGG_MOVES              0x0B4 //Egg Move Relearner
+#define OW_FLAG_NO_TRAINER_SEE        0x0B5 //No Trainer Battles
+#define OW_FLAG_NO_COLLISION          0x0B6 //No collisions
+#define FLAG_DELIVERED_ESCAPE_ROPE    0x0B7 //Escape Rope Cutscene
+#define FLAG_HIDE_DOJO_HITMONTOP_BALL 0x0B8 //Got Hitmontop from the Dojo
+#define FLAG_HIDE_PORYGON             0x0B9 //Removes Porygon from the Pokémon Mansion
 #define FLAG_0x0BA                 0x0BA
 #define FLAG_0x0BB                 0x0BB
 #define FLAG_0x0BC                 0x0BC

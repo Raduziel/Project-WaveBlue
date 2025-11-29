@@ -72,17 +72,21 @@ SaffronCity_Dojo_Text_HitoshiPostBattle::
     .string "The prime fighters across the land\n"
     .string "train here.$"
 
+SaffronCity_Dojo_Text_YouWantHitmonchan::
+    .string "You want the piston-punching\n"
+    .string "HITMONCHAN?$"
+
 SaffronCity_Dojo_Text_YouWantHitmonlee::
     .string "You want the hard-kicking\n"
     .string "HITMONLEE?$"
 
+SaffronCity_Dojo_Text_YouWantHitmontop::
+    .string "You want the spinning-fighter\n"
+    .string "HITMONTOP?$"
+
 SaffronCity_Dojo_Text_ReceivedMonFromKarateMaster::
     .string "{PLAYER} received the {STR_VAR_1}\n"
     .string "from the KARATE MASTER.$"
-
-SaffronCity_Dojo_Text_YouWantHitmonchan::
-    .string "You want the piston-punching\n"
-    .string "HITMONCHAN?$"
 
 SaffronCity_Dojo_Text_ReceivedMonFromKarateMaster2::
     .string "{PLAYER}は　カラテ　だいおう　から\n"

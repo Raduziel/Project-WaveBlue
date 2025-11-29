@@ -483,4 +483,3 @@ HT_Exit:
     msgbox HyperTraining_CanceledText, MSGBOX_DEFAULT
     release
     end
-	

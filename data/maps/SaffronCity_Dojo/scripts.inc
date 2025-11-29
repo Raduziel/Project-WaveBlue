@@ -33,8 +33,19 @@ SaffronCity_Dojo_EventScript_HitmonleeBall::
 	release
 	end
 
-SaffronCity_Dojo_EventScript_AlreadyGotHitmon::
-	msgbox SaffronCity_Dojo_Text_BetterNotGetGreedy
+SaffronCity_Dojo_EventScript_HitmontopBall::
+	lock
+	faceplayer
+	goto_if_set FLAG_GOT_HITMON_FROM_DOJO, SaffronCity_Dojo_EventScript_AlreadyGotHitmon
+	showmonpic SPECIES_HITMONTOP, 10, 3
+	setvar VAR_TEMP_1, SPECIES_HITMONTOP
+	applymovement LOCALID_KARATE_MASTER, Common_Movement_WalkInPlaceFasterUp
+	waitmovement 0
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox SaffronCity_Dojo_Text_YouWantHitmontop, MSGBOX_YESNO
+	call EventScript_RestorePrevTextColor
+	goto_if_eq VAR_RESULT, YES, SaffronCity_Dojo_EventScript_GiveHitmon
+	hidemonpic
 	release
 	end
 
@@ -51,6 +62,11 @@ SaffronCity_Dojo_EventScript_HitmonchanBall::
 	call EventScript_RestorePrevTextColor
 	goto_if_eq VAR_RESULT, YES, SaffronCity_Dojo_EventScript_GiveHitmon
 	hidemonpic
+	release
+	end
+
+SaffronCity_Dojo_EventScript_AlreadyGotHitmon::
+	msgbox SaffronCity_Dojo_Text_BetterNotGetGreedy
 	release
 	end
 
