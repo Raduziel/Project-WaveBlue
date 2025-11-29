@@ -81,7 +81,8 @@ HyperTraining_NoTrainableStats:
     .string "to refine.$"
 
 HyperTraining_StatAlreadyMaxed:
-    .string "That stat cannot be improved any further.$"
+    .string "That stat cannot be improved any\n"
+	.string "further.$"
 
 HyperTraining_ExplainCaps:
     .string "A Bottle Cap improves one stat.\p"
@@ -108,7 +109,8 @@ HyperTraining_SuccessAll:
     .string "improve has been refined.$"
 
 HyperTraining_AskAnotherStat:
-    .string "Would you like to refine another stat?$"
+    .string "Would you like to refine another\n"
+	.string "stat?$"
 
 HyperTraining_AskAnotherPokemon:
     .string "Would you like to train a different\n"
