@@ -88,8 +88,8 @@ Route4_Text_CaveGuyDialogue2::
     .string "use it. Take it.$"
 
 Route4_Text_CaveGuyDialogue3::
-    .string "The Escape Rope is a KEY ITEM.\n"
-    .string "Use it from your BAG to instantly\l"
-    .string "escape from any cave.\p"
+    .string "The Escape Rope is a KEY ITEM.\p"
+    .string "Use it from your BAG to escape\n"
+    .string "from any cave instantly.\p"
     .string "Now, if you'll excuse me, I need\n"
     .string "to go on a hike.$"
