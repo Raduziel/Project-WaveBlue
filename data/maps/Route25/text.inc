@@ -117,3 +117,21 @@ Route25_Text_AreYouHereAlone::
     .string "If you're out at CERULEAN's cape…\n"
     .string "Well, it should be as a couple.$"
 
+Route25_Text_WaitAMoment::
+    .string "HEY! WAIT A MOMENT!$"
+
+Route25_Text_BillIntro::
+    .string "Glad I caught you!\n"
+    .string "I have a favor to ask.\p"
+    .string "Here, take this.$"
+
+Route25_Text_BillExplain::
+    .string "This is the {PKMN} Box Link.\p"
+    .string "It grants remote access to my\n"
+    .string "Storage System.\p"
+    .string "I need you to field-test it for me.\n"
+    .string "It will auto-collect data as you\l"
+    .string "travel to help me improve it.\p"
+    .string "So use it freely! It's a win-win!\n"
+    .string "Good luck!$"
+

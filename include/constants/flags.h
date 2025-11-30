@@ -201,8 +201,8 @@
 #define FLAG_DELIVERED_ESCAPE_ROPE    0x0B7 //Escape Rope Cutscene
 #define FLAG_HIDE_DOJO_HITMONTOP_BALL 0x0B8 //Got Hitmontop from the Dojo
 #define FLAG_HIDE_PORYGON             0x0B9 //Removes Porygon from the Pokémon Mansion
-#define FLAG_LAVENDER_TM10_CHANNELER  0x0BA //NPC that delivers TM10 Hidden Power
-#define FLAG_0x0BB                 0x0BB
+#define FLAG_LAVENDER_TM10_CHANNELER  0x0BA //NPC that delivers TM10 Hidden
+#define FLAG_HIDE_ROUTE25_BILL        0x0BB //Box_Link Event
 #define FLAG_0x0BC                 0x0BC
 #define FLAG_0x0BD                 0x0BD
 #define FLAG_0x0BE                 0x0BE
