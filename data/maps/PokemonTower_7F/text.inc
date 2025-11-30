@@ -48,3 +48,18 @@ PokemonTower_7F_Text_MrFujiThankYouFollowMe::
     .string "Follow me to my home, POKéMON\n"
     .string "HOUSE, at the foot of this tower.$"
 
+Text_Channeler_Intro::
+    .string "You have endured a difficult\n"
+    .string "journey to reach this place.\p"
+    .string "But never forget: true strength\n"
+    .string "is born from self-knowledge.\p"
+    .string "I bestow this upon you to help\n"
+    .string "unlock what lies hidden within.$"
+
+Text_Channeler_Farewell::
+    .string "That move is Hidden Power.\p"
+    .string "While its power remains constant,\n"
+    .string "its Type changes to reflect the\l"
+    .string "user's unique spirit.\p"
+    .string "Look inward, and you shall find\n"
+    .string "your answer. Farewell...$"

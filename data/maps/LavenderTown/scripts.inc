@@ -126,7 +126,7 @@ Action_Speed:
 
 Common_Success:
     setvar VAR_TEMP_2, 1
-    playse SE_THUNDER
+    playse SE_M_STAT_DECREASE
     waitse
     msgbox EVRemover_Success, MSGBOX_DEFAULT
     goto AskRepeat

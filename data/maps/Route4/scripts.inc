@@ -67,7 +67,8 @@ Route4_EventScript_CaveGuy::
     waitmovement 0
 	applymovement LOCALID_CAVEGUY, Movement_CaveGuyExit
     waitmovement 0
-	removeobject LOCALID_CAVEGUY
+	playse SE_EXIT
+    removeobject LOCALID_CAVEGUY
 	setflag FLAG_DELIVERED_ESCAPE_ROPE
-	releaseall
+    releaseall
 	end

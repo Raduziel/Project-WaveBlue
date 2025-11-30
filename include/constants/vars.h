@@ -193,10 +193,10 @@
 //My VARs
 
 #define VAR_ROUTE4_CAVEGUY         0x408C
+#define VAR_POKETOWER_TM10         0x408D
 
 //Unnused?
 
-#define VAR_0x408D                 0x408D
 #define VAR_0x408E                 0x408E
 #define VAR_0x408F                 0x408F
 #define VAR_0x4090                 0x4090

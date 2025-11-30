@@ -30,33 +30,55 @@ PokemonMansion_2F_EventScript_Arnie::
 	end
 
 PokeMansion_EventScript_Porygon::
-	lock
-	faceplayer
-	setwildbattle SPECIES_PORYGON, 30
-	playmoncry SPECIES_PORYGON, CRY_MODE_ENCOUNTER
-	msgbox Text_Porygon_Cry, MSGBOX_DEFAULT
-	waitmoncry
-	closemessage
-	delay 40
-	setflag FLAG_HIDE_PORYGON
-	setflag FLAG_SYS_SPECIAL_WILD_BATTLE
-	dowildbattle
-	clearflag FLAG_SYS_SPECIAL_WILD_BATTLE
-	specialvar VAR_RESULT, GetBattleOutcome
-	goto_if_eq VAR_RESULT, B_OUTCOME_WON, PokeMansion_EventScript_FoughtPorygon
-	goto_if_eq VAR_RESULT, B_OUTCOME_RAN, PokeMansion_EventScript_FoughtPorygon
-	goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, PokeMansion_EventScript_FoughtPorygon
-	removeobject VAR_LAST_TALKED
-	release
-	end
+    lock
+    faceplayer
+    
+    playse SE_PC_ON
+    applymovement LOCALID_PORYGON, Movement_Porygon_Glitch
+    waitmovement 0
+    waitse
+    
+    faceplayer
+    
+    playmoncry SPECIES_PORYGON, CRY_MODE_ENCOUNTER
+    msgbox Text_Porygon_Cry, MSGBOX_DEFAULT
+    waitmoncry
+    closemessage
+    
+    setwildbattle SPECIES_PORYGON, 30
+    setflag FLAG_HIDE_PORYGON
+    setflag FLAG_SYS_SPECIAL_WILD_BATTLE
+    dowildbattle
+    clearflag FLAG_SYS_SPECIAL_WILD_BATTLE
+    
+    specialvar VAR_RESULT, GetBattleOutcome
+    goto_if_eq VAR_RESULT, B_OUTCOME_WON, PokeMansion_EventScript_FoughtPorygon
+    goto_if_eq VAR_RESULT, B_OUTCOME_RAN, PokeMansion_EventScript_FoughtPorygon
+    goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, PokeMansion_EventScript_FoughtPorygon
+    
+    removeobject LOCALID_PORYGON
+    release
+    end
 
 PokeMansion_EventScript_FoughtPorygon::
-	msgbox Text_Porygon_Disappears, MSGBOX_DEFAULT
-	closemessage
-	fadescreen FADE_TO_WHITE
-	playse SE_WARP_IN
-	removeobject VAR_LAST_TALKED
-	delay 60
-	fadescreen FADE_FROM_WHITE
-	release
-	end
+    msgbox Text_Porygon_Disappears, MSGBOX_DEFAULT
+    closemessage
+    
+    fadescreen FADE_TO_WHITE
+    playse SE_PC_OFF
+    removeobject LOCALID_PORYGON
+    delay 60
+    fadescreen FADE_FROM_WHITE
+    
+    release
+    end
+
+    Movement_Porygon_Glitch:
+    spin_left
+    delay_1
+    spin_right
+    delay_1
+    jump_in_place_right_left
+    delay_1
+    jump_in_place_left_right
+    step_end

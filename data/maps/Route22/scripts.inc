@@ -332,8 +332,8 @@ HT_Exec_Gold:
 
 HT_Exec_Gold_Direct:
     removeitem ITEM_GOLD_BOTTLE_CAP, 1
-    playfanfare FANFARE_LEVEL_UP
-    waitfanfare
+    playse SE_M_STAT_INCREASE
+    waitse
     hypertrain 0, VAR_TEMP_1
     hypertrain 1, VAR_TEMP_1
     hypertrain 2, VAR_TEMP_1
@@ -425,8 +425,8 @@ HT_Try_SpDef:
 
 HT_DoTrain_Bottle:
     removeitem ITEM_BOTTLE_CAP, 1
-    playfanfare FANFARE_LEVEL_UP
-    waitfanfare
+    playse SE_M_STAT_INCREASE
+    waitse
     return
 
 HT_StatFull:

@@ -1,5 +1,10 @@
 PokemonTower_7F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, PokemonTower_7F_OnTransition
 	.byte 0
+
+PokemonTower_7F_OnTransition::
+    setflag FLAG_LAVENDER_TM10_CHANNELER
+    end
 
 PokemonTower_7F_EventScript_MrFuji::
 	lock
@@ -229,3 +234,140 @@ PokemonTower_7F_Movement_Grunt3ExitLeft::
 	walk_down
 	walk_down
 	step_end
+
+.set PATH_LEFT,   0
+.set PATH_MIDDLE, 1
+.set PATH_RIGHT,  2
+
+PokemonTower_7F_EventScript_HiddenPower_Trigger_L::
+    lockall
+    setvar VAR_TEMP_1, PATH_LEFT
+    goto PokemonTower_7F_EventScript_HiddenPower
+
+PokemonTower_7F_EventScript_HiddenPower_Trigger_M::
+    lockall
+    setvar VAR_TEMP_1, PATH_MIDDLE
+    goto PokemonTower_7F_EventScript_HiddenPower
+
+PokemonTower_7F_EventScript_HiddenPower_Trigger_R::
+    lockall
+    setvar VAR_TEMP_1, PATH_RIGHT
+    goto PokemonTower_7F_EventScript_HiddenPower
+
+PokemonTower_7F_EventScript_HiddenPower::
+    setvar VAR_POKETOWER_TM10, 1 
+	clearflag FLAG_LAVENDER_TM10_CHANNELER
+    addobject LOCALID_TM10_CHANNELER
+    playse SE_EXIT
+    waitse
+    delay 10
+
+    compare VAR_TEMP_1, PATH_LEFT
+    call_if_eq EventScript_Move_Approach_L
+    
+    compare VAR_TEMP_1, PATH_MIDDLE
+    call_if_eq EventScript_Move_Approach_M
+    
+    compare VAR_TEMP_1, PATH_RIGHT
+    call_if_eq EventScript_Move_Approach_R
+
+	turnobject OBJ_EVENT_ID_PLAYER, DIR_SOUTH
+	waitmovement 0
+
+    msgbox Text_Channeler_Intro, MSGBOX_DEFAULT
+    
+    giveitem ITEM_TM10, 1
+    waitfanfare
+    
+    msgbox Text_Channeler_Farewell, MSGBOX_DEFAULT
+    closemessage
+
+    compare VAR_TEMP_1, PATH_LEFT
+    call_if_eq EventScript_Move_Exit_L
+    
+    compare VAR_TEMP_1, PATH_MIDDLE
+    call_if_eq EventScript_Move_Exit_M
+    
+    compare VAR_TEMP_1, PATH_RIGHT
+    call_if_eq EventScript_Move_Exit_R
+
+	applymovement LOCALID_TM10_CHANNELER, Common_Movement_FaceLeft
+	waitmovement 0
+	removeobject LOCALID_TM10_CHANNELER
+    setflag FLAG_LAVENDER_TM10_CHANNELER
+    playse SE_EXIT
+	releaseall
+	end
+
+EventScript_Move_Approach_L::
+    applymovement LOCALID_TM10_CHANNELER, Movement_Approach_L
+    waitmovement 0
+    return
+
+EventScript_Move_Approach_M::
+    applymovement LOCALID_TM10_CHANNELER, Movement_Approach_M
+    waitmovement 0
+    return
+
+EventScript_Move_Approach_R::
+    applymovement LOCALID_TM10_CHANNELER, Movement_Approach_R
+    waitmovement 0
+    return
+
+EventScript_Move_Exit_L::
+    applymovement LOCALID_TM10_CHANNELER, Movement_Exit_L
+    waitmovement 0
+    return
+
+EventScript_Move_Exit_M::
+    applymovement LOCALID_TM10_CHANNELER, Movement_Exit_M
+    waitmovement 0
+    return
+
+EventScript_Move_Exit_R::
+    applymovement LOCALID_TM10_CHANNELER, Movement_Exit_R
+    waitmovement 0
+    return
+
+
+Movement_Approach_L:
+    walk_in_place_fast_up
+    walk_up
+    walk_up
+    walk_left
+    walk_in_place_fast_up
+    step_end
+
+Movement_Approach_M:
+    walk_in_place_fast_up
+    walk_up
+    walk_up
+    step_end
+
+Movement_Approach_R:
+    walk_in_place_fast_up
+    walk_up
+    walk_up
+    walk_right
+    walk_in_place_fast_up
+    step_end
+
+Movement_Exit_L:
+    walk_in_place_fast_down
+    walk_right
+    walk_down
+    walk_down
+    step_end
+
+Movement_Exit_M:
+    walk_in_place_fast_down
+    walk_down
+    walk_down
+    step_end
+
+Movement_Exit_R:
+    walk_in_place_fast_down
+    walk_left
+    walk_down
+    walk_down
+    step_end
