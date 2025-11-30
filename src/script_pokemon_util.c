@@ -91,6 +91,54 @@ void HyperTrain(struct ScriptContext *ctx)
     }
 }
 
+void CanRemoveEv(struct ScriptContext *ctx)
+{
+    u32 stat = ScriptReadByte(ctx);
+    
+    u32 partyIndex = VarGet(ScriptReadHalfword(ctx));
+
+    Script_RequestEffects(SCREFF_V1);
+
+    if (stat < NUM_STATS && partyIndex < PARTY_SIZE)
+    {
+        u32 ev = GetMonData(&gPlayerParty[partyIndex], MON_DATA_HP_EV + stat);
+        gSpecialVar_Result = (ev > 0);
+    }
+    else
+    {
+        gSpecialVar_Result = FALSE;
+    }
+}
+
+void RemoveEv(struct ScriptContext *ctx)
+{
+    u32 stat = ScriptReadByte(ctx);
+    u32 partyIndex = VarGet(ScriptReadHalfword(ctx));
+
+    Script_RequestEffects(SCREFF_V1 | SCREFF_SAVE);
+
+    if (stat < NUM_STATS && partyIndex < PARTY_SIZE)
+    {
+        u32 ev = GetMonData(&gPlayerParty[partyIndex], MON_DATA_HP_EV + stat);
+
+        if (ev > 0)
+        {
+            u32 zero = 0;
+            SetMonData(&gPlayerParty[partyIndex], MON_DATA_HP_EV + stat, &zero);
+            CalculateMonStats(&gPlayerParty[partyIndex]);
+            gSpecialVar_Result = TRUE;
+        }
+        else
+        {
+            gSpecialVar_Result = FALSE;
+        }
+    }
+    else
+    {
+        gSpecialVar_Result = FALSE;
+    }
+}
+
 void HasGigantamaxFactor(struct ScriptContext *ctx)
 {
     u32 partyIndex = VarGet(ScriptReadHalfword(ctx));

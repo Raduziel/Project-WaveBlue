@@ -2130,6 +2130,20 @@
 	.2byte \slot
 	.endm
 
+    @ Define if an EV can be removed (EV > 0)
+	.macro canremoveev stat:req, slot:req
+	callnative CanRemoveEv
+	.byte \stat
+	.2byte \slot
+    .endm
+
+    @ Removes the EV for the given stat
+	.macro removeev stat:req, slot:req
+	callnative RemoveEv
+	.byte \stat
+	.2byte \slot
+    .endm
+
 	@ Sets VAR_RESULT to TRUE if the Pokemon has the Gigantamax Factor,
 	@ or to FALSE otherwise.
 	.macro hasgigantamaxfactor slot:req

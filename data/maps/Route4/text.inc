@@ -79,14 +79,17 @@ Route4_Text_PeopleLikeAndRespectBrock::
     .string "like him.$"
 
 Route4_Text_CaveGuyDialogue1::
-    .string "You're a Pokémon Trainer, right?\n"
-    .string "Be careful! Caves can be very tricky.\p"
-    .string "I bought this, but I think\n"
-    .string "you could use it. Take it.$"
+    .string "Hey! You there!$"
 
 Route4_Text_CaveGuyDialogue2::
+    .string "You're a Pokémon Trainer, right?\n"
+    .string "Be careful! Caves can be very tricky.\p"
+    .string "I bought this, but I think you could\n"
+    .string "use it. Take it.$"
+
+Route4_Text_CaveGuyDialogue3::
     .string "The Escape Rope is a KEY ITEM.\n"
     .string "Use it from your BAG to instantly\l"
     .string "escape from any cave.\p"
-    .string "Now, if you'll excuse me,\n"
-    .string "I need to go on a hike.$"
+    .string "Now, if you'll excuse me, I need\n"
+    .string "to go on a hike.$"

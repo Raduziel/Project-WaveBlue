@@ -163,7 +163,7 @@
       "x": 32,
       "y": 6,
       "elevation": 3,
-      "var": "VAR_TEMP_0",
+      "var": "VAR_ROUTE4_CAVEGUY",
       "var_value": "0",
       "script": "Route4_EventScript_CaveGuy_Trigger"
     }

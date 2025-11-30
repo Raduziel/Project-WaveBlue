@@ -38,3 +38,42 @@ LavenderTown_Text_PokemonTowerSign::
     .string "POKéMON TOWER\n"
     .string "Becalm the Spirits of POKéMON$"
 
+EVRemover_Greeting:
+    .string "I see the weight of effort on your\n"
+    .string "friend. Shall I lighten their burden?$"
+
+EVRemover_Ask:
+    .string "Do you permit me to obliviate the\n"
+    .string "past efforts of one of them?$"
+
+EVRemover_EggError:
+    .string "This shell does not yet know effort.\n"
+    .string "Return when it has purpose.$"
+
+EVRemover_ChooseStatText:
+    .string "Tell me, which part of the spirit\n"
+    .string "must be cleansed?$"
+
+EVRemover_Success:
+    .string "The burden has been lifted. Feel the\n"
+    .string "absence of past effort.$"
+
+EVRemover_AskAnotherStat:
+    .string "Do you wish to purify another part\n"
+    .string "of this spirit?$"
+
+EVRemover_AskAnotherPokemon:
+    .string "Shall I look into the soul of another\n"
+    .string "companion?$"
+
+EVRemover_Farewell_Used:
+    .string "The path is clear. May your spirit\n"
+    .string "find peace.$"
+
+EVRemover_Farewell_NotUsed:
+    .string "The silence of the graveyard awaits\n"
+    .string "those who hesitate.$"
+
+EVRemover_AlreadyZeroText:
+    .string "Those memories were already severed.\n"
+    .string "Try another one or begone.$"
