@@ -20,7 +20,7 @@ Route25_EventScript_Man::
 	end
 
 Route25_EventScript_BillStop_Trigger::
-    checkflag FLAG_HELPED_BILL_IN_SEA_COTTAGE 
+    checkflag FLAG_GOT_SS_TICKET
 	goto_if_eq VAR_RESULT, FALSE, Route25_EventScript_BillStop_End
     
 	lockall

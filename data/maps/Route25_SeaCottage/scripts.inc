@@ -103,6 +103,7 @@ Route25_SeaCottage_EventScript_BillGiveSSTicket::
 	setflag FLAG_HIDE_NUGGET_BRIDGE_ROCKET
 	setflag FLAG_GOT_SS_TICKET
 	setflag FLAG_SYS_NOT_SOMEONES_PC
+	setvar VAR_BOXLINK_BILL, 1
 	goto Route25_SeaCottage_EventScript_BillGoToSSAnne
 	end
 
@@ -155,7 +156,6 @@ Route25_SeaCottage_EventScript_RunCellSeparator::
 	closemessage
 	clearflag BILL_IN_TELEPORTER
 	setflag FLAG_HELPED_BILL_IN_SEA_COTTAGE
-	setvar VAR_BOXLINK_BILL, 1
 	special SpawnCameraObject
 	applymovement LOCALID_CAMERA, Route25_SeaCottage_Movement_CameraPanToTeleporters
 	waitmovement 0

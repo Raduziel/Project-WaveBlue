@@ -776,7 +776,7 @@ extern const u8 gText_SodaPop[];
 extern const u8 gText_Lemonade[];
 extern const u8 gText_Bicycle_Price[];
 extern const u8 gText_NoThanks[];
-extern const u8 gText_Abra_180Coins[];
+/*extern const u8 gText_Abra_180Coins[];
 extern const u8 gText_Clefairy_500Coins[];
 extern const u8 gText_Dratini_2800Coins[];
 extern const u8 gText_Scyther_5500Coins[];
@@ -785,7 +785,7 @@ extern const u8 gText_Abra_120Coins[];
 extern const u8 gText_Clefairy_750Coins[];
 extern const u8 gText_Pinsir_2500Coins[];
 extern const u8 gText_Dratini_4600Coins[];
-extern const u8 gText_Porygon_6500Coins[];
+extern const u8 gText_Porygon_6500Coins[];*/
 extern const u8 gText_NoThanks_2[];
 extern const u8 gText_HelixFossil[];
 extern const u8 gText_DomeFossil[];
@@ -1660,5 +1660,12 @@ extern const u8 gText_InfiniteRepelOn[];
 extern const u8 gText_InfiniteRepelOff[];
 extern const u8 gText_UseBottleCap[];
 extern const u8 gText_UseGoldBottleCap[];
+extern const u8 gText_MrMime_5500Coins[];
+extern const u8 gText_Jynx_5500Coins[];
+extern const u8 gText_Pinsir_5500Coins[];
+extern const u8 gText_Eevee_3000Coins[];
+extern const u8 gText_Dratini_8000Coins[];
+extern const u8 gText_Scyther_5500Coins[];
+extern const u8 gText_Porygon_6500Coins[];
 
 #endif //GUARD_STRINGS_H
