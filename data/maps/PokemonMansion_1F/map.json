@@ -40,8 +40,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PokemonMansion_1F_EventScript_ItemCarbos",
-      "flag": "FLAG_HIDE_POKEMON_MANSION_1F_CARBOS"
+      "script": "PokemonMansion_1F_EventScript_ItemDubiousDisc",
+      "flag": "FLAG_HIDE_POKEMON_MANSION_1F_DUBIOUS_DISC"
     },
     {
       "type": "object",
@@ -84,6 +84,20 @@
       "trainer_sight_or_berry_tree_id": "1",
       "script": "PokemonMansion_1F_EventScript_Johnson",
       "flag": "0"
+    },
+    {
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 9,
+      "y": 6,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "PokemonMansion_1F_EventScript_ItemCharcoal",
+      "flag": "FLAG_HIDE_POKEMON_MANSION_1F_CHARCOAL"
     }
   ],
   "warp_events": [

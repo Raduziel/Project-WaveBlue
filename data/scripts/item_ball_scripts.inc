@@ -62,6 +62,10 @@ Route25_EventScript_ItemTM43::
 	finditem ITEM_TM43
 	end
 
+Route25_EventScript_ItemFairyFeather::
+	finditem ITEM_FAIRY_FEATHER
+	end	
+
 SSAnne_1F_Room2_EventScript_ItemTM31::
 	finditem ITEM_TM31
 	end
@@ -101,8 +105,8 @@ RocketHideout_B1F_EventScript_ItemHyperPotion::
 	finditem ITEM_HYPER_POTION
 	end
 
-RocketHideout_B2F_EventScript_ItemXSpeed::
-	finditem ITEM_X_SPEED
+RocketHideout_B1F_EventScript_ItemTM23::
+	finditem ITEM_TM23
 	end
 
 RocketHideout_B2F_EventScript_ItemMoonStone::
@@ -115,6 +119,14 @@ RocketHideout_B2F_EventScript_ItemTM12::
 
 RocketHideout_B2F_EventScript_ItemSuperPotion::
 	finditem ITEM_SUPER_POTION
+	end
+
+RocketHideout_B2F_EventScript_ItemDragonFang::
+	finditem ITEM_DRAGON_FANG
+	end
+
+RocketHideout_B3F_EventScript_ItemSmokeBall::
+	finditem ITEM_SMOKE_BALL
 	end
 
 RocketHideout_B3F_EventScript_ItemRareCandy::
@@ -137,6 +149,10 @@ RocketHideout_B4F_EventScript_ItemCalcium::
 	finditem ITEM_CALCIUM
 	end
 
+LavenderTown_EventScript_ItemAirBalloon::
+	finditem ITEM_AIR_BALLOON
+	end	
+
 PokemonTower_3F_EventScript_ItemBottleCap::
 	finditem ITEM_BOTTLE_CAP
 	end
@@ -149,8 +165,8 @@ PokemonTower_4F_EventScript_ItemAwakening::
 	finditem ITEM_AWAKENING
 	end
 
-PokemonTower_4F_EventScript_ItemGreatBall::
-	finditem ITEM_GREAT_BALL
+PokemonTower_4F_EventScript_ItemSpellTag::
+	finditem ITEM_SPELL_TAG
 	end
 
 PokemonTower_5F_EventScript_ItemNugget::
@@ -161,20 +177,36 @@ PokemonTower_6F_EventScript_ItemRareCandy::
 	finditem ITEM_RARE_CANDY
 	end
 
-PokemonTower_6F_EventScript_ItemXAccuracy::
-	finditem ITEM_X_ACCURACY
+PokemonTower_6F_EventScript_ItemTM30::
+	finditem ITEM_TM30
 	end
 
 Route12_EventScript_ItemTM48::
 	finditem ITEM_TM48
 	end
 
+Route12_EventScript_ItemMysticWater::
+	finditem ITEM_MYSTIC_WATER
+	end
+
 Route12_EventScript_ItemIron::
 	finditem ITEM_IRON
 	end
 
+Route13_EventScript_ItemTM36::
+	finditem ITEM_TM36
+	end
+
 Route15_EventScript_ItemTM18::
 	finditem ITEM_TM18
+	end
+
+Route16_EventScript_ItemSharpBeak::
+	finditem ITEM_SHARP_BEAK
+	end
+
+Route14_EventScript_ItemPoisonBarb::
+	finditem ITEM_POISON_BARB
 	end
 
 SafariZone_Center_EventScript_ItemNugget::
@@ -195,6 +227,14 @@ SafariZone_East_EventScript_ItemTM11::
 
 SafariZone_East_EventScript_ItemLeafStone::
 	finditem ITEM_LEAF_STONE
+	end
+
+SafariZone_East_EventScript_ItemKingsRock::
+	finditem ITEM_KINGS_ROCK
+	end	
+
+SafariZone_North_EventScript_ItemDampRock::
+	finditem ITEM_DAMP_ROCK
 	end
 
 SafariZone_North_EventScript_ItemProtein::
@@ -289,20 +329,32 @@ PowerPlant_EventScript_ItemTM25::
 	finditem ITEM_TM25
 	end
 
-PowerPlant_EventScript_ItemThunderStone::
-	finditem ITEM_THUNDER_STONE
+PowerPlant_EventScript_ItemTM24::
+	finditem ITEM_TM24
 	end
 
 PowerPlant_EventScript_ItemElixir::
 	finditem ITEM_ELIXIR
 	end
 
-PokemonMansion_1F_EventScript_ItemCarbos::
-	finditem ITEM_CARBOS
+PowerPlant_EventScript_ItemMetalCoat::
+	finditem ITEM_METAL_COAT
+	end
+
+PowerPlant_EventScript_ItemMagnet::
+	finditem ITEM_MAGNET
+	end
+
+PokemonMansion_1F_EventScript_ItemDubiousDisc::
+	finditem ITEM_DUBIOUS_DISC
 	end
 
 PokemonMansion_1F_EventScript_ItemBottleCap::
 	finditem ITEM_BOTTLE_CAP
+	end
+
+PokemonMansion_1F_EventScript_ItemProtein::
+	finditem ITEM_PROTEIN
 	end
 
 PokemonMansion_2F_EventScript_ItemCalcium::
@@ -317,8 +369,8 @@ PokemonMansion_3F_EventScript_ItemIron::
 	finditem ITEM_IRON
 	end
 
-PokemonMansion_B1F_EventScript_ItemTM14::
-	finditem ITEM_TM14
+PokemonMansion_B1F_EventScript_ItemTM35::
+	finditem ITEM_TM35
 	end
 
 PokemonMansion_B1F_EventScript_ItemFullRestore::
@@ -337,12 +389,16 @@ VictoryRoad_1F_EventScript_ItemRareCandy::
 	finditem ITEM_RARE_CANDY
 	end
 
+VictoryRoad_1F_EventScript_ItemExpertBelt::
+	finditem ITEM_EXPERT_BELT
+	end
+
 VictoryRoad_1F_EventScript_ItemTM02::
 	finditem ITEM_TM02
 	end
 
-VictoryRoad_2F_EventScript_ItemGuardSpec::
-	finditem ITEM_GUARD_SPEC
+VictoryRoad_2F_EventScript_ItemTM15::
+	finditem ITEM_TM15
 	end
 
 VictoryRoad_2F_EventScript_ItemTM07::
@@ -397,9 +453,17 @@ CeruleanCave_B1F_EventScript_ItemUltraBall::
 	finditem ITEM_ULTRA_BALL
 	end
 
+DiggletsCave_B1F_EventScript_ItemSoftSand::
+	finditem ITEM_SOFT_SAND
+	end
+
 FuchsiaCity_WardensHouse_EventScript_ItemRareCandy::
 	finditem ITEM_RARE_CANDY
 	end
+
+OneIsland_EventScript_ItemDragonScale::
+	finditem ITEM_DRAGON_SCALE
+	end	
 
 TwoIsland_EventScript_ItemRevive::
 	finditem ITEM_REVIVE
@@ -409,8 +473,20 @@ ThreeIsland_EventScript_ItemZinc::
 	finditem ITEM_ZINC
 	end
 
-ViridianForest_EventScript_ItemPotion2::
-	finditem ITEM_POTION
+ViridianForest_EventScript_ItemShedShell::
+	finditem ITEM_SHED_SHELL
+	end
+
+ViridianForest_EventScript_ItemSilverPowder::
+	finditem ITEM_SILVER_POWDER
+	end
+
+ViridianForest_EventScript_ItemBigRoot::
+	finditem ITEM_BIG_ROOT
+	end	
+
+MtMoon_B1F_EventScript_ItemHardStone::
+	finditem ITEM_HARD_STONE
 	end
 
 MtMoon_B2F_EventScript_ItemRevive::
@@ -437,6 +513,10 @@ RockTunnel_1F_EventScript_ItemPearl::
 	finditem ITEM_PEARL
 	end
 
+RockTunnel_1F_EventScript_ItemBlackAugurite::
+	finditem ITEM_BLACK_AUGURITE
+	end	
+
 RockTunnel_1F_EventScript_ItemBottleCap::
 	finditem ITEM_BOTTLE_CAP
 	end
@@ -449,16 +529,20 @@ RockTunnel_B1F_EventScript_ItemMaxEther::
 	finditem ITEM_MAX_ETHER
 	end
 
+RockTunnel_B1F_EventScript_ItemSmoothRock::
+	finditem ITEM_SMOOTH_ROCK
+	end
+
 SilphCo_8F_EventScript_ItemIron::
 	finditem ITEM_IRON
 	end
 
-SilphCo_11F_EventScript_ItemZinc::
-	finditem ITEM_ZINC
+SilphCo_11F_EventScript_ItemUpgrade::
+	finditem ITEM_UP_GRADE
 	end
 
-PokemonMansion_1F_EventScript_ItemProtein::
-	finditem ITEM_PROTEIN
+PokemonMansion_1F_EventScript_ItemCharcoal::
+	finditem ITEM_CHARCOAL
 	end
 
 PokemonMansion_2F_EventScript_ItemZinc::
@@ -472,6 +556,10 @@ PokemonMansion_2F_EventScript_ItemHPUp::
 ViridianCity_EventScript_ItemPotion::
 	finditem ITEM_POTION
 	end
+
+Route10_EventScript_ItemBlackSludge::
+	finditem ITEM_BLACK_SLUDGE
+	end		
 
 Route11_EventScript_ItemGreatBall::
 	finditem ITEM_GREAT_BALL
@@ -487,6 +575,10 @@ PokemonTower_5F_EventScript_ItemCleanseTag::
 
 CeladonCity_EventScript_ItemEther::
 	finditem ITEM_ETHER
+	end
+
+CeladonCity_Condominiums_RoofRoom_EventScript_ItemTM42::
+	finditem ITEM_TM42
 	end
 
 RocketHideout_B3F_EventScript_ItemBlackGlasses::
@@ -509,12 +601,24 @@ SeafoamIslands_B1F_EventScript_ItemRevive::
 	finditem ITEM_REVIVE
 	end
 
+SeafoamIslands_B2F_EventScript_ItemTM13::
+	finditem ITEM_TM13
+	end
+
 SeafoamIslands_B2F_EventScript_ItemBigPearl::
 	finditem ITEM_BIG_PEARL
-	end
+	end	
+
+SeafoamIslands_B3F_EventScript_ItemIcyRock::
+	finditem ITEM_ICY_ROCK
+	end	
 
 SeafoamIslands_B4F_EventScript_ItemUltraBall::
 	finditem ITEM_ULTRA_BALL
+	end
+
+SeafoamIslands_B4F_EventScript_ItemTM14::
+	finditem ITEM_TM14
 	end
 
 FourIsland_EventScript_ItemStarPiece::
@@ -545,8 +649,8 @@ FiveIsland_Meadow_EventScript_ItemPPUp::
 	finditem ITEM_PP_UP
 	end
 
-FiveIsland_MemorialPillar_EventScript_ItemMetalCoat::
-	finditem ITEM_METAL_COAT
+FiveIsland_MemorialPillar_EventScript_ItemBottleCap::
+	finditem ITEM_BOTTLE_CAP
 	end
 
 SixIsland_OutcastIsland_EventScript_ItemPPUp::
@@ -557,8 +661,8 @@ SixIsland_WaterPath_EventScript_ItemElixir::
 	finditem ITEM_ELIXIR
 	end
 
-SixIsland_WaterPath_EventScript_ItemDragonScale::
-	finditem ITEM_DRAGON_SCALE
+SixIsland_WaterPath_EventScript_ItemGoldBottleCap::
+	finditem ITEM_GOLD_BOTTLE_CAP
 	end
 
 SixIsland_RuinValley_EventScript_ItemFullRestore::
@@ -573,8 +677,8 @@ SixIsland_RuinValley_EventScript_ItemSunStone::
 	finditem ITEM_SUN_STONE
 	end
 
-SevenIsland_SevaultCanyon_EventScript_ItemKingsRock::
-	finditem ITEM_KINGS_ROCK
+SevenIsland_SevaultCanyon_EventScript_ItemAbilityPatch::
+	finditem ITEM_ABILITY_PATCH
 	end
 
 SevenIsland_SevaultCanyon_EventScript_ItemMaxElixir::
@@ -595,6 +699,14 @@ ThreeIsland_BerryForest_EventScript_ItemFullHeal::
 
 ThreeIsland_BerryForest_EventScript_ItemMaxElixir::
 	finditem ITEM_MAX_ELIXIR
+	end
+
+ThreeIsland_BerryForest_EventScript_ItemLaggingTail::
+	finditem ITEM_LAGGING_TAIL
+	end
+
+MtEmber_SummitPath_2F_EventScript_ItemHeatRock::
+	finditem ITEM_HEAT_ROCK
 	end
 
 MtEmber_Exterior_EventScript_ItemUltraBall::
@@ -629,16 +741,16 @@ FiveIsland_RocketWarehouse_EventScript_ItemBigPearl::
 	finditem ITEM_BIG_PEARL
 	end
 
-FiveIsland_RocketWarehouse_EventScript_ItemTM36::
-	finditem ITEM_TM36
+FiveIsland_RocketWarehouse_EventScript_ItemAbilityCapsule::
+	finditem ITEM_ABILITY_CAPSULE
 	end
 
 FiveIsland_RocketWarehouse_EventScript_ItemPearl::
 	finditem ITEM_PEARL
 	end
 
-FiveIsland_RocketWarehouse_EventScript_ItemUpGrade::
-	finditem ITEM_UP_GRADE
+FiveIsland_RocketWarehouse_EventScript_ItemBottleCap::
+	finditem ITEM_BOTTLE_CAP
 	end
 
 FiveIsland_LostCave_Room10_EventScript_ItemSilkScarf::

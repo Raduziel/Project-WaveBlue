@@ -190,49 +190,49 @@
 #define FLAG_HIDE_SAFFRON_CITY_POKECENTER_SABRINA_JOURNALS 0x0AE
 
 // Unused?
-#define I_EXP_SHARE_FLAG              0x0AF //Exp Share
-#define VAR_LAST_REPEL_LURE_USED      0x0B0 //Repel/Lure
-#define B_FLAG_FOLLOWERS_DISABLED     0x0B1 //Enable/Disable Following Pokémon
-#define OW_FLAG_NO_ENCOUNTER          0x0B2 //No Encounters
-#define OW_FLAG_POKE_RIDER            0x0B3 //Fly from Town Map
-#define P_FLAG_EGG_MOVES              0x0B4 //Egg Move Relearner
-#define OW_FLAG_NO_TRAINER_SEE        0x0B5 //No Trainer Battles
-#define OW_FLAG_NO_COLLISION          0x0B6 //No collisions
-#define FLAG_DELIVERED_ESCAPE_ROPE    0x0B7 //Escape Rope Cutscene
-#define FLAG_HIDE_DOJO_HITMONTOP_BALL 0x0B8 //Got Hitmontop from the Dojo
-#define FLAG_HIDE_PORYGON             0x0B9 //Removes Porygon from the Pokémon Mansion
-#define FLAG_LAVENDER_TM10_CHANNELER  0x0BA //NPC that delivers TM10 Hidden
-#define FLAG_HIDE_ROUTE25_BILL        0x0BB //Box_Link Event
-#define FLAG_0x0BC                 0x0BC
-#define FLAG_0x0BD                 0x0BD
-#define FLAG_0x0BE                 0x0BE
-#define FLAG_0x0BF                 0x0BF
-#define FLAG_0x0C0                 0x0C0
-#define FLAG_0x0C1                 0x0C1
-#define FLAG_0x0C2                 0x0C2
-#define FLAG_0x0C3                 0x0C3
-#define FLAG_0x0C4                 0x0C4
-#define FLAG_0x0C5                 0x0C5
-#define FLAG_0x0C6                 0x0C6
-#define FLAG_0x0C7                 0x0C7
-#define FLAG_0x0C8                 0x0C8
-#define FLAG_0x0C9                 0x0C9
-#define FLAG_0x0CA                 0x0CA
-#define FLAG_0x0CB                 0x0CB
-#define FLAG_0x0CC                 0x0CC
-#define FLAG_0x0CD                 0x0CD
-#define FLAG_0x0CE                 0x0CE
-#define FLAG_0x0CF                 0x0CF
-#define FLAG_0x0D0                 0x0D0
-#define FLAG_0x0D1                 0x0D1
-#define FLAG_0x0D2                 0x0D2
-#define FLAG_0x0D3                 0x0D3
-#define FLAG_0x0D4                 0x0D4
-#define FLAG_0x0D5                 0x0D5
-#define FLAG_0x0D6                 0x0D6
-#define FLAG_0x0D7                 0x0D7
-#define FLAG_0x0D8                 0x0D8
-#define FLAG_0x0D9                 0x0D9
+#define I_EXP_SHARE_FLAG                                 0x0AF //Exp Share
+#define VAR_LAST_REPEL_LURE_USED                         0x0B0 //Repel/Lure
+#define B_FLAG_FOLLOWERS_DISABLED                        0x0B1 //Enable/Disable Following Pokémon
+#define OW_FLAG_NO_ENCOUNTER                             0x0B2 //No Encounters
+#define OW_FLAG_POKE_RIDER                               0x0B3 //Fly from Town Map
+#define P_FLAG_EGG_MOVES                                 0x0B4 //Egg Move Relearner
+#define OW_FLAG_NO_TRAINER_SEE                           0x0B5 //No Trainer Battles
+#define OW_FLAG_NO_COLLISION                             0x0B6 //No collisions
+#define FLAG_DELIVERED_ESCAPE_ROPE                       0x0B7 //Escape Rope Cutscene
+#define FLAG_HIDE_DOJO_HITMONTOP_BALL                    0x0B8 //Got Hitmontop from the Dojo
+#define FLAG_HIDE_PORYGON                                0x0B9 //Removes Porygon from the Pokémon Mansion
+#define FLAG_LAVENDER_TM10_CHANNELER                     0x0BA //NPC that delivers TM10 Hidden
+#define FLAG_HIDE_ROUTE25_BILL                           0x0BB //Box_Link Event
+#define FLAG_HIDE_ROUTE12_MYSTIC_WATER                   0x0BC //Route 12 Mystic Water
+#define FLAG_HIDE_POKEMON_MANSION_B1F_TM35               0x0BD
+#define FLAG_HIDE_CELADON_ROOFROOM_TM42                  0x0BE
+#define FLAG_HIDE_ROCKET_HIDEOUT_B3F_SMOKE_BALL          0x0BF
+#define FLAG_HIDE_ROUTE10_BLACK_SLUDGE                   0x0C0
+#define FLAG_HIDE_MT_MOON_B1F_HARD_STONE                 0x0C1
+#define FLAG_HIDE_SEAFOAM_ISLANDS_B2F_TM13               0x0C2
+#define FLAG_HIDE_SEAFOAM_ISLANDS_B3F_ICY_ROCK           0x0C3
+#define FLAG_GOT_ROCKY_HELMET                            0x0C4
+#define FLAG_HIDE_DIGGLETS_CAVE_B1F_SOFT_SAND            0x0C5
+#define FLAG_HIDE_ROUTE16_SHARP_BEAK                     0x0C6
+#define FLAG_HIDE_ROUTE13_TM36                           0x0C7
+#define FLAG_HIDE_POKEMON_MANSION_1F_DUBIOUS_DISC        0x0C8
+#define FLAG_HIDE_ROCKET_HIDEOUT_B2F_DRAGON_FANG         0x0C9
+#define FLAG_HIDE_SAFARI_ZONE_NORTH_DAMP_ROCK            0x0CA
+#define FLAG_HIDE_MT_EMBER_SUMMIT_PATH_2F_HEAT_ROCK      0x0CB
+#define FLAG_HIDE_VIRIDIAN_FOREST_SILVER_POWDER          0x0CC
+#define FLAG_HIDE_VIRIDIAN_FOREST_BIG_ROOT               0x0CD
+#define FLAG_HIDE_ROCK_TUNNEL_B1F_SMOOTH_ROCK            0x0CE
+#define FLAG_HIDE_ROCK_TUNNEL_1F_BLACK_AUGURITE          0x0CF
+#define FLAG_HIDE_POWER_PLANT_METAL_COAT                 0x0D0
+#define FLAG_HIDE_POWER_PLANT_MAGNET                     0x0D1
+#define FLAG_HIDE_LAVENDER_TOWN_AIR_BALLOON              0x0D2
+#define FLAG_HIDE_AIR_BALLOON_BOY                        0x0D3
+#define FLAG_HIDE_ROUTE25_FAIRY_FEATHER                  0x0D4
+#define FLAG_HIDE_SAFARI_ZONE_EAST_KINGS_ROCK            0x0D5
+#define FLAG_HIDE_ONE_ISLAND_DRAGON_SCALE                0x0D6
+#define FLAG_HIDE_VICTORY_ROAD_1F_EXPERT_BELT            0x0D7
+#define FLAG_HIDE_ROUTE14_POISON_BARB                    0x0D8
+#define FLAG_HIDE_THREE_ISLAND_BERRY_FOREST_LAGGING_TAIL 0x0D9
 #define FLAG_0x0DA                 0x0DA
 #define FLAG_0x0DB                 0x0DB
 #define FLAG_0x0DC                 0x0DC
@@ -383,7 +383,7 @@
 #define FLAG_HIDE_ROUTE9_TM40                                   0x16B
 #define FLAG_HIDE_ROCKET_HIDEOUT_B1F_BOTTLE_CAP                 0x16C
 #define FLAG_HIDE_ROCKET_HIDEOUT_B1F_HYPER_POTION               0x16D
-#define FLAG_HIDE_ROCKET_HIDEOUT_B2F_X_SPEED                    0x16E
+#define FLAG_HIDE_ROCKET_HIDEOUT_B1F_TM23                       0x16E
 #define FLAG_HIDE_ROCKET_HIDEOUT_B2F_MOON_STONE                 0x16F
 #define FLAG_HIDE_ROCKET_HIDEOUT_B2F_TM12                       0x170
 #define FLAG_HIDE_ROCKET_HIDEOUT_B2F_SUPER_POTION               0x171
@@ -395,10 +395,10 @@
 #define FLAG_HIDE_POKEMON_TOWER_3F_BOTTLE_CAP                   0x177
 #define FLAG_HIDE_POKEMON_TOWER_4F_ELIXIR                       0x178
 #define FLAG_HIDE_POKEMON_TOWER_4F_AWAKENING                    0x179
-#define FLAG_HIDE_POKEMON_TOWER_4F_GREAT_BALL                   0x17A
+#define FLAG_HIDE_POKEMON_TOWER_4F_SPELL_TAG                    0x17A
 #define FLAG_HIDE_POKEMON_TOWER_5F_NUGGET                       0x17B
 #define FLAG_HIDE_POKEMON_TOWER_6F_RARE_CANDY                   0x17C
-#define FLAG_HIDE_POKEMON_TOWER_6F_X_ACCURACY                   0x17D
+#define FLAG_HIDE_POKEMON_TOWER_6F_TM30                         0x17D
 #define FLAG_HIDE_ROUTE12_TM48                                  0x17E
 #define FLAG_HIDE_ROUTE12_IRON                                  0x17F
 #define FLAG_HIDE_ROUTE15_TM18                                  0x180
@@ -430,21 +430,21 @@
 #define FLAG_HIDE_POWER_PLANT_MAX_POTION                        0x19A
 #define FLAG_HIDE_POWER_PLANT_TM17                              0x19B
 #define FLAG_HIDE_POWER_PLANT_TM25                              0x19C
-#define FLAG_HIDE_POWER_PLANT_THUNDER_STONE                     0x19D
+#define FLAG_HIDE_POWER_PLANT_TM24                              0x19D
 #define FLAG_HIDE_POWER_PLANT_ELIXIR                            0x19E
-#define FLAG_HIDE_POKEMON_MANSION_1F_CARBOS                     0x19F
+#define FLAG_HIDE_POKEMON_MANSION_1F_PROTEIN                    0x19F
 #define FLAG_HIDE_POKEMON_MANSION_1F_BOTTLE_CAP                 0x1A0
 #define FLAG_HIDE_POKEMON_MANSION_2F_CALCIUM                    0x1A1
 #define FLAG_HIDE_POKEMON_MANSION_3F_MAX_POTION                 0x1A2
 #define FLAG_HIDE_POKEMON_MANSION_3F_IRON                       0x1A3
-#define FLAG_HIDE_POKEMON_MANSION_B1F_TM14                      0x1A4
+#define FLAG_HIDE_SEAFOAM_ISLANDS_B4F_TM14                      0x1A4
 #define FLAG_HIDE_POKEMON_MANSION_B1F_FULL_RESTORE              0x1A5
 #define FLAG_0x1A6                                              0x1A6
 #define FLAG_HIDE_POKEMON_MANSION_B1F_TM22                      0x1A7
 #define FLAG_HIDE_POKEMON_MANSION_B1F_SECRET_KEY                0x1A8
 #define FLAG_HIDE_VICTORY_ROAD_1F_RARE_CANDY                    0x1A9
 #define FLAG_HIDE_VICTORY_ROAD_1F_TM02                          0x1AA
-#define FLAG_HIDE_VICTORY_ROAD_2F_GUARD_SPEC                    0x1AB
+#define FLAG_HIDE_VICTORY_ROAD_2F_TM15                          0x1AB
 #define FLAG_HIDE_VICTORY_ROAD_2F_TM07                          0x1AC
 #define FLAG_HIDE_VICTORY_ROAD_2F_FULL_HEAL                     0x1AD
 #define FLAG_HIDE_VICTORY_ROAD_2F_TM37                          0x1AE
@@ -463,7 +463,7 @@
 #define FLAG_HIDE_THREE_ISLAND_ZINC                             0x1BB
 #define FLAG_0x1BC                                              0x1BC
 #define FLAG_0x1BD                                              0x1BD
-#define FLAG_HIDE_VIRIDIAN_FOREST_POTION_2                      0x1BE
+#define FLAG_HIDE_VIRIDIAN_FOREST_SHED_SHELL                    0x1BE
 #define FLAG_HIDE_MT_MOON_B2F_REVIVE                            0x1BF
 #define FLAG_HIDE_MT_MOON_B2F_ANTIDOTE                          0x1C0
 #define FLAG_HIDE_ROUTE11_X_DEFEND                              0x1C1
@@ -474,8 +474,8 @@
 #define FLAG_HIDE_ROCK_TUNNEL_B1F_REVIVE                        0x1C6
 #define FLAG_HIDE_ROCK_TUNNEL_B1F_MAX_ETHER                     0x1C7
 #define FLAG_HIDE_SILPH_CO_8F_IRON                              0x1C8
-#define FLAG_HIDE_SILPH_CO_11F_ZINC                             0x1C9
-#define FLAG_HIDE_POKEMON_MANSION_1F_PROTEIN                    0x1CA
+#define FLAG_HIDE_SILPH_CO_11F_UPGRADE                          0x1C9
+#define FLAG_HIDE_POKEMON_MANSION_1F_CHARCOAL                   0x1CA
 #define FLAG_HIDE_POKEMON_MANSION_2F_ZINC                       0x1CB
 #define FLAG_HIDE_POKEMON_MANSION_2F_HP_UP                      0x1CC
 #define FLAG_HIDE_VIRIDIAN_CITY_POTION                          0x1CD
@@ -497,14 +497,14 @@
 #define FLAG_HIDE_ONE_ISLAND_KINDLE_ROAD_CARBOS                 0x1DD
 #define FLAG_HIDE_FIVE_ISLAND_MEADOW_MAX_POTION                 0x1DE
 #define FLAG_HIDE_FIVE_ISLAND_MEADOW_PP_UP                      0x1DF
-#define FLAG_HIDE_FIVE_ISLAND_MEMORIAL_PILLAR_METAL_COAT        0x1E0
+#define FLAG_HIDE_FIVE_ISLAND_MEMORIAL_PILLAR_BOTTLE_CAP        0x1E0
 #define FLAG_HIDE_SIX_ISLAND_OUTCAST_ISLAND_PP_UP               0x1E1
 #define FLAG_HIDE_SIX_ISLAND_WATER_PATH_ELIXIR                  0x1E2
-#define FLAG_HIDE_SIX_ISLAND_WATER_PATH_DRAGON_SCALE            0x1E3
+#define FLAG_HIDE_SIX_ISLAND_WATER_PATH_GOLD_BOTTLE_CAP         0x1E3
 #define FLAG_HIDE_SIX_ISLAND_RUIN_VALLEY_FULL_RESTORE           0x1E4
 #define FLAG_HIDE_SIX_ISLAND_RUIN_VALLEY_HP_UP                  0x1E5
 #define FLAG_HIDE_SIX_ISLAND_RUIN_VALLEY_SUN_STONE              0x1E6
-#define FLAG_HIDE_SEVEN_ISLAND_SEVAULT_CANYON_KINGS_ROCK        0x1E7
+#define FLAG_HIDE_SEVEN_ISLAND_SEVAULT_CANYON_ABILITY_PATCH     0x1E7
 #define FLAG_HIDE_SEVEN_ISLAND_SEVAULT_CANYON_MAX_ELIXIR        0x1E8
 #define FLAG_HIDE_SEVEN_ISLAND_SEVAULT_CANYON_NUGGET            0x1E9
 #define FLAG_HIDE_THREE_ISLAND_BERRY_FOREST_MAX_ETHER           0x1EA
@@ -518,9 +518,9 @@
 #define FLAG_HIDE_FOUR_ISLAND_ICEFALL_CAVE_B1F_FULL_RESTORE     0x1F2
 #define FLAG_HIDE_FOUR_ISLAND_ICEFALL_CAVE_B1F_NEVER_MELT_ICE   0x1F3
 #define FLAG_HIDE_FIVE_ISLAND_ROCKET_WAREHOUSE_BIG_PEARL        0x1F4
-#define FLAG_HIDE_FIVE_ISLAND_ROCKET_WAREHOUSE_TM36             0x1F5
+#define FLAG_HIDE_FIVE_ISLAND_ROCKET_WAREHOUSE_ABILITY_CAPSULE  0x1F5
 #define FLAG_HIDE_FIVE_ISLAND_ROCKET_WAREHOUSE_PEARL            0x1F6
-#define FLAG_HIDE_FIVE_ISLAND_ROCKET_WAREHOUSE_UP_GRADE         0x1F7
+#define FLAG_HIDE_FIVE_ISLAND_ROCKET_WAREHOUSE_BOTTLE_CAP       0x1F7
 #define FLAG_HIDE_FIVE_ISLAND_LOST_CAVE_ROOM10_SILK_SCARF       0x1F8
 #define FLAG_HIDE_FIVE_ISLAND_LOST_CAVE_ROOM11_LAX_INCENSE      0x1F9
 #define FLAG_HIDE_FIVE_ISLAND_LOST_CAVE_ROOM12_SEA_INCENSE      0x1FA

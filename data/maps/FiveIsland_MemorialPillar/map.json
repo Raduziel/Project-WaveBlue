@@ -89,8 +89,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "FiveIsland_MemorialPillar_EventScript_ItemMetalCoat",
-      "flag": "FLAG_HIDE_FIVE_ISLAND_MEMORIAL_PILLAR_METAL_COAT"
+      "script": "FiveIsland_MemorialPillar_EventScript_ItemBottleCap",
+      "flag": "FLAG_HIDE_FIVE_ISLAND_MEMORIAL_PILLAR_BOTTLE_CAP"
     }
   ],
   "warp_events": [],

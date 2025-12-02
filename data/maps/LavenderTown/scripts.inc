@@ -1,12 +1,63 @@
 LavenderTown_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, LavenderTown_OnTransition
-	.byte 0
+    map_script MAP_SCRIPT_ON_TRANSITION, LavenderTown_OnTransition
+    .byte 0
 
 LavenderTown_OnTransition::
 	setworldmapflag FLAG_WORLD_MAP_LAVENDER_TOWN
 	setvar VAR_MAP_SCENE_S_S_ANNE_2F_CORRIDOR, 1
 	setflag FLAG_HIDE_SS_ANNE_RIVAL
-	end
+    compare VAR_LAVENDER_AIR_BALLOON, 1
+    goto_if_eq LavenderTown_EventScript_SetRefusedState
+    setflag FLAG_HIDE_LAVENDER_TOWN_AIR_BALLOON
+    clearflag FLAG_HIDE_AIR_BALLOON_BOY
+    end
+	
+LavenderTown_EventScript_SetRefusedState::
+    setflag FLAG_HIDE_AIR_BALLOON_BOY
+    clearflag FLAG_HIDE_LAVENDER_TOWN_AIR_BALLOON
+    end
+
+ LavenderTown_EventScript_AirBalloonBoy::
+    lock
+    faceplayer
+    compare VAR_LAVENDER_AIR_BALLOON, 2
+    goto_if_eq LavenderTown_EventScript_BoyHappy
+    compare VAR_LAVENDER_AIR_BALLOON, 1
+    goto_if_eq LavenderTown_EventScript_BoyChangedMind
+    msgbox LavenderTown_Text_ScaredOfDrifloon, MSGBOX_YESNO
+    goto_if_eq VAR_RESULT, YES, LavenderTown_EventScript_GiveBalloon
+    goto_if_eq VAR_RESULT, NO, LavenderTown_EventScript_RefuseBalloon
+    end
+
+LavenderTown_EventScript_BoyChangedMind::
+    msgbox LavenderTown_Text_ChangedMind, MSGBOX_YESNO
+    goto_if_eq VAR_RESULT, YES, LavenderTown_EventScript_GiveBalloon
+    goto_if_eq VAR_RESULT, NO, LavenderTown_EventScript_RefuseBalloon
+    end
+
+LavenderTown_EventScript_GiveBalloon::
+    checkitemspace ITEM_AIR_BALLOON, 1
+    goto_if_eq VAR_RESULT, FALSE, LavenderTown_EventScript_BagFull
+    giveitem ITEM_AIR_BALLOON
+    setvar VAR_LAVENDER_AIR_BALLOON, 2
+    msgbox LavenderTown_Text_FeelSafeNow, MSGBOX_DEFAULT
+    release
+    end
+
+LavenderTown_EventScript_RefuseBalloon::
+    setvar VAR_LAVENDER_AIR_BALLOON, 1
+    msgbox LavenderTown_Text_StuckWithIt, MSGBOX_DEFAULT
+    release
+    end
+
+LavenderTown_EventScript_BoyHappy::
+    msgbox LavenderTown_Text_GladYouTookIt, MSGBOX_NPC
+    end
+
+LavenderTown_EventScript_BagFull::
+    msgbox LavenderTown_Text_NoRoomForBalloon, MSGBOX_DEFAULT
+    release
+    end
 
 LavenderTown_EventScript_LittleGirl::
 	lock

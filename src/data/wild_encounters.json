@@ -5071,7 +5071,7 @@
               {
                 "min_level": 16,
                 "max_level": 16,
-                "species": "SPECIES_ZUBAT"
+                "species": "SPECIES_TYROGUE"
               },
               {
                 "min_level": 16,
@@ -5229,7 +5229,7 @@
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_TYROGUE"
               },
               {
                 "min_level": 15,
@@ -5239,7 +5239,7 @@
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_GEODUDE"
+                "species": "SPECIES_TYROGUE"
               },
               {
                 "min_level": 17,
@@ -18349,8 +18349,8 @@
                 "species": "SPECIES_SPEAROW"
               },
               {
-                "min_level": 11,
-                "max_level": 11,
+                "min_level": 15,
+                "max_level": 15,
                 "species": "SPECIES_DROWZEE"
               },
               {
@@ -18376,7 +18376,7 @@
               {
                 "min_level": 15,
                 "max_level": 15,
-                "species": "SPECIES_DROWZEE"
+                "species": "SPECIES_MR_MIME"
               },
               {
                 "min_level": 14,
@@ -18384,9 +18384,9 @@
                 "species": "SPECIES_EKANS"
               },
               {
-                "min_level": 15,
-                "max_level": 15,
-                "species": "SPECIES_DROWZEE"
+                "min_level": 11,
+                "max_level": 11,
+                "species": "SPECIES_MIME_JR"
               }
             ]
           },
@@ -18654,7 +18654,7 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_PIDGEY"
+                "species": "SPECIES_FARFETCHD"
               },
               {
                 "min_level": 25,
@@ -18967,7 +18967,7 @@
               {
                 "min_level": 25,
                 "max_level": 25,
-                "species": "SPECIES_PIDGEY"
+                "species": "SPECIES_FARFETCHD"
               },
               {
                 "min_level": 26,
@@ -19433,7 +19433,7 @@
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_FARFETCHD"
+                "species": "SPECIES_VENONAT"
               },
               {
                 "min_level": 28,
@@ -19443,7 +19443,7 @@
               {
                 "min_level": 29,
                 "max_level": 29,
-                "species": "SPECIES_FARFETCHD"
+                "species": "SPECIES_VENONAT"
               },
               {
                 "min_level": 30,
@@ -20306,7 +20306,7 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_MR_MIME"
+                "species": "SPECIES_TANGELA"
               },
               {
                 "min_level": 24,
@@ -20341,7 +20341,7 @@
               {
                 "min_level": 18,
                 "max_level": 18,
-                "species": "SPECIES_MIME_JR"
+                "species": "SPECIES_TANGELA"
               },
               {
                 "min_level": 27,
@@ -20351,7 +20351,7 @@
               {
                 "min_level": 18,
                 "max_level": 18,
-                "species": "SPECIES_MIME_JR"
+                "species": "SPECIES_TANGELA"
               },
               {
                 "min_level": 28,
@@ -20614,7 +20614,7 @@
               {
                 "min_level": 23,
                 "max_level": 23,
-                "species": "SPECIES_MR_MIME"
+                "species": "SPECIES_TANGELA"
               },
               {
                 "min_level": 24,
@@ -20649,7 +20649,7 @@
               {
                 "min_level": 18,
                 "max_level": 18,
-                "species": "SPECIES_MIME_JR"
+                "species": "SPECIES_TANGELA"
               },
               {
                 "min_level": 27,
@@ -20659,7 +20659,7 @@
               {
                 "min_level": 18,
                 "max_level": 18,
-                "species": "SPECIES_MIME_JR"
+                "species": "SPECIES_TANGELA"
               },
               {
                 "min_level": 28,

@@ -227,6 +227,7 @@ static const struct MenuAction sMultichoiceList_CeladonVendingMachine[] = {
     { gOtherText_Exit }
 };
 
+/*
 static const struct MenuAction sMultichoiceList_GameCornerTMPrizes[] = {
     { gText_Tm13_4000Coins },
     { gText_Tm23_3500Coins },
@@ -243,6 +244,37 @@ static const struct MenuAction sMultichoiceList_GameCornerBattleItemPrizes[] = {
     { gText_MysticWater_1000Coins },
     { gText_YellowFlute_1600Coins },
     { gText_NoThanks_2 }
+};
+*/
+
+static const struct MenuAction sMultichoiceList_GameCornerClerkLeft[] = {
+    { gText_ChoiceBand_7500 },
+    { gText_ChoiceSpecs_7500 },
+    { gText_ChoiceScarf_7500 },
+    { gText_AssaultVest_6500 },
+    { gText_LifeOrb_7500 },
+    { gText_Eviolite_6500 },
+    { gText_WeaknessPol_4000 },
+    { gText_ScopeLens_4000 },
+    { gText_LoadedDice_5000 },
+    { gText_FlameOrb_2000 },
+    { gText_ToxicOrb_2000 },
+    { gText_Exit }
+};
+
+static const struct MenuAction sMultichoiceList_GameCornerClerkRight[] = {
+    { gText_FocusSash_4000 },
+    { gText_BrightPowder_1000 },
+    { gText_MuscleBand_2000 },
+    { gText_WiseGlasses_2000 },
+    { gText_PunchGlove_1000 },
+    { gText_Metronome_4000 },
+    { gText_CovertCloak_4000 },
+    { gText_WideLens_2000 },
+    { gText_ShellBell_2000 },
+    { gText_ThroatSpray_2000 },
+    { gText_LightClay_4000 },
+    { gText_Exit }
 };
 
 static const struct MenuAction sMultichoiceList_GameCornerCoinPurchaseCounter[] = {
@@ -381,13 +413,13 @@ static const struct MenuAction sMultichoiceList_BikeShop[] = {
 };
 
 static const struct MenuAction sMultichoiceList_GameCornerPokemonPrizes[] = { 
-    { gText_MrMime_5500Coins },
-    { gText_Jynx_5500Coins },
-    { gText_Pinsir_5500Coins },
-    { gText_Eevee_3000Coins },
-    { gText_Dratini_8000Coins },
-    { gText_Scyther_5500Coins },
-    { gText_Porygon_6500Coins },
+    { gText_MrMime_5500 },
+    { gText_Jynx_5500 },
+    { gText_Pinsir_5500 },
+    { gText_Eevee_3000 },
+    { gText_Dratini_8000 },
+    { gText_Scyther_5500 },
+    { gText_Porygon_6500 },
     { gText_NoThanks_2 }
 };
 
@@ -603,7 +635,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] = {
     [MULTICHOICE_GAME_CORNER_COIN_PURCHASE_COUNTER]          = MULTICHOICE(sMultichoiceList_GameCornerCoinPurchaseCounter),
     [MULTICHOICE_EXCELLENT_NOT_SO_BAD]                       = MULTICHOICE(sMultichoiceList_Excellent_NotSoBad),
     [MULTICHOICE_RIGHT_LEFT]                                 = MULTICHOICE(sMultichoiceList_RightLeft),
-    [MULTICHOICE_GAME_CORNER_TMPRIZES]                       = MULTICHOICE(sMultichoiceList_GameCornerTMPrizes),
+//  [MULTICHOICE_GAME_CORNER_TMPRIZES]                       = MULTICHOICE(sMultichoiceList_GameCornerTMPrizes),
     [MULTICHOICE_DEPT_STORE_ELEVATOR]                        = MULTICHOICE(sMultichoiceList_DeptStoreElevator),
     [MULTICHOICE_THIRSTY_GIRL_FRESH_WATER]                   = MULTICHOICE(sMultichoiceList_ThirstyGirlFreshWater),
     [MULTICHOICE_THIRSTY_GIRL_SODA_POP]                      = MULTICHOICE(sMultichoiceList_ThirstyGirlSodaPop),
@@ -614,7 +646,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] = {
     [MULTICHOICE_THIRSTY_GIRL_FRESH_WATER_SODA_POP_LEMONADE] = MULTICHOICE(sMultichoiceList_ThirstyGirlFreshWaterSodaPopLemonade),
     [MULTICHOICE_TRADE_CENTER_COLOSSEUM]                     = MULTICHOICE(sMultichoiceList_TradeCenter_Colosseum),
     [MULTICHOICE_LINK_WIRELESS]                              = MULTICHOICE(sMultichoiceList_Link_Wireless),
-    [MULTICHOICE_GAME_CORNER_BATTLE_ITEM_PRIZES]             = MULTICHOICE(sMultichoiceList_GameCornerBattleItemPrizes),
+//  [MULTICHOICE_GAME_CORNER_BATTLE_ITEM_PRIZES]             = MULTICHOICE(sMultichoiceList_GameCornerBattleItemPrizes),
     [MULTICHOICE_ROCKET_HIDEOUT_ELEVATOR]                    = MULTICHOICE(sMultichoiceList_RocketHideoutElevator),
     [MULTICHOICE_LINKED_DIRECT_UNION]                        = MULTICHOICE(sMultichoiceList_LinkedDirectUnion),
     [MULTICHOICE_ISLAND_23]                                  = MULTICHOICE(sMultichoiceList_Island23),
@@ -640,6 +672,8 @@ static const struct MultichoiceListStruct sMultichoiceLists[] = {
     [MULTICHOICE_TRAINER_TOWER_MODE]                         = MULTICHOICE(sMultichoiceList_TrainerTowerMode),
     [MULTICHOICE_HYPER_CAP_CHOICE]                           = MULTICHOICE(sMultichoiceList_HyperCapChoice),
     [MULTICHOICE_HYPER_STATS]                                = MULTICHOICE(sMultichoiceList_HyperStats),
+    [MULTICHOICE_GAME_CORNER_CLERK_LEFT]                     = MULTICHOICE(sMultichoiceList_GameCornerClerkLeft),
+    [MULTICHOICE_GAME_CORNER_CLERK_RIGHT]                    = MULTICHOICE(sMultichoiceList_GameCornerClerkRight),
 };
 
 // From Cool to Berries goes unused

@@ -1,3 +1,30 @@
+LavenderTown_Text_ScaredOfDrifloon::
+    .string "I heard about a POKéMON called\n"
+    .string "DRIFLOON that carries kids away...\p"
+    .string "Now I'm too scared to play with\n"
+    .string "my AIR BALLOON.\p"
+    .string "Could you please take it away?$"
+
+LavenderTown_Text_ChangedMind::
+    .string "Oh! You changed your mind about\n"
+    .string "accepting the AIR BALLOON?$"
+
+LavenderTown_Text_FeelSafeNow::
+    .string "Thanks!\n"
+    .string "I feel much safer without it!$"
+
+LavenderTown_Text_StuckWithIt::
+    .string "Oh...\n"
+    .string "I guess I'll have to live with it...$"
+
+LavenderTown_Text_GladYouTookIt::
+    .string "I'm glad you took that AIR BALLOON\n"
+    .string "away. No DRIFLOON will catch me!$"
+
+LavenderTown_Text_NoRoomForBalloon::
+    .string "You don't have space for this.\n"
+    .string "Please make some room quickly!$"
+
 LavenderTown_Text_DoYouBelieveInGhosts::
     .string "Do you believe in ghosts?$"
 
