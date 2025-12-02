@@ -233,11 +233,11 @@
 #define FLAG_HIDE_VICTORY_ROAD_1F_EXPERT_BELT            0x0D7
 #define FLAG_HIDE_ROUTE14_POISON_BARB                    0x0D8
 #define FLAG_HIDE_THREE_ISLAND_BERRY_FOREST_LAGGING_TAIL 0x0D9
-#define FLAG_0x0DA                 0x0DA
-#define FLAG_0x0DB                 0x0DB
-#define FLAG_0x0DC                 0x0DC
-#define FLAG_0x0DD                 0x0DD
-#define FLAG_0x0DE                 0x0DE
+#define P_FLAG_TUTOR_MOVES                               0x0DA
+#define FLAG_GOT_MT_MOON_OTHER_FOSSIL                    0x0DB
+#define FLAG_HIDE_POSTGAME_STARTER_1                     0x0DC
+#define FLAG_HIDE_POSTGAME_STARTER_2                     0x0DD
+#define FLAG_POSTGAME_STARTERS_UNLOCKED                  0x0DE
 #define FLAG_0x0DF                 0x0DF
 #define FLAG_0x0E0                 0x0E0
 #define FLAG_0x0E1                 0x0E1

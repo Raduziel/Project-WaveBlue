@@ -52,3 +52,26 @@ PewterCity_Museum_1F_Text_MeteoriteThatFellOnMtMoon::
     .string "A meteorite that fell on MT. MOON.\n"
     .string "It is thought to be a MOON STONE.$"
 
+PewterCity_Museum_2F_Text_RumorsOfFossils:
+    .string "There are rumors that rare POKéMON\n"
+    .string "fossils can be found in MT. MOON.\p"
+    .string "I would love to study one someday.$"
+
+PewterCity_Museum_2F_Text_YouHaveDomeTakeHelix:
+    .string "Wait! That IS a Dome Fossil!\n"
+    .string "Incredible!\p"
+    .string "Since you appreciate history,\n"
+    .string "please take this Helix Fossil too.$"
+
+PewterCity_Museum_2F_Text_YouHaveHelixTakeDome:
+    .string "Wait! That IS a Helix Fossil!\n"
+    .string "Incredible!\p"
+    .string "Since you appreciate history,\n"
+    .string "please take this Dome Fossil too.$"
+
+PewterCity_Museum_2F_Text_PreserveFossils:
+    .string "Fossils are a bridge to the past.\n"
+    .string "Please treat them with care.$"
+
+PewterCity_Museum_2F_Text_BagFull:
+    .string "You have no room for this.$"
