@@ -15,15 +15,15 @@ PalletTown_PlayersHouse_2F_Text_BillLetter:
     .string "I'm curious how you would raise\n"
     .string "these two.\p"
     .string "Take care of them and do your best!”\n"
-    .string "- BILL$"
+    .string "- Bill$"
 
 PalletTown_PlayersHouse_2F_Text_ObtainedStarter:
     .string "{PLAYER} obtained the {STR_VAR_1}!$"
 
 PalletTown_PlayersHouse_2F_Text_TransferredToPC:
     .string "The {STR_VAR_1} was sent to\n"
-    .string "BILL's PC.$"
+    .string "Bill's PC.$"
 
 PalletTown_PlayersHouse_2F_Text_NoRoom:
     .string "There is no more room for\n"
-    .string "any more POKéMON.$"
+    .string "any more Pokémon.$"

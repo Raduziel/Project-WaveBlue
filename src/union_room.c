@@ -194,7 +194,7 @@ static EWRAM_DATA u8 sPlayerCurrActivity = 0;
 static EWRAM_DATA u8 sPlayerActivityGroupSize = 0;
 static EWRAM_DATA union
 {
-    struct WirelessLink_Leader *leader;
+    struct WirelessLink_Leader *Leader;
     struct WirelessLink_Group *group;
     struct WirelessLink_URoom *uRoom;
 } sWirelessLinkMain = {};
@@ -363,7 +363,7 @@ void TryBecomeLinkLeader(void)
     struct WirelessLink_Leader * data;
 
     taskId = CreateTask(Task_TryBecomeLinkLeader, 0);
-    sWirelessLinkMain.leader = data = (void *)(gTasks[taskId].data);
+    sWirelessLinkMain.Leader = data = (void *)(gTasks[taskId].data);
     sLeader = data;
 
     data->state = LL_STATE_INIT;
@@ -374,7 +374,7 @@ void TryBecomeLinkLeader(void)
 static void Task_TryBecomeLinkLeader(u8 taskId)
 {
     u32 id, val;
-    struct WirelessLink_Leader * data = sWirelessLinkMain.leader;
+    struct WirelessLink_Leader * data = sWirelessLinkMain.Leader;
 
     switch (data->state)
     {
@@ -791,7 +791,7 @@ static bool8 Leader_SetStateIfMemberListChanged(struct WirelessLink_Leader * dat
 
 static void ItemPrintFunc_PossibleGroupMembers(u8 windowId, u32 id, u8 y)
 {
-    struct WirelessLink_Leader * data = sWirelessLinkMain.leader;
+    struct WirelessLink_Leader * data = sWirelessLinkMain.Leader;
     u8 colorIdx = UR_COLOR_DEFAULT;
 
     switch (data->playerList->players[id].groupScheduledAnim)
@@ -810,7 +810,7 @@ static void ItemPrintFunc_PossibleGroupMembers(u8 windowId, u32 id, u8 y)
 
 static u8 LeaderUpdateGroupMembership(struct RfuPlayerList * list)
 {
-    struct WirelessLink_Leader * data = sWirelessLinkMain.leader;
+    struct WirelessLink_Leader * data = sWirelessLinkMain.Leader;
     u8 ret = UNION_ROOM_SPAWN_NONE;
     u8 i;
     s32 id;
@@ -853,7 +853,7 @@ static u8 LeaderUpdateGroupMembership(struct RfuPlayerList * list)
 
 static u8 LeaderPrunePlayerList(struct RfuPlayerList * list)
 {
-    struct WirelessLink_Leader * data = sWirelessLinkMain.leader;
+    struct WirelessLink_Leader * data = sWirelessLinkMain.Leader;
     u8 copiedCount;
     s32 i;
     u8 playerCount;
@@ -1686,7 +1686,7 @@ void CreateTask_SendMysteryGift(u32 activity)
     struct WirelessLink_Leader * data;
 
     taskId = CreateTask(Task_SendMysteryGift, 0);
-    sWirelessLinkMain.leader = data = (void *)(gTasks[taskId].data);
+    sWirelessLinkMain.Leader = data = (void *)(gTasks[taskId].data);
 
     data->state = 0;
     data->textState = 0;
@@ -1696,7 +1696,7 @@ void CreateTask_SendMysteryGift(u32 activity)
 
 static void Task_SendMysteryGift(u8 taskId)
 {
-    struct WirelessLink_Leader * data = sWirelessLinkMain.leader;
+    struct WirelessLink_Leader * data = sWirelessLinkMain.Leader;
     struct WindowTemplate winTemplate;
     s32 val;
 
@@ -3934,7 +3934,7 @@ static void TradeBoardPrintItemInfo(u8 windowId, u8 y, struct RfuGameData * data
 
 static void TradeBoardListMenuItemPrintFunc(u8 windowId, u32 itemId, u8 y)
 {
-    struct WirelessLink_Leader * leader = sWirelessLinkMain.leader;
+    struct WirelessLink_Leader * Leader = sWirelessLinkMain.Leader;
     struct RfuGameData * gameData;
     s32 i, j;
     u8 playerName[RFU_USER_NAME_LENGTH];
@@ -3950,13 +3950,13 @@ static void TradeBoardListMenuItemPrintFunc(u8 windowId, u32 itemId, u8 y)
         j = 0;
         for (i = 0; i < MAX_UNION_ROOM_LEADERS; i++)
         {
-            if (leader->playerList->players[i].groupScheduledAnim == UNION_ROOM_SPAWN_IN && leader->playerList->players[i].rfu.data.tradeSpecies != SPECIES_NONE)
+            if (Leader->playerList->players[i].groupScheduledAnim == UNION_ROOM_SPAWN_IN && Leader->playerList->players[i].rfu.data.tradeSpecies != SPECIES_NONE)
                 j++;
 
             if (j == itemId + 1)
             {
-                CopyAndTranslatePlayerName2(playerName, leader->playerList->players[i]);
-                TradeBoardPrintItemInfo(windowId, y, &leader->playerList->players[i].rfu.data, playerName, UR_COLOR_TRADE_BOARD_OTHER);
+                CopyAndTranslatePlayerName2(playerName, Leader->playerList->players[i]);
+                TradeBoardPrintItemInfo(windowId, y, &Leader->playerList->players[i].rfu.data, playerName, UR_COLOR_TRADE_BOARD_OTHER);
                 break;
             }
         }

@@ -6353,7 +6353,7 @@ Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_BOSS_GIOVANNI ===
-Name: GIOVANNI
+Name: Giovanni
 Class: Boss
 Pic: Leader Giovanni
 Gender: Male
@@ -6374,7 +6374,7 @@ Level: 29
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 
 === TRAINER_BOSS_GIOVANNI_2 ===
-Name: GIOVANNI
+Name: Giovanni
 Class: Boss
 Pic: Leader Giovanni
 Gender: Male
@@ -6399,7 +6399,7 @@ Level: 41
 IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 
 === TRAINER_LEADER_GIOVANNI ===
-Name: GIOVANNI
+Name: Giovanni
 Class: Leader
 Pic: Leader Giovanni
 Gender: Male
@@ -8207,7 +8207,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Double Team
 
 === TRAINER_ELITE_FOUR_LORELEI ===
-Name: LORELEI
+Name: Lorelei
 Class: Elite Four
 Pic: Elite Four Lorelei
 Gender: Male
@@ -8258,7 +8258,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Body Slam
 
 === TRAINER_ELITE_FOUR_BRUNO ===
-Name: BRUNO
+Name: Bruno
 Class: Elite Four
 Pic: Elite Four Bruno
 Gender: Male
@@ -8309,7 +8309,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Rock Tomb
 
 === TRAINER_ELITE_FOUR_AGATHA ===
-Name: AGATHA
+Name: Agatha
 Class: Elite Four
 Pic: Elite Four Agatha
 Gender: Male
@@ -8360,7 +8360,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Nightmare
 
 === TRAINER_ELITE_FOUR_LANCE ===
-Name: LANCE
+Name: Lance
 Class: Elite Four
 Pic: Elite Four Lance
 Gender: Male
@@ -8411,7 +8411,7 @@ IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
 - Wing Attack
 
 === TRAINER_LEADER_BROCK ===
-Name: BROCK
+Name: Brock
 Class: Leader
 Pic: Leader Brock
 Gender: Male
@@ -8433,7 +8433,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Rock Tomb
 
 === TRAINER_LEADER_MISTY ===
-Name: MISTY
+Name: Misty
 Class: Leader
 Pic: Leader Misty
 Gender: Male
@@ -8459,7 +8459,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Water Pulse
 
 === TRAINER_LEADER_LT_SURGE ===
-Name: LT. SURGE
+Name: Lt. Surge
 Class: Leader
 Pic: Leader Lt Surge
 Gender: Male
@@ -8493,7 +8493,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Shock Wave
 
 === TRAINER_LEADER_ERIKA ===
-Name: ERIKA
+Name: Erika
 Class: Leader
 Pic: Leader Erika
 Gender: Male
@@ -8527,7 +8527,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Giga Drain
 
 === TRAINER_LEADER_KOGA ===
-Name: KOGA
+Name: Koga
 Class: Leader
 Pic: Leader Koga
 Gender: Male
@@ -8569,7 +8569,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Toxic
 
 === TRAINER_LEADER_BLAINE ===
-Name: BLAINE
+Name: Blaine
 Class: Leader
 Pic: Leader Blaine
 Gender: Male
@@ -8611,7 +8611,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 - Fire Blast
 
 === TRAINER_LEADER_SABRINA ===
-Name: SABRINA
+Name: Sabrina
 Class: Leader
 Pic: Leader Sabrina
 Gender: Male
@@ -10050,7 +10050,7 @@ Level: 17
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TWINS_ELI_ANNE ===
-Name: ELI & ANNE
+Name: ELI & Anne
 Class: Twins
 Pic: Twins
 Gender: Male
@@ -10505,7 +10505,7 @@ Level: 25
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
 === TRAINER_PKMN_PROF_PROF_OAK ===
-Name: PROF. OAK
+Name: Prof. Oak
 Class: Pkmn Prof
 Pic: Professor Oak
 Gender: Male
@@ -10787,7 +10787,7 @@ Level: 50
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PAINTER_DAISY ===
-Name: DAISY
+Name: Daisy
 Class: Painter
 Pic: Painter
 Gender: Male
@@ -10910,7 +10910,7 @@ Level: 7
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TWINS_ELI_ANNE_2 ===
-Name: ELI & ANNE
+Name: ELI & Anne
 Class: Twins
 Pic: Twins
 Gender: Male
@@ -15022,7 +15022,7 @@ Level: 49
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_ELITE_FOUR_LORELEI_2 ===
-Name: LORELEI
+Name: Lorelei
 Class: Elite Four
 Pic: Elite Four Lorelei
 Gender: Male
@@ -15073,7 +15073,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Thunder
 
 === TRAINER_ELITE_FOUR_BRUNO_2 ===
-Name: BRUNO
+Name: Bruno
 Class: Elite Four
 Pic: Elite Four Bruno
 Gender: Male
@@ -15124,7 +15124,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Rock Slide
 
 === TRAINER_ELITE_FOUR_AGATHA_2 ===
-Name: AGATHA
+Name: Agatha
 Class: Elite Four
 Pic: Elite Four Agatha
 Gender: Male
@@ -15175,7 +15175,7 @@ IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Sludge Bomb
 
 === TRAINER_ELITE_FOUR_LANCE_2 ===
-Name: LANCE
+Name: Lance
 Class: Elite Four
 Pic: Elite Four Lance
 Gender: Male

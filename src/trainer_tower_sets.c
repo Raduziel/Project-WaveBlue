@@ -484,7 +484,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_5 = {
 	.prize = TTPRIZE_CHOICE_BAND,
 	.trainers = {
 	    {
-			.name = _("JOS & ANNE"),
+			.name = _("JOS & Anne"),
 			.facilityClass = FACILITY_CLASS_COOL_COUPLE,
 			.textColor = 7,
 			.speechBefore = {EC_WORD_I, EC_WORD_CAN_T, EC_WORD_LOSE, EC_WORD_TO, EC_WORD_YOU, EC_WORD_HERE},
@@ -627,7 +627,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_5 = {
 			}
 		},
 		{
-			.name = _("JOS & ANNE"),
+			.name = _("JOS & Anne"),
 			.facilityClass = FACILITY_CLASS_COOL_COUPLE,
 			.textColor = 7,
 			.speechBefore = {EC_WORD_HERE_GOES, EC_WORD_EXCL_EXCL, EC_WORD_GET, EC_WORD_READY, EC_WORD_TO, EC_WORD_LOSE},

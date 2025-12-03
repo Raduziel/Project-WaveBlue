@@ -5,10 +5,10 @@ CeladonCity_DepartmentStore_4F_Text_GettingPokeDollAsPresent::
     .string "much of a gambler.$"
 
 CeladonCity_DepartmentStore_4F_Text_CanRunAwayWithPokeDoll::
-    .string "Thanks to ERIKA and the ladies\n"
-    .string "from the GYM, we have access to\p"
+    .string "Thanks to Erika and the ladies\n"
+    .string "from the Gym, we have access to\p"
     .string "a lot of berries, seeds, and\n"
-    .string "herbs here in CELADON.$"
+    .string "herbs here in Celadon.$"
 
 CeladonCity_DepartmentStore_4F_Text_FloorSign::
     .string "Express yourself with gifts!\n"

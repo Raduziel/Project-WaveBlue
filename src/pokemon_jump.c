@@ -646,7 +646,7 @@ static void Task_StaticCountdown_Start(u8 taskId)
 }
 
 // Increment timer for progressing the countdown.
-// If the player is the link leader, increment a
+// If the player is the link Leader, increment a
 // separate timer and send it to group members for
 // them to read and use.
 static void Task_StaticCountdown_Run(u8 taskId)
@@ -662,7 +662,7 @@ static void Task_StaticCountdown_Run(u8 taskId)
 
         if (GetMultiplayerId() == 0)
         {
-            // Player is link leader.
+            // Player is link Leader.
             // Send timer to group members
             tLinkTimer++;
             memset(packet, 0, sizeof(packet));
@@ -2597,7 +2597,7 @@ static void SendPacket_LeaderState(struct PokemonJump_Player *player, struct Pok
     Rfu_SendPacket(&packet);
 }
 
-// Used by group members to read the state of the group leader
+// Used by group members to read the state of the group Leader
 static bool32 RecvPacket_LeaderState(struct PokemonJump_Player *player, struct PokemonJump_CommData *comm)
 {
     struct LeaderStatePacket packet;
@@ -2644,7 +2644,7 @@ static void SendPacket_MemberState(struct PokemonJump_Player *player, u8 funcId,
     Rfu_SendPacket(&packet);
 }
 
-// Used by the group leader to read the state of group members
+// Used by the group Leader to read the state of group members
 static bool32 RecvPacket_MemberStateToLeader(struct PokemonJump_Player *player, int multiplayerId, u8 *funcId, u16 *playAgainState)
 {
     struct MemberStatePacket packet;

@@ -1381,7 +1381,7 @@ const struct SpriteTemplate gGrassyTerrainStarTemplate =
     .callback = AnimOrbitScatter
 };
 
-//misty terrain
+//Misty terrain
 const struct SpriteTemplate gMistyTerrainOrbsTemplate =
 {
     .tileTag = ANIM_TAG_ORBS,

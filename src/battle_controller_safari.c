@@ -100,7 +100,7 @@ static void (*const sSafariBufferCommands[CONTROLLER_CMDS_COUNT])(u32 battler) =
 };
 
 static const u8 sText_WhatWillPlayerThrow[] = _("What will {B_PLAYER_NAME}\nthrow?");
-static const u8 sText_SafariZoneMenu[] = _("{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW 13 14 15}BALL{CLEAR_TO 56}BAIT\nROCK{CLEAR_TO 56}RUN");
+static const u8 sText_SafariZoneMenu[] = _("{PALETTE 5}{COLOR_HIGHLIGHT_SHADOW 13 14 15}Ball{CLEAR_TO 56}BAIT\nROCK{CLEAR_TO 56}RUN");
 
 void SetControllerToSafari(u32 battler)
 {

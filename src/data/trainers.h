@@ -16587,7 +16587,7 @@
     [DIFFICULTY_NORMAL][TRAINER_BOSS_GIOVANNI] =
     {
 #line 6356
-        .trainerName = _("GIOVANNI"),
+        .trainerName = _("Giovanni"),
 #line 6357
         .trainerClass = TRAINER_CLASS_BOSS,
 #line 6358
@@ -16643,7 +16643,7 @@
     [DIFFICULTY_NORMAL][TRAINER_BOSS_GIOVANNI_2] =
     {
 #line 6377
-        .trainerName = _("GIOVANNI"),
+        .trainerName = _("Giovanni"),
 #line 6378
         .trainerClass = TRAINER_CLASS_BOSS,
 #line 6379
@@ -16710,7 +16710,7 @@
     [DIFFICULTY_NORMAL][TRAINER_LEADER_GIOVANNI] =
     {
 #line 6402
-        .trainerName = _("GIOVANNI"),
+        .trainerName = _("Giovanni"),
 #line 6403
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 6404
@@ -21132,7 +21132,7 @@
     [DIFFICULTY_NORMAL][TRAINER_ELITE_FOUR_LORELEI] =
     {
 #line 8210
-        .trainerName = _("LORELEI"),
+        .trainerName = _("Lorelei"),
 #line 8211
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
 #line 8212
@@ -21251,7 +21251,7 @@
     [DIFFICULTY_NORMAL][TRAINER_ELITE_FOUR_BRUNO] =
     {
 #line 8261
-        .trainerName = _("BRUNO"),
+        .trainerName = _("Bruno"),
 #line 8262
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
 #line 8263
@@ -21370,7 +21370,7 @@
     [DIFFICULTY_NORMAL][TRAINER_ELITE_FOUR_AGATHA] =
     {
 #line 8312
-        .trainerName = _("AGATHA"),
+        .trainerName = _("Agatha"),
 #line 8313
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
 #line 8314
@@ -21489,7 +21489,7 @@
     [DIFFICULTY_NORMAL][TRAINER_ELITE_FOUR_LANCE] =
     {
 #line 8363
-        .trainerName = _("LANCE"),
+        .trainerName = _("Lance"),
 #line 8364
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
 #line 8365
@@ -21608,7 +21608,7 @@
     [DIFFICULTY_NORMAL][TRAINER_LEADER_BROCK] =
     {
 #line 8414
-        .trainerName = _("BROCK"),
+        .trainerName = _("Brock"),
 #line 8415
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 8416
@@ -21664,7 +21664,7 @@
     [DIFFICULTY_NORMAL][TRAINER_LEADER_MISTY] =
     {
 #line 8436
-        .trainerName = _("MISTY"),
+        .trainerName = _("Misty"),
 #line 8437
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 8438
@@ -21725,7 +21725,7 @@
     [DIFFICULTY_NORMAL][TRAINER_LEADER_LT_SURGE] =
     {
 #line 8462
-        .trainerName = _("LT. SURGE"),
+        .trainerName = _("Lt. Surge"),
 #line 8463
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 8464
@@ -21804,7 +21804,7 @@
     [DIFFICULTY_NORMAL][TRAINER_LEADER_ERIKA] =
     {
 #line 8496
-        .trainerName = _("ERIKA"),
+        .trainerName = _("Erika"),
 #line 8497
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 8498
@@ -21883,7 +21883,7 @@
     [DIFFICULTY_NORMAL][TRAINER_LEADER_KOGA] =
     {
 #line 8530
-        .trainerName = _("KOGA"),
+        .trainerName = _("Koga"),
 #line 8531
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 8532
@@ -21980,7 +21980,7 @@
     [DIFFICULTY_NORMAL][TRAINER_LEADER_BLAINE] =
     {
 #line 8572
-        .trainerName = _("BLAINE"),
+        .trainerName = _("Blaine"),
 #line 8573
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 8574
@@ -22077,7 +22077,7 @@
     [DIFFICULTY_NORMAL][TRAINER_LEADER_SABRINA] =
     {
 #line 8614
-        .trainerName = _("SABRINA"),
+        .trainerName = _("Sabrina"),
 #line 8615
         .trainerClass = TRAINER_CLASS_LEADER,
 #line 8616
@@ -25751,7 +25751,7 @@
     [DIFFICULTY_NORMAL][TRAINER_TWINS_ELI_ANNE] =
     {
 #line 10053
-        .trainerName = _("ELI & ANNE"),
+        .trainerName = _("ELI & Anne"),
 #line 10054
         .trainerClass = TRAINER_CLASS_TWINS,
 #line 10055
@@ -26951,7 +26951,7 @@
     [DIFFICULTY_NORMAL][TRAINER_PKMN_PROF_PROF_OAK] =
     {
 #line 10508
-        .trainerName = _("PROF. OAK"),
+        .trainerName = _("Prof. Oak"),
 #line 10509
         .trainerClass = TRAINER_CLASS_PKMN_PROF,
 #line 10510
@@ -27678,7 +27678,7 @@
     [DIFFICULTY_NORMAL][TRAINER_PAINTER_DAISY] =
     {
 #line 10790
-        .trainerName = _("DAISY"),
+        .trainerName = _("Daisy"),
 #line 10791
         .trainerClass = TRAINER_CLASS_PAINTER,
 #line 10792
@@ -27988,7 +27988,7 @@
     [DIFFICULTY_NORMAL][TRAINER_TWINS_ELI_ANNE_2] =
     {
 #line 10913
-        .trainerName = _("ELI & ANNE"),
+        .trainerName = _("ELI & Anne"),
 #line 10914
         .trainerClass = TRAINER_CLASS_TWINS,
 #line 10915
@@ -38711,7 +38711,7 @@
     [DIFFICULTY_NORMAL][TRAINER_ELITE_FOUR_LORELEI_2] =
     {
 #line 15025
-        .trainerName = _("LORELEI"),
+        .trainerName = _("Lorelei"),
 #line 15026
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
 #line 15027
@@ -38830,7 +38830,7 @@
     [DIFFICULTY_NORMAL][TRAINER_ELITE_FOUR_BRUNO_2] =
     {
 #line 15076
-        .trainerName = _("BRUNO"),
+        .trainerName = _("Bruno"),
 #line 15077
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
 #line 15078
@@ -38949,7 +38949,7 @@
     [DIFFICULTY_NORMAL][TRAINER_ELITE_FOUR_AGATHA_2] =
     {
 #line 15127
-        .trainerName = _("AGATHA"),
+        .trainerName = _("Agatha"),
 #line 15128
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
 #line 15129
@@ -39068,7 +39068,7 @@
     [DIFFICULTY_NORMAL][TRAINER_ELITE_FOUR_LANCE_2] =
     {
 #line 15178
-        .trainerName = _("LANCE"),
+        .trainerName = _("Lance"),
 #line 15179
         .trainerClass = TRAINER_CLASS_ELITE_FOUR,
 #line 15180

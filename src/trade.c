@@ -1795,14 +1795,14 @@ static void SetReadyToTrade(void)
 
     if (GetMultiplayerId() == 1)
     {
-        // Communicate to the link leader that we're ready to trade
+        // Communicate to the link Leader that we're ready to trade
         sTradeMenu->linkData[0] = LINKCMD_READY_TO_TRADE;
         sTradeMenu->linkData[1] = sTradeMenu->cursorPosition;
         SendBlock(BitmaskAllOtherLinkPlayers(), sTradeMenu->linkData, 20);
     }
     else
     {
-        // We are the link leader, no communication necessary
+        // We are the link Leader, no communication necessary
         sTradeMenu->playerSelectStatus = STATUS_READY;
     }
 }

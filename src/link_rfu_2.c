@@ -1496,7 +1496,7 @@ static void Rfu_LinkStandby(void)
 
     if (GetMultiplayerId() != 0)
     {
-        // Not link leader, send exit standby when ready
+        // Not link Leader, send exit standby when ready
         if (gRfu.recvQueue.count == 0 && IsSendCmdComplete())
         {
             RfuPrepareSendBuffer(RFUCMD_READY_EXIT_STANDBY);
@@ -1505,7 +1505,7 @@ static void Rfu_LinkStandby(void)
     }
     else
     {
-        // Link leader, wait for all members to send exit ready
+        // Link Leader, wait for all members to send exit ready
         playerCount = GetLinkPlayerCount();
         for (i = 1; i < playerCount; i++)
         {

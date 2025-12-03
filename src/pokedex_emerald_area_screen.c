@@ -675,7 +675,7 @@ static void ShowEncounterInfoLabel(void)
 
 static void ShowAreaUnknownLabel(void)
 {
-    static const u8 gText_AreaUnknown[] = _("AREA UNKNOWN");
+    static const u8 gText_AreaUnknown[] = _("Area UNKNOWN");
     int stringXPos = GetStringCenterAlignXOffset(FONT_NORMAL, gText_AreaUnknown, 80);
 
     PrintAreaLabelText(gText_AreaUnknown, DEX_AREA_LABEL_AREA_UNKNOWN, stringXPos);

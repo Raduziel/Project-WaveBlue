@@ -1189,7 +1189,7 @@ void AnimThrowMistBall(struct Sprite *sprite)
     sprite->callback = TranslateAnimSpriteToTargetMonLocation;
 }
 
-// Displays misty background in Mist Ball.
+// Displays Misty background in Mist Ball.
 void AnimTask_MistBallFog(u8 taskId)
 {
     struct BattleAnimBgData animBg;

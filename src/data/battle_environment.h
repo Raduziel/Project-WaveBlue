@@ -133,7 +133,7 @@ const struct BattleEnvironmentInfo gBattleEnvironmentInfo[BATTLE_ENVIRONMENT_COU
     },
     [BATTLE_ENVIRONMENT_CAVE] =
     {
-        .name = _("NORMAL - CAVE            "),
+        .name = _("NORMAL - Cave            "),
     #if B_NATURE_POWER_MOVES >= GEN_6
         .naturePower = MOVE_EARTH_POWER,
     #elif B_NATURE_POWER_MOVES >= GEN_5

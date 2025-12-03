@@ -2408,7 +2408,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Earthquake"),
         .description = COMPOUND_STRING(
             "A powerful quake\nthat "
-            "hits all\nother POKéMON."),
+            "hits all\nother Pokémon."),
         .effect = EFFECT_EARTHQUAKE,
         .power = 100,
         .type = TYPE_GROUND,
@@ -21994,7 +21994,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .name = COMPOUND_STRING("Max Starfall"),
         .description = COMPOUND_STRING(
             "Fairy Dynamax\nattack. "
-            "Turns the\nterrain misty."),
+            "Turns the\nterrain Misty."),
         .effect = EFFECT_MAX_MOVE,
         .power = 1,
         .type = TYPE_FAIRY,

@@ -1526,7 +1526,7 @@ static void Task_ReceiveChatMessage(u8 taskId)
         // Someone is leaving
         if (sWork->multiplayerId == 0 && tCurrLinkPlayer != 0)
         {
-            // You're the leader, and the person who left is not you
+            // You're the Leader, and the person who left is not you
             if (GetLinkPlayerCount() == 2)
             {
                 Rfu_StopPartnerSearch();
@@ -1548,7 +1548,7 @@ static void Task_ReceiveChatMessage(u8 taskId)
         DestroyTask(taskId);
         break;
     case 6:
-        // The leader disbanded the chat
+        // The Leader disbanded the chat
         sWork->exitType = CHATEXIT_DISBANDED;
         DestroyTask(taskId);
         break;

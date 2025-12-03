@@ -13,7 +13,7 @@
 #define UR_SPRITE_START_ID (MAX_SPRITES - MAX_UNION_ROOM_LEADERS)
 
 // Each parent player can lead a group of up to MAX_RFU_PLAYERS (including themselves).
-// Multiply the leader's id by MAX_RFU_PLAYERS and add the member's id (0 if the leader) to
+// Multiply the Leader's id by MAX_RFU_PLAYERS and add the member's id (0 if the Leader) to
 // get the sprite index of that player.
 #define UR_PLAYER_SPRITE_ID(leaderId, memberId)(MAX_RFU_PLAYERS * leaderId + memberId)
 
@@ -64,8 +64,8 @@ static const s16 sUnionRoomPlayerCoords[MAX_UNION_ROOM_LEADERS][2] = {
 };
 
 // If there's a group of players interacting in the Union Room, the group
-// leader will be at one of the positions above and each member in the group
-// will be at one of the offsets from that position below. The leader will
+// Leader will be at one of the positions above and each member in the group
+// will be at one of the offsets from that position below. The Leader will
 // be at the first offset (0,0), as they're at the center.
 static const s8 sUnionRoomGroupOffsets[][2] = {
     { 0,  0}, // Center
@@ -84,7 +84,7 @@ static const u8 sOppositeFacingDirection[] = {
 };
 
 // Compare to sUnionRoomGroupOffsets, the direction each group member
-// needs to be facing in order to face the group leader in the center.
+// needs to be facing in order to face the group Leader in the center.
 static const u8 sMemberFacingDirections[] = {
     DIR_SOUTH, // Leader, but never read
     DIR_WEST,
@@ -446,7 +446,7 @@ void MakeGroupAssemblyAreasPassable(void)
 
 static u8 GetNewFacingDirectionForUnionRoomPlayer(u32 memberId, u32 leaderId, struct RfuGameData * gameData)
 {
-    if (memberId != 0) // If not leader
+    if (memberId != 0) // If not Leader
         return sMemberFacingDirections[memberId];
     else if (gameData->activity == (ACTIVITY_CHAT | IN_UNION_ROOM))
         return DIR_SOUTH;

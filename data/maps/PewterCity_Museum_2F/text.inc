@@ -7,14 +7,14 @@ Text_SeismicTossTeach::
     .string "harder, not toss in the towel.\p"
     .string "The only thing you should toss…\p"
     .string "Well, how about SEISMIC TOSS?\n"
-    .string "Should I teach that to a POKéMON?$"
+    .string "Should I teach that to a Pokémon?$"
 
 Text_SeismicTossDeclined::
     .string "Is that so?\n"
     .string "I'm sure you'll be back for it.$"
 
 Text_SeismicTossWhichMon::
-    .string "Which POKéMON wants to learn\n"
+    .string "Which Pokémon wants to learn\n"
     .string "SEISMIC TOSS?$"
 
 Text_SeismicTossTaught::
@@ -38,23 +38,23 @@ PewterCity_Museum_1F_Text_RunningSpaceExhibitThisMonth::
     .string "exhibit.$"
 
 PewterCity_Museum_1F_Text_AskedDaddyToCatchPikachu::
-    .string "I want a PIKACHU!\n"
+    .string "I want a Pikachu!\n"
     .string "It's so cute!\p"
     .string "I asked my daddy to catch me one!$"
 
 PewterCity_Museum_1F_Text_PikachuSoonIPromise::
-    .string "Yeah, a PIKACHU soon, I promise!$"
+    .string "Yeah, a Pikachu soon, I promise!$"
 
 PewterCity_Museum_1F_Text_SpaceShuttle::
     .string "Space Shuttle$"
 
 PewterCity_Museum_1F_Text_MeteoriteThatFellOnMtMoon::
-    .string "A meteorite that fell on MT. MOON.\n"
+    .string "A meteorite that fell on Mt. Moon.\n"
     .string "It is thought to be a MOON STONE.$"
 
 PewterCity_Museum_2F_Text_RumorsOfFossils:
-    .string "There are rumors that rare POKéMON\n"
-    .string "fossils can be found in MT. MOON.\p"
+    .string "There are rumors that rare Pokémon\n"
+    .string "fossils can be found in Mt. Moon.\p"
     .string "I would love to study one someday.$"
 
 PewterCity_Museum_2F_Text_YouHaveDomeTakeHelix:

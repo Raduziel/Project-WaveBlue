@@ -3322,7 +3322,7 @@ static void CB2_ReturnToPartyMenuFromSummaryScreen(void)
 
 static void CursorCB_Switch(u8 taskId)
 {
-    // Reset follower steps when the party leader is changed
+    // Reset follower steps when the party Leader is changed
     if (gPartyMenu.slotId == 0 || gPartyMenu.slotId2 == 0)
         gFollowerSteps = 0;
     PlaySE(SE_SELECT);

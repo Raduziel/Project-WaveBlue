@@ -19,7 +19,7 @@ const struct Decoration gDecorations[] = {
         DecorGfx_SMALL_DESK
     }, {
         DECOR_POKEMON_DESK,
-        _("POKéMON DESK"),
+        _("Pokémon Desk"),
         DECORPERM_SOLID_FLOOR,
         DECORSHAPE_1x1,
         DECORCAT_DESK,
@@ -100,7 +100,7 @@ const struct Decoration gDecorations[] = {
         DecorGfx_SMALL_CHAIR
     }, {
         DECOR_POKEMON_CHAIR,
-        _("POKéMON CHAIR"),
+        _("Pokémon Chair"),
         DECORPERM_PASS_FLOOR,
         DECORSHAPE_1x1,
         DECORCAT_CHAIR,
@@ -352,7 +352,7 @@ const struct Decoration gDecorations[] = {
         DecorGfx_STAND
     }, {
         DECOR_MUD_BALL,
-        _("MUD BALL"),
+        _("MUD Ball"),
         DECORPERM_PASS_FLOOR,
         DECORSHAPE_1x1,
         DECORCAT_ORNAMENT,
@@ -595,7 +595,7 @@ const struct Decoration gDecorations[] = {
         DecorGfx_SPIKES_MAT
     }, {
         DECOR_BALL_POSTER,
-        _("BALL POSTER"),
+        _("Ball POSTER"),
         DECORPERM_NA_WALL,
         DECORSHAPE_1x1,
         DECORCAT_POSTER,
@@ -964,7 +964,7 @@ const struct Decoration gDecorations[] = {
         DecorGfx_DIAMOND_CUSHION
     }, {
         DECOR_BALL_CUSHION,
-        _("BALL CUSHION"),
+        _("Ball CUSHION"),
         DECORPERM_SPRITE,
         DECORSHAPE_1x1,
         DECORCAT_CUSHION,

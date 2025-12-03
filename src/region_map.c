@@ -640,79 +640,79 @@ static const union AnimCmd *const sAnims_SwitchMapCursor[] = {
 static const struct DungeonMapInfo sDungeonInfo[] = {
     {
         .id = MAPSEC_VIRIDIAN_FOREST,
-        .name = sMapName_VIRIDIAN_FOREST,
+        .name = sMapName_Viridian_Forest,
         .desc = gText_RegionMap_AreaDesc_ViridianForest
     }, {
         .id = MAPSEC_MT_MOON,
-        .name = sMapName_MT__MOON,
+        .name = sMapName_Mt__Moon,
         .desc = gText_RegionMap_AreaDesc_MtMoon
     }, {
         .id = MAPSEC_DIGLETTS_CAVE,
-        .name = sMapName_DIGLETT_S_CAVE,
+        .name = sMapName_Diglett_s_Cave,
         .desc = gText_RegionMap_AreaDesc_DiglettsCave
     }, {
         .id = MAPSEC_KANTO_VICTORY_ROAD,
-        .name = sMapName_VICTORY_ROAD,
+        .name = sMapName_Victory_Road,
         .desc = gText_RegionMap_AreaDesc_VictoryRoad
     }, {
         .id = MAPSEC_POKEMON_MANSION,
-        .name = sMapName_POK__MON_MANSION,
+        .name = sMapName_Pok__mon_Mansion,
         .desc = gText_RegionMap_AreaDesc_PokemonMansion
     }, {
         .id = MAPSEC_KANTO_SAFARI_ZONE,
-        .name = sMapName_SAFARI_ZONE,
+        .name = sMapName_Safari_Zone,
         .desc = gText_RegionMap_AreaDesc_SafariZone
     }, {
         .id = MAPSEC_ROCK_TUNNEL,
-        .name = sMapName_ROCK_TUNNEL,
+        .name = sMapName_Rock_Tunnel,
         .desc = gText_RegionMap_AreaDesc_RockTunnel
     }, {
         .id = MAPSEC_SEAFOAM_ISLANDS,
-        .name = sMapName_SEAFOAM_ISLANDS,
+        .name = sMapName_Seafoam_Islands,
         .desc = gText_RegionMap_AreaDesc_SeafoamIslands
     }, {
         .id = MAPSEC_POKEMON_TOWER,
-        .name = sMapName_POK__MON_TOWER,
+        .name = sMapName_Pok__mon_Tower,
         .desc = gText_RegionMap_AreaDesc_PokemonTower
     }, {
         .id = MAPSEC_CERULEAN_CAVE,
-        .name = sMapName_CERULEAN_CAVE,
+        .name = sMapName_Cerulean_Cave,
         .desc = gText_RegionMap_AreaDesc_CeruleanCave
     }, {
         .id = MAPSEC_POWER_PLANT,
-        .name = sMapName_POWER_PLANT,
+        .name = sMapName_Power_Plant,
         .desc = gText_RegionMap_AreaDesc_PowerPlant
     }, {
         .id = MAPSEC_MT_EMBER,
-        .name = sMapName_MT__EMBER,
+        .name = sMapName_Mt__Ember,
         .desc = gText_RegionMap_AreaDesc_MtEmber
     }, {
         .id = MAPSEC_BERRY_FOREST,
-        .name = sMapName_BERRY_FOREST,
+        .name = sMapName_Berry_Forest,
         .desc = gText_RegionMap_AreaDesc_BerryForest
     }, {
         .id = MAPSEC_ICEFALL_CAVE,
-        .name = sMapName_ICEFALL_CAVE,
+        .name = sMapName_Icefall_Cave,
         .desc = gText_RegionMap_AreaDesc_IcefallCave
     }, {
         .id = MAPSEC_LOST_CAVE,
-        .name = sMapName_LOST_CAVE,
+        .name = sMapName_Lost_Cave,
         .desc = gText_RegionMap_AreaDesc_LostCave
     }, {
         .id = MAPSEC_TANOBY_CHAMBERS,
-        .name = sMapName_TANOBY_CHAMBERS,
+        .name = sMapName_Tanoby_Chambers,
         .desc = gText_RegionMap_AreaDesc_TanobyRuins
     }, {
         .id = MAPSEC_ALTERING_CAVE_FRLG,
-        .name = sMapName_ALTERING_CAVE,
+        .name = sMapName_Altering_Cave,
         .desc = gText_RegionMap_AreaDesc_AlteringCave
     }, {
         .id = MAPSEC_PATTERN_BUSH,
-        .name = sMapName_PATTERN_BUSH,
+        .name = sMapName_Pattern_Bush,
         .desc = gText_RegionMap_AreaDesc_PatternBush
     }, {
         .id = MAPSEC_DOTTED_HOLE,
-        .name = sMapName_DOTTED_HOLE,
+        .name = sMapName_Dotted_Hole,
         .desc = gText_RegionMap_AreaDesc_DottedHole
     }
 };
@@ -3792,7 +3792,7 @@ u8 *GetMapName(u8 *dst0, u16 mapsec, u16 fill)
     if ((idx = mapsec - KANTO_MAPSEC_START) < MAPSEC_NONE - KANTO_MAPSEC_START)
     {
         if (IsCeladonDeptStoreMapsec(mapsec) == TRUE)
-            dst = StringCopy(dst0, sMapName_CELADON_DEPT_);
+            dst = StringCopy(dst0, sMapName_Celadon_Dept_);
         else
             dst = StringCopy(dst0, gRegionMapEntries[idx].name);
     }

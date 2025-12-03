@@ -187,7 +187,7 @@ enum {
 
 // No reason for this to be 2
 // Simply a flag for whether a given player has sent their data this round
-// Data is only sent if the player is the leader or if they pressed A
+// Data is only sent if the player is the Leader or if they pressed A
 #define SEND_GAME_STATE 2
 
 struct BerryCrushGame_Player
@@ -1715,7 +1715,7 @@ static void HandlePlayerInput(struct BerryCrushGame * game)
             ++game->players[game->localId].timePressingA;
     }
 
-    // Only send data to other players if you are the leader or you pressed A
+    // Only send data to other players if you are the Leader or you pressed A
     if (game->localId != 0 && !game->localState.pushedAButton)
         return;
     game->localState.sendFlag = SEND_GAME_STATE;
@@ -2008,10 +2008,10 @@ static u32 Cmd_TabulateResults(struct BerryCrushGame * game, u8 *args)
         game->sendCmd[0] = 0;
         ResetBlockReceivedFlags();
 
-        // If player is not leader, skip the steps
+        // If player is not Leader, skip the steps
         // where the results are calculated and sent.
         // Group members just read the results sent
-        // to them by the leader.
+        // to them by the Leader.
         if (game->localId == 0)
             game->cmdState = 3;
         else

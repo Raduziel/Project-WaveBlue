@@ -2369,7 +2369,7 @@ const struct Item gItemsInfo[] =
 
      [ITEM_INFINITE_REPEL] =
     {
-        .name = ITEM_NAME("Infinite Repel"),
+        .name = ITEM_NAME("Inf. Repel"),
         .notConsumed = TRUE,
         .price = 0,
         .importance = 1,
@@ -2667,7 +2667,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_GOLD_BOTTLE_CAP] =
     {
-        .name = ITEM_NAME("Gold Bottle Cap"),
+        .name = ITEM_NAME("Gold Btle Cap"),
         .price = (I_PRICE >= GEN_9) ? 60000 : 10000,
         .description = COMPOUND_STRING(
             "A beautiful bottle "
@@ -13169,7 +13169,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_DOWSING_MACHINE] =
     {
-        .name = ITEM_NAME("Dowsing Machine"),
+        .name = ITEM_NAME("Itemfinder"),
         .price = 0,
         .description = COMPOUND_STRING(
             "A device that "
