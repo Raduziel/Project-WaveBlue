@@ -66,7 +66,7 @@ ViridianCity_School_Text_ExplainSleep::
     .string "from sleep.$"
 
 ViridianCity_School_Text_ExplainBurn::
-    .string "A burn reduces ATTACK power.\n"
+    .string "A burn reduces Attack power.\n"
     .string "It also causes ongoing HP loss.\p"
     .string "A burn remains after a battle.\n"
     .string "Use Burn Heal to cure a burn.$"
@@ -86,7 +86,7 @@ ViridianCity_School_Text_ExplainFreeze::
     .string "suffering Pokémon.$"
 
 ViridianCity_School_Text_ExplainParalysis::
-    .string "Paralysis reduces SPEED and may\n"
+    .string "Paralysis reduces Speed and may\n"
     .string "prevent the Pokémon from moving.\p"
     .string "Paralysis remains after battles.\n"
     .string "Use Parlyz Heal for treatment.$"

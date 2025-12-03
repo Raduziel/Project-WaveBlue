@@ -50,7 +50,7 @@ FourIsland_IcefallCave_Back_Text_LoreleiWellDeepFreezeYou::
     .string "My Lapras is furious for what\n"
     .string "you've done to its friends.\p"
     .string "Go, Lapras!\n"
-    .string "ICE BEAM…$"
+    .string "Ice Beam…$"
 
 FourIsland_IcefallCave_Back_Text_OkayRocketWareHouseFiveIsland::
     .string "Wawaah! Okay!\n"

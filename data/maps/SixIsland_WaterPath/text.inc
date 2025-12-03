@@ -9,7 +9,7 @@ SixIsland_WaterPath_Text_RoseDefeat::
 SixIsland_WaterPath_Text_RosePostBattle::
     .string "I want to go to the woods over\n"
     .string "there, but…\p"
-    .string "There are lots of BUG Pokémon.\n"
+    .string "There are lots of Bug Pokémon.\n"
     .string "They scare me a little.$"
 
 SixIsland_WaterPath_Text_EdwardIntro::
@@ -25,7 +25,7 @@ SixIsland_WaterPath_Text_EdwardPostBattle::
 
 SixIsland_WaterPath_Text_SamirIntro::
     .string "What, you're suggesting that you're\n"
-    .string "sick of seeing SWIMMERS like me?\p"
+    .string "sick of seeing Swimmers like me?\p"
     .string "Aww, don't be hatin'!$"
 
 SixIsland_WaterPath_Text_SamirDefeat::
@@ -72,7 +72,7 @@ SixIsland_WaterPath_Text_MiuPostBattle::
     .string "when we lose…$"
 
 SixIsland_WaterPath_Text_MiuNotEnoughMons::
-    .string "MIU: MIA and I are TWINS.\n"
+    .string "MIU: MIA and I are Twins.\n"
     .string "We want to battle together.$"
 
 SixIsland_WaterPath_Text_MiaIntro::

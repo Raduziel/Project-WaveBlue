@@ -5,13 +5,13 @@ SaffronCity_MrPsychicsHouse_Text_YouWantedThese::
 @ Texto ajustado para citar os dois itens
 SaffronCity_MrPsychicsHouse_Text_ReceivedItemsFromMrPsychic::
 	.string "{PLAYER} received TM29 and a\n"
-	.string "TWISTED SPOON from MR. PSYCHIC.$"
+	.string "Twisted Spoon from Mr. Psychic.$"
 
 SaffronCity_MrPsychicsHouse_Text_ExplainBoth::
 	.string "You already know, don't you?\n"
-	.string "TM29 is PSYCHIC.\p"
-	.string "And that TWISTED SPOON will boost\n"
-	.string "the power of PSYCHIC moves.\p"
+	.string "TM29 is Psychic.\p"
+	.string "And that Twisted Spoon will boost\n"
+	.string "the power of Psychic moves.\p"
 	.string "They are perfect together!$"
 
 SaffronCity_MrPsychicsHouse_Text_YouveNoRoom::

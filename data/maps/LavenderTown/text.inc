@@ -1,13 +1,13 @@
 LavenderTown_Text_ScaredOfDrifloon::
     .string "I heard about a Pokémon called\n"
-    .string "DRIFLOON that carries kids away...\p"
+    .string "Drifloon that carries kids away...\p"
     .string "Now I'm too scared to play with\n"
-    .string "my AIR BALLOON.\p"
+    .string "my Air Balloon.\p"
     .string "Could you please take it away?$"
 
 LavenderTown_Text_ChangedMind::
     .string "Oh! You changed your mind about\n"
-    .string "accepting the AIR BALLOON?$"
+    .string "accepting the Air Balloon?$"
 
 LavenderTown_Text_FeelSafeNow::
     .string "Thanks!\n"
@@ -18,8 +18,8 @@ LavenderTown_Text_StuckWithIt::
     .string "I guess I'll have to live with it...$"
 
 LavenderTown_Text_GladYouTookIt::
-    .string "I'm glad you took that AIR BALLOON\n"
-    .string "away. No DRIFLOON will catch me!$"
+    .string "I'm glad you took that Air Balloon\n"
+    .string "away. No Drifloon will catch me!$"
 
 LavenderTown_Text_NoRoomForBalloon::
     .string "You don't have space for this.\n"

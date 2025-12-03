@@ -122,7 +122,7 @@ CeruleanCity_Text_NoYouBlewItAgain::
     .string "You blew it again!$"
 
 CeruleanCity_Text_SlowbroWithdraw::
-    .string "Slowbro, WITHDRAW!$"
+    .string "Slowbro, Withdraw!$"
 
 CeruleanCity_Text_HardToControlMonsObedience::
     .string "No! That's wrong!\n"

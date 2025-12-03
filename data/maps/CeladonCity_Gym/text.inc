@@ -69,7 +69,7 @@ CeladonCity_Gym_Text_BridgetDefeat::
 
 CeladonCity_Gym_Text_BridgetPostBattle::
     .string "Grass-type Pokémon are tough\n"
-    .string "against the WATER type.\p"
+    .string "against the Water type.\p"
     .string "They also have an edge on Rock-\n"
     .string "and Ground-type Pokémon.$"
 

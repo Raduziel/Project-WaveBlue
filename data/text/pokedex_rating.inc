@@ -18,7 +18,7 @@ PokedexRating_Text_LessThan10::
 PokedexRating_Text_LessThan20::
 	.string "It looks as if you're getting on\n"
 	.string "the right track!\p"
-	.string "I've given one of my AIDES a FLASH\n"
+	.string "I've given one of my Aides a Flash\n"
 	.string "HM. Make sure you go get it!$"
 
 PokedexRating_Text_LessThan30::

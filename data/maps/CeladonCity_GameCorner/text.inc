@@ -59,7 +59,7 @@ CeladonCity_GameCorner_Text_GymGuyAdvice::
     .string "You have better things to do,\n"
     .string "champ in the making!\p"
     .string "Celadon Gym's  is Erika.\p"
-    .string "She is a user of GRASS-type\n"
+    .string "She is a user of Grass-type\n"
     .string "Pokémon, and at one with nature.\p"
     .string "She might appear docile because of\n"
     .string "her flower arranging…\p"

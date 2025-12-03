@@ -92,7 +92,7 @@ TrainerTower_Lobby_Text_NeedTwoMonsForDouble::
 
 TrainerTower_Lobby_Text_ExplainTrainerTower::
     .string "Here at Trainer Tower, there is an\n"
-    .string "event called TIME ATTACK.\p"
+    .string "event called Time Attack.\p"
     .string "You will be timed on how quickly\n"
     .string "you can get from the reception\l"
     .string "counter to the OWNER on the roof.\p"

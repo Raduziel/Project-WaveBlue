@@ -14,10 +14,10 @@ CeruleanCity_House1_Text_ComeVisitAnytime::
     .string "Come visit me anytime you wish.$"
 
 CeruleanCity_House1_Text_AttackStatFlash::
-    .string "The ATTACK stat of all your\n"
+    .string "The Attack stat of all your\n"
     .string "Pokémon increases a little bit.\p"
     .string "It also lets you use the move\n"
-    .string "FLASH outside of battle.$"
+    .string "Flash outside of battle.$"
 
 CeruleanCity_House1_Text_ObeyLv30Cut::
     .string "Pokémon up to Lv. 30 will obey\n"
@@ -30,7 +30,7 @@ CeruleanCity_House1_Text_ObeyLv30Cut::
     .string "CUT outside of battle.$"
 
 CeruleanCity_House1_Text_SpeedStatFly::
-    .string "The SPEED stat of all your\n"
+    .string "The Speed stat of all your\n"
     .string "Pokémon increases a little bit.\p"
     .string "It also lets you use the move\n"
     .string "FLY outside of battle.$"
@@ -43,13 +43,13 @@ CeruleanCity_House1_Text_ObeyLv50Strength::
     .string "Pokémon of higher levels will\n"
     .string "be unruly in battle, however.\p"
     .string "It also lets you use the move\n"
-    .string "STRENGTH outside of battle.$"
+    .string "Strength outside of battle.$"
 
 CeruleanCity_House1_Text_DefenseStatSurf::
-    .string "The DEFENSE stat of all your\n"
+    .string "The Defense stat of all your\n"
     .string "Pokémon increases a little bit.\p"
     .string "It also lets you use the move\n"
-    .string "SURF outside of battle.$"
+    .string "Surf outside of battle.$"
 
 CeruleanCity_House1_Text_ObeyLv70RockSmash::
     .string "Pokémon up to Lv. 70 will obey\n"
@@ -59,13 +59,13 @@ CeruleanCity_House1_Text_ObeyLv70RockSmash::
     .string "Pokémon of higher levels will\n"
     .string "be unruly in battle, however.\p"
     .string "It also lets you use the move\n"
-    .string "ROCK SMASH outside of battle.$"
+    .string "Rock Smash outside of battle.$"
 
 CeruleanCity_House1_Text_SpStatsWaterfall::
-    .string "The SP. ATK and SP. DEF stats of\n"
+    .string "The Sp. Atk and Sp. Def stats of\n"
     .string "all your Pokémon rise a little bit.\p"
     .string "It also lets you use the move\n"
-    .string "WATERFALL outside of battle.$"
+    .string "Waterfall outside of battle.$"
 
 CeruleanCity_House1_Text_AllMonsWillObeyYou::
     .string "All Pokémon will obey you!$"

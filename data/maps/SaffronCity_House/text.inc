@@ -12,7 +12,7 @@ SaffronCity_House_Text_GettingCopycatPokeDoll::
     .string "I'm getting her a Poké Doll.$"
 
 SaffronCity_House_Text_ExplainPPUp::
-    .string "I was given a PP UP as a gift.\p"
+    .string "I was given a PP Up as a gift.\p"
     .string "It's used to increase the PP of\n"
     .string "a Pokémon's move.\p"
     .string "I should use it on a powerful move\n"

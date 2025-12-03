@@ -62,7 +62,7 @@ Route6_Text_NancyRematchIntro::
 
 Route6_Text_KeigoRematchIntro::
 	.string "I'm trying to find something good\n"
-	.string "that's not a BUG Pokémon, but…$"
+	.string "that's not a Bug Pokémon, but…$"
 
 Route6_Text_JeffRematchIntro::
 	.string "Huh?\n"
@@ -163,7 +163,7 @@ Route9_Text_AlanRematchIntro::
 	.string "I'll win this time!$"
 
 Route9_Text_ConnerRematchIntro::
-	.string "Go win, my super BUG Pokémon!$"
+	.string "Go win, my super Bug Pokémon!$"
 
 Route10_Text_MarkRematchIntro::
 	.string "Wow, you came here again?\n"
@@ -294,7 +294,7 @@ Route13_Text_GwenRematchIntro::
 
 Route13_Text_AlmaRematchIntro::
 	.string "I cleaned out my savings and\n"
-	.string "bought more CARBOS.$"
+	.string "bought more Carbos.$"
 
 Route13_Text_PerryRematchIntro::
 	.string "I'm not going to lose this time.\n"
@@ -464,7 +464,7 @@ Route17_Text_VirgilRematchIntro::
 	.string "You out for a stroll?$"
 
 Route17_Text_BillyRematchIntro::
-	.string "We're BIKERS!\n"
+	.string "We're Bikers!\n"
 	.string "We rule the roads, man!$"
 
 Route17_Text_NikolasRematchIntro::
@@ -868,7 +868,7 @@ SixIsland_OutcastIsland_Text_GebRematchIntro::
 
 SixIsland_GreenPath_Text_JaclynRematchIntro::
 	.string "…Huh?\p"
-	.string "I envision my house, but TELEPORT\n"
+	.string "I envision my house, but Teleport\n"
 	.string "always brings me here!$"
 
 SixIsland_WaterPath_Text_RoseRematchIntro::
@@ -881,7 +881,7 @@ SixIsland_WaterPath_Text_EdwardRematchIntro::
 
 SixIsland_WaterPath_Text_SamirRematchIntro::
 	.string "What, you're sick of seeing\n"
-	.string "SWIMMERS like me?\p"
+	.string "Swimmers like me?\p"
 	.string "Aww, don't be hatin'!\n"
 	.string "Battle with me again.$"
 

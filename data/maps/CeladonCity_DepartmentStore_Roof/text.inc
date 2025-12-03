@@ -8,7 +8,7 @@ CeladonCity_DepartmentStore_Roof_Text_GiveWhichDrink::
 
 CeladonCity_DepartmentStore_Roof_Text_YayFreshWaterHaveThis::
     .string "Yay!\p"
-    .string "FRESH WATER!\p"
+    .string "Fresh Water!\p"
     .string "Thank you!\n"
     .string "You can have this from me!$"
 
@@ -17,13 +17,13 @@ Text_ReceivedItemFromLittleGirl::
     .string "from the little girl.$"
 
 CeladonCity_DepartmentStore_Roof_Text_ExplainTM16::
-    .string "TM16 contains LIGHT SCREEN.\p"
+    .string "TM16 contains Light Screen.\p"
     .string "It's a move that weakens the power\n"
     .string "of special attacks by your foe.$"
 
 CeladonCity_DepartmentStore_Roof_Text_YaySodaPopHaveThis::
     .string "Yay!\p"
-    .string "SODA POP!\p"
+    .string "Soda Pop!\p"
     .string "Thank you!\n"
     .string "You can have this from me!$"
 
@@ -34,12 +34,12 @@ CeladonCity_DepartmentStore_Roof_Text_ExplainTM20::
 
 CeladonCity_DepartmentStore_Roof_Text_YayLemonadeHaveThis::
     .string "Yay!\p"
-    .string "LEMONADE!\p"
+    .string "Lemonade!\p"
     .string "Thank you!\n"
     .string "You can have this from me!$"
 
 CeladonCity_DepartmentStore_Roof_Text_ExplainTM33::
-    .string "TM33 contains REFLECT.\p"
+    .string "TM33 contains Reflect.\p"
     .string "It's a move that weakens the power\n"
     .string "of physical attacks by your foe.$"
 

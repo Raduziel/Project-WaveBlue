@@ -1,9 +1,9 @@
 SafariZone_North_Text_RestHouse::
-    .string "REST HOUSE$"
+    .string "Rest House$"
 
 SafariZone_North_Text_SecretHouseStillAhead::
     .string "Trainer Tips\p"
-    .string "The SECRET HOUSE is still ahead.$"
+    .string "The Secret House is still ahead.$"
 
 SafariZone_North_Text_Area2::
     .string "Area 2$"
@@ -17,5 +17,4 @@ SafariZone_North_Text_ZigzagThroughTallGrass::
 SafariZone_North_Text_WinFreeHMFindSecretHouse::
     .string "Trainer Tips\p"
     .string "Win a free HM for finding the\n"
-    .string "SECRET HOUSE.$"
-
+    .string "Secret House.$"

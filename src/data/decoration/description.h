@@ -272,64 +272,64 @@ const u8 DecorDesc_C_HIGH_NOTE_MAT[] = _(
 
 const u8 DecorDesc_SURF_MAT[] = _(
     "A mat designed with\n"
-        "a SURF image.\n"
+        "a Surf image.\n"
         "Put items on top.");
 
 const u8 DecorDesc_THUNDER_MAT[] = _(
     "A mat designed with\n"
-        "a THUNDER image.\n"
+        "a Thunder image.\n"
         "Put items on top.");
 
 const u8 DecorDesc_FIRE_BLAST_MAT[] = _(
     "A mat designed with\n"
-        "a FIRE BLAST image.\n"
+        "a Fire Blast image.\n"
         "Put items on top.");
 
 const u8 DecorDesc_POWDER_SNOW_MAT[] = _(
-    "A mat with a POWDER\n"
-        "SNOW image design.\n"
+    "A mat with a Powder\n"
+        "Snow image design.\n"
         "Put items on top.");
 
 const u8 DecorDesc_ATTRACT_MAT[] = _(
     "A mat designed with\n"
-        "an ATTRACT image.\n"
+        "an Attract image.\n"
         "Put items on top.");
 
 const u8 DecorDesc_FISSURE_MAT[] = _(
     "A mat designed with\n"
-        "a FISSURE image.\n"
+        "a Fissure image.\n"
         "Put items on top.");
 
 const u8 DecorDesc_SPIKES_MAT[] = _(
     "A mat designed with\n"
-        "a SPIKES image.\n"
+        "a Spikes image.\n"
         "Put items on top.");
 
 const u8 DecorDesc_BALL_POSTER[] = _(
     "A small poster\n"
         "printed with Poké\n"
-        "BALLS.");
+        "Balls.");
 
 const u8 DecorDesc_GREEN_POSTER[] = _(
     "A small poster with\n"
-        "a TREECKO print.");
+        "a Treecko print.");
 
 const u8 DecorDesc_RED_POSTER[] = _(
     "A small poster with\n"
-        "a TORCHIC print.");
+        "a Torchic print.");
 
 const u8 DecorDesc_BLUE_POSTER[] = _(
     "A small poster with\n"
-        "a MUDKIP print.");
+        "a Mudkip print.");
 
 const u8 DecorDesc_CUTE_POSTER[] = _(
     "A small poster with\n"
-        "an AZURILL print.");
+        "an Azurill print.");
 
 const u8 DecorDesc_PIKA_POSTER[] = _(
     "A large poster with\n"
-        "a PIKACHU and\n"
-        "PICHU print.");
+        "a Pikachu and\n"
+        "Pichu print.");
 
 const u8 DecorDesc_LONG_POSTER[] = _(
     "A large poster with\n"

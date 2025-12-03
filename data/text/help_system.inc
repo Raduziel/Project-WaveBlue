@@ -14,10 +14,10 @@ Help_Text_TypeMatchupList::
 	.string "Type Matchup List$"
 
 Help_Text_Exit::
-	.string "EXIT$"
+	.string "Exit$"
 
 Help_Text_Cancel::
-	.string "CANCEL$"
+	.string "Cancel$"
 
 Help_Text_TryDoingItOnYourOwn::
 	.string "じぶんの ちからで やってみよう！$"
@@ -43,10 +43,10 @@ Help_Text_DescTypeMatchupList::
 	.string "and moves are listed.$"
 
 Help_Text_DescExit::
-	.string "Select to exit the HELP System.$"
+	.string "Select to exit the Help System.$"
 
 Help_Text_Greetings::
-	.string "Greetings! This is the HELP System.\n"
+	.string "Greetings! This is the Help System.\n"
 	.string "Call me up whenever and wherever you\l"
 	.string "need by pressing the L or R Button.\l"
 	.string "The help messages change to suit the\l"
@@ -116,7 +116,7 @@ Help_Text_CantCatchMons::
 	.string "I can't catch Pokémon!$"
 
 Help_Text_RanOutOfPotions::
-	.string "I ran out of POTIONS.$"
+	.string "I ran out of Potions.$"
 
 Help_Text_CanIBuyPokeBalls::
 	.string "Can I buy Poké Balls?$"
@@ -134,7 +134,7 @@ Help_Text_WhatAreMoves::
 	.string "What are Pokémon moves?$"
 
 Help_Text_WhatAreHiddenMoves::
-	.string "What are HIDDEN moves?$"
+	.string "What are Hidden Moves?$"
 
 Help_Text_WhatMovesShouldIUse::
 	.string "What moves should I use?$"
@@ -170,7 +170,7 @@ Help_Text_WhatIsThatPersonLike::
 	.string "What is that person like?$"
 
 Help_Text_WhatDoesHiddenMoveDo::
-	.string "What does a HIDDEN move do?$"
+	.string "What does a Hidden Move do?$"
 
 Help_Text_WhatDoIDoInSafari::
 	.string "What do I do in a Safari Game?$"
@@ -299,7 +299,7 @@ Help_Text_AnswerWhatsABattle::
 	.string "HP. If a Pokémon's HP falls to zero,\l"
 	.string "it faints, and the other Pokémon\l"
 	.string "wins. By winning a battle, Pokémon\l"
-	.string "earn EXP. Points, which help them\l"
+	.string "earn Exp. Points, which help them\l"
 	.string "level up (grow stronger).$"
 
 Help_Text_AnswerHowDoIPrepareForBattle::
@@ -337,10 +337,10 @@ Help_Text_AnswerWhatIsStatusProblem::
 Help_Text_AnswerWhatHappensIfAllMyMonsFaint::
 	.string "If all the Pokémon in your party\n"
 	.string "(all the Pokémon with you) faint, you\l"
-	.string "lose some MONEY, and you are\l"
+	.string "lose some Money, and you are\l"
 	.string "returned home or to a Pokémon\l"
 	.string "Center. To reduce that chance, visit\l"
-	.string "Pokémon CENTERS often. Also, get\l"
+	.string "Pokémon Centers often. Also, get\l"
 	.string "in the habit of saving often.$"
 
 Help_Text_AnswerCantCatchMons::
@@ -354,8 +354,8 @@ Help_Text_AnswerCantCatchMons::
 
 Help_Text_AnswerRanOutOfPotions::
 	.string "There are shops, known as Pokémon\n"
-	.string "MARTS, that sell items.\l"
-	.string "You will not find Pokémon MARTS on\l"
+	.string "Marts, that sell items.\l"
+	.string "You will not find Pokémon Marts on\l"
 	.string "roads, in forests, or in caves.\l"
 	.string "Stock up on needed items while you are\l"
 	.string "visiting a town with a Pokémon Mart.$"
@@ -363,7 +363,7 @@ Help_Text_AnswerRanOutOfPotions::
 Help_Text_AnswerCanIBuyPokeBalls::
 	.string "You may buy Poké Balls at any\n"
 	.string "Pokémon Mart in any town.\l"
-	.string "You will not find Pokémon MARTS on\l"
+	.string "You will not find Pokémon Marts on\l"
 	.string "roads, in forests, or in caves.\l"
 	.string "Stock up on Poké Balls while you are\l"
 	.string "visiting a town with a Pokémon Mart.$"
@@ -406,19 +406,19 @@ Help_Text_AnswerWhatAreHiddenMoves::
 	.string "HIDDEN moves are those that are\n"
 	.string "especially important for your\l"
 	.string "adventure. To use such a move outside\l"
-	.string "of battle, open the “Pokémon” MENU\l"
+	.string "of battle, open the “Pokémon” Menu\l"
 	.string "and make the Pokémon that knows the\l"
 	.string "move use it. A fainted Pokémon may use\l"
 	.string "a HIDDEN move outside of battle.$"
 
 Help_Text_AnswerWhatMovesShouldIUse::
-	.string "Select “FIGHT,” and the MENU of moves\n"
+	.string "Select “Fight”, and the Menu of moves\n"
 	.string "will appear. Consider the type\l"
 	.string "matchups, and use the most effective\l"
 	.string "moves. You can check the effects of\l"
 	.string "moves by opening “Pokémon,”\l"
-	.string "picking a Pokémon, opening “SUMMARY,”\l"
-	.string "then opening “Pokémon SKILLS.”$"
+	.string "picking a Pokémon, opening Summary,”\l"
+	.string "then opening “Pokémon Skills.”$"
 
 Help_Text_AnswerWantToAddMoreMoves::
 	.string "The most a Pokémon can learn is four\n"
@@ -431,7 +431,7 @@ Help_Text_AnswerWantToAddMoreMoves::
 Help_Text_AnswerWantToMakeMonStronger::
 	.string "The key to making your Pokémon\n"
 	.string "strong is to battle and win often.\l"
-	.string "The EXP. (Experience) Points earned\l"
+	.string "The Exp. (Experience) Points earned\l"
 	.string "by winning battles accumulate to\l"
 	.string "level up Pokémon that participated in\l"
 	.string "them. Battle wild Pokémon often to\l"
@@ -470,12 +470,12 @@ Help_Text_AnswerWhatsPokemonMart::
 	.string "A Pokémon Mart is identified by its\n"
 	.string "blue roof and a “Mart” sign.\l"
 	.string "Items can be bought and sold at any\l"
-	.string "Pokémon Mart. Some MARTS carry items\l"
+	.string "Pokémon Mart. Some Marts carry items\l"
 	.string "that are available only in their towns.$"
 
 Help_Text_AnswerWantToEndGame::
 	.string "You can safely end your game by\n"
-	.string "selecting “SAVE” on the MENU.\l"
+	.string "selecting “Save” on the Menu.\l"
 	.string "Once you have saved, the game can be\l"
 	.string "safely turned off. When the game is\l"
 	.string "turned back on, you can resume from\l"
@@ -490,13 +490,13 @@ Help_Text_AnswerWhatsAMon::
 
 Help_Text_AnswerWhatIsThatPersonLike::
 	.string "Use the Fame Checker among the\n"
-	.string "KEY ITEMS in your Bag.\l"
+	.string "Key Items in your Bag.\l"
 	.string "It may give you a hint, so try it out.$"
 
 Help_Text_AnswerWhatDoesHiddenMoveDo::
-	.string "A HIDDEN move is taught to a Pokémon\n"
+	.string "A Hidden Move is taught to a Pokémon\n"
 	.string "using an HM (Hidden Machine).\l"
-	.string "A HIDDEN move is important for helping\l"
+	.string "A Hidden Move is important for helping\l"
 	.string "your adventure. For example, one is\l"
 	.string "used to light up dark caves. Another\l"
 	.string "cuts down small trees. There is one\l"
@@ -511,16 +511,16 @@ Help_Text_AnswerWhatAreSafariRules::
 	.string "Your Safari Game ends once you have\n"
 	.string "traveled a certain distance or thrown\l"
 	.string "all your Safari Balls.\l"
-	.string "Open the MENU to check the remaining\l"
+	.string "Open the Menu to check the remaining\l"
 	.string "number of steps and Safari Balls.$"
 
 Help_Text_AnswerWantToEndSafari::
 	.string "If you would like to cut your Safari\n"
-	.string "GAME short, open the MENU and select\l"
-	.string "“RETIRE” at the top of the list.$"
+	.string "Game short, open the Menu and select\l"
+	.string "“Retire” at the top of the list.$"
 
 Help_Text_AnswerWhatIsAGym::
-	.string "Pokémon GYMS are operated by the\n"
+	.string "Pokémon Gyms are operated by the\n"
 	.string "Pokémon League and are training\l"
 	.string "facilities for Trainers. They are all\l"
 	.string "across the land in cities and towns.\l"
@@ -664,10 +664,10 @@ Help_Text_UsingBall::
 	.string " Using “Ball”$"
 
 Help_Text_UsingBait::
-	.string " Using “BAIT”$"
+	.string " Using “Bait”$"
 
 Help_Text_UsingRock::
-	.string " Using “ROCK”$"
+	.string " Using “Rock”$"
 
 Help_Text_UsingHallOfFame::
 	.string " Using “Hall of Fame”$"
@@ -1065,19 +1065,19 @@ Help_Text_Moves::
 	.string "MOVES$"
 
 Help_Text_Attack::
-	.string "ATTACK$"
+	.string "Attack$"
 
 Help_Text_Defense::
-	.string "DEFENSE$"
+	.string "Defense$"
 
 Help_Text_SpAtk::
-	.string "SP. ATK$"
+	.string "Sp. Atk$"
 
 Help_Text_SpDef::
-	.string "SP. DEF$"
+	.string "Sp. Def$"
 
 Help_Text_Speed::
-	.string "SPEED$"
+	.string "Speed$"
 
 Help_Text_Level::
 	.string "Lv. {LEFT_PAREN}Level{RIGHT_PAREN}$"
@@ -1113,7 +1113,7 @@ Help_Text_Power::
 	.string "POWER$"
 
 Help_Text_Accuracy::
-	.string "ACCURACY$"
+	.string "Accuracy$"
 
 Help_Text_FNT::
 	.string "FNT$"
@@ -1137,7 +1137,7 @@ Help_Text_Badges::
 	.string "Badges$"
 
 Help_Text_TextSpeed::
-	.string "TEXT SPEED$"
+	.string "TEXT Speed$"
 
 Help_Text_BattleScene::
 	.string "BATTLE SCENE$"
@@ -1164,10 +1164,10 @@ Help_Text_HM::
 	.string "HM$"
 
 Help_Text_HMMove::
-	.string "HM MOVE$"
+	.string "HM Move$"
 
 Help_Text_Evolution::
-	.string "EVOLUTION$"
+	.string "Evolution$"
 
 Help_Text_StatusProblem::
 	.string "STATUS PROBLEM$"
@@ -1179,7 +1179,7 @@ Help_Text_IDNo2::
 	.string "ID No.$"
 
 Help_Text_Money2::
-	.string "MONEY$"
+	.string "Money$"
 
 Help_Text_Badges2::
 	.string "Badges$"
@@ -1212,38 +1212,38 @@ Help_Text_DefineMoves::
 	.string "from items.$"
 
 Help_Text_DefineAttack::
-	.string "ATTACK indicates the power of an\n"
+	.string "Attack indicates the power of an\n"
 	.string "offensive move. The higher this stat,\l"
 	.string "the more powerful the move.\l"
 	.string "It is applied for the following move\l"
-	.string "types: NORMAL, POISON, GROUND,\l"
-	.string "FLYING, BUG, FIGHTING, ROCK, GHOST,\l"
-	.string "and STEEL.$"
+	.string "types: Normal, Poison, Ground,\l"
+	.string "Flying, Bug, Fighting, Rock, Ghost,\l"
+	.string "and Steel.$"
 
 Help_Text_DefineDefense::
-	.string "DEFENSE indicates the resistance a\n"
+	.string "Defense indicates the resistance a\n"
 	.string "Pokémon has against physical attacks.\l"
 	.string "The higher this stat, the less damage\l"
 	.string "sustained from a foe's physical hit.$"
 
 Help_Text_DefineSpAtk::
-	.string "SP. ATK (Special Attack) indicates the\n"
+	.string "Sp. Atk (Special Attack) indicates the\n"
 	.string "power of a special attack move.\l"
 	.string "The higher this stat, the more powerful\l"
 	.string "the special attack move.\l"
 	.string "It is applied for the following move\l"
-	.string "types: FIRE, WATER, ELECTRIC, GRASS,\l"
-	.string "ICE, PSYCHIC, DRAGON, and DARK.$"
+	.string "types: Fire, Water, Electric, Grass,\l"
+	.string "Ice, Psychic, Dragon, and Dark.$"
 
 Help_Text_DefineSpDef::
-	.string "SP. DEF (Special Defense) indicates\n"
+	.string "Sp. Def (Special Defense) indicates\n"
 	.string "the resistance a Pokémon has against\l"
 	.string "special attacks.\l"
 	.string "The higher this stat, the less damage\l"
 	.string "sustained from a foe's special attack.$"
 
 Help_Text_DefineSpeed::
-	.string "SPEED indicates the agility of a\n"
+	.string "Speed indicates the agility of a\n"
 	.string "Pokémon. If this stat exceeds the foe's\l"
 	.string "in battle, the Pokémon can make a move\l"
 	.string "before its slower opponent.$"
@@ -1252,8 +1252,8 @@ Help_Text_DefineLevel::
 	.string "Lv. (Level) indicates the growth and\n"
 	.string "strength of a Pokémon.\l"
 	.string "In general, when a Pokémon levels up,\l"
-	.string "its stats such as HP, ATTACK, and\l"
-	.string "DEFENSE rise, making it stronger.\l"
+	.string "its stats such as HP, Attack, and\l"
+	.string "Defense rise, making it stronger.\l"
 	.string "Pokémon may learn a new move upon\l"
 	.string "leveling up.$"
 
@@ -1262,9 +1262,9 @@ Help_Text_DefineType::
 	.string "type. Every type has advantageous and\l"
 	.string "disadvantageous matchups against\l"
 	.string "other types. For example, like a rock-\l"
-	.string "paper-scissors game, the WATER type is\l"
-	.string "strong against the FIRE type and weak\l"
-	.string "against the GRASS type.$"
+	.string "paper-scissors game, the Water type is\l"
+	.string "strong against the Fire type and weak\l"
+	.string "against the Grass type.$"
 
 Help_Text_DefineOT::
 	.string "OT stands for “Original Trainer,”\n"
@@ -1279,7 +1279,7 @@ Help_Text_DefineItem::
 	.string "the Pokémon automatically in certain\l"
 	.string "situations. To make a Pokémon hold an\l"
 	.string "item, select the item from the Bag and\l"
-	.string "“GIVE” it to the Pokémon.$"
+	.string "“Give” it to the Pokémon.$"
 
 Help_Text_DefineAbility::
 	.string "All Pokémon have a special ABILITY.\n"
@@ -1334,7 +1334,7 @@ Help_Text_DefinePower::
 	.string "inflicted on the foe!$"
 
 Help_Text_DefineAccuracy::
-	.string "ACCURACY indicates the probability of\n"
+	.string "Accuracy indicates the probability of\n"
 	.string "the move hitting the foe.\l"
 	.string "The higher this number, the more likely\l"
 	.string "the move will strike the target.$"
@@ -1468,7 +1468,7 @@ Help_Text_DefineStatusProblem::
 	.string "Sleep: Can't use moves.\l"
 	.string "Poison: Causes steady HP loss.\l"
 	.string "Paralysis: May prevent moves.\l"
-	.string "Burn: HP loss and lowers ATTACK.\l"
+	.string "Burn: HP loss and lowers Attack.\l"
 	.string "Freeze: Can't use moves.\l"
 	.string "These can be healed with items, etc.$"
 
@@ -1577,106 +1577,106 @@ Help_Text_UsingTypeMatchupList::
 	.string "Using the Type Matchup List$"
 
 Help_Text_OwnMoveDark::
-	.string "Own move type: DARK$"
+	.string "Own move type: Dark$"
 
 Help_Text_OwnPokemonDark::
-	.string "Own Pokémon type: DARK$"
+	.string "Own Pokémon type: Dark$"
 
 Help_Text_OwnMoveRock::
-	.string "Own move type: ROCK$"
+	.string "Own move type: Rock$"
 
 Help_Text_OwnPokemonRock::
-	.string "Own Pokémon type: ROCK$"
+	.string "Own Pokémon type: Rock$"
 
 Help_Text_OwnMovePsychic::
-	.string "Own move type: PSYCHIC$"
+	.string "Own move type: Psychic$"
 
 Help_Text_OwnPokemonPsychic::
-	.string "Own Pokémon type: PSYCHIC$"
+	.string "Own Pokémon type: Psychic$"
 
 Help_Text_OwnMoveFighting::
-	.string "Own move type: FIGHTING$"
+	.string "Own move type: Fighting$"
 
 Help_Text_OwnPokemonFighting::
-	.string "Own Pokémon type: FIGHTING$"
+	.string "Own Pokémon type: Fighting$"
 
 Help_Text_OwnMoveGrass::
-	.string "Own move type: GRASS$"
+	.string "Own move type: Grass$"
 
 Help_Text_OwnPokemonGrass::
-	.string "Own Pokémon type: GRASS$"
+	.string "Own Pokémon type: Grass$"
 
 Help_Text_OwnMoveGhost::
-	.string "Own move type: GHOST$"
+	.string "Own move type: Ghost$"
 
 Help_Text_OwnPokemonGhost::
-	.string "Own Pokémon type: GHOST$"
+	.string "Own Pokémon type: Ghost$"
 
 Help_Text_OwnMoveIce::
-	.string "Own move type: ICE$"
+	.string "Own move type: Ice$"
 
 Help_Text_OwnPokemonIce::
-	.string "Own Pokémon type: ICE$"
+	.string "Own Pokémon type: Ice$"
 
 Help_Text_OwnMoveGround::
-	.string "Own move type: GROUND$"
+	.string "Own move type: Ground$"
 
 Help_Text_OwnPokemonGround::
-	.string "Own Pokémon type: GROUND$"
+	.string "Own Pokémon type: Ground$"
 
 Help_Text_OwnMoveElectric::
-	.string "Own move type: ELECTRIC$"
+	.string "Own move type: Electric$"
 
 Help_Text_OwnPokemonElectric::
-	.string "Own Pokémon type: ELECTRIC$"
+	.string "Own Pokémon type: Electric$"
 
 Help_Text_OwnMovePoison::
-	.string "Own move type: POISON$"
+	.string "Own move type: Poison$"
 
 Help_Text_OwnPokemonPoison::
-	.string "Own Pokémon type: POISON$"
+	.string "Own Pokémon type: Poison$"
 
 Help_Text_OwnMoveDragon::
-	.string "Own move type: DRAGON$"
+	.string "Own move type: Dragon$"
 
 Help_Text_OwnPokemonDragon::
-	.string "Own Pokémon type: DRAGON$"
+	.string "Own Pokémon type: Dragon$"
 
 Help_Text_OwnMoveNormal::
-	.string "Own move type: NORMAL$"
+	.string "Own move type: Normal$"
 
 Help_Text_OwnPokemonNormal::
-	.string "Own Pokémon type: NORMAL$"
+	.string "Own Pokémon type: Normal$"
 
 Help_Text_OwnMoveSteel::
-	.string "Own move type: STEEL$"
+	.string "Own move type: Steel$"
 
 Help_Text_OwnPokemonSteel::
-	.string "Own Pokémon type: STEEL$"
+	.string "Own Pokémon type: Steel$"
 
 Help_Text_OwnMoveFlying::
-	.string "Own move type: FLYING$"
+	.string "Own move type: Flying$"
 
 Help_Text_OwnPokemonFlying::
-	.string "Own Pokémon type: FLYING$"
+	.string "Own Pokémon type: Flying$"
 
 Help_Text_OwnMoveFire::
-	.string "Own move type: FIRE$"
+	.string "Own move type: Fire$"
 
 Help_Text_OwnPokemonFire::
-	.string "Own Pokémon type: FIRE$"
+	.string "Own Pokémon type: Fire$"
 
 Help_Text_OwnMoveWater::
-	.string "Own move type: WATER$"
+	.string "Own move type: Water$"
 
 Help_Text_OwnPokemonWater::
-	.string "Own Pokémon type: WATER$"
+	.string "Own Pokémon type: Water$"
 
 Help_Text_OwnMoveBug::
-	.string "Own move type: BUG$"
+	.string "Own move type: Bug$"
 
 Help_Text_OwnPokemonBug::
-	.string "Own Pokémon type: BUG$"
+	.string "Own Pokémon type: Bug$"
 
 Help_Text_HowToUseTypeMatchupList::
 	.string "Depending on the matchup of the\n"
@@ -1689,188 +1689,188 @@ Help_Text_HowToUseTypeMatchupList::
 
 Help_Text_TypeMatchupOwnMoveDark::
 	.string "Effect on the opposing Pokémon:\p"
-	.string "   {CIRCLE_DOT}: PSYCHIC, GHOST\p"
-	.string "   {TRIANGLE}: FIGHTING, DARK, STEEL$"
+	.string "   {CIRCLE_DOT}: Psychic, Ghost\p"
+	.string "   {TRIANGLE}: Fighting, Dark, Steel$"
 
 Help_Text_TypeMatchupOwnPokemonDark::
 	.string "Effect of foe's move on own Pokémon:\p"
-	.string "   {CIRCLE_DOT}: FIGHTING, BUG\p"
-	.string "   {TRIANGLE}: GHOST, DARK\p"
-	.string "   {BIG_MULT_X}: PSYCHIC$"
+	.string "   {CIRCLE_DOT}: Fighting, Bug\p"
+	.string "   {TRIANGLE}: Ghost, Dark\p"
+	.string "   {BIG_MULT_X}: Psychic$"
 
 Help_Text_TypeMatchupOwnMoveRock::
 	.string "Effect on the opposing Pokémon:\p"
-	.string "   {CIRCLE_DOT}: FIRE, ICE, FLYING, BUG\p"
-	.string "   {TRIANGLE}: FIGHTING, GROUND, STEEL$"
+	.string "   {CIRCLE_DOT}: Fire, Ice, Flying, Bug\p"
+	.string "   {TRIANGLE}: Fighting, Ground, Steel$"
 
 Help_Text_TypeMatchupOwnPokemonRock::
 	.string "Effect of foe's move on own Pokémon:\p"
-	.string "   {CIRCLE_DOT}: WATER, GRASS, FIGHTING,\n"
-	.string "       GROUND, STEEL\p"
-	.string "   {TRIANGLE}: NORMAL, FIRE, POISON, FLYING$"
+	.string "   {CIRCLE_DOT}: Water, Grass, Fighting,\n"
+	.string "       Ground, Steel\p"
+	.string "   {TRIANGLE}: Normal, Fire, Poison, Flying$"
 
 Help_Text_TypeMatchupOwnMovePsychic::
 	.string "Effect on the opposing Pokémon:\p"
-	.string "   {CIRCLE_DOT}: FIGHTING, POISON\p"
-	.string "   {TRIANGLE}: PSYCHIC, STEEL\p"
-	.string "   {BIG_MULT_X}: DARK$"
+	.string "   {CIRCLE_DOT}: Fighting, Poison\p"
+	.string "   {TRIANGLE}: Psychic, Steel\p"
+	.string "   {BIG_MULT_X}: Dark$"
 
 Help_Text_TypeMatchupOwnPokemonPsychic::
 	.string "Effect of foe's move on own Pokémon:\p"
-	.string "   {CIRCLE_DOT}: BUG, GHOST, DARK\p"
-	.string "   {TRIANGLE}: FIGHTING, PSYCHIC$"
+	.string "   {CIRCLE_DOT}: Bug, Ghost, Dark\p"
+	.string "   {TRIANGLE}: Fighting, Psychic$"
 
 Help_Text_TypeMatchupOwnMoveFighting::
 	.string "Effect on the opposing Pokémon:\p"
-	.string "   {CIRCLE_DOT}: NORMAL, ICE, ROCK, DARK, STEEL\p"
-	.string "   {TRIANGLE}: POISON, FLYING, PSYCHIC, BUG\p"
-	.string "   {BIG_MULT_X}: GHOST$"
+	.string "   {CIRCLE_DOT}: Normal, Ice, Rock, Dark, Steel\p"
+	.string "   {TRIANGLE}: Poison, Flying, Psychic, Bug\p"
+	.string "   {BIG_MULT_X}: Ghost$"
 
 Help_Text_TypeMatchupOwnPokemonFighting::
 	.string "Effect of foe's move on own Pokémon:\p"
-	.string "   {CIRCLE_DOT}: FLYING, PSYCHIC\p"
-	.string "   {TRIANGLE}: BUG, ROCK, DARK$"
+	.string "   {CIRCLE_DOT}: Flying, Psychic\p"
+	.string "   {TRIANGLE}: Bug, Rock, Dark$"
 
 Help_Text_TypeMatchupOwnMoveGrass::
 	.string "Effect on the opposing Pokémon:\p"
-	.string "   {CIRCLE_DOT}: WATER, GROUND, ROCK\p"
-	.string "   {TRIANGLE}: FIRE, GRASS, POISON, FLYING,\n"
-	.string "       BUG, DRAGON, STEEL$"
+	.string "   {CIRCLE_DOT}: Water, Ground, Rock\p"
+	.string "   {TRIANGLE}: Fire, Grass, Poison, Flying,\n"
+	.string "       Bug, Dragon, Steel$"
 
 Help_Text_TypeMatchupOwnPokemonGrass::
 	.string "Effect of foe's move on own Pokémon:\p"
-	.string "   {CIRCLE_DOT}: FIRE, ICE, POISON, FLYING, BUG\p"
-	.string "   {TRIANGLE}: WATER, ELECTRIC, GRASS, GROUND$"
+	.string "   {CIRCLE_DOT}: Fire, Ice, Poison, Flying, Bug\p"
+	.string "   {TRIANGLE}: Water, Electric, Grass, Ground$"
 
 Help_Text_TypeMatchupOwnMoveGhost::
 	.string "Effect on the opposing Pokémon:\p"
-	.string "   {CIRCLE_DOT}: PSYCHIC, GHOST\p"
-	.string "   {TRIANGLE}: DARK, STEEL\p"
-	.string "   {BIG_MULT_X}: NORMAL$"
+	.string "   {CIRCLE_DOT}: Psychic, Ghost\p"
+	.string "   {TRIANGLE}: Dark, Steel\p"
+	.string "   {BIG_MULT_X}: Normal$"
 
 Help_Text_TypeMatchupOwnPokemonGhost::
 	.string "Effect of foe's move on own Pokémon:\p"
-	.string "   {CIRCLE_DOT}: GHOST, DARK\p"
-	.string "   {TRIANGLE}: POISON, BUG\p"
-	.string "   {BIG_MULT_X}: NORMAL, FIGHTING$"
+	.string "   {CIRCLE_DOT}: Ghost, Dark\p"
+	.string "   {TRIANGLE}: Poison, Bug\p"
+	.string "   {BIG_MULT_X}: Normal, Fighting$"
 
 Help_Text_TypeMatchupOwnMoveIce::
 	.string "Effect on the opposing Pokémon:\p"
-	.string "   {CIRCLE_DOT}: GRASS, GROUND, FLYING, DRAGON\p"
-	.string "   {TRIANGLE}: FIRE, WATER, ICE, STEEL$"
+	.string "   {CIRCLE_DOT}: Grass, Ground, Flying, Dragon\p"
+	.string "   {TRIANGLE}: Fire, Water, Ice, Steel$"
 
 Help_Text_TypeMatchupOwnPokemonIce::
 	.string "Effect of foe's move on own Pokémon:\p"
-	.string "   {CIRCLE_DOT}: FIRE, FIGHTING, ROCK, STEEL\p"
-	.string "   {TRIANGLE}: ICE$"
+	.string "   {CIRCLE_DOT}: Fire, Fighting, Rock, Steel\p"
+	.string "   {TRIANGLE}: Ice$"
 
 Help_Text_TypeMatchupOwnMoveGround::
 	.string "Effect on the opposing Pokémon:\p"
-	.string "   {CIRCLE_DOT}: FIRE, ELECTRIC, POISON, ROCK,\n"
-	.string "       STEEL\p"
-	.string "   {TRIANGLE}: GRASS, BUG\n"
-	.string "   {BIG_MULT_X}: FLYING$"
+	.string "   {CIRCLE_DOT}: Fire, Electric, Poison, Rock,\n"
+	.string "       Steel\p"
+	.string "   {TRIANGLE}: Grass, Bug\n"
+	.string "   {BIG_MULT_X}: Flying$"
 
 Help_Text_TypeMatchupOwnPokemonGround::
 	.string "Effect of foe's move on own Pokémon:\p"
-	.string "   {CIRCLE_DOT}: WATER, GRASS, ICE\p"
-	.string "   {TRIANGLE}: POISON, ROCK\p"
-	.string "   {BIG_MULT_X}: ELECTRIC$"
+	.string "   {CIRCLE_DOT}: Water, Grass, Ice\p"
+	.string "   {TRIANGLE}: Poison, Rock\p"
+	.string "   {BIG_MULT_X}: Electric$"
 
 Help_Text_TypeMatchupOwnMoveElectric::
 	.string "Effect on the opposing Pokémon:\p"
-	.string "   {CIRCLE_DOT}: WATER, FLYING\p"
-	.string "   {TRIANGLE}: ELECTRIC, GRASS, DRAGON\p"
-	.string "   {BIG_MULT_X}: GROUND$"
+	.string "   {CIRCLE_DOT}: Water, Flying\p"
+	.string "   {TRIANGLE}: Electric, Grass, Dragon\p"
+	.string "   {BIG_MULT_X}: Ground$"
 
 Help_Text_TypeMatchupOwnPokemonElectric::
 	.string "Effect of foe's move on own Pokémon:\p"
-	.string "   {CIRCLE_DOT}: GROUND\p"
-	.string "   {TRIANGLE}: ELECTRIC, FLYING, STEEL$"
+	.string "   {CIRCLE_DOT}: Ground\p"
+	.string "   {TRIANGLE}: Electric, Flying, Steel$"
 
 Help_Text_TypeMatchupOwnMovePoison::
 	.string "Effect on the opposing Pokémon:\p"
-	.string "   {CIRCLE_DOT}: GRASS\p"
-	.string "   {TRIANGLE}: POISON, GROUND, ROCK, GHOST\p"
-	.string "   {BIG_MULT_X}: STEEL$"
+	.string "   {CIRCLE_DOT}: Grass\p"
+	.string "   {TRIANGLE}: Poison, Ground, Rock, Ghost\p"
+	.string "   {BIG_MULT_X}: Steel$"
 
 Help_Text_TypeMatchupOwnPokemonPoison::
 	.string "Effect of foe's move on own Pokémon:\p"
-	.string "   {CIRCLE_DOT}: GROUND, PSYCHIC\p"
-	.string "   {TRIANGLE}: GRASS, FIGHTING, POISON, BUG$"
+	.string "   {CIRCLE_DOT}: Ground, Psychic\p"
+	.string "   {TRIANGLE}: Grass, Fighting, Poison, Bug$"
 
 Help_Text_TypeMatchupOwnMoveDragon::
 	.string "Effect on the opposing Pokémon:\p"
-	.string "   {CIRCLE_DOT}: DRAGON\p"
-	.string "   {TRIANGLE}: STEEL$"
+	.string "   {CIRCLE_DOT}: Dragon\p"
+	.string "   {TRIANGLE}: Steel$"
 
 Help_Text_TypeMatchupOwnPokemonDragon::
 	.string "Effect of foe's move on own Pokémon:\p"
-	.string "   {CIRCLE_DOT}: ICE, DRAGON\p"
-	.string "   {TRIANGLE}: FIRE, WATER, ELECTRIC, GRASS$"
+	.string "   {CIRCLE_DOT}: Ice, Dragon\p"
+	.string "   {TRIANGLE}: Fire, Water, Electric, Grass$"
 
 Help_Text_TypeMatchupOwnMoveNormal::
 	.string "Effect on the opposing Pokémon:\p"
-	.string "   {TRIANGLE}: ROCK, STEEL\p"
-	.string "   {BIG_MULT_X}: GHOST$"
+	.string "   {TRIANGLE}: Rock, Steel\p"
+	.string "   {BIG_MULT_X}: Ghost$"
 
 Help_Text_TypeMatchupOwnPokemonNormal::
 	.string "Effect of foe's move on own Pokémon:\p"
-	.string "   {CIRCLE_DOT}: FIGHTING\p"
-	.string "   {BIG_MULT_X}: GHOST$"
+	.string "   {CIRCLE_DOT}: Fighting\p"
+	.string "   {BIG_MULT_X}: Ghost$"
 
 Help_Text_TypeMatchupOwnMoveSteel::
 	.string "Effect on the opposing Pokémon:\p"
-	.string "   {CIRCLE_DOT}: ICE, ROCK\p"
-	.string "   {TRIANGLE}: FIRE, WATER, ELECTRIC, STEEL$"
+	.string "   {CIRCLE_DOT}: Ice, Rock\p"
+	.string "   {TRIANGLE}: Fire, Water, Electric, Steel$"
 
 Help_Text_TypeMatchupOwnPokemonSteel::
 	.string "Effect of foe's move on own Pokémon:\p"
-	.string "   {CIRCLE_DOT}: FIRE, FIGHTING, GROUND\n"
-	.string "   {TRIANGLE}: NORMAL, GRASS, ICE, FLYING,\l"
-	.string "       PSYCHIC, BUG, ROCK, GHOST,\l"
-	.string "       DRAGON, DARK, STEEL\l"
-	.string "   {BIG_MULT_X}: POISON$"
+	.string "   {CIRCLE_DOT}: Fire, Fighting, Ground\n"
+	.string "   {TRIANGLE}: Normal, Grass, Ice, Flying,\l"
+	.string "       Psychic, Bug, Rock, Ghost,\l"
+	.string "       Dragon, Dark, Steel\l"
+	.string "   {BIG_MULT_X}: Poison$"
 
 Help_Text_TypeMatchupOwnMoveFlying::
 	.string "Effect on the opposing Pokémon:\p"
-	.string "   {CIRCLE_DOT}: GRASS, FIGHTING, BUG\p"
-	.string "   {TRIANGLE}: ELECTRIC, ROCK, STEEL$"
+	.string "   {CIRCLE_DOT}: Grass, Fighting, Bug\p"
+	.string "   {TRIANGLE}: Electric, Rock, Steel$"
 
 Help_Text_TypeMatchupOwnPokemonFlying::
 	.string "Effect of foe's move on own Pokémon:\p"
-	.string "   {CIRCLE_DOT}: ELECTRIC, ICE, ROCK\p"
-	.string "   {TRIANGLE}: GRASS, FIGHTING, BUG\p"
-	.string "   {BIG_MULT_X}: GROUND$"
+	.string "   {CIRCLE_DOT}: Electric, Ice, Rock\p"
+	.string "   {TRIANGLE}: Grass, Fighting, Bug\p"
+	.string "   {BIG_MULT_X}: Ground$"
 
 Help_Text_TypeMatchupOwnMoveFire::
 	.string "Effect on the opposing Pokémon:\p"
-	.string "   {CIRCLE_DOT}: GRASS, ICE, BUG, STEEL\p"
-	.string "   {TRIANGLE}: FIRE, WATER, ROCK, DRAGON$"
+	.string "   {CIRCLE_DOT}: Grass, Ice, Bug, Steel\p"
+	.string "   {TRIANGLE}: Fire, Water, Rock, Dragon$"
 
 Help_Text_TypeMatchupOwnPokemonFire::
 	.string "Effect of foe's move on own Pokémon:\p"
-	.string "   {CIRCLE_DOT}: WATER, GROUND, ROCK\p"
-	.string "   {TRIANGLE}: FIRE, GRASS, ICE, BUG, STEEL$"
+	.string "   {CIRCLE_DOT}: Water, Ground, Rock\p"
+	.string "   {TRIANGLE}: Fire, Grass, Ice, Bug, Steel$"
 
 Help_Text_TypeMatchupOwnMoveWater::
 	.string "Effect on the opposing Pokémon:\p"
-	.string "   {CIRCLE_DOT}: FIRE, GROUND, ROCK\p"
-	.string "   {TRIANGLE}: WATER, GRASS, DRAGON$"
+	.string "   {CIRCLE_DOT}: Fire, Ground, Rock\p"
+	.string "   {TRIANGLE}: Water, Grass, Dragon$"
 
 Help_Text_TypeMatchupOwnPokemonWater::
 	.string "Effect of foe's move on own Pokémon:\p"
-	.string "   {CIRCLE_DOT}: ELECTRIC, GRASS\p"
-	.string "   {TRIANGLE}: FIRE, WATER, ICE, STEEL$"
+	.string "   {CIRCLE_DOT}: Electric, Grass\p"
+	.string "   {TRIANGLE}: Fire, Water, Ice, Steel$"
 
 Help_Text_TypeMatchupOwnMoveBug::
 	.string "Effect on the opposing Pokémon:\p"
-	.string "   {CIRCLE_DOT}: GRASS, PSYCHIC, DARK\p"
-	.string "   {TRIANGLE}: FIRE, FIGHTING, POISON,\n"
-	.string "       FLYING, GHOST, STEEL$"
+	.string "   {CIRCLE_DOT}: Grass, Psychic, Dark\p"
+	.string "   {TRIANGLE}: Fire, Fighting, Poison,\n"
+	.string "       Flying, Ghost, Steel$"
 
 Help_Text_TypeMatchupOwnPokemonBug::
 	.string "Effect of foe's move on own Pokémon:\p"
-	.string "   {CIRCLE_DOT}: FIRE, FLYING, ROCK\p"
-	.string "   {TRIANGLE}: GRASS, FIGHTING, GROUND$"
+	.string "   {CIRCLE_DOT}: Fire, Flying, Rock\p"
+	.string "   {TRIANGLE}: Grass, Fighting, Ground$"
 

@@ -20,7 +20,7 @@ Route15_Text_BeckyDefeat::
     .string "No, wrong!$"
 
 Route15_Text_BeckyPostBattle::
-    .string "I'm afraid of BIKERS. They look so\n"
+    .string "I'm afraid of Bikers. They look so\n"
     .string "ugly and mean!$"
 
 Route15_Text_EdwinIntro::
@@ -45,7 +45,7 @@ Route15_Text_ChesterDefeat::
 Route15_Text_ChesterPostBattle::
     .string "This is so obvious, you should know\n"
     .string "this, but…\p"
-    .string "Moves like EARTHQUAKE and FISSURE\n"
+    .string "Moves like Earthquake and Fissure\n"
     .string "have no effect on bird Pokémon.$"
 
 Route15_Text_GraceIntro::

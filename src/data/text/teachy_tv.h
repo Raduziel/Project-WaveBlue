@@ -73,7 +73,7 @@ const u8 gTeachyTvText_MatchupsScript1[] = _(
     "Pokémon and their moves all\n"
     "belong to certain types.\p"
     "For example, there are such types\n"
-    "as GRASS and WATER.\p"
+    "as Grass and Water.\p"
     "You need to consider the type of\n"
     "the move used to attack…\p"
     "And, the type of the Pokémon that\n"
@@ -140,14 +140,14 @@ const u8 gTeachyTvText_TMsScript1[] = _(
     "You can check them out in detail,\n"
     "too.");
 const u8 gPokedudeText_TMTypes[] = _(
-    "Poké Dude: NORMAL, WATER, GRASS…\n"
+    "Poké Dude: Normal, Water, Grass…\n"
     "TMs also come in types.\p"
     "Check the type and teach it to\n"
     "a Pokémon that matches up well.\p"
-    "For example, WATER PULSE is\n"
-    "suitable for WATER-type Pokémon.\p"
+    "For example, Water PULSE is\n"
+    "suitable for Water-type Pokémon.\p"
     "BULLET SEED is a move that most\n"
-    "GRASS-type Pokémon can learn.\p"
+    "Grass-type Pokémon can learn.\p"
     "There's one other thing!");
 const u8 gPokedudeText_ReadTMDescription[] = _(
     "Don't just look at the type, read\n"

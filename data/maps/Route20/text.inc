@@ -114,7 +114,7 @@ Route20_Text_SeafoamIslands::
     .string "Seafoam Islands$"
 
 Route20_Text_MistyTrainsHere::
-    .string "Strong Trainers and WATER Pokémon\n"
+    .string "Strong Trainers and Water Pokémon\n"
     .string "are common sights in these parts.\p"
     .string "They say that Misty of the\n"
     .string "Cerulean Gym trains here.$"

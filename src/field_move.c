@@ -47,7 +47,7 @@ const struct FieldMoveInfo gFieldMovesInfo[FIELD_MOVE_COUNT] =
         .partyMessageId = PARTY_MSG_CANT_SURF_HERE,
         .description = COMPOUND_STRING("Travel on water."),
         .setUpFunc = FieldMove_SetUpSurf,
-        .questLogText = COMPOUND_STRING("{STR_VAR_1} used the Hidden Move\nSURF and rode the waves."),
+        .questLogText = COMPOUND_STRING("{STR_VAR_1} used the Hidden Move\nSurf and rode the waves."),
     },
     [FIELD_MOVE_STRENGTH] =
     {
@@ -77,7 +77,7 @@ const struct FieldMoveInfo gFieldMovesInfo[FIELD_MOVE_COUNT] =
         .partyMessageId = PARTY_MSG_CANT_USE_HERE,
         .description = COMPOUND_STRING("Shatter a cracked rock."),
         .setUpFunc = FieldMove_SetUpRockSmash,
-        .questLogText = COMPOUND_STRING("{STR_VAR_1} used the Hidden Move\nROCK SMASH here."),
+        .questLogText = COMPOUND_STRING("{STR_VAR_1} used the Hidden Move\nRock Smash here."),
     },
     [FIELD_MOVE_WATERFALL] =
     {
@@ -87,7 +87,7 @@ const struct FieldMoveInfo gFieldMovesInfo[FIELD_MOVE_COUNT] =
         .partyMessageId = PARTY_MSG_CANT_USE_HERE,
         .description = COMPOUND_STRING("Climb a waterfall."),
         .setUpFunc = FieldMove_SetUpWaterfall,
-        .questLogText = COMPOUND_STRING("{STR_VAR_1} used the Hidden Move\nWATERFALL to scale a raging torrent."),
+        .questLogText = COMPOUND_STRING("{STR_VAR_1} used the Hidden Move\nWaterfall to scale a raging torrent."),
     },
     [FIELD_MOVE_WHIRLPOOL] =
     {
@@ -137,7 +137,7 @@ const struct FieldMoveInfo gFieldMovesInfo[FIELD_MOVE_COUNT] =
         .partyMessageId = PARTY_MSG_CANT_USE_HERE,
         .description = COMPOUND_STRING("Return to a healing spot."),
         .setUpFunc = FieldMove_SetUpTeleport,
-        .questLogText = COMPOUND_STRING("{STR_VAR_1} used TELEPORT, transporting\nthe party to {STR_VAR_2}'s\n{STR_VAR_3}."),
+        .questLogText = COMPOUND_STRING("{STR_VAR_1} used Teleport, transporting\nthe party to {STR_VAR_2}'s\n{STR_VAR_3}."),
     },
     [FIELD_MOVE_DIG] =
     {
@@ -147,7 +147,7 @@ const struct FieldMoveInfo gFieldMovesInfo[FIELD_MOVE_COUNT] =
         .partyMessageId = PARTY_MSG_CANT_USE_HERE,
         .description = COMPOUND_STRING("Escape from here."),
         .setUpFunc = FieldMove_SetUpDig,
-        .questLogText = COMPOUND_STRING("{STR_VAR_1} used DIG to escape from\n{STR_VAR_2}."),
+        .questLogText = COMPOUND_STRING("{STR_VAR_1} used Dig to escape from\n{STR_VAR_2}."),
     },
     [FIELD_MOVE_MILK_DRINK] =
     {

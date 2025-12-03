@@ -43,7 +43,7 @@ ViridianCity_Gym_Text_ReceivedTM26FromGiovanni::
     .string "from Giovanni.$"
 
 ViridianCity_Gym_Text_ExplainTM26::
-    .string "TM26 contains EARTHQUAKE.\p"
+    .string "TM26 contains Earthquake.\p"
     .string "It is a powerful attack that causes\n"
     .string "a massive tremor.\p"
     .string "I made it when I ran the Gym here,\n"
@@ -151,7 +151,7 @@ ViridianCity_Gym_Text_GymGuyAdvice::
     .string "This will be the toughest of all\l"
     .string "the Gym Leaders.\p"
     .string "Also, I heard that the Trainers\n"
-    .string "here like GROUND-type Pokémon.$"
+    .string "here like Ground-type Pokémon.$"
 
 ViridianCity_Gym_Text_GymGuyPostVictory::
     .string "Blow me away! Giovanni was the\n"
@@ -160,12 +160,12 @@ ViridianCity_Gym_Text_GymGuyPostVictory::
 ViridianCity_Gym_Text_GymStatue::
     .string "Viridian Pokémon Gym\n"
     .string "Leader: ?\p"
-    .string "WINNING Trainers:\n"
+    .string "Winning Trainers:\n"
     .string "{RIVAL}$"
 
 ViridianCity_Gym_Text_GymStatuePlayerWon::
     .string "Viridian Pokémon Gym\n"
     .string "Leader: Giovanni\p"
-    .string "WINNING Trainers:\n"
+    .string "Winning Trainers:\n"
     .string "{RIVAL}, {PLAYER}$"
 

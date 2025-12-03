@@ -1,6 +1,6 @@
 ViridianForest_Text_FriendsItchingToBattle::
     .string "I came here with some friends to\n"
-    .string "catch us some BUG Pokémon!\p"
+    .string "catch us some Bug Pokémon!\p"
     .string "They're all itching to get into\n"
     .string "some Pokémon battles!$"
 
@@ -62,7 +62,7 @@ ViridianForest_Text_CharlieDefeat::
     .string "I lost!$"
 
 ViridianForest_Text_CharliePostBattle::
-    .string "BUG Pokémon evolve quickly.\n"
+    .string "Bug Pokémon evolve quickly.\n"
     .string "They're a lot of fun!$"
 
 ViridianForest_Text_RanOutOfPokeBalls::

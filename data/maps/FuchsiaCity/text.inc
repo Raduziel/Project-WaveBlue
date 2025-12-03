@@ -88,7 +88,7 @@ Text_SubstituteTeach::
     .string "And snuggle in the mother\n"
     .string "Kangaskhan's belly pouch.\p"
     .string "But only Pokémon can use the\n"
-    .string "technique SUBSTITUTE…\p"
+    .string "technique Substitute…\p"
     .string "Want me to teach Substitute to\n"
     .string "one of your Pokémon?$"
 

@@ -17,15 +17,15 @@ IndigoPlateau_PokemonCenter_1F_Text_FaceEliteFourGoodLuck::
 IndigoPlateau_PokemonCenter_1F_Text_LoreleiIsAbsentClosedForTimeBeing::
     .string "I am so sorry, but you've wasted\n"
     .string "your time coming here.\p"
-    .string "Lorelei of the ELITE FOUR is\n"
+    .string "Lorelei of the Elite Four is\n"
     .string "absent, you see.\p"
     .string "As a result, the Pokémon League is\n"
     .string "closed for the time being.$"
 
 IndigoPlateau_PokemonCenter_1F_Text_AgathaWhuppedUs::
-    .string "Agatha's GHOST-type Pokémon are\n"
+    .string "Agatha's Ghost-type Pokémon are\n"
     .string "horrifically terrifying in toughness.\p"
-    .string "I took my FIGHTING-type Pokémon\n"
+    .string "I took my Fighting-type Pokémon\n"
     .string "and raised them to the max.\p"
     .string "I went at Agatha feeling pretty\n"
     .string "confident, but she whupped us.\p"

@@ -22,7 +22,7 @@ ViridianCity_Text_ExplainCaterpieWeedle::
     .string "Caterpie has no poison,\n"
     .string "but Weedle does.\p"
     .string "Watch that your Pokémon aren't\n"
-    .string "stabbed by Weedle's POISON STING.$"
+    .string "stabbed by Weedle's Poison Sting.$"
 
 ViridianCity_Text_GrandpaHasntHadCoffeeYet::
     .string "Oh, Grandpa!\n"

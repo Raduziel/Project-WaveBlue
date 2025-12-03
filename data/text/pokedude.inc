@@ -40,22 +40,22 @@ Pokedude_Text_YayWeManagedToWin::
 	.string "We managed to win!$"
 
 Pokedude_Text_WaterNotVeryEffectiveAgainstGrass::
-	.string "Poké Dude: The move BUBBLE is\n"
-	.string "a WATER-type attack.\p"
+	.string "Poké Dude: The move Bubble is\n"
+	.string "a Water-type attack.\p"
 	.string "The targeted Oddish is a\n"
-	.string "GRASS/POISON-type Pokémon.\p"
-	.string "The WATER-type attack is absorbed\n"
-	.string "by the GRASS-type Pokémon…\p"
+	.string "Grass/Poison-type Pokémon.\p"
+	.string "The Water-type attack is absorbed\n"
+	.string "by the Grass-type Pokémon…\p"
 	.string "As a result, the move becomes not\n"
 	.string "very effective, and inflicts only\l"
 	.string "half the usual damage.$"
 
 Pokedude_Text_GrassEffectiveAgainstWater::
 	.string "Uh-oh, this is not good!\p"
-	.string "The ABSORB attack you just saw\n"
-	.string "is a GRASS-type move.\p"
-	.string "Poliwag is a WATER-type Pokémon.\p"
-	.string "So, ABSORB becomes super\n"
+	.string "The Absorb attack you just saw\n"
+	.string "is a Grass-type move.\p"
+	.string "Poliwag is a Water-type Pokémon.\p"
+	.string "So, Absorb becomes super\n"
 	.string "effective, doubling the damage.$"
 
 Pokedude_Text_LetsTryShiftingMons::
@@ -69,22 +69,22 @@ Pokedude_Text_ShiftingUsesTurn::
 	.string "Now, it's the opponent's turn.$"
 
 Pokedude_Text_ButterfreeDoubleResistsGrass::
-	.string "Butterfree is a BUG/FLYING-type\n"
+	.string "Butterfree is a Bug/Flying-type\n"
 	.string "Pokémon.\p"
-	.string "Against this Pokémon, a GRASS-\n"
+	.string "Against this Pokémon, a Grass-\n"
 	.string "type attack…\p"
 	.string "…inflicts only half the usual\n"
-	.string "damage on a BUG-type Pokémon…\p"
+	.string "damage on a Bug-type Pokémon…\p"
 	.string "…And, it also causes only half the\n"
-	.string "damage on a FLYING-type Pokémon.\p"
+	.string "damage on a Flying-type Pokémon.\p"
 	.string "Therefore, Butterfree, being a\n"
-	.string "BUG/FLYING Pokémon, only takes\l"
+	.string "Bug/Flying Pokémon, only takes\l"
 	.string "one quarter of the usual damage.$"
 
 Pokedude_Text_ButterfreeGoodAgainstOddish::
-	.string "Oddish is a GRASS/POISON-type\n"
+	.string "Oddish is a Grass/Poison-type\n"
 	.string "Pokémon.\p"
-	.string "A FLYING- or PSYCHIC-type attack\n"
+	.string "A Flying- or Psychic-type attack\n"
 	.string "is super effective against it.\p"
 	.string "One of those types of attacks will\n"
 	.string "inflict double the usual damage.\p"

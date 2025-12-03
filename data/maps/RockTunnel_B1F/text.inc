@@ -57,7 +57,7 @@ RockTunnel_B1F_Text_AllenDefeat::
 
 RockTunnel_B1F_Text_AllenPostBattle::
     .string "In mountains, you'll often find\n"
-    .string "ROCK-type Pokémon.$"
+    .string "Rock-type Pokémon.$"
 
 RockTunnel_B1F_Text_MarthaIntro::
     .string "I don't often come here, but I will\n"

@@ -2257,7 +2257,7 @@ static enum MoveCanceller CancellerConfused(struct BattleContext *ctx)
     return MOVE_STEP_SUCCESS;
 }
 
-static enum MoveCanceller CancellerGhost(struct BattleContext *ctx) // GHOST in pokemon tower
+static enum MoveCanceller CancellerGhost(struct BattleContext *ctx) // Ghost in pokemon tower
 {
     if (IsGhostBattleWithoutScope())
     {

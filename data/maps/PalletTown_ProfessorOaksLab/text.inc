@@ -104,19 +104,19 @@ PalletTown_ProfessorOaksLab_Text_OakChoosingCharmander::
     .string "Ah! Charmander is your choice.\n"
     .string "You should raise it patiently.\p"
     .string "So, {PLAYER}, you're claiming the\n"
-    .string "FIRE Pokémon Charmander?$"
+    .string "Fire Pokémon Charmander?$"
 
 PalletTown_ProfessorOaksLab_Text_OakChoosingSquirtle::
     .string "Hm! Squirtle is your choice.\n"
     .string "It's one worth raising.\p"
     .string "So, {PLAYER}, you've decided on the\n"
-    .string "WATER Pokémon Squirtle?$"
+    .string "Water Pokémon Squirtle?$"
 
 PalletTown_ProfessorOaksLab_Text_OakChoosingBulbasaur::
     .string "I see! Bulbasaur is your choice.\n"
     .string "It's very easy to raise.\p"
     .string "So, {PLAYER}, you want to go with\n"
-    .string "the GRASS Pokémon Bulbasaur?$"
+    .string "the Grass Pokémon Bulbasaur?$"
 
 PalletTown_ProfessorOaksLab_Text_OakThisMonIsEnergetic::
     .string "This Pokémon is really quite\n"

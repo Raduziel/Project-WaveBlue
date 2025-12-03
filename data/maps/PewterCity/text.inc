@@ -14,7 +14,7 @@ Text_DreamEaterDeclined::
 
 Text_DreamEaterWhichMon::
     .string "Which Pokémon wants to learn\n"
-    .string "DREAM EATER?$"
+    .string "Dream Eater?$"
 
 Text_DreamEaterTaught::
     .string "…ZZZ…\n"
@@ -23,7 +23,7 @@ Text_DreamEaterTaught::
 PewterCity_Text_ClefairyCameFromMoon::
     .string "Clefairy came from the moon.\n"
     .string "That's what the rumor is.\p"
-    .string "They appeared after MOON STONES\n"
+    .string "They appeared after Moon Stones\n"
     .string "fell on Mt. Moon.$"
 
 PewterCity_Text_BrockOnlySeriousTrainerHere::
@@ -35,7 +35,7 @@ PewterCity_Text_BrockOnlySeriousTrainerHere::
     .string "that, not one bit.$"
 
 PewterCity_Text_DidYouCheckOutMuseum::
-    .string "Did you check out the MUSEUM?$"
+    .string "Did you check out the Museum?$"
 
 PewterCity_Text_WerentThoseFossilsAmazing::
     .string "Weren't those fossils from Mt. Moon\n"

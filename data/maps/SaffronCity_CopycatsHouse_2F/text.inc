@@ -24,13 +24,13 @@ Text_MimicTeach::
     .string "For me?\n"
     .string "Thank you!\p"
     .string "You know what?\n"
-    .string "I can teach the move MIMIC.$"
+    .string "I can teach the move Mimic.$"
 
 Text_MimicDeclined::
-    .string "Don't you like MIMIC?$"
+    .string "Don't you like Mimic?$"
 
 Text_MimicWhichMon::
-    .string "I really love MIMIC!\n"
+    .string "I really love Mimic!\n"
     .string "Who's going to learn it?$"
 
 Text_MimicTaughtMale::
