@@ -4,13 +4,13 @@ const u8 gTeachyTvString_TypeMatchups[] = _("What are type matchups?");
 const u8 gTeachyTvString_CatchPkmn[] = _("I want to catch Pokémon.");
 const u8 gTeachyTvString_AboutTMs[] = _("Teach me about TMs.");
 const u8 gTeachyTvString_RegisterItem[] = _("How do I register an item?");
-const u8 gTeachyTvString_Cancel[] = _("CANCEL");
+const u8 gTeachyTvString_Cancel[] = _("Cancel");
 const u8 gTeachyTvText_PokedudeSaysHello[] = _(
-    "Hey, all you TRAINERS out there!\n"
-    "HELLO, TRAINERS!\p"
+    "Hey, all you Trainers out there!\n"
+    "Hello, Trainers!\p"
     "……… ……… ………\p"
     "Come on, let me hear you!\n"
-    "HELLO, TRAINERS!\l"
+    "Hello, Trainers!\l"
     "It's me, the Poké Dude!\p");
 const u8 gTeachyTvText_BattleScript1[] = _(
     "Today, the Poké Dude's here to\n"
@@ -35,7 +35,7 @@ const u8 gTeachyTvText_BattleScript2[] = _(
     "Just take it to any Pokémon\n"
     "Center and heal it!\p"
     "All righty, be seeing you!\p"
-    "Remember, TRAINERS, a good deed\n"
+    "Remember, Trainers, a good deed\n"
     "a day brings happiness to stay!");
 const u8 gTeachyTvText_StatusScript1[] = _(
     "Today, the Poké Dude's here to\n"
@@ -65,7 +65,7 @@ const u8 gTeachyTvText_StatusScript2[] = _(
     "Pokémon Center for healing.\p"
     "That wasn't hard, was it?\n"
     "All righty, be seeing you!\p"
-    "Remember, TRAINERS, a good deed\n"
+    "Remember, Trainers, a good deed\n"
     "a day brings happiness to stay!");
 const u8 gTeachyTvText_MatchupsScript1[] = _(
     "Does everyone know about type\n"
@@ -124,7 +124,7 @@ const u8 gTeachyTvText_CatchingScript2[] = _(
     "Keep throwing Poké BALLS…\n"
     "It's bound to work sometime!\p"
     "All righty, be seeing you!\p"
-    "Remember, TRAINERS, a good deed\n"
+    "Remember, Trainers, a good deed\n"
     "a day brings happiness to stay!");
 const u8 gTeachyTvText_TMsScript1[] = _(
     "Hey, everyone!\n"
@@ -163,13 +163,13 @@ const u8 gPokedudeText_ReadTMDescription[] = _(
 const u8 gTeachyTvText_TMsScript2[] = _(
     "Wow, I talked a lot today!\n"
     "All righty, be seeing you!\p"
-    "Remember, TRAINERS, a good deed\n"
+    "Remember, Trainers, a good deed\n"
     "a day brings happiness to stay!");
 const u8 gTeachyTvText_RegisterScript1[] = _(
-    "A TRAINER's Bag has a bunch of\n"
+    "A Trainer's Bag has a bunch of\n"
     "nifty, convenient features!\p"
-    "Take stuff in the KEY ITEMS\n"
-    "POCKET, for instance.\p"
+    "Take stuff in the Key Items\n"
+    "Pocket, for instance.\p"
     "You can use a key item without\n"
     "opening the Bag every time.\p"
     "For example, let's pretend I have\n"
@@ -184,9 +184,9 @@ const u8 gTeachyTvText_RegisterScript2[] = _(
     "registered.\p"
     "How do you use it?\n"
     "Well, here's how it works.\p"
-    "Once an item in the KEY ITEMS\n"
+    "Once an item in the Key Items\n"
     "POKCET is registered, you can use\l"
-    "it by pressing SELECT.\p"
+    "it by pressing Select.\p"
     "So, you've given yourself\n"
     "one-touch access to Teachy TV.\p"
     "All it takes for you to see me is\n"
@@ -194,5 +194,5 @@ const u8 gTeachyTvText_RegisterScript2[] = _(
     "That kind of attention is a little\n"
     "embarrassing!\p"
     "All righty, be seeing you!\p"
-    "Remember, TRAINERS, a good deed\n"
+    "Remember, Trainers, a good deed\n"
     "a day brings happiness to stay!");

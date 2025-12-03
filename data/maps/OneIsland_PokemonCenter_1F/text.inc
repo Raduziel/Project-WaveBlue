@@ -79,11 +79,11 @@ OneIsland_PokemonCenter_1F_Text_PassLetsYouTravelBetweenIslands::
 
 OneIsland_PokemonCenter_1F_Text_ReceivedExtraPageForTownMap::
     .string "{PLAYER} received an extra page\n"
-    .string "for the Town MAP!$"
+    .string "for the Town Map!$"
 
 OneIsland_PokemonCenter_1F_Text_ReceivedTownMap::
     .string "{PLAYER} received\n"
-    .string "a Town MAP!$"
+    .string "a Town Map!$"
 
 OneIsland_PokemonCenter_1F_Text_BillCatchYouLater::
     .string "Bill: I'll catch you later!\n"
@@ -223,7 +223,7 @@ OneIsland_PokemonCenter_1F_Text_AnotherGemstoneInSeviiIslands::
     .string "{PLAYER}, please, I need you to go\n"
     .string "find the other gem.\p"
     .string "{PLAYER}, may I have your ferry\n"
-    .string "PASS and the Town MAP?$"
+    .string "PASS and the Town Map?$"
 
 OneIsland_PokemonCenter_1F_Text_ReturnedTriPassForRainbowPass::
     .string "{PLAYER} returned the TRI-PASS and\n"
@@ -231,7 +231,7 @@ OneIsland_PokemonCenter_1F_Text_ReturnedTriPassForRainbowPass::
 
 OneIsland_PokemonCenter_1F_Text_ObtainedExtraMapPage::
     .string "Obtained an extra page for the\n"
-    .string "Town MAP!$"
+    .string "Town Map!$"
 
 OneIsland_PokemonCenter_1F_Text_PassLetYouGetToAllIslands::
     .string "This is my own ferry PASS.\p"

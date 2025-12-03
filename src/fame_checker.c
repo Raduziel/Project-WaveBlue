@@ -742,7 +742,7 @@ static void Task_TopMenuHandleInput(u8 taskId)
             {
                 PlaySE(SE_M_LOCK_ON);
             }
-            else if (cursorPos != sFameCheckerData->numUnlockedPersons - 1) // anything but CANCEL
+            else if (cursorPos != sFameCheckerData->numUnlockedPersons - 1) // anything but Cancel
             {
                 PlaySE(SE_M_LOCK_ON);
                 FillWindowPixelRect(FCWINDOWID_ICONDESC, PIXEL_FILL(0), 0, 0, 88, 32);
@@ -762,7 +762,7 @@ static void Task_TopMenuHandleInput(u8 taskId)
         else if (JOY_NEW(A_BUTTON))
         {
             cursorPos = ListMenu_ProcessInput(0);
-            if (cursorPos == sFameCheckerData->numUnlockedPersons - 1) // CANCEL
+            if (cursorPos == sFameCheckerData->numUnlockedPersons - 1) // Cancel
                 task->func = Task_StartToCloseFameChecker;
             else if (sFameCheckerData->inPickMode)
             {

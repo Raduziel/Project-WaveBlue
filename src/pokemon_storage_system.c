@@ -864,7 +864,7 @@ struct {
     [OPTION_WITHDRAW]   = {COMPOUND_STRING("WITHDRAW Pokémon"), COMPOUND_STRING("You can withdraw a Pokémon if you\nhave any in a Box.")},
     [OPTION_DEPOSIT]    = {COMPOUND_STRING("DEPOSIT Pokémon"),  COMPOUND_STRING("You can deposit your party\nPokémon in any Box.")},
     [OPTION_MOVE_MONS]  = {COMPOUND_STRING("MOVE Pokémon"),     COMPOUND_STRING("You can move Pokémon that are\nstored in any Box.")},
-    [OPTION_MOVE_ITEMS] = {COMPOUND_STRING("MOVE ITEMS"),       COMPOUND_STRING("You can move items held by any\nPokémon in a Box or your party.")},
+    [OPTION_MOVE_ITEMS] = {COMPOUND_STRING("MOVE Items"),       COMPOUND_STRING("You can move items held by any\nPokémon in a Box or your party.")},
     [OPTION_EXIT]       = {COMPOUND_STRING("SEE YA!"),          COMPOUND_STRING("See you later!")}
 };
 

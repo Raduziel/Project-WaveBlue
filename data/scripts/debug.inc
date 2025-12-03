@@ -775,13 +775,13 @@ MossdeepCity_SpaceCenter_2F_EventScript_ReadyForBattlePrompt::
 	end
 
 MossdeepCity_SpaceCenter_2F_Text_StevenAreYouReadyToBattle:
-	.string "STEVEN: {PLAYER}{KUN}!\n"
+	.string "Steven: {PLAYER}{KUN}!\n"
 	.string "You're going to help me?\p"
 	.string "Let's go into battle together!\n"
 	.string "Are you ready?$"
 
 MossdeepCity_SpaceCenter_2F_Text_StevenHurryGetReadyQuickly:
-	.string "STEVEN: Then, hurry!\n"
+	.string "Steven: Then, hurry!\n"
 	.string "Get ready quickly!$"
 
 MossdeepCity_SpaceCenter_Text_TabithaDefeat:

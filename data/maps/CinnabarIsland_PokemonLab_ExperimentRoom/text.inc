@@ -60,7 +60,6 @@ CinnabarIsland_PokemonLab_ExperimentRoom_Text_ThatFossilIsOfMonMakeItLiveAgain::
     .string "My Resurrection Machine will make\n"
     .string "that Pokémon live again!$"
 
-@ TODO: Resolve text dump error below?
 CinnabarIsland_PokemonLab_ExperimentRoom_Text_HandedFossilToWeirdDoctor::
     .string "So!\n"
     .string "You hurry and give me that!\p"

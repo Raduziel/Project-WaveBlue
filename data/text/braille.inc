@@ -11,7 +11,7 @@ Braille_Text_Left::
 	.braille "LEFT$"
 
 Braille_Text_Cut::
-	.braille "CUT$"
+	.braille "Cut$"
 
 Braille_Text_ABC::
 	.braille "ABC$"

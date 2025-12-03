@@ -13,7 +13,7 @@ ViridianCity_Gym_Text_GiovanniDefeat::
     .string "Ha!\n"
     .string "That was a truly intense fight.\l"
     .string "You have won!\p"
-    .string "As proof, here is the EARTHBADGE!\n"
+    .string "As proof, here is the Earth Badge!\n"
     .string "{PAUSE_MUSIC}{PLAY_BGM}{MUS_OBTAIN_BADGE}{PAUSE 0xFE}{PAUSE 0x56}{RESUME_MUSIC}$"
 
 ViridianCity_Gym_Text_GiovanniPostBattle::
@@ -28,7 +28,7 @@ ViridianCity_Gym_Text_GiovanniPostBattle::
     .string "Farewell!$"
 
 ViridianCity_Gym_Text_ExplainEarthBadgeTakeThis::
-    .string "The EARTHBADGE makes Pokémon of\n"
+    .string "The Earth Badge makes Pokémon of\n"
     .string "any level obey without question.\p"
     .string "It is evidence of your mastery as\n"
     .string "a Pokémon Trainer.\p"
@@ -107,7 +107,7 @@ ViridianCity_Gym_Text_WarrenPostBattle::
     .string "losing this way…$"
 
 ViridianCity_Gym_Text_TakashiIntro::
-    .string "I'm the KARATE KING!\n"
+    .string "I'm the Karate King!\n"
     .string "Your fate rests with me!$"
 
 ViridianCity_Gym_Text_TakashiDefeat::

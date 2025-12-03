@@ -13924,7 +13924,7 @@ const struct Item gItemsInfo[] =
         .iconPalette = gItemIconPalette_AbilityShield,
     },
 
-// GEN 9 ITEMS
+// GEN 9 Items
 
     [ITEM_CLEAR_AMULET] =
     {

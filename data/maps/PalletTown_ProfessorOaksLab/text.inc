@@ -61,7 +61,7 @@ PalletTown_ProfessorOaksLab_Text_RivalLeaveItToMeGramps::
 PalletTown_ProfessorOaksLab_Text_RivalTellSisNotToGiveYouMap::
     .string "{PLAYER}, I hate to say it, but you\n"
     .string "won't be necessary for this.\p"
-    .string "I know! I'll borrow a Town MAP\n"
+    .string "I know! I'll borrow a Town Map\n"
     .string "from my sis!\p"
     .string "I'll tell her not to lend you one,\n"
     .string "{PLAYER}! Hahaha!\p"
@@ -148,7 +148,7 @@ PalletTown_ProfessorOaksLab_Text_OakHaveSomethingForMe::
     .string "You have something for me?$"
 
 PalletTown_ProfessorOaksLab_Text_DeliveredOaksParcel::
-    .string "{PLAYER} delivered Oak'S PARCEL.$"
+    .string "{PLAYER} delivered Oak's Parcel.$"
 
 PalletTown_ProfessorOaksLab_Text_OakCustomBallIOrdered::
     .string "Ah! \n"
@@ -240,10 +240,10 @@ PalletTown_ProfessorOaksLab_Text_OaksLastMon::
     .string "That's Prof. Oak's last Pokémon.$"
 
 PalletTown_ProfessorOaksLab_Text_PressStartToOpenMenu::
-    .string "Press START to open the MENU!$"
+    .string "Press Start to open the Menu!$"
 
 PalletTown_ProfessorOaksLab_Text_SaveOptionInMenu::
-    .string "The SAVE option is on the MENU.\n"
+    .string "The Save option is on the Menu.\n"
     .string "Use it regularly.$"
 
 PalletTown_ProfessorOaksLab_Text_AllMonTypesHaveStrongAndWeakPoints::

@@ -138,7 +138,7 @@ sText_MysteryGiftVisitingTrainer:
 	.string "may take part in a survey at a\l"
 	.string "POKéMON MART.\p"
 	.string "Use these surveys to invite\n"
-	.string "TRAINERS to the SEVII ISLANDS.\p"
+	.string "Trainer to the Sevii Islands.\p"
 	.string "…Let me give you a secret\n"
 	.string "password for a survey:\p"
 	.string "“GIVE ME\n"
@@ -150,11 +150,11 @@ sText_MysteryGiftVisitingTrainer:
 sText_MysteryGiftVisitingTrainer_2:
 	.string "Thank you for using the MYSTERY\n"
 	.string "GIFT System.\p"
-	.string "A TRAINER has arrived in the SEVII\n"
-	.string "ISLANDS looking for you.\p"
+	.string "A Trainer has arrived in the Sevii\n"
+	.string "Islands looking for you.\p"
 	.string "We hope you will enjoy\n"
-	.string "battling the visiting TRAINER.\p"
-	.string "You may invite other TRAINERS by\n"
+	.string "battling the visiting Trainer.\p"
+	.string "You may invite other Trainers by\n"
 	.string "entering other passwords.\p"
 	.string "Try looking for other passwords\n"
 	.string "that may work.$"
@@ -185,20 +185,20 @@ MysteryEventScript_BattleCardInfo:
 	end
 
 sText_MysteryGiftBattleCountCard:
-	.string "Thank you for using the MYSTERY\n"
-	.string "GIFT System.\p"
-	.string "Your BATTLE COUNT CARD keeps\n"
+	.string "Thank you for using the Mystery\n"
+	.string "Gift System.\p"
+	.string "Your Battle Count Card keeps\n"
 	.string "track of your battle record against\l"
-	.string "TRAINERS with the same CARD.\p"
-	.string "Look for and battle TRAINERS who\n"
-	.string "have the same CARD as you.\p"
+	.string "Trainers with the same Card.\p"
+	.string "Look for and battle Trainers who\n"
+	.string "have the same Card as you.\p"
 	.string "You may check the overall rankings\n"
-	.string "by reading the NEWS.\p"
+	.string "by reading the News.\p"
 	.string "Please do give it a try!$"
 
 sText_MysteryGiftBattleCountCard_2:
-	.string "Thank you for using the MYSTERY\n"
-	.string "GIFT System.\p"
+	.string "Thank you for using the Mystery\n"
+	.string "Gift System.\p"
 	.string "Congratulations!\p"
 	.string "You have won a prize for winning\n"
 	.string "three battles!\p"
@@ -259,7 +259,7 @@ sText_AuroraTicketGot:
 
 sText_AuroraTicketNoPlace:
 	.string "Oh, I'm sorry, {PLAYER}. Your BAG's\n"
-	.string "KEY ITEMS POCKET is full.\p"
+	.string "Key Items Pocket is full.\p"
 	.string "Please store something on your PC,\n"
 	.string "then come back for this.$"
 
@@ -318,7 +318,7 @@ sText_MysticTicketGot:
 
 sText_MysticTicketNoPlace:
 	.string "Oh, I'm sorry, {PLAYER}. Your BAG's\n"
-	.string "KEY ITEMS POCKET is full.\p"
+	.string "Key Items Pocket is full.\p"
 	.string "Please store something on your PC,\n"
 	.string "then come back for this.$"
 
@@ -337,11 +337,11 @@ MysteryEventScript_AlteringCave_:
 	end
 
 sText_MysteryGiftAlteringCave:
-	.string "Thank you for using the MYSTERY\n"
-	.string "GIFT System.\p"
+	.string "Thank you for using the Mystery\n"
+	.string "Gift System.\p"
 	.string "Recently, there have been rumors\n"
-	.string "of rare POKéMON appearances.\p"
-	.string "The rumors are about ALTERING\n"
-	.string "CAVE on OUTCAST ISLAND.\p"
+	.string "of rare Pokémon appearances.\p"
+	.string "The rumors are about Altering\n"
+	.string "Cave on Outcast Island.\p"
 	.string "Why not visit there and check if\n"
 	.string "the rumors are indeed true?$"

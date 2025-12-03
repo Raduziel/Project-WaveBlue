@@ -18,7 +18,7 @@ ThreeIsland_BerryForest_Text_ThankYouHaveThis::
     .string "Ohh! That was so scary!\n"
     .string "Thank you!\p"
     .string "Lostelle came to pick some\n"
-    .string "BERRIES.\p"
+    .string "Berries.\p"
     .string "You can have this!$"
 
 ThreeIsland_BerryForest_Text_LetsGoHome::
@@ -34,7 +34,7 @@ ThreeIsland_BerryForest_Text_BerryPouchIsFull::
 
 ThreeIsland_BerryForest_Text_WelcomeToBerryForest::
     .string "Welcome to the Berry Forest\p"
-    .string "Be friendly and share BERRIES with\n"
+    .string "Be friendly and share Berries with\n"
     .string "others and Pokémon.$"
 
 ThreeIsland_BerryForest_Text_BewareWildBerryLovingMons::

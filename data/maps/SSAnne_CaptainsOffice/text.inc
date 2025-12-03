@@ -12,21 +12,21 @@ SSAnne_CaptainsOffice_Text_RubbedCaptainsBack::
 SSAnne_CaptainsOffice_Text_ThankYouHaveHMForCut::
     .string "Captain: Whew! Thank you!\n"
     .string "I'm feeling much better now.\p"
-    .string "You want to see my hidden CUT\n"
+    .string "You want to see my hidden Cut\n"
     .string "technique?\p"
-    .string "I could show you my prized CUT\n"
+    .string "I could show you my prized Cut\n"
     .string "technique if I weren't so ill…\p"
     .string "I know! You can have this!\n"
     .string "This HIDDEN MACHINE!\p"
-    .string "Teach CUT to your Pokémon, and\n"
-    .string "you can see it CUT anytime!$"
+    .string "Teach Cut to your Pokémon, and\n"
+    .string "you can see it Cut anytime!$"
 
 SSAnne_CaptainsOffice_Text_ObtainedHM01FromCaptain::
     .string "{PLAYER} obtained HM01\n"
     .string "from the Captain!$"
 
 SSAnne_CaptainsOffice_Text_ExplainCut::
-    .string "Using CUT, you can chop down\n"
+    .string "Using Cut, you can chop down\n"
     .string "small trees.\p"
     .string "Why not try it with the trees\n"
     .string "around Vermilion City?$"

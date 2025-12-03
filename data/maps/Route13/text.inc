@@ -65,7 +65,7 @@ Route13_Text_PerryDefeat::
 
 Route13_Text_PerryPostBattle::
     .string "I'm beat.\n"
-    .string "I guess I'll FLY home.$"
+    .string "I guess I'll Fly home.$"
 
 Route13_Text_LolaIntro::
     .string "Sure, I'll play with you, sweetie.$"
@@ -119,8 +119,8 @@ Route13_Text_LookToLeftOfThatPost::
 
 Route13_Text_SelectToSwitchItems::
     .string "Trainer Tips\p"
-    .string "Use SELECT to switch items in the\n"
-    .string "ITEMS window.$"
+    .string "Use Select to switch items in the\n"
+    .string "Items window.$"
 
 Route13_Text_RouteSign::
     .string "Route 13\n"

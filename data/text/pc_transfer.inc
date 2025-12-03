@@ -6,7 +6,7 @@ gText_PkmnTransferredSomeonesPC::
 
 gText_PkmnTransferredBillsPC::
     .string "{STR_VAR_2} was transferred to\n"
-    .string "Bill'S PC.\p"
+    .string "Bill's PC.\p"
     .string "It was placed in \n"
     .string "Box “{STR_VAR_1}.”$"
 
@@ -18,7 +18,7 @@ gText_PkmnTransferredSomeonesPCBoxFull::
 
 gText_PkmnTransferredBillsPCBoxFull::
     .string "Box “{STR_VAR_3}” on\n"
-    .string "Bill'S PC was full.\p"
+    .string "Bill's PC was full.\p"
     .string "{STR_VAR_2} was transferred to\n"
     .string "Box “{STR_VAR_1}.”$"
 
@@ -53,5 +53,5 @@ Text_MonSentToBoxInPC::
 
 Text_NoMoreRoomForPokemon::
     .string "There's no more room for Pokémon!\p"
-    .string "The Pokémon BOXES are full and\n"
+    .string "The Pokémon Boxes are full and\n"
     .string "can't accept any more!$"

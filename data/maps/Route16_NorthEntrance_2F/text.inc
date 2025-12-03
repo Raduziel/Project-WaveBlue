@@ -19,7 +19,7 @@ Route16_NorthEntrance_2F_Text_LongPathOverWater::
 
 Route16_NorthEntrance_2F_Text_GiveAmuletCoinIfCaught40::
     .string "Hi! Remember me?\n"
-    .string "I'm one of Prof. Oak's AIDES.\p"
+    .string "I'm one of Prof. Oak's Aides.\p"
     .string "I'm supposed to give you a gift.\p"
     .string "Prof. Oak entrusted me with an\n"
     .string "Amulet Coin for you.\p"

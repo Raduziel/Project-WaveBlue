@@ -2,7 +2,7 @@ IndigoPlateau_PokemonCenter_1F_Text_GymGuyAdvice::
     .string "Yo!\n"
     .string "Champ in the making!\p"
     .string "At the Pokémon League, you will\n"
-    .string "face the ELITE FOUR all in a row.\p"
+    .string "face the Elite Four all in a row.\p"
     .string "If you lose, you have to start all\n"
     .string "over again!\p"
     .string "This is it!\n"
@@ -10,7 +10,7 @@ IndigoPlateau_PokemonCenter_1F_Text_GymGuyAdvice::
 
 IndigoPlateau_PokemonCenter_1F_Text_FaceEliteFourGoodLuck::
     .string "From here on, you face the\n"
-    .string "ELITE FOUR one by one.\p"
+    .string "Elite Four one by one.\p"
     .string "If you win, a door opens to the\n"
     .string "next Trainer. Good luck!$"
 
@@ -35,7 +35,7 @@ IndigoPlateau_PokemonCenter_1F_Text_AgathaWhuppedUs::
     .string "that scary lady hollering.$"
 
 IndigoPlateau_PokemonCenter_1F_Text_LancesCousinGymLeaderFarAway::
-    .string "Maybe becoming an ELITE FOUR\n"
+    .string "Maybe becoming an Elite Four\n"
     .string "member is in the blood.\p"
     .string "From what I've heard, Lance has\n"
     .string "a cousin who's a Gym \l"

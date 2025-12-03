@@ -1,5 +1,5 @@
 FiveIsland_ResortGorgeous_House_Text_PleaseHearMyWish::
-    .string "SELPHY: Oh?\n"
+    .string "Selphy: Oh?\n"
     .string "Do I know you from somewhere?\p"
     .string "Oh, but that doesn't matter.\p"
     .string "I am exquisitely bored.\n"
@@ -12,13 +12,13 @@ FiveIsland_ResortGorgeous_House_Text_WishToSeeMonPlease::
     .string "Please, make my wish come true.$"
 
 FiveIsland_ResortGorgeous_House_Text_OhImTiredOfWaiting::
-    .string "SELPHY: Oh, I'm tired of this.\n"
+    .string "Selphy: Oh, I'm tired of this.\n"
     .string "I'm tired of waiting for you.\p"
     .string "I'll forgive you this time, but\n"
     .string "please don't fail me next time.$"
 
 FiveIsland_ResortGorgeous_House_Text_MonYouCaughtForMeThankYou::
-    .string "SELPHY: Oh, hello, there.\p"
+    .string "Selphy: Oh, hello, there.\p"
     .string "Oh, my gracious. That must be the\n"
     .string "{STR_VAR_1} you caught for me.\p"
     .string "Giggle…\n"
@@ -36,7 +36,7 @@ FiveIsland_ResortGorgeous_House_Text_ButlerYesMyLady::
     .string "Butler: Yes, my lady.$"
 
 FiveIsland_ResortGorgeous_House_Text_SelphyGiveTokenOfAppreciation::
-    .string "SELPHY: See to it that this person\n"
+    .string "Selphy: See to it that this person\n"
     .string "is given a token of appreciation.$"
 
 FiveIsland_ResortGorgeous_House_Text_ButlerIShallDoAsYouBid::
@@ -57,7 +57,7 @@ FiveIsland_ResortGorgeous_House_Text_OhHowDisappointing::
     .string "How disappointing.$"
 
 FiveIsland_ResortGorgeous_House_Text_SelphyWishYouBestOfLuck::
-    .string "SELPHY: I wish you the best of\n"
+    .string "Selphy: I wish you the best of\n"
     .string "luck.$"
 
 FiveIsland_ResortGorgeous_House_Text_LadySelphySmileHasBrillianceOfSun::

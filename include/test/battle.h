@@ -797,9 +797,9 @@ extern struct BattleTestRunnerState *const gBattleTestRunnerState;
 #define APPEND_COMMA_TRUE(a) , a, TRUE
 #define R_APPEND_TRUE(...) __VA_OPT__(FIRST(__VA_ARGS__), TRUE RECURSIVELY(R_FOR_EACH(APPEND_COMMA_TRUE, EXCEPT_1(__VA_ARGS__))))
 
-#define AI_TRAINER_NAME "{PKMN} TRAINER LEAF"
-#define AI_TRAINER_2_NAME "{PKMN} TRAINER RED"
-#define AI_PARTNER_NAME "{PKMN} TRAINER 1"
+#define AI_TRAINER_NAME "{PKMN} Trainer Leaf"
+#define AI_TRAINER_2_NAME "{PKMN} Trainer Red"
+#define AI_PARTNER_NAME "{PKMN} Trainer 1"
 
 /* Test */
 
@@ -1171,7 +1171,7 @@ void SendOut(u32 sourceLine, struct BattlePokemon *, u32 partyIndex);
 #define SWITCH_OUT_MESSAGE(name) ONE_OF {                                         \
                                      MESSAGE(name ", that's enough! Come back!"); \
                                      MESSAGE(name ", come back!");                \
-                                     MESSAGE(name ", OK! Come back!");            \
+                                     MESSAGE(name ", Ok! Come back!");            \
                                      MESSAGE(name ", good! Come back!");          \
                                  }
 

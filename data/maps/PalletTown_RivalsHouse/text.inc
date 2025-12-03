@@ -15,7 +15,7 @@ PalletTown_RivalsHouse_Text_ErrandForGrandpaThisWillHelp::
     .string "Here, this will help you.$"
 
 PalletTown_RivalsHouse_Text_ReceivedTownMapFromDaisy::
-    .string "{PLAYER} received a Town MAP\n"
+    .string "{PLAYER} received a Town Map\n"
     .string "from Daisy.$"
 
 PalletTown_RivalsHouse_Text_DontHaveSpaceForThis::
@@ -23,7 +23,7 @@ PalletTown_RivalsHouse_Text_DontHaveSpaceForThis::
     .string "your Bag.$"
 
 PalletTown_RivalsHouse_Text_ExplainTownMap::
-    .string "You can use the Town MAP to find\n"
+    .string "You can use the Town Map to find\n"
     .string "out where you are, or check the\l"
     .string "names of places.$"
 

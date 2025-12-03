@@ -11,7 +11,7 @@ ALIGNED(4) const u8 gText_UR_PleaseStartOver[] = _("Please start over from the b
 ALIGNED(4) const u8 gText_UR_WirelessSearchCanceled[] = _("The WIRELESS COMMUNICATION\nSYSTEM search has been canceled.");
 ALIGNED(4) static const u8 sText_AwaitingCommunucation2[] = _("ともだちからの れんらくを\nまっています");
 ALIGNED(4) const u8 gText_UR_AwaitingCommunication[] = _("{STR_VAR_1}! Awaiting\ncommunication from another player.");
-ALIGNED(4) const u8 gText_UR_AwaitingLinkPressStart[] = _("{STR_VAR_1}! Awaiting link!\nPress START when everyone's ready.");
+ALIGNED(4) const u8 gText_UR_AwaitingLinkPressStart[] = _("{STR_VAR_1}! Awaiting link!\nPress Start when everyone's ready.");
 
 ALIGNED(4) static const u8 sText_SingleBattle[] = _("シングルバトルを かいさいする");
 ALIGNED(4) static const u8 sText_DoubleBattle[] = _("ダブルバトルを かいさいする");
@@ -81,12 +81,12 @@ const u8 *const gTexts_UR_PlayersNeededOrMode[][5] = {
     }
 };
 
-ALIGNED(4) const u8 gText_UR_BButtonCancel[] = _("{B_BUTTON}CANCEL");
+ALIGNED(4) const u8 gText_UR_BButtonCancel[] = _("{B_BUTTON}Cancel");
 ALIGNED(4) static const u8 sText_SearchingForParticipants[] = _("ため\nさんかしゃ ぼしゅうちゅう です！");
 ALIGNED(4) const u8 gText_UR_PlayerContactedYouForXAccept[] = _("{STR_VAR_2} contacted you for\n{STR_VAR_1}. Accept?");
 ALIGNED(4) const u8 gText_UR_PlayerContactedYouShareX[] = _("{STR_VAR_2} contacted you.\nWill you share {STR_VAR_1}?");
 ALIGNED(4) const u8 gText_UR_PlayerContactedYouAddToMembers[] = _("{STR_VAR_2} contacted you.\nAdd to the members?");
-ALIGNED(4) const u8 gText_UR_AreTheseMembersOK[] = _("{STR_VAR_1}!\nAre these members OK?");
+ALIGNED(4) const u8 gText_UR_AreTheseMembersOK[] = _("{STR_VAR_1}!\nAre these members ok?");
 ALIGNED(4) const u8 gText_UR_CancelModeWithTheseMembers[] = _("Cancel {STR_VAR_1} MODE\nwith these members?");
 ALIGNED(4) const u8 gText_UR_AnOKWasSentToPlayer[] = _("An “OK” was sent\nto {STR_VAR_1}.");
 
@@ -108,8 +108,8 @@ const u8 *const gTexts_UR_PlayerUnavailable[] = {
 };
 
 ALIGNED(4) static const u8 sText_TrainerAppearsUnavailable[] = _("The other Trainer appears\nunavailable…\p");
-ALIGNED(4) const u8 gText_UR_PlayerSentBackOK[] = _("{STR_VAR_1} sent back an “OK”!");
-ALIGNED(4) const u8 gText_UR_PlayerOKdRegistration[] = _("{STR_VAR_1} OK'd your registration as\na member.");
+ALIGNED(4) const u8 gText_UR_PlayerSentBackOK[] = _("{STR_VAR_1} sent back an “Ok”!");
+ALIGNED(4) const u8 gText_UR_PlayerOKdRegistration[] = _("{STR_VAR_1} Ok'd your registration as\na member.");
 ALIGNED(4) static const u8 sText_PlayerRepliedNo[] = _("{STR_VAR_1} replied, “No…”\p");
 ALIGNED(4) const u8 gText_UR_AwaitingOtherMembers[] = _("{STR_VAR_1}!\nAwaiting other members!");
 ALIGNED(4) const u8 gText_UR_QuitBeingMember[] = _("Quit being a member?");
@@ -469,7 +469,7 @@ static const u8 *const sCantTradeMonTexts[] = {
 
 ALIGNED(4) const u8 gText_UR_TradeOfferRejected[] = _("Your trade offer was rejected.\p");
 ALIGNED(4) const u8 gText_UR_EggTrade[] = _("Egg TRADE");
-ALIGNED(4) const u8 gText_UR_ChooseJoinCancel[] = _("{DPAD_UPDOWN}CHOOSE  {A_BUTTON}JOIN  {B_BUTTON}CANCEL");
+ALIGNED(4) const u8 gText_UR_ChooseJoinCancel[] = _("{DPAD_UPDOWN}CHOOSE  {A_BUTTON}JOIN  {B_BUTTON}Cancel");
 ALIGNED(4) const u8 gText_UR_ChooseTrainer[] = _("Please choose a Trainer.");
 ALIGNED(4) static const u8 sText_ChooseTrainerSingleBattle[] = _("Please choose a Trainer for\na SINGLE BATTLE.");
 ALIGNED(4) static const u8 sText_ChooseTrainerDoubleBattle[] = _("Please choose a Trainer for\na DOUBLE BATTLE.");

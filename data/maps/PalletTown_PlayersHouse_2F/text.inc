@@ -5,13 +5,13 @@ PalletTown_PlayersHouse_2F_Text_PlayedWithNES::
 
 PalletTown_PlayersHouse_2F_Text_PressLRForHelp::
     .string "It's a posted notice…\p"
-    .string "If you're confused, ask for HELP!\n"
+    .string "If you're confused, ask for Help!\n"
     .string "Press the L or R Button!$"
 
 PalletTown_PlayersHouse_2F_Text_BillLetter:
     .string "There is a letter attached.\p"
     .string "“Heard you did great against the\n"
-    .string "ELITE FOUR.\p"
+    .string "Elite Four.\p"
     .string "I'm curious how you would raise\n"
     .string "these two.\p"
     .string "Take care of them and do your best!”\n"

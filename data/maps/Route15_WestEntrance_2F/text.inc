@@ -1,6 +1,6 @@
 Route15_WestEntrance_2F_Text_GiveItemIfCaughtEnough::
     .string "Hi! Remember me?\n"
-    .string "I'm one of Prof. Oak's AIDES.\p"
+    .string "I'm one of Prof. Oak's Aides.\p"
     .string "I'm supposed to give you a gift.\p"
     .string "Prof. Oak entrusted me with the\n"
     .string "Infinite Repel for you.\p"
@@ -15,7 +15,7 @@ Route15_WestEntrance_2F_Text_ReceivedItemFromAide::
     .string "from the Aide.$"
 
 Route15_WestEntrance_2F_Text_ExplainExpShare::
-    .string "Infinite Repel is a KEY ITEM.\p"
+    .string "Infinite Repel is a Key Item.\p"
     .string "When you activate it, you won't meet\n"
     .string "any wild Pokémon while traveling.\p"
     .string "You can turn it on or off anytime\n"

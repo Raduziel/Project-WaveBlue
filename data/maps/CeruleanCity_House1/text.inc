@@ -27,13 +27,13 @@ CeruleanCity_House1_Text_ObeyLv30Cut::
     .string "Pokémon of higher levels will\n"
     .string "be unruly in battle, however.\p"
     .string "It also lets you use the move\n"
-    .string "CUT outside of battle.$"
+    .string "Cut outside of battle.$"
 
 CeruleanCity_House1_Text_SpeedStatFly::
     .string "The Speed stat of all your\n"
     .string "Pokémon increases a little bit.\p"
     .string "It also lets you use the move\n"
-    .string "FLY outside of battle.$"
+    .string "Fly outside of battle.$"
 
 CeruleanCity_House1_Text_ObeyLv50Strength::
     .string "Pokémon up to Lv. 50 will obey\n"

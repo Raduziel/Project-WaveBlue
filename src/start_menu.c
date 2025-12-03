@@ -121,7 +121,7 @@ static void PrintSaveStats(void);
 static void CloseSaveStatsWindow(void);
 static void HideStartMenuDebug(void);
 
-static const u8 sText_MenuDebug[] = _("DEBUG");
+static const u8 sText_MenuDebug[] = _("Debug");
 
 static const struct MenuAction sStartMenuActionTable[] = {
     [STARTMENU_POKEDEX] = {gText_MenuPokedex, {.u8_void = StartMenuPokedexCallback}},

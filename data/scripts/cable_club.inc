@@ -1475,7 +1475,7 @@ CableClub_Text_CanMixRecords::
 	.string "あそびかたを　せつめいします$"
 
 CableClub_Text_CancelSelectedItem::
-	.string "Cancels the selected MENU item.$"
+	.string "Cancels the selected Menu item.$"
 
 @ Unused, translated in Emerald
 CableClub_Text_WhichBattleMode::
@@ -1535,7 +1535,7 @@ Text_PokemonJumpInfo::
 Text_DodrioBerryPickingInfo::
 	.string "“Dodrio Berry-PICKING”\p"
 	.string "Command Dodrio's three heads to\n"
-	.string "catch falling BERRIES.\p"
+	.string "catch falling Berries.\p"
 	.string "Press right, up, or left on the\n"
 	.string "{PLUS} Control Pad to move the heads.\p"
 	.string "To play this game, you must have\n"

@@ -868,7 +868,7 @@ struct SaveBlock1
     /*0x0038*/ struct Pokemon playerParty[PARTY_SIZE];
     /*0x0290*/ u32 money;
     /*0x0294*/ u16 coins;
-    /*0x0296*/ u16 registeredItem; // registered for use with SELECT button
+    /*0x0296*/ u16 registeredItem; // registered for use with Select button
     /*0x0298*/ struct ItemSlot pcItems[PC_ITEMS_COUNT];
     /*0x560*/ struct Bag bag;
     /*0x062C*/ u16 berryBlenderRecords[3]; // unused

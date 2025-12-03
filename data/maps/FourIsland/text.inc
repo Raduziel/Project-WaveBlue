@@ -48,9 +48,9 @@ FourIsland_Text_LoreleiHasLotsOfStuffedDolls::
 FourIsland_Text_MadeSlushieUsingIcefallCaveIce::
     .string "Ooh, chilly!\p"
     .string "I made a slushie using ice I\n"
-    .string "shaved inside ICEFALL Cave.\p"
+    .string "shaved inside Icefall Cave.\p"
     .string "It's chilly and tasty!$"
 
 FourIsland_Text_LoreleisHouse::
-    .string "Lorelei'S HOUSE$"
+    .string "Lorelei's House$"
 

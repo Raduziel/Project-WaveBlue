@@ -1,6 +1,6 @@
 Route11_EastEntrance_2F_Text_GiveItemfinderIfCaught30::
     .string "Hi! Remember me?\n"
-    .string "I'm one of Prof. Oak's AIDES.\p"
+    .string "I'm one of Prof. Oak's Aides.\p"
     .string "I'm supposed to give you a gift.\p"
     .string "Prof. Oak entrusted me with the\n"
     .string "{STR_VAR_2} for you.\p"

@@ -36,7 +36,7 @@ SilphCo_11F_Text_YouHaveNoRoomForThis::
     .string "You have no room for this.$"
 
 SilphCo_11F_Text_ThanksForRescuingUs::
-    .string "SECRETARY: Thank you for rescuing\n"
+    .string "Secretary: Thank you for rescuing\n"
     .string "all of us.\p"
     .string "We, from the President down,\n"
     .string "are indebted to you.$"

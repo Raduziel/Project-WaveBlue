@@ -4,7 +4,7 @@ CeruleanCity_House1_Text_AnyInterestInBerries::
     .string "Using good Berry POWDER, I can\n"
     .string "make any kind of medicine.\p"
     .string "Now tell me, have you any interest\n"
-    .string "in BERRIES?$"
+    .string "in Berries?$"
 
 CeruleanCity_House1_Text_HaveJustTheThing::
     .string "Ah, good! For you, then, I have\n"
@@ -15,7 +15,7 @@ CeruleanCity_House1_Text_GoCrushBerriesAtDirectCorner::
     .string "floor of Pokémon CENTERS, at the\l"
     .string "Direct Corner.\p"
     .string "They installed a Wireless Adapter\n"
-    .string "machine for crushing BERRIES.\p"
+    .string "machine for crushing Berries.\p"
     .string "This is where you come in.\p"
     .string "I have a favor to ask, one that\n"
     .string "I can entrust only to you.\p"
@@ -25,16 +25,16 @@ CeruleanCity_House1_Text_GoCrushBerriesAtDirectCorner::
     .string "Direct Corner of Pokémon CENTERS.\p"
     .string "I'll concoct medicine for you if\n"
     .string "you bring me some Berry POWDER.\p"
-    .string "Don't forget, crush BERRIES into\n"
+    .string "Don't forget, crush Berries into\n"
     .string "Berry POWDER and bring it to me.$"
 
 CeruleanCity_House1_Text_WhyMustYouLieNoBerries::
     .string "Why must you lie to me?\p"
-    .string "How many BERRIES do you have?\n"
+    .string "How many Berries do you have?\n"
     .string "Not a one!$"
 
 CeruleanCity_House1_Text_TakeInterestInAllSortsOfThings::
-    .string "You have no interest in BERRIES?\p"
+    .string "You have no interest in Berries?\p"
     .string "Young one, it's important to take an\n"
     .string "interest in all sorts of things.$"
 

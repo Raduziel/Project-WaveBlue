@@ -1,6 +1,6 @@
 Route2_EastBuilding_Text_GiveHM05IfSeen10Mons::
     .string "Hi! Remember me?\n"
-    .string "I'm one of Prof. Oak's AIDES.\p"
+    .string "I'm one of Prof. Oak's Aides.\p"
     .string "I'm supposed to give you a gift.\p"
     .string "Prof. Oak entrusted me with\n"
     .string "HM05 for you.\p"

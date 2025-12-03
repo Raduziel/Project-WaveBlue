@@ -71,7 +71,7 @@ Text_MegaKickTaught::
     .string "only simple punching over there.$"
 
 Route4_Text_PeopleLikeAndRespectBrock::
-    .string "Oh, wow, that's the BOULDERBADGE!\n"
+    .string "Oh, wow, that's the Boulder Badge!\n"
     .string "You got it from Brock, didn't you?\p"
     .string "Brock is cool. He's not just tough.\n"
     .string "People like and respect him.\p"
@@ -88,7 +88,7 @@ Route4_Text_CaveGuyDialogue2::
     .string "use it. Take it.$"
 
 Route4_Text_CaveGuyDialogue3::
-    .string "The Escape Rope is a KEY ITEM.\p"
+    .string "The Escape Rope is a Key Item.\p"
     .string "Use it from your Bag to escape\n"
     .string "from any cave instantly.\p"
     .string "Now, if you'll excuse me, I need\n"

@@ -85,9 +85,9 @@ FiveIsland_ResortGorgeous_Text_TobyPostBattle::
     .string "How nonsensical.$"
 
 FiveIsland_ResortGorgeous_Text_SelphyThanksYouMayGoNow::
-    .string "SELPHY: Thank you.\p"
+    .string "Selphy: Thank you.\p"
     .string "You may go now.$"
 
 FiveIsland_ResortGorgeous_Text_SelphysHouse::
-    .string "SELPHY'S HOUSE$"
+    .string "Selphy's House$"
 

@@ -40,7 +40,7 @@ ViridianCity_School_Text_NotebookFourthPage::
     .string "It is to defeat the top eight\n"
     .string "Pokémon Gym Leaders.\p"
     .string "Do so to earn the right to face…\p"
-    .string "The ELITE FOUR of the Pokémon\n"
+    .string "The Elite Four of the Pokémon\n"
     .string "League!$"
 
 ViridianCity_School_Text_TurnThePage::
@@ -52,7 +52,7 @@ ViridianCity_School_Text_HeyDontLookAtMyNotes::
 
 ViridianCity_School_Text_BlackboardListsStatusProblems::
     .string "The blackboard lists Pokémon\n"
-    .string "STATUS problems during battles.$"
+    .string "Status problems during battles.$"
 
 ViridianCity_School_Text_ReadWhichTopic::
     .string "Which topic do you want to read?$"

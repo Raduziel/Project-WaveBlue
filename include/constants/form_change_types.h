@@ -75,11 +75,11 @@ enum FormChanges
     // param3: HP percentage threshold.
     FORM_CHANGE_BATTLE_HP_PERCENT,
     // Form change that activates when the mon has the defined item.
-    // If it's on the player's side, it also requires ITEM_MEGA_RING in the user's bag and for the player to trigger it by pressing START before selecting a move.
+    // If it's on the player's side, it also requires ITEM_MEGA_RING in the user's bag and for the player to trigger it by pressing Start before selecting a move.
     // param1: item to hold.
     FORM_CHANGE_BATTLE_MEGA_EVOLUTION_ITEM,
     // Form change that activates when the mon has the defined move.
-    // If it's on the player's side, it also requires ITEM_MEGA_RING in the user's bag and for the player to trigger it by pressing START before selecting a move.
+    // If it's on the player's side, it also requires ITEM_MEGA_RING in the user's bag and for the player to trigger it by pressing Start before selecting a move.
     // param1: move to have.
     FORM_CHANGE_BATTLE_MEGA_EVOLUTION_MOVE,
     // Form change that activates automatically when entering battle with the specified item.
@@ -95,7 +95,7 @@ enum FormChanges
     // param1: ability to check.
     FORM_CHANGE_BATTLE_TURN_END,
     // Form change that activates when the mon has the defined item.
-    // If it's on the player's side, it also requires for the player to trigger it by pressing START before selecting a move.
+    // If it's on the player's side, it also requires for the player to trigger it by pressing Start before selecting a move.
     // param1: item to hold.
     FORM_CHANGE_BATTLE_ULTRA_BURST,
     // Form change that activates when the mon Dynamaxes.

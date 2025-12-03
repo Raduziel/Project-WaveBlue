@@ -1,7 +1,7 @@
 PokemonLeague_LancesRoom_Text_Intro::
     .string "Ah! I've heard about you,\n"
     .string "{PLAYER}!\p"
-    .string "I lead the ELITE FOUR.\p"
+    .string "I lead the Elite Four.\p"
     .string "You can call me Lance the dragon\n"
     .string "Trainer.\p"
     .string "You know that dragons are\n"
@@ -17,7 +17,7 @@ PokemonLeague_LancesRoom_Text_Intro::
 PokemonLeague_LancesRoom_Text_RematchIntro::
     .string "Ah!\n"
     .string "So, you've returned, {PLAYER}!\p"
-    .string "I lead the ELITE FOUR.\p"
+    .string "I lead the Elite Four.\p"
     .string "You can call me Lance the dragon\n"
     .string "Trainer.\p"
     .string "You know that dragons are\n"
@@ -45,7 +45,7 @@ PokemonLeague_LancesRoom_Text_PostBattle::
     .string "There is one more Trainer to face!\n"
     .string "His name is…\p"
     .string "{RIVAL}!\p"
-    .string "He beat the ELITE FOUR before\n"
+    .string "He beat the Elite Four before\n"
     .string "you.\p"
     .string "He is the real Pokémon League\n"
     .string "Champion.$"

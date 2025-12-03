@@ -1,7 +1,7 @@
 
 static const u8 sEasyChatWord_Wandering[] = _("WANDERING");
 static const u8 sEasyChatWord_Rickety[] = _("RICKETY");
-static const u8 sEasyChatWord_RockSolid[] = _("ROCK-SOLID");
+static const u8 sEasyChatWord_RockSolid[] = _("Rock-SOLID");
 static const u8 sEasyChatWord_Hungry[] = _("HUNGRY");
 static const u8 sEasyChatWord_Tight[] = _("TIGHT");
 static const u8 sEasyChatWord_Ticklish[] = _("TICKLISH");
