@@ -246,10 +246,10 @@ Help_Text_AnswerOutOfThingsToDo::
 
 Help_Text_AnswerWhatHappenedToItemIGot::
 	.string "Any item that you are given by another\n"
-	.string "character goes in your BAG.\l"
+	.string "character goes in your Bag.\l"
 	.string "The item is automatically sorted and\l"
 	.string "placed in one of three pockets.\l"
-	.string "For instructions on the BAG's use,\l"
+	.string "For instructions on the Bag's use,\l"
 	.string "please refer to the HELP System's\l"
 	.string "“How do I do this?” heading.$"
 
@@ -490,7 +490,7 @@ Help_Text_AnswerWhatsAMon::
 
 Help_Text_AnswerWhatIsThatPersonLike::
 	.string "Use the Fame Checker among the\n"
-	.string "KEY ITEMS in your BAG.\l"
+	.string "KEY ITEMS in your Bag.\l"
 	.string "It may give you a hint, so try it out.$"
 
 Help_Text_AnswerWhatDoesHiddenMoveDo::
@@ -544,7 +544,7 @@ Help_Text_UsingItem::
 	.string "  Using “ITEM”$"
 
 Help_Text_UsingBag::
-	.string " Using “BAG”$"
+	.string " Using “Bag”$"
 
 Help_Text_UsingAnItem::
 	.string "  Using an item$"
@@ -634,7 +634,7 @@ Help_Text_UsingSummary2::
 	.string "  Using “SUMMARY”$"
 
 Help_Text_UsingBag2::
-	.string " Using “BAG”$"
+	.string " Using “Bag”$"
 
 Help_Text_ReadingPokedex::
 	.string " Reading the “Pokédex”$"
@@ -670,7 +670,7 @@ Help_Text_UsingRock::
 	.string " Using “ROCK”$"
 
 Help_Text_UsingHallOfFame::
-	.string " Using “HALL OF FAME”$"
+	.string " Using “Hall of Fame”$"
 
 Help_Text_HowToUsePokedex::
 	.string "{CIRCLE_1} Select “Pokédex” on the MENU.\n"
@@ -713,7 +713,7 @@ Help_Text_HowToUseItem::
 	.string "item!$"
 
 Help_Text_HowToUseBag::
-	.string "{CIRCLE_1} Select “BAG” on the MENU.\n"
+	.string "{CIRCLE_1} Select “Bag” on the MENU.\n"
 	.string "{CIRCLE_2} Press left or right on the {PLUS} Control\n"
 	.string "   Pad to check the data headings:\n"
 	.string "   “ITEMS”\n"
@@ -739,7 +739,7 @@ Help_Text_HowToUseKeyItem::
 
 Help_Text_HowToUsePokeBall::
 	.string "{CIRCLE_1} While battling a wild Pokémon,\n"
-	.string "   select the BAG's “Poké Balls”\n"
+	.string "   select the Bag's “Poké Balls”\n"
 	.string "   POCKET.\n"
 	.string "{CIRCLE_2} Press up or down on the {PLUS} Control\n"
 	.string "   Pad to select a Poké Ball.\n"
@@ -774,7 +774,7 @@ Help_Text_HowToUseOption::
 Help_Text_HowToUsePotion::
 	.string "{CIRCLE_1} Open the MENU.\n"
 	.string "{CIRCLE_2} Press up or down on the {PLUS} Control\n"
-	.string "   Pad and select “BAG.”\n"
+	.string "   Pad and select “Bag.”\n"
 	.string "{CIRCLE_3} Select “POTION” in the “ITEMS”\n"
 	.string "   POCKET.\n"
 	.string "{CIRCLE_4} Select “USE.”\n"
@@ -783,7 +783,7 @@ Help_Text_HowToUsePotion::
 Help_Text_HowToUseTownMap::
 	.string "{CIRCLE_1} Open the MENU.\n"
 	.string "{CIRCLE_2} Press up or down on the {PLUS} Control\n"
-	.string "   Pad and select “BAG.”\n"
+	.string "   Pad and select “Bag.”\n"
 	.string "{CIRCLE_3} Press left or right to open the\n"
 	.string "   “KEY ITEMS” POCKET, then press\n"
 	.string "   up or down to select “Town MAP.” \n"
@@ -792,7 +792,7 @@ Help_Text_HowToUseTownMap::
 Help_Text_HowToUseTM::
 	.string "{CIRCLE_1} Open the MENU.\n"
 	.string "{CIRCLE_2} Open the “KEY ITEMS” POCKET in the\n"
-	.string "   “BAG.”\n"
+	.string "   “Bag.”\n"
 	.string "{CIRCLE_3} “OPEN” the TM CASE.\n"
 	.string "{CIRCLE_4} Select and “USE” a TM.\n"
 	.string "{CIRCLE_5} Select a Pokémon that can learn the\n"
@@ -801,7 +801,7 @@ Help_Text_HowToUseTM::
 Help_Text_HowToUseHM::
 	.string "{CIRCLE_1} Open the MENU.\n"
 	.string "{CIRCLE_2} Open the “KEY ITEMS” POCKET in the\n"
-	.string "   “BAG.”\n"
+	.string "   “Bag.”\n"
 	.string "{CIRCLE_3} “OPEN” the TM CASE.\n"
 	.string "{CIRCLE_4} Select and “USE” an HM.\n"
 	.string "{CIRCLE_5} Select a Pokémon that can learn it.\n"
@@ -818,7 +818,7 @@ Help_Text_HowToUseMoveOutsideOfBattle::
 
 Help_Text_HowToRideBicycle::
 	.string "{CIRCLE_1} Open the MENU. Open the\n"
-	.string "   “KEY ITEMS” POCKET in the “BAG”\n"
+	.string "   “KEY ITEMS” POCKET in the “Bag”\n"
 	.string "   and select the “Bicycle.”\n"
 	.string "{CIRCLE_2} The Bicycle can be ridden by\n"
 	.string "   selecting “USE.” You may also\n"
@@ -845,13 +845,13 @@ Help_Text_HowToUseBillsPC::
 	.string "   Storage System.\n"
 	.string "If you catch a Pokémon when you have\n"
 	.string "six in your party, the Pokémon is sent\n"
-	.string "automatically to a BOX in the System!$"
+	.string "automatically to a Box in the System!$"
 
 Help_Text_HowToUseWithdraw::
-	.string "{CIRCLE_1} Select a Pokémon in the open BOX\n"
+	.string "{CIRCLE_1} Select a Pokémon in the open Box\n"
 	.string "   with the {PLUS} Control Pad.\n"
 	.string "{CIRCLE_2} Select “WITHDRAW” to remove the\n"
-	.string "   Pokémon from the BOX and add it to\n"
+	.string "   Pokémon from the Box and add it to\n"
 	.string "   your party.\n"
 	.string "You may not withdraw a Pokémon if you\n"
 	.string "already have six Pokémon with you!$"
@@ -860,19 +860,19 @@ Help_Text_HowToUseDeposit::
 	.string "{CIRCLE_1} Select a Pokémon in your party with\n"
 	.string "   the {PLUS} Control Pad.\n"
 	.string "{CIRCLE_2} Select “DEPOSIT.”\n"
-	.string "{CIRCLE_3} Select the BOX, then press the\n"
+	.string "{CIRCLE_3} Select the Box, then press the\n"
 	.string "   A Button to store the Pokémon.\n"
 	.string "If you have only one Pokémon with you,\n"
 	.string "it may not be stored!$"
 
 Help_Text_HowToUseMove::
-	.string "{CIRCLE_1} Select a Pokémon in the open BOX.\n"
+	.string "{CIRCLE_1} Select a Pokémon in the open Box.\n"
 	.string "{CIRCLE_2} Pick up the Pokémon by selecting\n"
 	.string "   “MOVE” and move it anywhere with\n"
 	.string "   the {PLUS} Control Pad.\n"
-	.string "{CIRCLE_3} Move the Pokémon to the BOX name\n"
+	.string "{CIRCLE_3} Move the Pokémon to the Box name\n"
 	.string "   and press left or right to move it\n"
-	.string "   to another BOX.$"
+	.string "   to another Box.$"
 
 Help_Text_HowToMoveItems::
 	.string "{CIRCLE_1} Faintly shown Pokémon can be made\n"
@@ -881,27 +881,27 @@ Help_Text_HowToMoveItems::
 	.string "{CIRCLE_2} Clearly shown Pokémon can be made\n"
 	.string "   to give the item they are holding to\n"
 	.string "   another Pokémon, or return the item\n"
-	.string "   to the BAG with the A Button.$"
+	.string "   to the Bag with the A Button.$"
 
 Help_Text_HowToUsePlayersPC::
 	.string "{CIRCLE_1} Select “{PLAYER}'s PC” on the PC.\n"
 	.string "{CIRCLE_2} Select either “ITEM STORAGE” or\n"
 	.string "   “MAILBOX.”\n"
 	.string "You may store things in your own PC\n"
-	.string "if your BAG is full. You may also\n"
+	.string "if your Bag is full. You may also\n"
 	.string "withdraw items stored in your PC.$"
 
 Help_Text_HowToUseWithdrawItem::
 	.string "{CIRCLE_1} Select “WITHDRAW ITEM.”\n"
 	.string "{CIRCLE_2} Select the item to be withdrawn.\n"
 	.string "{CIRCLE_3} The item can be withdrawn and\n"
-	.string "   placed in the BAG's ITEMS POCKET.\n"
+	.string "   placed in the Bag's ITEMS POCKET.\n"
 	.string "   It may also be directly given to a\n"
 	.string "   Pokémon to hold.$"
 
 Help_Text_HowToUseDepositItem::
 	.string "{CIRCLE_1} Select “DEPOSIT ITEM.”\n"
-	.string "{CIRCLE_2} Select the item in the BAG to be\n"
+	.string "{CIRCLE_2} Select the item in the Bag to be\n"
 	.string "   deposited using the {PLUS} Control Pad.\n"
 	.string "{CIRCLE_3} If there is more than one \n"
 	.string "   item to be deposited, enter the\n"
@@ -909,12 +909,12 @@ Help_Text_HowToUseDepositItem::
 	.string "   then press the A Button.$"
 
 Help_Text_HowToUseMailbox::
-	.string "When MAIL is taken from a Pokémon,\n"
+	.string "When Mail is taken from a Pokémon,\n"
 	.string "it is moved to the MAILBOX. If it has\n"
-	.string "no MAIL, the MAILBOX can't be used.\n"
+	.string "no Mail, the MAILBOX can't be used.\n"
 	.string "{CIRCLE_1} Select “{PLAYER}'S PC” on the PC.\n"
-	.string "{CIRCLE_2} Select “MAILBOX” to read MAIL or\n"
-	.string "   make a Pokémon hold MAIL.$"
+	.string "{CIRCLE_2} Select “MAILBOX” to read Mail or\n"
+	.string "   make a Pokémon hold Mail.$"
 
 Help_Text_HowToUseProfOaksPC::
 	.string "{CIRCLE_1} Select “Prof. Oak'S PC” on the PC.\n"
@@ -963,7 +963,7 @@ Help_Text_HowToUseSummary2::
 	.string "   “KNOWN MOVES”$"
 
 Help_Text_HowToUseBag2::
-	.string "{CIRCLE_1} Select “BAG.”\n"
+	.string "{CIRCLE_1} Select “Bag.”\n"
 	.string "{CIRCLE_2} Press left or right on the {PLUS} Control\n"
 	.string "   Pad to check the data headings:\n"
 	.string "   “ITEMS”\n"
@@ -991,28 +991,28 @@ Help_Text_HowToUseItemStorage::
 	.string "{CIRCLE_1} Select “WITHDRAW ITEM” to withdraw\n"
 	.string "   an item stored on your PC.\n"
 	.string "{CIRCLE_2} Select “DEPOSIT ITEM” to put \n"
-	.string "   an item from your BAG into your PC.$"
+	.string "   an item from your Bag into your PC.$"
 
 Help_Text_HowToUseWithdrawItem2::
 	.string "{CIRCLE_1} Select “WITHDRAW ITEM.”\n"
 	.string "{CIRCLE_2} Select the item to be withdrawn.\n"
 	.string "{CIRCLE_3} The item can be withdrawn and\n"
-	.string "   placed in the BAG's ITEMS POCKET.\n"
+	.string "   placed in the Bag's ITEMS POCKET.\n"
 	.string "   It may also be directly given to a\n"
 	.string "   Pokémon to hold.$"
 
 Help_Text_HowToUseDepositItem2::
 	.string "{CIRCLE_1} Select “DEPOSIT ITEM.”\n"
-	.string "{CIRCLE_2} Select the item in the BAG to be\n"
+	.string "{CIRCLE_2} Select the item in the Bag to be\n"
 	.string "   deposited using the {PLUS} Control Pad.\n"
-	.string "{CIRCLE_3} If there is nothing in the BAG, this\n"
+	.string "{CIRCLE_3} If there is nothing in the Bag, this\n"
 	.string "   command can't be used!$"
 
 Help_Text_HowToUseMailbox2::
-	.string "When MAIL is taken from a Pokémon,\n"
+	.string "When Mail is taken from a Pokémon,\n"
 	.string "it is moved to the MAILBOX. If it has\n"
-	.string "no MAIL, the MAILBOX can't be used.\n"
-	.string "{CIRCLE_1} Select MAIL by name to read it or\n"
+	.string "no Mail, the MAILBOX can't be used.\n"
+	.string "{CIRCLE_1} Select Mail by name to read it or\n"
 	.string "   make a Pokémon hold it.$"
 
 Help_Text_HowToUseRun::
@@ -1051,9 +1051,9 @@ Help_Text_HowToUseRock::
 	.string "to catch!$"
 
 Help_Text_HowToUseHallOfFame::
-	.string "{CIRCLE_1} Select “HALL OF FAME” on the PC.\n"
+	.string "{CIRCLE_1} Select “Hall of Fame” on the PC.\n"
 	.string "{CIRCLE_2} The Pokémon that have entered the\n"
-	.string "   HALL OF FAME can be examined.$"
+	.string "   Hall of Fame can be examined.$"
 
 Help_Text_HP::
 	.string "HP$"
@@ -1278,7 +1278,7 @@ Help_Text_DefineItem::
 	.string "item each. Some items will be used by\l"
 	.string "the Pokémon automatically in certain\l"
 	.string "situations. To make a Pokémon hold an\l"
-	.string "item, select the item from the BAG and\l"
+	.string "item, select the item from the Bag and\l"
 	.string "“GIVE” it to the Pokémon.$"
 
 Help_Text_DefineAbility::
@@ -1360,7 +1360,7 @@ Help_Text_DefineKeyItems::
 	.string "Key items may be used, or registered\l"
 	.string "for use instantly with SELECT. Once\l"
 	.string "registered, the item can be used\l"
-	.string "without opening the MENU and BAG.$"
+	.string "without opening the MENU and Bag.$"
 
 Help_Text_DefinePokeBalls::
 	.string "Poké Balls, which are used for\n"
@@ -1413,7 +1413,7 @@ Help_Text_DefineButtonMode::
 	.string "Set to “HELP” to display help messages\n"
 	.string "by pressing the L or R Button.\l"
 	.string "Set to “LR” to enable the switching\l"
-	.string "of the Pokédex pages and BAG POCKETS\l"
+	.string "of the Pokédex pages and Bag POCKETS\l"
 	.string "using the L and R Buttons.\l"
 	.string "Set to “L=A” to make the L Button\l"
 	.string "work the same as the A Button.$"

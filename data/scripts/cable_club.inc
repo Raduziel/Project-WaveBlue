@@ -1320,7 +1320,7 @@ CableClub_Text_NeedTwoMonsToTrade::
 
 CableClub_Text_CantTradeEnigmaBerry::
 	.string "A Pokémon holding the {STR_VAR_1}\n"
-	.string "BERRY can't be traded.$"
+	.string "Berry can't be traded.$"
 
 CableClub_Text_PleaseWaitBCancel::
 	.string "Please wait.\n"
@@ -1467,7 +1467,7 @@ CableClub_Text_YouMayBattleHere::
 
 CableClub_Text_CanMakeBerryPowder::
 	.string "Two to five Trainers can make\n"
-	.string "BERRY POWDER together.$"
+	.string "Berry POWDER together.$"
 
 @ Unused, Record Mix nopped
 CableClub_Text_CanMixRecords::
@@ -1486,8 +1486,8 @@ CableClub_Text_ReturnsToPreviousStep::
 	.string "ひとつ　まえに　もどります$"
 
 CableClub_Text_NeedBerryForBerryCrush::
-	.string "To use the BERRY CRUSH service,\n"
-	.string "you must have at least one BERRY.$"
+	.string "To use the Berry CRUSH service,\n"
+	.string "you must have at least one Berry.$"
 
 CableClub_Text_NeedTwoMonsForUnionRoom::
 	.string "To enter the Union Room, you must\n"
@@ -1495,7 +1495,7 @@ CableClub_Text_NeedTwoMonsForUnionRoom::
 
 CableClub_Text_NoEnigmaBerryInUnionRoom::
 	.string "No Pokémon holding the {STR_VAR_1}\n"
-	.string "BERRY may enter the Union Room.$"
+	.string "Berry may enter the Union Room.$"
 
 CableClub_Text_UnionRoomAdapterNotConnected::
 	.string "This is the Pokémon Wireless Club\n"
@@ -1533,7 +1533,7 @@ Text_PokemonJumpInfo::
 	.string "jumps in time.$"
 
 Text_DodrioBerryPickingInfo::
-	.string "“Dodrio BERRY-PICKING”\p"
+	.string "“Dodrio Berry-PICKING”\p"
 	.string "Command Dodrio's three heads to\n"
 	.string "catch falling BERRIES.\p"
 	.string "Press right, up, or left on the\n"
@@ -1592,7 +1592,7 @@ Text_ShortJumpingPokemonAllowed::
 	.string "That's all you need to know.$"
 
 Text_OnlyDodrioAllowed::
-	.string "“DODRIO BERRY-PICKING”…\n"
+	.string "“DODRIO Berry-PICKING”…\n"
 	.string "Well, the name says it all.\p"
 	.string "You have to have a Dodrio to play\n"
 	.string "this game.$"
@@ -1619,7 +1619,7 @@ CableClub_Text_PlayWhichBattleMode::
 
 CableClub_Text_UseBerryCrush::
 	.string "Would you like to use the\n"
-	.string "BERRY CRUSH System?$"
+	.string "Berry CRUSH System?$"
 
 CableClub_Text_ExplainBattleModes::
 	.string "There are three Battle Modes.\p"

@@ -24,7 +24,7 @@ FourIsland_Text_RivalAlreadyGotEggBeSmellingYa::
     .string "You should quit copying me,\n"
     .string "you know?\p"
     .string "Anyways, I already got my Pokémon\n"
-    .string "EGG, so I'm done with this island.\p"
+    .string "Egg, so I'm done with this island.\p"
     .string "Heh, I bet you don't even know\n"
     .string "about Pokémon EGGS.\p"
     .string "You'll never fill your NATIONAL\n"

@@ -108,7 +108,7 @@ FiveIsland_RocketWarehouse_Text_ReportWithGraphsAndText::
 
 FiveIsland_RocketWarehouse_Text_GideonIntro::
     .string "I almost managed to sell the\n"
-    .string "SAPPHIRE for huge money…\p"
+    .string "Sapphire for huge money…\p"
     .string "Then, you just had to come along\n"
     .string "and blow the whole deal apart!\p"
     .string "Fufu… Fufufufu…\n"

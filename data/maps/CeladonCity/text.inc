@@ -10,7 +10,7 @@ CeladonCity_Text_GymIsGreatFullOfWomen::
 CeladonCity_Text_GameCornerIsBadForCitysImage::
     .string "Celadon takes pride in its efforts\n"
     .string "to keep the city beautiful.\p"
-    .string "That's why the new GAME CORNER is\n"
+    .string "That's why the new Game Corner is\n"
     .string "bad for our city's image.$"
 
 CeladonCity_Text_BlewItAllAtSlots::
@@ -22,7 +22,7 @@ CeladonCity_Text_BlewItAllAtSlots::
 CeladonCity_Text_MyTrustedPalPoliwrath::
     .string "This is my trusted pal, Poliwrath.\p"
     .string "It evolved from a Poliwhirl when\n"
-    .string "I used a WATER STONE.$"
+    .string "I used a Water Stone.$"
 
 CeladonCity_Text_Poliwrath::
     .string "Poliwrath: Ribi ribit!$"
@@ -36,9 +36,9 @@ CeladonCity_Text_KeepOutOfTeamRocketsWay::
 
 CeladonCity_Text_ExplainXAccuracyDireHit::
     .string "Trainer Tips\p"
-    .string "X ACCURACY boosts the accuracy of\n"
+    .string "X Accuracy boosts the accuracy of\n"
     .string "techniques.\p"
-    .string "DIRE HIT jacks up the likelihood\n"
+    .string "Dire Hit jacks up the likelihood\n"
     .string "of critical hits.\p"
     .string "Get your items at the Celadon\n"
     .string "Dept. Store!$"
@@ -61,7 +61,7 @@ CeladonCity_Text_DeptStoreSign::
 
 CeladonCity_Text_GuardSpecProtectsFromStatus::
     .string "Trainer Tips\p"
-    .string "GUARD SPEC. protects Pokémon\n"
+    .string "Guard Spec. protects Pokémon\n"
     .string "from status-reduction moves during\l"
     .string "battle.\p"
     .string "Get your items at the\n"

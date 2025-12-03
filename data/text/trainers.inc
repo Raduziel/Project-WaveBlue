@@ -245,7 +245,7 @@ Route12_Text_ChipRematchIntro::
 	.string "Fishing is a waiting game.$"
 
 Route12_Text_JustinRematchIntro::
-	.string "Still can't find a MOON STONE…\n"
+	.string "Still can't find a Moon Stone…\n"
 	.string "Have you found one?$"
 
 Route12_Text_LucaRematchIntro::
@@ -255,7 +255,7 @@ Route12_Text_LucaRematchIntro::
 	.string "of the sea, though.$"
 
 Route12_Text_HankRematchIntro::
-	.string "The FISHING FOOL vs. Pokémon KID!\n"
+	.string "The Fishing Fool vs. Pokémon Kid!\n"
 	.string "Another round, fight!$"
 
 Route12_Text_ElliotRematchIntro::

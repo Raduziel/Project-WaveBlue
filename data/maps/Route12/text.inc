@@ -41,7 +41,7 @@ Route12_Text_ChipPostBattle::
     .string "better Pokémon…$"
 
 Route12_Text_JustinIntro::
-    .string "I'm searching for a MOON STONE.\n"
+    .string "I'm searching for a Moon Stone.\n"
     .string "Have you found one?$"
 
 Route12_Text_JustinDefeat::
@@ -49,7 +49,7 @@ Route12_Text_JustinDefeat::
 
 Route12_Text_JustinPostBattle::
     .string "I could have made my Pokémon\n"
-    .string "evolve with a MOON STONE.\p"
+    .string "evolve with a Moon Stone.\p"
     .string "I would have won then, I bet.$"
 
 Route12_Text_LucaIntro::

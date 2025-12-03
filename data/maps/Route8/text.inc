@@ -100,28 +100,28 @@ Route8_Text_JuliaDefeat::
 
 Route8_Text_JuliaPostBattle::
     .string "I read that Clefairy evolves when\n"
-    .string "it's exposed to a MOON STONE.\p"
-    .string "I read that in a Pokémon JOURNAL.\n"
+    .string "it's exposed to a Moon Stone.\p"
+    .string "I read that in a Pokémon Journal.\n"
     .string "I wonder if it's true?$"
 
 Route8_Text_UndergroundPathSign::
-    .string "UNDERGROUND PATH\n"
+    .string "Underground Path\n"
     .string "Celadon City - Lavender Town$"
 
 Route8_Text_EliIntro::
-    .string "ELI: Twin power is fantastic.\n"
+    .string "Eli: Twin power is fantastic.\n"
     .string "Did you know?$"
 
 Route8_Text_EliDefeat::
-    .string "ELI: But…\n"
+    .string "Eli: But…\n"
     .string "We used our twin power…$"
 
 Route8_Text_EliPostBattle::
-    .string "ELI: I caught my Pokémon with\n"
+    .string "Eli: I caught my Pokémon with\n"
     .string "Anne!$"
 
 Route8_Text_EliNotEnoughMons::
-    .string "ELI: We can't battle if you don't\n"
+    .string "Eli: We can't battle if you don't\n"
     .string "have two Pokémon.$"
 
 Route8_Text_AnneIntro::

@@ -19,7 +19,7 @@ Route15_WestEntrance_2F_Text_ExplainExpShare::
     .string "When you activate it, you won't meet\n"
     .string "any wild Pokémon while traveling.\p"
     .string "You can turn it on or off anytime\n"
-    .string "from your BAG.$"
+    .string "from your Bag.$"
 
 Route15_WestEntrance_2F_Text_LargeShiningBird::
     .string "Let's see what the binoculars have\n"

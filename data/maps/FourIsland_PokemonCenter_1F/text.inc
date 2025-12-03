@@ -31,7 +31,7 @@ FourIsland_PokemonCenter_1F_Text_RareIceMonsInCave::
     .string "see that Pokémon.$"
 
 FourIsland_PokemonCenter_1F_Text_DayCarePeopleFoundEggBefore::
-    .string "Oh? A Pokémon EGG?\n"
+    .string "Oh? A Pokémon Egg?\n"
     .string "…I have no idea.\p"
     .string "…Oh, wait. The DAY-CARE people\n"
     .string "in town were saying something.\p"

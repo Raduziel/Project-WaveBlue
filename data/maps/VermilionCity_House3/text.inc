@@ -13,8 +13,8 @@ VermilionCity_House3_Text_DearPippiLetter::
     .string "Vermilion appears to be safe.$"
 
 VermilionCity_House3_Text_SendMyPidgeyToUnionRoom::
-    .string "I want to exchange MAIL with all\n"
+    .string "I want to exchange Mail with all\n"
     .string "sorts of people.\p"
     .string "I send my Pidgey to a Union Room\n"
-    .string "to exchange MAIL for me.$"
+    .string "to exchange Mail for me.$"
 

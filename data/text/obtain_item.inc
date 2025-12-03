@@ -2,7 +2,7 @@ Text_ObtainedTheX::
 	.string "Obtained the {STR_VAR_2}!$"
 
 Text_BagIsFull::
-	.string "The BAG is full…$"
+	.string "The Bag is full…$"
 
 Text_PutItemAway::
 	.string "{PLAYER} put the {STR_VAR_2}\n"
@@ -13,7 +13,7 @@ Text_FoundOneItem::
 
 Text_TooBadBagFull::
 	.string "Too bad!\n"
-	.string "The BAG is full…$"
+	.string "The Bag is full…$"
 
 Text_FoundXCoins::
 	.string "{PLAYER} found\n"

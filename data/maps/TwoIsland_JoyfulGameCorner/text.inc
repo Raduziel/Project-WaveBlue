@@ -18,7 +18,7 @@ TwoIsland_JoyfulGameCorner_Text_PleaseHelpFindLostelle::
     .string "Please go search Three Island!$"
 
 TwoIsland_JoyfulGameCorner_Text_IsThisOnlyThreeIsland::
-    .string "Hah? What is this GAME CORNER?\n"
+    .string "Hah? What is this Game Corner?\n"
     .string "How much sadder can this get?\p"
     .string "Those clowns…\p"
     .string "They said they'd be waiting on the\n"
@@ -83,7 +83,7 @@ TwoIsland_JoyfulGameCorner_Text_ThisIsForMe::
     .string "happy.$"
 
 TwoIsland_JoyfulGameCorner_Text_HandedMeteoriteToLostellesDaddy::
-    .string "{PLAYER} handed the METEORITE\n"
+    .string "{PLAYER} handed the Meteorite\n"
     .string "to Lostelle's daddy.$"
 
 TwoIsland_JoyfulGameCorner_Text_OhThisIsFromBill::
@@ -93,15 +93,15 @@ TwoIsland_JoyfulGameCorner_Text_OhThisIsFromBill::
     .string "I want you to have this.$"
 
 TwoIsland_JoyfulGameCorner_Text_ReceivedMoonStoneFromLostellesDaddy::
-    .string "{PLAYER} received a MOON STONE\n"
+    .string "{PLAYER} received a Moon Stone\n"
     .string "from Lostelle's daddy.$"
 
 TwoIsland_JoyfulGameCorner_Text_NotGoingToFitInBag::
-    .string "Your BAG's not going to fit another\n"
+    .string "Your Bag's not going to fit another\n"
     .string "thing…$"
 
 TwoIsland_JoyfulGameCorner_Text_IllGetGameCornerRunning::
-    .string "All right, I'll get the GAME CORNER\n"
+    .string "All right, I'll get the Game Corner\n"
     .string "running right away.\p"
     .string "You have to come visit with a\n"
     .string "friend.$"

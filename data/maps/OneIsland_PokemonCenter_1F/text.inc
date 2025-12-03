@@ -54,16 +54,16 @@ OneIsland_PokemonCenter_1F_Text_CanYouDeliverThisMeteoritePlayer::
     .string "The island next to this one's\n"
     .string "called Two Island.\p"
     .string "There's a guy there that runs\n"
-    .string "a GAME CORNER.\p"
+    .string "a Game Corner.\p"
     .string "He has this thing for rare rocks\n"
     .string "and gems.\p"
     .string "We keep in touch, being fellow\n"
     .string "maniacs.\p"
     .string "So, can I get you to deliver this\n"
-    .string "METEORITE to him?$"
+    .string "Meteorite to him?$"
 
 OneIsland_PokemonCenter_1F_Text_AcceptedMeteoriteFromBill::
-    .string "{PLAYER} accepted the METEORITE\n"
+    .string "{PLAYER} accepted the Meteorite\n"
     .string "from Bill.$"
 
 OneIsland_PokemonCenter_1F_Text_CelioPleaseTakeThis::
@@ -199,7 +199,7 @@ OneIsland_PokemonCenter_1F_Text_OhThats::
     .string "Th-that's…$"
 
 OneIsland_PokemonCenter_1F_Text_HandedRubyToCelio::
-    .string "{PLAYER} handed the RUBY\n"
+    .string "{PLAYER} handed the Ruby\n"
     .string "to Celio.$"
 
 OneIsland_PokemonCenter_1F_Text_MayIAskOneMoreFavor::
@@ -217,7 +217,7 @@ OneIsland_PokemonCenter_1F_Text_AnotherGemstoneInSeviiIslands::
     .string "While I was studying gemstones,\n"
     .string "I discovered something important.\p"
     .string "There is another gem that forms\n"
-    .string "a pair with this RUBY.\p"
+    .string "a pair with this Ru.\p"
     .string "That other gemstone is supposed to\n"
     .string "be in the Sevii Islands.\p"
     .string "{PLAYER}, please, I need you to go\n"
@@ -241,7 +241,7 @@ OneIsland_PokemonCenter_1F_Text_PassLetYouGetToAllIslands::
     .string "it without your help.$"
 
 OneIsland_PokemonCenter_1F_Text_HandedSapphireToCelio::
-    .string "{PLAYER} handed the SAPPHIRE\n"
+    .string "{PLAYER} handed the Sapphire\n"
     .string "to Celio.$"
 
 OneIsland_PokemonCenter_1F_Text_ThankYouGiveMeTime::
@@ -299,7 +299,7 @@ OneIsland_PokemonCenter_1F_Text_BillsHometownInGoldenrod::
     .string "Pallet Town, aren't you?\p"
     .string "I've heard that it's a quiet and\n"
     .string "pleasant place.\p"
-    .string "Bill's hometown is GOLDENROD City,\n"
+    .string "Bill's hometown is Goldenrod City,\n"
     .string "where his folks still live.\p"
     .string "I've heard that it's quite the\n"
     .string "festive, bustling city.\p"

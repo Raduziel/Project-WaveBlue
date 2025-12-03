@@ -11,7 +11,7 @@ DayCare_Text_DoYouWantEgg::
 	.string "Ah, it's you!\p"
 	.string "We were raising your Pokémon, and\n"
 	.string "my goodness, were we surprised!\p"
-	.string "Your Pokémon had an EGG!\p"
+	.string "Your Pokémon had an Egg!\p"
 	.string "We don't know how it got there,\n"
 	.string "but your Pokémon had it.\p"
 	.string "You do want it, yes?$"
@@ -29,7 +29,7 @@ DayCare_Text_YouHaveNoRoomForIt::
 	.string "Come back when you've made room.$"
 
 DayCare_Text_ReceivedEgg::
-	.string "{PLAYER} received the EGG from\n"
+	.string "{PLAYER} received the Egg from\n"
 	.string "the DAY-CARE MAN.$"
 
 DayCare_Text_TakeGoodCareOfIt::

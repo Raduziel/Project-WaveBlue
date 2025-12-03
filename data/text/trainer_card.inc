@@ -50,31 +50,31 @@ FourIsland_House2_Text_BragAboutWhatToday::
 
 FourIsland_House2_Text_WowHoFLowest::
 	.string "Oh, wow, you made it into the\n"
-	.string "HALL OF FAME.\p"
+	.string "Hall of Fame.\p"
 	.string "That's pretty good, yup!\n"
 	.string "I'll give you one of these.$"
 
 FourIsland_House2_Text_WowHoFLow::
 	.string "Oh, wow, you've entered the\n"
-	.string "HALL OF FAME often!\p"
+	.string "Hall of Fame often!\p"
 	.string "That's impressive, yup!\n"
 	.string "I'll give you one of these.$"
 
 FourIsland_House2_Text_WowHoFHigh::
 	.string "Whoa! You've made it into the\n"
-	.string "HALL OF FAME that often?\l"
+	.string "Hall of Fame that often?\l"
 	.string "That's seriously incredible, yup!\p"
 	.string "You own the Pokémon League!\n"
 	.string "I'll give you one of these.$"
 
 FourIsland_House2_Text_WowHoFHighest::
 	.string "No way! You've gone into the\n"
-	.string "HALL OF FAME that many times?\p"
+	.string "Hall of Fame that many times?\p"
 	.string "You're beyond incredible, yup!\n"
 	.string "That's it, I have to give you this.$"
 
 FourIsland_House2_Text_HoFStickerApplied::
-	.string "The HALL OF FAME Sticker was\n"
+	.string "The Hall of Fame Sticker was\n"
 	.string "applied to the Trainer CARD.$"
 
 FourIsland_House2_Text_ComeBackWithBetterStoryHoF::
@@ -102,7 +102,7 @@ FourIsland_House2_Text_WowEggsLow::
 FourIsland_House2_Text_WowEggsHigh::
 	.string "Whoa! You've hatched a whole\n"
 	.string "bunch of EGGS!\p"
-	.string "You're an EGG-hatching machine!\n"
+	.string "You're an Egg-hatching machine!\n"
 	.string "I'll give you one of these.$"
 
 FourIsland_House2_Text_WowEggsHighest::
@@ -113,7 +113,7 @@ FourIsland_House2_Text_WowEggsHighest::
 	.string "That's it, I have to give you this.$"
 
 FourIsland_House2_Text_EggStickerApplied::
-	.string "The EGG Sticker was applied\n"
+	.string "The Egg Sticker was applied\n"
 	.string "to the Trainer CARD.$"
 
 FourIsland_House2_Text_ComeBackWithBetterStoryEggs::

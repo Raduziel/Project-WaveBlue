@@ -20,7 +20,7 @@ PalletTown_RivalsHouse_Text_ReceivedTownMapFromDaisy::
 
 PalletTown_RivalsHouse_Text_DontHaveSpaceForThis::
     .string "You don't have space for this in\n"
-    .string "your BAG.$"
+    .string "your Bag.$"
 
 PalletTown_RivalsHouse_Text_ExplainTownMap::
     .string "You can use the Town MAP to find\n"
@@ -75,7 +75,7 @@ PalletTown_RivalsHouse_Text_ThereYouGoAllDone::
 
 PalletTown_RivalsHouse_Text_CantGroomAnEgg::
     .string "Oh, sorry. I honestly can't\n"
-    .string "groom an EGG.$"
+    .string "groom an Egg.$"
 
 PalletTown_RivalsHouse_Text_MayISeeFirstMon::
     .string "Daisy: Your Pokémon grow to love\n"

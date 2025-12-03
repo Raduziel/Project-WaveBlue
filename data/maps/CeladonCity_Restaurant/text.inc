@@ -9,7 +9,7 @@ CeladonCity_Restaurant_Text_OftenGoToDrugstore::
 
 CeladonCity_Restaurant_Text_PsstBasementUnderGameCorner::
     .string "Psst! There's a basement under the\n"
-    .string "GAME CORNER, I hear.$"
+    .string "Game Corner, I hear.$"
 
 CeladonCity_Restaurant_Text_ManLostItAllAtSlots::
     .string "Munch…\p"

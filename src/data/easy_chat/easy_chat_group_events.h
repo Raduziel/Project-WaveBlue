@@ -2,13 +2,13 @@
 static const u8 sEasyChatWord_Appeal[] = _("APPEAL");
 static const u8 sEasyChatWord_Events[] = _("EVENTS");
 static const u8 sEasyChatWord_StayAtHome[] = _("STAY-AT-HOME");
-static const u8 sEasyChatWord_Berry[] = _("BERRY");
+static const u8 sEasyChatWord_Berry[] = _("Berry");
 static const u8 sEasyChatWord_Contest[] = _("CONTEST");
 static const u8 sEasyChatWord_Mc[] = _("MC");
 static const u8 sEasyChatWord_Judge[] = _("JUDGE");
 static const u8 sEasyChatWord_Super[] = _("SUPER");
 static const u8 sEasyChatWord_Stage[] = _("STAGE");
-static const u8 sEasyChatWord_HallOfFame[] = _("HALL OF FAME");
+static const u8 sEasyChatWord_HallOfFame[] = _("Hall of Fame");
 static const u8 sEasyChatWord_Evolution[] = _("EVOLUTION");
 static const u8 sEasyChatWord_Hyper[] = _("HYPER");
 static const u8 sEasyChatWord_BattleTower[] = _("Battle Tower");

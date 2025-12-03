@@ -1,7 +1,7 @@
 CeladonCity_DepartmentStore_4F_Text_GettingPokeDollAsPresent::
     .string "I heard that some evolution\n"
     .string "items can only be obtained at the\p"
-    .string "GAME CORNER. Too bad I'm not\n"
+    .string "Game Corner. Too bad I'm not\n"
     .string "much of a gambler.$"
 
 CeladonCity_DepartmentStore_4F_Text_CanRunAwayWithPokeDoll::

@@ -22,7 +22,7 @@ Text_SeismicTossTaught::
     .string "Keep it up.$"
 
 PewterCity_Museum_1F_Text_WhatsSpecialAboutMoonStone::
-    .string "MOON STONE, huh?\p"
+    .string "Moon Stone, huh?\p"
     .string "What's so special about it?\n"
     .string "Looks like an ordinary rock to me.$"
 
@@ -50,7 +50,7 @@ PewterCity_Museum_1F_Text_SpaceShuttle::
 
 PewterCity_Museum_1F_Text_MeteoriteThatFellOnMtMoon::
     .string "A meteorite that fell on Mt. Moon.\n"
-    .string "It is thought to be a MOON STONE.$"
+    .string "It is thought to be a Moon Stone.$"
 
 PewterCity_Museum_2F_Text_RumorsOfFossils:
     .string "There are rumors that rare Pokémon\n"

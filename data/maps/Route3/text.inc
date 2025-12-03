@@ -27,7 +27,7 @@ Route3_Text_BenDefeat::
 Route3_Text_BenPostBattle::
     .string "Are you using a Pokémon Center's\n"
     .string "PC for storing your Pokémon?\p"
-    .string "Each BOX can hold up to\n"
+    .string "Each Box can hold up to\n"
     .string "30 Pokémon.$"
 
 Route3_Text_JaniceIntro::
@@ -50,8 +50,8 @@ Route3_Text_GregDefeat::
     .string "won!$"
 
 Route3_Text_GregPostBattle::
-    .string "If a Pokémon BOX on the PC gets\n"
-    .string "full, just switch to another BOX.$"
+    .string "If a Pokémon Box on the PC gets\n"
+    .string "full, just switch to another Box.$"
 
 Route3_Text_SallyIntro::
     .string "That look you gave me…\n"
