@@ -32,7 +32,7 @@ PokemonMansion_1F_Text_ChristenedDiscoveredMonMew::
     .string "Pokémon, Mew.$"
 
 Text_Porygon_Cry::
-    .string "{COLOR LIGHT_RED}{SHADOW RED}Gyyyy-zzzt!1010!$"
+    .string "Porygon:{COLOR LIGHT_RED}{SHADOW RED}Gyyyy-zzzt!1010!$"
 
 Text_Porygon_Disappears::
     .string "Porygon disappeared into digital\n"

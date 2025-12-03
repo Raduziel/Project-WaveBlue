@@ -622,13 +622,13 @@ Help_Text_OpeningMenu::
 	.string "Opening the Menu$"
 
 Help_Text_UsingFight::
-	.string " Using “FIGHT”$"
+	.string " Using “Fight”$"
 
 Help_Text_UsingPokemon2::
 	.string " Using “Pokémon”$"
 
 Help_Text_UsingShift::
-	.string "  Using “SHIFT”$"
+	.string "  Using “Shift”$"
 
 Help_Text_UsingSummary2::
 	.string "  Using “SUMMARY”$"
@@ -646,19 +646,19 @@ Help_Text_UsingItemStorage::
 	.string "Using the Item Storage System$"
 
 Help_Text_UsingWithdrawItem2::
-	.string "  Using “WITHDRAW ITEM”$"
+	.string "  Using “Withdraw Item”$"
 
 Help_Text_UsingDepositItem2::
-	.string "  Using “DEPOSIT ITEM”$"
+	.string "  Using “Deposit Item”$"
 
 Help_Text_UsingMailbox2::
 	.string "Using the Mailbox$"
 
 Help_Text_UsingRun::
-	.string " Using “RUN”$"
+	.string " Using “Run”$"
 
 Help_Text_RegisterKeyItem::
-	.string "  “REGISTER” a key item$"
+	.string "  “Register” a key item$"
 
 Help_Text_UsingBall::
 	.string " Using “Ball”$"
@@ -676,39 +676,39 @@ Help_Text_HowToUsePokedex::
 	.string "{CIRCLE_1} Select “Pokédex” on the Menu.\n"
 	.string "{CIRCLE_2} Choose Pokémon using commands such\n"
 	.string "   as “Pokémon List,”\n"
-	.string "   “HABITATS OF Pokémon,” and\n"
-	.string "   “SEARCH.”\n"
+	.string "   “Habitats OF Pokémon,” and\n"
+	.string "   “Search.”\n"
 	.string "{CIRCLE_3} Select a Pokémon to obtain detailed\n"
 	.string "   information.$"
 
 Help_Text_HowToUsePokemon::
 	.string "{CIRCLE_1} Select “Pokémon” on the Menu.\n"
 	.string "{CIRCLE_2} Choose a Pokémon in your party.\n"
-	.string "{CIRCLE_3} Select “SUMMARY,” “SWITCH,”\n"
+	.string "{CIRCLE_3} Select “Summary,” “Switch,”\n"
 	.string "   or “ITEM.”$"
 
 Help_Text_HowToUseSummary::
-	.string "{CIRCLE_1} Select “SUMMARY.”\n"
+	.string "{CIRCLE_1} Select “Summary.”\n"
 	.string "{CIRCLE_2} Press left or right on the {PLUS} Control\n"
 	.string "   Pad to check the information:\n"
-	.string "   “Pokémon INFO”\n"
-	.string "   “Pokémon SKILLS”\n"
-	.string "   “KNOWN MOVES”$"
+	.string "   “Pokémon Info”\n"
+	.string "   “Pokémon Skills”\n"
+	.string "   “Known Moves”$"
 
 Help_Text_HowToUseSwitch::
 	.string "{CIRCLE_1} Choose the Pokémon you want to\n"
 	.string "   switch around.\n"
-	.string "{CIRCLE_2} Select “SWITCH.”\n"
+	.string "{CIRCLE_2} Select “Switch.”\n"
 	.string "{CIRCLE_3} Select the Pokémon to switch with\n"
 	.string "   the first one.\n"
 	.string "The Pokémon at the left of the screen\n"
 	.string "will be the first one out in a battle.$"
 
 Help_Text_HowToUseItem::
-	.string "{CIRCLE_1} Select “ITEM.”\n"
-	.string "{CIRCLE_2} Select whether you want to “GIVE”\n"
+	.string "{CIRCLE_1} Select “Item.”\n"
+	.string "{CIRCLE_2} Select whether you want to “Give”\n"
 	.string "   an item to the Pokémon to hold,\n"
-	.string "   or “TAKE” an item it is holding.\n"
+	.string "   or “Take” an item it is holding.\n"
 	.string "A Pokémon can hold no more than one\n"
 	.string "item!$"
 
@@ -716,16 +716,16 @@ Help_Text_HowToUseBag::
 	.string "{CIRCLE_1} Select “Bag” on the Menu.\n"
 	.string "{CIRCLE_2} Press left or right on the {PLUS} Control\n"
 	.string "   Pad to check the data headings:\n"
-	.string "   “ITEMS”\n"
+	.string "   “Items”\n"
 	.string "   “Key Items”\n"
 	.string "   “Poké Balls”\n"
 	.string "   Press up or down to select an item.$"
 
 Help_Text_HowToUseAnItem::
-	.string "{CIRCLE_1} Select the “ITEMS” Pocket.\n"
+	.string "{CIRCLE_1} Select the “Items” Pocket.\n"
 	.string "{CIRCLE_2} Press up or down on the {PLUS} Control\n"
 	.string "   Pad to select an item.\n"
-	.string "{CIRCLE_3} Select “USE” to use the selected\n"
+	.string "{CIRCLE_3} Select “Use” to use the selected\n"
 	.string "   item.\n"
 	.string "Some items may not be used depending\n"
 	.string "on the place and/or situation.$"
@@ -733,9 +733,9 @@ Help_Text_HowToUseAnItem::
 Help_Text_HowToUseKeyItem::
 	.string "{CIRCLE_1} Select the “Key Items” Pocket.\n"
 	.string "{CIRCLE_2} Press up or down on the {PLUS} Control\n"
-	.string "   Pad to select a key item.\n"
-	.string "{CIRCLE_3} Select “USE” to use the selected\n"
-	.string "   key item.$"
+	.string "   Pad to select a Key Item.\n"
+	.string "{CIRCLE_3} Select “Use” to use the selected\n"
+	.string "   Key Item.$"
 
 Help_Text_HowToUsePokeBall::
 	.string "{CIRCLE_1} While battling a wild Pokémon,\n"
@@ -743,41 +743,41 @@ Help_Text_HowToUsePokeBall::
 	.string "   Pocket.\n"
 	.string "{CIRCLE_2} Press up or down on the {PLUS} Control\n"
 	.string "   Pad to select a Poké Ball.\n"
-	.string "{CIRCLE_3} Select “USE” to throw the selected\n"
+	.string "{CIRCLE_3} Select “Use” to throw the selected\n"
 	.string "   Poké Ball.$"
 
 Help_Text_HowToUsePlayer::
 	.string "{CIRCLE_1} Select “{PLAYER}” on the Menu.\n"
-	.string "{CIRCLE_2} Your Trainer CARD is displayed face\n"
+	.string "{CIRCLE_2} Your Trainer Card is displayed face\n"
 	.string "   up with basic information. Press the\n"
-	.string "   A Button to turn the CARD over.\n"
+	.string "   A Button to turn the Card over.\n"
 	.string "{CIRCLE_3} A variety of data can be found on\n"
-	.string "   the reverse side of the CARD.$"
+	.string "   the reverse side of the Card.$"
 
 Help_Text_HowToUseSave::
-	.string "{CIRCLE_1} Select “SAVE” on the Menu.\n"
-	.string "{CIRCLE_2} Select “YES” and your progress is\n"
+	.string "{CIRCLE_1} Select “Save” on the Menu.\n"
+	.string "{CIRCLE_2} Select “Yes” and your progress is\n"
 	.string "   recorded in the save file.\n"
 	.string "Once the game is saved, you may turn\n"
 	.string "off the game. Your game can be resumed\n"
 	.string "from where you saved.$"
 
 Help_Text_HowToUseOption::
-	.string "{CIRCLE_1} Select “OPTION” on the Menu.\n"
+	.string "{CIRCLE_1} Select “Options” on the Menu.\n"
 	.string "{CIRCLE_2} Press up or down on the {PLUS} Control\n"
 	.string "   Pad to select an optional item, then\n"
 	.string "   press left or right to alter the\n"
 	.string "   settings.\n"
-	.string "{CIRCLE_3} Select “CANCEL” or press the\n"
+	.string "{CIRCLE_3} Select “Cancel” or press the\n"
 	.string "   B Button after making changes.$"
 
 Help_Text_HowToUsePotion::
 	.string "{CIRCLE_1} Open the Menu.\n"
 	.string "{CIRCLE_2} Press up or down on the {PLUS} Control\n"
 	.string "   Pad and select “Bag.”\n"
-	.string "{CIRCLE_3} Select “POTION” in the “ITEMS”\n"
+	.string "{CIRCLE_3} Select “Potion” in the “Items”\n"
 	.string "   Pocket.\n"
-	.string "{CIRCLE_4} Select “USE.”\n"
+	.string "{CIRCLE_4} Select “Use.”\n"
 	.string "{CIRCLE_5} Select the Pokémon to be healed.$"
 
 Help_Text_HowToUseTownMap::
@@ -787,14 +787,14 @@ Help_Text_HowToUseTownMap::
 	.string "{CIRCLE_3} Press left or right to open the\n"
 	.string "   “Key Items” Pocket, then press\n"
 	.string "   up or down to select “Town Map.” \n"
-	.string "{CIRCLE_4} Select “USE” to open the Town Map.$"
+	.string "{CIRCLE_4} Select “Use” to open the Town Map.$"
 
 Help_Text_HowToUseTM::
 	.string "{CIRCLE_1} Open the Menu.\n"
 	.string "{CIRCLE_2} Open the “Key Items” Pocket in the\n"
 	.string "   “Bag.”\n"
-	.string "{CIRCLE_3} “OPEN” the TM CASE.\n"
-	.string "{CIRCLE_4} Select and “USE” a TM.\n"
+	.string "{CIRCLE_3} “OPEN” the TM Case.\n"
+	.string "{CIRCLE_4} Select and “Use” a TM.\n"
 	.string "{CIRCLE_5} Select a Pokémon that can learn the\n"
 	.string "   move in the TM.$"
 
@@ -802,8 +802,8 @@ Help_Text_HowToUseHM::
 	.string "{CIRCLE_1} Open the Menu.\n"
 	.string "{CIRCLE_2} Open the “Key Items” Pocket in the\n"
 	.string "   “Bag.”\n"
-	.string "{CIRCLE_3} “OPEN” the TM CASE.\n"
-	.string "{CIRCLE_4} Select and “USE” an HM.\n"
+	.string "{CIRCLE_3} “OPEN” the TM Case.\n"
+	.string "{CIRCLE_4} Select and “Use” an HM.\n"
 	.string "{CIRCLE_5} Select a Pokémon that can learn it.\n"
 	.string "HMs are hard to remove, so be careful!$"
 
@@ -821,7 +821,7 @@ Help_Text_HowToRideBicycle::
 	.string "   “Key Items” Pocket in the “Bag”\n"
 	.string "   and select the “Bicycle.”\n"
 	.string "{CIRCLE_2} The Bicycle can be ridden by\n"
-	.string "   selecting “USE.” You may also\n"
+	.string "   selecting “Use.” You may also\n"
 	.string "   “REGISTER” it for instant use by\n"
 	.string "   pressing Select.$"
 
