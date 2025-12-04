@@ -239,7 +239,7 @@
 #define FLAG_HIDE_POSTGAME_STARTER_2                     0x0DD
 #define FLAG_POSTGAME_STARTERS_UNLOCKED                  0x0DE
 #define FLAG_TOGGLE_AUTORUN                              0x0DF //Autorun
-#define FLAG_0x0E0                 0x0E0
+#define FLAG_GYM_CHALLENGE_3V3                           0x0E0 //Gym Battle Format
 #define FLAG_0x0E1                 0x0E1
 #define FLAG_0x0E2                 0x0E2
 #define FLAG_0x0E3                 0x0E3

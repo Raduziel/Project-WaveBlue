@@ -6361,7 +6361,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Tauros @ Life Orb  
+Tauros @ Sitrus Berry  
 Ability: Intimidate  
 Level: 24  
 EVs: 4 HP / 252 Atk / 252 Spe  
@@ -6371,6 +6371,16 @@ IVs: 0 SpA
 - Wild Charge  
 - Iron Head  
 - Pursuit  
+
+Beedrill @ Scope Lens  
+Ability: Sniper  
+Level: 24  
+EVs: 96 HP / 252 Atk / 160 Spe  
+Adamant Nature  
+- Focus Energy  
+- Poison Jab  
+- Aerial Ace  
+- X-Scissor  
 
 Persian @ Black Glasses  
 Ability: Technician  
@@ -6382,6 +6392,16 @@ Jolly Nature
 - Screech  
 - Bite  
 
+Cloyster @ Leftovers  
+Ability: Skill Link  
+Level: 25  
+EVs: 152 HP / 156 Atk / 200 Def  
+Impish Nature  
+- Toxic Spikes  
+- Icicle Spear  
+- Liquidation  
+- Snowscape  
+
 Kangaskhan @ Assault Vest  
 Ability: Scrappy  
 Level: 29  
@@ -6392,6 +6412,17 @@ Adamant Nature
 - Fake Out  
 - Facade  
 
+Nidoqueen @ Life Orb  
+Ability: Sheer Force  
+Level: 29  
+EVs: 160 HP / 252 SpA / 16 SpD / 80 Spe  
+Calm Nature  
+IVs: 0 Atk  
+- Flamethrower  
+- Earth Power  
+- Thunderbolt  
+- Ice Beam  
+
 === TRAINER_BOSS_GIOVANNI_2 ===
 Name: Giovanni
 Class: Boss
@@ -6401,7 +6432,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Tauros @ Life Orb  
+Tauros @ Sitrus Berry  
 Ability: Intimidate  
 Level: 35  
 EVs: 4 HP / 252 Atk / 252 Spe  
@@ -6412,15 +6443,35 @@ IVs: 0 SpA
 - Iron Head  
 - Pursuit  
 
+Beedrill @ Scope Lens  
+Ability: Sniper  
+Level: 35  
+EVs: 96 HP / 252 Atk / 160 Spe  
+Adamant Nature  
+- Focus Energy  
+- Poison Jab  
+- Aerial Ace  
+- X-Scissor  
+
 Persian @ Black Glasses  
 Ability: Technician  
-Level: 37 
+Level: 37  
 EVs: 132 HP / 252 Atk / 124 Spe  
 Jolly Nature  
 - Foul Play  
 - Fake Out  
 - Screech  
 - Bite  
+
+Cloyster @ Leftovers  
+Ability: Skill Link  
+Level: 37  
+EVs: 152 HP / 156 Atk / 200 Def  
+Impish Nature  
+- Toxic Spikes  
+- Icicle Spear  
+- Liquidation  
+- Snowscape  
 
 Kangaskhan @ Assault Vest  
 Ability: Scrappy  
@@ -6431,6 +6482,17 @@ Adamant Nature
 - Fire Punch  
 - Fake Out  
 - Facade  
+
+Nidoqueen @ Life Orb  
+Ability: Sheer Force  
+Level: 41  
+EVs: 160 HP / 252 SpA / 16 SpD / 80 Spe  
+Calm Nature  
+IVs: 0 Atk  
+- Flamethrower  
+- Earth Power  
+- Thunderbolt  
+- Ice Beam  
 
 === TRAINER_LEADER_GIOVANNI ===
 Name: Giovanni
@@ -6446,7 +6508,7 @@ Ability: Battle Armor
 Level: 44  
 EVs: 136 HP / 252 Atk / 120 Spe  
 Impish Nature  
-IVs: 0 SpA  
+IVs: 0 SpA
 - Swords Dance  
 - Stealth Rock  
 - Bonemerang  
@@ -6455,7 +6517,6 @@ IVs: 0 SpA
 Nidoking @ Life Orb  
 Ability: Sheer Force  
 Level: 45  
-
 EVs: 136 HP / 252 Atk / 120 Spe  
 Adamant Nature  
 - Earthquake  
@@ -8242,45 +8303,66 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Purple
 
-Dewgong
-Level: 52
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Ice Beam
-- Surf
-- Hail
-- Safeguard
+Ninetales-Alola @ Light Ball  
+Ability: Snow Warning  
+Level: 51  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Aurora Veil  
+- Fake Tears  
+- Blizzard  
 
-Cloyster
-Level: 51
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Spikes
-- Protect
-- Hail
-- Dive
+Dewgong @ Leftovers  
+Ability: Ice Body  
+Level: 51  
+EVs: 252 HP / 120 SpA / 116 Spe  
+Calm Nature  
+IVs: 0 Atk  
 
-Slowbro
-Level: 52
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Ice Beam
-- Surf
-- Amnesia
-- Yawn
+Mr. Rime @ Sitrus Berry  
+Ability: Tangled Feet  
+Level: 52  
+EVs: 160 HP / 200 SpA / 28 SpD / 120 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Freeze-Dry  
+- Slack Off  
+- Psychic  
 
-Jynx
-Level: 54
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Ice Punch
-- Double Slap
-- Lovely Kiss
-- Attract
+Lapras @ Damp Rock  
+Ability: Hydration  
+Level: 52  
+EVs: 252 HP / 100 SpA / 156 SpD  
+Calm Nature  
+IVs: 0 Atk  
+- Rain Dance  
+- Ice Beam  
+- Surf  
+- Rest  
 
-Lapras @ Sitrus Berry
-Level: 54
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Confuse Ray
-- Ice Beam
-- Surf
-- Body Slam
+Glaceon @ Icy Rock  
+Ability: Snow Cloak  
+Level: 54  
+EVs: 16 HP / 120 Def / 252 SpA / 120 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Snowscape  
+- Freeze-Dry  
+- Blizzard  
+- Yawn  
+
+Mamoswine @ Assault Vest  
+Ability: Thick Fat  
+Level: 54  
+EVs: 96 HP / 168 Atk / 244 Spe  
+Adamant Nature  
+- Earthquake  
+- Heavy Slam  
+- Avalanche  
+- Reversal  
 
 === TRAINER_ELITE_FOUR_BRUNO ===
 Name: Bruno
@@ -8360,45 +8442,70 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Pink
 
-Gengar
-Level: 54
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Punch
-- Confuse Ray
-- Toxic
-- Double Team
+Murkrow @ Eviolite  
+Ability: Prankster  
+Level: 53  
+EVs: 252 HP / 160 SpA / 96 Spe  
+Calm Nature  
+IVs: 0 Atk  
+- Thunder Wave  
+- Foul Play  
+- Icy Wind  
+- Snarl  
 
-Golbat
-Level: 54
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Confuse Ray
-- Poison Fang
-- Air Cutter
-- Bite
+Houndoom @ Expert Belt  
+Ability: Unnerve  
+Level: 53  
+EVs: 136 HP / 252 SpA / 120 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Flamethrower  
+- Sludge Bomb  
+- Dark Pulse  
+- Pain Split  
 
-Haunter
-Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Hypnosis
-- Dream Eater
-- Curse
-- Mean Look
+Misdreavus @ Fairy Feather  
+Ability: Levitate  
+Level: 54  
+EVs: 108 HP / 200 SpA / 80 SpD / 108 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Destiny Bond  
+- Shadow Ball  
+- Fake Tears  
 
-Arbok
-Level: 56
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Sludge Bomb
-- Screech
-- Iron Tail
-- Bite
+Umbreon @ Mago Berry  
+Ability: Synchronize  
+Level: 54  
+EVs: 108 HP / 192 SpA / 36 SpD / 120 Spe  
+Calm Nature  
+IVs: 0 Atk  
+- Alluring Voice  
+- Fake Tears  
+- Dark Pulse  
+- Moonlight  
 
-Gengar @ Sitrus Berry
-Level: 58
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Shadow Ball
-- Sludge Bomb
-- Hypnosis
-- Nightmare
+Annihilape @ Leftovers  
+Ability: Defiant  
+Level: 56  
+EVs: 252 HP / 160 Atk / 96 Spe  
+Impish Nature  
+- Vacuum Wave  
+- Drain Punch  
+- Rage Fist  
+- Bulk Up  
+
+Gengar @ Life Orb  
+Ability: Cursed Body  
+Level: 58  
+EVs: 160 HP / 252 SpA / 96 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Sludge Bomb  
+- Shadow Ball  
+- Nasty Plot
 
 === TRAINER_ELITE_FOUR_LANCE ===
 Name: Lance
@@ -15139,45 +15246,66 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Purple
 
-Dewgong
-Level: 64
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Ice Beam
-- Surf
-- Signal Beam
-- Double Team
+Ninetales-Alola @ Light Ball  
+Ability: Snow Warning  
+Level: 63 
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Aurora Veil  
+- Fake Tears  
+- Blizzard  
 
-Cloyster
-Level: 63
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Ice Beam
-- Surf
-- Supersonic
-- Rain Dance
+Dewgong @ Leftovers  
+Ability: Ice Body  
+Level: 63  
+EVs: 252 HP / 120 SpA / 116 Spe  
+Calm Nature  
+IVs: 0 Atk  
 
-Piloswine
-Level: 63
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Blizzard
-- Earthquake
-- Double Edge
-- Rock Slide
+Mr. Rime @ Sitrus Berry  
+Ability: Tangled Feet  
+Level: 64  
+EVs: 160 HP / 200 SpA / 28 SpD / 120 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Freeze-Dry  
+- Slack Off  
+- Psychic  
 
-Jynx
-Level: 66
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Ice Beam
-- Psychic
-- Lovely Kiss
-- Attract
+Lapras @ Damp Rock  
+Ability: Hydration  
+Level: 64  
+EVs: 252 HP / 100 SpA / 156 SpD  
+Calm Nature  
+IVs: 0 Atk  
+- Rain Dance  
+- Ice Beam  
+- Surf  
+- Rest  
 
-Lapras @ Cheri Berry
-Level: 66
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Ice Beam
-- Surf
-- Psychic
-- Thunder
+Glaceon @ Icy Rock  
+Ability: Snow Cloak  
+Level: 66  
+EVs: 16 HP / 120 Def / 252 SpA / 120 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Snowscape  
+- Freeze-Dry  
+- Blizzard  
+- Yawn  
+
+Mamoswine @ Assault Vest  
+Ability: Thick Fat  
+Level: 66  
+EVs: 96 HP / 168 Atk / 244 Spe  
+Adamant Nature  
+- Earthquake  
+- Heavy Slam  
+- Avalanche  
+- Reversal  
 
 === TRAINER_ELITE_FOUR_BRUNO_2 ===
 Name: Bruno
@@ -15257,45 +15385,70 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Pink
 
-Gengar
-Level: 66
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Shadow Ball
-- Psychic
-- Confuse Ray
-- Hypnosis
+Murkrow @ Eviolite  
+Ability: Prankster  
+Level: 65  
+EVs: 252 HP / 160 SpA / 96 Spe  
+Calm Nature  
+IVs: 0 Atk  
+- Thunder Wave  
+- Foul Play  
+- Icy Wind  
+- Snarl  
 
-Crobat
-Level: 66
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sludge Bomb
-- Air Cutter
-- Shadow Ball
-- Confuse Ray
+Houndoom @ Expert Belt  
+Ability: Unnerve  
+Level: 65 
+EVs: 136 HP / 252 SpA / 120 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Flamethrower  
+- Sludge Bomb  
+- Dark Pulse  
+- Pain Split  
 
-Misdreavus
-Level: 65
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Shadow Ball
-- Psychic
-- Thunderbolt
-- Attract
+Misdreavus @ Fairy Feather  
+Ability: Levitate  
+Level: 66 
+EVs: 108 HP / 200 SpA / 80 SpD / 108 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Destiny Bond  
+- Shadow Ball  
+- Fake Tears  
 
-Arbok
-Level: 68
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sludge Bomb
-- Earthquake
-- Giga Drain
-- Double Team
+Umbreon @ Mago Berry  
+Ability: Synchronize  
+Level: 66 
+EVs: 108 HP / 192 SpA / 36 SpD / 120 Spe  
+Calm Nature  
+IVs: 0 Atk  
+- Alluring Voice  
+- Fake Tears  
+- Dark Pulse  
+- Moonlight  
 
-Gengar @ Chesto Berry
-Level: 70
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Shadow Ball
-- Psychic
-- Thunderbolt
-- Sludge Bomb
+Annihilape @ Leftovers  
+Ability: Defiant  
+Level: 68 
+EVs: 252 HP / 160 Atk / 96 Spe  
+Impish Nature  
+- Vacuum Wave  
+- Drain Punch  
+- Rage Fist  
+- Bulk Up  
+
+Gengar @ Life Orb  
+Ability: Cursed Body  
+Level: 70 
+EVs: 160 HP / 252 SpA / 96 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Sludge Bomb  
+- Shadow Ball  
+- Nasty Plot
 
 === TRAINER_ELITE_FOUR_LANCE_2 ===
 Name: Lance
