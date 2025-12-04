@@ -5815,7 +5815,7 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Squirtle
 Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 3 HP / 25 Atk / 31 Def / 0 SpA / 18 SpD / 31 Spe
 - Tackle
 - Tail Whip
 
@@ -5830,7 +5830,7 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Bulbasaur
 Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 14 HP / 31 Atk / 8 Def / 22 SpA / 31 SpD / 5 Spe
 - Tackle
 - Growl
 
@@ -5845,7 +5845,7 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Charmander
 Level: 5
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+IVs: 31 HP / 19 Atk / 27 Def / 31 SpA / 12 SpD / 6 Spe
 - Scratch
 - Growl
 
@@ -5866,7 +5866,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Squirtle
 Level: 9
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 3 HP / 25 Atk / 31 Def / 0 SpA / 18 SpD / 31 Spe
 - Tackle
 - Tail Whip
 
@@ -5887,7 +5887,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Bulbasaur
 Level: 9
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 14 HP / 31 Atk / 8 Def / 22 SpA / 31 SpD / 5 Spe
 - Tackle
 - Growl
 
@@ -5908,7 +5908,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Charmander
 Level: 9
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 31 HP / 19 Atk / 27 Def / 31 SpA / 12 SpD / 6 Spe
 - Scratch
 - Growl
 
@@ -5943,7 +5943,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Squirtle
 Level: 18
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 3 HP / 25 Atk / 31 Def / 0 SpA / 18 SpD / 31 Spe
 - Tackle
 - Tail Whip
 - Withdraw
@@ -5980,7 +5980,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Bulbasaur
 Level: 18
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 14 HP / 31 Atk / 8 Def / 22 SpA / 31 SpD / 5 Spe
 - Sleep Powder
 - Poison Powder
 - Vine Whip
@@ -6017,7 +6017,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Charmander
 Level: 18
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 31 HP / 19 Atk / 27 Def / 31 SpA / 12 SpD / 6 Spe
 - Metal Claw
 - Ember
 - Growl
@@ -8238,7 +8238,6 @@ Class: Elite Four
 Pic: Elite Four Lorelei
 Gender: Male
 Music: Elite Four
-Items: Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Purple
@@ -8289,50 +8288,67 @@ Class: Elite Four
 Pic: Elite Four Bruno
 Gender: Male
 Music: Elite Four
-Items: Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Green
 
-Onix
-Level: 51
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Earthquake
-- Rock Tomb
-- Iron Tail
-- Roar
+Hitmontop @ White Herb  
+Ability: Intimidate  
+Level: 51  
+EVs: 56 HP / 200 Atk / 252 Spe  
+Adamant Nature  
+- Sucker Punch  
+- Close Combat  
+- Ice Spinner  
+- Endeavor  
 
-Hitmonchan
-Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Sky Uppercut
-- Mach Punch
-- Rock Tomb
-- Counter
+Hitmonchan @ Punching Glove  
+Ability: Iron Fist  
+Level: 53  
+EVs: 96 HP / 252 Atk / 160 Spe  
+Adamant Nature  
+- Throat Chop  
+- Drain Punch  
+- Mach Punch  
+- Ice Punch  
 
-Hitmonlee
-Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Mega Kick
-- Foresight
-- Brick Break
-- Facade
+Hitmonlee @ Sitrus Berry  
+Ability: Reckless  
+Level: 53  
+EVs: 96 HP / 252 Atk / 160 Spe  
+Adamant Nature  
+- High Jump Kick  
+- Sucker Punch  
+- Poison Jab  
+- Reversal  
 
-Onix
-Level: 54
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Double Edge
-- Earthquake
-- Iron Tail
-- Sand Tomb
+Heracross @ Flame Orb  
+Ability: Guts  
+Level: 54  
+EVs: 120 HP / 252 Atk / 16 Def / 120 Spe  
+Serious Nature  
+- Close Combat  
+- Megahorn  
+- Protect
+- Facade 
 
-Machamp @ Sitrus Berry
-Level: 56
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Cross Chop
-- Bulk Up
-- Scary Face
-- Rock Tomb
+Sirfetch’d @ Leek  
+Ability: Scrappy  
+Level: 54  
+- First Impression  
+- Swords Dance  
+- Brick Break  
+- Knock Off  
+
+Machamp @ Assault Vest  
+Ability: No Guard  
+Level: 56  
+EVs: 120 HP / 252 Atk / 136 Spe  
+Adamant Nature  
+- Dynamic Punch  
+- Bullet Punch  
+- Stone Edge  
+- Knock Off
 
 === TRAINER_ELITE_FOUR_AGATHA ===
 Name: Agatha
@@ -8340,7 +8356,6 @@ Class: Elite Four
 Pic: Elite Four Agatha
 Gender: Male
 Music: Elite Four
-Items: Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Pink
@@ -8391,50 +8406,69 @@ Class: Elite Four
 Pic: Elite Four Lance
 Gender: Male
 Music: Elite Four
-Items: Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Blue
 
-Gyarados
-Level: 56
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Hyper Beam
-- Dragon Rage
-- Twister
-- Bite
+Gyarados @ Wacan Berry  
+Ability: Intimidate  
+Level: 56  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Jolly Nature  
+- Dragon Dance
+- Earthquake  
+- Aqua Tail  
+- Ice Fang  
 
-Dragonair
-Level: 54
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Hyper Beam
-- Safeguard
-- Dragon Rage
-- Outrage
+Charizard @ Heavy-Duty Boots  
+Ability: Blaze  
+Level: 54  
+EVs: 136 HP / 252 SpA / 120 Spe  
+Mild Nature  
+IVs: 0 Atk  
+- Scorching Sands
+- Flamethrower
+- Dragon Pulse  
+- Air Slash  
+  
+Kingdra @ Scope Lens  
+Ability: Sniper  
+Level: 54  
+IVs: 0 Atk  
+- Focus Energy  
+- Flash Cannon 
+- Draco Meteor  
+- Scald  
 
-Dragonair
-Level: 54
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Hyper Beam
-- Safeguard
-- Thunder Wave
-- Outrage
+Aerodactyl @ Life Orb  
+Ability: Rock Head  
+Level: 58  
+EVs: 160 HP / 200 Atk / 28 SpD / 120 Spe  
+Jolly Nature  
+- Dragon Claw  
+- Rock Slide
+- Iron Head  
+- Tailwind  
 
-Aerodactyl
-Level: 58
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Hyper Beam
-- Ancient Power
-- Wing Attack
-- Scary Face
+Tyranitar @ Assault Vest  
+Ability: Sand Stream  
+Level: 58  
+EVs: 76 HP / 180 Atk / 252 Spe  
+Jolly Nature  
+- Earthquake  
+- Fire Punch  
+- Stone Edge 
+- Crunch
 
-Dragonite @ Sitrus Berry
-Level: 60
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
-- Hyper Beam
-- Safeguard
-- Outrage
-- Wing Attack
+Dragonite @ Loaded Dice  
+Ability: Multiscale  
+Level: 60  
+EVs: 76 HP / 252 Atk / 180 Spe  
+Adamant Nature  
+- Extreme Speed 
+- Dragon Dance  
+- Scale Shot 
+- Iron Head   
 
 === TRAINER_LEADER_BROCK ===
 Name: Brock
@@ -8451,10 +8485,10 @@ Level: 10
 EVs: 160 HP / 120 Atk / 200 Def / 28 SpD  
 Relaxed Nature  
 IVs: 0 SpA / 0 Spe  
-- Thunder Punch  
+- Thunder Punch
 - Fire Punch
-- Rock Tomb  
-- Flail  
+- Rock Tomb
+- Flail
 
 Kabuto @ Smooth Rock  
 Ability: Battle Armor  
@@ -8462,10 +8496,10 @@ Level: 12
 EVs: 120 HP / 120 Atk / 68 Def / 200 Spe  
 Naughty Nature  
 IVs: 0 HP / 0 SpA  
-- Bubble Beam  
-- Rock Tomb  
-- Sandstorm  
-- Flail  
+- Aurora Beam
+- Bubble Beam
+- Rock Tomb
+- Sandstorm
 
 Onix @ Rocky Helmet  
 Ability: Weak Armor  
@@ -8473,10 +8507,10 @@ Level: 14
 EVs: 120 HP / 100 Atk / 252 Def / 36 Spe  
 Lax Nature  
 IVs: 0 SpD / 0 Spe  
-- Defense Curl  
-- Rock Tomb  
-- Screech  
-- Rollout  
+- Stealth Rock
+- Rock Tomb
+- Screech
+- Facade
 
 === TRAINER_LEADER_MISTY ===
 Name: Misty
@@ -8491,22 +8525,22 @@ Psyduck @ Damp Rock
 Ability: Swift Swim  
 Level: 15  
 EVs: 100 HP / 200 SpA / 128 SpD / 80 Spe  
-Calm Nature  
-IVs: 0 Atk / 0 Def  
-- Water Pulse  
-- Rain Dance  
-- Confusion  
-- Endeavor  
+Calm Nature
+IVs: 0 Atk / 0 Def
+- Water Pulse
+- Rain Dance
+- Confusion
+- Endeavor
 
 Goldeen @ Rindo Berry  
 Ability: Lightning Rod  
 Level: 18  
 EVs: 100 HP / 180 Atk / 100 Def / 8 SpD / 120 Spe  
 IVs: 0 Def / 0 SpA  
-- Horn Attack  
-- Supersonic  
-- Drill Run  
-- Bounce  
+- Horn Attack
+- Supersonic
+- Drill Run
+- Bounce
 
 Starmie @ Lagging Tail  
 Ability: Analytic  
@@ -8534,9 +8568,9 @@ Level: 18
 EVs: 160 HP / 28 Def / 120 SpA / 200 Spe  
 Bold Nature  
 IVs: 0 Atk / 0 SpD  
+- Light Screen
+- Metal Sound
 - Shock Wave  
-- Metal Sound  
-- Light Screen  
 - Reflect  
 
 Voltorb @ Magnet  
@@ -8660,8 +8694,8 @@ Level: 40
 EVs: 100 HP / 120 SpA / 128 SpD / 160 Spe  
 Calm Nature  
 IVs: 0 Atk  
+- Will-O-Wisp 
 - Solar Beam  
-- Will-O-Wisp  
 - Fake Tears  
 - Fire Blast  
 
@@ -8671,10 +8705,10 @@ Level: 42
 EVs: 200 HP / 120 Atk / 32 Def / 36 SpD / 120 Spe  
 Jolly Nature  
 IVs: 0 SpA  
-- Extreme Speed  
-- Wild Charge  
-- Flare Blitz  
-- Reversal  
+- Extreme Speed
+- Wild Charge
+- Flare Blitz
+- Reversal
 
 Magmortar @ Expert Belt  
 Ability: Flame Body  
@@ -8684,8 +8718,8 @@ Modest Nature
 IVs: 0 Atk  
 - Flamethrower  
 - Thunderbolt  
-- Sunny Day  
-- Acid Spray  
+- Acid Spray
+- Sunny Day
 
 === TRAINER_LEADER_SABRINA ===
 Name: Sabrina
@@ -8705,7 +8739,7 @@ IVs: 0 Atk
 - Psychic Terrain  
 - Foul Play  
 - Hypnosis  
-- Psyshock  
+- Psyshock
 
 Mr. Mime @ Eviolite  
 Ability: Soundproof  
@@ -8829,7 +8863,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Wartortle
 Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 3 HP / 25 Atk / 31 Def / 0 SpA / 18 SpD / 31 Spe
 
 === TRAINER_RIVAL_SS_ANNE_BULBASAUR ===
 Name: Terry
@@ -8879,7 +8913,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Charmeleon
 Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 31 HP / 19 Atk / 27 Def / 31 SpA / 12 SpD / 6 Spe
 
 === TRAINER_RIVAL_POKEMON_TOWER_SQUIRTLE ===
 Name: Terry
@@ -8908,7 +8942,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Wartortle
 Level: 25
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 3 HP / 25 Atk / 31 Def / 0 SpA / 18 SpD / 31 Spe
 
 === TRAINER_RIVAL_POKEMON_TOWER_BULBASAUR ===
 Name: Terry
@@ -8937,7 +8971,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Ivysaur
 Level: 25
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 14 HP / 31 Atk / 8 Def / 22 SpA / 31 SpD / 5 Spe
 
 === TRAINER_RIVAL_POKEMON_TOWER_CHARMANDER ===
 Name: Terry
@@ -8966,7 +9000,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Charmeleon
 Level: 25
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 31 HP / 19 Atk / 27 Def / 31 SpA / 12 SpD / 6 Spe
 
 === TRAINER_RIVAL_SILPH_SQUIRTLE ===
 Name: Terry
@@ -8995,7 +9029,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Blastoise
 Level: 40
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+IVs: 3 HP / 25 Atk / 31 Def / 0 SpA / 18 SpD / 31 Spe
 
 === TRAINER_RIVAL_SILPH_BULBASAUR ===
 Name: Terry
@@ -9024,7 +9058,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Venusaur
 Level: 40
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+IVs: 14 HP / 31 Atk / 8 Def / 22 SpA / 31 SpD / 5 Spe
 
 === TRAINER_RIVAL_SILPH_CHARMANDER ===
 Name: Terry
@@ -9053,7 +9087,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 
 Charizard
 Level: 40
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+IVs: 31 HP / 19 Atk / 27 Def / 31 SpA / 12 SpD / 6 Spe
 
 === TRAINER_RIVAL_ROUTE22_LATE_SQUIRTLE ===
 Name: Terry
@@ -9106,7 +9140,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 Blastoise
 Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Water Gun
 - Rain Dance
 - Bite
@@ -9163,7 +9197,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 Venusaur
 Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Razor Leaf
 - Sweet Scent
 - Growth
@@ -9220,7 +9254,7 @@ IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 Charizard
 Level: 53
-IVs: 30 HP / 30 Atk / 30 Def / 30 SpA / 30 SpD / 30 Spe
+IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
 - Flamethrower
 - Wing Attack
 - Slash
@@ -9232,7 +9266,6 @@ Class: Champion
 Pic: Champion Rival
 Gender: Male
 Music: Male
-Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
@@ -9291,7 +9324,6 @@ Class: Champion
 Pic: Champion Rival
 Gender: Male
 Music: Male
-Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
@@ -9350,7 +9382,6 @@ Class: Champion
 Pic: Champion Rival
 Gender: Male
 Music: Male
-Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
@@ -15104,7 +15135,6 @@ Class: Elite Four
 Pic: Elite Four Lorelei
 Gender: Male
 Music: Elite Four
-Items: Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Purple
@@ -15155,50 +15185,67 @@ Class: Elite Four
 Pic: Elite Four Bruno
 Gender: Male
 Music: Elite Four
-Items: Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Green
 
-Steelix
-Level: 65
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Iron Tail
-- Crunch
-- Rock Tomb
+Hitmontop @ White Herb  
+Ability: Intimidate  
+Level: 65 
+EVs: 56 HP / 200 Atk / 252 Spe  
+Adamant Nature  
+- Sucker Punch  
+- Close Combat  
+- Ice Spinner  
+- Endeavor  
 
-Hitmonchan
-Level: 65
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Sky Uppercut
-- Mach Punch
-- Rock Slide
-- Counter
+Hitmonchan @ Punching Glove  
+Ability: Iron Fist  
+Level: 65  
+EVs: 96 HP / 252 Atk / 160 Spe  
+Adamant Nature  
+- Throat Chop  
+- Drain Punch  
+- Mach Punch  
+- Ice Punch  
 
-Hitmonlee
-Level: 65
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Mega Kick
-- Foresight
-- Earthquake
-- Rock Slide
+Hitmonlee @ Sitrus Berry  
+Ability: Reckless  
+Level: 65  
+EVs: 96 HP / 252 Atk / 160 Spe  
+Adamant Nature  
+- High Jump Kick  
+- Sucker Punch  
+- Poison Jab  
+- Reversal  
 
-Steelix
-Level: 66
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Earthquake
-- Iron Tail
-- Crunch
-- Dragon Breath
+Heracross @ Flame Orb  
+Ability: Guts  
+Level: 66  
+EVs: 120 HP / 252 Atk / 16 Def / 120 Spe  
+Serious Nature  
+- Close Combat  
+- Megahorn  
+- Protect
+- Facade 
 
-Machamp @ Persim Berry
-Level: 68
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Cross Chop
-- Earthquake
-- Brick Break
-- Rock Slide
+Sirfetch’d @ Leek  
+Ability: Scrappy  
+Level: 66  
+- First Impression  
+- Swords Dance  
+- Brick Break  
+- Knock Off  
+
+Machamp @ Assault Vest  
+Ability: No Guard  
+Level: 68  
+EVs: 120 HP / 252 Atk / 136 Spe  
+Adamant Nature  
+- Dynamic Punch  
+- Bullet Punch  
+- Stone Edge  
+- Knock Off
 
 === TRAINER_ELITE_FOUR_AGATHA_2 ===
 Name: Agatha
@@ -15206,7 +15253,6 @@ Class: Elite Four
 Pic: Elite Four Agatha
 Gender: Male
 Music: Elite Four
-Items: Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Pink
@@ -15257,50 +15303,69 @@ Class: Elite Four
 Pic: Elite Four Lance
 Gender: Male
 Music: Elite Four
-Items: Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Blue
 
-Gyarados
-Level: 68
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hyper Beam
-- Dragon Dance
-- Earthquake
-- Thunder Wave
+Gyarados @ Wacan Berry  
+Ability: Intimidate  
+Level: 68  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Jolly Nature  
+- Dragon Dance  
+- Earthquake  
+- Aqua Tail  
+- Ice Fang  
 
-Dragonite
-Level: 66
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hyper Beam
-- Earthquake
-- Dragon Claw
-- Flamethrower
+Charizard @ Heavy-Duty Boots  
+Ability: Blaze  
+Level: 66 
+EVs: 136 HP / 252 SpA / 120 Spe  
+Mild Nature  
+IVs: 0 Atk  
+- Scorching Sands
+- Dragon Pulse
+- Flamethrower  
+- Air Slash  
 
-Kingdra
-Level: 66
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hyper Beam
-- Dragon Dance
-- Surf
-- Ice Beam
+Kingdra @ Scope Lens  
+Ability: Sniper  
+Level: 66  
+IVs: 0 Atk  
+- Focus Energy  
+- Flash Cannon
+- Draco Meteor  
+- Scald  
 
-Aerodactyl
-Level: 70
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hyper Beam
-- Ancient Power
-- Aerial Ace
-- Earthquake
+Aerodactyl @ Life Orb  
+Ability: Rock Head  
+Level: 70  
+EVs: 160 HP / 200 Atk / 28 SpD / 120 Spe  
+Jolly Nature  
+- Dragon Claw  
+- Rock Slide 
+- Iron Head  
+- Tailwind  
 
-Dragonite @ Persim Berry
-Level: 72
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hyper Beam
-- Outrage
-- Thunderbolt
-- Ice Beam
+Tyranitar @ Assault Vest  
+Ability: Sand Stream  
+Level: 70  
+EVs: 76 HP / 180 Atk / 252 Spe  
+Jolly Nature  
+- Earthquake  
+- Fire Punch  
+- Stone Edge 
+- Crunch
+
+Dragonite @ Loaded Dice  
+Ability: Multiscale  
+Level: 72 
+EVs: 76 HP / 252 Atk / 180 Spe  
+Adamant Nature  
+- Extreme Speed
+- Dragon Dance  
+- Scale Shot
+- Iron Head   
 
 === TRAINER_CHAMPION_REMATCH_SQUIRTLE ===
 Name: Terry
@@ -15308,7 +15373,6 @@ Class: Champion
 Pic: Champion Rival
 Gender: Male
 Music: Male
-Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
@@ -15367,7 +15431,6 @@ Class: Champion
 Pic: Champion Rival
 Gender: Male
 Music: Male
-Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
@@ -15426,7 +15489,6 @@ Class: Champion
 Pic: Champion Rival
 Gender: Male
 Music: Male
-Items: Full Restore / Full Restore / Full Restore / Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
