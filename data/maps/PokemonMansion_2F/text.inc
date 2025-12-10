@@ -36,4 +36,4 @@ Text_Porygon_Cry::
 
 Text_Porygon_Disappears::
     .string "Porygon disappeared into digital\n"
-    .string "fragments...$"
+    .string "fragments…$"

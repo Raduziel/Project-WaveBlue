@@ -259,7 +259,7 @@ static const struct MenuAction sMultichoiceList_GameCornerClerkLeft[] = {
     { gText_LoadedDice_5000 },
     { gText_FlameOrb_2000 },
     { gText_ToxicOrb_2000 },
-    { gText_Exit }
+    { gOtherText_Exit }
 };
 
 static const struct MenuAction sMultichoiceList_GameCornerClerkRight[] = {
@@ -274,7 +274,7 @@ static const struct MenuAction sMultichoiceList_GameCornerClerkRight[] = {
     { gText_ShellBell_2000 },
     { gText_ThroatSpray_2000 },
     { gText_LightClay_4000 },
-    { gText_Exit }
+    { gOtherText_Exit }
 };
 
 static const struct MenuAction sMultichoiceList_GameCornerCoinPurchaseCounter[] = {
@@ -405,6 +405,27 @@ static const struct MenuAction sMultichoiceList_Eeveelutions[] = {
     { gText_Glaceon },
     { gText_Sylveon },
     { gText_QuitLooking }
+};
+
+static const struct MenuAction sMultichoiceList_TMMerchantTypes[] = {
+    { gText_TypeBug },
+    { gText_TypeDark },
+    { gText_TypeDragon },
+    { gText_TypeElectric },
+    { gText_TypeFairy },
+    { gText_TypeFighting },
+    { gText_TypeFire },
+    { gText_TypeFlying },
+    { gText_TypeGhost },
+    { gText_TypeGrass },
+    { gText_TypeGround },
+    { gText_TypeIce },
+    { gText_TypePoison },
+    { gText_TypePsychic },
+    { gText_TypeRock },
+    { gText_TypeSteel },
+    { gText_TypeWater },
+    { gOtherText_Exit }
 };
 
 static const struct MenuAction sMultichoiceList_BikeShop[] = {
@@ -674,6 +695,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] = {
     [MULTICHOICE_HYPER_STATS]                                = MULTICHOICE(sMultichoiceList_HyperStats),
     [MULTICHOICE_GAME_CORNER_CLERK_LEFT]                     = MULTICHOICE(sMultichoiceList_GameCornerClerkLeft),
     [MULTICHOICE_GAME_CORNER_CLERK_RIGHT]                    = MULTICHOICE(sMultichoiceList_GameCornerClerkRight),
+    [MULTI_TM_MERCHANT_TYPES]                                = MULTICHOICE(sMultichoiceList_TMMerchantTypes),
 };
 
 // From Cool to Berries goes unused

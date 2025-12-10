@@ -77,6 +77,7 @@
 #define MULTICHOICE_HYPER_STATS                                66
 #define MULTICHOICE_GAME_CORNER_CLERK_LEFT                     67
 #define MULTICHOICE_GAME_CORNER_CLERK_RIGHT                    68
+#define MULTI_TM_MERCHANT_TYPES                                69
 
 #define MULTICHOICE_NONE                                      255
 

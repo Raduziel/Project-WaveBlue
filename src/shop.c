@@ -29,6 +29,8 @@
 #include "constants/field_weather.h"
 #include "constants/game_stat.h"
 #include "constants/items.h"
+#include "constants/flags.h"
+#include "event_data.h"
 #include "constants/songs.h"
 
 #define tItemCount data[1]
@@ -70,6 +72,113 @@ struct ShopData
     u16 unk18;
     u8 itemSpriteIds[2];
 };
+
+#include "event_data.h"
+#include "constants/pokemon.h" // Necessário para TYPE_FIRE, etc.
+
+// --- VENDEDOR DINÂMICO (COM FILTRO DE TIPO) ---
+
+struct OneTimeShopItem
+{
+    u16 itemId;
+    u16 flagId;
+    u8 type; // Novo campo para o filtro
+};
+
+u16 gDynamicMartItems[70];
+
+static const struct OneTimeShopItem sOneTimeTMs[] = {
+    {ITEM_TM_BUG_BUZZ,       FLAG_BOUGHT_TM51, TYPE_BUG},
+    {ITEM_TM_LEECH_LIFE,     FLAG_BOUGHT_TM52, TYPE_BUG},
+    {ITEM_TM_POLLEN_PUFF,    FLAG_BOUGHT_TM53, TYPE_BUG},
+    {ITEM_TM_STRUGGLE_BUG,   FLAG_BOUGHT_TM54, TYPE_BUG},
+    {ITEM_TM_U_TURN,         FLAG_BOUGHT_TM55, TYPE_BUG},
+    {ITEM_TM_X_SCISSOR,      FLAG_BOUGHT_TM56, TYPE_BUG},
+    {ITEM_TM_CRUNCH,         FLAG_BOUGHT_TM57, TYPE_DARK},
+    {ITEM_TM_DARK_PULSE,     FLAG_BOUGHT_TM58, TYPE_DARK},
+    {ITEM_TM_FAKE_TEARS,     FLAG_BOUGHT_TM59, TYPE_DARK},
+    {ITEM_TM_FOUL_PLAY,      FLAG_BOUGHT_TM60, TYPE_DARK},
+    {ITEM_TM_KNOCK_OFF,      FLAG_BOUGHT_TM61, TYPE_DARK},
+    {ITEM_TM_NASTY_PLOT,     FLAG_BOUGHT_TM62, TYPE_DARK},
+    {ITEM_TM_SNARL,          FLAG_BOUGHT_TM63, TYPE_DARK},
+    {ITEM_TM_DRAGON_TAIL,    FLAG_BOUGHT_TM64, TYPE_DRAGON},
+    {ITEM_TM_OUTRAGE,        FLAG_BOUGHT_TM65, TYPE_DRAGON},
+    {ITEM_TM_CHARGE_BEAM,    FLAG_BOUGHT_TM66, TYPE_ELECTRIC},
+    {ITEM_TM_ELECTRIC_TERRAIN, FLAG_BOUGHT_TM67, TYPE_ELECTRIC},
+    {ITEM_TM_VOLT_SWITCH,    FLAG_BOUGHT_TM68, TYPE_ELECTRIC},
+    {ITEM_TM_WILD_CHARGE,    FLAG_BOUGHT_TM69, TYPE_ELECTRIC},
+    {ITEM_TM_DAZZLING_GLEAM, FLAG_BOUGHT_TM70, TYPE_FAIRY},
+    {ITEM_TM_DRAINING_KISS,  FLAG_BOUGHT_TM71, TYPE_FAIRY},
+    {ITEM_TM_MISTY_TERRAIN,  FLAG_BOUGHT_TM72, TYPE_FAIRY},
+    {ITEM_TM_PLAY_ROUGH,     FLAG_BOUGHT_TM73, TYPE_FAIRY},
+    {ITEM_TM_AURA_SPHERE,    FLAG_BOUGHT_TM74, TYPE_FIGHTING},
+    {ITEM_TM_BODY_PRESS,     FLAG_BOUGHT_TM75, TYPE_FIGHTING},
+    {ITEM_TM_CLOSE_COMBAT,   FLAG_BOUGHT_TM76, TYPE_FIGHTING},
+    {ITEM_TM_DRAIN_PUNCH,    FLAG_BOUGHT_TM77, TYPE_FIGHTING},
+    {ITEM_TM_FLAME_CHARGE,   FLAG_BOUGHT_TM78, TYPE_FIRE},
+    {ITEM_TM_FLARE_BLITZ,    FLAG_BOUGHT_TM79, TYPE_FIRE},
+    {ITEM_TM_WILL_O_WISP,    FLAG_BOUGHT_TM80, TYPE_FIRE},
+    {ITEM_TM_ACROBATICS,     FLAG_BOUGHT_TM81, TYPE_FLYING},
+    {ITEM_TM_AIR_SLASH,      FLAG_BOUGHT_TM82, TYPE_FLYING},
+    {ITEM_TM_BRAVE_BIRD,     FLAG_BOUGHT_TM83, TYPE_FLYING},
+    {ITEM_TM_HURRICANE,      FLAG_BOUGHT_TM84, TYPE_FLYING},
+    {ITEM_TM_ROOST,          FLAG_BOUGHT_TM85, TYPE_FLYING},
+    {ITEM_TM_TAILWIND,       FLAG_BOUGHT_TM86, TYPE_FLYING},
+    {ITEM_TM_HEX,            FLAG_BOUGHT_TM87, TYPE_GHOST},
+    {ITEM_TM_PHANTOM_FORCE,  FLAG_BOUGHT_TM88, TYPE_GHOST},
+    {ITEM_TM_SHADOW_CLAW,    FLAG_BOUGHT_TM89, TYPE_GHOST},
+    {ITEM_TM_ENERGY_BALL,    FLAG_BOUGHT_TM90, TYPE_GRASS},
+    {ITEM_TM_GRASSY_TERRAIN, FLAG_BOUGHT_TM91, TYPE_GRASS},
+    {ITEM_TM_SEED_BOMB,      FLAG_BOUGHT_TM92, TYPE_GRASS},
+    {ITEM_TM_TRAILBLAZE,     FLAG_BOUGHT_TM93, TYPE_GRASS},
+    {ITEM_TM_BULLDOZE,       FLAG_BOUGHT_TM94, TYPE_GROUND},
+    {ITEM_TM_EARTH_POWER,    FLAG_BOUGHT_TM95, TYPE_GROUND},
+    {ITEM_TM_SPIKES,         FLAG_BOUGHT_TM96, TYPE_GROUND},
+    {ITEM_TM_AVALANCHE,      FLAG_BOUGHT_TM97, TYPE_ICE},
+    {ITEM_TM_ICE_SPINNER,    FLAG_BOUGHT_TM98, TYPE_ICE},
+    {ITEM_TM_ACID_SPRAY,     FLAG_BOUGHT_TM99, TYPE_POISON},
+    {ITEM_TM_POISON_JAB,     FLAG_BOUGHT_TM100, TYPE_POISON},
+    {ITEM_TM_TOXIC_SPIKES,   FLAG_BOUGHT_TM101, TYPE_POISON},
+    {ITEM_TM_PSYCHIC_FANGS,  FLAG_BOUGHT_TM102, TYPE_PSYCHIC},
+    {ITEM_TM_PSYCHIC_TERRAIN, FLAG_BOUGHT_TM103, TYPE_PSYCHIC},
+    {ITEM_TM_PSYSHOCK,       FLAG_BOUGHT_TM104, TYPE_PSYCHIC},
+    {ITEM_TM_ZEN_HEADBUTT,   FLAG_BOUGHT_TM105, TYPE_PSYCHIC},
+    {ITEM_TM_POWER_GEM,      FLAG_BOUGHT_TM106, TYPE_ROCK},
+    {ITEM_TM_ROCK_BLAST,     FLAG_BOUGHT_TM107, TYPE_ROCK},
+    {ITEM_TM_STEALTH_ROCK,   FLAG_BOUGHT_TM108, TYPE_ROCK},
+    {ITEM_TM_STONE_EDGE,     FLAG_BOUGHT_TM109, TYPE_ROCK},
+    {ITEM_TM_FLASH_CANNON,   FLAG_BOUGHT_TM110, TYPE_STEEL},
+    {ITEM_TM_HEAVY_SLAM,     FLAG_BOUGHT_TM111, TYPE_STEEL},
+    {ITEM_TM_IRON_HEAD,      FLAG_BOUGHT_TM112, TYPE_STEEL},
+    {ITEM_TM_SMART_STRIKE,   FLAG_BOUGHT_TM113, TYPE_STEEL},
+    {ITEM_TM_CHILLING_WATER, FLAG_BOUGHT_TM114, TYPE_WATER},
+    {ITEM_TM_LIQUIDATION,    FLAG_BOUGHT_TM115, TYPE_WATER},
+
+    {ITEM_NONE, 0, 0}
+};
+
+void SetupOneTimeTMMart(void)
+{
+    int i = 0;
+    int count = 0;
+    u8 requestedType = gSpecialVar_0x8004; 
+    for (int k = 0; k < 70; k++) gDynamicMartItems[k] = ITEM_NONE;
+
+    while (sOneTimeTMs[i].itemId != ITEM_NONE && count < 68)
+    {
+        if (!FlagGet(sOneTimeTMs[i].flagId) && sOneTimeTMs[i].type == requestedType)
+        {
+            gDynamicMartItems[count] = sOneTimeTMs[i].itemId;
+            count++;
+        }
+        i++;
+    }
+    gDynamicMartItems[count] = ITEM_NONE;
+    if (count == 0)
+        gSpecialVar_Result = FALSE;
+    else
+        gSpecialVar_Result = TRUE;
+}
 
 static EWRAM_DATA s16 sViewportObjectEvents[OBJECT_EVENTS_COUNT][4] = {0};
 static EWRAM_DATA struct ShopData sShopData = {0};
@@ -144,6 +253,7 @@ static void BuyMenuDisplayMessage(u8 taskId, const u8 *text, TaskFunc callback);
 static void BuyMenuQuantityBoxNormalBorder(u8 windowId, bool8 copyToVram);
 static void BuyMenuQuantityBoxThinBorder(u8 windowId, bool8 copyToVram);
 static void BuyMenuConfirmPurchase(u8 taskId, const struct YesNoFuncTable *yesNo);
+
 
 static const struct MenuAction sShopMenuActions_BuySellQuit[] =
 {
@@ -268,7 +378,6 @@ static const struct WindowTemplate sShopBuyMenuWindowTemplatesNormal[] =
     DUMMY_WIN_TEMPLATE,
 };
 
-// firered uses different layout when selling TMs
 static const struct WindowTemplate sShopBuyMenuWindowTemplatesTM[] =
 {
     {
@@ -355,7 +464,6 @@ static const u8 sShopBuyMenuTextColors[][3] =
     {0, 3, 2}
 };
 
-// Functions
 static u8 CreateShopMenu(u8 martType)
 {
     sShopData.martType = GetMartTypeFromItemList(martType);
@@ -372,6 +480,23 @@ static u8 CreateShopMenu(u8 martType)
     PutWindowTilemap(sShopMenuWindowId);
     CopyWindowToVram(sShopMenuWindowId, COPYWIN_MAP);
     return CreateTask(Task_ShopMenu, 8);
+}
+
+// No shop.c
+
+void CreateOneTimeTMShopMenu(void)
+{
+    SetupOneTimeTMMart(); 
+    sShopData.martType = MART_TYPE_TMHM;
+    sShopData.selectedRow = 0;
+    if (ContextNpcGetTextColor() == NPC_TEXT_COLOR_MALE)
+        sShopData.fontId = FONT_MALE;
+    else
+        sShopData.fontId = FONT_FEMALE;
+    SetShopItemsForSale(gDynamicMartItems);
+    SetShopExitCallback(); 
+    SetMainCallback2(CB2_InitBuyMenu);
+    ScriptContext_Stop();
 }
 
 static u8 GetMartTypeFromItemList(u32 martType)
@@ -751,7 +876,15 @@ bool8 BuyMenuBuildListMenuTemplate(void)
 
 static void PokeMartWriteNameAndIdAt(struct ListMenuItem *list, u16 index, u8 *dst)
 {
-    CopyItemName(index, dst);
+    if (GetItemPocket(index) == POCKET_TM_HM)
+    {
+        StringCopy(dst, gMovesInfo[ItemIdToBattleMoveId(index)].name);
+    }
+    else
+    {
+        CopyItemName(index, dst);
+    }
+
     list->name = dst;
     list->id = index;
 }
@@ -840,12 +973,30 @@ static void BuyMenuPrintPriceInList(u8 windowId, u32 item, u8 y)
 
 static void LoadTmHmNameInMart(s32 item)
 {
+    u16 tmNumber = 0;
+
     if (item != INDEX_CANCEL)
     {
-        ConvertIntToDecimalStringN(gStringVar1, item - ITEM_DEVON_SCOPE, 2, 2);
+        int i;
+        for (i = 0; sOneTimeTMs[i].itemId != ITEM_NONE; i++)
+        {
+            if (sOneTimeTMs[i].itemId == item)
+            {
+                tmNumber = 51 + i;
+                break;
+            }
+        }
+        if (tmNumber == 0)
+        {
+            tmNumber = item - ITEM_DEVON_SCOPE;
+        }
+        ConvertIntToDecimalStringN(gStringVar1, tmNumber, STR_CONV_MODE_LEADING_ZEROS, 3);
+        
         StringCopy(gStringVar4, gText_NumberClear01);
         StringAppend(gStringVar4, gStringVar1);
+        
         BuyMenuPrint(6, FONT_SMALL, gStringVar4, 0, 0, 0, 0, TEXT_SKIP_DRAW, 1);
+        
         StringCopy(gStringVar4, gMovesInfo[ItemIdToBattleMoveId(item)].name);
         BuyMenuPrint(6, FONT_NORMAL, gStringVar4, 0, 0x10, 0, 0, 0, 1);
     }
@@ -1102,9 +1253,51 @@ static void Task_BuyMenu(u8 taskId)
             PlaySE(SE_SELECT);
             ExitBuyMenu(taskId);
             break;
-        default:
+default:
             PlaySE(SE_SELECT);
             tItemId = itemId;
+
+            if (sShopData.martType == MART_TYPE_TMHM)
+            {
+                bool8 alreadyBought = FALSE;
+                int k;
+                for (k = 0; sOneTimeTMs[k].itemId != ITEM_NONE; k++)
+                {
+                    if (sOneTimeTMs[k].itemId == itemId && FlagGet(sOneTimeTMs[k].flagId))
+                    {
+                        alreadyBought = TRUE;
+                        break;
+                    }
+                }
+
+                if (alreadyBought)
+                {
+                    BuyMenuDisplayMessage(taskId, gText_YouAlreadyHaveThis, BuyMenuReturnToItemList);
+                    return;
+                }
+
+                ClearWindowTilemap(5);
+                BuyMenuRemoveScrollIndicatorArrows();
+                BuyMenuPrintCursor(tListTaskId, 2);
+                RecolorItemDescriptionBox(1);
+                
+                sShopData.itemPrice = GetItemPrice(itemId);
+                tItemCount = 1; 
+
+                if (!IsEnoughMoney(&gSaveBlock1Ptr->money, sShopData.itemPrice))
+                {
+                    BuyMenuDisplayMessage(taskId, gText_YouDontHaveMoney, BuyMenuReturnToItemList);
+                }
+                else
+                {
+                    CopyItemName(tItemId, gStringVar1);
+                    ConvertIntToDecimalStringN(gStringVar2, 1, STR_CONV_MODE_LEFT_ALIGN, 2);
+                    ConvertIntToDecimalStringN(gStringVar3, sShopData.itemPrice, STR_CONV_MODE_LEFT_ALIGN, 8);
+                    
+                    BuyMenuDisplayMessage(taskId, gText_Var1AndYouWantedVar2, CreateBuyMenuConfirmPurchaseWindow);
+                }
+                return;
+            }
             ClearWindowTilemap(5);
             BuyMenuRemoveScrollIndicatorArrows();
             BuyMenuPrintCursor(tListTaskId, 2);
@@ -1205,6 +1398,17 @@ static void BuyMenuTryMakePurchase(u8 taskId)
     PutWindowTilemap(4);
     if (AddBagItem(tItemId, tItemCount) == TRUE)
     {
+        {
+            int k;
+            for (k = 0; sOneTimeTMs[k].itemId != ITEM_NONE; k++)
+            {
+                if (sOneTimeTMs[k].itemId == tItemId)
+                {
+                    FlagSet(sOneTimeTMs[k].flagId);
+                    break;
+                }
+            }
+        }
         GetSetItemObtained(tItemId, FLAG_SET_ITEM_OBTAINED);
         BuyMenuDisplayMessage(taskId, gText_HereYouGoThankYou, BuyMenuSubtractMoney);
         DebugFunc_PrintPurchaseDetails(taskId);
@@ -1277,7 +1481,16 @@ static void BuyMenuReturnToItemList(u8 taskId)
 
 static void ExitBuyMenu(u8 taskId)
 {
-    gFieldCallback = MapPostLoadHook_ReturnToShopMenu;
+    if (sShopData.martType == MART_TYPE_TMHM)
+    {
+        gFieldCallback = ScriptContext_Enable;
+    }
+    else
+    {
+        gFieldCallback = MapPostLoadHook_ReturnToShopMenu; 
+    }
+    // ----------------------
+
     BeginNormalPaletteFade(PALETTES_ALL, 0, 0, 16, RGB_BLACK);
     gTasks[taskId].func = Task_ExitBuyMenu;
 }

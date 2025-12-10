@@ -22,9 +22,8 @@ Route25_EventScript_Man::
 Route25_EventScript_BillStop_Trigger::
     checkflag FLAG_GOT_SS_TICKET
 	goto_if_eq VAR_RESULT, FALSE, Route25_EventScript_BillStop_End
-    
 	lockall
-
+    textcolor NPC_TEXT_COLOR_MALE
     playse SE_PIN
     applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
     waitmovement 0
@@ -52,6 +51,7 @@ Route25_EventScript_BillStop_Trigger::
     giveitem ITEM_POKEMON_BOX_LINK, 1
     waitfanfare
     
+    textcolor NPC_TEXT_COLOR_MALE
     msgbox Route25_Text_BillExplain, MSGBOX_DEFAULT
     closemessage
     

@@ -62,4 +62,4 @@ Text_Channeler_Farewell::
     .string "its Type changes to reflect the\l"
     .string "user's unique spirit.\p"
     .string "Look inward, and you shall find\n"
-    .string "your answer. Farewell...$"
+    .string "your answer. Farewell…$"

@@ -2,10 +2,39 @@ CeruleanCity_Gym_MapScripts::
 	.byte 0
 
 CeruleanCity_Gym_EventScript_Misty::
+	lock
+	faceplayer
 	famechecker FAMECHECKER_MISTY, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
+	
+	goto_if_set FLAG_DEFEATED_MISTY, CeruleanCity_Gym_EventScript_MistyPostBattle
+
+	getpartysize
+	compare VAR_RESULT, 3
+
+	goto_if_eq CeruleanCity_Gym_EventScript_StartBattle
+
+	msgbox CeruleanCity_Gym_Text_MistyIntro, MSGBOX_DEFAULT
+	msgbox CeruleanCity_Gym_Text_RulesExplain, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq CeruleanCity_Gym_EventScript_Refused
+
+	special ShowPokemonStorageSystemPC
+	waitstate 
+
+	getpartysize
+	compare VAR_RESULT, 3
+
+	goto_if_eq CeruleanCity_Gym_EventScript_StartBattle_FromPC
+
+	goto CeruleanCity_Gym_EventScript_StillNot3
+
+CeruleanCity_Gym_EventScript_StartBattle::
 	trainerbattle_single TRAINER_LEADER_MISTY, CeruleanCity_Gym_Text_MistyIntro, CeruleanCity_Gym_Text_MistyDefeat, CeruleanCity_Gym_EventScript_MistyDefeated, NO_MUSIC
-	goto_if_unset FLAG_GOT_TM03_FROM_MISTY, CeruleanCity_Gym_EventScript_GiveTM03
-	msgbox CeruleanCity_Gym_Text_ExplainTM03
+	release
+	end
+
+CeruleanCity_Gym_EventScript_StartBattle_FromPC::
+	trainerbattle_single TRAINER_LEADER_MISTY, CeruleanCity_Gym_Text_MistyReady, CeruleanCity_Gym_Text_MistyDefeat, CeruleanCity_Gym_EventScript_MistyDefeated, NO_MUSIC
 	release
 	end
 
@@ -19,17 +48,41 @@ CeruleanCity_Gym_EventScript_MistyDefeated::
 	end
 
 CeruleanCity_Gym_EventScript_GiveTM03::
-	msgbox CeruleanCity_Gym_Text_ExplainCascadeBadge
+	msgbox CeruleanCity_Gym_Text_ExplainCascadeBadge, MSGBOX_DEFAULT
 	checkitemspace ITEM_TM03
 	goto_if_eq VAR_RESULT, FALSE, CeruleanCity_Gym_EventScript_NoRoomForTM03
 	giveitem_msg CeruleanCity_Gym_Text_ReceivedTM03FromMisty, ITEM_TM03
 	setflag FLAG_GOT_TM03_FROM_MISTY
-	msgbox CeruleanCity_Gym_Text_ExplainTM03
+	msgbox CeruleanCity_Gym_Text_ExplainTM03, MSGBOX_DEFAULT
+	
+	msgbox CeruleanCity_Gym_Text_OfferPCRetrieve, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq CeruleanCity_Gym_EventScript_EndInteract
+	special ShowPokemonStorageSystemPC
+	waitstate
+
+CeruleanCity_Gym_EventScript_EndInteract::
+	release
+	end
+
+CeruleanCity_Gym_EventScript_MistyPostBattle::
+	goto_if_unset FLAG_GOT_TM03_FROM_MISTY, CeruleanCity_Gym_EventScript_GiveTM03
+	msgbox CeruleanCity_Gym_Text_ExplainTM03, MSGBOX_DEFAULT
 	release
 	end
 
 CeruleanCity_Gym_EventScript_NoRoomForTM03::
-	msgbox CeruleanCity_Gym_Text_BetterMakeRoomForThis
+	msgbox CeruleanCity_Gym_Text_BetterMakeRoomForThis, MSGBOX_DEFAULT
+	release
+	end
+
+CeruleanCity_Gym_EventScript_Refused::
+	msgbox CeruleanCity_Gym_Text_Refused, MSGBOX_DEFAULT
+	release
+	end
+
+CeruleanCity_Gym_EventScript_StillNot3::
+	msgbox CeruleanCity_Gym_Text_StillNot3, MSGBOX_DEFAULT
 	release
 	end
 

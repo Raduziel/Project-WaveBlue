@@ -199,93 +199,93 @@
 #define P_FAMILY_MEW                     TRUE
 
 #undef P_FAMILY_CHIKORITA
-#define P_FAMILY_CHIKORITA               FALSE
+#define P_FAMILY_CHIKORITA               TRUE
 #undef P_FAMILY_CYNDAQUIL
-#define P_FAMILY_CYNDAQUIL               FALSE
+#define P_FAMILY_CYNDAQUIL               TRUE
 #undef P_FAMILY_TOTODILE
-#define P_FAMILY_TOTODILE                FALSE
+#define P_FAMILY_TOTODILE                TRUE
 #undef P_FAMILY_SENTRET
-#define P_FAMILY_SENTRET                 FALSE
+#define P_FAMILY_SENTRET                 TRUE
 #undef P_FAMILY_HOOTHOOT
-#define P_FAMILY_HOOTHOOT                FALSE
+#define P_FAMILY_HOOTHOOT                TRUE
 #undef P_FAMILY_LEDYBA
-#define P_FAMILY_LEDYBA                  FALSE
+#define P_FAMILY_LEDYBA                  TRUE
 #undef P_FAMILY_SPINARAK
-#define P_FAMILY_SPINARAK                FALSE
+#define P_FAMILY_SPINARAK                TRUE
 #undef P_FAMILY_CHINCHOU
-#define P_FAMILY_CHINCHOU                FALSE
+#define P_FAMILY_CHINCHOU                TRUE
 #undef P_FAMILY_TOGEPI
 #define P_FAMILY_TOGEPI                  TRUE
 #undef P_FAMILY_NATU
-#define P_FAMILY_NATU                    FALSE
+#define P_FAMILY_NATU                    TRUE
 #undef P_FAMILY_MAREEP
-#define P_FAMILY_MAREEP                  FALSE
+#define P_FAMILY_MAREEP                  TRUE
 #undef P_FAMILY_MARILL
-#define P_FAMILY_MARILL                  FALSE
+#define P_FAMILY_MARILL                  TRUE
 #undef P_FAMILY_SUDOWOODO
-#define P_FAMILY_SUDOWOODO               FALSE
+#define P_FAMILY_SUDOWOODO               TRUE
 #undef P_FAMILY_HOPPIP
-#define P_FAMILY_HOPPIP                  FALSE
+#define P_FAMILY_HOPPIP                  TRUE
 #undef P_FAMILY_AIPOM
-#define P_FAMILY_AIPOM                   FALSE
+#define P_FAMILY_AIPOM                   TRUE
 #undef P_FAMILY_SUNKERN
-#define P_FAMILY_SUNKERN                 FALSE
+#define P_FAMILY_SUNKERN                 TRUE
 #undef P_FAMILY_YANMA
-#define P_FAMILY_YANMA                   FALSE
+#define P_FAMILY_YANMA                   TRUE
 #undef P_FAMILY_WOOPER
-#define P_FAMILY_WOOPER                  FALSE
+#define P_FAMILY_WOOPER                  TRUE
 #undef P_FAMILY_MURKROW
-#define P_FAMILY_MURKROW                 FALSE
+#define P_FAMILY_MURKROW                 TRUE
 #undef P_FAMILY_MISDREAVUS
-#define P_FAMILY_MISDREAVUS              FALSE
+#define P_FAMILY_MISDREAVUS              TRUE
 #undef P_FAMILY_UNOWN
-#define P_FAMILY_UNOWN                   FALSE
+#define P_FAMILY_UNOWN                   TRUE
 #undef P_FAMILY_WOBBUFFET
-#define P_FAMILY_WOBBUFFET               FALSE
+#define P_FAMILY_WOBBUFFET               TRUE
 #undef P_FAMILY_GIRAFARIG
-#define P_FAMILY_GIRAFARIG               FALSE
+#define P_FAMILY_GIRAFARIG               TRUE
 #undef P_FAMILY_PINECO
-#define P_FAMILY_PINECO                  FALSE
+#define P_FAMILY_PINECO                  TRUE
 #undef P_FAMILY_DUNSPARCE
-#define P_FAMILY_DUNSPARCE               FALSE
+#define P_FAMILY_DUNSPARCE               TRUE
 #undef P_FAMILY_GLIGAR
-#define P_FAMILY_GLIGAR                  FALSE
+#define P_FAMILY_GLIGAR                  TRUE
 #undef P_FAMILY_SNUBBULL
-#define P_FAMILY_SNUBBULL                FALSE
+#define P_FAMILY_SNUBBULL                TRUE
 #undef P_FAMILY_QWILFISH
-#define P_FAMILY_QWILFISH                FALSE
+#define P_FAMILY_QWILFISH                TRUE
 #undef P_FAMILY_SHUCKLE
-#define P_FAMILY_SHUCKLE                 FALSE
+#define P_FAMILY_SHUCKLE                 TRUE
 #undef P_FAMILY_HERACROSS
-#define P_FAMILY_HERACROSS               FALSE
+#define P_FAMILY_HERACROSS               TRUE
 #undef P_FAMILY_SNEASEL
-#define P_FAMILY_SNEASEL                 FALSE
+#define P_FAMILY_SNEASEL                 TRUE
 #undef P_FAMILY_TEDDIURSA
-#define P_FAMILY_TEDDIURSA               FALSE
+#define P_FAMILY_TEDDIURSA               TRUE
 #undef P_FAMILY_SLUGMA
-#define P_FAMILY_SLUGMA                  FALSE
+#define P_FAMILY_SLUGMA                  TRUE
 #undef P_FAMILY_SWINUB
-#define P_FAMILY_SWINUB                  FALSE
+#define P_FAMILY_SWINUB                  TRUE
 #undef P_FAMILY_CORSOLA
-#define P_FAMILY_CORSOLA                 FALSE
+#define P_FAMILY_CORSOLA                 TRUE
 #undef P_FAMILY_REMORAID
-#define P_FAMILY_REMORAID                FALSE
+#define P_FAMILY_REMORAID                TRUE
 #undef P_FAMILY_DELIBIRD
-#define P_FAMILY_DELIBIRD                FALSE
+#define P_FAMILY_DELIBIRD                TRUE
 #undef P_FAMILY_MANTINE
-#define P_FAMILY_MANTINE                 FALSE
+#define P_FAMILY_MANTINE                 TRUE
 #undef P_FAMILY_SKARMORY
-#define P_FAMILY_SKARMORY                FALSE
+#define P_FAMILY_SKARMORY                TRUE
 #undef P_FAMILY_HOUNDOUR
-#define P_FAMILY_HOUNDOUR                FALSE
+#define P_FAMILY_HOUNDOUR                TRUE
 #undef P_FAMILY_PHANPY
-#define P_FAMILY_PHANPY                  FALSE
+#define P_FAMILY_PHANPY                  TRUE
 #undef P_FAMILY_STANTLER
-#define P_FAMILY_STANTLER                FALSE
+#define P_FAMILY_STANTLER                TRUE
 #undef P_FAMILY_SMEARGLE
-#define P_FAMILY_SMEARGLE                FALSE
+#define P_FAMILY_SMEARGLE                TRUE
 #undef P_FAMILY_MILTANK
-#define P_FAMILY_MILTANK                 FALSE
+#define P_FAMILY_MILTANK                 TRUE
 #undef P_FAMILY_RAIKOU
 #define P_FAMILY_RAIKOU                  TRUE
 #undef P_FAMILY_ENTEI
@@ -293,7 +293,7 @@
 #undef P_FAMILY_SUICUNE
 #define P_FAMILY_SUICUNE                 TRUE
 #undef P_FAMILY_LARVITAR
-#define P_FAMILY_LARVITAR                FALSE
+#define P_FAMILY_LARVITAR                TRUE
 #undef P_FAMILY_LUGIA
 #define P_FAMILY_LUGIA                   TRUE
 #undef P_FAMILY_HO_OH
@@ -302,145 +302,145 @@
 #define P_FAMILY_CELEBI                  TRUE
 
 #undef P_FAMILY_TREECKO
-#define P_FAMILY_TREECKO                 FALSE
+#define P_FAMILY_TREECKO                 TRUE
 #undef P_FAMILY_TORCHIC
-#define P_FAMILY_TORCHIC                 FALSE
+#define P_FAMILY_TORCHIC                 TRUE
 #undef P_FAMILY_MUDKIP
-#define P_FAMILY_MUDKIP                  FALSE
+#define P_FAMILY_MUDKIP                  TRUE
 #undef P_FAMILY_POOCHYENA
-#define P_FAMILY_POOCHYENA               FALSE
+#define P_FAMILY_POOCHYENA               TRUE
 #undef P_FAMILY_ZIGZAGOON
-#define P_FAMILY_ZIGZAGOON               FALSE
+#define P_FAMILY_ZIGZAGOON               TRUE
 #undef P_FAMILY_WURMPLE
-#define P_FAMILY_WURMPLE                 FALSE
+#define P_FAMILY_WURMPLE                 TRUE
 #undef P_FAMILY_LOTAD
-#define P_FAMILY_LOTAD                   FALSE
+#define P_FAMILY_LOTAD                   TRUE
 #undef P_FAMILY_SEEDOT
-#define P_FAMILY_SEEDOT                  FALSE
+#define P_FAMILY_SEEDOT                  TRUE
 #undef P_FAMILY_TAILLOW
-#define P_FAMILY_TAILLOW                 FALSE
+#define P_FAMILY_TAILLOW                 TRUE
 #undef P_FAMILY_WINGULL
-#define P_FAMILY_WINGULL                 FALSE
+#define P_FAMILY_WINGULL                 TRUE
 #undef P_FAMILY_RALTS
-#define P_FAMILY_RALTS                   FALSE
+#define P_FAMILY_RALTS                   TRUE
 #undef P_FAMILY_SURSKIT
-#define P_FAMILY_SURSKIT                 FALSE
+#define P_FAMILY_SURSKIT                 TRUE
 #undef P_FAMILY_SHROOMISH
-#define P_FAMILY_SHROOMISH               FALSE
+#define P_FAMILY_SHROOMISH               TRUE
 #undef P_FAMILY_SLAKOTH
-#define P_FAMILY_SLAKOTH                 FALSE
+#define P_FAMILY_SLAKOTH                 TRUE
 #undef P_FAMILY_NINCADA
-#define P_FAMILY_NINCADA                 FALSE
+#define P_FAMILY_NINCADA                 TRUE
 #undef P_FAMILY_WHISMUR
-#define P_FAMILY_WHISMUR                 FALSE
+#define P_FAMILY_WHISMUR                 TRUE
 #undef P_FAMILY_MAKUHITA
-#define P_FAMILY_MAKUHITA                FALSE
+#define P_FAMILY_MAKUHITA                TRUE
 #undef P_FAMILY_NOSEPASS
-#define P_FAMILY_NOSEPASS                FALSE
+#define P_FAMILY_NOSEPASS                TRUE
 #undef P_FAMILY_SKITTY
-#define P_FAMILY_SKITTY                  FALSE
+#define P_FAMILY_SKITTY                  TRUE
 #undef P_FAMILY_SABLEYE
-#define P_FAMILY_SABLEYE                 FALSE
+#define P_FAMILY_SABLEYE                 TRUE
 #undef P_FAMILY_MAWILE
-#define P_FAMILY_MAWILE                  FALSE
+#define P_FAMILY_MAWILE                  TRUE
 #undef P_FAMILY_ARON
-#define P_FAMILY_ARON                    FALSE
+#define P_FAMILY_ARON                    TRUE
 #undef P_FAMILY_MEDITITE
-#define P_FAMILY_MEDITITE                FALSE
+#define P_FAMILY_MEDITITE                TRUE
 #undef P_FAMILY_ELECTRIKE
-#define P_FAMILY_ELECTRIKE               FALSE
+#define P_FAMILY_ELECTRIKE               TRUE
 #undef P_FAMILY_PLUSLE
-#define P_FAMILY_PLUSLE                  FALSE
+#define P_FAMILY_PLUSLE                  TRUE
 #undef P_FAMILY_MINUN
-#define P_FAMILY_MINUN                   FALSE
+#define P_FAMILY_MINUN                   TRUE
 #undef P_FAMILY_VOLBEAT_ILLUMISE
-#define P_FAMILY_VOLBEAT_ILLUMISE        FALSE
+#define P_FAMILY_VOLBEAT_ILLUMISE        TRUE
 #undef P_FAMILY_ROSELIA
-#define P_FAMILY_ROSELIA                 FALSE
+#define P_FAMILY_ROSELIA                 TRUE
 #undef P_FAMILY_GULPIN
-#define P_FAMILY_GULPIN                  FALSE
+#define P_FAMILY_GULPIN                  TRUE
 #undef P_FAMILY_CARVANHA
-#define P_FAMILY_CARVANHA                FALSE
+#define P_FAMILY_CARVANHA                TRUE
 #undef P_FAMILY_WAILMER
-#define P_FAMILY_WAILMER                 FALSE
+#define P_FAMILY_WAILMER                 TRUE
 #undef P_FAMILY_NUMEL
-#define P_FAMILY_NUMEL                   FALSE
+#define P_FAMILY_NUMEL                   TRUE
 #undef P_FAMILY_TORKOAL
-#define P_FAMILY_TORKOAL                 FALSE
+#define P_FAMILY_TORKOAL                 TRUE
 #undef P_FAMILY_SPOINK
-#define P_FAMILY_SPOINK                  FALSE
+#define P_FAMILY_SPOINK                  TRUE
 #undef P_FAMILY_SPINDA
-#define P_FAMILY_SPINDA                  FALSE
+#define P_FAMILY_SPINDA                  TRUE
 #undef P_FAMILY_TRAPINCH
-#define P_FAMILY_TRAPINCH                FALSE
+#define P_FAMILY_TRAPINCH                TRUE
 #undef P_FAMILY_CACNEA
-#define P_FAMILY_CACNEA                  FALSE
+#define P_FAMILY_CACNEA                  TRUE
 #undef P_FAMILY_SWABLU
-#define P_FAMILY_SWABLU                  FALSE
+#define P_FAMILY_SWABLU                  TRUE
 #undef P_FAMILY_ZANGOOSE
-#define P_FAMILY_ZANGOOSE                FALSE
+#define P_FAMILY_ZANGOOSE                TRUE
 #undef P_FAMILY_SEVIPER
-#define P_FAMILY_SEVIPER                 FALSE
+#define P_FAMILY_SEVIPER                 TRUE
 #undef P_FAMILY_LUNATONE
-#define P_FAMILY_LUNATONE                FALSE
+#define P_FAMILY_LUNATONE                TRUE
 #undef P_FAMILY_SOLROCK
-#define P_FAMILY_SOLROCK                 FALSE
+#define P_FAMILY_SOLROCK                 TRUE
 #undef P_FAMILY_BARBOACH
-#define P_FAMILY_BARBOACH                FALSE
+#define P_FAMILY_BARBOACH                TRUE
 #undef P_FAMILY_CORPHISH
-#define P_FAMILY_CORPHISH                FALSE
+#define P_FAMILY_CORPHISH                TRUE
 #undef P_FAMILY_BALTOY
-#define P_FAMILY_BALTOY                  FALSE
+#define P_FAMILY_BALTOY                  TRUE
 #undef P_FAMILY_LILEEP
-#define P_FAMILY_LILEEP                  FALSE
+#define P_FAMILY_LILEEP                  TRUE
 #undef P_FAMILY_ANORITH
-#define P_FAMILY_ANORITH                 FALSE
+#define P_FAMILY_ANORITH                 TRUE
 #undef P_FAMILY_FEEBAS
-#define P_FAMILY_FEEBAS                  FALSE
+#define P_FAMILY_FEEBAS                  TRUE
 #undef P_FAMILY_CASTFORM
-#define P_FAMILY_CASTFORM                FALSE
+#define P_FAMILY_CASTFORM                TRUE
 #undef P_FAMILY_KECLEON
-#define P_FAMILY_KECLEON                 FALSE
+#define P_FAMILY_KECLEON                 TRUE
 #undef P_FAMILY_SHUPPET
-#define P_FAMILY_SHUPPET                 FALSE
+#define P_FAMILY_SHUPPET                 TRUE
 #undef P_FAMILY_DUSKULL
-#define P_FAMILY_DUSKULL                 FALSE
+#define P_FAMILY_DUSKULL                 TRUE
 #undef P_FAMILY_TROPIUS
-#define P_FAMILY_TROPIUS                 FALSE
+#define P_FAMILY_TROPIUS                 TRUE
 #undef P_FAMILY_CHIMECHO
-#define P_FAMILY_CHIMECHO                FALSE
+#define P_FAMILY_CHIMECHO                TRUE
 #undef P_FAMILY_ABSOL
-#define P_FAMILY_ABSOL                   FALSE
+#define P_FAMILY_ABSOL                   TRUE
 #undef P_FAMILY_SNORUNT
-#define P_FAMILY_SNORUNT                 FALSE
+#define P_FAMILY_SNORUNT                 TRUE
 #undef P_FAMILY_SPHEAL
-#define P_FAMILY_SPHEAL                  FALSE
+#define P_FAMILY_SPHEAL                  TRUE
 #undef P_FAMILY_CLAMPERL
-#define P_FAMILY_CLAMPERL                FALSE
+#define P_FAMILY_CLAMPERL                TRUE
 #undef P_FAMILY_RELICANTH
-#define P_FAMILY_RELICANTH               FALSE
+#define P_FAMILY_RELICANTH               TRUE
 #undef P_FAMILY_LUVDISC
-#define P_FAMILY_LUVDISC                 FALSE
+#define P_FAMILY_LUVDISC                 TRUE
 #undef P_FAMILY_BAGON
-#define P_FAMILY_BAGON                   FALSE
+#define P_FAMILY_BAGON                   TRUE
 #undef P_FAMILY_BELDUM
-#define P_FAMILY_BELDUM                  FALSE
+#define P_FAMILY_BELDUM                  TRUE
 #undef P_FAMILY_REGIROCK
-#define P_FAMILY_REGIROCK                FALSE
+#define P_FAMILY_REGIROCK                TRUE
 #undef P_FAMILY_REGICE
-#define P_FAMILY_REGICE                  FALSE
+#define P_FAMILY_REGICE                  TRUE
 #undef P_FAMILY_REGISTEEL
-#define P_FAMILY_REGISTEEL               FALSE
+#define P_FAMILY_REGISTEEL               TRUE
 #undef P_FAMILY_LATIAS
-#define P_FAMILY_LATIAS                  FALSE
+#define P_FAMILY_LATIAS                  TRUE
 #undef P_FAMILY_LATIOS
-#define P_FAMILY_LATIOS                  FALSE
+#define P_FAMILY_LATIOS                  TRUE
 #undef P_FAMILY_KYOGRE
-#define P_FAMILY_KYOGRE                  FALSE
+#define P_FAMILY_KYOGRE                  TRUE
 #undef P_FAMILY_GROUDON
-#define P_FAMILY_GROUDON                 FALSE
+#define P_FAMILY_GROUDON                 TRUE
 #undef P_FAMILY_RAYQUAZA
-#define P_FAMILY_RAYQUAZA                FALSE
+#define P_FAMILY_RAYQUAZA                TRUE
 #undef P_FAMILY_JIRACHI
 #define P_FAMILY_JIRACHI                 TRUE
 #undef P_FAMILY_DEOXYS

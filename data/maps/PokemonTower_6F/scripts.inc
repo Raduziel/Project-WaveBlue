@@ -6,11 +6,11 @@ PokemonTower_6F_EventScript_MarowakGhost::
 	textcolor NPC_TEXT_COLOR_MON
 	msgbox PokemonTower_6F_Text_BeGoneIntruders
 	goto_if_questlog EventScript_ReleaseEnd
-	setwildbattle SPECIES_MAROWAK, 30
+	setwildbattle SPECIES_MAROWAK, 30, ITEM_THICK_CLUB
 	special StartMarowakBattle
 	waitstate
 	special QuestLog_CutRecording
-	goto_if_eq VAR_RESULT, FALSE, PokemonTower_6F_EventScript_DefeatedMarowakGhost  @ VAR_RESULT set by CB2_EndMarowakBattle
+	goto_if_eq VAR_RESULT, FALSE, PokemonTower_6F_EventScript_DefeatedMarowakGhost
 	applymovement LOCALID_PLAYER, PokemonTower_6F_Movement_ForcePlayerUp
 	waitmovement 0
 	releaseall
@@ -23,10 +23,21 @@ PokemonTower_6F_EventScript_DefeatedMarowakGhost::
 	playmoncry SPECIES_MAROWAK, CRY_MODE_NORMAL
 	waitbuttonpress
 	waitmoncry
-	msgbox PokemonTower_6F_Text_MothersSpiritWasCalmed
-	setvar VAR_MAP_SCENE_POKEMON_TOWER_6F, 1
-	releaseall
-	end
+	checkitem ITEM_THICK_CLUB, 1
+	compare VAR_RESULT, TRUE
+	goto_if_eq PokemonTower_6F_EventScript_SpiritDepartedNormal
+	msgbox PokemonTower_6F_Text_MothersSpiritWasCalmedAndLeftItem, MSGBOX_DEFAULT
+    giveitem ITEM_THICK_CLUB
+    goto PokemonTower_6F_EventScript_FinishMarowak
+
+PokemonTower_6F_EventScript_SpiritDepartedNormal::
+    msgbox PokemonTower_6F_Text_MothersSpiritWasCalmed, MSGBOX_DEFAULT
+    goto PokemonTower_6F_EventScript_FinishMarowak
+
+PokemonTower_6F_EventScript_FinishMarowak::
+    setvar VAR_MAP_SCENE_POKEMON_TOWER_6F, 1
+    releaseall
+    end	
 
 PokemonTower_6F_Movement_ForcePlayerUp::
 	walk_up

@@ -568,7 +568,7 @@ PalletTown_ProfessorOaksLab_EventScript_ProfOak::
 	lock
 	faceplayer
 	goto_if_set SHOWED_OAK_COMPLETE_DEX, PalletTown_ProfessorOaksLab_EventScript_OakJustShownCompleteDex
-	goto_if_eq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 9, PalletTown_ProfessorOaksLab_EventScript_RatePokedex
+	goto_if_eq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 9, PalletTown_ProfessorOaksLab_EventScript_CheckOakBattle
 	goto_if_eq VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 8, PalletTown_ProfessorOaksLab_EventScript_MonsAroundWorldWait
 	goto_if_set FLAG_SYS_GAME_CLEAR, PalletTown_ProfessorOaksLab_EventScript_TryStartNationalDexScene
 	goto_if_eq VAR_MAP_SCENE_CERULEAN_CITY_RIVAL, 1, PalletTown_ProfessorOaksLab_EventScript_RatePokedex
@@ -904,7 +904,7 @@ PalletTown_ProfessorOaksLab_Movement_VerticalPacing:
 PalletTown_ProfessorOaksLab_EventScript_TryStartNationalDexScene::
 	call PokedexRating_EventScript_RateInPerson
 	closemessage
-	goto_if_lt VAR_0x8009, 60, PalletTown_ProfessorOaksLab_EventScript_DontStartNationalDexScene
+    goto_if_lt VAR_0x8009, 1, PalletTown_ProfessorOaksLab_EventScript_DontStartNationalDexScene
 	goto_if_unset FLAG_WORLD_MAP_ONE_ISLAND, PalletTown_ProfessorOaksLab_EventScript_DontStartNationalDexScene
 	delay 30
 	msgbox PalletTown_ProfessorOaksLab_Text_OakFavorToAskYouPlayer
@@ -1299,3 +1299,74 @@ PalletTown_ProfessorOaksLab_EventScript_RightSignAlt::
 	msgbox PalletTown_ProfessorOaksLab_Text_AllMonTypesHaveStrongAndWeakPoints
 	releaseall
 	end
+
+PalletTown_ProfessorOaksLab_EventScript_CheckOakBattle::
+    goto_if_set FLAG_DEFEATED_OAK, PalletTown_ProfessorOaksLab_EventScript_RatePokedex
+    textcolor NPC_TEXT_COLOR_MALE
+    compare VAR_STARTER_MON, 0
+    call_if_eq PalletTown_ProfessorOaksLab_EventScript_BufferLeftoverSquirtle
+    compare VAR_STARTER_MON, 1
+    call_if_eq PalletTown_ProfessorOaksLab_EventScript_BufferLeftoverCharmander
+    compare VAR_STARTER_MON, 2
+    call_if_eq PalletTown_ProfessorOaksLab_EventScript_BufferLeftoverBulbasaur
+    msgbox PalletTown_ProfessorOaksLab_Text_OakChallenge_Lore, MSGBOX_YESNO
+    compare VAR_RESULT, NO
+    goto_if_eq PalletTown_ProfessorOaksLab_EventScript_DeclineOakBattle
+    
+	msgbox PalletTown_ProfessorOaksLab_Text_OakAccepted, MSGBOX_DEFAULT
+	compare VAR_STARTER_MON, 2
+    goto_if_eq PalletTown_ProfessorOaksLab_EventScript_BattleOakVenusaur
+    compare VAR_STARTER_MON, 1
+    goto_if_eq PalletTown_ProfessorOaksLab_EventScript_BattleOakCharizard
+    compare VAR_STARTER_MON, 0
+    goto_if_eq PalletTown_ProfessorOaksLab_EventScript_BattleOakBlastoise
+    end
+
+PalletTown_ProfessorOaksLab_EventScript_BufferLeftoverSquirtle::
+    bufferspeciesname STR_VAR_1, SPECIES_SQUIRTLE
+    return
+
+PalletTown_ProfessorOaksLab_EventScript_BufferLeftoverCharmander::
+    bufferspeciesname STR_VAR_1, SPECIES_CHARMANDER
+    return
+
+PalletTown_ProfessorOaksLab_EventScript_BufferLeftoverBulbasaur::
+    bufferspeciesname STR_VAR_1, SPECIES_BULBASAUR
+    return
+
+PalletTown_ProfessorOaksLab_EventScript_BattleOakVenusaur::
+    trainerbattle_no_intro TRAINER_PROF_OAK_CHARMANDER, PalletTown_ProfessorOaksLab_Text_OakDefeat
+    goto PalletTown_ProfessorOaksLab_EventScript_PostOakBattle
+    end
+
+PalletTown_ProfessorOaksLab_EventScript_BattleOakCharizard::
+    trainerbattle_no_intro TRAINER_PROF_OAK_SQUIRTLE, PalletTown_ProfessorOaksLab_Text_OakDefeat
+    goto PalletTown_ProfessorOaksLab_EventScript_PostOakBattle
+    end
+
+PalletTown_ProfessorOaksLab_EventScript_BattleOakBlastoise::
+    trainerbattle_no_intro TRAINER_PROF_OAK_BULBASAUR, PalletTown_ProfessorOaksLab_Text_OakDefeat
+    goto PalletTown_ProfessorOaksLab_EventScript_PostOakBattle
+    end
+
+PalletTown_ProfessorOaksLab_EventScript_PostOakBattle::
+    msgbox PalletTown_ProfessorOaksLab_Text_OakPostBattle, MSGBOX_DEFAULT
+    setflag FLAG_DEFEATED_OAK
+    msgbox PalletTown_ProfessorOaksLab_Text_OakHaveSomethingForYou, MSGBOX_DEFAULT
+    giveitem ITEM_MYSTIC_TICKET
+    setflag FLAG_RECEIVED_MYSTIC_TICKET
+	setflag FLAG_ENABLE_SHIP_NAVEL_ROCK
+    textcolor NPC_TEXT_COLOR_MALE
+    giveitem ITEM_AURORA_TICKET
+    setflag FLAG_RECEIVED_AURORA_TICKET
+	setflag FLAG_ENABLE_SHIP_BIRTH_ISLAND
+    textcolor NPC_TEXT_COLOR_MALE
+    msgbox PalletTown_ProfessorOaksLab_Text_OakExplainTickets, MSGBOX_DEFAULT
+    textcolor NPC_TEXT_COLOR_NEUTRAL
+    release
+    end
+
+PalletTown_ProfessorOaksLab_EventScript_DeclineOakBattle::
+    msgbox PalletTown_ProfessorOaksLab_Text_OakDecline, MSGBOX_DEFAULT
+    release
+    end

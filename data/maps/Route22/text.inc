@@ -65,13 +65,13 @@ Route22_Text_LeagueGateSign::
 	.string "Front Gate$"
 
 HyperTraining_Greeting:
-    .string "Ah... potential. My favorite thing to\n"
+    .string "Ah… potential. My favorite thing to\n"
     .string "polish.\p"
     .string "Show me a partner and I will see\n"
     .string "what shines.$"
 
 HyperTraining_NoItems:
-    .string "Hmm... you have no Bottle Cap or\n"
+    .string "Hmm… you have no Bottle Cap or\n"
     .string "Gold Bottle Cap.\p"
     .string "Bring one of those items and I\n"
     .string "will help you.$"

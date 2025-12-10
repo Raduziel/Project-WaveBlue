@@ -121,7 +121,7 @@ Route25_Text_WaitAMoment::
     .string "HEY! WAIT A MOMENT!$"
 
 Route25_Text_BillIntro::
-    .string "Glad I caught you!\n"
+    .string "Bill: Glad I caught you!\n"
     .string "I have a favor to ask.\p"
     .string "Here, take this.$"
 

@@ -1689,6 +1689,24 @@ extern const u8 gText_WideLens_2000[];
 extern const u8 gText_ShellBell_2000[];
 extern const u8 gText_ThroatSpray_2000[];
 extern const u8 gText_LightClay_4000[];
+extern const u8 gText_TypeBug[];
+extern const u8 gText_TypeDark[];
+extern const u8 gText_TypeDragon[];
+extern const u8 gText_TypeElectric[];
+extern const u8 gText_TypeFairy[];
+extern const u8 gText_TypeFighting[];
+extern const u8 gText_TypeFire[];
+extern const u8 gText_TypeFlying[];
+extern const u8 gText_TypeGhost[];
+extern const u8 gText_TypeGrass[];
+extern const u8 gText_TypeGround[];
+extern const u8 gText_TypeIce[];
+extern const u8 gText_TypePoison[];
+extern const u8 gText_TypePsychic[];
+extern const u8 gText_TypeRock[];
+extern const u8 gText_TypeSteel[];
+extern const u8 gText_TypeWater[];
+extern const u8 gText_YouAlreadyHaveThis[];
 
 extern const u8 gText_Exit[];
 

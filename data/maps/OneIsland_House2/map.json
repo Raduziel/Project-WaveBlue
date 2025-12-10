@@ -16,17 +16,18 @@
   "connections": null,
   "object_events": [
     {
+      "local_id": "LOCALID_TM_MERCHANT",
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_LASS",
-      "x": 9,
+      "graphics_id": "OBJ_EVENT_GFX_UNUSED_MALE_RECEPTIONIST",
+      "x": 5,
       "y": 4,
       "elevation": 3,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_NONE",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "OneIsland_House2_EventScript_Lass",
+      "script": "OneIsland_House2_EventScript_TMMerchant",
       "flag": "0"
     }
   ],

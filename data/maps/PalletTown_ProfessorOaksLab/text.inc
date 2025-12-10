@@ -355,3 +355,52 @@ PalletTown_ProfessorOaksLab_Text_RivalIllCompleteThePokedex::
     .string "One Island first…\p"
     .string "Anyways, I'm outta here!$"
 
+PalletTown_ProfessorOaksLab_Text_OakChallenge_Lore::
+    .string "Oak: Ah, {PLAYER}!\n"
+    .string "It is good to see you.\p"
+    .string "You know… After you and {RIVAL}\n"
+    .string "left on your journeys, I looked at\l"
+    .string "the Poké Ball that remained here\l"
+    .string "on the table.\p"
+    .string "That little {STR_VAR_1}\n"
+    .string "looked so lonely.\p"
+    .string "I decided to raise it myself to\n"
+    .string "pass the time.\p"
+    .string "And I must say…\n"
+    .string "it has become incredibly strong.\p"
+    .string "How about it?\n"
+    .string "Would you like to see the result\l"
+    .string "of my training?$"
+
+PalletTown_ProfessorOaksLab_Text_OakAccepted::
+    .string "Magnificent!\n"
+    .string "Come at me with everything you have!$"
+
+PalletTown_ProfessorOaksLab_Text_OakDecline::
+    .string "Oak: Hahaha! No rush.\n"
+    .string "Preparation is key to victory.$"
+
+PalletTown_ProfessorOaksLab_Text_OakDefeat::
+    .string "Remarkable!\n"
+    .string "I haven't felt this alive in years!$"
+
+PalletTown_ProfessorOaksLab_Text_OakPostBattle::
+    .string "Oak: You truly are exceptional!\p"
+    .string "To think that seeing the new\n"
+    .string "generation grow so strong would\l"
+    .string "make me this happy…\p"
+    .string "The world of Pokémon is safe\n"
+    .string "in your hands.$"
+
+PalletTown_ProfessorOaksLab_Text_OakHaveSomethingForYou::
+    .string "Oak: As a reward for your impressive\n"
+    .string "growth, I want you to have these.$"
+
+PalletTown_ProfessorOaksLab_Text_OakExplainTickets::
+    .string "Those act as passes for\n"
+    .string "Navel Rock and Birth Island.\p"
+    .string "I have heard rumors of rare Pokémon\n"
+    .string "living there.\p"
+    .string "Go to the Vermilion Port.\p"
+    .string "A boat should be ready to take\n"
+    .string "you there.$"

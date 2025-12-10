@@ -1,6 +1,6 @@
 LavenderTown_Text_ScaredOfDrifloon::
     .string "I heard about a Pokémon called\n"
-    .string "Drifloon that carries kids away...\p"
+    .string "Drifloon that carries kids away…\p"
     .string "Now I'm too scared to play with\n"
     .string "my Air Balloon.\p"
     .string "Could you please take it away?$"
@@ -14,8 +14,8 @@ LavenderTown_Text_FeelSafeNow::
     .string "I feel much safer without it!$"
 
 LavenderTown_Text_StuckWithIt::
-    .string "Oh...\n"
-    .string "I guess I'll have to live with it...$"
+    .string "Oh…\n"
+    .string "I guess I'll have to live with it…$"
 
 LavenderTown_Text_GladYouTookIt::
     .string "I'm glad you took that Air Balloon\n"

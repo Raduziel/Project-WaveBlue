@@ -52,6 +52,10 @@ OneIsland_Text_PokemonNetCenterSign::
     .string "Expanding the Pokémon World!\n"
     .string "Pokémon Net Center$"
 
+OneIsland_Text_TM_MerchantSign::
+    .string "Rare moves from distant regions!\n"
+    .string "TM Merchant$"
+
 @ Unused
 OneIsland_Text_ReturnToCinnabar::
     .string "グレンタウンに　もどりますか？$"

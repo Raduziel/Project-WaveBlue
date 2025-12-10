@@ -5646,19 +5646,40 @@ Pic: Black Belt
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability
 
-Hitmontop @ Black Belt
-Level: 37
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Hitmontop @ Black Belt  
+Ability: Intimidate  
+Level: 40  
+EVs: 136 HP / 252 Atk / 120 Spe  
+Adamant Nature  
+IVs: 0 SpA  
+- Close Combat  
+- Sucker Punch  
+- Ice Spinner  
+- Fake Out  
 
-Hitmonlee @ Black Belt
-Level: 37
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Hitmonlee @ Black Belt  
+Ability: Limber  
+Level: 40  
+EVs: 100 HP / 252 Atk / 136 Spe  
+Adamant Nature  
+IVs: 0 SpA  
+- Sucker Punch  
+- Endeavor  
+- Low Kick  
+- Facade  
 
-Hitmonchan @ Black Belt
-Level: 37
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+Hitmonchan @ Black Belt  
+Ability: Iron Fist  
+Level: 40  
+EVs: 96 HP / 160 Atk / 252 Spe  
+Adamant Nature  
+IVs: 0 SpA  
+- Vacuum Wave  
+- Drain Punch  
+- Ice Punch  
+- Fake Out  
 
 === TRAINER_BLACK_BELT_MIKE ===
 Name: Mike
@@ -5815,7 +5836,7 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Squirtle
 Level: 5
-IVs: 3 HP / 25 Atk / 31 Def / 0 SpA / 18 SpD / 31 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Tackle
 - Tail Whip
 
@@ -5830,7 +5851,7 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Bulbasaur
 Level: 5
-IVs: 14 HP / 31 Atk / 8 Def / 22 SpA / 31 SpD / 5 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Tackle
 - Growl
 
@@ -5845,7 +5866,7 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Charmander
 Level: 5
-IVs: 31 HP / 19 Atk / 27 Def / 31 SpA / 12 SpD / 6 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Scratch
 - Growl
 
@@ -5860,13 +5881,13 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgey
 Level: 9
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Tackle
 - Sand Attack
 
 Squirtle
 Level: 9
-IVs: 3 HP / 25 Atk / 31 Def / 0 SpA / 18 SpD / 31 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Tackle
 - Tail Whip
 
@@ -5881,13 +5902,13 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgey
 Level: 9
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Tackle
 - Sand Attack
 
 Bulbasaur
 Level: 9
-IVs: 14 HP / 31 Atk / 8 Def / 22 SpA / 31 SpD / 5 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Tackle
 - Growl
 
@@ -5902,13 +5923,13 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgey
 Level: 9
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Tackle
 - Sand Attack
 
 Charmander
 Level: 9
-IVs: 31 HP / 19 Atk / 27 Def / 31 SpA / 12 SpD / 6 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Scratch
 - Growl
 
@@ -5923,7 +5944,7 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeotto
 Level: 17
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Tackle
 - Sand Attack
 - Gust
@@ -5931,19 +5952,19 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Abra
 Level: 16
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Teleport
 
 Rattata
 Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Tackle
 - Tail Whip
 - Quick Attack
 
 Squirtle
 Level: 18
-IVs: 3 HP / 25 Atk / 31 Def / 0 SpA / 18 SpD / 31 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Tackle
 - Tail Whip
 - Withdraw
@@ -5960,7 +5981,7 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeotto
 Level: 17
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Tackle
 - Sand Attack
 - Gust
@@ -5968,19 +5989,19 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Abra
 Level: 16
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Teleport
 
 Rattata
 Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Tackle
 - Tail Whip
 - Quick Attack
 
 Bulbasaur
 Level: 18
-IVs: 14 HP / 31 Atk / 8 Def / 22 SpA / 31 SpD / 5 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Sleep Powder
 - Poison Powder
 - Vine Whip
@@ -5997,7 +6018,7 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeotto
 Level: 17
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Tackle
 - Sand Attack
 - Gust
@@ -6005,19 +6026,19 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 Abra
 Level: 16
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Teleport
 
 Rattata
 Level: 15
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Tackle
 - Tail Whip
 - Quick Attack
 
 Charmander
 Level: 18
-IVs: 31 HP / 19 Atk / 27 Def / 31 SpA / 12 SpD / 6 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Metal Claw
 - Ember
 - Growl
@@ -8958,19 +8979,19 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeotto
 Level: 19
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Raticate
 Level: 16
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Kadabra
 Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Wartortle
 Level: 20
-IVs: 3 HP / 25 Atk / 31 Def / 0 SpA / 18 SpD / 31 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 === TRAINER_RIVAL_SS_ANNE_BULBASAUR ===
 Name: Terry
@@ -8983,19 +9004,19 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeotto
 Level: 19
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Raticate
 Level: 16
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Kadabra
 Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Ivysaur
 Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 === TRAINER_RIVAL_SS_ANNE_CHARMANDER ===
 Name: Terry
@@ -9008,19 +9029,19 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeotto
 Level: 19
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Raticate
 Level: 16
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Kadabra
 Level: 18
-IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Charmeleon
 Level: 20
-IVs: 31 HP / 19 Atk / 27 Def / 31 SpA / 12 SpD / 6 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 === TRAINER_RIVAL_POKEMON_TOWER_SQUIRTLE ===
 Name: Terry
@@ -9033,23 +9054,23 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeotto
 Level: 25
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Growlithe
 Level: 23
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Exeggcute
 Level: 22
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Kadabra
 Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Wartortle
 Level: 25
-IVs: 3 HP / 25 Atk / 31 Def / 0 SpA / 18 SpD / 31 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 === TRAINER_RIVAL_POKEMON_TOWER_BULBASAUR ===
 Name: Terry
@@ -9062,23 +9083,23 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeotto
 Level: 25
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Gyarados
 Level: 23
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Growlithe
 Level: 22
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Kadabra
 Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Ivysaur
 Level: 25
-IVs: 14 HP / 31 Atk / 8 Def / 22 SpA / 31 SpD / 5 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 === TRAINER_RIVAL_POKEMON_TOWER_CHARMANDER ===
 Name: Terry
@@ -9091,23 +9112,23 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeotto
 Level: 25
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Exeggcute
 Level: 23
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Gyarados
 Level: 22
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Kadabra
 Level: 20
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Charmeleon
 Level: 25
-IVs: 31 HP / 19 Atk / 27 Def / 31 SpA / 12 SpD / 6 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 === TRAINER_RIVAL_SILPH_SQUIRTLE ===
 Name: Terry
@@ -9120,23 +9141,23 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeot
 Level: 37
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Growlithe
 Level: 38
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Exeggcute
 Level: 35
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Alakazam
 Level: 35
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Blastoise
 Level: 40
-IVs: 3 HP / 25 Atk / 31 Def / 0 SpA / 18 SpD / 31 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 === TRAINER_RIVAL_SILPH_BULBASAUR ===
 Name: Terry
@@ -9149,23 +9170,23 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeot
 Level: 37
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Gyarados
 Level: 38
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Growlithe
 Level: 35
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Alakazam
 Level: 35
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Venusaur
 Level: 40
-IVs: 14 HP / 31 Atk / 8 Def / 22 SpA / 31 SpD / 5 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 === TRAINER_RIVAL_SILPH_CHARMANDER ===
 Name: Terry
@@ -9178,23 +9199,23 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeot
 Level: 37
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Exeggcute
 Level: 38
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Gyarados
 Level: 35
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Alakazam
 Level: 35
-IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 Charizard
 Level: 40
-IVs: 31 HP / 19 Atk / 27 Def / 31 SpA / 12 SpD / 6 Spe
+IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 
 === TRAINER_RIVAL_ROUTE22_LATE_SQUIRTLE ===
 Name: Terry
@@ -9205,53 +9226,68 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgeot
-Level: 47
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Feather Dance
-- Wing Attack
-- Gust
-- Quick Attack
+Pidgeot @ Focus Sash  
+Ability: Keen Eye  
+Level: 47  
+EVs: 160 HP / 252 Atk / 96 Spe  
+Adamant Nature  
+- Brave Bird  
+- Swagger  
+- Facade  
+- Roost  
 
-Rhyhorn
-Level: 45
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Take Down
-- Horn Drill
-- Rock Blast
-- Fury Attack
+Rhydon @ Eviolite  
+Ability: Lightning Rod  
+Level: 45  
+EVs: 160 HP / 120 Atk / 200 Def / 28 SpD  
+Impish Nature  
+- Thunder Punch  
+- Earthquake  
+- Avalanche  
+- Curse  
 
-Growlithe
-Level: 45
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Flame Wheel
-- Take Down
-- Leer
-- Agility
+Arcanine @ Leftovers  
+Ability: Intimidate  
+Level: 45  
+EVs: 56 HP / 252 Atk / 100 Def / 100 SpD  
+Jolly Nature  
+- Extreme Speed  
+- Will-O-Wisp  
+- Play Rough  
+- Flare Blitz  
 
-Exeggcute
-Level: 45
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Solar Beam
-- Sleep Powder
-- Poison Powder
-- Stun Spore
+Exeggutor @ Sitrus Berry  
+Ability: Harvest  
+Level: 45  
+EVs: 100 HP / 200 SpA / 208 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Sleep Powder  
+- Solar Beam  
+- Sunny Day  
+- Psychic  
 
-Alakazam
-Level: 47
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Alakazam @ Life Orb  
+Ability: Magic Guard  
+Level: 47  
+EVs: 200 HP / 252 SpA / 56 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Shadow Ball  
+- Calm Mind  
 - Psychic
-- Calm Mind
-- Future Sight
-- Disable
 
-Blastoise
-Level: 53
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Water Gun
-- Rain Dance
-- Bite
-- Rapid Spin
+Blastoise @ White Herb  
+Ability: Rain Dish  
+Level: 53  
+EVs: 248 SpA / 4 SpD / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Shell Smash  
+- Rain Dance  
+- Ice Beam  
+- Surf  
 
 === TRAINER_RIVAL_ROUTE22_LATE_BULBASAUR ===
 Name: Terry
@@ -9262,53 +9298,67 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgeot
-Level: 47
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Feather Dance
-- Wing Attack
-- Gust
-- Quick Attack
+Pidgeot @ Focus Sash  
+Ability: Keen Eye  
+Level: 47  
+EVs: 160 HP / 252 Atk / 96 Spe  
+Adamant Nature  
+- Brave Bird  
+- Swagger  
+- Facade  
+- Roost 
 
-Rhyhorn
-Level: 45
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Take Down
-- Horn Drill
-- Rock Blast
-- Fury Attack
+Rhydon @ Eviolite  
+Ability: Lightning Rod  
+Level: 45  
+EVs: 160 HP / 120 Atk / 200 Def / 28 SpD  
+Impish Nature  
+- Thunder Punch  
+- Earthquake  
+- Avalanche  
+- Curse
 
-Gyarados
-Level: 45
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Hydro Pump
-- Twister
-- Leer
-- Rain Dance
+Gyarados @ Lum Berry  
+Ability: Intimidate  
+Level: 45  
+EVs: 56 HP / 252 Atk / 200 Spe  
+Adamant Nature  
+- Dragon Dance  
+- Earthquake  
+- Waterfall  
+- Ice Fang 
 
-Growlithe
-Level: 45
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Flame Wheel
-- Take Down
-- Leer
-- Agility
+Arcanine @ Leftovers  
+Ability: Intimidate  
+Level: 45  
+EVs: 56 HP / 252 Atk / 100 Def / 100 SpD  
+Jolly Nature  
+- Extreme Speed  
+- Will-O-Wisp  
+- Play Rough  
+- Flare Blitz
 
-Alakazam
-Level: 47
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Psychic
-- Calm Mind
-- Future Sight
-- Disable
+Alakazam @ Life Orb  
+Ability: Magic Guard  
+Level: 47  
+EVs: 200 HP / 252 SpA / 56 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Shadow Ball  
+- Calm Mind  
+- Psychic 
 
-Venusaur
-Level: 53
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Razor Leaf
-- Sweet Scent
-- Growth
-- Synthesis
+Venusaur @ Rocky Helmet  
+Ability: Overgrow  
+Level: 53  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Sludge Bomb  
+- Sleep Powder  
+- Leech Seed  
+- Energy Ball  
 
 === TRAINER_RIVAL_ROUTE22_LATE_CHARMANDER ===
 Name: Terry
@@ -9319,53 +9369,68 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgeot
-Level: 47
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Feather Dance
-- Wing Attack
-- Gust
-- Quick Attack
+Pidgeot @ Focus Sash  
+Ability: Keen Eye  
+Level: 47  
+EVs: 160 HP / 252 Atk / 96 Spe  
+Adamant Nature  
+- Brave Bird  
+- Swagger  
+- Facade  
+- Roost  
 
-Rhyhorn
-Level: 45
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Take Down
-- Horn Drill
-- Rock Blast
-- Fury Attack
+Rhydon @ Eviolite  
+Ability: Lightning Rod  
+Level: 45  
+EVs: 160 HP / 120 Atk / 200 Def / 28 SpD  
+Impish Nature  
+- Thunder Punch  
+- Earthquake  
+- Avalanche  
+- Curse  
 
-Exeggcute
-Level: 45
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Solar Beam
-- Sleep Powder
-- Poison Powder
-- Stun Spore
-
-Gyarados
-Level: 45
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
-- Hydro Pump
-- Twister
-- Leer
-- Rain Dance
-
-Alakazam
-Level: 47
-IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
+Exeggutor @ Sitrus Berry  
+Ability: Harvest  
+Level: 45  
+EVs: 100 HP / 200 SpA / 208 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Sleep Powder  
+- Solar Beam  
+- Sunny Day  
 - Psychic
-- Calm Mind
-- Future Sight
-- Disable
 
-Charizard
-Level: 53
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Flamethrower
-- Wing Attack
-- Slash
-- Scary Face
+Gyarados @ Lum Berry  
+Ability: Intimidate  
+Level: 45  
+EVs: 56 HP / 252 Atk / 200 Spe  
+Adamant Nature  
+- Dragon Dance  
+- Earthquake  
+- Waterfall  
+- Ice Fang 
+
+Alakazam @ Life Orb  
+Ability: Magic Guard  
+Level: 47  
+EVs: 200 HP / 252 SpA / 56 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Shadow Ball  
+- Calm Mind  
+- Psychic
+
+Charizard @ Charti Berry  
+Ability: Solar Power  
+Level: 53  
+EVs: 8 HP / 252 SpA / 248 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Scorching Sands  
+- Flamethrower  
+- Sunny Day  
+- Air Slash 
 
 === TRAINER_CHAMPION_FIRST_SQUIRTLE ===
 Name: Terry
@@ -9377,53 +9442,69 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
 
-Pidgeot
-Level: 59
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Aerial Ace
-- Feather Dance
-- Sand Attack
-- Whirlwind
+Pidgeot @ Focus Sash  
+Ability: Keen Eye  
+Level: 59  
+EVs: 160 HP / 252 Atk / 96 Spe  
+Adamant Nature  
+- Brave Bird  
+- Swagger  
+- Facade  
+- Roost
 
-Alakazam
-Level: 57
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Future Sight
-- Recover
-- Reflect
+Alakazam @ Life Orb  
+Ability: Magic Guard  
+Level: 57  
+EVs: 200 HP / 252 SpA / 56 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Shadow Ball  
+- Calm Mind  
+- Psychic  
 
-Rhydon
-Level: 59
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Take Down
-- Earthquake
-- Rock Tomb
-- Scary Face
+Rhydon @ Eviolite  
+Ability: Lightning Rod  
+Level: 59  
+EVs: 160 HP / 120 Atk / 200 Def / 28 SpD  
+Impish Nature  
+- Thunder Punch  
+- Earthquake  
+- Avalanche  
+- Curse
 
-Arcanine
-Level: 59
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Extreme Speed
-- Flamethrower
-- Roar
-- Bite
+Arcanine @ Leftovers  
+Ability: Intimidate  
+Level: 59  
+EVs: 56 HP / 252 Atk / 100 Def / 100 SpD  
+Jolly Nature  
+- Extreme Speed  
+- Will-O-Wisp  
+- Play Rough  
+- Flare Blitz  
 
-Exeggutor
-Level: 61
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
-- Egg Bomb
-- Sleep Powder
-- Light Screen
+Exeggutor @ Sitrus Berry  
+Ability: Harvest  
+Level: 61 
+EVs: 100 HP / 200 SpA / 208 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Sleep Powder  
+- Solar Beam  
+- Sunny Day  
+- Psychic  
 
-Blastoise @ Sitrus Berry
-Level: 63
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hydro Pump
-- Rain Dance
-- Skull Bash
-- Bite
+
+Blastoise @ White Herb  
+Ability: Rain Dish  
+Level: 63  
+EVs: 248 SpA / 4 SpD / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Shell Smash  
+- Rain Dance  
+- Ice Beam  
+- Surf  
 
 === TRAINER_CHAMPION_FIRST_BULBASAUR ===
 Name: Terry
@@ -9435,53 +9516,66 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
 
-Pidgeot
-Level: 59
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Aerial Ace
-- Feather Dance
-- Sand Attack
-- Whirlwind
+Pidgeot @ Focus Sash  
+Ability: Keen Eye  
+Level: 59  
+EVs: 160 HP / 252 Atk / 96 Spe  
+Adamant Nature  
+- Brave Bird  
+- Swagger  
+- Facade  
+- Roost 
 
-Alakazam
-Level: 57
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Future Sight
-- Recover
-- Reflect
+Alakazam @ Life Orb  
+Ability: Magic Guard  
+Level: 57  
+EVs: 200 HP / 252 SpA / 56 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Shadow Ball  
+- Calm Mind  
+- Psychic  
 
-Rhydon
-Level: 59
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Take Down
-- Earthquake
-- Rock Tomb
-- Scary Face
+Rhydon @ Eviolite  
+Ability: Lightning Rod  
+Level: 59 
+EVs: 160 HP / 120 Atk / 200 Def / 28 SpD  
+Impish Nature  
+- Thunder Punch  
+- Earthquake  
+- Avalanche  
+- Curse  
 
-Gyarados
-Level: 59
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hydro Pump
-- Dragon Rage
-- Bite
-- Thrash
+Gyarados @ Lum Berry  
+Ability: Intimidate  
+Level: 59  
+EVs: 56 HP / 252 Atk / 200 Spe  
+Adamant Nature  
+- Dragon Dance  
+- Earthquake  
+- Waterfall  
+- Ice Fang 
 
-Arcanine
-Level: 61
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Extreme Speed
-- Flamethrower
-- Roar
-- Bite
+Arcanine @ Leftovers  
+Ability: Intimidate  
+Level: 61  
+EVs: 56 HP / 252 Atk / 100 Def / 100 SpD  
+Jolly Nature  
+- Extreme Speed  
+- Will-O-Wisp  
+- Play Rough  
+- Flare Blitz  
 
-Venusaur @ Sitrus Berry
-Level: 63
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Solar Beam
-- Synthesis
-- Sunny Day
-- Growth
+Venusaur @ Rocky Helmet  
+Ability: Overgrow  
+Level: 63  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Sludge Bomb  
+- Sleep Powder  
+- Leech Seed  
 
 === TRAINER_CHAMPION_FIRST_CHARMANDER ===
 Name: Terry
@@ -9493,53 +9587,68 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
 
-Pidgeot
-Level: 59
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Aerial Ace
-- Feather Dance
-- Sand Attack
-- Whirlwind
+Pidgeot @ Focus Sash  
+Ability: Keen Eye  
+Level: 59  
+EVs: 160 HP / 252 Atk / 96 Spe  
+Adamant Nature  
+- Brave Bird  
+- Swagger  
+- Facade  
+- Roost  
 
-Alakazam
-Level: 57
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Future Sight
-- Recover
-- Reflect
+Alakazam @ Life Orb  
+Ability: Magic Guard  
+Level: 57  
+EVs: 200 HP / 252 SpA / 56 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Shadow Ball  
+- Calm Mind  
+- Psychic  
 
-Rhydon
-Level: 59
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Take Down
-- Earthquake
-- Rock Tomb
-- Scary Face
+Rhydon @ Eviolite  
+Ability: Lightning Rod  
+Level: 59  
+EVs: 160 HP / 120 Atk / 200 Def / 28 SpD  
+Impish Nature  
+- Thunder Punch  
+- Earthquake  
+- Avalanche  
+- Curse  
 
-Exeggutor
-Level: 59
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
-- Egg Bomb
-- Sleep Powder
-- Light Screen
+Exeggutor @ Sitrus Berry  
+Ability: Harvest  
+Level: 59  
+EVs: 100 HP / 200 SpA / 208 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Sleep Powder  
+- Solar Beam  
+- Sunny Day  
+- Psychic  
 
-Gyarados
-Level: 61
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hydro Pump
-- Dragon Rage
-- Bite
-- Thrash
+Gyarados @ Lum Berry  
+Ability: Intimidate  
+Level: 61  
+EVs: 56 HP / 252 Atk / 200 Spe  
+Adamant Nature  
+- Dragon Dance  
+- Earthquake  
+- Waterfall  
+- Ice Fang 
 
-Charizard @ Sitrus Berry
-Level: 63
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Fire Blast
-- Aerial Ace
-- Slash
-- Fire Spin
+Charizard @ Charti Berry  
+Ability: Solar Power  
+Level: 63  
+EVs: 8 HP / 252 SpA / 248 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Scorching Sands  
+- Flamethrower  
+- Sunny Day  
+- Air Slash  
 
 === TRAINER_CHANNELER_PATRICIA ===
 Name: Patricia
@@ -15530,53 +15639,68 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
 
-Heracross
-Level: 72
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Megahorn
-- Earthquake
-- Counter
-- Rock Tomb
+Heracross @ Flame Orb  
+Ability: Guts  
+Level: 72  
+EVs: 252 Atk / 252 Spe  
+Jolly Nature  
+- Close Combat  
+- Megahorn  
+- Facade  
+- Protect  
 
-Alakazam
-Level: 73
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Alakazam @ Life Orb  
+Ability: Magic Guard  
+Level: 73  
+EVs: 200 HP / 252 SpA / 56 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Shadow Ball  
+- Calm Mind  
 - Psychic
-- Shadow Ball
-- Calm Mind
-- Reflect
 
-Tyranitar
-Level: 72
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tyranitar @ Assault Vest  
+Ability: Sand Stream  
+Level: 72  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Stone Edge  
+- Earthquake  
+- Ice Punch  
 - Crunch
-- Earthquake
-- Thunderbolt
-- Aerial Ace
 
-Arcanine
-Level: 73
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Extreme Speed
-- Overheat
-- Aerial Ace
-- Iron Tail
+Arcanine @ Leftovers  
+Ability: Intimidate  
+Level: 73  
+EVs: 56 HP / 252 Atk / 100 Def / 100 SpD  
+Jolly Nature  
+- Extreme Speed  
+- Will-O-Wisp  
+- Play Rough  
+- Flare Blitz
 
-Exeggutor
-Level: 73
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
+Exeggutor @ Sitrus Berry  
+Ability: Harvest  
+Level: 73  
+EVs: 100 HP / 200 SpA / 208 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Sleep Powder  
+- Solar Beam  
+- Sunny Day  
 - Psychic
-- Sleep Powder
-- Light Screen
 
-Blastoise @ Sitrus Berry
-Level: 75
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hydro Pump
-- Ice Beam
-- Earthquake
-- Rain Dance
+Blastoise @ White Herb  
+Ability: Rain Dish  
+Level: 75  
+EVs: 248 SpA / 4 SpD / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Shell Smash  
+- Rain Dance  
+- Ice Beam  
+- Surf  
 
 === TRAINER_CHAMPION_REMATCH_BULBASAUR ===
 Name: Terry
@@ -15588,53 +15712,67 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
 
-Heracross
-Level: 72
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Megahorn
-- Earthquake
-- Counter
-- Rock Tomb
+Heracross @ Flame Orb  
+Ability: Guts  
+Level: 72  
+EVs: 252 Atk / 252 Spe  
+Jolly Nature  
+- Close Combat  
+- Megahorn  
+- Facade  
+- Protect
 
-Alakazam
-Level: 73
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Shadow Ball
-- Calm Mind
-- Reflect
+Alakazam @ Life Orb  
+Ability: Magic Guard  
+Level:73  
+EVs: 200 HP / 252 SpA / 56 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Shadow Ball  
+- Calm Mind  
+- Psychic 
 
-Tyranitar
-Level: 72
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tyranitar @ Assault Vest  
+Ability: Sand Stream  
+Level: 72  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Stone Edge  
+- Earthquake  
+- Ice Punch  
 - Crunch
-- Earthquake
-- Thunderbolt
-- Aerial Ace
 
-Gyarados
-Level: 73
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hydro Pump
-- Dragon Dance
-- Earthquake
-- Hyper Beam
+Gyarados @ Lum Berry  
+Ability: Intimidate  
+Level: 73  
+EVs: 56 HP / 252 Atk / 200 Spe  
+Adamant Nature  
+- Dragon Dance  
+- Earthquake  
+- Waterfall  
+- Ice Fang 
 
-Arcanine
-Level: 73
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Extreme Speed
-- Overheat
-- Aerial Ace
-- Iron Tail
+Arcanine @ Leftovers  
+Ability: Intimidate  
+Level: 73  
+EVs: 56 HP / 252 Atk / 100 Def / 100 SpD  
+Jolly Nature  
+- Extreme Speed  
+- Will-O-Wisp  
+- Play Rough  
+- Flare Blitz
 
-Venusaur @ Sitrus Berry
-Level: 75
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Solar Beam
-- Sludge Bomb
-- Earthquake
-- Sunny Day
+Venusaur @ Rocky Helmet  
+Ability: Overgrow  
+Level: 75  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Sludge Bomb  
+- Sleep Powder  
+- Leech Seed  
+- Energy Ball
 
 === TRAINER_CHAMPION_REMATCH_CHARMANDER ===
 Name: Terry
@@ -15646,53 +15784,68 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
 
-Heracross
-Level: 72
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Megahorn
-- Earthquake
-- Counter
-- Rock Tomb
+Heracross @ Flame Orb  
+Ability: Guts  
+Level: 72  
+EVs: 252 Atk / 252 Spe  
+Jolly Nature  
+- Close Combat  
+- Megahorn  
+- Facade  
+- Protect
 
-Alakazam
-Level: 73
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Psychic
-- Shadow Ball
-- Calm Mind
-- Reflect
+Alakazam @ Life Orb  
+Ability: Magic Guard  
+Level: 73  
+EVs: 200 HP / 252 SpA / 56 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Shadow Ball  
+- Calm Mind  
+- Psychic  
 
-Tyranitar
-Level: 72
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
+Tyranitar @ Assault Vest  
+Ability: Sand Stream  
+Level: 72  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+- Stone Edge  
+- Earthquake  
+- Ice Punch  
 - Crunch
-- Earthquake
-- Thunderbolt
-- Aerial Ace
 
-Exeggutor
-Level: 73
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Giga Drain
-- Psychic
-- Sleep Powder
-- Light Screen
+Exeggutor @ Sitrus Berry  
+Ability: Harvest  
+Level: 73  
+EVs: 100 HP / 200 SpA / 208 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Sleep Powder  
+- Solar Beam  
+- Sunny Day  
+- Psychic 
 
-Gyarados
-Level: 73
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Hydro Pump
-- Dragon Dance
-- Earthquake
-- Hyper Beam
+Gyarados @ Lum Berry  
+Ability: Intimidate  
+Level: 73  
+EVs: 56 HP / 252 Atk / 200 Spe  
+Adamant Nature  
+- Dragon Dance  
+- Earthquake  
+- Waterfall  
+- Ice Fang  
 
-Charizard @ Sitrus Berry
-Level: 75
-IVs: 31 HP / 31 Atk / 31 Def / 31 SpA / 31 SpD / 31 Spe
-- Fire Blast
-- Dragon Claw
-- Aerial Ace
-- Earthquake
+Charizard @ Charti Berry  
+Ability: Solar Power  
+Level: 75  
+EVs: 8 HP / 252 SpA / 248 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Scorching Sands  
+- Flamethrower  
+- Sunny Day  
+- Air Slash
 
 === TRAINER_CUE_BALL_PAXTON ===
 Name: Paxton
@@ -15710,3 +15863,223 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 Muk
 Level: 39
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
+
+=== TRAINER_PROF_OAK_CHARMANDER ===
+Name: Oak
+Class: Pkmn Prof
+Pic: Professor Oak
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Steelix @ Leftovers  
+Ability: Rock Head  
+Level: 75
+EVs: 248 Atk / 8 SpD / 248 Spe  
+Adamant Nature  
+- Head Smash  
+- Heavy Slam  
+- Rock Polish  
+- Explosion  
+
+Clefable (F) @ Life Orb  
+Ability: Magic Guard  
+Level: 75
+EVs: 248 HP / 248 SpA / 8 SpD / 4 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Flamethrower  
+- Fake Tears  
+- Moonblast  
+- Psychic  
+
+Gengar  
+Ability: Cursed Body  
+Level: 75
+EVs: 248 SpA / 8 SpD / 248 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Sludge Bomb  
+- Destiny Bond  
+- Shadow Ball 
+
+Magmortar @ Lum Berry  
+Ability: Flame Body  
+Level: 75  
+EVs: 248 SpA / 8 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Scorching Sands  
+- Flamethrower  
+- Thunderbolt  
+- Rest  
+
+Politoed @ Damp Rock  
+Ability: Drizzle  
+Level: 75
+EVs: 248 HP / 248 SpA / 8 SpD / 4 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Weather Ball  
+- Earth Power  
+- Ice Beam  
+- Encore
+
+Venusaur @ Rocky Helmet  
+Ability: Overgrow  
+Level: 80  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Sludge Bomb  
+- Sleep Powder  
+- Leech Seed  
+- Energy Ball
+
+=== TRAINER_PROF_OAK_SQUIRTLE ===
+Name: Oak
+Class: Pkmn Prof
+Pic: Professor Oak
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Steelix @ Leftovers  
+Ability: Rock Head  
+Level: 75  
+EVs: 248 Atk / 8 SpD / 248 Spe  
+Adamant Nature  
+- Head Smash  
+- Heavy Slam  
+- Rock Polish  
+- Explosion  
+
+Clefable (F) @ Life Orb  
+Ability: Magic Guard  
+Level: 75  
+EVs: 248 HP / 248 SpA / 8 SpD / 4 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Flamethrower  
+- Fake Tears  
+- Moonblast  
+- Psychic  
+
+Gengar  
+Ability: Cursed Body  
+Level: 75  
+EVs: 248 SpA / 8 SpD / 248 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Sludge Bomb  
+- Destiny Bond  
+- Shadow Ball 
+
+Tangrowth @ Wide Lens  
+Ability: Chlorophyll  
+Level: 75  
+EVs: 248 Atk / 8 SpD / 248 Spe  
+Adamant Nature  
+- Swords Dance  
+- Sleep Powder  
+- Power Whip  
+- Earthquake  
+
+Politoed @ Damp Rock  
+Ability: Drizzle  
+Level: 75  
+EVs: 248 HP / 248 SpA / 8 SpD / 4 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Weather Ball  
+- Earth Power  
+- Ice Beam  
+- Encore
+
+Charizard @ Charti Berry  
+Ability: Solar Power  
+Level: 80  
+EVs: 8 HP / 252 SpA / 248 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Scorching Sands  
+- Flamethrower  
+- Sunny Day  
+- Air Slash
+
+=== TRAINER_PROF_OAK_BULBASAUR ===
+Name: Oak
+Class: Pkmn Prof
+Pic: Professor Oak
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Steelix @ Leftovers  
+Ability: Rock Head  
+Level: 75
+EVs: 248 Atk / 8 SpD / 248 Spe  
+Adamant Nature  
+- Head Smash  
+- Heavy Slam  
+- Rock Polish  
+- Explosion  
+
+Clefable (F) @ Life Orb  
+Ability: Magic Guard  
+Level: 75
+EVs: 248 HP / 248 SpA / 8 SpD / 4 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Flamethrower  
+- Fake Tears  
+- Moonblast  
+- Psychic  
+
+Gengar  
+Ability: Cursed Body  
+Level: 75
+EVs: 248 SpA / 8 SpD / 248 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Dazzling Gleam  
+- Sludge Bomb  
+- Destiny Bond  
+- Shadow Ball 
+
+Tangrowth @ Wide Lens  
+Ability: Chlorophyll  
+Level: 75  
+EVs: 248 Atk / 8 SpD / 248 Spe  
+Adamant Nature  
+- Swords Dance  
+- Sleep Powder  
+- Power Whip  
+- Earthquake  
+
+Magmortar @ Lum Berry  
+Ability: Flame Body  
+Level: 75 
+EVs: 248 SpA / 8 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Scorching Sands  
+- Flamethrower  
+- Thunderbolt  
+- Rest  
+
+Blastoise @ White Herb  
+Ability: Rain Dish  
+Level: 80  
+EVs: 248 SpA / 4 SpD / 252 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Shell Smash  
+- Rain Dance  
+- Ice Beam  
+- Surf 

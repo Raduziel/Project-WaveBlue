@@ -41,3 +41,7 @@ PokemonTower_6F_Text_MothersSpiritWasCalmed::
     .string "The mother's spirit was calmed.\p"
     .string "It departed to the afterlife…$"
 
+PokemonTower_6F_Text_MothersSpiritWasCalmedAndLeftItem:
+    .string "The mother's spirit was calmed.\p"
+    .string "It departed to the afterlife,\n"
+    .string "leaving something behind…$"

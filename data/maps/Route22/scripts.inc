@@ -236,6 +236,7 @@ Route22_EventScript_LeagueGateSign::
 HyperTrainingGuy::
     lock
     faceplayer
+    textcolor NPC_TEXT_COLOR_MALE
     msgbox HyperTraining_Greeting, MSGBOX_DEFAULT
     checkitem ITEM_GOLD_BOTTLE_CAP, 1
     copyvar VAR_TEMP_5, VAR_RESULT
@@ -471,15 +472,18 @@ HT_AskNewMon:
 
 HT_NoItemError:
     msgbox HyperTraining_NoItems, MSGBOX_DEFAULT
+    textcolor NPC_TEXT_COLOR_NEUTRAL
     release
     end
 
 HT_Farewell:
     msgbox HyperTraining_Comeback, MSGBOX_DEFAULT
+    textcolor NPC_TEXT_COLOR_NEUTRAL
     release
     end
 
 HT_Exit:
     msgbox HyperTraining_CanceledText, MSGBOX_DEFAULT
+    textcolor NPC_TEXT_COLOR_NEUTRAL
     release
     end

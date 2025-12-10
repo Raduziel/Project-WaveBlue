@@ -51,7 +51,72 @@
     F(STEEL_WING) \
     F(SKILL_SWAP) \
     F(SNATCH) \
-    F(OVERHEAT)
+    F(OVERHEAT) \
+    F(BUG_BUZZ) \
+    F(LEECH_LIFE) \
+    F(POLLEN_PUFF) \
+    F(STRUGGLE_BUG) \
+    F(U_TURN) \
+    F(X_SCISSOR) \
+    F(CRUNCH) \
+    F(DARK_PULSE) \
+    F(FAKE_TEARS) \
+    F(FOUL_PLAY) \
+    F(KNOCK_OFF) \
+    F(NASTY_PLOT) \
+    F(SNARL) \
+    F(DRAGON_TAIL) \
+    F(OUTRAGE) \
+    F(CHARGE_BEAM) \
+    F(ELECTRIC_TERRAIN) \
+    F(VOLT_SWITCH) \
+    F(WILD_CHARGE) \
+    F(DAZZLING_GLEAM) \
+    F(DRAINING_KISS) \
+    F(MISTY_TERRAIN) \
+    F(PLAY_ROUGH) \
+    F(AURA_SPHERE) \
+    F(BODY_PRESS) \
+    F(CLOSE_COMBAT) \
+    F(DRAIN_PUNCH) \
+    F(FLAME_CHARGE) \
+    F(FLARE_BLITZ) \
+    F(WILL_O_WISP) \
+    F(ACROBATICS) \
+    F(AIR_SLASH) \
+    F(BRAVE_BIRD) \
+    F(HURRICANE) \
+    F(ROOST) \
+    F(TAILWIND) \
+    F(HEX) \
+    F(PHANTOM_FORCE) \
+    F(SHADOW_CLAW) \
+    F(ENERGY_BALL) \
+    F(GRASSY_TERRAIN) \
+    F(SEED_BOMB) \
+    F(TRAILBLAZE) \
+    F(BULLDOZE) \
+    F(EARTH_POWER) \
+    F(SPIKES) \
+    F(AVALANCHE) \
+    F(ICE_SPINNER) \
+    F(ACID_SPRAY) \
+    F(POISON_JAB) \
+    F(TOXIC_SPIKES) \
+    F(PSYCHIC_FANGS) \
+    F(PSYCHIC_TERRAIN) \
+    F(PSYSHOCK) \
+    F(ZEN_HEADBUTT) \
+    F(POWER_GEM) \
+    F(ROCK_BLAST) \
+    F(STEALTH_ROCK) \
+    F(STONE_EDGE) \
+    F(FLASH_CANNON) \
+    F(HEAVY_SLAM) \
+    F(IRON_HEAD) \
+    F(SMART_STRIKE) \
+    F(CHILLING_WATER) \
+    F(LIQUIDATION)
 
 #define FOREACH_HM(F) \
     F(CUT) \

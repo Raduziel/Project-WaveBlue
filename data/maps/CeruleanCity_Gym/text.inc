@@ -90,3 +90,25 @@ CeruleanCity_Gym_Text_GymStatuePlayerWon::
     .string "Winning Trainers:\n"
     .string "{RIVAL}, {PLAYER}$"
 
+CeruleanCity_Gym_Text_RulesExplain::
+    .string "However, Gym rules require you to\n"
+    .string "use exactly three Pokémon.\p"
+    .string "{COLOR DARK_GRAY}Do you want to open the Storage\n"
+    .string "System to organize your party?$"
+
+CeruleanCity_Gym_Text_Refused::
+    .string "Come back when you have exactly\n"
+    .string "three Pokémon in your party!$"
+
+CeruleanCity_Gym_Text_StillNot3::
+    .string "You still don't have exactly\n"
+    .string "three Pokémon.\p"
+    .string "I cannot battle you yet.$"
+
+CeruleanCity_Gym_Text_OfferPCRetrieve::
+    .string "{COLOR DARK_GRAY}Do you want to open the Storage\n"
+    .string "System to organize your party?$"
+
+CeruleanCity_Gym_Text_MistyReady::
+    .string "I see you've adjusted your party.\n"
+    .string "Then let's not waste any more time!$"

@@ -95,7 +95,6 @@ PewterCity_Text_CitySign::
     .string "Pewter City\n"
     .string "A Stone Gray City$"
 
-@ The below 3 JP texts are unused. Possibly a cut NPC meant to give the player the Berry Pouch
 PewterCity_Text_DefeatedBrockYouCanHaveTreasure::
     .string "あッれー！\n"
     .string "その　ジムバッジ‥‥\l"
@@ -125,14 +124,6 @@ PewterCity_Text_AskedToDeliverThis::
     .string "I'm Prof. Oak's Aide.\p"
     .string "I've been asked to deliver this,\n"
     .string "so here you go.$"
-
-PewterCity_Text_ReceivedRunningShoesFromAide::
-    .string "{PLAYER} received the\n"
-    .string "Exp. Share from the Aide.$"
-
-PewterCity_Text_SwitchedShoesWithRunningShoes::
-    .string "{PLAYER} put the Exp. Share\n"
-    .string "in the Key Items Pocket.$"
 
 PewterCity_Text_ExplainRunningShoes::
     .string "When the Exp. Share is activated,\n"

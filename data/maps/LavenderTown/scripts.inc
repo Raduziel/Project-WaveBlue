@@ -20,6 +20,7 @@ LavenderTown_EventScript_SetRefusedState::
  LavenderTown_EventScript_AirBalloonBoy::
     lock
     faceplayer
+    textcolor NPC_TEXT_COLOR_MALE
     compare VAR_LAVENDER_AIR_BALLOON, 2
     goto_if_eq LavenderTown_EventScript_BoyHappy
     compare VAR_LAVENDER_AIR_BALLOON, 1
@@ -39,23 +40,29 @@ LavenderTown_EventScript_GiveBalloon::
     checkitemspace ITEM_AIR_BALLOON, 1
     goto_if_eq VAR_RESULT, FALSE, LavenderTown_EventScript_BagFull
     giveitem ITEM_AIR_BALLOON
+    textcolor NPC_TEXT_COLOR_MALE
     setvar VAR_LAVENDER_AIR_BALLOON, 2
     msgbox LavenderTown_Text_FeelSafeNow, MSGBOX_DEFAULT
+    textcolor NPC_TEXT_COLOR_NEUTRAL
     release
     end
 
 LavenderTown_EventScript_RefuseBalloon::
     setvar VAR_LAVENDER_AIR_BALLOON, 1
     msgbox LavenderTown_Text_StuckWithIt, MSGBOX_DEFAULT
+    textcolor NPC_TEXT_COLOR_NEUTRAL
     release
     end
 
 LavenderTown_EventScript_BoyHappy::
-    msgbox LavenderTown_Text_GladYouTookIt, MSGBOX_NPC
+    msgbox LavenderTown_Text_GladYouTookIt, MSGBOX_DEFAULT
+    textcolor NPC_TEXT_COLOR_NEUTRAL
+    release
     end
 
 LavenderTown_EventScript_BagFull::
     msgbox LavenderTown_Text_NoRoomForBalloon, MSGBOX_DEFAULT
+    textcolor NPC_TEXT_COLOR_NEUTRAL
     release
     end
 
@@ -100,6 +107,7 @@ LavenderTown_EventScript_PokemonTowerSign::
 EVRemoverLady::
     lock
     faceplayer
+    textcolor NPC_TEXT_COLOR_FEMALE
     msgbox EVRemover_Greeting, MSGBOX_DEFAULT
     setvar VAR_TEMP_2, 0
     msgbox EVRemover_Ask, MSGBOX_YESNO
@@ -203,11 +211,13 @@ CheckUsage:
 
 Exit_NoService:
     msgbox EVRemover_Farewell_NotUsed, MSGBOX_DEFAULT
+    textcolor NPC_TEXT_COLOR_NEUTRAL
     release
     end
 
 Exit_ServiceUsed:
     msgbox EVRemover_Farewell_Used, MSGBOX_DEFAULT
+    textcolor NPC_TEXT_COLOR_NEUTRAL
     release
     end
 

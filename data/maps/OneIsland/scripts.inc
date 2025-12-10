@@ -104,3 +104,7 @@ OneIsland_EventScript_IslandSign::
 OneIsland_EventScript_PokemonNetCenterSign::
 	msgbox OneIsland_Text_PokemonNetCenterSign, MSGBOX_SIGN
 	end
+
+OneIsland_EventScript_TM_MerchantSign::
+	msgbox OneIsland_Text_TM_MerchantSign, MSGBOX_SIGN
+	end

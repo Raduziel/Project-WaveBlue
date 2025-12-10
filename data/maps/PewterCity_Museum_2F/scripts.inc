@@ -32,10 +32,12 @@ PewterCity_Museum_2F_EventScript_MoonStone::
 PewterCity_Museum_2F_EventScript_FossilScientist::
     lock
     faceplayer
+    textcolor NPC_TEXT_COLOR_MALE
     goto_if_set FLAG_GOT_MT_MOON_OTHER_FOSSIL, PewterCity_Museum_2F_EventScript_AlreadyGotFossil
     goto_if_set FLAG_GOT_DOME_FOSSIL, PewterCity_Museum_2F_EventScript_GiveHelix
     goto_if_set FLAG_GOT_HELIX_FOSSIL, PewterCity_Museum_2F_EventScript_GiveDome
     msgbox PewterCity_Museum_2F_Text_RumorsOfFossils, MSGBOX_DEFAULT
+    textcolor NPC_TEXT_COLOR_NEUTRAL
     release
     end
 
@@ -57,10 +59,12 @@ PewterCity_Museum_2F_EventScript_GiveDome::
 
 PewterCity_Museum_2F_EventScript_AlreadyGotFossil::
     msgbox PewterCity_Museum_2F_Text_PreserveFossils, MSGBOX_DEFAULT
+    textcolor NPC_TEXT_COLOR_NEUTRAL
     release
     end
 
 PewterCity_Museum_2F_EventScript_BagIsFull::
     msgbox PewterCity_Museum_2F_Text_BagFull, MSGBOX_DEFAULT
+    textcolor NPC_TEXT_COLOR_NEUTRAL
     release
     end
