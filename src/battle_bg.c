@@ -378,9 +378,9 @@ static const struct WindowTemplate sStandardBattleWindowTemplates[] =
     },
     [B_WIN_MOVE_DESCRIPTION] = {
         .bg = 0,
-        .tilemapLeft = 1,
+        .tilemapLeft = 2,
         .tilemapTop = 47,
-        .width = 18,
+        .width = 26,
         .height = 6,
         .paletteNum = 5,
         .baseBlock = 0x0350,
@@ -608,9 +608,9 @@ static const struct WindowTemplate sBattleArenaWindowTemplates[] =
     },
     [B_WIN_MOVE_DESCRIPTION] = {
         .bg = 0,
-        .tilemapLeft = 1,
+        .tilemapLeft = 2,
         .tilemapTop = 47,
-        .width = 18,
+        .width = 26,
         .height = 6,
         .paletteNum = 5,
         .baseBlock = 0x0350,
@@ -724,6 +724,9 @@ void LoadBattleMenuWindowGfx(void)
 {
     LoadUserWindowBorderGfx(2, 0x12, BG_PLTT_ID(1));
     LoadUserWindowBorderGfx(2, 0x22, BG_PLTT_ID(1));
+
+    gPlttBufferUnfaded[BG_PLTT_ID(5) + 10] = RGB(0, 20, 0);
+    gPlttBufferUnfaded[BG_PLTT_ID(5) + 11] = RGB(28, 4, 4);
 
     gPlttBufferUnfaded[BG_PLTT_ID(5) + 12] = RGB( 9,  9,  9);
     gPlttBufferUnfaded[BG_PLTT_ID(5) + 13] = RGB( 9,  9,  9);
