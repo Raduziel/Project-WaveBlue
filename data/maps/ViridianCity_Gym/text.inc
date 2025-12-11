@@ -52,6 +52,34 @@ ViridianCity_Gym_Text_ExplainTM26::
 ViridianCity_Gym_Text_YouDoNotHaveSpace::
     .string "You do not have space for this!$"
 
+ViridianCity_Gym_Text_RulesExplain::
+    .string "However, even I must maintain\n"
+    .string "appearances.\p"
+    .string "To keep my cover as a Gym Leader,\n"
+    .string "I must abide by League rules.\p"
+    .string "Gym battles require challengers\n"
+    .string "to use exactly three Pokémon.\p"
+    .string "{COLOR DARK_GRAY}Do you want to open the Storage\n"
+    .string "System and comply with the rules?$"
+
+ViridianCity_Gym_Text_Refused::
+    .string "Hmph. Insolent child.\p"
+    .string "I cannot battle you if you do not\n"
+    .string "follow the protocol.\p"
+    .string "My disguise depends on it.$"
+
+ViridianCity_Gym_Text_StillNot3::
+    .string "You still don't have exactly\n"
+    .string "three Pokémon.\p"
+    .string "Do not test my patience.\n"
+    .string "Fix your team at once.$"
+
+ViridianCity_Gym_Text_GiovanniReady::
+    .string "So be it.\n"
+    .string "You have complied with the rules.\p"
+    .string "Now, I shall crush you with\n"
+    .string "the full power of the Earth!{PLAY_BGM}{MUS_ENCOUNTER_ROCKET}$"
+
 ViridianCity_Gym_Text_YujiIntro::
     .string "Heh!\n"
     .string "You must be running out of steam\l"

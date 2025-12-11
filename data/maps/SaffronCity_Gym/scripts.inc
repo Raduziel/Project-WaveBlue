@@ -3,9 +3,34 @@ SaffronCity_Gym_MapScripts::
 
 SaffronCity_Gym_EventScript_Sabrina::
 	famechecker FAMECHECKER_SABRINA, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
+	
+	goto_if_set FLAG_DEFEATED_SABRINA, SaffronCity_Gym_EventScript_SabrinaPostBattle
+
+	getpartysize
+	compare VAR_RESULT, 3
+	goto_if_eq SaffronCity_Gym_EventScript_StartBattle
+
+	msgbox SaffronCity_Gym_Text_SabrinaIntro, MSGBOX_DEFAULT
+	msgbox SaffronCity_Gym_Text_RulesExplain, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq SaffronCity_Gym_EventScript_Refused
+
+	special ShowPokemonStorageSystemPC
+	waitstate 
+
+	getpartysize
+	compare VAR_RESULT, 3
+	goto_if_eq SaffronCity_Gym_EventScript_StartBattle_FromPC
+
+	goto SaffronCity_Gym_EventScript_StillNot3
+
+SaffronCity_Gym_EventScript_StartBattle::
 	trainerbattle_single TRAINER_LEADER_SABRINA, SaffronCity_Gym_Text_SabrinaIntro, SaffronCity_Gym_Text_SabrinaDefeat, SaffronCity_Gym_EventScript_DefeatedSabrina, NO_MUSIC
-	goto_if_unset FLAG_GOT_TM04_FROM_SABRINA, SaffronCity_Gym_EventScript_GiveTM04
-	msgbox SaffronCity_Gym_Text_ExplainTM04
+	release
+	end
+
+SaffronCity_Gym_EventScript_StartBattle_FromPC::
+	trainerbattle_single TRAINER_LEADER_SABRINA, SaffronCity_Gym_Text_SabrinaReady, SaffronCity_Gym_Text_SabrinaDefeat, SaffronCity_Gym_EventScript_DefeatedSabrina, NO_MUSIC
 	release
 	end
 
@@ -20,17 +45,41 @@ SaffronCity_Gym_EventScript_DefeatedSabrina::
 	end
 
 SaffronCity_Gym_EventScript_GiveTM04::
-	msgbox SaffronCity_Gym_Text_ExplainMarshBadgeTakeThis
+	msgbox SaffronCity_Gym_Text_ExplainMarshBadgeTakeThis, MSGBOX_DEFAULT
 	checkitemspace ITEM_TM04
 	goto_if_eq VAR_RESULT, FALSE, SaffronCity_Gym_EventScript_NoRoomForTM04
 	giveitem_msg SaffronCity_Gym_Text_ReceivedTM04FromSabrina, ITEM_TM04
 	setflag FLAG_GOT_TM04_FROM_SABRINA
-	msgbox SaffronCity_Gym_Text_SabrinaPostBattle
+	msgbox SaffronCity_Gym_Text_ExplainTM04, MSGBOX_DEFAULT
+	
+	msgbox SaffronCity_Gym_Text_OfferPCRetrieve, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq SaffronCity_Gym_EventScript_EndInteract
+	special ShowPokemonStorageSystemPC
+	waitstate
+
+SaffronCity_Gym_EventScript_EndInteract::
+	release
+	end
+
+SaffronCity_Gym_EventScript_SabrinaPostBattle::
+	goto_if_unset FLAG_GOT_TM04_FROM_SABRINA, SaffronCity_Gym_EventScript_GiveTM04
+	msgbox SaffronCity_Gym_Text_SabrinaPostBattle, MSGBOX_DEFAULT
 	release
 	end
 
 SaffronCity_Gym_EventScript_NoRoomForTM04::
-	msgbox SaffronCity_Gym_Text_BagFullOfOtherItems
+	msgbox SaffronCity_Gym_Text_BagFullOfOtherItems, MSGBOX_DEFAULT
+	release
+	end
+
+SaffronCity_Gym_EventScript_Refused::
+	msgbox SaffronCity_Gym_Text_Refused, MSGBOX_DEFAULT
+	release
+	end
+
+SaffronCity_Gym_EventScript_StillNot3::
+	msgbox SaffronCity_Gym_Text_StillNot3, MSGBOX_DEFAULT
 	release
 	end
 

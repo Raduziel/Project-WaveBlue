@@ -47,9 +47,34 @@ CinnabarIsland_Gym_OnLoadOpenDoor6::
 
 CinnabarIsland_Gym_EventScript_Blaine::
 	famechecker FAMECHECKER_BLAINE, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
+	
+    goto_if_set FLAG_DEFEATED_BLAINE, CinnabarIsland_Gym_EventScript_BlainePostBattle
+
+    getpartysize
+	compare VAR_RESULT, 3
+	goto_if_eq CinnabarIsland_Gym_EventScript_StartBattle
+
+	msgbox CinnabarIsland_Gym_Text_BlaineIntro, MSGBOX_DEFAULT
+	msgbox CinnabarIsland_Gym_Text_RulesExplain, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq CinnabarIsland_Gym_EventScript_Refused
+
+	special ShowPokemonStorageSystemPC
+	waitstate 
+
+	getpartysize
+	compare VAR_RESULT, 3
+	goto_if_eq CinnabarIsland_Gym_EventScript_StartBattle_FromPC
+
+	goto CinnabarIsland_Gym_EventScript_StillNot3
+
+CinnabarIsland_Gym_EventScript_StartBattle::
 	trainerbattle_single TRAINER_LEADER_BLAINE, CinnabarIsland_Gym_Text_BlaineIntro, CinnabarIsland_Gym_Text_BlaineDefeat, CinnabarIsland_Gym_EventScript_DefeatedBlaine, NO_MUSIC
-	goto_if_unset FLAG_GOT_TM38_FROM_BLAINE, CinnabarIsland_Gym_EventScript_GiveTM38
-	msgbox CinnabarIsland_Gym_Text_BlainePostBattle
+	release
+	end
+
+CinnabarIsland_Gym_EventScript_StartBattle_FromPC::
+	trainerbattle_single TRAINER_LEADER_BLAINE, CinnabarIsland_Gym_Text_BlaineReady, CinnabarIsland_Gym_Text_BlaineDefeat, CinnabarIsland_Gym_EventScript_DefeatedBlaine, NO_MUSIC
 	release
 	end
 
@@ -71,11 +96,35 @@ CinnabarIsland_Gym_EventScript_GiveTM38::
 	giveitem_msg CinnabarIsland_Gym_Text_ReceivedTM38FromBlaine, ITEM_TM38
 	setflag FLAG_GOT_TM38_FROM_BLAINE
 	msgbox CinnabarIsland_Gym_Text_FireBlastIsUltimateFireMove
+	
+    msgbox CinnabarIsland_Gym_Text_OfferPCRetrieve, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq CinnabarIsland_Gym_EventScript_EndInteract
+	special ShowPokemonStorageSystemPC
+	waitstate
+
+CinnabarIsland_Gym_EventScript_EndInteract::
+	release
+	end
+
+CinnabarIsland_Gym_EventScript_BlainePostBattle::
+	goto_if_unset FLAG_GOT_TM38_FROM_BLAINE, CinnabarIsland_Gym_EventScript_GiveTM38
+	msgbox CinnabarIsland_Gym_Text_BlainePostBattle
 	release
 	end
 
 CinnabarIsland_Gym_EventScript_NoRoomForTM38::
 	msgbox CinnabarIsland_Gym_Text_MakeSpaceForThis
+	release
+	end
+
+CinnabarIsland_Gym_EventScript_Refused::
+	msgbox CinnabarIsland_Gym_Text_Refused, MSGBOX_DEFAULT
+	release
+	end
+
+CinnabarIsland_Gym_EventScript_StillNot3::
+	msgbox CinnabarIsland_Gym_Text_StillNot3, MSGBOX_DEFAULT
 	release
 	end
 

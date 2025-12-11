@@ -67,6 +67,7 @@
     F(SNARL) \
     F(DRAGON_TAIL) \
     F(OUTRAGE) \
+    F(SCALE_SHOT) \
     F(CHARGE_BEAM) \
     F(ELECTRIC_TERRAIN) \
     F(VOLT_SWITCH) \
@@ -98,8 +99,11 @@
     F(BULLDOZE) \
     F(EARTH_POWER) \
     F(SPIKES) \
+    F(DRILL_RUN) \
+    F(SCORCHING_SAND) \
     F(AVALANCHE) \
     F(ICE_SPINNER) \
+    F(ICICLE_SPEAR) \
     F(ACID_SPRAY) \
     F(POISON_JAB) \
     F(TOXIC_SPIKES) \
@@ -116,7 +120,8 @@
     F(IRON_HEAD) \
     F(SMART_STRIKE) \
     F(CHILLING_WATER) \
-    F(LIQUIDATION)
+    F(LIQUIDATION) \
+    F(SCALD)
 
 #define FOREACH_HM(F) \
     F(CUT) \

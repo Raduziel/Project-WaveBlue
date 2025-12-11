@@ -719,7 +719,7 @@
     "TutorMoves": [
       "MOVE_BLAST_BURN",
       "MOVE_FIRE_PLEDGE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_DUAL_WINGBEAT",
       "MOVE_SCALE_SHOT"
     ]
@@ -2163,7 +2163,7 @@
       "MOVE_TAKE_DOWN"
     ],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ]
   },
   "NIDORAN_M": {
@@ -2526,7 +2526,7 @@
       "MOVE_THRASH"
     ],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ]
   },
   "CLEFAIRY": {
@@ -4943,7 +4943,7 @@
       "MOVE_THRASH"
     ],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ]
   },
   "POLIWAG": {
@@ -7808,7 +7808,7 @@
       "MOVE_WIDE_GUARD"
     ],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_METEOR_BEAM"
     ]
   },
@@ -8394,7 +8394,7 @@
       "MOVE_SKULL_BASH"
     ],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ]
   },
   "MAROWAK": {
@@ -9284,7 +9284,7 @@
       "MOVE_SKULL_BASH"
     ],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ]
   },
   "RHYDON": {
@@ -9440,7 +9440,7 @@
       "MOVE_SKULL_BASH"
     ],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_METEOR_BEAM"
     ]
   },
@@ -11116,7 +11116,7 @@
     ],
     "TutorMoves": [
       "MOVE_BURNING_JEALOUSY",
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ]
   },
   "PINSIR": {
@@ -12234,7 +12234,7 @@
     ],
     "TutorMoves": [
       "MOVE_BURNING_JEALOUSY",
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ]
   },
   "PORYGON": {
@@ -14274,7 +14274,7 @@
       "MOVE_TRIPLE_AXEL",
       "MOVE_COACHING",
       "MOVE_CORROSIVE_GAS",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_DUAL_WINGBEAT",
       "MOVE_EXPANDING_FORCE",
       "MOVE_SKITTER_SMACK",
@@ -17375,7 +17375,7 @@
     ],
     "TutorMoves": [
       "MOVE_STEEL_BEAM",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_METEOR_BEAM",
       "MOVE_STEEL_ROLLER"
     ]
@@ -20187,7 +20187,7 @@
     ],
     "EggMoves": [],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ]
   },
   "SUICUNE": {
@@ -20984,7 +20984,7 @@
     ],
     "EggMoves": [],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_DUAL_WINGBEAT"
     ]
   },
@@ -21944,7 +21944,7 @@
       "MOVE_BLAST_BURN",
       "MOVE_FIRE_PLEDGE",
       "MOVE_COACHING",
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ]
   },
   "MUDKIP": {
@@ -26458,7 +26458,7 @@
     ],
     "TutorMoves": [
       "MOVE_BURNING_JEALOUSY",
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ]
   },
   "TRAPINCH": {
@@ -26559,7 +26559,7 @@
       "MOVE_QUICK_ATTACK"
     ],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ]
   },
   "VIBRAVA": {
@@ -26709,7 +26709,7 @@
     ],
     "TutorMoves": [
       "MOVE_DRACO_METEOR",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_DUAL_WINGBEAT"
     ]
   },
@@ -26886,7 +26886,7 @@
     ],
     "TutorMoves": [
       "MOVE_DRACO_METEOR",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_DUAL_WINGBEAT",
       "MOVE_SCALE_SHOT"
     ]
@@ -27966,7 +27966,7 @@
     ],
     "EggMoves": [],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_EXPANDING_FORCE"
     ]
   },
@@ -28112,7 +28112,7 @@
     ],
     "EggMoves": [],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_EXPANDING_FORCE"
     ]
   },
@@ -31292,7 +31292,7 @@
     ],
     "EggMoves": [],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ]
   },
   "RAYQUAZA": {
@@ -34160,7 +34160,7 @@
     ],
     "TutorMoves": [
       "MOVE_DRACO_METEOR",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_SCALE_SHOT"
     ]
   },
@@ -34263,7 +34263,7 @@
     ],
     "TutorMoves": [
       "MOVE_DRACO_METEOR",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_SCALE_SHOT"
     ]
   },
@@ -34388,7 +34388,7 @@
     ],
     "TutorMoves": [
       "MOVE_DRACO_METEOR",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_SCALE_SHOT"
     ]
   },
@@ -34955,7 +34955,7 @@
       "MOVE_WHIRLWIND"
     ],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ]
   },
   "HIPPOWDON": {
@@ -35083,7 +35083,7 @@
       "MOVE_WHIRLWIND"
     ],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ]
   },
   "SKORUPI": {
@@ -36500,7 +36500,7 @@
       "MOVE_SKULL_BASH"
     ],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_METEOR_BEAM"
     ]
   },
@@ -36879,7 +36879,7 @@
     ],
     "TutorMoves": [
       "MOVE_BURNING_JEALOUSY",
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ]
   },
   "TOGEKISS": {
@@ -38940,7 +38940,7 @@
     "EggMoves": [],
     "TutorMoves": [
       "MOVE_BURNING_JEALOUSY",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_STEEL_ROLLER"
     ]
   },
@@ -39422,7 +39422,7 @@
     ],
     "EggMoves": [],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_EXPANDING_FORCE"
     ]
   },
@@ -41117,7 +41117,7 @@
       "MOVE_SUBMISSION"
     ],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ]
   },
   "EXCADRILL": {
@@ -41234,7 +41234,7 @@
     ],
     "TutorMoves": [
       "MOVE_STEEL_BEAM",
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ]
   },
   "AUDINO": {
@@ -43291,7 +43291,7 @@
       "MOVE_SPITE"
     ],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_SKITTER_SMACK",
       "MOVE_LASH_OUT"
     ]
@@ -43416,7 +43416,7 @@
       "MOVE_SPITE"
     ],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_SKITTER_SMACK",
       "MOVE_LASH_OUT"
     ]
@@ -43558,7 +43558,7 @@
       "MOVE_SPITE"
     ],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_SKITTER_SMACK",
       "MOVE_SCALE_SHOT",
       "MOVE_LASH_OUT"
@@ -50665,7 +50665,7 @@
     ],
     "EggMoves": [],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_POLTERGEIST"
     ]
   },
@@ -50808,7 +50808,7 @@
     ],
     "EggMoves": [],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_POLTERGEIST"
     ]
   },
@@ -51725,7 +51725,7 @@
     ],
     "TutorMoves": [
       "MOVE_BURNING_JEALOUSY",
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ]
   },
   "DURANT": {
@@ -53183,7 +53183,7 @@
     "EggMoves": [],
     "TutorMoves": [
       "MOVE_DRACO_METEOR",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_DUAL_WINGBEAT",
       "MOVE_SCALE_SHOT"
     ]
@@ -54015,7 +54015,7 @@
       "MOVE_ROLLOUT"
     ],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ]
   },
   "FLETCHLING": {
@@ -59477,7 +59477,7 @@
     "EggMoves": [],
     "TutorMoves": [
       "MOVE_DRACO_METEOR",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_SKITTER_SMACK",
       "MOVE_SCALE_SHOT"
     ]
@@ -59730,7 +59730,7 @@
     ],
     "EggMoves": [],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ]
   },
   "ROWLET": {
@@ -60436,7 +60436,7 @@
       "MOVE_BLAST_BURN",
       "MOVE_FIRE_PLEDGE",
       "MOVE_BURNING_JEALOUSY",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_LASH_OUT"
     ]
   },
@@ -64072,7 +64072,7 @@
       "MOVE_SWALLOW"
     ],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_POLTERGEIST"
     ]
   },
@@ -64179,7 +64179,7 @@
     ],
     "TutorMoves": [
       "MOVE_TERRAIN_PULSE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_POLTERGEIST"
     ]
   },
@@ -64644,7 +64644,7 @@
     "TutorMoves": [
       "MOVE_DRACO_METEOR",
       "MOVE_BURNING_JEALOUSY",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_SCALE_SHOT",
       "MOVE_LASH_OUT"
     ]
@@ -68926,7 +68926,7 @@
       "MOVE_BLAST_BURN",
       "MOVE_FIRE_PLEDGE",
       "MOVE_COACHING",
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ]
   },
   "SOBBLE": {
@@ -71084,7 +71084,7 @@
       "MOVE_MUD_SLAP"
     ],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_METEOR_BEAM"
     ]
   },
@@ -71201,7 +71201,7 @@
       "MOVE_MUD_SLAP"
     ],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_METEOR_BEAM"
     ]
   },
@@ -71554,7 +71554,7 @@
       "MOVE_POISON_TAIL"
     ],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_SKITTER_SMACK",
       "MOVE_SCALE_SHOT"
     ]
@@ -71659,7 +71659,7 @@
       "MOVE_POISON_TAIL"
     ],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_SKITTER_SMACK",
       "MOVE_SCALE_SHOT"
     ]
@@ -72238,7 +72238,7 @@
       "MOVE_STRUGGLE_BUG"
     ],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_SKITTER_SMACK"
     ]
   },
@@ -72343,7 +72343,7 @@
       "MOVE_STRUGGLE_BUG"
     ],
     "TutorMoves": [
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_SKITTER_SMACK"
     ]
   },

@@ -473,7 +473,7 @@ static inline bool32 IsMoveSheerForceBoosted(u32 move)
         case MOVE_ROCK_TOMB:
         case MOVE_SANDSEAR_STORM:
         case MOVE_SCALD:
-        case MOVE_SCORCHING_SANDS:
+        case MOVE_SCORCHING_SAND:
         case MOVE_SECRET_POWER:
         case MOVE_SHADOW_BALL:
         case MOVE_SIGNAL_BEAM:

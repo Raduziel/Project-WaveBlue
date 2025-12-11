@@ -45,6 +45,37 @@ FuchsiaCity_Gym_Text_KogaExplainTM06::
 FuchsiaCity_Gym_Text_MakeSpaceForThis::
     .string "Make space for this, child!$"
 
+FuchsiaCity_Gym_Text_RulesExplain::
+    .string "However, numbers mean nothing\n"
+    .string "to a ninja.\p"
+    .string "Gym battles require challengers\n"
+    .string "to use exactly three Pokémon.\p"
+    .string "Eliminate the unnecessary.\p"
+    .string "{COLOR DARK_GRAY}Do you wish to open the Storage\n"
+    .string "System to organize your party?$"
+
+FuchsiaCity_Gym_Text_Refused::
+    .string "Fwahahaha!\n"
+    .string "Are you fleeing from the shadows?\p"
+    .string "Return when you have exactly\n"
+    .string "three Pokémon.$"
+
+FuchsiaCity_Gym_Text_StillNot3::
+    .string "You still do not have exactly\n"
+    .string "three Pokémon.\p"
+    .string "A ninja must be precise.\n"
+    .string "Do not waste my time.$"
+
+FuchsiaCity_Gym_Text_OfferPCRetrieve::
+    .string "You have survived the toxic trap.\p"
+    .string "{COLOR DARK_GRAY}Do you want to open the Storage\n"
+    .string "System to retrieve your team?$"
+
+FuchsiaCity_Gym_Text_KogaReady::
+    .string "So, you have prepared yourself.\p"
+    .string "Now, witness the horror of\n"
+    .string "Poison-type Pokémon!{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
+
 FuchsiaCity_Gym_Text_KaydenIntro::
     .string "Strength isn't the key for Pokémon.\n"
     .string "Do you understand this?\p"

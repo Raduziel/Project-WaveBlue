@@ -9,6 +9,11 @@ VermilionCity_Gym_Text_LtSurgeIntro::
     .string "paralysis!\p"
     .string "The same as I'll do to you!{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
 
+VermilionCity_Gym_Text_LtSurgeDefeat::
+    .string "Now that's a shocker!\p"
+    .string "You're the real deal, kid!\p"
+    .string "Fine, then, take the Thunder Badge!$"
+
 VermilionCity_Gym_Text_LtSurgePostBattle::
     .string "A little word of advice, kid!\p"
     .string "Electricity is sure powerful!\p"
@@ -34,10 +39,38 @@ VermilionCity_Gym_Text_ExplainTM34::
 VermilionCity_Gym_Text_MakeRoomInYourBag::
     .string "Yo, kid, make room in your Bag!$"
 
-VermilionCity_Gym_Text_LtSurgeDefeat::
-    .string "Now that's a shocker!\p"
-    .string "You're the real deal, kid!\p"
-    .string "Fine, then, take the Thunder Badge!$"
+VermilionCity_Gym_Text_RulesExplain::
+    .string "But listen up, rookie!\n"
+    .string "This is a battlefield!\p"
+    .string "Gym battles require challengers\n"
+    .string "to use exactly three Pokémon.\p"
+    .string "I don't waste my time on\n"
+    .string "undisciplined squads.\p"
+    .string "{COLOR DARK_GRAY}Do you want to access the Storage\n"
+    .string "System to organize your unit?$"
+
+VermilionCity_Gym_Text_Refused::
+    .string "Dismissed!\p"
+    .string "Come back when you learn to\n"
+    .string "follow orders!$"
+
+VermilionCity_Gym_Text_StillNot3::
+    .string "Maggot!\p"
+    .string "You still don't have exactly\n"
+    .string "three Pokémon!\p"
+    .string "This is insubordination!\n"
+    .string "Get out of my face!$"
+
+VermilionCity_Gym_Text_OfferPCRetrieve::
+    .string "You've earned my respect, soldier.\p"
+    .string "{COLOR DARK_GRAY}Do you want to access the Storage\n"
+    .string "System to retrieve your team?$"
+
+VermilionCity_Gym_Text_LtSurgeReady::
+    .string "At ease!\n"
+    .string "You've organized your squad.\p"
+    .string "Now, prepare to feel the voltage!\n"
+    .string "Ten-hut!{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
 
 VermilionCity_Gym_Text_TuckerIntro::
     .string "When I was in the Army, Lt. Surge\n"

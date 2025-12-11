@@ -42,6 +42,34 @@ SaffronCity_Gym_Text_ExplainTM04::
 SaffronCity_Gym_Text_BagFullOfOtherItems::
     .string "Your Bag is full of other items.$"
 
+SaffronCity_Gym_Text_RulesExplain::
+    .string "I foresaw this moment.\n"
+    .string "But foresight cannot break rules.\p"
+    .string "Gym battles require challengers\n"
+    .string "to use exactly three Pokémon.\p"
+    .string "{COLOR DARK_GRAY}Do you wish to open the Storage\n"
+    .string "System to align your destiny?$"
+
+SaffronCity_Gym_Text_Refused::
+    .string "As I predicted, you are not ready.\p"
+    .string "Come back when you have exactly\n"
+    .string "three Pokémon.$"
+
+SaffronCity_Gym_Text_StillNot3::
+    .string "Your mind is still clouded.\n"
+    .string "You do not have three Pokémon.\p"
+    .string "I cannot battle you yet.$"
+
+SaffronCity_Gym_Text_OfferPCRetrieve::
+    .string "The battle has ended as destined.\p"
+    .string "{COLOR DARK_GRAY}Do you want to open the Storage\n"
+    .string "System to organize your party?$"
+
+SaffronCity_Gym_Text_SabrinaReady::
+    .string "I see you have aligned your force.\n"
+    .string "Your future is set.\p"
+    .string "Now, I will show you my powers!{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
+
 SaffronCity_Gym_Text_AmandaIntro::
     .string "Sabrina is far younger than I,\n"
     .string "but she has earned my respect.$"

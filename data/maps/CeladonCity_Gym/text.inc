@@ -48,6 +48,34 @@ CeladonCity_Gym_Text_ExplainTM19::
 CeladonCity_Gym_Text_ShouldMakeRoomForThis::
     .string "You should make room for this.$"
 
+CeladonCity_Gym_Text_RulesExplain::
+    .string "However, Gym battles require you to\n"
+    .string "use exactly three Pokémon.\p"
+    .string "It would be unfair to overwhelm my\n"
+    .string "plants with numbers.\p"
+    .string "{COLOR DARK_GRAY}Do you want to open the Storage\n"
+    .string "System to organize your party?$"
+
+CeladonCity_Gym_Text_Refused::
+    .string "Please come back when you have\n"
+    .string "exactly three Pokémon.\p"
+    .string "My flowers will be waiting.$"
+
+CeladonCity_Gym_Text_StillNot3::
+    .string "Oh, my… You still don't have\n"
+    .string "exactly three Pokémon.\p"
+    .string "I cannot accept your challenge yet.$"
+
+CeladonCity_Gym_Text_OfferPCRetrieve::
+    .string "You fought beautifully.\p"
+    .string "{COLOR DARK_GRAY}Do you want to open the Storage\n"
+    .string "System to organize your party?$"
+
+CeladonCity_Gym_Text_ErikaReady::
+    .string "I see you have arranged your party.\n"
+    .string "Very well then.\p"
+    .string "Shall we begin the match?${PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}"     
+
 CeladonCity_Gym_Text_KayIntro::
     .string "I should tell you about this Gym.\p"
     .string "Only real ladies are allowed in\n"
@@ -149,4 +177,3 @@ CeladonCity_Gym_Text_GymStatuePlayerWon::
     .string "Leader: Erika\p"
     .string "Winning Trainers:\n"
     .string "{RIVAL}, {PLAYER}$"
-

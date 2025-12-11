@@ -205,9 +205,34 @@ VermilionCity_Gym_EventScript_SetBeamsOn::
 
 VermilionCity_Gym_EventScript_LtSurge::
 	famechecker FAMECHECKER_LTSURGE, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
+	
+    goto_if_set FLAG_DEFEATED_LT_SURGE, VermilionCity_Gym_EventScript_LtSurgePostBattle
+
+    getpartysize
+	compare VAR_RESULT, 3
+	goto_if_eq VermilionCity_Gym_EventScript_StartBattle
+
+	msgbox VermilionCity_Gym_Text_LtSurgeIntro, MSGBOX_DEFAULT
+	msgbox VermilionCity_Gym_Text_RulesExplain, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq VermilionCity_Gym_EventScript_Refused
+
+	special ShowPokemonStorageSystemPC
+	waitstate 
+
+	getpartysize
+	compare VAR_RESULT, 3
+	goto_if_eq VermilionCity_Gym_EventScript_StartBattle_FromPC
+
+	goto VermilionCity_Gym_EventScript_StillNot3
+
+VermilionCity_Gym_EventScript_StartBattle::
 	trainerbattle_single TRAINER_LEADER_LT_SURGE, VermilionCity_Gym_Text_LtSurgeIntro, VermilionCity_Gym_Text_LtSurgeDefeat, VermilionCity_Gym_EventScript_DefeatedLtSurge, NO_MUSIC
-	goto_if_unset FLAG_GOT_TM34_FROM_SURGE, VermilionCity_Gym_EventScript_GiveTM34
-	msgbox VermilionCity_Gym_Text_LtSurgePostBattle
+	release
+	end
+
+VermilionCity_Gym_EventScript_StartBattle_FromPC::
+	trainerbattle_single TRAINER_LEADER_LT_SURGE, VermilionCity_Gym_Text_LtSurgeReady, VermilionCity_Gym_Text_LtSurgeDefeat, VermilionCity_Gym_EventScript_DefeatedLtSurge, NO_MUSIC
 	release
 	end
 
@@ -221,24 +246,48 @@ VermilionCity_Gym_EventScript_DefeatedLtSurge::
 	goto VermilionCity_Gym_EventScript_GiveTM34
 	end
 
-VermilionCity_Gym_EventScript_ShowOaksAide::
-	clearflag FLAG_HIDE_VERMILION_CITY_OAKS_AIDE
-	return
-
 VermilionCity_Gym_EventScript_GiveTM34::
-	msgbox VermilionCity_Gym_Text_ExplainThunderBadgeTakeThis
+	msgbox VermilionCity_Gym_Text_ExplainThunderBadgeTakeThis, MSGBOX_DEFAULT
 	checkitemspace ITEM_TM34
 	goto_if_eq VAR_RESULT, FALSE, VermilionCity_Gym_EventScript_NoRoomForTM34
 	giveitem_msg VermilionCity_Gym_Text_ReceivedTM34FromLtSurge, ITEM_TM34
 	setflag FLAG_GOT_TM34_FROM_SURGE
-	msgbox VermilionCity_Gym_Text_ExplainTM34
+	msgbox VermilionCity_Gym_Text_ExplainTM34, MSGBOX_DEFAULT
+	
+    msgbox VermilionCity_Gym_Text_OfferPCRetrieve, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq VermilionCity_Gym_EventScript_EndInteract
+	special ShowPokemonStorageSystemPC
+	waitstate
+
+VermilionCity_Gym_EventScript_EndInteract::
+	release
+	end
+
+VermilionCity_Gym_EventScript_LtSurgePostBattle::
+	goto_if_unset FLAG_GOT_TM34_FROM_SURGE, VermilionCity_Gym_EventScript_GiveTM34
+	msgbox VermilionCity_Gym_Text_LtSurgePostBattle, MSGBOX_DEFAULT
 	release
 	end
 
 VermilionCity_Gym_EventScript_NoRoomForTM34::
-	msgbox VermilionCity_Gym_Text_MakeRoomInYourBag
+	msgbox VermilionCity_Gym_Text_MakeRoomInYourBag, MSGBOX_DEFAULT
 	release
 	end
+
+VermilionCity_Gym_EventScript_Refused::
+	msgbox VermilionCity_Gym_Text_Refused, MSGBOX_DEFAULT
+	release
+	end
+
+VermilionCity_Gym_EventScript_StillNot3::
+	msgbox VermilionCity_Gym_Text_StillNot3, MSGBOX_DEFAULT
+	release
+	end
+
+VermilionCity_Gym_EventScript_ShowOaksAide::
+	clearflag FLAG_HIDE_VERMILION_CITY_OAKS_AIDE
+	return
 
 VermilionCity_Gym_EventScript_Dwayne::
 	trainerbattle_single TRAINER_SAILOR_DWAYNE, VermilionCity_Gym_Text_DwayneIntro, VermilionCity_Gym_Text_DwayneDefeat

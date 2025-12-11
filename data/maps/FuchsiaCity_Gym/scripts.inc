@@ -3,9 +3,34 @@ FuchsiaCity_Gym_MapScripts::
 
 FuchsiaCity_Gym_EventScript_Koga::
 	famechecker FAMECHECKER_KOGA, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
+	
+    goto_if_set FLAG_DEFEATED_KOGA, FuchsiaCity_Gym_EventScript_KogaPostBattle
+
+    getpartysize
+	compare VAR_RESULT, 3
+	goto_if_eq FuchsiaCity_Gym_EventScript_StartBattle
+
+	msgbox FuchsiaCity_Gym_Text_KogaIntro, MSGBOX_DEFAULT
+	msgbox FuchsiaCity_Gym_Text_RulesExplain, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq FuchsiaCity_Gym_EventScript_Refused
+
+	special ShowPokemonStorageSystemPC
+	waitstate 
+
+	getpartysize
+	compare VAR_RESULT, 3
+	goto_if_eq FuchsiaCity_Gym_EventScript_StartBattle_FromPC
+
+	goto FuchsiaCity_Gym_EventScript_StillNot3
+
+FuchsiaCity_Gym_EventScript_StartBattle::
 	trainerbattle_single TRAINER_LEADER_KOGA, FuchsiaCity_Gym_Text_KogaIntro, FuchsiaCity_Gym_Text_KogaDefeat, FuchsiaCity_Gym_EventScript_DefeatedKoga, NO_MUSIC
-	goto_if_unset FLAG_GOT_TM06_FROM_KOGA, FuchsiaCity_Gym_EventScript_GiveTM06
-	msgbox FuchsiaCity_Gym_Text_KogaPostBattle
+	release
+	end
+
+FuchsiaCity_Gym_EventScript_StartBattle_FromPC::
+	trainerbattle_single TRAINER_LEADER_KOGA, FuchsiaCity_Gym_Text_KogaReady, FuchsiaCity_Gym_Text_KogaDefeat, FuchsiaCity_Gym_EventScript_DefeatedKoga, NO_MUSIC
 	release
 	end
 
@@ -25,11 +50,35 @@ FuchsiaCity_Gym_EventScript_GiveTM06::
 	giveitem_msg FuchsiaCity_Gym_Text_ReceivedTM06FromKoga, ITEM_TM06
 	setflag FLAG_GOT_TM06_FROM_KOGA
 	msgbox FuchsiaCity_Gym_Text_KogaExplainTM06
+	
+    msgbox FuchsiaCity_Gym_Text_OfferPCRetrieve, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq FuchsiaCity_Gym_EventScript_EndInteract
+	special ShowPokemonStorageSystemPC
+	waitstate
+
+FuchsiaCity_Gym_EventScript_EndInteract::
+	release
+	end
+
+FuchsiaCity_Gym_EventScript_KogaPostBattle::
+	goto_if_unset FLAG_GOT_TM06_FROM_KOGA, FuchsiaCity_Gym_EventScript_GiveTM06
+	msgbox FuchsiaCity_Gym_Text_KogaPostBattle
 	release
 	end
 
 FuchsiaCity_Gym_EventScript_NoRoomForTM06::
 	msgbox FuchsiaCity_Gym_Text_MakeSpaceForThis
+	release
+	end
+
+FuchsiaCity_Gym_EventScript_Refused::
+	msgbox FuchsiaCity_Gym_Text_Refused, MSGBOX_DEFAULT
+	release
+	end
+
+FuchsiaCity_Gym_EventScript_StillNot3::
+	msgbox FuchsiaCity_Gym_Text_StillNot3, MSGBOX_DEFAULT
 	release
 	end
 

@@ -18846,9 +18846,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_DualWingbeat,
     },
 
-    [MOVE_SCORCHING_SANDS] =
+    [MOVE_SCORCHING_SAND] =
     {
-        .name = COMPOUND_STRING("Scorching Sands"),
+        .name = COMPOUND_STRING("Scorching Sand"),
         .description = COMPOUND_STRING(
             "Throws scorching\nsand at "
             "the\ntarget. May leave\na burn."),

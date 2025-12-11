@@ -1,6 +1,6 @@
 CinnabarIsland_Gym_Text_BlaineIntro::
     .string "Hah!\p"
-    .string "I am Blaine, the red-hot \n"
+    .string "I am Blaine, the red-hot Leader\n"
     .string "of Cinnabar Gym!\p"
     .string "My fiery Pokémon are all rough\n"
     .string "and ready with intense heat!\p"
@@ -36,6 +36,37 @@ CinnabarIsland_Gym_Text_BlainePostBattle::
 
 CinnabarIsland_Gym_Text_MakeSpaceForThis::
     .string "Make space for this, child!$"
+
+CinnabarIsland_Gym_Text_RulesExplain::
+    .string "You solved my riddles to get here.\n"
+    .string "But I have one final test!\p"
+    .string "Gym battles require challengers\n"
+    .string "to use exactly three Pokémon.\p"
+    .string "{COLOR DARK_GRAY}Do you want to open the Storage\n"
+    .string "System to prepare your answer?$"
+
+CinnabarIsland_Gym_Text_Refused::
+    .string "Wrong answer!\p"
+    .string "Come back when you are truly\n"
+    .string "ready to burn!$"
+
+CinnabarIsland_Gym_Text_StillNot3::
+    .string "Hah! That is incorrect!\p"
+    .string "You still don't have exactly\n"
+    .string "three Pokémon.\p"
+    .string "I can't battle someone who fails\n"
+    .string "the basic math!$"
+
+CinnabarIsland_Gym_Text_OfferPCRetrieve::
+    .string "You extinguished my flames.\p"
+    .string "{COLOR DARK_GRAY}Do you want to open the Storage\n"
+    .string "System to retrieve your team?$"
+
+CinnabarIsland_Gym_Text_BlaineReady::
+    .string "Hah! Correct!\n"
+    .string "Exactly three Pokémon!\p"
+    .string "Now, let's see if you can withstand\n"
+    .string "my 3000-degree flames!{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
 
 CinnabarIsland_Gym_Text_ErikIntro::
     .string "Do you know how hot Pokémon fire\n"

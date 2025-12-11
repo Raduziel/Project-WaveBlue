@@ -1,10 +1,10 @@
 PewterCity_Gym_Text_BrockIntro::
     .string "So, you're here. I'm Brock.\n"
-    .string "I'm Pewter's Gym .\p"
+    .string "I'm the Pewter Gym Leader.\p"
     .string "My rock-hard willpower is evident\n"
     .string "even in my Pokémon.\p"
     .string "My Pokémon are all rock hard, and\n"
-    .string "have true-grit determination.\p"
+    .string "possess true-grit determination.\p"
     .string "That's right - my Pokémon are all\n"
     .string "the Rock type!\p"
     .string "Fuhaha! You're going to challenge\n"
@@ -18,11 +18,11 @@ PewterCity_Gym_Text_BrockDefeat::
     .string "I took you for granted, and so\n"
     .string "I lost.\p"
     .string "As proof of your victory, I confer\n"
-    .string "on you this…the official Pokémon\l"
+    .string "on you this… the official Pokémon\l"
     .string "League Boulder Badge.\p"
-    .string "{FONT_NORMAL}{PLAYER} received the Boulder Bagde\n"
+    .string "{FONT_NORMAL}{PLAYER} received the Boulder Badge\n"
     .string "from Brock!{PAUSE_MUSIC}{PLAY_BGM}{MUS_OBTAIN_BADGE}{PAUSE 0xFE}{PAUSE 0x56}{RESUME_MUSIC}\p"
-    .string "{FONT_MALE}Just having the Boulder Bagde makes\n"
+    .string "{FONT_MALE}Just having the Boulder Badge makes\n"
     .string "your Pokémon more powerful.\p"
     .string "It also enables the use of the\n"
     .string "move Flash outside of battle.\p"
@@ -62,6 +62,37 @@ PewterCity_Gym_Text_BrockPostBattle::
 
 PewterCity_Gym_Text_DontHaveRoomForThis::
     .string "You don't have room for this.$"
+
+PewterCity_Gym_Text_RulesExplain::
+    .string "However, there is a condition.\p"
+    .string "Gym battles require challengers\n"
+    .string "to use exactly three Pokémon.\p"
+    .string "A true Trainer must show adaptability\n"
+    .string "within limits.\p"
+    .string "{COLOR DARK_GRAY}Do you wish to access the Storage\n"
+    .string "System to organize your team?$"
+
+PewterCity_Gym_Text_Refused::
+    .string "Come back when you have exactly\n"
+    .string "three Pokémon.\p"
+    .string "Discipline is the foundation\n"
+    .string "of victory.$"
+
+PewterCity_Gym_Text_StillNot3::
+    .string "You still don't have exactly\n"
+    .string "three Pokémon.\p"
+    .string "I cannot battle a Trainer who\n"
+    .string "ignores the rules.$"
+
+PewterCity_Gym_Text_OfferPCRetrieve::
+    .string "You have proven your worth.\p"
+    .string "{COLOR DARK_GRAY}Do you want to open the Storage\n"
+    .string "System to retrieve your full team?$"
+
+PewterCity_Gym_Text_BrockReady::
+    .string "I see you've prepared your team.\n"
+    .string "Your determination is solid.\p"
+    .string "Now, show me your rock-hard will!{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
 
 PewterCity_Gym_Text_LiamIntro::
     .string "Stop right there, kid!\p"
@@ -117,27 +148,3 @@ PewterCity_Gym_Text_GymStatuePlayerWon::
     .string "Leader: Brock\p"
     .string "Winning Trainers:\n"
     .string "{RIVAL}, {PLAYER}$"
-
-PewterCity_Gym_Text_RulesExplain::
-    .string "However, Gym rules require you to\n"
-    .string "use exactly three Pokémon.\p"
-    .string "{COLOR DARK_GRAY}Do you want to open the Storage\n"
-    .string "System to organize your party?$"
-
-PewterCity_Gym_Text_Refused::
-    .string "Come back when you have exactly\n"
-    .string "three Pokémon in your party!$"
-
-PewterCity_Gym_Text_StillNot3::
-    .string "You still don't have exactly\n"
-    .string "three Pokémon.\p"
-    .string "I cannot battle you yet.$"
-
-PewterCity_Gym_Text_OfferPCRetrieve::
-    .string "{COLOR DARK_GRAY}Do you want to open the Storage\n"
-    .string "System to organize your party?$"
-
-PewterCity_Gym_Text_BrockReady::
-    .string "I see your determination.\n"
-    .string "You've prepared your team.\p"
-    .string "Then show me your rock-hard will!$"

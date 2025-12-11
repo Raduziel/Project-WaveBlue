@@ -2,14 +2,17 @@ CeruleanCity_Gym_Text_MistyIntro::
     .string "Hi, you're a new face!\p"
     .string "Only those Trainers who have a\n"
     .string "policy about Pokémon can turn pro.\p"
-    .string "What is your approach when you\n"
-    .string "catch and train Pokémon?\p"
+    .string "I may look cute, but I don't\n"
+    .string "go easy on anyone!\p"
     .string "My policy is an all-out offensive\n"
     .string "with Water-type Pokémon!{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
 
-CeruleanCity_Gym_Text_ExplainTM03::
-    .string "TM03 teaches Water Pulse.\p"
-    .string "Use it on an aquatic Pokémon!$"
+CeruleanCity_Gym_Text_MistyDefeat::
+    .string "Wow!\n"
+    .string "You're too much!\p"
+    .string "All right!\p"
+    .string "You can have the Cascade Badge to\n"
+    .string "show you beat me.$"
 
 CeruleanCity_Gym_Text_ExplainCascadeBadge::
     .string "The Cascade Badge makes all\n"
@@ -26,15 +29,50 @@ CeruleanCity_Gym_Text_ReceivedTM03FromMisty::
     .string "{PLAYER} received TM03\n"
     .string "from Misty.$"
 
-CeruleanCity_Gym_Text_BetterMakeRoomForThis::
-    .string "You better make room for this!$"
+CeruleanCity_Gym_Text_ExplainTM03::
+    .string "TM03 teaches Water Pulse.\p"
+    .string "Use it on an aquatic Pokémon!$"
 
-CeruleanCity_Gym_Text_MistyDefeat::
-    .string "Wow!\n"
-    .string "You're too much!\p"
-    .string "All right!\p"
-    .string "You can have the Cascade Badge to\n"
-    .string "show you beat me.$"
+CeruleanCity_Gym_Text_BetterMakeRoomForThis::
+    .string "Hey! You better make room for this!$"
+
+CeruleanCity_Gym_Text_MistyPostBattle::
+    .string "I just can't believe I lost to a\n"
+    .string "rookie like you.\p"
+    .string "There are many strong Trainers in\n"
+    .string "the world.\p"
+    .string "You'd better train hard so you\n"
+    .string "don't lose to anyone else!$"
+
+CeruleanCity_Gym_Text_RulesExplain::
+    .string "However, there are rules we have\n"
+    .string "to follow.\p"
+    .string "Gym battles require challengers\n"
+    .string "to use exactly three Pokémon.\p"
+    .string "I won't accept an unfair fight.\p"
+    .string "{COLOR DARK_GRAY}Do you want to open the Storage\n"
+    .string "System to organize your party?$"
+
+CeruleanCity_Gym_Text_Refused::
+    .string "Come back when you have exactly\n"
+    .string "three Pokémon!\p"
+    .string "I only battle serious Trainers.$"
+
+CeruleanCity_Gym_Text_StillNot3::
+    .string "Hey! You still don't have exactly\n"
+    .string "three Pokémon.\p"
+    .string "I can't battle you yet!\n"
+    .string "Don't keep me waiting!$"
+
+CeruleanCity_Gym_Text_OfferPCRetrieve::
+    .string "That was a good match.\p"
+    .string "{COLOR DARK_GRAY}Do you want to open the Storage\n"
+    .string "System to organize your party?$"
+
+CeruleanCity_Gym_Text_MistyReady::
+    .string "I see you've finally adjusted your\n"
+    .string "party.\p"
+    .string "Then let's not waste any more time!{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
 
 CeruleanCity_Gym_Text_DianaIntro::
     .string "What? You?\n"
@@ -89,26 +127,3 @@ CeruleanCity_Gym_Text_GymStatuePlayerWon::
     .string "Leader: Misty\p"
     .string "Winning Trainers:\n"
     .string "{RIVAL}, {PLAYER}$"
-
-CeruleanCity_Gym_Text_RulesExplain::
-    .string "However, Gym rules require you to\n"
-    .string "use exactly three Pokémon.\p"
-    .string "{COLOR DARK_GRAY}Do you want to open the Storage\n"
-    .string "System to organize your party?$"
-
-CeruleanCity_Gym_Text_Refused::
-    .string "Come back when you have exactly\n"
-    .string "three Pokémon in your party!$"
-
-CeruleanCity_Gym_Text_StillNot3::
-    .string "You still don't have exactly\n"
-    .string "three Pokémon.\p"
-    .string "I cannot battle you yet.$"
-
-CeruleanCity_Gym_Text_OfferPCRetrieve::
-    .string "{COLOR DARK_GRAY}Do you want to open the Storage\n"
-    .string "System to organize your party?$"
-
-CeruleanCity_Gym_Text_MistyReady::
-    .string "I see you've adjusted your party.\n"
-    .string "Then let's not waste any more time!$"

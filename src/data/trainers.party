@@ -5943,32 +5943,43 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeotto
-Level: 17
+Level: 18
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-- Tackle
-- Sand Attack
-- Gust
+EVs: 124 HP / 196 Atk / 188 Spe
+Serious Nature
+- Whirlwind
 - Quick Attack
+- Gust
+- Sand Attack
 
 Abra
 Level: 16
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 124 HP / 196 SpA / 188 Spe
+Bashful Nature
 - Teleport
+- Thief
+- Flash
 
 Rattata
 Level: 15
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-- Tackle
-- Tail Whip
+EVs: 140 HP / 196 Atk / 172 Spe
+Hardy Nature
+- Bite
 - Quick Attack
+- Laser Focus
+- Focus Energy
 
-Squirtle
+Squirtle @ Oran Berry
 Level: 18
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-- Tackle
-- Tail Whip
-- Withdraw
-- Water Gun
+EVs: 124 HP / 196 SpA / 188 Spe
+Docile Nature
+- Water Pulse
+- Bite
+- Rapid Spin
+- Protect
 
 === TRAINER_RIVAL_CERULEAN_BULBASAUR ===
 Name: Terry
@@ -5980,32 +5991,43 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeotto
-Level: 17
+Level: 18
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-- Tackle
-- Sand Attack
-- Gust
+EVs: 124 HP / 196 Atk / 188 Spe
+Serious Nature
+- Whirlwind
 - Quick Attack
+- Gust
+- Sand Attack
 
 Abra
 Level: 16
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 124 HP / 196 SpA / 188 Spe
+Bashful Nature
 - Teleport
+- Thief
+- Flash
 
 Rattata
 Level: 15
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-- Tackle
-- Tail Whip
+EVs: 140 HP / 196 Atk / 172 Spe
+Hardy Nature
+- Bite
 - Quick Attack
+- Laser Focus
+- Focus Energy
 
-Bulbasaur
+Bulbasaur @ Oran Berry
 Level: 18
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 124 HP / 196 Atk / 188 Spe
+Quirky Nature
+- Seed Bomb
+- Leech Seed
 - Sleep Powder
 - Poison Powder
-- Vine Whip
-- Leech Seed
 
 === TRAINER_RIVAL_CERULEAN_CHARMANDER ===
 Name: Terry
@@ -6017,32 +6039,43 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeotto
-Level: 17
+Level: 18
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-- Tackle
-- Sand Attack
-- Gust
+EVs: 124 HP / 196 Atk / 188 Spe
+Serious Nature
+- Whirlwind
 - Quick Attack
+- Gust
+- Sand Attack
 
 Abra
 Level: 16
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 124 HP / 196 SpA / 188 Spe
+Bashful Nature
 - Teleport
+- Thief
+- Flash
 
 Rattata
 Level: 15
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-- Tackle
-- Tail Whip
+EVs: 140 HP / 196 Atk / 172 Spe
+Hardy Nature
+- Bite
 - Quick Attack
+- Laser Focus
+- Focus Energy
 
-Charmander
+Charmander @ Oran Berry
 Level: 18
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
-- Metal Claw
-- Ember
-- Growl
-- Scratch
+EVs: 124 HP / 196 Atk / 188 Spe
+Docile Nature
+- Fire Fang
+- Dragon Breath
+- Rock Tomb
+- Smokescreen
 
 === TRAINER_SCIENTIST_TED ===
 Name: Ted
@@ -6382,16 +6415,16 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Tauros @ Sitrus Berry  
+Tauros @ White Herb  
 Ability: Intimidate  
 Level: 24  
 EVs: 4 HP / 252 Atk / 252 Spe  
 Adamant Nature  
 IVs: 0 SpA  
+- Close Combat
 - Zen Headbutt  
 - Wild Charge  
-- Iron Head  
-- Pursuit  
+- Iron Head 
 
 Beedrill @ Scope Lens  
 Ability: Sniper  
@@ -6408,10 +6441,10 @@ Ability: Technician
 Level: 25  
 EVs: 132 HP / 252 Atk / 124 Spe  
 Jolly Nature  
+- Power Gem
 - Foul Play  
 - Fake Out  
-- Screech  
-- Bite  
+- Thief  
 
 Cloyster @ Leftovers  
 Ability: Skill Link  
@@ -6428,8 +6461,8 @@ Ability: Scrappy
 Level: 29  
 EVs: 120 HP / 252 Atk / 8 Def / 8 SpD / 120 Spe  
 Adamant Nature  
-- Thunder Punch  
-- Fire Punch  
+- Sucker Punch  
+- Drain Punch  
 - Fake Out  
 - Facade  
 
@@ -6459,10 +6492,10 @@ Level: 35
 EVs: 4 HP / 252 Atk / 252 Spe  
 Adamant Nature  
 IVs: 0 SpA  
+- Close Combat
 - Zen Headbutt  
 - Wild Charge  
-- Iron Head  
-- Pursuit  
+- Iron Head
 
 Beedrill @ Scope Lens  
 Ability: Sniper  
@@ -6479,10 +6512,10 @@ Ability: Technician
 Level: 37  
 EVs: 132 HP / 252 Atk / 124 Spe  
 Jolly Nature  
+- Power Gem
 - Foul Play  
 - Fake Out  
-- Screech  
-- Bite  
+- Thief 
 
 Cloyster @ Leftovers  
 Ability: Skill Link  
@@ -6499,10 +6532,10 @@ Ability: Scrappy
 Level: 41  
 EVs: 120 HP / 252 Atk / 8 Def / 8 SpD / 120 Spe  
 Adamant Nature  
-- Thunder Punch  
-- Fire Punch  
+- Sucker Punch  
+- Drain Punch  
 - Fake Out  
-- Facade  
+- Facade 
 
 Nidoqueen @ Life Orb  
 Ability: Sheer Force  
@@ -6530,10 +6563,10 @@ Level: 44
 EVs: 136 HP / 252 Atk / 120 Spe  
 Impish Nature  
 IVs: 0 SpA
-- Swords Dance  
 - Stealth Rock  
 - Bonemerang  
-- Iron Head  
+- Iron Head
+- Endeavor
 
 Nidoking @ Life Orb  
 Ability: Sheer Force  
@@ -6543,18 +6576,18 @@ Adamant Nature
 - Earthquake  
 - Poison Jab  
 - Rock Slide  
-- Ice Punch  
+- Strength  
 
-Rhydon @ Eviolite  
+Rhyperior @ Loaded Dice  
 Ability: Lightning Rod  
 Level: 50  
 EVs: 200 HP / 252 Atk / 56 Def  
 Adamant Nature  
 IVs: 0 SpA  
-- Thunder Punch  
+- Rock Blast 
 - Earthquake  
-- Brick Break  
-- Rock Slide  
+- Heavy Slam
+- Body Press
 
 === TRAINER_TEAM_ROCKET_GRUNT ===
 Name: Grunt
@@ -8340,7 +8373,11 @@ Ability: Ice Body
 Level: 51  
 EVs: 252 HP / 120 SpA / 116 Spe  
 Calm Nature  
-IVs: 0 Atk  
+IVs: 0 Atk 
+- Perish Song
+- Aqua Ring
+- Ice Beam
+- Surf 
 
 Mr. Rime @ Sitrus Berry  
 Ability: Tangled Feet  
@@ -8370,8 +8407,8 @@ Level: 54
 EVs: 16 HP / 120 Def / 252 SpA / 120 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Snowscape  
 - Freeze-Dry  
+- Snowscape
 - Blizzard  
 - Yawn  
 
@@ -8382,9 +8419,9 @@ EVs: 96 HP / 168 Atk / 244 Spe
 Adamant Nature  
 - Earthquake  
 - Heavy Slam  
+- Body Press
 - Avalanche  
-- Reversal  
-
+ 
 === TRAINER_ELITE_FOUR_BRUNO ===
 Name: Bruno
 Class: Elite Four
@@ -8410,10 +8447,10 @@ Ability: Iron Fist
 Level: 53  
 EVs: 96 HP / 252 Atk / 160 Spe  
 Adamant Nature  
-- Throat Chop  
 - Drain Punch  
 - Mach Punch  
 - Ice Punch  
+- Knock Off
 
 Hitmonlee @ Sitrus Berry  
 Ability: Reckless  
@@ -8469,9 +8506,9 @@ Level: 53
 EVs: 252 HP / 160 SpA / 96 Spe  
 Calm Nature  
 IVs: 0 Atk  
-- Thunder Wave  
+- Perish Song
 - Foul Play  
-- Icy Wind  
+- Tailwind
 - Snarl  
 
 Houndoom @ Expert Belt  
@@ -8483,7 +8520,7 @@ IVs: 0 Atk
 - Flamethrower  
 - Sludge Bomb  
 - Dark Pulse  
-- Pain Split  
+- Nasty Plot 
 
 Misdreavus @ Fairy Feather  
 Ability: Levitate  
@@ -8502,20 +8539,20 @@ Level: 54
 EVs: 108 HP / 192 SpA / 36 SpD / 120 Spe  
 Calm Nature  
 IVs: 0 Atk  
-- Alluring Voice  
 - Fake Tears  
 - Dark Pulse  
 - Moonlight  
+- Yawn
 
 Annihilape @ Leftovers  
 Ability: Defiant  
 Level: 56  
 EVs: 252 HP / 160 Atk / 96 Spe  
 Impish Nature  
-- Vacuum Wave  
 - Drain Punch  
 - Rage Fist  
-- Bulk Up  
+- Bulk Up
+- U-turn  
 
 Gengar @ Life Orb  
 Ability: Cursed Body  
@@ -8554,11 +8591,11 @@ Level: 54
 EVs: 136 HP / 252 SpA / 120 Spe  
 Mild Nature  
 IVs: 0 Atk  
-- Scorching Sands
+- Scorching Sand
 - Flamethrower
 - Dragon Pulse  
 - Air Slash  
-  
+
 Kingdra @ Scope Lens  
 Ability: Sniper  
 Level: 54  
@@ -8566,7 +8603,7 @@ IVs: 0 Atk
 - Focus Energy  
 - Flash Cannon 
 - Draco Meteor  
-- Scald  
+- Surf  
 
 Aerodactyl @ Life Orb  
 Ability: Rock Head  
@@ -8584,11 +8621,11 @@ Level: 58
 EVs: 76 HP / 180 Atk / 252 Spe  
 Jolly Nature  
 - Earthquake  
-- Fire Punch  
 - Stone Edge 
+- Body Press
 - Crunch
 
-Dragonite @ Loaded Dice  
+Dragonite @ Loaded Dice 
 Ability: Multiscale  
 Level: 60  
 EVs: 76 HP / 252 Atk / 180 Spe  
@@ -8596,7 +8633,7 @@ Adamant Nature
 - Extreme Speed 
 - Dragon Dance  
 - Scale Shot 
-- Iron Head   
+- Iron Head  
 
 === TRAINER_LEADER_BROCK ===
 Name: Brock
@@ -8613,8 +8650,8 @@ Level: 10
 EVs: 160 HP / 120 Atk / 200 Def / 28 SpD  
 Relaxed Nature  
 IVs: 0 SpA / 0 Spe  
-- Thunder Punch
-- Fire Punch
+- Stealth Rock
+- Rock Polish
 - Rock Tomb
 - Flail
 
@@ -8635,9 +8672,9 @@ Level: 14
 EVs: 120 HP / 100 Atk / 252 Def / 36 Spe  
 Lax Nature  
 IVs: 0 SpD / 0 Spe  
-- Stealth Rock
+- Body Press
 - Rock Tomb
-- Screech
+- Strength
 - Facade
 
 === TRAINER_LEADER_MISTY ===
@@ -8658,20 +8695,20 @@ IVs: 0 Atk / 0 Def
 - Water Pulse
 - Rain Dance
 - Confusion
-- Endeavor
+- Disable
 
 Goldeen @ Rindo Berry  
 Ability: Lightning Rod  
 Level: 18  
 EVs: 100 HP / 180 Atk / 100 Def / 8 SpD / 120 Spe  
 IVs: 0 Def / 0 SpA  
-- Horn Attack
+- Poison Jab
 - Supersonic
 - Drill Run
-- Bounce
+- Aqua Tail
 
-Starmie @ Lagging Tail  
-Ability: Analytic  
+Starmie @ Wacan Berry 
+Ability: Illuminate  
 Level: 21  
 EVs: 200 HP / 40 Def / 252 SpA / 16 SpD  
 Quiet Nature  
@@ -8679,7 +8716,8 @@ IVs: 0 Atk / 0 Spe
 - Confuse Ray  
 - Water Pulse  
 - Psybeam  
-- Minimize  
+- Flash
+ 
 
 === TRAINER_LEADER_LT_SURGE ===
 Name: Lt. Surge
@@ -8697,7 +8735,7 @@ EVs: 160 HP / 28 Def / 120 SpA / 200 Spe
 Bold Nature  
 IVs: 0 Atk / 0 SpD  
 - Light Screen
-- Metal Sound
+- Flash Cannon
 - Shock Wave  
 - Reflect  
 
@@ -8720,8 +8758,8 @@ Adamant Nature
 IVs: 0 HP / 0 SpA  
 - Quick Attack  
 - Trailblaze  
-- Endeavor  
-- Nuzzle  
+- Play Rough
+- Nuzzle
 
 === TRAINER_LEADER_ERIKA ===
 Name: Erika
@@ -8738,30 +8776,30 @@ Level: 24
 EVs: 120 HP / 160 Def / 120 SpA / 100 SpD / 8 Spe  
 Bold Nature  
 IVs: 0 Atk / 0 SpD  
+- Grassy Terrain
 - Ancient Power  
-- Sleep Powder  
 - Leech Seed  
 - Giga Drain  
 
-Leafeon @ Grassy Seed  
+Leafeon @ Loaded Dice  
 Ability: Chlorophyll  
 Level: 29  
 EVs: 4 HP / 252 Atk / 252 Spe  
 Impish Nature  
 IVs: 0 SpA / 0 SpD  
-- Swords Dance  
-- Aerial Ace  
+- Bullet Seed 
+- Rock Smash
 - X-Scissor  
-- Dig  
+- Yawn
 
-Vileplume @ Sitrus Berry  
+Vileplume @ Grassy Seed 
 Ability: Effect Spore  
 Level: 29  
 EVs: 120 HP / 120 Def / 200 SpA / 60 SpD / 8 Spe  
 Calm Nature  
 IVs: 0 Atk / 0 Spe  
+- Strength Sap
 - Sleep Powder  
-- Leech Seed  
 - Giga Drain  
 - Acid Spray  
 
@@ -8792,8 +8830,8 @@ EVs: 160 HP / 120 Atk / 28 Def / 200 SpD
 Careful Nature  
 IVs: 0 SpA  
 - Poison Jab  
-- Pain Split  
 - Knock Off  
+- Screech
 - Toxic  
 
 Crobat @ Sitrus Berry  
@@ -8804,7 +8842,7 @@ Adamant Nature
 IVs: 0 SpA  
 - Cross Poison  
 - Acrobatics  
-- Tailwind  
+- Leech Life 
 - Toxic
 
 === TRAINER_LEADER_BLAINE ===
@@ -8858,7 +8896,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Hypno @ Life Orb  
+Hypno @ Wise Glasses  
 Ability: Insomnia  
 Level: 37  
 EVs: 68 HP / 160 SpA / 160 SpD / 120 Spe  
@@ -8875,12 +8913,12 @@ Level: 39
 EVs: 48 HP / 200 SpA / 100 SpD / 160 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Expanding Force  
 - Dazzling Gleam  
 - Calm Mind  
 - Icy Wind  
+- Psychic
 
-Alakazam @ Wise Glasses  
+Alakazam @ Life Orb  
 Ability: Magic Guard  
 Level: 43  
 EVs: 20 HP / 252 SpA / 56 SpD / 180 Spe  
@@ -8980,18 +9018,42 @@ AI: Check Bad Move / Try To Faint / Check Viability
 Pidgeotto
 Level: 19
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 124 HP / 196 Atk / 188 Spe
+Serious Nature
+- Quick Attack
+- Gust
+- Whirlwind
+- Sand Attack
 
 Raticate
-Level: 16
+Level: 20
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 140 HP / 196 Atk / 172 Spe
+Hardy Nature
+- Cut
+- Bite
+- Quick Attack
+- Focus Energy
 
 Kadabra
 Level: 18
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 108 HP / 200 SpA / 200 Spe
+Docile Nature
+- Psybeam
+- Confusion
+- Reflect
+- Flash
 
-Wartortle
+Wartortle @ Oran Berry
 Level: 20
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 156 HP / 200 SpA / 152 Spe
+Bashful Nature
+- Water Pulse
+- Bite
+- Rapid Spin
+- Protect
 
 === TRAINER_RIVAL_SS_ANNE_BULBASAUR ===
 Name: Terry
@@ -9005,18 +9067,42 @@ AI: Check Bad Move / Try To Faint / Check Viability
 Pidgeotto
 Level: 19
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 124 HP / 196 Atk / 188 Spe
+Serious Nature
+- Quick Attack
+- Gust
+- Whirlwind
+- Sand Attack
 
 Raticate
-Level: 16
+Level: 20
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 140 HP / 196 Atk / 172 Spe
+Hardy Nature
+- Take Down
+- Bite
+- Quick Attack
+- Focus Energy
 
 Kadabra
 Level: 18
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 108 HP / 200 SpA / 200 Spe
+Docile Nature
+- Psybeam
+- Confusion
+- Reflect
+- Flash
 
-Ivysaur
+Ivysaur @ Oran Berry
 Level: 20
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 140 HP / 196 Atk / 172 Spe
+Quirky Nature
+- Seed Bomb
+- Cut
+- Leech Seed
+- Sleep Powder
 
 === TRAINER_RIVAL_SS_ANNE_CHARMANDER ===
 Name: Terry
@@ -9030,18 +9116,42 @@ AI: Check Bad Move / Try To Faint / Check Viability
 Pidgeotto
 Level: 19
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 124 HP / 196 Atk / 188 Spe
+Serious Nature
+- Quick Attack
+- Gust
+- Whirlwind
+- Sand Attack
 
 Raticate
-Level: 16
+Level: 20
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 140 HP / 196 Atk / 172 Spe
+Hardy Nature
+- Take Down
+- Bite
+- Quick Attack
+- Focus Energy
 
 Kadabra
 Level: 18
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 108 HP / 200 SpA / 200 Spe
+Docile Nature
+- Psybeam
+- Confusion
+- Reflect
+- Flash
 
-Charmeleon
+Charmeleon @ Oran Berry
 Level: 20
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 140 HP / 196 Atk / 172 Spe
+Bashful Nature
+- Fire Fang
+- Rock Tomb
+- Cut
+- Dragon Breath
 
 === TRAINER_RIVAL_POKEMON_TOWER_SQUIRTLE ===
 Name: Terry
@@ -9055,22 +9165,52 @@ AI: Check Bad Move / Try To Faint / Check Viability
 Pidgeotto
 Level: 25
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 124 HP / 196 Atk / 188 Spe
+Serious Nature
+- Gust
+- Quick Attack
+- Twister
+- Feather Dance
 
 Growlithe
 Level: 23
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 124 HP / 196 Atk / 188 Spe
+Hardy Nature
+- Flame Wheel
+- Bite
+- Dig
+- Agility
 
 Exeggcute
 Level: 22
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 156 HP / 196 SpA / 156 SpD
+Docile Nature
+- Confusion
+- Mega Drain
+- Leech Seed
+- Hypnosis
 
 Kadabra
 Level: 20
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 108 HP / 200 SpA / 200 Spe
+Bashful Nature
+- Psybeam
+- Psycho Cut
+- Flash
+- Shock Wave
 
-Wartortle
+Wartortle @ Sitrus Berry
 Level: 25
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 156 HP / 200 SpA / 152 Spe
+Quirky Nature
+- Water Pulse
+- Bite
+- Rain Dance
+- Cut
 
 === TRAINER_RIVAL_POKEMON_TOWER_BULBASAUR ===
 Name: Terry
@@ -9084,22 +9224,52 @@ AI: Check Bad Move / Try To Faint / Check Viability
 Pidgeotto
 Level: 25
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 124 HP / 196 Atk / 188 Spe
+Serious Nature
+- Gust
+- Quick Attack
+- Twister
+- Feather Dance
 
 Gyarados
 Level: 23
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 124 HP / 200 Atk / 184 Spe
+Hardy Nature
+- Waterfall
+- Bite
+- Ice Fang
+- Twister
 
 Growlithe
 Level: 22
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 124 HP / 196 Atk / 188 Spe
+Docile Nature
+- Flame Wheel
+- Bite
+- Dig
+- Agility
 
 Kadabra
 Level: 20
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 108 HP / 200 SpA / 200 Spe
+Bashful Nature
+- Psybeam
+- Psycho Cut
+- Flash
+- Shock Wave
 
-Ivysaur
+Ivysaur @ Sitrus Berry
 Level: 25
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 140 HP / 196 Atk / 172 Spe
+Quirky Nature
+- Seed Bomb
+- Leech Seed
+- Sleep Powder
+- Cut
 
 === TRAINER_RIVAL_POKEMON_TOWER_CHARMANDER ===
 Name: Terry
@@ -9113,22 +9283,52 @@ AI: Check Bad Move / Try To Faint / Check Viability
 Pidgeotto
 Level: 25
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 124 HP / 196 Atk / 188 Spe
+Serious Nature
+- Gust
+- Quick Attack
+- Twister
+- Feather Dance
 
 Exeggcute
 Level: 23
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 156 HP / 196 SpA / 156 SpD
+Hardy Nature
+- Confusion
+- Mega Drain
+- Leech Seed
+- Hypnosis
 
 Gyarados
 Level: 22
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 124 HP / 200 Atk / 184 Spe
+Docile Nature
+- Waterfall
+- Bite
+- Ice Fang
+- Twister
 
 Kadabra
 Level: 20
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 108 HP / 200 SpA / 200 Spe
+Bashful Nature
+- Psybeam
+- Psycho Cut
+- Flash
+- Shock Wave
 
-Charmeleon
+Charmeleon @ Sitrus Berry
 Level: 25
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 140 HP / 200 Atk / 168 Spe
+Quirky Nature
+- Fire Fang
+- Slash
+- Dragon Breath
+- Cut
 
 === TRAINER_RIVAL_SILPH_SQUIRTLE ===
 Name: Terry
@@ -9139,25 +9339,55 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgeot
+Pidgeot @ Sharp Beak
 Level: 37
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 100 HP / 200 Atk / 208 Spe
+Serious Nature
+- Fly
+- Feather Dance
+- Steel Wing
+- Quick Attack
 
-Growlithe
+Growlithe @ Charcoal
 Level: 38
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 100 HP / 200 Atk / 208 Spe
+Hardy Nature
+- Flamethrower
+- Take Down
+- Crunch
+- Dig
 
-Exeggcute
+Exeggcute @ Miracle Seed
 Level: 35
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 252 HP / 4 Def / 252 SpA
+Docile Nature
+- Giga Drain
+- Psychic
+- Sleep Powder
+- Leech Seed
 
-Alakazam
+Alakazam @ Twisted Spoon
 Level: 35
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 4 HP / 252 SpA / 252 Spe
+Bashful Nature
+- Psychic
+- Shadow Ball
+- Shock Wave
+- Recover
 
-Blastoise
+Blastoise @ Sitrus Berry
 Level: 40
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 152 HP / 152 Atk / 48 SpA / 156 Spe
+Quirky Nature
+- Shell Smash
+- Aqua Tail
+- Ice Beam
+- Bite
 
 === TRAINER_RIVAL_SILPH_BULBASAUR ===
 Name: Terry
@@ -9168,25 +9398,55 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgeot
+Pidgeot @ Sharp Beak
 Level: 37
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 100 HP / 200 Atk / 208 Spe
+Serious Nature
+- Fly
+- Feather Dance
+- Steel Wing
+- Quick Attack
 
-Gyarados
+Gyarados @ Mystic Water
 Level: 38
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 124 HP / 252 Atk / 132 Spe
+Hardy Nature
+- Waterfall
+- Dragon Dance
+- Ice Fang
+- Bite
 
-Growlithe
+Growlithe @ Charcoal
 Level: 35
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 100 HP / 200 Atk / 208 Spe
+Docile Nature
+- Flamethrower
+- Crunch
+- Dig
+- Agility
 
-Alakazam
+Alakazam @ Twisted Spoon
 Level: 35
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 4 HP / 252 SpA / 252 Spe
+Bashful Nature
+- Psychic
+- Shadow Ball
+- Shock Wave
+- Recover
 
-Venusaur
+Venusaur @ Sitrus Berry
 Level: 40
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 200 HP / 156 Def / 152 SpA
+Quirky Nature
+- Seed Bomb
+- Sludge Bomb
+- Leech Seed
+- Synthesis
 
 === TRAINER_RIVAL_SILPH_CHARMANDER ===
 Name: Terry
@@ -9197,25 +9457,55 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgeot
+Pidgeot @ Sharp Beak
 Level: 37
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 100 HP / 200 Atk / 208 Spe
+Serious Nature
+- Fly
+- Feather Dance
+- Steel Wing
+- Quick Attack
 
-Exeggcute
+Exeggcute @ Miracle Seed
 Level: 38
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 252 HP / 4 Def / 252 SpA
+Hardy Nature
+- Giga Drain
+- Psychic
+- Reflect
+- Sleep Powder
 
-Gyarados
+Gyarados @ Mystic Water
 Level: 35
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 124 HP / 252 Atk / 132 Spe
+Docile Nature
+- Waterfall
+- Bite
+- Ice Fang
+- Rain Dance
 
-Alakazam
+Alakazam @ Twisted Spoon
 Level: 35
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 4 HP / 252 SpA / 252 Spe
+Bashful Nature
+- Psychic
+- Shadow Ball
+- Shock Wave
+- Recover
 
-Charizard
+Charizard @ Sitrus Berry
 Level: 40
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
+EVs: 100 HP / 200 SpA / 208 Spe
+Quirky Nature
+- Flamethrower
+- Fly
+- Dragon Breath
+- Slash
 
 === TRAINER_RIVAL_ROUTE22_LATE_SQUIRTLE ===
 Name: Terry
@@ -9232,7 +9522,7 @@ Level: 47
 EVs: 160 HP / 252 Atk / 96 Spe  
 Adamant Nature  
 - Brave Bird  
-- Swagger  
+- Tailwind  
 - Facade  
 - Roost  
 
@@ -9241,7 +9531,7 @@ Ability: Lightning Rod
 Level: 45  
 EVs: 160 HP / 120 Atk / 200 Def / 28 SpD  
 Impish Nature  
-- Thunder Punch  
+- Body Press  
 - Earthquake  
 - Avalanche  
 - Curse  
@@ -9253,8 +9543,8 @@ EVs: 56 HP / 252 Atk / 100 Def / 100 SpD
 Jolly Nature  
 - Extreme Speed  
 - Will-O-Wisp  
+- Flare Blitz 
 - Play Rough  
-- Flare Blitz  
 
 Exeggutor @ Sitrus Berry  
 Ability: Harvest  
@@ -9262,7 +9552,7 @@ Level: 45
 EVs: 100 HP / 200 SpA / 208 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Sleep Powder  
+- Sludge Bomb  
 - Solar Beam  
 - Sunny Day  
 - Psychic  
@@ -9304,7 +9594,7 @@ Level: 47
 EVs: 160 HP / 252 Atk / 96 Spe  
 Adamant Nature  
 - Brave Bird  
-- Swagger  
+- Tailwind  
 - Facade  
 - Roost 
 
@@ -9313,7 +9603,7 @@ Ability: Lightning Rod
 Level: 45  
 EVs: 160 HP / 120 Atk / 200 Def / 28 SpD  
 Impish Nature  
-- Thunder Punch  
+- Body Press  
 - Earthquake  
 - Avalanche  
 - Curse
@@ -9375,7 +9665,7 @@ Level: 47
 EVs: 160 HP / 252 Atk / 96 Spe  
 Adamant Nature  
 - Brave Bird  
-- Swagger  
+- Tailwind  
 - Facade  
 - Roost  
 
@@ -9384,7 +9674,7 @@ Ability: Lightning Rod
 Level: 45  
 EVs: 160 HP / 120 Atk / 200 Def / 28 SpD  
 Impish Nature  
-- Thunder Punch  
+- Body Press  
 - Earthquake  
 - Avalanche  
 - Curse  
@@ -9395,7 +9685,7 @@ Level: 45
 EVs: 100 HP / 200 SpA / 208 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Sleep Powder  
+- Sludge Bomb  
 - Solar Beam  
 - Sunny Day  
 - Psychic
@@ -9427,7 +9717,7 @@ Level: 53
 EVs: 8 HP / 252 SpA / 248 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Scorching Sands  
+- Scorching Sand  
 - Flamethrower  
 - Sunny Day  
 - Air Slash 
@@ -9448,7 +9738,7 @@ Level: 59
 EVs: 160 HP / 252 Atk / 96 Spe  
 Adamant Nature  
 - Brave Bird  
-- Swagger  
+- Tailwind  
 - Facade  
 - Roost
 
@@ -9468,8 +9758,8 @@ Ability: Lightning Rod
 Level: 59  
 EVs: 160 HP / 120 Atk / 200 Def / 28 SpD  
 Impish Nature  
-- Thunder Punch  
 - Earthquake  
+- Body Press
 - Avalanche  
 - Curse
 
@@ -9480,20 +9770,19 @@ EVs: 56 HP / 252 Atk / 100 Def / 100 SpD
 Jolly Nature  
 - Extreme Speed  
 - Will-O-Wisp  
+- Flare Blitz 
 - Play Rough  
-- Flare Blitz  
-
+ 
 Exeggutor @ Sitrus Berry  
 Ability: Harvest  
 Level: 61 
 EVs: 100 HP / 200 SpA / 208 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Sleep Powder  
+- Sludge Bomb 
 - Solar Beam  
 - Sunny Day  
 - Psychic  
-
 
 Blastoise @ White Herb  
 Ability: Rain Dish  
@@ -9522,7 +9811,7 @@ Level: 59
 EVs: 160 HP / 252 Atk / 96 Spe  
 Adamant Nature  
 - Brave Bird  
-- Swagger  
+- Tailwind  
 - Facade  
 - Roost 
 
@@ -9542,8 +9831,8 @@ Ability: Lightning Rod
 Level: 59 
 EVs: 160 HP / 120 Atk / 200 Def / 28 SpD  
 Impish Nature  
-- Thunder Punch  
 - Earthquake  
+- Body Press
 - Avalanche  
 - Curse  
 
@@ -9564,8 +9853,8 @@ EVs: 56 HP / 252 Atk / 100 Def / 100 SpD
 Jolly Nature  
 - Extreme Speed  
 - Will-O-Wisp  
+- Flare Blitz
 - Play Rough  
-- Flare Blitz  
 
 Venusaur @ Rocky Helmet  
 Ability: Overgrow  
@@ -9573,9 +9862,10 @@ Level: 63
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
+- Sleep Powder
 - Sludge Bomb  
-- Sleep Powder  
-- Leech Seed  
+- Energy Ball
+- Leech Seed
 
 === TRAINER_CHAMPION_FIRST_CHARMANDER ===
 Name: Terry
@@ -9593,7 +9883,7 @@ Level: 59
 EVs: 160 HP / 252 Atk / 96 Spe  
 Adamant Nature  
 - Brave Bird  
-- Swagger  
+- Tailwind  
 - Facade  
 - Roost  
 
@@ -9613,8 +9903,8 @@ Ability: Lightning Rod
 Level: 59  
 EVs: 160 HP / 120 Atk / 200 Def / 28 SpD  
 Impish Nature  
-- Thunder Punch  
-- Earthquake  
+- Earthquake
+- Body Press
 - Avalanche  
 - Curse  
 
@@ -9624,7 +9914,7 @@ Level: 59
 EVs: 100 HP / 200 SpA / 208 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Sleep Powder  
+- Sludge Bomb  
 - Solar Beam  
 - Sunny Day  
 - Psychic  
@@ -9645,7 +9935,7 @@ Level: 63
 EVs: 8 HP / 252 SpA / 248 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Scorching Sands  
+- Scorching Sand  
 - Flamethrower  
 - Sunny Day  
 - Air Slash  
@@ -15371,11 +15661,15 @@ Ability: Ice Body
 Level: 63  
 EVs: 252 HP / 120 SpA / 116 Spe  
 Calm Nature  
-IVs: 0 Atk  
+IVs: 0 Atk 
+- Perish Song
+- Aqua Ring
+- Ice Beam
+- Surf 
 
 Mr. Rime @ Sitrus Berry  
 Ability: Tangled Feet  
-Level: 64  
+Level: 64 
 EVs: 160 HP / 200 SpA / 28 SpD / 120 Spe  
 Modest Nature  
 IVs: 0 Atk  
@@ -15401,8 +15695,8 @@ Level: 66
 EVs: 16 HP / 120 Def / 252 SpA / 120 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Snowscape  
 - Freeze-Dry  
+- Snowscape
 - Blizzard  
 - Yawn  
 
@@ -15413,8 +15707,8 @@ EVs: 96 HP / 168 Atk / 244 Spe
 Adamant Nature  
 - Earthquake  
 - Heavy Slam  
+- Body Press
 - Avalanche  
-- Reversal  
 
 === TRAINER_ELITE_FOUR_BRUNO_2 ===
 Name: Bruno
@@ -15428,7 +15722,7 @@ Mugshot: Green
 
 Hitmontop @ White Herb  
 Ability: Intimidate  
-Level: 65 
+Level: 65  
 EVs: 56 HP / 200 Atk / 252 Spe  
 Adamant Nature  
 - Sucker Punch  
@@ -15438,13 +15732,13 @@ Adamant Nature
 
 Hitmonchan @ Punching Glove  
 Ability: Iron Fist  
-Level: 65  
+Level: 65 
 EVs: 96 HP / 252 Atk / 160 Spe  
 Adamant Nature  
-- Throat Chop  
 - Drain Punch  
 - Mach Punch  
 - Ice Punch  
+- Knock Off
 
 Hitmonlee @ Sitrus Berry  
 Ability: Reckless  
@@ -15500,25 +15794,25 @@ Level: 65
 EVs: 252 HP / 160 SpA / 96 Spe  
 Calm Nature  
 IVs: 0 Atk  
-- Thunder Wave  
+- Perish Song
 - Foul Play  
-- Icy Wind  
+- Tailwind
 - Snarl  
 
 Houndoom @ Expert Belt  
 Ability: Unnerve  
-Level: 65 
+Level: 65  
 EVs: 136 HP / 252 SpA / 120 Spe  
 Modest Nature  
 IVs: 0 Atk  
 - Flamethrower  
 - Sludge Bomb  
 - Dark Pulse  
-- Pain Split  
+- Nasty Plot 
 
 Misdreavus @ Fairy Feather  
 Ability: Levitate  
-Level: 66 
+Level: 66  
 EVs: 108 HP / 200 SpA / 80 SpD / 108 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -15529,28 +15823,28 @@ IVs: 0 Atk
 
 Umbreon @ Mago Berry  
 Ability: Synchronize  
-Level: 66 
+Level: 66  
 EVs: 108 HP / 192 SpA / 36 SpD / 120 Spe  
 Calm Nature  
 IVs: 0 Atk  
-- Alluring Voice  
 - Fake Tears  
 - Dark Pulse  
 - Moonlight  
+- Yawn
 
 Annihilape @ Leftovers  
 Ability: Defiant  
-Level: 68 
+Level: 68  
 EVs: 252 HP / 160 Atk / 96 Spe  
 Impish Nature  
-- Vacuum Wave  
 - Drain Punch  
 - Rage Fist  
-- Bulk Up  
+- Bulk Up
+- U-turn  
 
 Gengar @ Life Orb  
 Ability: Cursed Body  
-Level: 70 
+Level: 70  
 EVs: 160 HP / 252 SpA / 96 Spe  
 Modest Nature  
 IVs: 0 Atk  
@@ -15574,20 +15868,20 @@ Ability: Intimidate
 Level: 68  
 EVs: 4 HP / 252 Atk / 252 Spe  
 Jolly Nature  
-- Dragon Dance  
+- Dragon Dance
 - Earthquake  
 - Aqua Tail  
 - Ice Fang  
 
 Charizard @ Heavy-Duty Boots  
 Ability: Blaze  
-Level: 66 
+Level: 66  
 EVs: 136 HP / 252 SpA / 120 Spe  
 Mild Nature  
 IVs: 0 Atk  
-- Scorching Sands
-- Dragon Pulse
-- Flamethrower  
+- Scorching Sand
+- Flamethrower
+- Dragon Pulse  
 - Air Slash  
 
 Kingdra @ Scope Lens  
@@ -15595,9 +15889,9 @@ Ability: Sniper
 Level: 66  
 IVs: 0 Atk  
 - Focus Energy  
-- Flash Cannon
+- Flash Cannon 
 - Draco Meteor  
-- Scald  
+- Surf  
 
 Aerodactyl @ Life Orb  
 Ability: Rock Head  
@@ -15605,7 +15899,7 @@ Level: 70
 EVs: 160 HP / 200 Atk / 28 SpD / 120 Spe  
 Jolly Nature  
 - Dragon Claw  
-- Rock Slide 
+- Rock Slide
 - Iron Head  
 - Tailwind  
 
@@ -15615,19 +15909,19 @@ Level: 70
 EVs: 76 HP / 180 Atk / 252 Spe  
 Jolly Nature  
 - Earthquake  
-- Fire Punch  
 - Stone Edge 
+- Body Press
 - Crunch
 
 Dragonite @ Loaded Dice  
 Ability: Multiscale  
-Level: 72 
+Level: 72  
 EVs: 76 HP / 252 Atk / 180 Spe  
 Adamant Nature  
-- Extreme Speed
+- Extreme Speed 
 - Dragon Dance  
-- Scale Shot
-- Iron Head   
+- Scale Shot 
+- Iron Head 
 
 === TRAINER_CHAMPION_REMATCH_SQUIRTLE ===
 Name: Terry
@@ -15667,7 +15961,7 @@ EVs: 252 HP / 252 Atk / 4 SpD
 Adamant Nature  
 - Stone Edge  
 - Earthquake  
-- Ice Punch  
+- Ice Fang  
 - Crunch
 
 Arcanine @ Leftovers  
@@ -15686,7 +15980,7 @@ Level: 73
 EVs: 100 HP / 200 SpA / 208 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Sleep Powder  
+- Sludge Bomb  
 - Solar Beam  
 - Sunny Day  
 - Psychic
@@ -15740,7 +16034,7 @@ EVs: 252 HP / 252 Atk / 4 SpD
 Adamant Nature  
 - Stone Edge  
 - Earthquake  
-- Ice Punch  
+- Ice Fang  
 - Crunch
 
 Gyarados @ Lum Berry  
@@ -15812,7 +16106,7 @@ EVs: 252 HP / 252 Atk / 4 SpD
 Adamant Nature  
 - Stone Edge  
 - Earthquake  
-- Ice Punch  
+- Ice Fang  
 - Crunch
 
 Exeggutor @ Sitrus Berry  
@@ -15821,7 +16115,7 @@ Level: 73
 EVs: 100 HP / 200 SpA / 208 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Sleep Powder  
+- Sludge Bomb  
 - Solar Beam  
 - Sunny Day  
 - Psychic 
@@ -15842,7 +16136,7 @@ Level: 75
 EVs: 8 HP / 252 SpA / 248 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Scorching Sands  
+- Scorching Sand  
 - Flamethrower  
 - Sunny Day  
 - Air Slash
@@ -15911,7 +16205,7 @@ Level: 75
 EVs: 248 SpA / 8 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Scorching Sands  
+- Scorching Sand  
 - Flamethrower  
 - Thunderbolt  
 - Rest  
@@ -16006,7 +16300,7 @@ Level: 80
 EVs: 8 HP / 252 SpA / 248 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Scorching Sands  
+- Scorching Sand  
 - Flamethrower  
 - Sunny Day  
 - Air Slash
@@ -16068,7 +16362,7 @@ Level: 75
 EVs: 248 SpA / 8 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Scorching Sands  
+- Scorching Sand  
 - Flamethrower  
 - Thunderbolt  
 - Rest  

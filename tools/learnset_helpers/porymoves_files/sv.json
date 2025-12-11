@@ -686,7 +686,7 @@
       "MOVE_WEATHER_BALL",
       "MOVE_DOUBLE_EDGE",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER"
     ],
@@ -1843,7 +1843,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_THROAT_CHOP",
       "MOVE_CURSE"
     ],
@@ -1986,7 +1986,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_THROAT_CHOP",
       "MOVE_CURSE"
     ],
@@ -2656,7 +2656,7 @@
       "MOVE_PAIN_SPLIT",
       "MOVE_PSYCH_UP",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ],
     "EggMoves": [
       "MOVE_BABY_DOLL_EYES",
@@ -3697,7 +3697,7 @@
       "MOVE_UPROAR",
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_THROAT_CHOP",
       "MOVE_CURSE"
     ],
@@ -3819,7 +3819,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_THROAT_CHOP",
       "MOVE_CURSE"
     ],
@@ -4865,7 +4865,7 @@
       "MOVE_HEAT_CRASH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_CURSE"
     ],
     "EggMoves": [
@@ -9497,7 +9497,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_SUPERCELL_SLAM",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_CURSE"
     ],
     "EggMoves": [
@@ -9644,7 +9644,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_SUPERCELL_SLAM",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_METEOR_BEAM",
       "MOVE_BREAKING_SWIPE",
       "MOVE_CURSE"
@@ -10402,7 +10402,7 @@
       "MOVE_BURNING_JEALOUSY",
       "MOVE_DOUBLE_EDGE",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_CURSE"
     ],
     "EggMoves": [
@@ -11404,7 +11404,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_CURSE",
       "MOVE_ALLURING_VOICE"
     ],
@@ -12078,7 +12078,7 @@
       "MOVE_DUAL_WINGBEAT",
       "MOVE_DOUBLE_EDGE",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -12909,7 +12909,7 @@
       "MOVE_TRIPLE_AXEL",
       "MOVE_COACHING",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_FEATHER_DANCE",
       "MOVE_FUTURE_SIGHT",
       "MOVE_EXPANDING_FORCE",
@@ -13621,7 +13621,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_THROAT_CHOP",
       "MOVE_CURSE"
     ],
@@ -20227,7 +20227,7 @@
       "MOVE_BURNING_JEALOUSY",
       "MOVE_PAIN_SPLIT",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_CURSE"
     ],
     "EggMoves": [
@@ -22411,7 +22411,7 @@
       "MOVE_ROAR",
       "MOVE_WEATHER_BALL",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -23234,7 +23234,7 @@
       "MOVE_DUAL_WINGBEAT",
       "MOVE_PSYCH_UP",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_FUTURE_SIGHT"
     ],
     "EggMoves": [],
@@ -24063,7 +24063,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_TEMPER_FLARE",
       "MOVE_COACHING",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_FEATHER_DANCE",
       "MOVE_CURSE",
       "MOVE_UPPER_HAND"
@@ -29094,7 +29094,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_CURSE"
     ],
     "EggMoves": [
@@ -29237,7 +29237,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_CURSE"
     ],
     "EggMoves": [
@@ -29379,7 +29379,7 @@
       "MOVE_BURNING_JEALOUSY",
       "MOVE_DOUBLE_EDGE",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_CURSE"
     ],
     "EggMoves": [
@@ -29754,7 +29754,7 @@
       "MOVE_TERA_BLAST",
       "MOVE_SAND_TOMB",
       "MOVE_BUG_BITE",
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ],
     "EggMoves": [
       "MOVE_GUST",
@@ -29901,7 +29901,7 @@
       "MOVE_BUG_BITE",
       "MOVE_UPROAR",
       "MOVE_DUAL_WINGBEAT",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_THROAT_CHOP"
     ],
     "EggMoves": [
@@ -30072,7 +30072,7 @@
       "MOVE_DUAL_WINGBEAT",
       "MOVE_SCALE_SHOT",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_THROAT_CHOP",
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER",
@@ -34293,7 +34293,7 @@
       "MOVE_HEAT_CRASH",
       "MOVE_FOCUS_PUNCH",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -35041,7 +35041,7 @@
       "MOVE_HIGH_HORSEPOWER",
       "MOVE_GRASSY_GLIDE",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_CURSE",
       "MOVE_HARD_PRESS"
     ],
@@ -35475,7 +35475,7 @@
       "MOVE_ENDEAVOR",
       "MOVE_TEMPER_FLARE",
       "MOVE_COACHING",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_THROAT_CHOP",
       "MOVE_UPPER_HAND"
     ],
@@ -36980,7 +36980,7 @@
       "MOVE_SAND_TOMB",
       "MOVE_SMACK_DOWN",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_METAL_SOUND",
       "MOVE_CURSE",
       "MOVE_HARD_PRESS"
@@ -37106,7 +37106,7 @@
       "MOVE_SAND_TOMB",
       "MOVE_SMACK_DOWN",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_METEOR_BEAM",
       "MOVE_METAL_SOUND",
       "MOVE_CURSE",
@@ -39538,7 +39538,7 @@
       "MOVE_SAND_TOMB",
       "MOVE_SCALE_SHOT",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_DRAGON_CHEER"
     ],
     "EggMoves": [
@@ -39646,7 +39646,7 @@
       "MOVE_SAND_TOMB",
       "MOVE_SCALE_SHOT",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER"
     ],
@@ -39768,7 +39768,7 @@
       "MOVE_SAND_TOMB",
       "MOVE_SCALE_SHOT",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER"
     ],
@@ -40315,7 +40315,7 @@
       "MOVE_HIGH_HORSEPOWER",
       "MOVE_DOUBLE_EDGE",
       "MOVE_MUDDY_WATER",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_CURSE"
     ],
     "EggMoves": [
@@ -40443,7 +40443,7 @@
       "MOVE_HIGH_HORSEPOWER",
       "MOVE_DOUBLE_EDGE",
       "MOVE_MUDDY_WATER",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_CURSE",
       "MOVE_HARD_PRESS"
     ],
@@ -41617,7 +41617,7 @@
       "MOVE_ENDEAVOR",
       "MOVE_TEMPER_FLARE",
       "MOVE_SUPERCELL_SLAM",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_METEOR_BEAM",
       "MOVE_BREAKING_SWIPE",
       "MOVE_CURSE"
@@ -41888,7 +41888,7 @@
       "MOVE_BURNING_JEALOUSY",
       "MOVE_DOUBLE_EDGE",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_CURSE"
     ],
     "EggMoves": [
@@ -44411,7 +44411,7 @@
       "MOVE_LUNGE",
       "MOVE_HEAT_CRASH",
       "MOVE_BURNING_JEALOUSY",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_METAL_SOUND",
       "MOVE_HARD_PRESS"
     ],
@@ -45324,7 +45324,7 @@
       "MOVE_PSYCH_UP",
       "MOVE_DOUBLE_EDGE",
       "MOVE_SUPERCELL_SLAM",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_FUTURE_SIGHT",
       "MOVE_METEOR_BEAM"
     ],
@@ -46884,7 +46884,7 @@
       "MOVE_SAND_TOMB",
       "MOVE_HIGH_HORSEPOWER",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_METAL_SOUND",
       "MOVE_CURSE"
     ],
@@ -47002,7 +47002,7 @@
       "MOVE_SAND_TOMB",
       "MOVE_HIGH_HORSEPOWER",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_THROAT_CHOP",
       "MOVE_METAL_SOUND",
       "MOVE_CURSE"
@@ -48392,7 +48392,7 @@
       "MOVE_SPITE",
       "MOVE_LASH_OUT",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_SKITTER_SMACK",
       "MOVE_CURSE"
     ],
@@ -48519,7 +48519,7 @@
       "MOVE_SCALE_SHOT",
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_SKITTER_SMACK",
       "MOVE_BREAKING_SWIPE",
       "MOVE_CURSE"
@@ -48661,7 +48661,7 @@
       "MOVE_SCALE_SHOT",
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_SKITTER_SMACK",
       "MOVE_THROAT_CHOP",
       "MOVE_BREAKING_SWIPE",
@@ -53095,7 +53095,7 @@
       "MOVE_POLTERGEIST",
       "MOVE_PSYCH_UP",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_CURSE"
     ],
     "EggMoves": [],
@@ -53246,7 +53246,7 @@
       "MOVE_POLTERGEIST",
       "MOVE_PSYCH_UP",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_CURSE",
       "MOVE_HARD_PRESS"
     ],
@@ -55325,7 +55325,7 @@
       "MOVE_DUAL_WINGBEAT",
       "MOVE_SCALE_SHOT",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER"
     ],
@@ -55585,7 +55585,7 @@
       "MOVE_SMACK_DOWN",
       "MOVE_WEATHER_BALL",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -56748,7 +56748,7 @@
       "MOVE_TERA_BLAST",
       "MOVE_BURNING_JEALOUSY",
       "MOVE_PSYCH_UP",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_FUTURE_SIGHT",
       "MOVE_EXPANDING_FORCE",
       "MOVE_PSYCHIC_NOISE"
@@ -61258,7 +61258,7 @@
       "MOVE_MISTY_EXPLOSION",
       "MOVE_PSYCH_UP",
       "MOVE_ENDEAVOR",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_METEOR_BEAM"
     ],
     "EggMoves": [],
@@ -61535,7 +61535,7 @@
       "MOVE_WEATHER_BALL",
       "MOVE_DOUBLE_EDGE",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -62265,7 +62265,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_THROAT_CHOP"
     ],
     "EggMoves": [
@@ -66157,7 +66157,7 @@
       "MOVE_GRAVITY",
       "MOVE_POLTERGEIST",
       "MOVE_PAIN_SPLIT",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_CURSE"
     ],
     "EggMoves": [
@@ -66275,7 +66275,7 @@
       "MOVE_GRAVITY",
       "MOVE_POLTERGEIST",
       "MOVE_PAIN_SPLIT",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_CURSE"
     ],
     "EggMoves": [
@@ -66411,7 +66411,7 @@
       "MOVE_GYRO_BALL",
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_METEOR_BEAM"
     ],
     "EggMoves": [],
@@ -68490,7 +68490,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_TEMPER_FLARE",
       "MOVE_COACHING",
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ],
     "EggMoves": [
       "MOVE_HI_JUMP_KICK",
@@ -69745,7 +69745,7 @@
       "MOVE_SCALD",
       "MOVE_HEAT_CRASH",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_METEOR_BEAM",
       "MOVE_CURSE"
     ],
@@ -69860,7 +69860,7 @@
       "MOVE_HEAT_CRASH",
       "MOVE_MUD_SLAP",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_METEOR_BEAM",
       "MOVE_CURSE"
     ],
@@ -70220,7 +70220,7 @@
       "MOVE_TERA_BLAST",
       "MOVE_SAND_TOMB",
       "MOVE_SCALE_SHOT",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_SKITTER_SMACK"
     ],
     "EggMoves": [
@@ -70323,7 +70323,7 @@
       "MOVE_HIGH_HORSEPOWER",
       "MOVE_SCALE_SHOT",
       "MOVE_ENDEAVOR",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_SKITTER_SMACK"
     ],
     "EggMoves": [
@@ -76340,7 +76340,7 @@
       "MOVE_HEAT_CRASH",
       "MOVE_POLTERGEIST",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_CURSE",
       "MOVE_ALLURING_VOICE"
     ],
@@ -79062,7 +79062,7 @@
       "MOVE_SPITE",
       "MOVE_WEATHER_BALL",
       "MOVE_PSYCH_UP",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_EXPANDING_FORCE",
       "MOVE_METEOR_BEAM"
     ],
@@ -85278,7 +85278,7 @@
       "MOVE_HIGH_HORSEPOWER",
       "MOVE_SUPERCELL_SLAM",
       "MOVE_ELECTROWEB",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_METAL_SOUND"
     ],
     "EggMoves": [],
@@ -88951,7 +88951,7 @@
       "MOVE_SCALE_SHOT",
       "MOVE_DOUBLE_EDGE",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER"
     ],
@@ -89420,7 +89420,7 @@
       "MOVE_WEATHER_BALL",
       "MOVE_DOUBLE_EDGE",
       "MOVE_SUPERCELL_SLAM",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_METEOR_BEAM"
     ],
     "EggMoves": [],
@@ -90361,7 +90361,7 @@
       "MOVE_TERA_BLAST",
       "MOVE_SAND_TOMB",
       "MOVE_SMACK_DOWN",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_METAL_SOUND"
     ],
     "EggMoves": [
@@ -90490,7 +90490,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCORCHING_SANDS",
+      "MOVE_SCORCHING_SAND",
       "MOVE_THROAT_CHOP",
       "MOVE_METAL_SOUND",
       "MOVE_CURSE"
@@ -92867,7 +92867,7 @@
       "MOVE_WILD_CHARGE",
       "MOVE_DOUBLE_EDGE",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ],
     "EggMoves": [
       "MOVE_COVET",
@@ -93013,7 +93013,7 @@
       "MOVE_HEAT_CRASH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SANDS"
+      "MOVE_SCORCHING_SAND"
     ],
     "EggMoves": [
       "MOVE_COVET",
