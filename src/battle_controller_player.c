@@ -1859,7 +1859,6 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
         acc = 0;
     }
 
-    // --- PREPARAÇÃO DOS DADOS ---
     u8 pwrStr[10];
     if (pwr < 2 || cat == DAMAGE_CATEGORY_STATUS) 
         StringCopy(pwrStr, gText_ThreeHyphens);
@@ -1872,22 +1871,18 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     else 
         ConvertIntToDecimalStringN(accStr, acc, STR_CONV_MODE_RIGHT_ALIGN, 3);
 
-    // --- CARREGAMENTO DE PALETA SEGURO ---
-    // Usamos índices 6 e 7 para não quebrar o Cursor (que usa 10/11) ou Texto (12-15)
-    // 6 = Verde, 7 = Vermelho
     const u16 sEffColors[] = {RGB(2, 22, 2), RGB(28, 4, 4)}; 
     LoadPalette(sEffColors, BG_PLTT_ID(5) + 6, sizeof(sEffColors));
 
-    // Lógica de Efetividade
     u8 effStr[20];
-    u16 effPaletteIndex = 13; // Preto (Padrão)
+    u16 effPaletteIndex = 13;
 
     if (cat == DAMAGE_CATEGORY_STATUS)
     {
         uq4_12_t mult = GetMoveEffectivenessMultiplier(battler, target, move);
         if (mult == 0) {
             StringCopy(effStr, (u8[]){CHAR_I, CHAR_m, CHAR_m, CHAR_u, CHAR_n, CHAR_e, EOS});
-            effPaletteIndex = 7; // Vermelho (Índice 7)
+            effPaletteIndex = 7;
         } else {
             StringCopy(effStr, gText_ThreeHyphens);
         }
@@ -1897,18 +1892,18 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
         uq4_12_t mult = GetMoveEffectivenessMultiplier(battler, target, move);
         if (mult == 0) {
             StringCopy(effStr, (u8[]){CHAR_I, CHAR_m, CHAR_m, CHAR_u, CHAR_n, CHAR_e, EOS});
-            effPaletteIndex = 7; // Vermelho
+            effPaletteIndex = 7;
         } else if (mult >= UQ_4_12(2.0)) { 
             if (mult >= UQ_4_12(4.0)) StringCopy(effStr, (u8[]){CHAR_x, CHAR_4, EOS}); 
             else StringCopy(effStr, (u8[]){CHAR_x, CHAR_2, EOS});
-            effPaletteIndex = 6; // Verde (Índice 6)
+            effPaletteIndex = 6;
         } else if (mult <= UQ_4_12(0.5)) { 
             if (mult <= UQ_4_12(0.25)) StringCopy(effStr, (u8[]){CHAR_0, CHAR_PERIOD, CHAR_2, CHAR_5, EOS}); 
             else StringCopy(effStr, (u8[]){CHAR_0, CHAR_PERIOD, CHAR_5, EOS});
-            effPaletteIndex = 7; // Vermelho
+            effPaletteIndex = 7;
         } else { 
             StringCopy(effStr, (u8[]){CHAR_x, CHAR_1, EOS}); 
-            effPaletteIndex = 13; // Preto
+            effPaletteIndex = 13;
         }
     }
 
@@ -1919,32 +1914,23 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
 
     u8 colLabel[] = {14, 12, 15}; 
     u8 colVal[]   = {14, 13, 15}; 
-    u8 colEff[]   = {14, effPaletteIndex, 15}; // Usa 6 ou 7
+    u8 colEff[]   = {14, effPaletteIndex, 15};
     u8 colDesc[]  = {14, 13, 15}; 
 
-    // --- CABEÇALHO (Espaçamento 52px) ---
-    // CAT: 4
     AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, 4, 2, 0, 0, colLabel, 0, (u8[]){CHAR_C, CHAR_A, CHAR_T, CHAR_COLON, EOS});
-    
-    // PWR: 56
+
     AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, 56, 2, 0, 0, colLabel, 0, (u8[]){CHAR_P, CHAR_W, CHAR_R, CHAR_COLON, EOS});
     AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, 78, 2, 0, 0, colVal, 0, pwrStr);
 
-    // ACC: 108
     AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, 108, 2, 0, 0, colLabel, 0, (u8[]){CHAR_A, CHAR_C, CHAR_C, CHAR_COLON, EOS});
     AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, 130, 2, 0, 0, colVal, 0, accStr);
 
-    // EFF: 160
     AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, 160, 2, 0, 0, colLabel, 0, (u8[]){CHAR_E, CHAR_F, CHAR_F, CHAR_COLON, EOS});
     AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, 182, 2, 0, 0, colEff, 0, effStr);
 
-    // DESCRIÇÃO (Y=18, X=2)
     const u8* desc = gBattleMoveDescriptionsWide[move]; 
     AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_NORMAL, 2, 18, 0, 0, colDesc, 0, desc);
 
-    // --- ÍCONE (AJUSTE FINO) ---
-    // 58 estava alto, 74 estava baixo/errado.
-    // Vamos tentar 66 (exatamente +8px do original).
     u8 iconX = 47; 
     u8 iconY = 65; 
 
