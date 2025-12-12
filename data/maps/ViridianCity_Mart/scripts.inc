@@ -30,8 +30,26 @@ ViridianCity_Mart_EventScript_ParcelScene::
 	setvar VAR_MAP_SCENE_VIRIDIAN_CITY_MART, 1
 	giveitem_msg ViridianCity_Mart_Text_ReceivedOaksParcelFromClerk, ITEM_OAKS_PARCEL, 1, MUS_OBTAIN_KEY_ITEM
 	setvar VAR_MAP_SCENE_PALLET_TOWN_PROFESSOR_OAKS_LAB, 5
+	goto_if_unset FLAG_HIDE_BULBASAUR_BALL, ViridianCity_Mart_EventScript_HideBulbasaur
+    goto_if_unset FLAG_HIDE_CHARMANDER_BALL, ViridianCity_Mart_EventScript_HideCharmander
+    goto_if_unset FLAG_HIDE_SQUIRTLE_BALL, ViridianCity_Mart_EventScript_HideSquirtle
 	releaseall
 	end
+
+ViridianCity_Mart_EventScript_HideBulbasaur::
+    setflag FLAG_HIDE_BULBASAUR_BALL
+    releaseall
+    end
+
+ViridianCity_Mart_EventScript_HideCharmander::
+    setflag FLAG_HIDE_CHARMANDER_BALL
+    releaseall
+    end
+
+ViridianCity_Mart_EventScript_HideSquirtle::
+    setflag FLAG_HIDE_SQUIRTLE_BALL
+    releaseall
+    end
 
 ViridianCity_Mart_Movement_ApproachCounter::
 	walk_up

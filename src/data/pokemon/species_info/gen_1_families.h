@@ -9603,7 +9603,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sGravelerLevelUpLearnset,
         .teachableLearnset = sGravelerTeachableLearnset,
         .formSpeciesIdTable = sGravelerFormSpeciesIdTable,
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_BLACK_AUGURITE, SPECIES_GOLEM}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_GOLEM, CONDITIONS({IF_HOLD_ITEM, ITEM_HARD_STONE})}),
     },
 
     [SPECIES_GOLEM] =
