@@ -2554,21 +2554,15 @@ static void BufferIVString(u8 stat)
     u8 *dst = sMonSummaryScreen->summary.statValueStrBufs[sStatData[stat].pssStat];
 
     if (isHyperTrained)
+    {
         StringCopy(dst, sText_JudgeHyperTrained);
-    else if (statValue == 31)
-        StringCopy(dst, sText_JudgeBest);
-    else if (statValue == 30)
-        StringCopy(dst, sText_JudgeFantastic);
-    else if (statValue > 25)
-        StringCopy(dst, sText_JudgeVeryGood);
-    else if (statValue > 15)
-        StringCopy(dst, sText_JudgePrettyGood);
-    else if (statValue > 0)
-        StringCopy(dst, sText_JudgeDecent);
+        SetStatXPos(stat, 0);
+    }
     else
-        StringCopy(dst, sText_JudgeNoGood);
-
-    SetStatXPos(stat, 0);
+    {
+        ConvertIntToDecimalStringN(dst, statValue, STR_CONV_MODE_LEFT_ALIGN, 3);
+        SetStatXPos(stat, GetNumberRightAlign63(dst));
+    }
     if (stat != STAT_HP)
         ApplyNatureColor(dst, stat);
 }
