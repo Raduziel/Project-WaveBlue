@@ -19,6 +19,8 @@
 #include "constants/songs.h"
 #include "constants/items.h"
 
+extern const u8 *const gBattleStringsTable[];
+
 static void OakOldManHandleDrawTrainerPic(u32 battler);
 static void OakOldManHandleTrainerSlide(u32 battler);
 static void OakOldManHandleSuccessBallThrowAnim(u32 battler);
@@ -36,15 +38,17 @@ static void OakOldManHandleDrawPartyStatusSummary(u32 battler);
 static void OakOldManHandleEndBounceEffect(u32 battler);
 static void OakOldManHandleLinkStandbyMsg(u32 battler);
 static void OakOldManHandleEndLinkBattle(u32 battler);
-
 static void OakOldManBufferRunCommand(u32 battler);
 static void WaitForMonSelection(u32 battler);
 static void CompleteWhenChoseItem(u32 battler);
-static void PrintOakText_KeepAnEyeOnHP(u32 battler);
 static void Intro_WaitForShinyAnimAndHealthbox(u32 battler);
+static void HandleInputChooseAction(u32 battler);
+
+#if 0
 static void PrintOakText_ForPetesSake(u32 battler);
 static void PrintOakTextWithMainBgDarkened(u32 battler, const u8 *text, u8 delay);
-static void HandleInputChooseAction(u32 battler);
+static void PrintOakText_KeepAnEyeOnHP(u32 battler);
+#endif
 
 static const u8 sText_ForPetesSake[] = _("Oak: Oh, for Pete's sake…\nSo pushy, as always.\p{B_PLAYER_NAME}.\pYou've never had a Pokémon battle\nbefore, have you?\pA Pokémon battle is when Trainers\npit their Pokémon against each\lother.\p");
 static const u8 sText_HowDissapointing[] = _("Oak: Hm…\nHow disappointing…\pIf you win, you earn prize money,\nand your Pokémon grow.\pBut if you lose, {B_PLAYER_NAME}, you end\nup paying prize money…\pHowever, since you had no warning\nthis time, I'll pay for you.\pBut things won't be this way once\nyou step outside these doors.\pThat's why you must strengthen your\nPokémon by battling wild Pokémon.\p");
@@ -121,7 +125,8 @@ void SetControllerToOakOrOldMan(u32 battler)
     gBattlerControllerFuncs[battler] = OakOldManBufferRunCommand;
     gBattleStruct->simulatedInputState[0] = 0;
     gBattleStruct->simulatedInputState[1] = 0;
-    gBattleStruct->simulatedInputState[2] = 0;
+//  gBattleStruct->simulatedInputState[2] = 0;
+    gBattleStruct->simulatedInputState[2] = 0xFF;
     gBattleStruct->simulatedInputState[3] = 0;
 }
 
@@ -138,31 +143,41 @@ static void OakOldManBufferRunCommand(u32 battler)
 
 static void HandleInputChooseAction(u32 battler)
 {
-    // Like player, but specifically for Rival in Oak's Lab
+
     u16 itemId = gBattleResources->bufferA[battler][2] | (gBattleResources->bufferA[battler][3] << 8);
+
+    const u8 sText_ItemsCantBeUsed[] = _("Items can't be\nused now.");
 
     DoBounceEffect(battler, BOUNCE_HEALTHBOX, 7, 1);
     DoBounceEffect(battler, BOUNCE_MON, 7, 1);
     if (JOY_NEW(A_BUTTON))
     {
-        PlaySE(SE_SELECT);
+      //PlaySE(SE_SELECT);
 
         switch (gActionSelectionCursor[battler])
         {
         case 0:
+            PlaySE(SE_SELECT);
             BtlController_EmitTwoReturnValues(battler, 1, B_ACTION_USE_MOVE, 0);
             break;
         case 1:
-            BtlController_EmitTwoReturnValues(battler, 1, B_ACTION_USE_ITEM, 0);
+          //BtlController_EmitTwoReturnValues(battler, 1, B_ACTION_USE_ITEM, 0);
+            PlaySE(SE_BOO);
+            BattlePutTextOnWindow(sText_ItemsCantBeUsed, B_WIN_ACTION_PROMPT);
             break;
         case 2:
+            PlaySE(SE_SELECT);
             BtlController_EmitTwoReturnValues(battler, 1, B_ACTION_SWITCH, 0);
             break;
         case 3:
+            PlaySE(SE_SELECT);
             BtlController_EmitTwoReturnValues(battler, 1, B_ACTION_RUN, 0);
             break;
         }
+        if (gActionSelectionCursor[battler] != 1)
+        {
         OakOldManBufferExecCompleted(battler);
+        }    
     }
     else if (JOY_NEW(DPAD_LEFT))
     {
@@ -325,6 +340,7 @@ static void OpenBagAndChooseItem(u32 battler)
     }
 }
 
+/*
 static void CompleteWhenChoseItem(u32 battler)
 {
     if (gMain.callback2 == BattleMainCB2 && !gPaletteFade.active)
@@ -341,6 +357,16 @@ static void CompleteWhenChoseItem(u32 battler)
             BtlController_EmitOneReturnValue(battler, 1, gSpecialVar_ItemId);
             OakOldManBufferExecCompleted(battler);
         }
+    }
+}
+*/
+
+static void CompleteWhenChoseItem(u32 battler)
+{
+    if (gMain.callback2 == BattleMainCB2 && !gPaletteFade.active)
+    {
+        BtlController_EmitOneReturnValue(battler, 1, gSpecialVar_ItemId);
+        OakOldManBufferExecCompleted(battler);
     }
 }
 
@@ -392,10 +418,12 @@ static void Intro_WaitForShinyAnimAndHealthbox(u32 battler)
         FreeSpritePaletteByTag(ANIM_TAG_GOLD_STARS);
         CreateTask(Task_PlayerController_RestoreBgmAfterCry, 10);
         HandleLowHpMusicChange(&gPlayerParty[gBattlerPartyIndexes[battler]], battler);
-        gBattlerControllerFuncs[battler] = PrintOakText_ForPetesSake;
+    //  gBattlerControllerFuncs[battler] = PrintOakText_ForPetesSake;
+        OakOldManBufferExecCompleted(battler);
     }
 }
 
+#if 0
 static void PrintOakText_ForPetesSake(u32 battler)
 {
     u32 mask;
@@ -488,32 +516,41 @@ static void PrintOakText_ForPetesSake(u32 battler)
         break;
     }
 }
+#endif    
 
 void PrintOakText_InflictingDamageIsKey(u32 battler)
 {
-    PrintOakTextWithMainBgDarkened(battler, sText_InflictingDamageIsKey, 1);
+  //PrintOakTextWithMainBgDarkened(battler, sText_InflictingDamageIsKey, 1);
+    OakOldManBufferExecCompleted(battler);
 }
 
+#if 0
 static void PrintOakText_LoweringStats(u32 battler)
 {
     PrintOakTextWithMainBgDarkened(battler, sText_LoweringStats, 64);
 }
+#endif    
 
 void PrintOakText_OakNoRunningFromATrainer(u32 battler)
 {
-    PrintOakTextWithMainBgDarkened(battler, sText_OakNoRunningFromATrainer, 1);
+  //PrintOakTextWithMainBgDarkened(battler, sText_OakNoRunningFromATrainer, 1);
+    OakOldManBufferExecCompleted(battler);
 }
 
+#if 0
 static void PrintOakText_WinEarnsPrizeMoney(u32 battler)
 {
     PrintOakTextWithMainBgDarkened(battler, sText_WinEarnsPrizeMoney, 64);
 }
+#endif    
 
 void PrintOakText_HowDisappointing(u32 battler)
 {
-    PrintOakTextWithMainBgDarkened(battler, sText_HowDissapointing, 64);
+  //PrintOakTextWithMainBgDarkened(battler, sText_HowDissapointing, 64);
+    OakOldManBufferExecCompleted(battler);
 }
 
+#if 0
 static void PrintOakTextWithMainBgDarkened(u32 battler, const u8 *text, u8 delay)
 {
     // If delay is 0, it's treated as 256.
@@ -574,7 +611,9 @@ static void PrintOakTextWithMainBgDarkened(u32 battler, const u8 *text, u8 delay
         break;
     }
 }
+#endif
 
+#if 0
 static void PrintOakText_KeepAnEyeOnHP(u32 battler)
 {
     u32 mask;
@@ -651,6 +690,7 @@ static void PrintOakText_KeepAnEyeOnHP(u32 battler)
         break;
     }
 }
+#endif    
 
 void OakOldManBufferExecCompleted(u32 battler)
 {
@@ -708,7 +748,7 @@ static void OakOldManHandlePrintString(u32 battler)
             BattlePutTextOnWindow(gDisplayedStringBattle, (B_WIN_MSG | B_TEXT_FLAG_NPC_CONTEXT_FONT));
         else
             BattlePutTextOnWindow(gDisplayedStringBattle, B_WIN_MSG);
-        if (gBattleTypeFlags & BATTLE_TYPE_FIRST_BATTLE)
+    /*  if (gBattleTypeFlags & BATTLE_TYPE_FIRST_BATTLE)
         {
             switch (*stringId)
             {
@@ -730,7 +770,7 @@ static void OakOldManHandlePrintString(u32 battler)
                 gBattlerControllerFuncs[battler] = PrintOakText_OakNoRunningFromATrainer;
                 return;
             }
-        }
+        } */
         gBattlerControllerFuncs[battler] = CompleteOnInactiveTextPrinter;
     }
 }

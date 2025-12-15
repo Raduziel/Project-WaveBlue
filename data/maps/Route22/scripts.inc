@@ -30,7 +30,8 @@ Route22_EventScript_EarlyRival::
 	call_if_eq VAR_TEMP_1, 2, Route22_EventScript_EarlyRivalApproachBottom
 	delay 6
 	msgbox Route22_Text_EarlyRivalIntro
-	call_if_eq VAR_STARTER_MON, 2, Route22_EventScript_EarlyRivalSquirtle
+	setvar VAR_MAP_SCENE_ROUTE22, 2
+    call_if_eq VAR_STARTER_MON, 2, Route22_EventScript_EarlyRivalSquirtle
 	call_if_eq VAR_STARTER_MON, 1, Route22_EventScript_EarlyRivalBulbasaur
 	call_if_eq VAR_STARTER_MON, 0, Route22_EventScript_EarlyRivalCharmander
 	msgbox Route22_Text_EarlyRivalPostBattle
@@ -42,7 +43,6 @@ Route22_EventScript_EarlyRival::
 	call_if_eq VAR_TEMP_1, 2, Route22_EventScript_EarlyRivalExitBottom
 	fadedefaultbgm
 	removeobject LOCALID_ROUTE22_RIVAL
-	setvar VAR_MAP_SCENE_ROUTE22, 2
 	releaseall
 	end
 
@@ -79,7 +79,7 @@ Route22_EventScript_EarlyRivalExitBottom::
 	waitmovement 0
 	return
 
-Route22_Movement_UnusedRivalExit:: @ 8
+Route22_Movement_UnusedRivalExit::
 	walk_right
 	walk_right
 	walk_right

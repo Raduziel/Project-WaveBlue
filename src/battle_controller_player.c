@@ -316,21 +316,32 @@ static void HandleInputChooseAction(u32 battler)
 
     if (JOY_NEW(A_BUTTON))
     {
-        PlaySE(SE_SELECT);
         TryHideLastUsedBall();
 
         switch (gActionSelectionCursor[battler])
         {
         case 0: // Top left
+            PlaySE(SE_SELECT);
             BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_USE_MOVE, 0);
             break;
         case 1: // Top right
+
+            if (gBattleTypeFlags & BATTLE_TYPE_TRAINER)
+            {
+                PlaySE(SE_BOO); 
+            }
+            else
+            {
+                PlaySE(SE_SELECT);
+            }
             BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_USE_ITEM, 0);
             break;
         case 2: // Bottom left
+            PlaySE(SE_SELECT);
             BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_SWITCH, 0);
             break;
         case 3: // Bottom right
+            PlaySE(SE_SELECT);
             BtlController_EmitTwoReturnValues(battler, B_COMM_TO_ENGINE, B_ACTION_RUN, 0);
             break;
         }
