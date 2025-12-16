@@ -1,25 +1,3 @@
-Text_DreamEaterTeach::
-    .string "Yawn!\n"
-    .string "I must have dozed off in the sun.\p"
-    .string "I had this weird dream about\n"
-    .string "a Drowzee eating my dream.\p"
-    .string "And…\n"
-    .string "I learned how to eat dreams…\p"
-    .string "Oogh, this is too spooky!\p"
-    .string "Let me teach it to a Pokémon so\n"
-    .string "I can forget about it!$"
-
-Text_DreamEaterDeclined::
-    .string "…Snore…$"
-
-Text_DreamEaterWhichMon::
-    .string "Which Pokémon wants to learn\n"
-    .string "Dream Eater?$"
-
-Text_DreamEaterTaught::
-    .string "…ZZZ…\n"
-    .string "I…can't eat…anymore…$"
-
 PewterCity_Text_ClefairyCameFromMoon::
     .string "Clefairy came from the moon.\n"
     .string "That's what the rumor is.\p"
@@ -70,6 +48,11 @@ PewterCity_Text_BrocksLookingForChallengersFollowMe::
 PewterCity_Text_GoTakeOnBrock::
     .string "If you have the right stuff,\n"
     .string "go take on Brock!$"
+
+PewterCity_Text_DontSneakUp::
+    .string "Hey! Don't sneak up on me like that!\p"
+    .string "If you are looking for a challenge,\n"
+    .string "Brock is waiting at the Gym!$"    
 
 PewterCity_Text_TrainerTipsEarningEXP::
     .string "Trainer Tips\p"

@@ -200,20 +200,19 @@ PewterCity_EventScript_GymGuideFinish::
 	end
 
 PewterCity_EventScript_GymGuide::
-	lock
-	faceplayer
-	msgbox PewterCity_Text_BrocksLookingForChallengersFollowMe
-	closemessage
-	playbgm MUS_FOLLOW_ME, 0
-	msgbox PewterCity_Text_GoTakeOnBrock
-	closemessage
-	applymovement LOCALID_PEWTER_GYM_GUIDE, PewterCity_Movement_GymGuideExit
+    lock
+	textcolor NPC_TEXT_COLOR_MALE
+	playse SE_PIN
+	applymovement LOCALID_PEWTER_GYM_GUIDE, Common_Movement_ExclamationMark
+	waitse
 	waitmovement 0
-	fadedefaultbgm
-	removeobject LOCALID_PEWTER_GYM_GUIDE
-	clearflag FLAG_HIDE_PEWTER_CITY_GYM_GUIDE
-	release
-	end
+    faceplayer
+    msgbox PewterCity_Text_DontSneakUp
+    closemessage
+    applymovement LOCALID_PEWTER_GYM_GUIDE, Common_Movement_FaceDown
+    waitmovement 0
+    release
+    end
 
 PewterCity_Movement_GuideApproachesMid::
 	walk_down

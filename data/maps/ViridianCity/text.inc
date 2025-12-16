@@ -1,3 +1,25 @@
+Text_DreamEaterTeach::
+    .string "Yawn!\n"
+    .string "I must have dozed off in the sun.\p"
+    .string "I had this weird dream about\n"
+    .string "a Drowzee eating my dream.\p"
+    .string "And…\n"
+    .string "I learned how to eat dreams…\p"
+    .string "Oogh, this is too spooky!\p"
+    .string "Let me teach it to a Pokémon so\n"
+    .string "I can forget about it!$"
+
+Text_DreamEaterDeclined::
+    .string "…Snore…$"
+
+Text_DreamEaterWhichMon::
+    .string "Which Pokémon wants to learn\n"
+    .string "Dream Eater?$"
+
+Text_DreamEaterTaught::
+    .string "…ZZZ…\n"
+    .string "I…can't eat…anymore…$"
+
 ViridianCity_Text_CanCarryMonsAnywhere::
     .string "Those Poké Balls at your waist!\n"
     .string "You have Pokémon, don't you?\p"
@@ -6,7 +28,7 @@ ViridianCity_Text_CanCarryMonsAnywhere::
 
 ViridianCity_Text_GymClosedWonderWhoLeaderIs::
     .string "This Pokémon Gym is always closed.\p"
-    .string "I wonder who the  is?$"
+    .string "I wonder who the Leader is?$"
 
 ViridianCity_Text_ViridiansGymLeaderReturned::
     .string "Viridian Gym's  returned!$"
