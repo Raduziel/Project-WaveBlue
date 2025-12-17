@@ -75,7 +75,7 @@ Route4_Text_PeopleLikeAndRespectBrock::
     .string "You got it from Brock, didn't you?\p"
     .string "Brock is cool. He's not just tough.\n"
     .string "People like and respect him.\p"
-    .string "I want to become a Gym \n"
+    .string "I want to become a Gym Leader\n"
     .string "like him.$"
 
 Route4_Text_CaveGuyDialogue1::

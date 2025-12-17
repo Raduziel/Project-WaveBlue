@@ -38,6 +38,6 @@ IndigoPlateau_PokemonCenter_1F_Text_LancesCousinGymLeaderFarAway::
     .string "Maybe becoming an Elite Four\n"
     .string "member is in the blood.\p"
     .string "From what I've heard, Lance has\n"
-    .string "a cousin who's a Gym \l"
+    .string "a cousin who's a Gym Leader\l"
     .string "somewhere far away.$"
 
