@@ -14,7 +14,8 @@ PalletTown_Text_ReadItReadIt::
 @ Used by sign
 PalletTown_Text_PressStartToOpenMenu::
 	.string "Trainer Tips\p"
-	.string "Press Start to open the Menu!$"
+	.string "Press Start to open the Menu!\n"
+	.string "Press B to {COLOR GREEN}Enable{COLOR DARK_GRAY} or {COLOR RED}Disable{COLOR DARK_GRAY} Running!$"
 
 PalletTown_Text_SignsAreUsefulArentThey::
 	.string "Signs are useful, aren't they?$"
@@ -28,3 +29,4 @@ PalletTown_Text_LookCopiedTrainerTipsSign::
 PalletTown_Text_PressStartToOpenMenuCopy::
 	.string "Trainer Tips!\p"
 	.string "Press Start to open the Menu!$"
+	.string "Press B to Enable or Disable Running!$"

@@ -52,12 +52,15 @@
     F(SKILL_SWAP) \
     F(SNATCH) \
     F(OVERHEAT) \
+    F(SIGNAL_BEAM) \
     F(BUG_BUZZ) \
     F(LEECH_LIFE) \
     F(POLLEN_PUFF) \
     F(STRUGGLE_BUG) \
     F(U_TURN) \
     F(X_SCISSOR) \
+    F(HONE_CLAWS) \
+    F(THROAT_CHOP) \
     F(CRUNCH) \
     F(DARK_PULSE) \
     F(FAKE_TEARS) \
@@ -72,6 +75,7 @@
     F(ELECTRIC_TERRAIN) \
     F(VOLT_SWITCH) \
     F(WILD_CHARGE) \
+    F(ALLURING_VOICE) \
     F(DAZZLING_GLEAM) \
     F(DRAINING_KISS) \
     F(MISTY_TERRAIN) \
@@ -109,12 +113,13 @@
     F(TOXIC_SPIKES) \
     F(PSYCHIC_FANGS) \
     F(PSYCHIC_TERRAIN) \
-    F(PSYSHOCK) \
+    F(PSYCHO_CUT) \
     F(ZEN_HEADBUTT) \
     F(POWER_GEM) \
     F(ROCK_BLAST) \
     F(STEALTH_ROCK) \
     F(STONE_EDGE) \
+    F(MAGNET_BOMB) \
     F(FLASH_CANNON) \
     F(HEAVY_SLAM) \
     F(IRON_HEAD) \

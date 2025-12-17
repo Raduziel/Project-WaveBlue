@@ -71,10 +71,10 @@ OneIsland_PokemonCenter_1F_Text_CelioPleaseTakeThis::
     .string "to Two Island, please take this.$"
 
 OneIsland_PokemonCenter_1F_Text_PassLetsYouTravelBetweenIslands::
-    .string "It's a PASS for the ferry service\n"
+    .string "It's a Pass for the ferry service\n"
     .string "serving the local islands.\p"
     .string "It will let you travel between the\n"
-    .string "Islands ONE, TWO, and THREE.\p"
+    .string "Islands One, Two, and Three.\p"
     .string "Oh, you should have this, too.$"
 
 OneIsland_PokemonCenter_1F_Text_ReceivedExtraPageForTownMap::
@@ -223,18 +223,18 @@ OneIsland_PokemonCenter_1F_Text_AnotherGemstoneInSeviiIslands::
     .string "{PLAYER}, please, I need you to go\n"
     .string "find the other gem.\p"
     .string "{PLAYER}, may I have your ferry\n"
-    .string "PASS and the Town Map?$"
+    .string "pass and the Town Map?$"
 
 OneIsland_PokemonCenter_1F_Text_ReturnedTriPassForRainbowPass::
-    .string "{PLAYER} returned the TRI-PASS and\n"
-    .string "received the RAINBOW PASS.$"
+    .string "{PLAYER} returned the Tri-Pass and\n"
+    .string "received the Rainbow Pass.$"
 
 OneIsland_PokemonCenter_1F_Text_ObtainedExtraMapPage::
     .string "Obtained an extra page for the\n"
     .string "Town Map!$"
 
 OneIsland_PokemonCenter_1F_Text_PassLetYouGetToAllIslands::
-    .string "This is my own ferry PASS.\p"
+    .string "This is my own ferry pass.\p"
     .string "It will let you get to all the\n"
     .string "Sevii Islands.\p"
     .string "{PLAYER}, please, I can't do\n"
@@ -353,5 +353,5 @@ OneIsland_PokemonCenter_1F_Text_MachineLinkedWithKantoAndHoenn::
     .string "and Hoenn regions.$"
 
 OneIsland_PokemonCenter_1F_Text_ObtainedTriPass::
-    .string "Obtained the TRI-PASS!$"
+    .string "Obtained the Tri-Pass!$"
 

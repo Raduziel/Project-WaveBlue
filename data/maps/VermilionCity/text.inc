@@ -85,7 +85,7 @@ VermilionCity_Text_Seagallop7Departing::
     .string "departing immediately.$"
 
 VermilionCity_Text_BoardSeagallopRainbowPass::
-    .string "Ah, you have a RAINBOW PASS.\p"
+    .string "Ah, you have a Rainbow Pass.\p"
     .string "Would you like to board\n"
     .string "a Seagallop ferry?$"
 

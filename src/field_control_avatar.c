@@ -40,6 +40,8 @@
 #define SIGNPOST_SCRIPTED 240
 #define SIGNPOST_NA 255
 
+extern const u8 EventScript_ToggleLevelCap[];
+
 static void QuestLogOverrideJoyVars(struct FieldInput *input, u16 *newKeys, u16 *heldKeys);
 static void Task_QuestLogPlayback_OpenStartMenu(u8 taskId);
 static void GetPlayerPosition(struct MapPosition * position);
@@ -291,6 +293,15 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
         if (TryDoorWarp(&position, metatileBehavior, playerDirection) == TRUE)
         {
             gFieldInputRecord.heldDirection2 = TRUE;
+            return TRUE;
+        }
+    }
+
+    if (JOY_HELD(L_BUTTON) && input->pressedStartButton)
+    {
+        if (!ScriptContext_IsEnabled())
+        {
+            ScriptContext_SetupScript(EventScript_ToggleLevelCap);
             return TRUE;
         }
     }

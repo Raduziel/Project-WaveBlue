@@ -7,17 +7,22 @@
 
 u32 GetCurrentLevelCap(void)
 {
+    if (FlagGet(FLAG_TOGGLE_LEVEL_CAP))
+    {
+        return MAX_LEVEL;
+    }
     static const u32 sLevelCapFlagMap[][2] =
     {
         {FLAG_BADGE01_GET,    14},
         {FLAG_BADGE02_GET,    21},
         {FLAG_BADGE03_GET,    24},
         {FLAG_BADGE04_GET,    29},
-        {FLAG_BADGE05_GET,    43},
-        {FLAG_BADGE06_GET,    43},
+        {FLAG_BADGE05_GET,    43}, 
+        {FLAG_BADGE06_GET,    45}, 
         {FLAG_BADGE07_GET,    47},
         {FLAG_BADGE08_GET,    50},
         {FLAG_SYS_GAME_CLEAR, 63},
+        {FLAG_DEFEATED_OAK,   80},
     };
 
     u32 i;
@@ -38,6 +43,7 @@ u32 GetCurrentLevelCap(void)
     return MAX_LEVEL;
 }
 
+/*
 u32 GetSoftLevelCapExpValue(u32 level, u32 expValue)
 {
     static const u32 sExpScalingDown[5] = { 4, 8, 16, 32, 64 };
@@ -75,6 +81,46 @@ u32 GetSoftLevelCapExpValue(u32 level, u32 expValue)
             return expValue / sExpScalingDown[ARRAY_COUNT(sExpScalingDown) - 1];
         else
             return expValue / sExpScalingDown[levelDifference];
+    }
+    else
+    {
+       return expValue;
+    }
+}
+*/
+
+u32 GetSoftLevelCapExpValue(u32 level, u32 expValue)
+{
+    static const u32 sExpScalingUp[5]   = { 16, 8, 4, 2, 1 };
+    
+    u32 currentLevelCap = GetCurrentLevelCap();
+    u32 levelDifference;
+
+    if (B_EXP_CAP_TYPE == EXP_CAP_NONE)
+        return expValue;
+
+    if (level <= currentLevelCap)
+    {
+        if (B_LEVEL_CAP_EXP_UP)
+        {
+            levelDifference = currentLevelCap - level;
+            if (levelDifference > ARRAY_COUNT(sExpScalingUp) - 1)
+                return expValue + (expValue / sExpScalingUp[ARRAY_COUNT(sExpScalingUp) - 1]);
+            else
+                return expValue + (expValue / sExpScalingUp[levelDifference]);
+        }
+        else
+        {
+            return expValue;
+        }
+    }
+    else if (B_EXP_CAP_TYPE == EXP_CAP_HARD)
+    {
+        return 0;
+    }
+    else if (B_EXP_CAP_TYPE == EXP_CAP_SOFT)
+    {
+        return expValue / 4; 
     }
     else
     {
