@@ -112,7 +112,7 @@ static EWRAM_DATA struct {
 
 static EWRAM_DATA void *sTilemapBuffer = NULL;
 static EWRAM_DATA struct ListMenuItem * sListMenuItemsBuffer = NULL;
-static EWRAM_DATA u8 (* sListMenuStringsBuffer)[40] = NULL;
+static EWRAM_DATA u8 (* sListMenuStringsBuffer)[29] = NULL;
 
 static void CB2_SetUpTMCaseUI_Blocking(void);
 static bool8 DoSetUpTMCaseUI(void);
@@ -633,7 +633,7 @@ static void CreateTMCaseListMenuBuffers(void)
 {
     struct BagPocket * pocket = &gBagPockets[POCKET_TM_HM];
     sListMenuItemsBuffer = Alloc((pocket->capacity + 1) * sizeof(struct ListMenuItem));
-    sListMenuStringsBuffer = Alloc(sTMCaseDynamicResources->numTMs * 40);
+    sListMenuStringsBuffer = Alloc(sTMCaseDynamicResources->numTMs * 29);
 }
 
 static void InitTMCaseListMenuItems(void)
@@ -670,27 +670,20 @@ static void InitTMCaseListMenuItems(void)
     gMultiuseListMenuTemplate.scrollMultiple = 0;
 }
 
-static void GetTMNumberAndMoveString(u8 * dest, u16 itemId)
+static void GetTMNumberAndMoveString(u8 *dest, u16 itemId)
 {
     StringCopy(gStringVar4, gText_FontSmall);
     if (IsItemHM(itemId))
     {
         StringAppend(gStringVar4, sText_ClearTo18);
         StringAppend(gStringVar4, gText_NumberClear01);
-        ConvertIntToDecimalStringN(gStringVar1, itemId - ITEM_HM01 + 1, STR_CONV_MODE_LEADING_ZEROS, 1);
+        ConvertIntToDecimalStringN(gStringVar1, GetItemTMHMIndex(itemId) - NUM_TECHNICAL_MACHINES, STR_CONV_MODE_LEADING_ZEROS, NUM_HIDDEN_MACHINES >= 10 ? 2 : 1);
         StringAppend(gStringVar4, gStringVar1);
     }
     else
     {
         StringAppend(gStringVar4, gText_NumberClear01);
-       if (itemId - ITEM_TM01 + 1 >= 100)
-    {
-          ConvertIntToDecimalStringN(gStringVar1, itemId - ITEM_TM01 + 1, STR_CONV_MODE_LEFT_ALIGN, 3);
-    }
-    else
-    {
-         ConvertIntToDecimalStringN(gStringVar1, itemId - ITEM_TM01 + 1, STR_CONV_MODE_LEADING_ZEROS, 2);
-    }
+        ConvertIntToDecimalStringN(gStringVar1, GetItemTMHMIndex(itemId), STR_CONV_MODE_LEADING_ZEROS, NUM_TECHNICAL_MACHINES >= 100 ? 3 : 2);
         StringAppend(gStringVar4, gStringVar1);
     }
     StringAppend(gStringVar4, sText_SingleSpace);
@@ -952,7 +945,7 @@ static void ReturnToList(u8 taskId)
 static void Task_SelectedTMHM_Field(u8 taskId)
 {
     u8 * strbuf;
-    
+
     // Create context window
     TMCase_SetWindowBorder2(WIN_SELECTED_MSG);
     if (!MenuHelpers_IsLinkActive() && InUnionRoom() != TRUE)
@@ -982,7 +975,7 @@ static void Task_SelectedTMHM_Field(u8 taskId)
                                   sTMCaseDynamicResources->menuActionIndices);
 
     InitMenuNormal(sTMCaseDynamicResources->contextMenuWindowId, FONT_NORMAL, 0, 2, GetFontAttribute(FONT_NORMAL, FONTATTR_MAX_LETTER_HEIGHT) + 2, sTMCaseDynamicResources->numMenuActions, 0);
-    
+
     // Print label text next to the context window
     strbuf = Alloc(256);
     GetTMNumberAndMoveString(strbuf, gSpecialVar_ItemId);
@@ -1187,7 +1180,7 @@ static void Task_SelectedTMHM_Sell(u8 taskId)
 
             if (tQuantity > MAX_BAG_ITEM_CAPACITY)
                 tQuantity = MAX_BAG_ITEM_CAPACITY;
-            
+
             if (tQuantity > maxQuantity)
                 tQuantity = maxQuantity;
 
@@ -1731,6 +1724,7 @@ static void SpriteCB_SwapDisc(struct Sprite *sprite)
         }
         break;
     case 1:
+        // Raise new disc out of case
         if (sprite->y2 <= 0)
             sprite->callback = SpriteCallbackDummy;
         else
