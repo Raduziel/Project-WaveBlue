@@ -5,7 +5,6 @@ EventScript_CutTree::
 	goto_if_eq VAR_RESULT, FALSE, EventScript_CantCutTree
 	msgbox Text_CutTreeDown, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_DontCutTree
-	msgbox Text_MonUsedMove
 	closemessage
 EventScript_CutTreeCommon:
 	isfollowerfieldmoveuser VAR_0x8004
@@ -41,9 +40,7 @@ EventScript_DontCutTree::
 	end
 
 Text_CutTreeDown::
-	.string "This tree looks like it can be Cut\n"
-	.string "down!\p"
-	.string "Would you like to Cut it?$"
+	.string "Would you like to use Cut?$"
 
 Text_MonUsedMove::
 	.string "{STR_VAR_1} used {STR_VAR_2}!$"
@@ -64,7 +61,6 @@ EventScript_RockSmash::
 	goto_if_eq VAR_RESULT, FALSE, EventScript_CantSmashRock
 	msgbox Text_UseRockSmash, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_DontSmashRock
-	msgbox Text_MonUsedMove
 	closemessage
 EventScript_RockSmashCommon:
 	@ check if follower should use the field move
@@ -211,7 +207,6 @@ EventScript_DontSmashRock::
 	end
 
 Text_UseRockSmash::
-	.string "This rock appears to be breakable.\n"
 	.string "Would you like to use Rock Smash?$"
 
 Text_MonMaySmashRock::
@@ -258,15 +253,11 @@ EventScript_DontUseStrength::
 	end
 
 Text_UseStrength::
-	.string "It's a big boulder, but a Pokémon\n"
-	.string "may be able to push it aside.\p"
 	.string "Would you like to use Strength?$"
 
 Text_MonUsedStrengthCanMoveBoulders::
-	.string "{STR_VAR_1} used Strength!\p"
-	.string "{STR_VAR_1}'s Strength made it\n"
-	.string "possible to move boulders around!$"
-
+	.string "{STR_VAR_1} used Strength!$"
+	
 Text_MonMayPushBoulder::
 	.string "It's a big boulder, but a Pokémon\n"
 	.string "may be able to push it aside.$"
