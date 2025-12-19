@@ -58,10 +58,6 @@ CeladonCity_DepartmentStore_4F_Items::
 	.2byte ITEM_SHINY_STONE
 	.2byte ITEM_DAWN_STONE
 	.2byte ITEM_DUSK_STONE
-	.2byte ITEM_PROTECTOR
-	.2byte ITEM_MAGMARIZER
-	.2byte ITEM_ELECTIRIZER
-	.2byte ITEM_UPGRADE
 	.2byte ITEM_NONE
 	release
 	end

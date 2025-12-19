@@ -1989,6 +1989,8 @@ u8 GetAilmentFromStatus(u32 status)
         return AILMENT_FRZ;
     if (status & STATUS1_BURN)
         return AILMENT_BRN;
+    if (status & STATUS1_FROSTBITE)
+        return AILMENT_FRZ;
     return AILMENT_NONE;
 }
 
@@ -6118,7 +6120,18 @@ static void CB2_UseEvolutionStone(void)
     targetSpecies = GetEvolutionTargetSpecies(&gPlayerParty[gPartyMenu.slotId], EVO_MODE_ITEM_USE, gSpecialVar_ItemId, NULL, NULL, CHECK_EVO);
     BeginEvolutionScene(&gPlayerParty[gPartyMenu.slotId], targetSpecies, FALSE, gPartyMenu.slotId);
     ItemUse_SetQuestLogEvent(QL_EVENT_USED_ITEM, &gPlayerParty[gPartyMenu.slotId], gSpecialVar_ItemId, 0xFFFF);
-    RemoveBagItem(gSpecialVar_ItemId, 1);
+    if (gSpecialVar_ItemId != ITEM_BLACK_AUGURITE
+     && gSpecialVar_ItemId != ITEM_METAL_COAT
+     && gSpecialVar_ItemId != ITEM_UPGRADE
+     && gSpecialVar_ItemId != ITEM_DUBIOUS_DISC
+     && gSpecialVar_ItemId != ITEM_PROTECTOR
+     && gSpecialVar_ItemId != ITEM_MAGMARIZER
+     && gSpecialVar_ItemId != ITEM_ELECTIRIZER
+     && gSpecialVar_ItemId != ITEM_KINGS_ROCK
+     && gSpecialVar_ItemId != ITEM_DRAGON_SCALE)
+    {
+        RemoveBagItem(gSpecialVar_ItemId, 1);
+    }
 }
 
 static bool8 MonCanEvolve(void)

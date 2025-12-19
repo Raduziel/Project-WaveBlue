@@ -190,20 +190,20 @@
 #define FLAG_HIDE_SAFFRON_CITY_POKECENTER_SABRINA_JOURNALS 0x0AE
 
 // Unused?
-#define I_EXP_SHARE_FLAG                                 0x0AF //Exp Share
-#define VAR_LAST_REPEL_LURE_USED                         0x0B0 //Repel/Lure
-#define B_FLAG_FOLLOWERS_DISABLED                        0x0B1 //Enable/Disable Following Pokémon
-#define OW_FLAG_NO_ENCOUNTER                             0x0B2 //No Encounters
-#define OW_FLAG_POKE_RIDER                               0x0B3 //Fly from Town Map
-#define P_FLAG_EGG_MOVES                                 0x0B4 //Egg Move Relearner
-#define OW_FLAG_NO_TRAINER_SEE                           0x0B5 //No Trainer Battles
-#define OW_FLAG_NO_COLLISION                             0x0B6 //No collisions
-#define FLAG_DELIVERED_ESCAPE_ROPE                       0x0B7 //Escape Rope Cutscene
-#define FLAG_HIDE_DOJO_HITMONTOP_BALL                    0x0B8 //Got Hitmontop from the Dojo
-#define FLAG_HIDE_PORYGON                                0x0B9 //Removes Porygon from the Pokémon Mansion
-#define FLAG_LAVENDER_TM10_CHANNELER                     0x0BA //NPC that delivers TM10 Hidden
-#define FLAG_HIDE_ROUTE25_BILL                           0x0BB //Box_Link Event
-#define FLAG_HIDE_ROUTE12_MYSTIC_WATER                   0x0BC //Route 12 Mystic Water
+#define I_EXP_SHARE_FLAG                                 0x0AF
+#define VAR_LAST_REPEL_LURE_USED                         0x0B0
+#define B_FLAG_FOLLOWERS_DISABLED                        0x0B1
+#define OW_FLAG_NO_ENCOUNTER                             0x0B2
+#define OW_FLAG_POKE_RIDER                               0x0B3
+#define P_FLAG_EGG_MOVES                                 0x0B4
+#define OW_FLAG_NO_TRAINER_SEE                           0x0B5
+#define OW_FLAG_NO_COLLISION                             0x0B6
+#define FLAG_DELIVERED_ESCAPE_ROPE                       0x0B7
+#define FLAG_HIDE_DOJO_HITMONTOP_BALL                    0x0B8
+#define FLAG_HIDE_PORYGON                                0x0B9
+#define FLAG_LAVENDER_TM10_CHANNELER                     0x0BA
+#define FLAG_HIDE_ROUTE25_BILL                           0x0BB
+#define FLAG_HIDE_ROUTE12_MYSTIC_WATER                   0x0BC
 #define FLAG_HIDE_POKEMON_MANSION_B1F_TM35               0x0BD
 #define FLAG_HIDE_CELADON_ROOFROOM_TM42                  0x0BE
 #define FLAG_HIDE_ROCKET_HIDEOUT_B3F_SMOKE_BALL          0x0BF
@@ -320,7 +320,7 @@
 #define FLAG_BOUGHT_TM125                                0x12E
 #define FLAG_TM_MERCHANT_INTRODUCED                      0x12F
 #define FLAG_TOGGLE_LEVEL_CAP                            0x130
-#define FLAG_0x131                 0x131
+#define FLAG_HIDE_VERMILION_CITY_ELECTIRIZER             0x131
 #define FLAG_0x132                 0x132
 #define FLAG_0x133                 0x133
 #define FLAG_0x134                 0x134
@@ -448,7 +448,7 @@
 #define FLAG_HIDE_VICTORY_ROAD_2F_TM07                          0x1AC
 #define FLAG_HIDE_VICTORY_ROAD_2F_FULL_HEAL                     0x1AD
 #define FLAG_HIDE_VICTORY_ROAD_2F_TM37                          0x1AE
-#define FLAG_HIDE_VICTORY_ROAD_3F_MAX_REVIVE                    0x1AF
+#define FLAG_HIDE_VICTORY_ROAD_3F_PROTECTOR                    0x1AF
 #define FLAG_HIDE_VICTORY_ROAD_3F_TM50                          0x1B0
 #define FLAG_HIDE_CERULEAN_CAVE_1F_MAX_ELIXIR                   0x1B1
 #define FLAG_HIDE_CERULEAN_CAVE_1F_NUGGET                       0x1B2
@@ -511,7 +511,7 @@
 #define FLAG_HIDE_THREE_ISLAND_BERRY_FOREST_FULL_HEAL           0x1EB
 #define FLAG_HIDE_THREE_ISLAND_BERRY_FOREST_MAX_ELIXIR          0x1EC
 #define FLAG_HIDE_MT_EMBER_EXTERIOR_ULTRA_BALL                  0x1ED
-#define FLAG_HIDE_MT_EMBER_EXTERIOR_FIRE_STONE                  0x1EE
+#define FLAG_HIDE_MT_EMBER_EXTERIOR_MAGMARIZER                  0x1EE
 #define FLAG_HIDE_MT_EMBER_EXTERIOR_DIRE_HIT                    0x1EF
 #define FLAG_HIDE_FOUR_ISLAND_ICEFALL_CAVE_1F_ULTRA_BALL        0x1F0
 #define FLAG_HIDE_FOUR_ISLAND_ICEFALL_CAVE_1F_HM07              0x1F1

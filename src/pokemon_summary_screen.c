@@ -3940,7 +3940,7 @@ static u8 StatusToAilment(u32 status)
     if ((status & STATUS1_SLEEP) != 0)
         return AILMENT_SLP;
 
-    if ((status & STATUS1_FREEZE) != 0)
+    if ((status & STATUS1_FREEZE) != 0 || (status & STATUS1_FROSTBITE) != 0)
         return AILMENT_FRZ;
 
     if ((status & STATUS1_BURN) != 0)

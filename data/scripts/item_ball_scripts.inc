@@ -413,8 +413,8 @@ VictoryRoad_2F_EventScript_ItemTM37::
 	finditem ITEM_TM37
 	end
 
-VictoryRoad_3F_EventScript_ItemMaxRevive::
-	finditem ITEM_MAX_REVIVE
+VictoryRoad_3F_EventScript_ItemProtector::
+	finditem ITEM_PROTECTOR
 	end
 
 VictoryRoad_3F_EventScript_ItemTM50::
@@ -472,6 +472,10 @@ TwoIsland_EventScript_ItemRevive::
 ThreeIsland_EventScript_ItemZinc::
 	finditem ITEM_ZINC
 	end
+
+VermilionCity_EventScript_ItemElectirizer::
+	finditem ITEM_ELECTIRIZER
+	end	
 
 ViridianForest_EventScript_ItemShedShell::
 	finditem ITEM_SHED_SHELL
@@ -713,8 +717,8 @@ MtEmber_Exterior_EventScript_ItemUltraBall::
 	finditem ITEM_ULTRA_BALL
 	end
 
-MtEmber_Exterior_EventScript_ItemFireStone::
-	finditem ITEM_FIRE_STONE
+MtEmber_Exterior_EventScript_ItemMagmarizer::
+	finditem ITEM_MAGMARIZER
 	end
 
 MtEmber_Exterior_EventScript_ItemDireHit::
