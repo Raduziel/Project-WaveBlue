@@ -1,5 +1,25 @@
 Route4_MapScripts::
-	.byte 0
+    map_script MAP_SCRIPT_ON_TRANSITION, Route4_OnTransition
+    map_script MAP_SCRIPT_ON_FRAME_TABLE, Route4_OnFrame
+    .byte 0
+
+Route4_OnTransition:
+    goto_if_set FLAG_DELIVERED_ESCAPE_ROPE, Route4_EventScript_EndTransition
+    getplayerxy VAR_TEMP_0, VAR_TEMP_1
+    compare VAR_TEMP_0, 32
+    goto_if_ne Route4_EventScript_EndTransition
+    compare VAR_TEMP_1, 5
+    goto_if_ne Route4_EventScript_EndTransition
+    setvar VAR_TEMP_2, 1 
+    end
+
+Route4_EventScript_EndTransition:
+    setvar VAR_TEMP_2, 0
+    end
+
+Route4_OnFrame:
+    map_script_2 VAR_TEMP_2, 1, Route4_EventScript_CaveGuy_Trigger
+    .2byte 0
 
 Route4_EventScript_Unused::
 	end
@@ -70,6 +90,7 @@ Route4_EventScript_CaveGuy::
 	playse SE_EXIT
     removeobject LOCALID_CAVEGUY
 	setflag FLAG_DELIVERED_ESCAPE_ROPE
+    setvar VAR_TEMP_2, 0
     textcolor NPC_TEXT_COLOR_NEUTRAL
     releaseall
 	end

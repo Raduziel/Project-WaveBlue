@@ -21,10 +21,10 @@ Route14_Text_MitchPostBattle::
     .string "better moves.$"
 
 Route14_Text_BeckIntro::
-    .string "They have TMs on sale at the\n"
-    .string "Celadon Dept. Store.\p"
-    .string "TMs aren't really rare, but not\n"
-    .string "many people have HMs.$"
+    .string "I heard someone set up a\n"
+    .string "TM shop at One Island.\p"
+    .string "You can also find them all\n"
+    .string "over the region.$"
 
 Route14_Text_BeckDefeat::
     .string "Aww, bummer!$"

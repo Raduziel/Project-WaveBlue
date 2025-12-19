@@ -135,7 +135,7 @@ const u8 gTeachyTvText_TMsScript1[] = _(
     "it may not learn when leveling up!\p"
     "Isn't that just great? What a\n"
     "convenient world we live in!\p"
-    "Open the TM CASE and check out\n"
+    "Open the TM Case and check out\n"
     "the TMs you have.\p"
     "You can check them out in detail,\n"
     "too.");
@@ -144,9 +144,9 @@ const u8 gPokedudeText_TMTypes[] = _(
     "TMs also come in types.\p"
     "Check the type and teach it to\n"
     "a Pokémon that matches up well.\p"
-    "For example, Water PULSE is\n"
+    "For example, Water Pulse is\n"
     "suitable for Water-type Pokémon.\p"
-    "BULLET SEED is a move that most\n"
+    "Bullet Seed is a move that most\n"
     "Grass-type Pokémon can learn.\p"
     "There's one other thing!");
 const u8 gPokedudeText_ReadTMDescription[] = _(
@@ -155,7 +155,7 @@ const u8 gPokedudeText_ReadTMDescription[] = _(
     "It will contain hints about what\n"
     "Pokémon might learn the move.\p"
     "For example, take a move like\n"
-    "FOCUS PUNCH.\p"
+    "Focus Punch.\p"
     "It doesn't sound like anything a\n"
     "bird or fish Pokémon can learn.\p"
     "So, try using it on Pokémon with\n"
@@ -185,7 +185,7 @@ const u8 gTeachyTvText_RegisterScript2[] = _(
     "How do you use it?\n"
     "Well, here's how it works.\p"
     "Once an item in the Key Items\n"
-    "POKCET is registered, you can use\l"
+    "Pocket is registered, you can use\l"
     "it by pressing Select.\p"
     "So, you've given yourself\n"
     "one-touch access to Teachy TV.\p"
