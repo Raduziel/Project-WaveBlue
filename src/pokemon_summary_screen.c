@@ -41,6 +41,8 @@
 #define TAG_MOVE_TYPES 30002
 #define TAG_CATEGORY_ICONS 30004
 
+#define TYPE_ICON_SPRITE_COUNT (MAX_MON_MOVES + 1)
+
 // needs conflicting header to match (curIndex is s8 in the function, but has to be defined as u8 here)
 extern s16 SeekToNextMonInBox(struct BoxPokemon * boxMons, u8 curIndex, u8 maxIndex, u8 flags);
 
@@ -145,6 +147,8 @@ static void PokeSum_DestroyMonMarkingsSprite(void);
 static void PokeSum_UpdateMonMarkingsAnim(void);
 static s8 SeekToNextMonInSingleParty(s8 direction);
 static s8 SeekToNextMonInMultiParty(s8 direction);
+static void PokeSum_CreateTypeSprites(void);
+static void SetSpriteInvisibility(u8 index, bool8 invisible);
 
 struct PokemonSummaryScreenData
 {
@@ -248,7 +252,8 @@ struct PokemonSummaryScreenData
     u8 ALIGNED(4) lastPageFlipDirection; /* 0x3300 */
     u8 ALIGNED(4) unk3304; /* 0x3304 */
     u8 ALIGNED(4) skillsPageMode;
-    u8 categoryIconSpriteId;
+    u8 ALIGNED(4) categoryIconSpriteId;
+    u8 ALIGNED(4) typeIconSpriteIds[TYPE_ICON_SPRITE_COUNT];
 };
 
 struct Struct203B144
@@ -1176,7 +1181,7 @@ static const union AnimCmd *const sSpriteAnimTable_MoveTypes[NUMBER_OF_MON_TYPES
 const struct CompressedSpriteSheet gSpriteSheet_MoveTypes =
 {
     .data = gMoveTypes_Gfx,
-    .size = (NUMBER_OF_MON_TYPES + CONTEST_CATEGORIES_COUNT) * 0x100,
+    .size = (NUMBER_OF_MON_TYPES + CONTEST_CATEGORIES_COUNT) * 256,
     .tag = TAG_MOVE_TYPES
 };
 const struct SpriteTemplate gSpriteTemplate_MoveTypes =
@@ -1190,7 +1195,6 @@ const struct SpriteTemplate gSpriteTemplate_MoveTypes =
     .callback = SpriteCallbackDummy
 };
 
-
 #define FREE_AND_SET_NULL_IF_SET(ptr) \
 {                                     \
     if (ptr != NULL)                  \
@@ -1203,6 +1207,10 @@ const struct SpriteTemplate gSpriteTemplate_MoveTypes =
 void ShowPokemonSummaryScreen(struct Pokemon * party, u8 cursorPos, u8 lastIdx, MainCallback savedCallback, u8 mode)
 {
     sMonSummaryScreen = AllocZeroed(sizeof(struct PokemonSummaryScreenData));
+
+        for (u32 i = 0; i < TYPE_ICON_SPRITE_COUNT; i++)
+            sMonSummaryScreen->typeIconSpriteIds[i] = SPRITE_NONE;
+
     sMonSkillsPrinterXpos = AllocZeroed(sizeof(struct Struct203B144));
 
     if (sMonSummaryScreen == NULL)
@@ -2721,6 +2729,12 @@ static u8 PokeSum_HandleCreateSprites(void)
         LoadCompressedSpriteSheet(&gSpriteSheet_CategoryIcons);
         LoadSpritePalette(&gSpritePal_CategoryIcons);
         break;
+    case 10:
+        LoadPalette(gMoveTypes_Pal, OBJ_PLTT_ID(13), 3 * PLTT_SIZE_4BPP);
+        LoadCompressedSpriteSheet(&gSpriteSheet_MoveTypes);
+    case 11:
+        PokeSum_CreateTypeSprites();
+        break;
     default:
         PokeSum_CreateMonPicSprite();
         return TRUE;
@@ -2908,11 +2922,6 @@ static void PrintSkillsPage(void)
     u8 statFontId, x, yDiff;
     switch (sMonSummaryScreen->skillsPageMode)
     {
-        case PSS_SKILL_PAGE_IVS:
-            x = 10;
-            yDiff = 1;
-            statFontId = FONT_SMALL;
-            break;
         default:
             x = 13;
             yDiff = 0;
@@ -3161,7 +3170,7 @@ static void PokeSum_PrintTrainerMemo_Mon_NotHeldByOT(void)
 
     // These pairs of strings are bytewise identical to each other in English,
     // but Japanese uses different grammar for Bold and Gentle natures.
-    if (GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_MET_LEVEL) == 0) // hatched from an Egg
+    if (GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_MET_LEVEL) == 0) // hatched from an EGG
     {
         if (GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_MODERN_FATEFUL_ENCOUNTER) == TRUE)
         {
@@ -3366,22 +3375,70 @@ static void PokeSum_PrintAbilityNameAndDesc(void)
 
 }
 
+static void SetSpriteInvisibility(u8 index, bool8 invisible)
+{
+    u8 spriteId = sMonSummaryScreen->typeIconSpriteIds[index];
+
+    if (spriteId != SPRITE_NONE)
+        gSprites[spriteId].invisible = invisible;
+}
+
+static void PokeSum_CreateTypeSprites(void)
+{
+    for (u32 i = 0; i < TYPE_ICON_SPRITE_COUNT; i++)
+    {
+        if (sMonSummaryScreen->typeIconSpriteIds[i] == SPRITE_NONE)
+            sMonSummaryScreen->typeIconSpriteIds[i] = CreateSprite(&gSpriteTemplate_MoveTypes, 0, 0, 2);
+
+        gSprites[sMonSummaryScreen->typeIconSpriteIds[i]].invisible = TRUE;
+    }
+}
+
+static void SetTypeSpritePosAndPal(enum Type typeId, u8 x, u8 y, u8 index)
+{
+    struct Sprite *sprite = &gSprites[sMonSummaryScreen->typeIconSpriteIds[index]];
+
+    StartSpriteAnim(sprite, typeId);
+
+    if (typeId < NUMBER_OF_MON_TYPES)
+        sprite->oam.paletteNum = gTypesInfo[typeId].palette;
+    //else
+        //sprite->oam.paletteNum = gContestCategoryInfo[typeId - NUMBER_OF_MON_TYPES].palette;
+
+    sprite->x = x + 16;
+    sprite->y = y + 8;
+    sprite->invisible = FALSE;
+}
+
 static void PokeSum_DrawMoveTypeIcons(void)
 {
-    u8 i;
-
-    FillWindowPixelBuffer(sMonSummaryScreen->windowIds[5], 0);
+    u32 i;
 
     for (i = 0; i < 4; i++)
     {
         if (sMonSummaryScreen->moveIds[i] == MOVE_NONE)
+        {
+            gSprites[sMonSummaryScreen->typeIconSpriteIds[i]].invisible = TRUE;
             continue;
+        }
 
-        BlitMenuInfoIcon(sMonSummaryScreen->windowIds[5], sMonSummaryScreen->moveTypes[i] + 1, 3, GetMoveNamePrinterYpos(i));
+        SetTypeSpritePosAndPal(
+            sMonSummaryScreen->moveTypes[i],
+            3,
+            GetMoveNamePrinterYpos(i),
+            i
+        );
     }
 
     if (sMonSummaryScreen->mode == PSS_MODE_SELECT_MOVE)
-        BlitMenuInfoIcon(sMonSummaryScreen->windowIds[5], sMonSummaryScreen->moveTypes[4] + 1, 3, GetMoveNamePrinterYpos(4));
+    {
+        SetTypeSpritePosAndPal(
+            sMonSummaryScreen->moveTypes[4],
+            3,
+            GetMoveNamePrinterYpos(4),
+            4
+        );
+    }
 }
 
 static void PokeSum_PrintPageHeaderText(u8 curPageIndex)
@@ -3819,26 +3876,29 @@ static void PokeSum_PrintMonTypeIcons(void)
     case PSS_PAGE_INFO:
         if (!sMonSummaryScreen->isEgg)
         {
-            BlitMenuInfoIcon(sMonSummaryScreen->windowIds[POKESUM_WIN_RIGHT_PANE], sMonSummaryScreen->monTypes[0] + 1, 47, 35);
+            SetTypeSpritePosAndPal(
+                sMonSummaryScreen->monTypes[0],
+                47,
+                35,
+                0
+            );
 
             if (sMonSummaryScreen->monTypes[0] != sMonSummaryScreen->monTypes[1])
-                BlitMenuInfoIcon(sMonSummaryScreen->windowIds[POKESUM_WIN_RIGHT_PANE], sMonSummaryScreen->monTypes[1] + 1, 83, 35);
-            if (P_SHOW_TERA_TYPE == GEN_9 && sMonSummaryScreen->monTypes[2] != TYPE_NONE)
-                BlitMenuInfoIcon(sMonSummaryScreen->windowIds[POKESUM_WIN_RIGHT_PANE], sMonSummaryScreen->monTypes[2] + 1, 83, 5);
+            {
+                SetTypeSpritePosAndPal(
+                    sMonSummaryScreen->monTypes[1],
+                    83,
+                    35,
+                    1
+                );
+            }
+            else
+            {
+                SetSpriteInvisibility(1, TRUE);
+            }
+
+            SetSpriteInvisibility(2, TRUE);
         }
-        break;
-    case PSS_PAGE_SKILLS:
-        break;
-    case PSS_PAGE_MOVES:
-        break;
-    case PSS_PAGE_MOVES_INFO:
-        FillWindowPixelBuffer(sMonSummaryScreen->windowIds[6], 0);
-        BlitMenuInfoIcon(sMonSummaryScreen->windowIds[6], sMonSummaryScreen->monTypes[0] + 1, 0, 3);
-
-        if (sMonSummaryScreen->monTypes[0] != sMonSummaryScreen->monTypes[1])
-            BlitMenuInfoIcon(sMonSummaryScreen->windowIds[6], sMonSummaryScreen->monTypes[1] + 1, 36, 3);
-
-        PutWindowTilemap(sMonSummaryScreen->windowIds[6]);
         break;
     }
 }
@@ -3940,7 +4000,7 @@ static u8 StatusToAilment(u32 status)
     if ((status & STATUS1_SLEEP) != 0)
         return AILMENT_SLP;
 
-    if ((status & STATUS1_FREEZE) != 0 || (status & STATUS1_FROSTBITE) != 0)
+    if ((status & STATUS1_FREEZE) != 0)
         return AILMENT_FRZ;
 
     if ((status & STATUS1_BURN) != 0)
@@ -4225,6 +4285,13 @@ static void UpdateCurrentMonBufferFromPartyOrBox(struct Pokemon * mon)
 
 static u8 PokeSum_CanForgetSelectedMove(void)
 {
+    u16 move;
+
+    move = GetMonMoveBySlotId(&sMonSummaryScreen->currentMon, sMoveSelectionCursorPos);
+
+    if (IsMoveHM(move) == TRUE && sMonSummaryScreen->mode != PSS_MODE_FORGET_MOVE)
+        return FALSE;
+
     return TRUE;
 }
 
