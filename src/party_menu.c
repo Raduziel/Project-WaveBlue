@@ -1990,7 +1990,7 @@ u8 GetAilmentFromStatus(u32 status)
     if (status & STATUS1_BURN)
         return AILMENT_BRN;
     if (status & STATUS1_FROSTBITE)
-        return AILMENT_FRZ;
+        return AILMENT_FRB;
     return AILMENT_NONE;
 }
 
