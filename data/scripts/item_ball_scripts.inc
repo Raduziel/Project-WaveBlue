@@ -149,10 +149,6 @@ RocketHideout_B4F_EventScript_ItemCalcium::
 	finditem ITEM_CALCIUM
 	end
 
-LavenderTown_EventScript_ItemAirBalloon::
-	finditem ITEM_AIR_BALLOON
-	end	
-
 PokemonTower_3F_EventScript_ItemBottleCap::
 	finditem ITEM_BOTTLE_CAP
 	end

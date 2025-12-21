@@ -6,6 +6,8 @@ LavenderTown_OnTransition::
 	setworldmapflag FLAG_WORLD_MAP_LAVENDER_TOWN
 	setvar VAR_MAP_SCENE_S_S_ANNE_2F_CORRIDOR, 1
 	setflag FLAG_HIDE_SS_ANNE_RIVAL
+    compare VAR_LAVENDER_AIR_BALLOON, 3
+    goto_if_eq LavenderTown_EventScript_HideBoth
     compare VAR_LAVENDER_AIR_BALLOON, 1
     goto_if_eq LavenderTown_EventScript_SetRefusedState
     setflag FLAG_HIDE_LAVENDER_TOWN_AIR_BALLOON
@@ -15,6 +17,16 @@ LavenderTown_OnTransition::
 LavenderTown_EventScript_SetRefusedState::
     setflag FLAG_HIDE_AIR_BALLOON_BOY
     clearflag FLAG_HIDE_LAVENDER_TOWN_AIR_BALLOON
+    end
+
+LavenderTown_EventScript_HideBoth::
+    setflag FLAG_HIDE_AIR_BALLOON_BOY
+    setflag FLAG_HIDE_LAVENDER_TOWN_AIR_BALLOON
+    end
+
+LavenderTown_EventScript_ItemAirBalloon::
+	finditem ITEM_AIR_BALLOON
+	setvar VAR_LAVENDER_AIR_BALLOON, 3
     end
 
  LavenderTown_EventScript_AirBalloonBoy::
