@@ -17,6 +17,26 @@ static bool32 FieldMove_IsUnlockedWaterfall(void);
 
 static const u8 sText_ShareHp[] = _("Share HP.");
 
+bool32 PartyHasMove(u16 moveId)
+{
+    u8 i, j;
+    
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES, NULL) == SPECIES_NONE)
+            continue;
+        if (GetMonData(&gPlayerParty[i], MON_DATA_IS_EGG, NULL))
+            continue;
+
+        for (j = 0; j < MAX_MON_MOVES; j++)
+        {
+            if (GetMonData(&gPlayerParty[i], MON_DATA_MOVE1 + j, NULL) == moveId)
+                return TRUE;
+        }
+    }
+    return FALSE;
+}
+
 const struct FieldMoveInfo gFieldMovesInfo[FIELD_MOVE_COUNT] =
 {
     [FIELD_MOVE_CUT] =
@@ -201,35 +221,35 @@ bool32 FieldMove_IsUnlocked(enum FieldMove fieldMove)
 
 static bool32 FieldMove_IsUnlockedCut(void)
 {
-    return FlagGet(FLAG_BADGE02_GET);
+    return FlagGet(FLAG_BADGE02_GET) && PartyHasMove(MOVE_CUT);
 }
 
 static bool32 FieldMove_IsUnlockedFly(void)
 {
-    return FlagGet(FLAG_BADGE03_GET);
+    return FlagGet(FLAG_BADGE03_GET) && PartyHasMove(MOVE_FLY);
 }
 
 static bool32 FieldMove_IsUnlockedSurf(void)
 {
-    return FlagGet(FLAG_BADGE05_GET);
+    return FlagGet(FLAG_BADGE05_GET) && PartyHasMove(MOVE_SURF);
 }
 
 static bool32 FieldMove_IsUnlockedStrength(void)
 {
-    return FlagGet(FLAG_BADGE04_GET);
+    return FlagGet(FLAG_BADGE04_GET) && PartyHasMove(MOVE_STRENGTH);
 }
 
 static bool32 FieldMove_IsUnlockedFlash(void)
 {
-    return FlagGet(FLAG_BADGE01_GET);
+    return FlagGet(FLAG_BADGE01_GET) && PartyHasMove(MOVE_FLASH);
 }
 
 static bool32 FieldMove_IsUnlockedRockSmash(void)
 {
-    return FlagGet(FLAG_BADGE06_GET);
+    return FlagGet(FLAG_BADGE06_GET) && PartyHasMove(MOVE_ROCK_SMASH);
 }
 
 static bool32 FieldMove_IsUnlockedWaterfall(void)
 {
-    return FlagGet(FLAG_BADGE07_GET);
+    return FlagGet(FLAG_BADGE07_GET) && PartyHasMove(MOVE_WATERFALL);
 }
