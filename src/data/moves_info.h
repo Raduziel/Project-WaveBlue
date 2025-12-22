@@ -3162,7 +3162,7 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Metronome"),
         .description = COMPOUND_STRING(
-            "Waggles a finger\nto use any "
+            "Waggles a finger\nto use a "
             "\nPokémon move at\nrandom."),
         .effect = EFFECT_METRONOME,
         .power = 0,
