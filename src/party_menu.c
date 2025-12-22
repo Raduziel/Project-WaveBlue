@@ -7888,4 +7888,3 @@ u32 Party_FirstMonWithMove(u16 moveId)
     }
     return PARTY_SIZE;
 }
-
