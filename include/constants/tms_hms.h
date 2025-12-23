@@ -91,8 +91,6 @@
     F(DRAIN_PUNCH) \
     F(VACUUM_WAVE) \
     F(LOW_SWEEP) \
-    F(COUNTER) \
-    F(SEISMIC_TOSS) \
     F(FLAME_CHARGE) \
     F(FLARE_BLITZ) \
     F(WILL_O_WISP) \
@@ -132,12 +130,10 @@
     F(ZEN_HEADBUTT) \
     F(PSYSHOCK) \
     F(TRICK_ROOM) \
-    F(DREAM_EATER) \
     F(POWER_GEM) \
     F(ROCK_BLAST) \
     F(STEALTH_ROCK) \
     F(STONE_EDGE) \
-    F(ROCK_SLIDE) \
     F(MAGNET_BOMB) \
     F(FLASH_CANNON) \
     F(HEAVY_SLAM) \
@@ -150,13 +146,17 @@
     F(BODY_SLAM) \
     F(DOUBLE_EDGE) \
     F(EXPLOSION) \
-    F(MEGA_PUNCH) \
     F(MEGA_KICK) \
+    F(MEGA_PUNCH) \
     F(METRONOME) \
     F(MIMIC) \
     F(SOFT_BOILED) \
     F(SUBSTITUTE) \
-    F(SWORDS_DANCE)
+    F(SWORDS_DANCE) \
+    F(COUNTER) \
+    F(SEISMIC_TOSS) \
+    F(DREAM_EATER) \
+    F(ROCK_SLIDE) \
 
 #define FOREACH_HM(F) \
     F(CUT) \

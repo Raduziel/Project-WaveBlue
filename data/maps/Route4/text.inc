@@ -28,16 +28,8 @@ Text_MegaPunchTeach::
     .string "When the chips are down,\n"
     .string "Mega Punch is the ultimate attack!\l"
     .string "You agree, yes?\p"
-    .string "Now!\n"
-    .string "Let me teach it to your Pokémon!$"
-
-Text_MegaPunchDeclined::
-    .string "You'll be back when you understand\n"
-    .string "the worth of Mega Punch.$"
-
-Text_MegaPunchWhichMon::
-    .string "Fine!\n"
-    .string "Which Pokémon will learn it?$"
+    .string "Good!\n"
+    .string "You deserve this, then!$"
 
 Text_MegaPunchTaught::
     .string "Now, we are comrades in the way of\n"
@@ -53,15 +45,7 @@ Text_MegaKickTeach::
     .string "Mega Kick is the ultimate attack!\l"
     .string "Don't you agree?\p"
     .string "Okay!\n"
-    .string "I'll teach it to your Pokémon!$"
-
-Text_MegaKickDeclined::
-    .string "You'll come crawling back when you\n"
-    .string "realize the value of Mega Kick.$"
-
-Text_MegaKickWhichMon::
-    .string "All right!\n"
-    .string "Which Pokémon wants to learn it?$"
+    .string "Take this, kid, you deserve it!$"
 
 Text_MegaKickTaught::
     .string "Now, we are soul mates in the way\n"

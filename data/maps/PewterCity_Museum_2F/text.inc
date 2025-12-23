@@ -7,15 +7,7 @@ Text_SeismicTossTeach::
     .string "harder, not toss in the towel.\p"
     .string "The only thing you should toss…\p"
     .string "Well, how about Seismic Toss?\n"
-    .string "Should I teach that to a Pokémon?$"
-
-Text_SeismicTossDeclined::
-    .string "Is that so?\n"
-    .string "I'm sure you'll be back for it.$"
-
-Text_SeismicTossWhichMon::
-    .string "Which Pokémon wants to learn\n"
-    .string "Seismic Toss?$"
+    .string "You can learn about it from this.$"
 
 Text_SeismicTossTaught::
     .string "I hope you won't toss in the towel.\n"

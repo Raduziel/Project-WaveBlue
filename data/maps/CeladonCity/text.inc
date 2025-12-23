@@ -78,7 +78,7 @@ CeladonCity_Text_GameCornerSign::
 CeladonCity_Text_ScaldedTongueOnTea::
     .string "Aaaagh, ow…\n"
     .string "I scalded my tongue!\p"
-    .string "This nice old lady in the MANSION\n"
+    .string "This nice old lady in the Mansion\n"
     .string "gave me some Tea.\p"
     .string "But it was boiling hot!\n"
     .string "Gotta cool it to drink it.$"
@@ -89,17 +89,8 @@ Text_SoftboiledTeach::
     .string "had a chance to chat.\p"
     .string "It must be good luck that brought\n"
     .string "us together finally.\p"
-    .string "I'd like to celebrate by teaching\n"
-    .string "you the move SOFTBOILED.$"
-
-Text_SoftboiledDeclined::
-    .string "I'll always be keeping an eye out\n"
-    .string "for you.\p"
-    .string "I hope we can chat again.$"
-
-Text_SoftboiledWhichMon::
-    .string "So, who's the Pokémon that gets\n"
-    .string "the chance to learn SOFTBOILED?$"
+    .string "I'd like to celebrate by giving\n"
+    .string "you the TM for Soft-Boiled.$"
 
 Text_SoftboiledTaught::
     .string "I wish you the best of luck!$"

@@ -729,7 +729,7 @@
 #define FLAG_FOUGHT_ARTICUNO                             0x2BE
 #define FLAG_FOUGHT_ZAPDOS                               0x2BF
 #define FLAG_TUTOR_DOUBLE_EDGE                           0x2C0
-#define FLAG_TUTOR_THUNDER_WAVE                          0x2C1
+#define FLAG_TUTOR_WEATHER_BALL                          0x2C1
 #define FLAG_TUTOR_ROCK_SLIDE                            0x2C2
 #define FLAG_TUTOR_EXPLOSION                             0x2C3
 #define FLAG_TUTOR_MEGA_PUNCH                            0x2C4

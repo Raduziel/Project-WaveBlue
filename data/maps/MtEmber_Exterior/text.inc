@@ -3,17 +3,8 @@ Text_ExplosionTeach::
     .string "If this volcano were to erupt?\p"
     .string "The explosion would be the end of\n"
     .string "us. How terrifying is that?\p"
-    .string "While we're terrified, would you\n"
-    .string "like me to teach Explosion?$"
-
-Text_ExplosionDeclined::
-    .string "Yeah, you're right.\n"
-    .string "It is too terrifying.$"
-
-Text_ExplosionWhichMon::
-    .string "You're terribly brave!\p"
-    .string "Which Pokémon should I teach\n"
-    .string "Explosion?$"
+    .string "I think it would be better if\n"
+    .string "you took this TM away from here.$"
 
 Text_ExplosionTaught::
     .string "Using Explosion while on this\n"

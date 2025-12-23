@@ -50,21 +50,13 @@ CeladonCity_DepartmentStore_3F_Text_RedGreenBothArePokemon::
 Text_CounterTeach::
     .string "Oh, hi!\n"
     .string "I finally finished Pokémon.\p"
-    .string "Not done yet? How about I teach\n"
-    .string "you a good move?\p"
+    .string "Not done yet? Won't it be easier\n"
+    .string "to do with a good move?\p"
     .string "The move I have in mind is\n"
     .string "Counter.\p"
     .string "Not like the one I'm leaning on,\n"
-    .string "mind you!$"
-
-Text_CounterDeclined::
-    .string "You're not interested? Come see\n"
-    .string "me if you change your mind.$"
-
-Text_CounterWhichMon::
-    .string "Which Pokémon should I teach\n"
-    .string "Counter to?$"
+    .string "mind you! Take it.$"
 
 Text_CounterTaught::
     .string "Are you using that Counter move\n"
-    .string "I taught your Pokémon?$"
+    .string "in any of your Pokémon?$"

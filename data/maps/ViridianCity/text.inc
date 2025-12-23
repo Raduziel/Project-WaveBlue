@@ -3,18 +3,11 @@ Text_DreamEaterTeach::
     .string "I must have dozed off in the sun.\p"
     .string "I had this weird dream about\n"
     .string "a Drowzee eating my dream.\p"
-    .string "And…\n"
-    .string "I learned how to eat dreams…\p"
+    .string "And… I found this TM\n"
+    .string "about how to eat dreams…\p"
     .string "Oogh, this is too spooky!\p"
-    .string "Let me teach it to a Pokémon so\n"
+    .string "Take this away from me so\n"
     .string "I can forget about it!$"
-
-Text_DreamEaterDeclined::
-    .string "…Snore…$"
-
-Text_DreamEaterWhichMon::
-    .string "Which Pokémon wants to learn\n"
-    .string "Dream Eater?$"
 
 Text_DreamEaterTaught::
     .string "…ZZZ…\n"

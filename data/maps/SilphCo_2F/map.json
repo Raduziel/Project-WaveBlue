@@ -82,7 +82,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SilphCo_2F_EventScript_ThunderWaveTutor",
+      "script": "SilphCo_2F_EventScript_WeatherBallTutor",
       "flag": "0"
     }
   ],

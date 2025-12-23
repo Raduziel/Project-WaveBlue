@@ -83,22 +83,14 @@ FuchsiaCity_Text_Ellipsis::
 Text_SubstituteTeach::
     .string "Aww, I wish I was a Kangaskhan\n"
     .string "baby.\p"
-    .string "I'd love to be a substitute for the\n"
-    .string "baby…\p"
+    .string "I'd love to be a substitute for\n"
+    .string "the baby…\p"
     .string "And snuggle in the mother\n"
     .string "Kangaskhan's belly pouch.\p"
     .string "But only Pokémon can use the\n"
     .string "technique Substitute…\p"
-    .string "Want me to teach Substitute to\n"
-    .string "one of your Pokémon?$"
-
-Text_SubstituteDeclined::
-    .string "Oh, really?\n"
-    .string "Substitute seems so fun…$"
-
-Text_SubstituteWhichMon::
-    .string "Which Pokémon wants to learn\n"
-    .string "Substitute?$"
+    .string "I think this TM will suit well to\n"
+    .string "one of your Pokémon.$"
 
 Text_SubstituteTaught::
     .string "Boy, what I'd give to crawl inside\n"

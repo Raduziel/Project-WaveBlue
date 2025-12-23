@@ -24,14 +24,15 @@ Text_MimicTeach::
     .string "For me?\n"
     .string "Thank you!\p"
     .string "You know what?\n"
-    .string "I can teach the move Mimic.$"
+    .string "I'll trade you this TM for it!$"
 
 Text_MimicDeclined::
-    .string "Don't you like Mimic?$"
+    .string "Don't you like Mimic?\n"
+    .string "Or do you just like your doll?$"
 
-Text_MimicWhichMon::
-    .string "I really love Mimic!\n"
-    .string "Who's going to learn it?$"
+Text_MimicNoDoll::
+    .string "I love cute things!\n"
+    .string "I wish I had a Poké Doll...$"
 
 Text_MimicTaughtMale::
     .string "{PLAYER}: Hi!\n"

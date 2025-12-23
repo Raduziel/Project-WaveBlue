@@ -6,16 +6,8 @@ Text_BodySlamTeach::
     .string "to see who wimps out first.\p"
     .string "If you were to join us, you'd be\n"
     .string "squashed like a bug, though…\p"
-    .string "How about I teach Body Slam to\n"
-    .string "a Pokémon of yours instead?$"
-
-Text_BodySlamDeclined::
-    .string "Come again!\n"
-    .string "Boing!$"
-
-Text_BodySlamWhichMon::
-    .string "Which Pokémon wants to learn how\n"
-    .string "to Body Slam?$"
+    .string "Take this so you can join\n"
+    .string "us someday, if you dare.$"
 
 Text_BodySlamTaught::
     .string "Boioing!$"

@@ -1,17 +1,10 @@
 Text_MetronomeTeach::
     .string "Tch-tch-tch!\n"
-    .string "I'll teach you a nifty move.\p"
+    .string "This teaches a nifty move.\p"
     .string "Teach it to a Pokémon, and watch\n"
     .string "the fun unfold!\p"
     .string "It's a move called Metronome.\n"
-    .string "Does it strike your fancy?$"
-
-Text_MetronomeDeclined::
-    .string "I tell you, it's a lot of fun!$"
-
-Text_MetronomeWhichMon::
-    .string "Okay!\n"
-    .string "Which Pokémon should I teach?$"
+    .string "Let it strike your fancy.$"
 
 Text_MetronomeTaught::
     .string "Tch-tch-tch!\n"

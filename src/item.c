@@ -212,7 +212,7 @@ u8 *CopyItemNameHandlePlural(u16 itemId, u8 *dst, u32 quantity)
     }
 }
 
-s8 BagPocketGetFirstEmptySlot(u8 pocketId)
+s16 BagPocketGetFirstEmptySlot(u8 pocketId)
 {
     u16 i;
 
@@ -340,7 +340,7 @@ bool8 AddBagItem(u16 itemId, u16 count)
 {
     u8 i;
     enum Pocket pocket = GetItemPocket(itemId);
-    s8 idx;
+    s16 idx;
 
     if (count == 0)
         return FALSE;

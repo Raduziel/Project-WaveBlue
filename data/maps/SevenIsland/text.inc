@@ -3,15 +3,8 @@ Text_SwordsDanceTeach::
     .string "If I train here, I'm convinced that\n"
     .string "I'll get stronger and stronger.\p"
     .string "Yep, stronger and stronger…\p"
-    .string "How would you like to learn a move\n"
-    .string "like that? It's Swords Dance.$"
-
-Text_SwordsDanceDeclined::
-    .string "Well, that's fine, too.$"
-
-Text_SwordsDanceWhichMon::
-    .string "All right, pick which Pokémon\n"
-    .string "I should teach it to.$"
+    .string "Here's something to help you\n"
+    .string "learn a move. It's Swords Dance.$"
 
 Text_SwordsDanceTaught::
     .string "If only we could keep getting\n"
