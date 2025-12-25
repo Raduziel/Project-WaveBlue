@@ -87,13 +87,13 @@ PokedexRating_Text_Complete::
 	.string "Congratulations!!$"
 
 PokedexRating_Text_NationalDexSeenXOwnedY::
-	.string "And your NATIONAL Pokédex is:\p"
+	.string "And your National Pokédex is:\p"
 	.string "{STR_VAR_1} Pokémon seen and\n"
 	.string "{STR_VAR_2} Pokémon owned.$"
 
 PokedexRating_Text_LookForwardToFilledNationalDex::
 	.string "I'll be looking forward to seeing\n"
-	.string "you fill the NATIONAL Pokédex!$"
+	.string "you fill the National Pokédex!$"
 
 PokedexRating_Text_YouveCompletedDex::
 	.string "Finally…\p"

@@ -1,7 +1,7 @@
 CeladonCity_GameCorner_Text_TryPokemonPrinter::
-	.string "It's a Pokémon PRINTER!\p"
+	.string "It's a Pokémon Printer!\p"
 	.string "It can put a print of your Pokémon\n"
-	.string "on the back of your Trainer CARD.\p"
+	.string "on the back of your Trainer Card.\p"
 	.string "It costs only ¥50.\n"
 	.string "Would you like to try it?$"
 
@@ -18,18 +18,18 @@ CeladonCity_GameCorner_Text_BigSmileForPhoto::
 
 CeladonCity_GameCorner_Text_PrintIsReadyCheckTrainerCard::
 	.string "Your Pokémon print is ready!\n"
-	.string "Check your Trainer CARD.$"
+	.string "Check your Trainer Card.$"
 
 FourIsland_House2_Text_WishICouldShowOffStickers::
 	.string "Giggle…\n"
-	.string "I collected a ton of STICKERS.\l"
+	.string "I collected a ton of Stickers.\l"
 	.string "I wish I could show them off…$"
 
 FourIsland_House2_Text_GiveYouStickerIfYouBrag::
 	.string "Oh, excellent!\n"
 	.string "You've come to the right place!\p"
 	.string "Look, look! See? See?\n"
-	.string "These are my STICKERS!\l"
+	.string "These are my Stickers!\l"
 	.string "Look how many I got!\p"
 	.string "I bet you want some.\n"
 	.string "I bet you do!\p"
@@ -75,7 +75,7 @@ FourIsland_House2_Text_WowHoFHighest::
 
 FourIsland_House2_Text_HoFStickerApplied::
 	.string "The Hall of Fame Sticker was\n"
-	.string "applied to the Trainer CARD.$"
+	.string "applied to the Trainer Card.$"
 
 FourIsland_House2_Text_ComeBackWithBetterStoryHoF::
 	.string "Hmm…\p"
@@ -85,36 +85,36 @@ FourIsland_House2_Text_ComeBackWithBetterStoryHoF::
 FourIsland_House2_Text_LivingLegendHoF::
 	.string "Oh, no, no can do.\p"
 	.string "You're practically a living legend.\n"
-	.string "I have no SITCKERS left to give.$"
+	.string "I have no Stickers left to give.$"
 
 FourIsland_House2_Text_WowEggsLowest::
-	.string "Oh, wow, there are Pokémon EGGS?\n"
+	.string "Oh, wow, there are Pokémon Eggs?\n"
 	.string "I didn't know that!\p"
 	.string "That's pretty good, yup!\n"
 	.string "I'll give you one of these.$"
 
 FourIsland_House2_Text_WowEggsLow::
-	.string "You've hatched that many EGGS?\n"
+	.string "You've hatched that many Eggs?\n"
 	.string "You really must like them!\p"
 	.string "That's impressive, yup!\n"
 	.string "I'll give you one of these.$"
 
 FourIsland_House2_Text_WowEggsHigh::
 	.string "Whoa! You've hatched a whole\n"
-	.string "bunch of EGGS!\p"
+	.string "bunch of Eggs!\p"
 	.string "You're an Egg-hatching machine!\n"
 	.string "I'll give you one of these.$"
 
 FourIsland_House2_Text_WowEggsHighest::
-	.string "Wh… You hatched that many EGGS?\p"
-	.string "What's behind your love of EGGS?\n"
+	.string "Wh… You hatched that many Eggs?\p"
+	.string "What's behind your love of Eggs?\n"
 	.string "It's beyond incredible, yup!\p"
 	.string "You're too awesome, I tell you.\n"
 	.string "That's it, I have to give you this.$"
 
 FourIsland_House2_Text_EggStickerApplied::
 	.string "The Egg Sticker was applied\n"
-	.string "to the Trainer CARD.$"
+	.string "to the Trainer Card.$"
 
 FourIsland_House2_Text_ComeBackWithBetterStoryEggs::
 	.string "Hmm…\p"
@@ -124,7 +124,7 @@ FourIsland_House2_Text_ComeBackWithBetterStoryEggs::
 FourIsland_House2_Text_LivingLegendEggs::
 	.string "Oh, no, no can do.\p"
 	.string "You're practically a living legend.\n"
-	.string "I have no SITCKERS left to give.$"
+	.string "I have no Stickers left to give.$"
 
 FourIsland_House2_Text_WowLinkWinsLowest::
 	.string "Oh, wow, you've had success\n"
@@ -154,7 +154,7 @@ FourIsland_House2_Text_WowLinkWinsHighest::
 
 FourIsland_House2_Text_VictoryStickerApplied::
 	.string "The Victory Sticker was applied\n"
-	.string "to the Trainer CARD.$"
+	.string "to the Trainer Card.$"
 
 FourIsland_House2_Text_ComeBackWithBetterStoryLinkWins::
 	.string "Hmm…\p"

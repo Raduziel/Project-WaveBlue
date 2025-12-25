@@ -996,8 +996,8 @@ const struct Item gItemsInfo[] =
         .name = ITEM_NAME("Ice Heal"),
         .price = (I_PRICE == GEN_7) ? 100 : ((I_PRICE <= GEN_7) ? 250 : 200),
         .description = COMPOUND_STRING(
-            "Defrosts a frozen "
-            "Pokémon."),
+            "Heals a Pokémon "
+            "of frostbite."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STATUS_RECOVERY,
         .type = ITEM_USE_PARTY_MENU,
@@ -10247,7 +10247,7 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_CURE_FRZ,
         .description = COMPOUND_STRING(
             "A hold item that "
-            "defrosts\nPokémon "
+            "heals frostbite\n"
             "in battle."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU,
@@ -14023,9 +14023,8 @@ const struct Item gItemsInfo[] =
         .name = ITEM_NAME("Vs. Seeker"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "A rechargeable unit "
-            "that flags\nbattle-"
-            "ready Trainers."),
+            "A rechargeable unit that flags\n"
+            "battle-ready Trainers."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,

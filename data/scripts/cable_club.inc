@@ -1290,7 +1290,7 @@ TwoIsland_JoyfulGameCorner_EventScript_ShowDodrioBerryPickingRecords::
 
 CableClub_Text_WelcomeWhichCableClubService::
 	.string "Welcome to the Pokémon CABLE\n"
-	.string "CLUB.\p"
+	.string "Club.\p"
 	.string "Which of our services do you wish\n"
 	.string "to use?$"
 
@@ -1311,7 +1311,7 @@ CableClub_Text_CloseThisMenu::
 	.string "おわります$"
 
 CableClub_Text_NeedTwoMonsForDoubleBattle::
-	.string "For a DOUBLE BATTLE, you must\n"
+	.string "For a Double Battle, you must\n"
 	.string "have at least two Pokémon.$"
 
 CableClub_Text_NeedTwoMonsToTrade::
@@ -1372,11 +1372,11 @@ CableClub_Text_IncorrectNumberOfParticipants::
 	.string "incorrect.$"
 
 CableClub_Text_CantSingleBattleWithXPlayers::
-	.string "The SINGLE BATTLE Mode can't be\n"
+	.string "The Single Battle Mode can't be\n"
 	.string "played by {STR_VAR_1} players.$"
 
 CableClub_Text_CantDoubleBattleWithXPlayers::
-	.string "The DOUBLE BATTLE Mode can't be\n"
+	.string "The Double Battle Mode can't be\n"
 	.string "played by {STR_VAR_1} players.$"
 
 CableClub_Text_NeedFourPlayers::
@@ -1402,11 +1402,11 @@ Text_TrainerTooBusyToNotice::
 
 Text_LookedAtPlayersTrainerCard::
 	.string "Score! Got to look at {STR_VAR_1}'s\n"
-	.string "Trainer CARD!$"
+	.string "Trainer Card!$"
 
 Text_LookedAtPlayersTrainerCardColored::
 	.string "Score! Got to look at {STR_VAR_1}'s\n"
-	.string "Trainer CARD!\p"
+	.string "Trainer Card!\p"
 	.string "It's a {STR_VAR_2} card!$"
 
 Text_TakeSeatStartBattle::
@@ -1422,7 +1422,7 @@ RecordCorner_Text_ThanksForComing::
 	.string "ごりよう　ありがとう　ございました$"
 
 CableClub_Text_TrainerCardDataOverwritten::
-	.string "The Trainer CARD data will\n"
+	.string "The Trainer Card data will\n"
 	.string "be overwritten.$"
 
 CableClub_Text_HopeToSeeYouAgain::
@@ -1467,7 +1467,7 @@ CableClub_Text_YouMayBattleHere::
 
 CableClub_Text_CanMakeBerryPowder::
 	.string "Two to five Trainers can make\n"
-	.string "Berry POWDER together.$"
+	.string "Berry Powder together.$"
 
 @ Unused, Record Mix nopped
 CableClub_Text_CanMixRecords::
@@ -1486,7 +1486,7 @@ CableClub_Text_ReturnsToPreviousStep::
 	.string "ひとつ　まえに　もどります$"
 
 CableClub_Text_NeedBerryForBerryCrush::
-	.string "To use the Berry CRUSH service,\n"
+	.string "To use the Berry Crush service,\n"
 	.string "you must have at least one Berry.$"
 
 CableClub_Text_NeedTwoMonsForUnionRoom::
@@ -1603,8 +1603,8 @@ Text_RetryFromStartPlease::
 	.string "やりなおして　みて　くれ$"
 
 CableClub_Text_WelcomeWhichDirectCornerRoom::
-	.string "Welcome to the Pokémon WIRELESS\n"
-	.string "CLUB Direct Corner.\p"
+	.string "Welcome to the Pokémon \n"
+	.string "Club Direct Corner.\p"
 	.string "You may interact directly with\n"
 	.string "your friends here.\p"
 	.string "Which room would you like to\n"
@@ -1619,19 +1619,19 @@ CableClub_Text_PlayWhichBattleMode::
 
 CableClub_Text_UseBerryCrush::
 	.string "Would you like to use the\n"
-	.string "Berry CRUSH System?$"
+	.string "Berry Crush System?$"
 
 CableClub_Text_ExplainBattleModes::
 	.string "There are three Battle Modes.\p"
-	.string "SINGLE BATTLE is for two Trainers\n"
+	.string "Single Battle is for two Trainers\n"
 	.string "with one or more Pokémon each.\p"
 	.string "Each Trainer can have one Pokémon\n"
 	.string "in battle at a time.\p"
-	.string "DOUBLE BATTLE is for two Trainers\n"
+	.string "Double Battle is for two Trainers\n"
 	.string "with two or more Pokémon each.\p"
 	.string "Each Trainer will send out two\n"
 	.string "Pokémon in battle at a time.\p"
-	.string "MULTI BATTLE is for four Trainers\n"
+	.string "Multi Battle is for four Trainers\n"
 	.string "with one or more Pokémon each.\p"
 	.string "Each Trainer can have one Pokémon\n"
 	.string "in battle at a time.$"
@@ -1640,32 +1640,32 @@ CableClub_Text_ChooseGroupLeaderOfTwo::
 	.string "Please decide which of you two\n"
 	.string "will become the .\p"
 	.string "The other player must then choose\n"
-	.string "“JOIN GROUP.”$"
+	.string "“Join Group.”$"
 
 CableClub_Text_ChooseGroupLeaderOfFour::
 	.string "Please decide which of you four\n"
-	.string "will become the GROUP .\p"
+	.string "will become the Group .\p"
 	.string "The other players must then choose\n"
-	.string "“JOIN GROUP.”$"
+	.string "“Join Group.”$"
 
 CableClub_Text_ChooseGroupLeader::
 	.string "Please decide which of you will\n"
-	.string "become the GROUP .\p"
+	.string "become the Group.\p"
 	.string "The other players must then choose\n"
-	.string "“JOIN GROUP.”$"
+	.string "“Join Group.”$"
 
 CableClub_Text_WelcomeUnionRoomEnter::
-	.string "Welcome to the Pokémon WIRELESS\n"
-	.string "CLUB Union Room.\p"
+	.string "Welcome to the Pokémon \n"
+	.string "Club Union Room.\p"
 	.string "You may interact directly with\n"
 	.string "other Trainers here, some of\l"
 	.string "whom you may not even know.\p"
-	.string "Would you like to enter the ROOM?$"
+	.string "Would you like to enter the Room?$"
 
 CableClub_Text_UnionRoomInfo::
 	.string "The Trainers in the Union Room\n"
 	.string "will be those players around you\l"
-	.string "who have also entered the ROOM.\p"
+	.string "who have also entered the Room.\p"
 	.string "You may do all sorts of things\n"
 	.string "here, such as exchanging greetings.\p"
 	.string "You may enter two Pokémon up to\n"
@@ -1674,7 +1674,7 @@ CableClub_Text_UnionRoomInfo::
 	.string "two to five people.\p"
 	.string "Or, you may register a Pokémon for\n"
 	.string "trade.\p"
-	.string "Would you like to enter the ROOM?$"
+	.string "Would you like to enter the Room?$"
 
 CableClub_Text_EnjoyUnionRoom::
 	.string "I hope you enjoy your time in\n"
@@ -1682,7 +1682,7 @@ CableClub_Text_EnjoyUnionRoom::
 
 CableClub_Text_FirstTimeRightThisWay::
 	.string "Hello!\n"
-	.string "My name is TEALA.\p"
+	.string "My name is Teala.\p"
 	.string "This must be your first time\n"
 	.string "up here.\p"
 	.string "I'll show you how the Wireless\n"
@@ -1715,7 +1715,7 @@ CableClub_Text_ExplainWirelessClubFirstTime::
 
 CableClub_Text_AskAboutLinking::
 	.string "Hello, {PLAYER}!\p"
-	.string "It's me, TEALA, the Pokémon\n"
+	.string "It's me, Teala, the Pokémon\n"
 	.string "Center 2F attendant.\p"
 	.string "Is there something you needed to\n"
 	.string "ask me about linking?$"

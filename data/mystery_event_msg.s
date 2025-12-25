@@ -32,10 +32,10 @@ MysteryEventScript_StampCard::
 	end
 
 sText_MysteryGiftStampCard:
-	.string "Thank you for using the STAMP CARD\n"
+	.string "Thank you for using the Stamp Card\n"
 	.string "System.\p"
 	.string "You have {STR_VAR_1} more to collect to\n"
-	.string "fill your STAMP CARD.$"
+	.string "fill your Stamp Card.$"
 
 MysteryEventScript_SurfPichu::
 	setvaddress MysteryEventScript_SurfPichu
@@ -98,17 +98,17 @@ SurfPichu_Slot5:
 	return
 
 sText_MysteryGiftEgg:
-	.string "Thank you for using the MYSTERY\n"
-	.string "GIFT System.\p"
-	.string "From the POKéMON CENTER we\n"
-	.string "have a gift - a POKéMON EGG!\p"
+	.string "Thank you for using the Mystery\n"
+	.string "Gift System.\p"
+	.string "From the Pokémon Center we\n"
+	.string "have a gift - a Pokémon Egg!\p"
 	.string "Please raise it with love and\n"
 	.string "kindness.$"
 
 sText_FullParty:
 	.string "Oh, your party appears to be full.\p"
 	.string "Please come see me after storing\n"
-	.string "a POKéMON on a PC.$"
+	.string "a Pokémon on a PC.$"
 
 MysteryEventScript_VisitingTrainer::
 	setvaddress MysteryEventScript_VisitingTrainer
@@ -132,11 +132,11 @@ MysteryEventScript_VisitingTrainerArrived:
 	end
 
 sText_MysteryGiftVisitingTrainer:
-	.string "Thank you for using the MYSTERY\n"
-	.string "GIFT System.\p"
-	.string "By holding this WONDER CARD, you\n"
+	.string "Thank you for using the Mystery\n"
+	.string "Gift System.\p"
+	.string "By holding this Wonder Card, you\n"
 	.string "may take part in a survey at a\l"
-	.string "POKéMON MART.\p"
+	.string "Pokémon Mart.\p"
 	.string "Use these surveys to invite\n"
 	.string "Trainer to the Sevii Islands.\p"
 	.string "…Let me give you a secret\n"
@@ -144,12 +144,12 @@ sText_MysteryGiftVisitingTrainer:
 	.string "“GIVE ME\n"
 	.string "AWESOME TRAINER”\p"
 	.string "Write that in on a survey and send\n"
-	.string "it to the WIRELESS\l"
-	.string "COMMUNICATION SYSTEM.$"
+	.string "it to the Wireless\l"
+	.string "Communication System.$"
 
 sText_MysteryGiftVisitingTrainer_2:
-	.string "Thank you for using the MYSTERY\n"
-	.string "GIFT System.\p"
+	.string "Thank you for using the Mystery\n"
+	.string "Gift System.\p"
 	.string "A Trainer has arrived in the Sevii\n"
 	.string "Islands looking for you.\p"
 	.string "We hope you will enjoy\n"
@@ -242,23 +242,23 @@ AuroraTicket_Obtained:
 	end
 
 sText_AuroraTicket1:
-	.string "Thank you for using the MYSTERY\n"
-	.string "GIFT System.\p"
+	.string "Thank you for using the Mystery\n"
+	.string "Gift System.\p"
 	.string "You must be {PLAYER}.\n"
 	.string "There is a ticket here for you.$"
 
 sText_AuroraTicket2:
 	.string "It appears to be for use at the\n"
-	.string "VERMILION CITY port.\p"
+	.string "Vermilion City port.\p"
 	.string "Why not give it a try and see what\n"
 	.string "it is about?$"
 
 sText_AuroraTicketGot:
-	.string "Thank you for using the MYSTERY\n"
-	.string "GIFT System.$"
+	.string "Thank you for using the Mystery\n"
+	.string "Gift System.$"
 
 sText_AuroraTicketNoPlace:
-	.string "Oh, I'm sorry, {PLAYER}. Your BAG's\n"
+	.string "Oh, I'm sorry, {PLAYER}. Your Bag's\n"
 	.string "Key Items Pocket is full.\p"
 	.string "Please store something on your PC,\n"
 	.string "then come back for this.$"
@@ -301,23 +301,23 @@ MysticTicket_Obtained:
 	end
 
 sText_MysticTicket2:
-	.string "Thank you for using the MYSTERY\n"
-	.string "GIFT System.\p"
+	.string "Thank you for using the Mystery\n"
+	.string "Gift System.\p"
 	.string "You must be {PLAYER}.\n"
 	.string "There is a ticket here for you.$"
 
 sText_MysticTicket1:
 	.string "It appears to be for use at the\n"
-	.string "VERMILION CITY port.\p"
+	.string "Vermilion City port.\p"
 	.string "Why not give it a try and see what\n"
 	.string "it is about?$"
 
 sText_MysticTicketGot:
-	.string "Thank you for using the MYSTERY\n"
-	.string "GIFT System.$"
+	.string "Thank you for using the Mystery\n"
+	.string "Gift System.$"
 
 sText_MysticTicketNoPlace:
-	.string "Oh, I'm sorry, {PLAYER}. Your BAG's\n"
+	.string "Oh, I'm sorry, {PLAYER}. Your Bag's\n"
 	.string "Key Items Pocket is full.\p"
 	.string "Please store something on your PC,\n"
 	.string "then come back for this.$"

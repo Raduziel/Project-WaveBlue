@@ -726,7 +726,7 @@ extern const u8 gText_Psn[];
 extern const u8 gText_Par[];
 extern const u8 gText_Slp[];
 extern const u8 gText_Brn[];
-extern const u8 gText_Frz[];
+extern const u8 gText_Frb[];
 extern const u8 gText_Yes[];
 extern const u8 gText_No[];
 extern const u8 gText_SingleBattle[];

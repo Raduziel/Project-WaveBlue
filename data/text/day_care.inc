@@ -1,7 +1,7 @@
 @ Same as Hoenn's day-care text, used by the Four Island Day-Care. Unused text translated in Emerald
 
 DayCare_Text_ImDaycareManSpeakToMyWife::
-	.string "I'm the DAY-CARE MAN.\p"
+	.string "I'm the Day-Care Man.\p"
 	.string "I help take care of the precious\n"
 	.string "Pokémon of Trainers.\p"
 	.string "If you'd like me to raise your\n"
@@ -30,7 +30,7 @@ DayCare_Text_YouHaveNoRoomForIt::
 
 DayCare_Text_ReceivedEgg::
 	.string "{PLAYER} received the Egg from\n"
-	.string "the DAY-CARE MAN.$"
+	.string "the Day-Care Man.$"
 
 DayCare_Text_TakeGoodCareOfIt::
 	.string "Take good care of it.$"
@@ -48,7 +48,7 @@ DayCare_Text_IWillKeepDoYouWantIt::
 	.string "You do want this, yes?$"
 
 DayCare_Text_WouldYouLikeUsToRaiseMon::
-	.string "I'm the DAY-CARE LADY.\p"
+	.string "I'm the Day-Care Lady.\p"
 	.string "We can raise Pokémon for you.\p"
 	.string "Would you like us to raise one?$"
 
@@ -111,7 +111,7 @@ DayCare_Text_HeresYourMon::
 
 DayCare_Text_TookBackMon::
 	.string "{PLAYER} took back {STR_VAR_1} from\n"
-	.string "the DAY-CARE LADY.$"
+	.string "the Day-Care Lady.$"
 
 DayCare_Text_YouHaveJustOneMon::
 	.string "Oh? But you have just one\n"
