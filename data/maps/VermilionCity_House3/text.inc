@@ -6,7 +6,7 @@ VermilionCity_House3_Text_Pidgey::
     .string "Pidgey: Kurukkoo!$"
 
 VermilionCity_House3_Text_DearPippiLetter::
-    .string "Dear PIPPI,\n"
+    .string "Dear Pippi,\n"
     .string "I hope to see you soon.\p"
     .string "I heard Saffron has problems with\n"
     .string "Team Rocket.\p"

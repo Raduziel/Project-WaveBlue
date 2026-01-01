@@ -608,10 +608,10 @@ AI_DOUBLE_BATTLE_TEST("AI uses Trick Room intelligently")
     u32 move, ability, speed;
 
     PARAMETRIZE { move = MOVE_DRAINING_KISS; ability = ABILITY_SYNCHRONIZE; speed = 4; }
-    PARAMETRIZE { move = MOVE_DAZZLING_GLEAM; ability = ABILITY_SYNCHRONIZE; speed = 4; }
+    PARAMETRIZE { move = MOVE_DAZZLE_GLEAM; ability = ABILITY_SYNCHRONIZE; speed = 4; }
     PARAMETRIZE { move = MOVE_DRAINING_KISS; ability = ABILITY_PSYCHIC_SURGE; speed = 4; }
     PARAMETRIZE { move = MOVE_DRAINING_KISS; ability = ABILITY_SYNCHRONIZE; speed = 2; }
-    PARAMETRIZE { move = MOVE_DAZZLING_GLEAM; ability = ABILITY_SYNCHRONIZE; speed = 2; }
+    PARAMETRIZE { move = MOVE_DAZZLE_GLEAM; ability = ABILITY_SYNCHRONIZE; speed = 2; }
     PARAMETRIZE { move = MOVE_DRAINING_KISS; ability = ABILITY_PSYCHIC_SURGE; speed = 2; }
 
     GIVEN {

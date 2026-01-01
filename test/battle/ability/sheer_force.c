@@ -500,7 +500,7 @@ static inline bool32 IsMoveSheerForceBoosted(u32 move)
         case MOVE_ZEN_HEADBUTT:
         case MOVE_ACID:
         case MOVE_ACID_SPRAY:
-        case MOVE_ALLURING_VOICE:
+        case MOVE_ALLURE_VOICE:
         case MOVE_ANCHOR_SHOT:
         case MOVE_APPLE_ACID:
         case MOVE_AQUA_STEP:
@@ -628,7 +628,7 @@ DOUBLE_BATTLE_TEST("Sheer Force only boosts the damage of moves it's supposed to
         OPPONENT(SPECIES_STEELIX) { Ability(ABILITY_STURDY); Item(ITEM_BLUK_BERRY); }
         OPPONENT(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); Level(100); Item(ITEM_BLUK_BERRY); }
     } WHEN {
-        if (move == MOVE_ALLURING_VOICE || move == MOVE_BURNING_JEALOUSY) // Alluring Voice requires the target to boost stats to have an effect
+        if (move == MOVE_ALLURE_VOICE || move == MOVE_BURNING_JEALOUSY) // Allure Voice requires the target to boost stats to have an effect
             TURN { MOVE(opponentRight, MOVE_AGILITY); MOVE(playerRight, MOVE_AGILITY); MOVE(playerLeft, move, target: opponentRight); MOVE(opponentLeft, move, target: playerRight); }
         else if (move == MOVE_UPPER_HAND) // Upper Hand requires the target to be using a damaging priority move
             TURN { MOVE(opponentRight, MOVE_QUICK_ATTACK, target: playerLeft); MOVE(playerRight, move, target: opponentLeft); MOVE(playerLeft, move, target: opponentRight); MOVE(opponentLeft, move, target: playerRight); }
@@ -711,7 +711,7 @@ DOUBLE_BATTLE_TEST("Sheer Force only boosts the damage of moves it's supposed to
         OPPONENT(SPECIES_STEELIX) { Ability(ABILITY_STURDY); Item(ITEM_BLUK_BERRY); }
         OPPONENT(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); Level(100); Item(ITEM_BLUK_BERRY); }
     } WHEN {
-        if (move == MOVE_ALLURING_VOICE || move == MOVE_BURNING_JEALOUSY) // Alluring Voice requires the target to boost stats to have an effect
+        if (move == MOVE_ALLURE_VOICE || move == MOVE_BURNING_JEALOUSY) // Allure Voice requires the target to boost stats to have an effect
             TURN { MOVE(opponentRight, MOVE_AGILITY); MOVE(playerRight, MOVE_AGILITY); MOVE(playerLeft, move, target: opponentRight); MOVE(opponentLeft, move, target: playerRight); }
         else if (move == MOVE_UPPER_HAND) // Upper Hand requires the target to be using a damaging priority move
             TURN { MOVE(opponentRight, MOVE_QUICK_ATTACK, target: playerLeft); MOVE(playerRight, move, target: opponentLeft); MOVE(playerLeft, move, target: opponentRight); MOVE(opponentLeft, move, target: playerRight); }
@@ -794,7 +794,7 @@ DOUBLE_BATTLE_TEST("Sheer Force only boosts the damage of moves it's supposed to
         OPPONENT(SPECIES_STEELIX) { Ability(ABILITY_STURDY); Item(ITEM_BLUK_BERRY); }
         OPPONENT(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); Level(100); Item(ITEM_BLUK_BERRY); }
     } WHEN {
-        if (move == MOVE_ALLURING_VOICE || move == MOVE_BURNING_JEALOUSY) // Alluring Voice requires the target to boost stats to have an effect
+        if (move == MOVE_ALLURE_VOICE || move == MOVE_BURNING_JEALOUSY) // Allure Voice requires the target to boost stats to have an effect
             TURN { MOVE(opponentRight, MOVE_AGILITY); MOVE(playerRight, MOVE_AGILITY); MOVE(playerLeft, move, target: opponentRight); MOVE(opponentLeft, move, target: playerRight); }
         else if (move == MOVE_UPPER_HAND) // Upper Hand requires the target to be using a damaging priority move
             TURN { MOVE(opponentRight, MOVE_QUICK_ATTACK, target: playerLeft); MOVE(playerRight, move, target: opponentLeft); MOVE(playerLeft, move, target: opponentRight); MOVE(opponentLeft, move, target: playerRight); }
@@ -877,7 +877,7 @@ DOUBLE_BATTLE_TEST("Sheer Force only boosts the damage of moves it's supposed to
         OPPONENT(SPECIES_STEELIX) { Ability(ABILITY_STURDY); Item(ITEM_BLUK_BERRY); }
         OPPONENT(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); Level(100); Item(ITEM_BLUK_BERRY); }
     } WHEN {
-        if (move == MOVE_ALLURING_VOICE || move == MOVE_BURNING_JEALOUSY) // Alluring Voice requires the target to boost stats to have an effect
+        if (move == MOVE_ALLURE_VOICE || move == MOVE_BURNING_JEALOUSY) // Allure Voice requires the target to boost stats to have an effect
             TURN { MOVE(opponentRight, MOVE_AGILITY); MOVE(playerRight, MOVE_AGILITY); MOVE(playerLeft, move, target: opponentRight); MOVE(opponentLeft, move, target: playerRight); }
         else if (move == MOVE_UPPER_HAND) // Upper Hand requires the target to be using a damaging priority move
             TURN { MOVE(opponentRight, MOVE_QUICK_ATTACK, target: playerLeft); MOVE(playerRight, move, target: opponentLeft); MOVE(playerLeft, move, target: opponentRight); MOVE(opponentLeft, move, target: playerRight); }
@@ -960,7 +960,7 @@ DOUBLE_BATTLE_TEST("Sheer Force only boosts the damage of moves it's supposed to
         OPPONENT(SPECIES_STEELIX) { Ability(ABILITY_STURDY); Item(ITEM_BLUK_BERRY); }
         OPPONENT(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); Level(100); Item(ITEM_BLUK_BERRY); }
     } WHEN {
-        if (move == MOVE_ALLURING_VOICE || move == MOVE_BURNING_JEALOUSY) // Alluring Voice requires the target to boost stats to have an effect
+        if (move == MOVE_ALLURE_VOICE || move == MOVE_BURNING_JEALOUSY) // Allure Voice requires the target to boost stats to have an effect
             TURN { MOVE(opponentRight, MOVE_AGILITY); MOVE(playerRight, MOVE_AGILITY); MOVE(playerLeft, move, target: opponentRight); MOVE(opponentLeft, move, target: playerRight); }
         else if (move == MOVE_UPPER_HAND) // Upper Hand requires the target to be using a damaging priority move
             TURN { MOVE(opponentRight, MOVE_QUICK_ATTACK, target: playerLeft); MOVE(playerRight, move, target: opponentLeft); MOVE(playerLeft, move, target: opponentRight); MOVE(opponentLeft, move, target: playerRight); }
@@ -1043,7 +1043,7 @@ DOUBLE_BATTLE_TEST("Sheer Force only boosts the damage of moves it's supposed to
         OPPONENT(SPECIES_STEELIX) { Ability(ABILITY_STURDY); Item(ITEM_BLUK_BERRY); }
         OPPONENT(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); Level(100); Item(ITEM_BLUK_BERRY); }
     } WHEN {
-        if (move == MOVE_ALLURING_VOICE || move == MOVE_BURNING_JEALOUSY) // Alluring Voice requires the target to boost stats to have an effect
+        if (move == MOVE_ALLURE_VOICE || move == MOVE_BURNING_JEALOUSY) // Allure Voice requires the target to boost stats to have an effect
             TURN { MOVE(opponentRight, MOVE_AGILITY); MOVE(playerRight, MOVE_AGILITY); MOVE(playerLeft, move, target: opponentRight); MOVE(opponentLeft, move, target: playerRight); }
         else if (move == MOVE_UPPER_HAND) // Upper Hand requires the target to be using a damaging priority move
             TURN { MOVE(opponentRight, MOVE_QUICK_ATTACK, target: playerLeft); MOVE(playerRight, move, target: opponentLeft); MOVE(playerLeft, move, target: opponentRight); MOVE(opponentLeft, move, target: playerRight); }
@@ -1126,7 +1126,7 @@ DOUBLE_BATTLE_TEST("Sheer Force only boosts the damage of moves it's supposed to
         OPPONENT(SPECIES_STEELIX) { Ability(ABILITY_STURDY); Item(ITEM_BLUK_BERRY); }
         OPPONENT(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); Level(100); Item(ITEM_BLUK_BERRY); }
     } WHEN {
-        if (move == MOVE_ALLURING_VOICE || move == MOVE_BURNING_JEALOUSY) // Alluring Voice requires the target to boost stats to have an effect
+        if (move == MOVE_ALLURE_VOICE || move == MOVE_BURNING_JEALOUSY) // Allure Voice requires the target to boost stats to have an effect
             TURN { MOVE(opponentRight, MOVE_AGILITY); MOVE(playerRight, MOVE_AGILITY); MOVE(playerLeft, move, target: opponentRight); MOVE(opponentLeft, move, target: playerRight); }
         else if (move == MOVE_UPPER_HAND) // Upper Hand requires the target to be using a damaging priority move
             TURN { MOVE(opponentRight, MOVE_QUICK_ATTACK, target: playerLeft); MOVE(playerRight, move, target: opponentLeft); MOVE(playerLeft, move, target: opponentRight); MOVE(opponentLeft, move, target: playerRight); }
@@ -1209,7 +1209,7 @@ DOUBLE_BATTLE_TEST("Sheer Force only boosts the damage of moves it's supposed to
         OPPONENT(SPECIES_STEELIX) { Ability(ABILITY_STURDY); Item(ITEM_BLUK_BERRY); }
         OPPONENT(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); Level(100); Item(ITEM_BLUK_BERRY); }
     } WHEN {
-        if (move == MOVE_ALLURING_VOICE || move == MOVE_BURNING_JEALOUSY) // Alluring Voice requires the target to boost stats to have an effect
+        if (move == MOVE_ALLURE_VOICE || move == MOVE_BURNING_JEALOUSY) // Allure Voice requires the target to boost stats to have an effect
             TURN { MOVE(opponentRight, MOVE_AGILITY); MOVE(playerRight, MOVE_AGILITY); MOVE(playerLeft, move, target: opponentRight); MOVE(opponentLeft, move, target: playerRight); }
         else if (move == MOVE_UPPER_HAND) // Upper Hand requires the target to be using a damaging priority move
             TURN { MOVE(opponentRight, MOVE_QUICK_ATTACK, target: playerLeft); MOVE(playerRight, move, target: opponentLeft); MOVE(playerLeft, move, target: opponentRight); MOVE(opponentLeft, move, target: playerRight); }
@@ -1293,7 +1293,7 @@ DOUBLE_BATTLE_TEST("Sheer Force only boosts the damage of moves it's supposed to
         OPPONENT(SPECIES_STEELIX) { Ability(ABILITY_STURDY); Item(ITEM_BLUK_BERRY); }
         OPPONENT(SPECIES_WOBBUFFET) { Ability(ABILITY_TELEPATHY); Level(100); Item(ITEM_BLUK_BERRY); }
     } WHEN {
-        if (move == MOVE_ALLURING_VOICE || move == MOVE_BURNING_JEALOUSY) // Alluring Voice requires the target to boost stats to have an effect
+        if (move == MOVE_ALLURE_VOICE || move == MOVE_BURNING_JEALOUSY) // Allure Voice requires the target to boost stats to have an effect
             TURN { MOVE(opponentRight, MOVE_AGILITY); MOVE(playerRight, MOVE_AGILITY); MOVE(playerLeft, move, target: opponentRight); MOVE(opponentLeft, move, target: playerRight); }
         else if (move == MOVE_UPPER_HAND) // Upper Hand requires the target to be using a damaging priority move
             TURN { MOVE(opponentRight, MOVE_QUICK_ATTACK, target: playerLeft); MOVE(playerRight, move, target: opponentLeft); MOVE(playerLeft, move, target: opponentRight); MOVE(opponentLeft, move, target: playerRight); }

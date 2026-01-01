@@ -14705,9 +14705,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_FreezeDry,
     },
 
-    [MOVE_DISARMING_VOICE] =
+    [MOVE_DISARM_VOICE] =
     {
-        .name = COMPOUND_STRING("Disarming Voice"),
+        .name = COMPOUND_STRING("Disarm Voice"),
         .description = COMPOUND_STRING(
             "Lets out a\ncharming cry "
             "that\ncannot be evaded."),
@@ -15469,9 +15469,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_ElectricTerrain,
     },
 
-    [MOVE_DAZZLING_GLEAM] =
+    [MOVE_DAZZLE_GLEAM] =
     {
-        .name = COMPOUND_STRING("Dazzling Gleam"),
+        .name = COMPOUND_STRING("Dazzle Gleam"),
         .description = COMPOUND_STRING(
             "Damages foes by\nemitting "
             "a bright\nflash."),
@@ -21060,9 +21060,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .battleAnimScript = gBattleAnimMove_DragonCheer,
     },
 
-    [MOVE_ALLURING_VOICE] =
+    [MOVE_ALLURE_VOICE] =
     {
-        .name = COMPOUND_STRING("Alluring Voice"),
+        .name = COMPOUND_STRING("Allure Voice"),
         .description = COMPOUND_STRING(
             "Confuses foe if\nits stats "
             "were\nboosted this turn."),

@@ -7,7 +7,7 @@ RocketHideout_B1F_Text_Grunt1Defeat::
     .string "Beaten!$"
 
 RocketHideout_B1F_Text_Grunt1PostBattle::
-    .string "Blast it… You're dissing TEAM\n"
+    .string "Blast it… You're dissing Team\n"
     .string "Rocket, aren't you?$"
 
 RocketHideout_B1F_Text_Grunt2Intro::

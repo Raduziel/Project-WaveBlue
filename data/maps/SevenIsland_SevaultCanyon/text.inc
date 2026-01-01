@@ -118,7 +118,7 @@ SevenIsland_SevaultCanyon_Text_NyaNotEnoughMons::
 
 SevenIsland_SevaultCanyon_Text_RouteSign::
     .string "Sevault Canyon\n"
-    .string "TANOBY RUINS AHEAD$"
+    .string "Tanoby Ruins Ahead$"
 
 SevenIsland_SevaultCanyon_Text_BrunoTrainedWithBrawly::
     .string "Training by oneself is certainly\n"
@@ -127,4 +127,4 @@ SevenIsland_SevaultCanyon_Text_BrunoTrainedWithBrawly::
     .string "the top with a partner.\p"
     .string "Even Bruno…\n"
     .string "He trained with a fellow by the\l"
-    .string "name of BRAWLY before.$"
+    .string "name of Brawly before.$"

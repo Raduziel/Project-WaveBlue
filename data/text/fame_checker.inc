@@ -155,7 +155,7 @@ gFameCheckerFlavorText_LtSurge0:: @ 0x81ADD3C
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}What does this person do?\p"
 	.string "{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Vermilion City Pokémon Gym\n"
 	.string "Leader: Lt. Surge\l"
-	.string "The Lightning American!$"
+	.string "The Lightning Soldier!$"
 
 gFameCheckerFlavorText_LtSurge1:: @ 0x81ADDA7
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Favorite kind of Pokémon?\p"
@@ -864,7 +864,7 @@ gFameCheckerFlavorTextOriginLocation_Misty3::
 	.string "Seafoam Islands$"
 
 gFameCheckerFlavorTextOriginLocation_Misty4::
-	.string "Cerulean CAPE$"
+	.string "Cerulean cape$"
 
 gFameCheckerFlavorTextOriginLocation_Misty5::
 	.string "Cerulean City$"

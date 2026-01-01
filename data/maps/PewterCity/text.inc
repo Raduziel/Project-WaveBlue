@@ -57,7 +57,7 @@ PewterCity_Text_DontSneakUp::
 PewterCity_Text_TrainerTipsEarningEXP::
     .string "Trainer Tips\p"
     .string "All Pokémon that appear in battle,\n"
-    .string "however briefly, earn EXP Points.$"
+    .string "however briefly, earn Exp Points.$"
 
 PewterCity_Text_CallPoliceIfInfoOnThieves::
     .string "NOTICE!\p"
@@ -108,7 +108,7 @@ PewterCity_Text_AskedToDeliverThis::
     .string "I've been asked to deliver this,\n"
     .string "so here you go.$"
 
-PewterCity_Text_ExplainRunningShoes::
+PewterCity_Text_ExplainExpShare::
     .string "When the Exp. Share is activated,\n"
     .string "all Pokémon in your party receive\p"
     .string "half the experience earned by those\n"
@@ -119,10 +119,10 @@ PewterCity_Text_MustBeGoingBackToLab::
     .string "the Lab.\p"
     .string "Bye-bye!$"
 
-PewterCity_Text_RunningShoesLetterFromMom::
+PewterCity_Text_ExpShareLetterFromMom::
     .string "There's a letter attached…\p"
     .string "Dear {PLAYER},\p"
-    .string "Here is a Exp. Share\n"
+    .string "Here is an Exp. Share\n"
     .string "for my beloved challenger.\p"
     .string "Remember, I'll always cheer for\n"
     .string "you! Don't ever give up!\p"

@@ -2408,7 +2408,7 @@
     ],
     "EggMoves": [
       "MOVE_CHARGE",
-      "MOVE_DISARMING_VOICE",
+      "MOVE_DISARM_VOICE",
       "MOVE_ELECTRIC_TERRAIN",
       "MOVE_ENCORE",
       "MOVE_FAKE_OUT",
@@ -2551,7 +2551,7 @@
     ],
     "EggMoves": [
       "MOVE_CHARGE",
-      "MOVE_DISARMING_VOICE",
+      "MOVE_DISARM_VOICE",
       "MOVE_ELECTRIC_TERRAIN",
       "MOVE_ENCORE",
       "MOVE_FAKE_OUT",
@@ -3509,7 +3509,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 1,
@@ -3601,7 +3601,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_IRON_TAIL",
       "MOVE_THUNDERBOLT",
@@ -3665,7 +3665,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 1,
@@ -3758,7 +3758,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_IRON_TAIL",
       "MOVE_THUNDERBOLT",
@@ -4053,7 +4053,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 1,
@@ -4144,7 +4144,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
@@ -4199,7 +4199,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 1,
@@ -4291,7 +4291,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
@@ -4606,7 +4606,7 @@
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
       "MOVE_GIGA_DRAIN",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_DOUBLE_TEAM",
       "MOVE_SLUDGE_BOMB",
@@ -4704,7 +4704,7 @@
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
       "MOVE_GIGA_DRAIN",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_DOUBLE_TEAM",
       "MOVE_SLUDGE_BOMB",
@@ -4818,7 +4818,7 @@
       "MOVE_PROTECT",
       "MOVE_GIGA_DRAIN",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_DOUBLE_TEAM",
       "MOVE_SLUDGE_BOMB",
@@ -6766,7 +6766,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_IRON_TAIL",
       "MOVE_PSYCHIC",
       "MOVE_SHADOW_BALL",
@@ -6884,7 +6884,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_IRON_TAIL",
       "MOVE_PSYCHIC",
       "MOVE_SHADOW_BALL",
@@ -6999,7 +6999,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_IRON_TAIL",
       "MOVE_PSYCHIC",
       "MOVE_SHADOW_BALL",
@@ -7797,7 +7797,7 @@
       "MOVE_RAIN_DANCE",
       "MOVE_GIGA_DRAIN",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_DOUBLE_TEAM",
       "MOVE_SLUDGE_BOMB",
       "MOVE_FACADE",
@@ -7905,7 +7905,7 @@
       "MOVE_RAIN_DANCE",
       "MOVE_GIGA_DRAIN",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_DOUBLE_TEAM",
       "MOVE_SLUDGE_BOMB",
       "MOVE_FACADE",
@@ -10069,7 +10069,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_GIGA_DRAIN",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_THUNDERBOLT",
       "MOVE_PSYCHIC",
       "MOVE_SHADOW_BALL",
@@ -10186,7 +10186,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_GIGA_DRAIN",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_THUNDERBOLT",
       "MOVE_PSYCHIC",
       "MOVE_SHADOW_BALL",
@@ -10311,7 +10311,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_GIGA_DRAIN",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
       "MOVE_PSYCHIC",
@@ -10567,7 +10567,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_LOW_SWEEP",
       "MOVE_PSYCHIC",
       "MOVE_SHADOW_BALL",
@@ -10709,7 +10709,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_LOW_SWEEP",
       "MOVE_PSYCHIC",
       "MOVE_SHADOW_BALL",
@@ -12496,7 +12496,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 1,
@@ -12590,7 +12590,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_IRON_TAIL",
       "MOVE_THUNDERBOLT",
@@ -13314,7 +13314,7 @@
       "MOVE_LIGHT_SCREEN",
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
       "MOVE_PSYCHIC",
@@ -13417,7 +13417,7 @@
       "MOVE_LIGHT_SCREEN",
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
       "MOVE_PSYCHIC",
@@ -13525,7 +13525,7 @@
       },
       {
         "Level": 44,
-        "Move": "MOVE_DAZZLING_GLEAM"
+        "Move": "MOVE_DAZZLE_GLEAM"
       },
       {
         "Level": 48,
@@ -13547,7 +13547,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
@@ -16764,7 +16764,7 @@
       "MOVE_RAIN_DANCE",
       "MOVE_GIGA_DRAIN",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_IRON_TAIL",
       "MOVE_THUNDERBOLT",
@@ -19030,7 +19030,7 @@
       "MOVE_BLIZZARD",
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
       "MOVE_DOUBLE_TEAM",
@@ -19155,7 +19155,7 @@
       "MOVE_HYPER_BEAM",
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
       "MOVE_DOUBLE_TEAM",
@@ -19249,7 +19249,7 @@
     ],
     "EggMoves": [
       "MOVE_CHARGE",
-      "MOVE_DISARMING_VOICE",
+      "MOVE_DISARM_VOICE",
       "MOVE_ELECTRIC_TERRAIN",
       "MOVE_ENCORE",
       "MOVE_FAKE_OUT",
@@ -19286,7 +19286,7 @@
       },
       {
         "Level": 12,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 16,
@@ -19373,7 +19373,7 @@
       },
       {
         "Level": 12,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 16,
@@ -19503,7 +19503,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_PSYCHIC",
       "MOVE_SHADOW_BALL",
@@ -19621,7 +19621,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_PSYCHIC",
       "MOVE_SHADOW_BALL",
@@ -19724,7 +19724,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_GIGA_DRAIN",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_PSYCHIC",
       "MOVE_SHADOW_BALL",
@@ -19835,7 +19835,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_GIGA_DRAIN",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_PSYCHIC",
       "MOVE_SHADOW_BALL",
@@ -20319,7 +20319,7 @@
       "MOVE_PROTECT",
       "MOVE_GIGA_DRAIN",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_DOUBLE_TEAM",
       "MOVE_SLUDGE_BOMB",
@@ -20929,7 +20929,7 @@
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
       "MOVE_GIGA_DRAIN",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_DOUBLE_TEAM",
       "MOVE_REFLECT",
@@ -21060,7 +21060,7 @@
       "MOVE_SUNNY_DAY",
       "MOVE_PROTECT",
       "MOVE_GIGA_DRAIN",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_DOUBLE_TEAM",
       "MOVE_REFLECT",
@@ -21192,7 +21192,7 @@
       "MOVE_HYPER_BEAM",
       "MOVE_PROTECT",
       "MOVE_GIGA_DRAIN",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_DOUBLE_TEAM",
       "MOVE_REFLECT",
@@ -21997,7 +21997,7 @@
       "MOVE_LIGHT_SCREEN",
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_IRON_TAIL",
       "MOVE_DIG",
       "MOVE_PSYCHIC",
@@ -22513,7 +22513,7 @@
       "MOVE_TAUNT",
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
       "MOVE_PSYCHIC",
@@ -22700,7 +22700,7 @@
       "MOVE_LIGHT_SCREEN",
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_IRON_TAIL",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
@@ -23469,7 +23469,7 @@
       "MOVE_TAUNT",
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
@@ -23600,7 +23600,7 @@
       "MOVE_HYPER_BEAM",
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_IRON_TAIL",
       "MOVE_THUNDERBOLT",
@@ -26992,7 +26992,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 1,
@@ -27086,7 +27086,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_IRON_TAIL",
       "MOVE_THUNDERBOLT",
@@ -28174,7 +28174,7 @@
       "MOVE_RAIN_DANCE",
       "MOVE_GIGA_DRAIN",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_PSYCHIC",
       "MOVE_SHADOW_BALL",
@@ -31293,7 +31293,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 3,
@@ -31357,7 +31357,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_THUNDERBOLT",
       "MOVE_PSYCHIC",
       "MOVE_SHADOW_BALL",
@@ -31408,7 +31408,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 1,
@@ -31472,7 +31472,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_THUNDERBOLT",
       "MOVE_PSYCHIC",
       "MOVE_SHADOW_BALL",
@@ -31519,11 +31519,11 @@
     "LevelMoves": [
       {
         "Level": 0,
-        "Move": "MOVE_DAZZLING_GLEAM"
+        "Move": "MOVE_DAZZLE_GLEAM"
       },
       {
         "Level": 1,
-        "Move": "MOVE_DAZZLING_GLEAM"
+        "Move": "MOVE_DAZZLE_GLEAM"
       },
       {
         "Level": 1,
@@ -31547,7 +31547,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 1,
@@ -31612,7 +31612,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_THUNDERBOLT",
       "MOVE_PSYCHIC",
       "MOVE_SHADOW_BALL",
@@ -32926,7 +32926,7 @@
     ],
     "EggMoves": [
       "MOVE_CIRCLE_THROW",
-      "MOVE_DISARMING_VOICE",
+      "MOVE_DISARM_VOICE",
       "MOVE_ENDEAVOR",
       "MOVE_EXTRASENSORY",
       "MOVE_FAKE_TEARS",
@@ -33034,7 +33034,7 @@
     ],
     "EggMoves": [
       "MOVE_CIRCLE_THROW",
-      "MOVE_DISARMING_VOICE",
+      "MOVE_DISARM_VOICE",
       "MOVE_ENDEAVOR",
       "MOVE_EXTRASENSORY",
       "MOVE_FAKE_TEARS",
@@ -33172,7 +33172,7 @@
     ],
     "EggMoves": [
       "MOVE_CIRCLE_THROW",
-      "MOVE_DISARMING_VOICE",
+      "MOVE_DISARM_VOICE",
       "MOVE_ENDEAVOR",
       "MOVE_EXTRASENSORY",
       "MOVE_FAKE_TEARS",
@@ -33579,7 +33579,7 @@
       "MOVE_SUNNY_DAY",
       "MOVE_TAUNT",
       "MOVE_PROTECT",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
       "MOVE_EARTHQUAKE",
@@ -33642,7 +33642,7 @@
       },
       {
         "Level": 13,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 16,
@@ -33764,7 +33764,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 1,
@@ -33946,7 +33946,7 @@
       "MOVE_TAUNT",
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_LOW_SWEEP",
       "MOVE_DIG",
       "MOVE_PSYCHIC",
@@ -35301,7 +35301,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_GIGA_DRAIN",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
@@ -35412,7 +35412,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_GIGA_DRAIN",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
@@ -35531,7 +35531,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_GIGA_DRAIN",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_SHADOW_BALL",
       "MOVE_DOUBLE_TEAM",
@@ -37652,7 +37652,7 @@
       },
       {
         "Level": 4,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 8,
@@ -37702,7 +37702,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_DOUBLE_TEAM",
       "MOVE_AERIAL_ACE",
@@ -37764,7 +37764,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 1,
@@ -37821,7 +37821,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_IRON_TAIL",
       "MOVE_EARTHQUAKE",
@@ -38865,7 +38865,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_EARTHQUAKE",
       "MOVE_DIG",
@@ -38992,7 +38992,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_EARTHQUAKE",
       "MOVE_DIG",
@@ -39524,7 +39524,7 @@
       },
       {
         "Level": 4,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 8,
@@ -39930,7 +39930,7 @@
       "MOVE_TAUNT",
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
       "MOVE_PSYCHIC",
@@ -40060,7 +40060,7 @@
       "MOVE_HYPER_BEAM",
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
       "MOVE_PSYCHIC",
@@ -40550,7 +40550,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_PSYCHIC",
       "MOVE_SHADOW_BALL",
       "MOVE_DOUBLE_TEAM",
@@ -43304,7 +43304,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
       "MOVE_PSYCHIC",
@@ -45586,7 +45586,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_GIGA_DRAIN",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_SHADOW_BALL",
       "MOVE_DOUBLE_TEAM",
@@ -45708,7 +45708,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_GIGA_DRAIN",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_SHADOW_BALL",
       "MOVE_DOUBLE_TEAM",
@@ -46974,7 +46974,7 @@
       "MOVE_PROTECT",
       "MOVE_GIGA_DRAIN",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_DOUBLE_TEAM",
       "MOVE_FACADE",
@@ -47077,7 +47077,7 @@
       "MOVE_PROTECT",
       "MOVE_GIGA_DRAIN",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_DOUBLE_TEAM",
       "MOVE_FACADE",
@@ -47988,7 +47988,7 @@
       "MOVE_HYPER_BEAM",
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
       "MOVE_PSYCHIC",
@@ -48442,7 +48442,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_PSYCHIC",
       "MOVE_SHADOW_BALL",
       "MOVE_DOUBLE_TEAM",
@@ -49095,7 +49095,7 @@
       },
       {
         "Level": 44,
-        "Move": "MOVE_DAZZLING_GLEAM"
+        "Move": "MOVE_DAZZLE_GLEAM"
       },
       {
         "Level": 48,
@@ -49116,7 +49116,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
@@ -49189,7 +49189,7 @@
       },
       {
         "Level": 12,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 16,
@@ -52527,7 +52527,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_PSYCHIC",
       "MOVE_SHADOW_BALL",
@@ -53421,7 +53421,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 1,
@@ -53541,7 +53541,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_THUNDERBOLT",
       "MOVE_EARTHQUAKE",
       "MOVE_LOW_SWEEP",
@@ -53720,7 +53720,7 @@
       "MOVE_TAUNT",
       "MOVE_HYPER_BEAM",
       "MOVE_PROTECT",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
       "MOVE_EARTHQUAKE",
@@ -54187,7 +54187,7 @@
       "MOVE_RAIN_DANCE",
       "MOVE_GIGA_DRAIN",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_IRON_TAIL",
       "MOVE_THUNDERBOLT",
@@ -54291,7 +54291,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_IRON_TAIL",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
@@ -54393,7 +54393,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_IRON_TAIL",
       "MOVE_THUNDERBOLT",
       "MOVE_THUNDER",
@@ -55113,7 +55113,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_DOUBLE_TEAM",
       "MOVE_FACADE",
       "MOVE_REST",
@@ -55196,7 +55196,7 @@
       "MOVE_PROTECT",
       "MOVE_RAIN_DANCE",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_PSYCHIC",
       "MOVE_SHADOW_BALL",
       "MOVE_DOUBLE_TEAM",
@@ -55389,7 +55389,7 @@
       "MOVE_PROTECT",
       "MOVE_GIGA_DRAIN",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_PSYCHIC",
       "MOVE_DOUBLE_TEAM",
@@ -56634,7 +56634,7 @@
       "MOVE_PROTECT",
       "MOVE_GIGA_DRAIN",
       "MOVE_SAFEGUARD",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_SOLAR_BEAM",
       "MOVE_PSYCHIC",
       "MOVE_DOUBLE_TEAM",

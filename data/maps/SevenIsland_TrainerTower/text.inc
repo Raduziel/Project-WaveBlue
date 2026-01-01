@@ -24,11 +24,11 @@ SevenIsland_TrainerTower_Text_RodettePostBattle::
     .string "for you?$"
 
 SevenIsland_TrainerTower_Text_TrainerTowerSign::
-    .string "Trainer Tower ENTRANCE\n"
+    .string "Trainer Tower Entrance\n"
     .string "Rise to the Challenge, Trainers!$"
 
 SevenIsland_TrainerTower_Text_TrainerTowerAhead::
-    .string "Trainer Tower AHEAD$"
+    .string "Trainer Tower Ahead$"
 
 @ Unused text perhaps indicating Trainer Tower was planned to be unlocked by something
 SevenIsland_TrainerTower_Text_LooksLikeTrainerTowerIsClosed::

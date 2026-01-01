@@ -636,7 +636,7 @@ Route21_South_Text_NolanRematchIntro::
 
 Route21_North_Text_LilRematchIntro::
 	.string "Lil: Huh? A battle again?\n"
-	.string "IAN, can't you do it alone?$"
+	.string "Ian, can't you do it alone?$"
 
 Route21_North_Text_IanRematchIntro::
 	.string "Ian: My sis is still a slob.\n"
@@ -762,7 +762,7 @@ OneIsland_KindleRoad_Text_KiaRematchIntro::
 	.string "We won't lose this time!$"
 
 OneIsland_KindleRoad_Text_MikRematchIntro::
-	.string "Mik: Together with KIA, we're\n"
+	.string "Mik: Together with Kia, we're\n"
 	.string "afraid of nothing!\p"
 	.string "We'll prove it to you this time!$"
 
@@ -947,11 +947,11 @@ SevenIsland_SevaultCanyon_Entrance_Text_MadelineRematchIntro::
 	.string "Pokémon!$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_EveRematchIntro::
-	.string "Eve: I'll team up with JON and\n"
+	.string "Eve: I'll team up with Jon and\n"
 	.string "battle together again.$"
 
 SevenIsland_SevaultCanyon_Entrance_Text_JonRematchIntro::
-	.string "Jon: When I'm with EVE, it feels\n"
+	.string "Jon: When I'm with Eve, it feels\n"
 	.string "like we could never lose, not ever.$"
 
 SevenIsland_SevaultCanyon_Text_CyndyRematchIntro::
@@ -983,12 +983,12 @@ SevenIsland_SevaultCanyon_Text_MichelleRematchIntro::
 	.string "Absolutely not!$"
 
 SevenIsland_SevaultCanyon_Text_LexRematchIntro::
-	.string "Lex: My darling NYA, together\n"
+	.string "Lex: My darling Nya, together\n"
 	.string "we will win for certain!$"
 
 SevenIsland_SevaultCanyon_Text_NyaRematchIntro::
 	.string "Nya: I won't drag down my mentor\n"
-	.string "LEX! We're going to win!$"
+	.string "Lex! We're going to win!$"
 
 SevenIsland_TanobyRuins_Text_BrandonRematchIntro::
 	.string "Have you discovered anything about\n"

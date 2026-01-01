@@ -133,7 +133,7 @@ Route8_Text_AnneDefeat::
 
 Route8_Text_AnnePostBattle::
     .string "Anne: I'm raising Pokémon with\n"
-    .string "ELI.$"
+    .string "Eli.$"
 
 Route8_Text_AnneNotEnoughMons::
     .string "Anne: Hi, hi! Let's battle!\n"

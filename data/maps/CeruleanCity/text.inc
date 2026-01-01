@@ -65,7 +65,7 @@ CeruleanCity_Text_OkayIllReturnStolenTM::
 
 CeruleanCity_Text_RecoveredTM28FromGrunt::
     .string "{PLAYER} recovered TM28 from\n"
-    .string "the Team Rocket GRUNT.$"
+    .string "the Team Rocket Grunt.$"
 
 CeruleanCity_Text_BetterGetMovingBye::
     .string "I better get moving!\n"
@@ -104,12 +104,12 @@ CeruleanCity_Text_PeopleHereWereRobbed::
     .string "The people here were robbed.\p"
     .string "It's obvious that Team Rocket is\n"
     .string "behind this most heinous crime!\p"
-    .string "Even our POLICE FORCE has\n"
+    .string "Even our Police Force has\n"
     .string "trouble with the Rockets!$"
 
 CeruleanCity_Text_SlowbroUseSonicboom::
     .string "Okay! Slowbro!\n"
-    .string "Use SONICBOOM!$"
+    .string "Use Sonicboom!$"
 
 CeruleanCity_Text_SlowbroPayAttention::
     .string "Come on, Slowbro, pay attention!$"

@@ -37,7 +37,7 @@ VermilionCity_PokemonFanClub_Text_DidYouComeToHearAboutMyMons::
 VermilionCity_PokemonFanClub_Text_ChairmansStory::
     .string "Good!\n"
     .string "Then listen up!\p"
-    .string "My favorite RAPIDASH…\p"
+    .string "My favorite Rapidash…\p"
     .string "It's…cute…lovely…smart… \n"
     .string "plus…amazing…you think so?…\l"
     .string "oh yes…it's…stunning…\l"

@@ -120,7 +120,7 @@ VermilionCity_Gym_Text_GymGuyAdvice::
     .string "Champ in the making!\p"
     .string "Lt. Surge has a nickname.\p"
     .string "People refer to him as the\n"
-    .string "Lightning American!\p"
+    .string "Lightning Soldier!\p"
     .string "He's an expert on electric\n"
     .string "Pokémon.\p"
     .string "Flying/Water-type Pokémon match\n"

@@ -137,7 +137,7 @@ OneIsland_KindleRoad_Text_KiaNotEnoughMons::
     .string "Pokémon with you.$"
 
 OneIsland_KindleRoad_Text_MikIntro::
-    .string "Mik: Together with KIA, I'm afraid\n"
+    .string "Mik: Together with Kia, I'm afraid\n"
     .string "of nothing!$"
 
 OneIsland_KindleRoad_Text_MikDefeat::
@@ -146,7 +146,7 @@ OneIsland_KindleRoad_Text_MikDefeat::
 
 OneIsland_KindleRoad_Text_MikPostBattle::
     .string "Mik: How could my combination\n"
-    .string "with KIA fail?$"
+    .string "with Kia fail?$"
 
 OneIsland_KindleRoad_Text_MikNotEnoughMons::
     .string "Mik: Hey, do you want to battle\n"

@@ -7,7 +7,7 @@ Route4_PokemonCenter_1F_Text_CanHaveSixMonsWithYou::
 Route4_PokemonCenter_1F_Text_TeamRocketAttacksCerulean::
     .string "Team Rocket attacks Cerulean\n"
     .string "citizens…\p"
-    .string "Not a day goes by without TEAM\n"
+    .string "Not a day goes by without Team\n"
     .string "Rocket being in the news.$"
 
 Route4_PokemonCenter_1F_Text_LaddieBuyMagikarpForJust500::
@@ -26,7 +26,7 @@ Route4_PokemonCenter_1F_Text_SweetieBuyMagikarpForJust500::
 
 Route4_PokemonCenter_1F_Text_PaidOutrageouslyForMagikarp::
     .string "{PLAYER} paid an outrageous ¥500\n"
-    .string "and bought the MAGIKARP…$"
+    .string "and bought the Magikarp…$"
 
 Route4_PokemonCenter_1F_Text_OnlyDoingThisAsFavorToYou::
     .string "No? You say no? I'm only doing this\n"

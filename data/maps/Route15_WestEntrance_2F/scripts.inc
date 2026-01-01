@@ -24,7 +24,7 @@ Route15_WestEntrance_2F_EventScript_Aide::
 	faceplayer
 	textcolor NPC_TEXT_COLOR_MALE
 	call Route15_WestEntrance_2F_EventScript_GetAideRequestInfo
-	goto_if_set FLAG_GOT_EXP_SHARE_FROM_OAKS_AIDE, Route15_WestEntrance_2F_EventScript_AlreadyGotExpShare
+	goto_if_set FLAG_GOT_INFINITE_REPEL_FROM_OAKS_AIDE, Route15_WestEntrance_2F_EventScript_AlreadyGotExpShare
 	msgbox Route15_WestEntrance_2F_Text_GiveItemIfCaughtEnough, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, Aide_EventScript_DeclineCheckMons
 	setvar VAR_0x8004, 0
@@ -37,7 +37,7 @@ Route15_WestEntrance_2F_EventScript_Aide::
 	goto_if_eq VAR_RESULT, FALSE, Aide_EventScript_NoRoomForItem
 	giveitem_msg Route15_WestEntrance_2F_Text_ReceivedItemFromAide, ITEM_INFINITE_REPEL
 	textcolor NPC_TEXT_COLOR_MALE
-	setflag FLAG_GOT_EXP_SHARE_FROM_OAKS_AIDE
+	setflag FLAG_GOT_INFINITE_REPEL_FROM_OAKS_AIDE
 	msgbox Route15_WestEntrance_2F_Text_ExplainExpShare
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	release

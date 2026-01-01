@@ -1,7 +1,7 @@
 #include "global.h"
 #include "test/battle.h"
 
-SINGLE_BATTLE_TEST("Alluring Voice confuses the target if the target raised a stat this turn")
+SINGLE_BATTLE_TEST("Allure Voice confuses the target if the target raised a stat this turn")
 {
     u16 move;
 
@@ -9,14 +9,14 @@ SINGLE_BATTLE_TEST("Alluring Voice confuses the target if the target raised a st
     PARAMETRIZE { move = MOVE_SWORDS_DANCE; }
 
     GIVEN {
-        ASSUME(MoveHasAdditionalEffect(MOVE_ALLURING_VOICE, MOVE_EFFECT_CONFUSION));
+        ASSUME(MoveHasAdditionalEffect(MOVE_ALLURE_VOICE, MOVE_EFFECT_CONFUSION));
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponent, move); MOVE(player, MOVE_ALLURING_VOICE); }
+        TURN { MOVE(opponent, move); MOVE(player, MOVE_ALLURE_VOICE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, move, opponent);
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_ALLURING_VOICE, player);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_ALLURE_VOICE, player);
         HP_BAR(opponent);
         if (move == MOVE_SWORDS_DANCE) {
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_CONFUSION, opponent);
@@ -30,17 +30,17 @@ SINGLE_BATTLE_TEST("Alluring Voice confuses the target if the target raised a st
     }
 }
 
-SINGLE_BATTLE_TEST("Alluring Voice confuse effect is removed if it is Sheer Force boosted")
+SINGLE_BATTLE_TEST("Allure Voice confuse effect is removed if it is Sheer Force boosted")
 {
     GIVEN {
-        ASSUME(MoveHasAdditionalEffect(MOVE_ALLURING_VOICE, MOVE_EFFECT_CONFUSION));
+        ASSUME(MoveHasAdditionalEffect(MOVE_ALLURE_VOICE, MOVE_EFFECT_CONFUSION));
         PLAYER(SPECIES_NIDOKING) { Ability(ABILITY_SHEER_FORCE); }
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
-        TURN { MOVE(opponent, MOVE_SWORDS_DANCE); MOVE(player, MOVE_ALLURING_VOICE); }
+        TURN { MOVE(opponent, MOVE_SWORDS_DANCE); MOVE(player, MOVE_ALLURE_VOICE); }
     } SCENE {
         ANIMATION(ANIM_TYPE_MOVE, MOVE_SWORDS_DANCE, opponent);
-        ANIMATION(ANIM_TYPE_MOVE, MOVE_ALLURING_VOICE, player);
+        ANIMATION(ANIM_TYPE_MOVE, MOVE_ALLURE_VOICE, player);
         HP_BAR(opponent);
         NONE_OF {
             ANIMATION(ANIM_TYPE_STATUS, B_ANIM_STATUS_CONFUSION, opponent);

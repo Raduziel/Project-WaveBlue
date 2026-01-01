@@ -17,7 +17,7 @@ SSAnne_CaptainsOffice_Text_ThankYouHaveHMForCut::
     .string "I could show you my prized Cut\n"
     .string "technique if I weren't so ill…\p"
     .string "I know! You can have this!\n"
-    .string "This HIDDEN MACHINE!\p"
+    .string "This Hidden Machine!\p"
     .string "Teach Cut to your Pokémon, and\n"
     .string "you can see it Cut anytime!$"
 

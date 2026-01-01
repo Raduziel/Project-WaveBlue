@@ -54,7 +54,7 @@ Route21_South_Text_NolanPostBattle::
 
 Route21_North_Text_LilIntro::
 	.string "Lil: Huh? A battle?\n"
-	.string "IAN, can't you do it alone?$"
+	.string "Ian, can't you do it alone?$"
 
 Route21_North_Text_LilDefeat::
 	.string "Lil: Oh, see?\n"

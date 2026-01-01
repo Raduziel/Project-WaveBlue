@@ -64,7 +64,7 @@ FiveIsland_RocketWarehouse_Text_MadeItSoYouCanComeBackThrough::
     .string "in through there.\p"
     .string "Why don't you go get rested and\n"
     .string "refreshed for what lies ahead?\p"
-    .string "The ADMIN after me outranks me\n"
+    .string "The Admin after me outranks me\n"
     .string "thoroughly as a Trainer.\p"
     .string "You'd better steel yourself for one\n"
     .string "harsh challenge.$"
@@ -72,7 +72,7 @@ FiveIsland_RocketWarehouse_Text_MadeItSoYouCanComeBackThrough::
 FiveIsland_RocketWarehouse_Text_Admin2Intro::
     .string "That's quite enough of you \n"
     .string "playing the hero, kid.\p"
-    .string "Spreading lies about how TEAM\n"
+    .string "Spreading lies about how Team\n"
     .string "Rocket has disbanded…\p"
     .string "It's such an obvious attempt to\n"
     .string "cause confusion in our ranks.\p"

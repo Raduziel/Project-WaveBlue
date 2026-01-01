@@ -1395,7 +1395,7 @@
     ],
     "EggMoves": [
       "MOVE_CHARGE",
-      "MOVE_DISARMING_VOICE",
+      "MOVE_DISARM_VOICE",
       "MOVE_FAKE_OUT",
       "MOVE_FLAIL",
       "MOVE_PRESENT",
@@ -1551,7 +1551,7 @@
     ],
     "EggMoves": [
       "MOVE_CHARGE",
-      "MOVE_DISARMING_VOICE",
+      "MOVE_DISARM_VOICE",
       "MOVE_FAKE_OUT",
       "MOVE_FLAIL",
       "MOVE_PRESENT",
@@ -2541,7 +2541,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 1,
@@ -2687,7 +2687,7 @@
       "MOVE_ALLY_SWITCH",
       "MOVE_WORK_UP",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_AROMATHERAPY",
@@ -2714,7 +2714,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 1,
@@ -2863,7 +2863,7 @@
       "MOVE_ALLY_SWITCH",
       "MOVE_WORK_UP",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_AROMATHERAPY",
@@ -3135,7 +3135,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 1,
@@ -3271,7 +3271,7 @@
       "MOVE_WORK_UP",
       "MOVE_WILD_CHARGE",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_COVET",
@@ -3296,7 +3296,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 1,
@@ -3436,7 +3436,7 @@
       "MOVE_WORK_UP",
       "MOVE_WILD_CHARGE",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_COVET",
@@ -3753,7 +3753,7 @@
       "MOVE_SEED_BOMB",
       "MOVE_ENERGY_BALL",
       "MOVE_GRASS_KNOT",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_AFTER_YOU",
@@ -3855,7 +3855,7 @@
       "MOVE_SEED_BOMB",
       "MOVE_ENERGY_BALL",
       "MOVE_GRASS_KNOT",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_AFTER_YOU",
@@ -3974,7 +3974,7 @@
       "MOVE_ENERGY_BALL",
       "MOVE_GRASS_KNOT",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_POLLEN_PUFF"
     ],
     "EggMoves": [
@@ -5327,7 +5327,7 @@
       "MOVE_GRASS_KNOT",
       "MOVE_FOUL_PLAY",
       "MOVE_ALLY_SWITCH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_CONFUSION",
@@ -5451,7 +5451,7 @@
       "MOVE_GRASS_KNOT",
       "MOVE_FOUL_PLAY",
       "MOVE_ALLY_SWITCH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_CONFUSION",
@@ -5579,7 +5579,7 @@
       "MOVE_FOUL_PLAY",
       "MOVE_STORED_POWER",
       "MOVE_ALLY_SWITCH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_CONFUSION",
@@ -6071,7 +6071,7 @@
       "MOVE_POISON_JAB",
       "MOVE_SLUDGE_WAVE",
       "MOVE_SCALD",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_ACUPRESSURE",
@@ -6190,7 +6190,7 @@
       "MOVE_SLUDGE_WAVE",
       "MOVE_SCALD",
       "MOVE_VENOM_DRENCH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_ACUPRESSURE",
@@ -7384,7 +7384,7 @@
       "MOVE_SLUDGE_WAVE",
       "MOVE_FOUL_PLAY",
       "MOVE_ALLY_SWITCH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_ASTONISH",
@@ -7514,7 +7514,7 @@
       "MOVE_SLUDGE_WAVE",
       "MOVE_FOUL_PLAY",
       "MOVE_ALLY_SWITCH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_ASTONISH",
@@ -7661,7 +7661,7 @@
       "MOVE_SLUDGE_WAVE",
       "MOVE_FOUL_PLAY",
       "MOVE_ALLY_SWITCH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_ASTONISH",
@@ -9452,7 +9452,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 1,
@@ -9592,7 +9592,7 @@
       "MOVE_ALLY_SWITCH",
       "MOVE_WORK_UP",
       "MOVE_WILD_CHARGE",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_AROMATHERAPY",
@@ -10355,7 +10355,7 @@
       "MOVE_POWER_GEM",
       "MOVE_FLASH_CANNON",
       "MOVE_SCALD",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [],
     "TutorMoves": [
@@ -10475,7 +10475,7 @@
       "MOVE_GRASS_KNOT",
       "MOVE_ALLY_SWITCH",
       "MOVE_SCALD",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [],
     "TutorMoves": [
@@ -10560,7 +10560,7 @@
       },
       {
         "Level": 44,
-        "Move": "MOVE_DAZZLING_GLEAM"
+        "Move": "MOVE_DAZZLE_GLEAM"
       },
       {
         "Level": 48,
@@ -10637,7 +10637,7 @@
       "MOVE_FOUL_PLAY",
       "MOVE_STORED_POWER",
       "MOVE_ALLY_SWITCH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_CONFUSE_RAY",
@@ -14255,7 +14255,7 @@
       "MOVE_HURRICANE",
       "MOVE_PLAY_ROUGH",
       "MOVE_VENOM_DRENCH",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_DARKEST_LARIAT",
       "MOVE_HIGH_HORSEPOWER",
       "MOVE_THROAT_CHOP",
@@ -14734,7 +14734,7 @@
       "MOVE_ELECTRO_BALL",
       "MOVE_SCALD",
       "MOVE_WILD_CHARGE",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_MIST",
@@ -14865,7 +14865,7 @@
       "MOVE_ELECTRO_BALL",
       "MOVE_SCALD",
       "MOVE_WILD_CHARGE",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_MIST",
@@ -14948,7 +14948,7 @@
     ],
     "EggMoves": [
       "MOVE_CHARGE",
-      "MOVE_DISARMING_VOICE",
+      "MOVE_DISARM_VOICE",
       "MOVE_FAKE_OUT",
       "MOVE_FLAIL",
       "MOVE_PRESENT",
@@ -14981,7 +14981,7 @@
       },
       {
         "Level": 12,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 16,
@@ -15074,7 +15074,7 @@
       },
       {
         "Level": 12,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 16,
@@ -15248,7 +15248,7 @@
       "MOVE_STORED_POWER",
       "MOVE_WORK_UP",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_AERIAL_ACE",
@@ -15388,7 +15388,7 @@
       "MOVE_STORED_POWER",
       "MOVE_WORK_UP",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_AERIAL_ACE",
@@ -15495,7 +15495,7 @@
       "MOVE_GRASS_KNOT",
       "MOVE_STORED_POWER",
       "MOVE_ALLY_SWITCH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_DRILL_PECK",
@@ -15619,7 +15619,7 @@
       "MOVE_FOUL_PLAY",
       "MOVE_STORED_POWER",
       "MOVE_ALLY_SWITCH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_DRILL_PECK",
@@ -15740,7 +15740,7 @@
       "MOVE_LEAF_STORM",
       "MOVE_GRASS_KNOT",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_AFTER_YOU",
@@ -16680,7 +16680,7 @@
       "MOVE_STORED_POWER",
       "MOVE_ALLY_SWITCH",
       "MOVE_WORK_UP",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_PSYCHIC_FANGS"
     ],
     "EggMoves": [
@@ -19789,7 +19789,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 1,
@@ -19931,7 +19931,7 @@
       "MOVE_ALLY_SWITCH",
       "MOVE_WORK_UP",
       "MOVE_WILD_CHARGE",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_AROMATHERAPY",
@@ -21095,7 +21095,7 @@
       "MOVE_STEALTH_ROCK",
       "MOVE_GRASS_KNOT",
       "MOVE_ALLY_SWITCH",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_POLLEN_PUFF"
     ],
     "EggMoves": [],
@@ -23634,7 +23634,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 3,
@@ -23741,7 +23741,7 @@
       "MOVE_GRASS_KNOT",
       "MOVE_STORED_POWER",
       "MOVE_ALLY_SWITCH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_CONFUSE_RAY",
@@ -23765,7 +23765,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 1,
@@ -23872,7 +23872,7 @@
       "MOVE_GRASS_KNOT",
       "MOVE_STORED_POWER",
       "MOVE_ALLY_SWITCH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_CONFUSE_RAY",
@@ -23893,11 +23893,11 @@
     "LevelMoves": [
       {
         "Level": 0,
-        "Move": "MOVE_DAZZLING_GLEAM"
+        "Move": "MOVE_DAZZLE_GLEAM"
       },
       {
         "Level": 1,
-        "Move": "MOVE_DAZZLING_GLEAM"
+        "Move": "MOVE_DAZZLE_GLEAM"
       },
       {
         "Level": 1,
@@ -23921,7 +23921,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 1,
@@ -24036,7 +24036,7 @@
       "MOVE_GRASS_KNOT",
       "MOVE_STORED_POWER",
       "MOVE_ALLY_SWITCH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_CONFUSE_RAY",
@@ -24471,7 +24471,7 @@
     ],
     "EggMoves": [
       "MOVE_CIRCLE_THROW",
-      "MOVE_DISARMING_VOICE",
+      "MOVE_DISARM_VOICE",
       "MOVE_ENDEAVOR",
       "MOVE_EXTRASENSORY",
       "MOVE_HAMMER_ARM",
@@ -24586,7 +24586,7 @@
     ],
     "EggMoves": [
       "MOVE_CIRCLE_THROW",
-      "MOVE_DISARMING_VOICE",
+      "MOVE_DISARM_VOICE",
       "MOVE_ENDEAVOR",
       "MOVE_EXTRASENSORY",
       "MOVE_HAMMER_ARM",
@@ -24737,7 +24737,7 @@
     ],
     "EggMoves": [
       "MOVE_CIRCLE_THROW",
-      "MOVE_DISARMING_VOICE",
+      "MOVE_DISARM_VOICE",
       "MOVE_ENDEAVOR",
       "MOVE_EXTRASENSORY",
       "MOVE_HAMMER_ARM",
@@ -24960,7 +24960,7 @@
       "MOVE_ZEN_HEADBUTT",
       "MOVE_FOUL_PLAY",
       "MOVE_ALLY_SWITCH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_FEINT",
@@ -25830,7 +25830,7 @@
       "MOVE_LEAF_STORM",
       "MOVE_POWER_WHIP",
       "MOVE_GRASS_KNOT",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_COTTON_SPORE",
@@ -26903,7 +26903,7 @@
       },
       {
         "Level": 4,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 8,
@@ -26976,7 +26976,7 @@
       "MOVE_HYPER_VOICE",
       "MOVE_DRAGON_PULSE",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_ASTONISH",
@@ -27015,7 +27015,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 1,
@@ -27105,7 +27105,7 @@
       "MOVE_DRAGON_PULSE",
       "MOVE_HURRICANE",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_ASTONISH",
@@ -27962,7 +27962,7 @@
       "MOVE_GRASS_KNOT",
       "MOVE_ALLY_SWITCH",
       "MOVE_DRILL_RUN",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [],
     "TutorMoves": [
@@ -28107,7 +28107,7 @@
       "MOVE_STORED_POWER",
       "MOVE_ALLY_SWITCH",
       "MOVE_DRILL_RUN",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_BODY_PRESS"
     ],
     "EggMoves": [],
@@ -28635,7 +28635,7 @@
       },
       {
         "Level": 4,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 8,
@@ -31557,7 +31557,7 @@
       "MOVE_STORED_POWER",
       "MOVE_ALLY_SWITCH",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [],
     "TutorMoves": [
@@ -31942,7 +31942,7 @@
       "MOVE_ENERGY_BALL",
       "MOVE_LEAF_STORM",
       "MOVE_GRASS_KNOT",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_COTTON_SPORE",
@@ -32073,7 +32073,7 @@
       "MOVE_POWER_WHIP",
       "MOVE_GRASS_KNOT",
       "MOVE_VENOM_DRENCH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_COTTON_SPORE",
@@ -32312,7 +32312,7 @@
       "MOVE_SEED_BOMB",
       "MOVE_ENERGY_BALL",
       "MOVE_GRASS_KNOT",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_POLLEN_PUFF"
     ],
     "EggMoves": [
@@ -32423,7 +32423,7 @@
       "MOVE_ENERGY_BALL",
       "MOVE_GRASS_KNOT",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_POLLEN_PUFF"
     ],
     "EggMoves": [
@@ -33809,7 +33809,7 @@
       },
       {
         "Level": 44,
-        "Move": "MOVE_DAZZLING_GLEAM"
+        "Move": "MOVE_DAZZLE_GLEAM"
       },
       {
         "Level": 48,
@@ -33867,7 +33867,7 @@
       "MOVE_GRASS_KNOT",
       "MOVE_STORED_POWER",
       "MOVE_ALLY_SWITCH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_CONFUSE_RAY",
@@ -33902,7 +33902,7 @@
       },
       {
         "Level": 12,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 16,
@@ -37034,7 +37034,7 @@
       "MOVE_ALLY_SWITCH",
       "MOVE_WORK_UP",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_AERIAL_ACE",
@@ -37630,7 +37630,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 1,
@@ -37817,7 +37817,7 @@
       "MOVE_STORED_POWER",
       "MOVE_ALLY_SWITCH",
       "MOVE_WORK_UP",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_THROAT_CHOP"
     ],
     "EggMoves": [
@@ -38344,7 +38344,7 @@
       "MOVE_STORED_POWER",
       "MOVE_ALLY_SWITCH",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [],
     "TutorMoves": [
@@ -38465,7 +38465,7 @@
       "MOVE_STORED_POWER",
       "MOVE_ALLY_SWITCH",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [],
     "TutorMoves": [
@@ -38590,7 +38590,7 @@
       "MOVE_STORED_POWER",
       "MOVE_ALLY_SWITCH",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [],
     "TutorMoves": [
@@ -39418,7 +39418,7 @@
       "MOVE_STORED_POWER",
       "MOVE_WORK_UP",
       "MOVE_WILD_CHARGE",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [],
     "TutorMoves": [
@@ -40073,7 +40073,7 @@
       "MOVE_ZEN_HEADBUTT",
       "MOVE_STORED_POWER",
       "MOVE_ALLY_SWITCH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_CURSE",
@@ -40191,7 +40191,7 @@
       "MOVE_ZEN_HEADBUTT",
       "MOVE_STORED_POWER",
       "MOVE_ALLY_SWITCH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_CURSE",
@@ -41249,7 +41249,7 @@
       },
       {
         "Level": 4,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 9,
@@ -41367,7 +41367,7 @@
       "MOVE_ALLY_SWITCH",
       "MOVE_WORK_UP",
       "MOVE_WILD_CHARGE",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_THROAT_CHOP"
     ],
     "EggMoves": [
@@ -42680,7 +42680,7 @@
       "MOVE_SEED_BOMB",
       "MOVE_ENERGY_BALL",
       "MOVE_GRASS_KNOT",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_MEMENTO",
@@ -42822,7 +42822,7 @@
       "MOVE_GRASS_KNOT",
       "MOVE_HURRICANE",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_MEMENTO",
@@ -44520,7 +44520,7 @@
       "MOVE_ZEN_HEADBUTT",
       "MOVE_FLASH_CANNON",
       "MOVE_STORED_POWER",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_ANCIENT_POWER",
@@ -45875,7 +45875,7 @@
       "MOVE_GRASS_KNOT",
       "MOVE_WORK_UP",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_AQUA_TAIL",
@@ -45997,7 +45997,7 @@
       "MOVE_GRASS_KNOT",
       "MOVE_WORK_UP",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_AQUA_TAIL",
@@ -47657,7 +47657,7 @@
       "MOVE_ENERGY_BALL",
       "MOVE_SLUDGE_WAVE",
       "MOVE_SCALD",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_ACID_ARMOR",
@@ -47774,7 +47774,7 @@
       "MOVE_ENERGY_BALL",
       "MOVE_SLUDGE_WAVE",
       "MOVE_SCALD",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_ACID_ARMOR",
@@ -54604,7 +54604,7 @@
       },
       {
         "Level": 6,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 9,
@@ -54699,7 +54699,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 9,
@@ -55220,7 +55220,7 @@
       "MOVE_NASTY_PLOT",
       "MOVE_FLASH_CANNON",
       "MOVE_ALLY_SWITCH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_AFTER_YOU",
@@ -55259,7 +55259,7 @@
       },
       {
         "Level": 9,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 12,
@@ -55343,7 +55343,7 @@
       "MOVE_NASTY_PLOT",
       "MOVE_FLASH_CANNON",
       "MOVE_ALLY_SWITCH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_AFTER_YOU",
@@ -55445,7 +55445,7 @@
       "MOVE_CALM_MIND",
       "MOVE_ENERGY_BALL",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_AFTER_YOU",
@@ -55557,7 +55557,7 @@
       "MOVE_CALM_MIND",
       "MOVE_ENERGY_BALL",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_AFTER_YOU",
@@ -57203,11 +57203,11 @@
     "LevelMoves": [
       {
         "Level": 0,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 1,
@@ -57340,7 +57340,7 @@
       "MOVE_STORED_POWER",
       "MOVE_WORK_UP",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_CURSE",
@@ -57594,7 +57594,7 @@
       "MOVE_ALLY_SWITCH",
       "MOVE_WILD_CHARGE",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_COVET",
@@ -57698,7 +57698,7 @@
       "MOVE_STONE_EDGE",
       "MOVE_STEALTH_ROCK",
       "MOVE_ALLY_SWITCH",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_BODY_PRESS"
     ],
     "EggMoves": [],
@@ -58119,7 +58119,7 @@
       "MOVE_FOUL_PLAY",
       "MOVE_STORED_POWER",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_MAGNET_RISE",
@@ -59225,7 +59225,7 @@
       "MOVE_FLASH_CANNON",
       "MOVE_GRASS_KNOT",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [],
     "TutorMoves": [
@@ -59591,7 +59591,7 @@
       "MOVE_STORED_POWER",
       "MOVE_ALLY_SWITCH",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_BODY_PRESS"
     ],
     "EggMoves": [],
@@ -60456,7 +60456,7 @@
       },
       {
         "Level": 6,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 9,
@@ -60563,7 +60563,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 9,
@@ -60678,7 +60678,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 9,
@@ -60767,7 +60767,7 @@
       "MOVE_SCALD",
       "MOVE_WORK_UP",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_LIQUIDATION"
     ],
     "EggMoves": [
@@ -61126,7 +61126,7 @@
       },
       {
         "Level": 42,
-        "Move": "MOVE_DAZZLING_GLEAM"
+        "Move": "MOVE_DAZZLE_GLEAM"
       },
       {
         "Level": 48,
@@ -61174,7 +61174,7 @@
       "MOVE_ENERGY_BALL",
       "MOVE_ALLY_SWITCH",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_AROMATIC_MIST",
@@ -61233,7 +61233,7 @@
       },
       {
         "Level": 48,
-        "Move": "MOVE_DAZZLING_GLEAM"
+        "Move": "MOVE_DAZZLE_GLEAM"
       },
       {
         "Level": 56,
@@ -61285,7 +61285,7 @@
       "MOVE_ENERGY_BALL",
       "MOVE_ALLY_SWITCH",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_POLLEN_PUFF"
     ],
     "EggMoves": [
@@ -62479,7 +62479,7 @@
       },
       {
         "Level": 32,
-        "Move": "MOVE_DAZZLING_GLEAM"
+        "Move": "MOVE_DAZZLE_GLEAM"
       },
       {
         "Level": 36,
@@ -62519,7 +62519,7 @@
       "MOVE_SEED_BOMB",
       "MOVE_ENERGY_BALL",
       "MOVE_GRASS_KNOT",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_POLLEN_PUFF"
     ],
     "EggMoves": [
@@ -62570,7 +62570,7 @@
       },
       {
         "Level": 38,
-        "Move": "MOVE_DAZZLING_GLEAM"
+        "Move": "MOVE_DAZZLE_GLEAM"
       },
       {
         "Level": 44,
@@ -62615,7 +62615,7 @@
       "MOVE_SEED_BOMB",
       "MOVE_ENERGY_BALL",
       "MOVE_GRASS_KNOT",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_POLLEN_PUFF"
     ],
     "EggMoves": [
@@ -63181,7 +63181,7 @@
       "MOVE_ZEN_HEADBUTT",
       "MOVE_GRASS_KNOT",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_ACUPRESSURE",
@@ -63274,7 +63274,7 @@
       "MOVE_LEAF_STORM",
       "MOVE_GRASS_KNOT",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_ACUPRESSURE",
@@ -63397,7 +63397,7 @@
       "MOVE_POWER_WHIP",
       "MOVE_GRASS_KNOT",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_ACUPRESSURE",
@@ -63523,7 +63523,7 @@
       "MOVE_STORED_POWER",
       "MOVE_ALLY_SWITCH",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_POLLEN_PUFF"
     ],
     "EggMoves": [
@@ -64752,7 +64752,7 @@
       "MOVE_WILD_CHARGE"
     ],
     "EggMoves": [
-      "MOVE_DISARMING_VOICE",
+      "MOVE_DISARM_VOICE",
       "MOVE_FAKE_OUT",
       "MOVE_FLAIL",
       "MOVE_PRESENT",
@@ -64872,7 +64872,7 @@
       "MOVE_X_SCISSOR",
       "MOVE_WORK_UP",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_CURSE",
@@ -65637,7 +65637,7 @@
       "MOVE_STORED_POWER",
       "MOVE_WORK_UP",
       "MOVE_WILD_CHARGE",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -65756,7 +65756,7 @@
       "MOVE_STORED_POWER",
       "MOVE_ALLY_SWITCH",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -65882,7 +65882,7 @@
       "MOVE_GRASS_KNOT",
       "MOVE_STORED_POWER",
       "MOVE_WORK_UP",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_DARKEST_LARIAT",
       "MOVE_HIGH_HORSEPOWER"
     ],
@@ -65893,7 +65893,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 1,
@@ -66007,7 +66007,7 @@
       "MOVE_STORED_POWER",
       "MOVE_SCALD",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -66315,7 +66315,7 @@
       "MOVE_CALM_MIND",
       "MOVE_FOCUS_BLAST",
       "MOVE_WORK_UP",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [],
     "TutorMoves": [
@@ -66436,7 +66436,7 @@
       "MOVE_FOUL_PLAY",
       "MOVE_ALLY_SWITCH",
       "MOVE_VENOM_DRENCH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [],
     "TutorMoves": [
@@ -66772,7 +66772,7 @@
       "MOVE_GRASS_KNOT",
       "MOVE_ELECTRO_BALL",
       "MOVE_WILD_CHARGE",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [],
     "TutorMoves": [
@@ -67370,7 +67370,7 @@
       "MOVE_GRASS_KNOT",
       "MOVE_ELECTRO_BALL",
       "MOVE_STORED_POWER",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [],
     "TutorMoves": [
@@ -72763,7 +72763,7 @@
       },
       {
         "Level": 10,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 15,
@@ -72779,7 +72779,7 @@
       },
       {
         "Level": 30,
-        "Move": "MOVE_DAZZLING_GLEAM"
+        "Move": "MOVE_DAZZLE_GLEAM"
       },
       {
         "Level": 35,
@@ -72823,7 +72823,7 @@
       "MOVE_DARK_PULSE",
       "MOVE_STORED_POWER",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_AFTER_YOU",
@@ -72859,7 +72859,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 15,
@@ -72875,7 +72875,7 @@
       },
       {
         "Level": 30,
-        "Move": "MOVE_DAZZLING_GLEAM"
+        "Move": "MOVE_DAZZLE_GLEAM"
       },
       {
         "Level": 37,
@@ -72920,7 +72920,7 @@
       "MOVE_DARK_PULSE",
       "MOVE_STORED_POWER",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_AFTER_YOU",
@@ -72960,7 +72960,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 15,
@@ -72976,7 +72976,7 @@
       },
       {
         "Level": 30,
-        "Move": "MOVE_DAZZLING_GLEAM"
+        "Move": "MOVE_DAZZLE_GLEAM"
       },
       {
         "Level": 37,
@@ -73038,7 +73038,7 @@
       "MOVE_POWER_WHIP",
       "MOVE_STORED_POWER",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_AFTER_YOU",
@@ -73137,7 +73137,7 @@
       "MOVE_NASTY_PLOT",
       "MOVE_FOUL_PLAY",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [],
     "TutorMoves": [
@@ -73242,7 +73242,7 @@
       "MOVE_NASTY_PLOT",
       "MOVE_FOUL_PLAY",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_THROAT_CHOP"
     ],
     "EggMoves": [],
@@ -73382,7 +73382,7 @@
       "MOVE_POWER_WHIP",
       "MOVE_FOUL_PLAY",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_DARKEST_LARIAT",
       "MOVE_THROAT_CHOP",
       "MOVE_BODY_PRESS"
@@ -74011,7 +74011,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DAZZLING_GLEAM"
+        "Move": "MOVE_DAZZLE_GLEAM"
       },
       {
         "Level": 1,
@@ -74148,7 +74148,7 @@
       "MOVE_FOUL_PLAY",
       "MOVE_STORED_POWER",
       "MOVE_ALLY_SWITCH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_CONFUSE_RAY",
@@ -74341,7 +74341,7 @@
       },
       {
         "Level": 35,
-        "Move": "MOVE_DAZZLING_GLEAM"
+        "Move": "MOVE_DAZZLE_GLEAM"
       },
       {
         "Level": 40,
@@ -74373,7 +74373,7 @@
       "MOVE_ENDURE",
       "MOVE_SLEEP_TALK",
       "MOVE_STORED_POWER",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_BABY_DOLL_EYES",
@@ -74425,7 +74425,7 @@
       },
       {
         "Level": 35,
-        "Move": "MOVE_DAZZLING_GLEAM"
+        "Move": "MOVE_DAZZLE_GLEAM"
       },
       {
         "Level": 40,
@@ -74478,7 +74478,7 @@
       "MOVE_ENERGY_BALL",
       "MOVE_STORED_POWER",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_BABY_DOLL_EYES",
@@ -74841,7 +74841,7 @@
       "MOVE_BUG_BUZZ",
       "MOVE_HURRICANE",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_BUG_BITE",
@@ -75066,7 +75066,7 @@
       },
       {
         "Level": 10,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 15,
@@ -75144,7 +75144,7 @@
       "MOVE_STORED_POWER",
       "MOVE_ALLY_SWITCH",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_EXTRASENSORY",
@@ -76571,7 +76571,7 @@
       "MOVE_WORK_UP",
       "MOVE_WILD_CHARGE",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_PSYCHIC_FANGS"
     ],
     "EggMoves": [],
@@ -77738,7 +77738,7 @@
     ],
     "EggMoves": [
       "MOVE_CHARGE",
-      "MOVE_DISARMING_VOICE",
+      "MOVE_DISARM_VOICE",
       "MOVE_FAKE_OUT",
       "MOVE_FLAIL",
       "MOVE_PRESENT",
@@ -78139,11 +78139,11 @@
     "LevelMoves": [
       {
         "Level": 0,
-        "Move": "MOVE_DAZZLING_GLEAM"
+        "Move": "MOVE_DAZZLE_GLEAM"
       },
       {
         "Level": 1,
-        "Move": "MOVE_DAZZLING_GLEAM"
+        "Move": "MOVE_DAZZLE_GLEAM"
       },
       {
         "Level": 1,
@@ -78259,7 +78259,7 @@
       "MOVE_ZEN_HEADBUTT",
       "MOVE_FOUL_PLAY",
       "MOVE_STORED_POWER",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_BABY_DOLL_EYES",
@@ -79202,7 +79202,7 @@
       },
       {
         "Level": 45,
-        "Move": "MOVE_DAZZLING_GLEAM"
+        "Move": "MOVE_DAZZLE_GLEAM"
       },
       {
         "Level": 50,
@@ -79241,7 +79241,7 @@
       "MOVE_ALLY_SWITCH",
       "MOVE_WILD_CHARGE",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_HIGH_HORSEPOWER"
     ],
     "EggMoves": [
@@ -79316,7 +79316,7 @@
       },
       {
         "Level": 49,
-        "Move": "MOVE_DAZZLING_GLEAM"
+        "Move": "MOVE_DAZZLE_GLEAM"
       },
       {
         "Level": 56,
@@ -79369,7 +79369,7 @@
       "MOVE_WILD_CHARGE",
       "MOVE_DRILL_RUN",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM",
+      "MOVE_DAZZLE_GLEAM",
       "MOVE_HIGH_HORSEPOWER",
       "MOVE_THROAT_CHOP"
     ],
@@ -79941,7 +79941,7 @@
       "MOVE_SLUDGE_WAVE",
       "MOVE_PLAY_ROUGH",
       "MOVE_VENOM_DRENCH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_CURSE",
@@ -79998,7 +79998,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DAZZLING_GLEAM"
+        "Move": "MOVE_DAZZLE_GLEAM"
       },
       {
         "Level": 1,
@@ -80134,7 +80134,7 @@
       "MOVE_FOUL_PLAY",
       "MOVE_STORED_POWER",
       "MOVE_ALLY_SWITCH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_CONFUSE_RAY",
@@ -82274,7 +82274,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 9,
@@ -82855,7 +82855,7 @@
       },
       {
         "Level": 10,
-        "Move": "MOVE_DISARMING_VOICE"
+        "Move": "MOVE_DISARM_VOICE"
       },
       {
         "Level": 15,
@@ -82932,7 +82932,7 @@
       "MOVE_STORED_POWER",
       "MOVE_ALLY_SWITCH",
       "MOVE_PLAY_ROUGH",
-      "MOVE_DAZZLING_GLEAM"
+      "MOVE_DAZZLE_GLEAM"
     ],
     "EggMoves": [
       "MOVE_FAKE_OUT",

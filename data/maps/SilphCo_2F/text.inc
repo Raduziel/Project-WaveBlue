@@ -7,7 +7,7 @@ SilphCo_2F_Text_ConnorDefeat::
     .string "I was a Rocket?$"
 
 SilphCo_2F_Text_ConnorPostBattle::
-    .string "I work for both Silph and TEAM\n"
+    .string "I work for both Silph and Team\n"
     .string "Rocket.$"
 
 SilphCo_2F_Text_JerryIntro::

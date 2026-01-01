@@ -1,6 +1,6 @@
 FiveIsland_MemorialPillar_Text_MiloIntro::
-    .string "I'm the eldest of the BIRD\n"
-    .string "BROTHERS.\p"
+    .string "I'm the eldest of the Bird\n"
+    .string "Brothers.\p"
     .string "The best thing about birds…\n"
     .string "It has to be the beak.$"
 
@@ -12,8 +12,8 @@ FiveIsland_MemorialPillar_Text_MiloPostBattle::
     .string "here.$"
 
 FiveIsland_MemorialPillar_Text_ChazIntro::
-    .string "I'm the middle kid of the BIRD\n"
-    .string "BROTHERS.\p"
+    .string "I'm the middle kid of the Bird\n"
+    .string "Brothers.\p"
     .string "The best thing about birds…\n"
     .string "It has to be the wings.$"
 
@@ -25,8 +25,8 @@ FiveIsland_MemorialPillar_Text_ChazPostBattle::
     .string "over that way.$"
 
 FiveIsland_MemorialPillar_Text_HaroldIntro::
-    .string "I'm the youngest of the BIRD\n"
-    .string "BROTHERS.\p"
+    .string "I'm the youngest of the Bird\n"
+    .string "Brothers.\p"
     .string "The best thing about birds…\n"
     .string "It has to be the down.$"
 
@@ -47,10 +47,10 @@ FiveIsland_MemorialPillar_Text_YourMonsLookHealthy::
 
 FiveIsland_MemorialPillar_Text_ThisIsWhereIBuriedMyOnix::
     .string "This is where I buried my Onix…\n"
-    .string "It was named TECTONIX…$"
+    .string "It was named Tectonix…$"
 
 FiveIsland_MemorialPillar_Text_HereLiesTectonixLemonadeOffering::
-    .string "“Here lies TECTONIX” is engraved\n"
+    .string "“Here lies Tectonix” is engraved\n"
     .string "on a boulder.\p"
     .string "There is a Lemonade placed as an\n"
     .string "offering in front of the grave.$"
@@ -65,7 +65,7 @@ FiveIsland_MemorialPillar_Text_PlacedCanOfLemonade::
 
 FiveIsland_MemorialPillar_Text_ThankYouPleaseTakeThis::
     .string "Th-thank you…\p"
-    .string "That was my TECTONIX's favorite\n"
+    .string "That was my Tectonix's favorite\n"
     .string "drink…\p"
     .string "I don't even know you, but your\n"
     .string "act of kindness…\p"
@@ -89,11 +89,11 @@ FiveIsland_MemorialPillar_Text_StillHaveThingAsMyThanks::
 FiveIsland_MemorialPillar_Text_ScrubScrubTectonix::
     .string "Scrub, scrub…\p"
     .string "… … …\n"
-    .string "TECTONIX…$"
+    .string "Tectonix…$"
 
 FiveIsland_MemorialPillar_Text_HereLiesTectonix::
     .string "Boulders and rocks are neatly piled\n"
     .string "up as a cairn.\p"
-    .string "“Here lies TECTONIX” is engraved\n"
+    .string "“Here lies Tectonix” is engraved\n"
     .string "on a boulder.$"
 

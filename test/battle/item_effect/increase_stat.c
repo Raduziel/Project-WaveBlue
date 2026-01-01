@@ -57,14 +57,14 @@ SINGLE_BATTLE_TEST("X Sp. Atk sharply raises battler's Sp. Attack stat", s16 dam
     PARAMETRIZE { useItem = TRUE; }
     GIVEN {
         ASSUME(gItemsInfo[ITEM_X_SP_ATK].battleUsage == EFFECT_ITEM_INCREASE_STAT);
-        ASSUME(GetMoveCategory(MOVE_DISARMING_VOICE) == DAMAGE_CATEGORY_SPECIAL);
+        ASSUME(GetMoveCategory(MOVE_DISARM_VOICE) == DAMAGE_CATEGORY_SPECIAL);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         if (useItem) TURN { USE_ITEM(player, ITEM_X_SP_ATK); }
-        TURN { MOVE(player, MOVE_DISARMING_VOICE); }
+        TURN { MOVE(player, MOVE_DISARM_VOICE); }
     } SCENE {
-        MESSAGE("Wobbuffet used Disarming Voice!");
+        MESSAGE("Wobbuffet used Disarm Voice!");
         HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
         if (B_X_ITEMS_BUFF >= GEN_7)
@@ -81,14 +81,14 @@ SINGLE_BATTLE_TEST("X Sp. Def sharply raises battler's Sp. Defense stat", s16 da
     PARAMETRIZE { useItem = TRUE; }
     GIVEN {
         ASSUME(gItemsInfo[ITEM_X_SP_DEF].battleUsage == EFFECT_ITEM_INCREASE_STAT);
-        ASSUME(GetMoveCategory(MOVE_DISARMING_VOICE) == DAMAGE_CATEGORY_SPECIAL);
+        ASSUME(GetMoveCategory(MOVE_DISARM_VOICE) == DAMAGE_CATEGORY_SPECIAL);
         PLAYER(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         if (useItem) TURN { USE_ITEM(player, ITEM_X_SP_DEF); }
-        TURN { MOVE(opponent, MOVE_DISARMING_VOICE); }
+        TURN { MOVE(opponent, MOVE_DISARM_VOICE); }
     } SCENE {
-        MESSAGE("The opposing Wobbuffet used Disarming Voice!");
+        MESSAGE("The opposing Wobbuffet used Disarm Voice!");
         HP_BAR(player, captureDamage: &results[i].damage);
     } FINALLY {
         if (B_X_ITEMS_BUFF >= GEN_7)
@@ -204,9 +204,9 @@ SINGLE_BATTLE_TEST("Max Mushrooms raises battler's Sp. Attack stat", s16 damage)
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         if (useItem) TURN { USE_ITEM(player, ITEM_MAX_MUSHROOMS); }
-        TURN { MOVE(player, MOVE_DISARMING_VOICE); }
+        TURN { MOVE(player, MOVE_DISARM_VOICE); }
     } SCENE {
-        MESSAGE("Wobbuffet used Disarming Voice!");
+        MESSAGE("Wobbuffet used Disarm Voice!");
         HP_BAR(opponent, captureDamage: &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(1.5), results[1].damage);
@@ -224,9 +224,9 @@ SINGLE_BATTLE_TEST("Max Mushrooms battler's Sp. Defense stat", s16 damage)
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
         if (useItem) TURN { USE_ITEM(player, ITEM_MAX_MUSHROOMS); }
-        TURN { MOVE(opponent, MOVE_DISARMING_VOICE); }
+        TURN { MOVE(opponent, MOVE_DISARM_VOICE); }
     } SCENE {
-        MESSAGE("The opposing Wobbuffet used Disarming Voice!");
+        MESSAGE("The opposing Wobbuffet used Disarm Voice!");
         HP_BAR(player, captureDamage: &results[i].damage);
     } FINALLY {
         EXPECT_MUL_EQ(results[0].damage, Q_4_12(0.66), results[1].damage);

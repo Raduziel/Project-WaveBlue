@@ -371,7 +371,7 @@ Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_LEADER_TATE_LIZA ===
-Name: Tate&LIZA
+Name: Tate&Liza
 Class: RS Leader
 Pic: Leader Tate And Liza
 Gender: Male
@@ -8363,7 +8363,7 @@ Level: 51
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Dazzling Gleam  
+- Dazzle Gleam  
 - Aurora Veil  
 - Fake Tears  
 - Blizzard  
@@ -8385,7 +8385,7 @@ Level: 52
 EVs: 160 HP / 200 SpA / 28 SpD / 120 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzling Gleam  
+- Dazzle Gleam  
 - Freeze-Dry  
 - Slack Off  
 - Psychic  
@@ -8528,7 +8528,7 @@ Level: 54
 EVs: 108 HP / 200 SpA / 80 SpD / 108 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Dazzling Gleam  
+- Dazzle Gleam  
 - Destiny Bond  
 - Shadow Ball  
 - Fake Tears  
@@ -8560,7 +8560,7 @@ Level: 58
 EVs: 160 HP / 252 SpA / 96 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzling Gleam  
+- Dazzle Gleam  
 - Sludge Bomb  
 - Shadow Ball  
 - Nasty Plot
@@ -8913,7 +8913,7 @@ Level: 39
 EVs: 48 HP / 200 SpA / 100 SpD / 160 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Dazzling Gleam  
+- Dazzle Gleam  
 - Calm Mind  
 - Icy Wind  
 - Psychic
@@ -8924,7 +8924,7 @@ Level: 43
 EVs: 20 HP / 252 SpA / 56 SpD / 180 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzling Gleam  
+- Dazzle Gleam  
 - Shadow Ball  
 - Calm Mind  
 - Psychic  
@@ -9563,7 +9563,7 @@ Level: 47
 EVs: 200 HP / 252 SpA / 56 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzling Gleam  
+- Dazzle Gleam  
 - Shadow Ball  
 - Calm Mind  
 - Psychic
@@ -9634,7 +9634,7 @@ Level: 47
 EVs: 200 HP / 252 SpA / 56 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzling Gleam  
+- Dazzle Gleam  
 - Shadow Ball  
 - Calm Mind  
 - Psychic 
@@ -9706,7 +9706,7 @@ Level: 47
 EVs: 200 HP / 252 SpA / 56 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzling Gleam  
+- Dazzle Gleam  
 - Shadow Ball  
 - Calm Mind  
 - Psychic
@@ -9748,7 +9748,7 @@ Level: 57
 EVs: 200 HP / 252 SpA / 56 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzling Gleam  
+- Dazzle Gleam  
 - Shadow Ball  
 - Calm Mind  
 - Psychic  
@@ -9821,7 +9821,7 @@ Level: 57
 EVs: 200 HP / 252 SpA / 56 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzling Gleam  
+- Dazzle Gleam  
 - Shadow Ball  
 - Calm Mind  
 - Psychic  
@@ -9893,7 +9893,7 @@ Level: 57
 EVs: 200 HP / 252 SpA / 56 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzling Gleam  
+- Dazzle Gleam  
 - Shadow Ball  
 - Calm Mind  
 - Psychic  
@@ -10681,7 +10681,7 @@ Level: 22
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_COOL_COUPLE_RAY_TYRA ===
-Name: Ray & TYRA
+Name: Ray & Tyra
 Class: Cool Couple
 Pic: Cool Couple
 Gender: Male
@@ -10706,7 +10706,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Poison Sting
 
 === TRAINER_YOUNG_COUPLE_GIA_JES ===
-Name: Gia & JES
+Name: Gia & Jes
 Class: Young Couple
 Pic: Young Couple
 Gender: Male
@@ -10723,7 +10723,7 @@ Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TWINS_KIRI_JAN ===
-Name: Kiri & JAN
+Name: Kiri & Jan
 Class: Twins
 Pic: Twins
 Gender: Male
@@ -10740,7 +10740,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CRUSH_KIN_RON_MYA ===
-Name: Ron & MYA
+Name: Ron & Mya
 Class: Crush Kin
 Pic: Crush Kin
 Gender: Male
@@ -10757,7 +10757,7 @@ Level: 29
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_YOUNG_COUPLE_LEA_JED ===
-Name: Lea & JED
+Name: Lea & Jed
 Class: Young Couple
 Pic: Young Couple
 Gender: Male
@@ -10774,7 +10774,7 @@ Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SIS_AND_BRO_LIA_LUC ===
-Name: Lia & LUC
+Name: Lia & Luc
 Class: Sis And Bro
 Pic: Sis And Bro
 Gender: Male
@@ -10791,7 +10791,7 @@ Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SIS_AND_BRO_LIL_IAN ===
-Name: Lil & IAN
+Name: Lil & Ian
 Class: Sis And Bro
 Pic: Sis And Bro
 Gender: Male
@@ -12070,7 +12070,7 @@ Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_CRUSH_KIN_MIK_KIA ===
-Name: Mik & KIA
+Name: Mik & Kia
 Class: Crush Kin
 Pic: Crush Kin
 Gender: Male
@@ -12133,7 +12133,7 @@ Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TWINS_JOY_MEG ===
-Name: Joy & MEG
+Name: Joy & Meg
 Class: Twins
 Pic: Twins
 Gender: Male
@@ -12422,7 +12422,7 @@ Level: 50
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_SIS_AND_BRO_AVA_GEB ===
-Name: Ava & GEB
+Name: Ava & Geb
 Class: Sis And Bro
 Pic: Sis And Bro
 Gender: Male
@@ -12486,7 +12486,7 @@ Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TWINS_MIU_MIA ===
-Name: Miu & MIA
+Name: Miu & Mia
 Class: Twins
 Pic: Twins
 Gender: Male
@@ -12647,7 +12647,7 @@ Level: 50
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_YOUNG_COUPLE_EVE_JON ===
-Name: Eve & JON
+Name: Eve & Jon
 Class: Young Couple
 Pic: Young Couple
 Gender: Male
@@ -12981,7 +12981,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 - Odor Sleuth
 
 === TRAINER_COOL_COUPLE_LEX_NYA ===
-Name: Lex & NYA
+Name: Lex & Nya
 Class: Cool Couple
 Pic: Cool Couple
 Gender: Male
@@ -14358,7 +14358,7 @@ Level: 54
 IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 
 === TRAINER_CRUSH_KIN_RON_MYA_2 ===
-Name: Ron & MYA
+Name: Ron & Mya
 Class: Crush Kin
 Pic: Crush Kin
 Gender: Male
@@ -14375,7 +14375,7 @@ Level: 33
 IVs: 13 HP / 13 Atk / 13 Def / 13 SpA / 13 SpD / 13 Spe
 
 === TRAINER_CRUSH_KIN_RON_MYA_3 ===
-Name: Ron & MYA
+Name: Ron & Mya
 Class: Crush Kin
 Pic: Crush Kin
 Gender: Male
@@ -14392,7 +14392,7 @@ Level: 51
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_CRUSH_KIN_RON_MYA_4 ===
-Name: Ron & MYA
+Name: Ron & Mya
 Class: Crush Kin
 Pic: Crush Kin
 Gender: Male
@@ -14670,7 +14670,7 @@ Level: 50
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_SIS_AND_BRO_LIL_IAN_2 ===
-Name: Lil & IAN
+Name: Lil & Ian
 Class: Sis And Bro
 Pic: Sis And Bro
 Gender: Male
@@ -14687,7 +14687,7 @@ Level: 50
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_SIS_AND_BRO_LIL_IAN_3 ===
-Name: Lil & IAN
+Name: Lil & Ian
 Class: Sis And Bro
 Pic: Sis And Bro
 Gender: Male
@@ -14853,7 +14853,7 @@ Level: 55
 IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 
 === TRAINER_CRUSH_KIN_MIK_KIA_2 ===
-Name: Mik & KIA
+Name: Mik & Kia
 Class: Crush Kin
 Pic: Crush Kin
 Gender: Male
@@ -14870,7 +14870,7 @@ Level: 51
 IVs: 15 HP / 15 Atk / 15 Def / 15 SpA / 15 SpD / 15 Spe
 
 === TRAINER_CRUSH_KIN_MIK_KIA_3 ===
-Name: Mik & KIA
+Name: Mik & Kia
 Class: Crush Kin
 Pic: Crush Kin
 Gender: Male
@@ -14908,7 +14908,7 @@ Level: 47
 IVs: 9 HP / 9 Atk / 9 Def / 9 SpA / 9 SpD / 9 Spe
 
 === TRAINER_TWINS_JOY_MEG_2 ===
-Name: Joy & MEG
+Name: Joy & Meg
 Class: Twins
 Pic: Twins
 Gender: Male
@@ -14980,7 +14980,7 @@ Level: 53
 IVs: 18 HP / 18 Atk / 18 Def / 18 SpA / 18 SpD / 18 Spe
 
 === TRAINER_YOUNG_COUPLE_GIA_JES_2 ===
-Name: Gia & JES
+Name: Gia & Jes
 Class: Young Couple
 Pic: Young Couple
 Gender: Male
@@ -14997,7 +14997,7 @@ Level: 30
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
 === TRAINER_YOUNG_COUPLE_GIA_JES_3 ===
-Name: Gia & JES
+Name: Gia & Jes
 Class: Young Couple
 Pic: Young Couple
 Gender: Male
@@ -15496,7 +15496,7 @@ IVs: 26 HP / 26 Atk / 26 Def / 26 SpA / 26 SpD / 26 Spe
 - Odor Sleuth
 
 === TRAINER_COOL_COUPLE_LEX_NYA_2 ===
-Name: Lex & NYA
+Name: Lex & Nya
 Class: Cool Couple
 Pic: Cool Couple
 Gender: Male
@@ -15651,7 +15651,7 @@ Level: 63
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Dazzling Gleam  
+- Dazzle Gleam  
 - Aurora Veil  
 - Fake Tears  
 - Blizzard  
@@ -15673,7 +15673,7 @@ Level: 64
 EVs: 160 HP / 200 SpA / 28 SpD / 120 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzling Gleam  
+- Dazzle Gleam  
 - Freeze-Dry  
 - Slack Off  
 - Psychic  
@@ -15816,7 +15816,7 @@ Level: 66
 EVs: 108 HP / 200 SpA / 80 SpD / 108 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Dazzling Gleam  
+- Dazzle Gleam  
 - Destiny Bond  
 - Shadow Ball  
 - Fake Tears  
@@ -15848,7 +15848,7 @@ Level: 70
 EVs: 160 HP / 252 SpA / 96 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzling Gleam  
+- Dazzle Gleam  
 - Sludge Bomb  
 - Shadow Ball  
 - Nasty Plot
@@ -15949,7 +15949,7 @@ Level: 73
 EVs: 200 HP / 252 SpA / 56 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzling Gleam  
+- Dazzle Gleam  
 - Shadow Ball  
 - Calm Mind  
 - Psychic
@@ -16022,7 +16022,7 @@ Level:73
 EVs: 200 HP / 252 SpA / 56 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzling Gleam  
+- Dazzle Gleam  
 - Shadow Ball  
 - Calm Mind  
 - Psychic 
@@ -16094,7 +16094,7 @@ Level: 73
 EVs: 200 HP / 252 SpA / 56 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzling Gleam  
+- Dazzle Gleam  
 - Shadow Ball  
 - Calm Mind  
 - Psychic  
@@ -16194,7 +16194,7 @@ Level: 75
 EVs: 248 SpA / 8 SpD / 248 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Dazzling Gleam  
+- Dazzle Gleam  
 - Sludge Bomb  
 - Destiny Bond  
 - Shadow Ball 
@@ -16268,7 +16268,7 @@ Level: 75
 EVs: 248 SpA / 8 SpD / 248 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Dazzling Gleam  
+- Dazzle Gleam  
 - Sludge Bomb  
 - Destiny Bond  
 - Shadow Ball 
@@ -16341,7 +16341,7 @@ Level: 75
 EVs: 248 SpA / 8 SpD / 248 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Dazzling Gleam  
+- Dazzle Gleam  
 - Sludge Bomb  
 - Destiny Bond  
 - Shadow Ball 

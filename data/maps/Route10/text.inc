@@ -45,7 +45,7 @@ Route10_Text_HeidiDefeat::
     .string "After all my training!$"
 
 Route10_Text_HeidiPostBattle::
-    .string "I noticed some POKéMANIACS\n"
+    .string "I noticed some Pokémaniacs\n"
     .string "prowling around.\p"
     .string "Can you imagine? Them?\n"
     .string "Up here in the mountains?$"

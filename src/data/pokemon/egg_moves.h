@@ -168,7 +168,7 @@ static const u16 sPichuEggMoveLearnset[] = {
     MOVE_ENDURE,
     MOVE_LUCKY_CHANT,
     MOVE_BESTOW,
-    MOVE_DISARMING_VOICE,
+    MOVE_DISARM_VOICE,
     MOVE_ELECTRIC_TERRAIN,
     MOVE_UNAVAILABLE,
 };
@@ -2614,7 +2614,7 @@ static const u16 sWhismurEggMoveLearnset[] = {
     MOVE_HAMMER_ARM,
     MOVE_FAKE_TEARS,
     MOVE_CIRCLE_THROW,
-    MOVE_DISARMING_VOICE,
+    MOVE_DISARM_VOICE,
     MOVE_WHIRLWIND,
     MOVE_UNAVAILABLE,
 };
@@ -4016,7 +4016,7 @@ static const u16 sPansageEggMoveLearnset[] = {
     MOVE_MAGICAL_LEAF,
     MOVE_BULLET_SEED,
     MOVE_LEAF_STORM,
-    MOVE_DISARMING_VOICE,
+    MOVE_DISARM_VOICE,
     MOVE_SPIKY_SHIELD,
     MOVE_UNAVAILABLE,
 };
@@ -4034,7 +4034,7 @@ static const u16 sPansearEggMoveLearnset[] = {
     MOVE_FIRE_SPIN,
     MOVE_FIRE_PUNCH,
     MOVE_HEAT_WAVE,
-    MOVE_DISARMING_VOICE,
+    MOVE_DISARM_VOICE,
     MOVE_BELCH,
     MOVE_FLARE_BLITZ,
     MOVE_UNAVAILABLE,
@@ -4053,7 +4053,7 @@ static const u16 sPanpourEggMoveLearnset[] = {
     MOVE_AQUA_TAIL,
     MOVE_MUD_SPORT,
     MOVE_HYDRO_PUMP,
-    MOVE_DISARMING_VOICE,
+    MOVE_DISARM_VOICE,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_PANPOUR
@@ -5552,7 +5552,7 @@ static const u16 sTogedemaruEggMoveLearnset[] = {
     MOVE_FAKE_OUT,
     MOVE_TICKLE,
     MOVE_FLAIL,
-    MOVE_DISARMING_VOICE,
+    MOVE_DISARM_VOICE,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_TOGEDEMARU

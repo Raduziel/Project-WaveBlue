@@ -64,7 +64,7 @@ ThreeIsland_BondBridge_Text_JoyIntro::
 
 ThreeIsland_BondBridge_Text_JoyDefeat::
     .string "Joy: Ohh…\n"
-    .string "MEG!$"
+    .string "Meg!$"
 
 ThreeIsland_BondBridge_Text_JoyPostBattle::
     .string "Joy: Wasn't that fun?\n"

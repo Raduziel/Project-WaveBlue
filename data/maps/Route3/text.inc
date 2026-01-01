@@ -100,5 +100,5 @@ Route3_Text_RobinPostBattle::
 
 Route3_Text_RouteSign::
     .string "Route 3\n"
-    .string "Mt. Moon AHEAD$"
+    .string "Mt. Moon Ahead$"
 

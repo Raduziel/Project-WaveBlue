@@ -1582,8 +1582,7 @@ const struct Item gItemsInfo[] =
         .price = (I_PRICE < GEN_7) ? 1000 : ((I_PRICE < GEN_9) ? 10000 : 100000),
         .holdEffectParam = 0,
         .description = COMPOUND_STRING(
-            "Switches a Poké-"
-            "mon's ability."),
+            "Switches a Pokémon's ability."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FIELD_USE,
         .type = ITEM_USE_PARTY_MENU,
@@ -9345,7 +9344,7 @@ const struct Item gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_LUCKY_EGG,
         .description = COMPOUND_STRING(
             "A hold item that "
-            "boosts Exp.\npoints "
+            "boosts Exp.\nPoints "
             "earned in battle."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
@@ -11558,7 +11557,7 @@ const struct Item gItemsInfo[] =
         .name = ITEM_NAME("TM10"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "The attack power "
+            "The attack type "
             "varies\namong "
             "different\nPokémon."),
         .importance = I_REUSABLE_TMS,
@@ -12503,7 +12502,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = NULL,
     },   
 
-    [ITEM_TM_ALLURING_VOICE] =
+    [ITEM_TM_ALLURE_VOICE] =
     {
         .name = ITEM_NAME("TM79"),
         .price = 3000,
@@ -12516,7 +12515,7 @@ const struct Item gItemsInfo[] =
         .fieldUseFunc = NULL,
     },
 
-    [ITEM_TM_DAZZLING_GLEAM] =
+    [ITEM_TM_DAZZLE_GLEAM] =
     {
         .name = ITEM_NAME("TM80"),
         .price = 3000,
@@ -14600,7 +14599,7 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
             "A card-type door "
             "key used in\nSilph "
-            "Co's office."),
+            "Co's Office."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -14632,7 +14631,7 @@ const struct Item gItemsInfo[] =
         .description = COMPOUND_STRING(
             "Silph Co's scope "
             "makes unseeable "
-            "\nPOKéMON visible."),
+            "\nPokémon visible."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -15303,7 +15302,7 @@ const struct Item gItemsInfo[] =
 
     [ITEM_BLACK_AUGURITE] =
     {
-        .name = ITEM_NAME("Black Augurite"),
+        .name = ITEM_NAME("Blk Augurite"),
         .price = 8000,
         .description = COMPOUND_STRING(
             "A black stone that "

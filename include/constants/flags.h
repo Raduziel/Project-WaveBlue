@@ -620,7 +620,7 @@
 #define FLAG_WOKE_UP_ROUTE_12_SNORLAX                    0x253
 #define FLAG_GOT_TM39_FROM_BROCK                         0x254
 #define FLAG_GOT_SUPER_ROD                               0x255
-#define FLAG_GOT_EXP_SHARE_FROM_OAKS_AIDE                0x256
+#define FLAG_GOT_INFINITE_REPEL_FROM_OAKS_AIDE                0x256
 #define FLAG_DID_MARC_TRADE                              0x257
 #define FLAG_BEAT_RIVAL_IN_OAKS_LAB                      0x258
 #define FLAG_GOT_TM06_FROM_KOGA                          0x259

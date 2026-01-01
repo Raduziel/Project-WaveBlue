@@ -29,7 +29,7 @@ RocketHideout_B4F_Text_Grunt2Defeat::
     .string "Burned again!$"
 
 RocketHideout_B4F_Text_Grunt2PostBattle::
-    .string "Do you have something against TEAM\n"
+    .string "Do you have something against Team\n"
     .string "Rocket?$"
 
 RocketHideout_B4F_Text_Grunt3Intro::

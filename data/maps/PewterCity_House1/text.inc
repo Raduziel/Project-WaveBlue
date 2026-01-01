@@ -1,5 +1,5 @@
 PewterCity_House1_Text_Nidoran::
-    .string "NIDORAN♂: Bowbow!$"
+    .string "Nidoran♂: Bowbow!$"
 
 PewterCity_House1_Text_NidoranSit::
     .string "Nidoran, sit!$"

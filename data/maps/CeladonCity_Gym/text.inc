@@ -5,7 +5,7 @@ CeladonCity_Gym_Text_ErikaIntro::
     .string "…Oh, dear…\n"
     .string "I must have dozed off. Welcome.\p"
     .string "My name is Erika.\n"
-    .string "I am the  of Celadon Gym.\p"
+    .string "I am the Leader of Celadon Gym.\p"
     .string "I am a student of the art of\n"
     .string "flower arranging.\p"
     .string "My Pokémon are solely of the\n"
@@ -137,7 +137,7 @@ CeladonCity_Gym_Text_LisaDefeat::
     .string "You!$"
 
 CeladonCity_Gym_Text_LisaPostBattle::
-    .string "Our  Erika might be quiet,\n"
+    .string "Our Leader Erika might be quiet,\n"
     .string "but she's famous around here.$"
 
 CeladonCity_Gym_Text_LoriIntro::

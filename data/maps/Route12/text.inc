@@ -37,7 +37,7 @@ Route12_Text_ChipDefeat::
     .string "That one got away!$"
 
 Route12_Text_ChipPostBattle::
-    .string "With a better ROD, I could catch\n"
+    .string "With a better Rod, I could catch\n"
     .string "better Pokémon…$"
 
 Route12_Text_JustinIntro::
@@ -65,8 +65,8 @@ Route12_Text_LucaPostBattle::
     .string "should zap sea Pokémon.$"
 
 Route12_Text_HankIntro::
-    .string "The FISHING FOOL versus Pokémon\n"
-    .string "KID!$"
+    .string "The Fishing Fool versus Pokémon\n"
+    .string "Kid!$"
 
 Route12_Text_HankDefeat::
     .string "Touch too much!$"
@@ -107,38 +107,38 @@ Route12_Text_RouteSign::
     .string "North to Lavender$"
 
 Route12_Text_SportfishingArea::
-    .string "SPORTFISHING Area$"
+    .string "Sportfishing Area$"
 
 Route12_Text_JesIntro::
     .string "Jes: If I win, I'm going to\n"
-    .string "propose to GIA.$"
+    .string "propose to Gia.$"
 
 Route12_Text_JesDefeat::
     .string "Jes: Oh, please, why couldn't you\n"
     .string "let us win?$"
 
 Route12_Text_JesPostBattle::
-    .string "Jes: Oh, GIA, forgive me,\n"
+    .string "Jes: Oh, Gia, forgive me,\n"
     .string "my love!$"
 
 Route12_Text_JesNotEnoughMons::
-    .string "Jes: GIA and I, we'll be\n"
+    .string "Jes: Gia and I, we'll be\n"
     .string "together forever.\p"
     .string "We won't battle unless you have\n"
     .string "two Pokémon of your own.$"
 
 Route12_Text_GiaIntro::
-    .string "Gia: Hey, JES…\p"
+    .string "Gia: Hey, Jes…\p"
     .string "If we win, I'll marry you!$"
 
 Route12_Text_GiaDefeat::
     .string "Gia: Oh, but why?$"
 
 Route12_Text_GiaPostBattle::
-    .string "Gia: JES, you silly!\n"
+    .string "Gia: Jes, you silly!\n"
     .string "You ruined this!$"
 
 Route12_Text_GiaNotEnoughMons::
     .string "Gia: I can't bear to battle\n"
-    .string "without my JES!\p"
+    .string "without my Jes!\p"
     .string "Don't you have one more Pokémon?$"
