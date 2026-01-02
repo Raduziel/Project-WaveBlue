@@ -88,6 +88,7 @@ SSAnne_B1F_Room3_EventScript_ItemEther::
 
 SSAnne_B1F_Room5_EventScript_ItemBottleCap::
 	finditem ITEM_BOTTLE_CAP
+	end
 
 SSAnne_Kitchen_EventScript_ItemGreatBall::
 	finditem ITEM_GREAT_BALL
