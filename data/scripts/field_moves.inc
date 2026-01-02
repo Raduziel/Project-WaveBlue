@@ -8,19 +8,19 @@ EventScript_CutTree::
 	closemessage
 EventScript_CutTreeCommon:
 	isfollowerfieldmoveuser VAR_0x8004
-	setfieldeffectargument 3, VAR_0x8004 @ skip pose if so
+	setfieldeffectargument 3, VAR_0x8004
 	dofieldeffect FLDEFF_USE_CUT_ON_TREE
 	waitstate
-EventScript_CutTreeDown:: @ fallthrough
+EventScript_CutTreeDown::
 	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
 	call_if_eq VAR_0x8004, TRUE, EventScript_FollowerFieldMove
 	applymovement VAR_LAST_TALKED, Movement_CutTreeDown
 	waitmovement 0
 	removeobject VAR_LAST_TALKED
+	special FieldCallback_CutTree_RemoveClone
 	releaseall
 	end
 
-@ Use cut from party menu
 EventScript_FldEffCut::
 	lockall
 	goto EventScript_CutTreeCommon
@@ -49,7 +49,6 @@ Text_TreeCanBeCutDown::
 	.string "This tree looks like it can be Cut\n"
 	.string "down!$"
 
-@ Use rock smash from party menu
 EventScript_FldEffRockSmash::
 	lockall
 	goto EventScript_RockSmashCommon

@@ -2389,6 +2389,54 @@ void CutMoveOpenDottedHoleDoor(void)
     UnlockPlayerFieldControls();
 }
 
+void FieldCallback_CutTree_RemoveClone(void)
+{
+    u8 mapGroup = gSaveBlock1Ptr->location.mapGroup;
+    u8 mapNum = gSaveBlock1Ptr->location.mapNum;
+    u16 objectEventId = gSelectedObjectEvent;
+    
+    if (objectEventId >= OBJECT_EVENTS_COUNT)
+        return;
+    
+    u8 localId = gObjectEvents[objectEventId].localId;
+    
+    if (mapGroup == MAP_GROUP(MAP_ROUTE16) && mapNum == MAP_NUM(MAP_ROUTE16))
+    {
+        if (localId == LOCALID_ROUTE16_CUT_TREE)
+            FlagSet(FLAG_REMOVED_ROUTE16_TREE);
+    }
+    
+    else if (mapGroup == MAP_GROUP(MAP_ROUTE9) && mapNum == MAP_NUM(MAP_ROUTE9))
+    {
+        if (localId == LOCALID_ROUTE9_CUT_TREE)
+            FlagSet(FLAG_REMOVED_ROUTE9_TREE);
+    }
+    
+    else if (mapGroup == MAP_GROUP(MAP_FIVE_ISLAND_MEADOW) && mapNum == MAP_NUM(MAP_FIVE_ISLAND_MEADOW))
+    {
+        if (localId == LOCALID_FIVE_ISLAND_MEADOW_BORDER_TREE)
+            FlagSet(FLAG_REMOVED_FIVE_ISLAND_MEADOW_TREE);
+    }
+    
+    else if (mapGroup == MAP_GROUP(MAP_ROUTE14) && mapNum == MAP_NUM(MAP_ROUTE14))
+    {
+        if (localId == LOCALID_ROUTE14_BORDER_TREE)
+            FlagSet(FLAG_REMOVED_ROUTE14_TREE);
+    }
+    
+    else if (mapGroup == MAP_GROUP(MAP_VIRIDIAN_CITY) && mapNum == MAP_NUM(MAP_VIRIDIAN_CITY))
+    {
+        if (localId == LOCALID_VIRIDIAN_BORDER_TREE)
+            FlagSet(FLAG_REMOVED_VIRIDIAN_TREE);
+    }
+    
+    else if (mapGroup == MAP_GROUP(MAP_CELADON_CITY) && mapNum == MAP_NUM(MAP_CELADON_CITY))
+    {
+        if (localId == LOCALID_CELADON_BORDER_TREE)
+            FlagSet(FLAG_REMOVED_CELADON_TREE);
+    }
+}
+
 static const u16 sDeoxysObjectPals[][16] = {
     INCBIN_U16("graphics/field_specials/deoxys_rock_0.gbapal"),
     INCBIN_U16("graphics/field_specials/deoxys_rock_1.gbapal"),

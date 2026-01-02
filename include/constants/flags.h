@@ -349,12 +349,12 @@
 #define FLAG_0x14B                                       0x14B
 #define FLAG_0x14C                                       0x14C
 #define FLAG_0x14D                                       0x14D
-#define FLAG_0x14E                                       0x14E
-#define FLAG_0x14F                                       0x14F
-#define FLAG_0x150                                       0x150
-#define FLAG_0x151                                       0x151
-#define FLAG_0x152                                       0x152
-#define FLAG_0x153                                       0x153
+#define FLAG_REMOVED_ROUTE16_TREE                        0x14E
+#define FLAG_REMOVED_ROUTE9_TREE                         0x14F
+#define FLAG_REMOVED_FIVE_ISLAND_MEADOW_TREE             0x150
+#define FLAG_REMOVED_ROUTE14_TREE                        0x151
+#define FLAG_REMOVED_CELADON_TREE                        0x152
+#define FLAG_REMOVED_VIRIDIAN_TREE                       0x153
 
 // Item ball hide/show
 #define FLAG_HIDE_ROUTE2_ETHER                                  0x154
