@@ -78,7 +78,7 @@ SaffronCity_Text_FullHealCuresStatus::
     .string "Trainer Tips\p"
     .string "Full Heal cures all ailments like\n"
     .string "burns, paralysis, poisoning,\l"
-    .string "freezing, and sleep.\p"
+    .string "frostbite, and sleep.\p"
     .string "It costs a bit more, but it's more\n"
     .string "convenient than buying other items.$"
 

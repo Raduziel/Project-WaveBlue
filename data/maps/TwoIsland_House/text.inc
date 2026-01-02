@@ -1,5 +1,5 @@
 TwoIsland_House_Text_TeachMonMoveForMushroom::
-    .string "I'm the Pokémon Move Maniac.\p"
+    .string "I'm the Island's Move Maniac.\p"
     .string "I know every single move that\n"
     .string "Pokémon learn growing up.\p"
     .string "I'm also a mushroom maniac.\p"

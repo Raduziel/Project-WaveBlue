@@ -1358,7 +1358,7 @@ const u8 gText_Exit3[] = _("Exit");
 const u8 gText_Receive[] = _("Receive");
 const u8 gText_Send[] = _("Send");
 const u8 gText_Toss[] = _("Toss");
-const u8 gText_DelAllCancelOk[] = _("Del. All{CLEAR_TO 0x57}Canceç{CLEAR_TO 0xA4}Ok");
+const u8 gText_DelAllCancelOk[] = _("Del. All{CLEAR_TO 0x57}Cancel{CLEAR_TO 0xA4}Ok");
 
 const u8 gText_BasePointsResetToZero[] = _("{STR_VAR_1}'s base points\nwere all reset to zero!{PAUSE_UNTIL_PRESS}");
 const u8 gText_PkmnFriendlyBaseVar2Fell[] = _("{STR_VAR_1} turned friendly.\nThe base {STR_VAR_2} fell!{PAUSE_UNTIL_PRESS}");

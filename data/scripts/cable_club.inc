@@ -1289,7 +1289,7 @@ TwoIsland_JoyfulGameCorner_EventScript_ShowDodrioBerryPickingRecords::
 	end
 
 CableClub_Text_WelcomeWhichCableClubService::
-	.string "Welcome to the Pokémon CABLE\n"
+	.string "Welcome to the Pokémon Cable\n"
 	.string "Club.\p"
 	.string "Which of our services do you wish\n"
 	.string "to use?$"
