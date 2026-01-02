@@ -6,8 +6,8 @@ VermilionCity_PokemonCenter_1F_Text_TrainerMonsStrongerThanWild::
     .string "stronger than one in the wild.$"
 
 VermilionCity_PokemonCenter_1F_Text_PoisonedMonFaintedWhileWalking::
-    .string "My Pokémon was poisoned!\n"
-    .string "It fainted while we were walking!$"
+    .string "My Pokémon was poisoned,\n"
+    .string "so I ran to this Pokémon Center!$"
 
 VermilionCity_PokemonCenter_1F_Text_AllMonWeakToSpecificTypes::
     .string "It is true that a higher-level\n"
