@@ -196,10 +196,10 @@
 #define VAR_POKETOWER_TM10         0x408D
 #define VAR_BOXLINK_BILL           0x408E
 #define VAR_LAVENDER_AIR_BALLOON   0x408F
+#define VAR_LAST_REPEL_LURE_USED   0x4090
 
-//Unnused?
+//Unused
 
-#define VAR_0x4090                 0x4090
 #define VAR_0x4091                 0x4091
 #define VAR_0x4092                 0x4092
 #define VAR_0x4093                 0x4093

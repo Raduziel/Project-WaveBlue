@@ -14022,8 +14022,8 @@ const struct Item gItemsInfo[] =
         .name = ITEM_NAME("Vs. Seeker"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "A rechargeable unit that flags\n"
-            "battle-ready Trainers."),
+            "Flags Trainers ready\n"
+             "for a rematch battle."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,

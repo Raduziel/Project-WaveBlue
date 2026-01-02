@@ -191,7 +191,7 @@
 
 // Unused?
 #define I_EXP_SHARE_FLAG                                 0x0AF
-#define VAR_LAST_REPEL_LURE_USED                         0x0B0
+#define FLAG_0x0B0                                       0x0B0 //UNUSED!
 #define B_FLAG_FOLLOWERS_DISABLED                        0x0B1
 #define OW_FLAG_NO_ENCOUNTER                             0x0B2
 #define OW_FLAG_POKE_RIDER                               0x0B3

@@ -54,8 +54,7 @@ LavenderTown_Text_TownSign::
 
 LavenderTown_Text_SilphScopeNotice::
     .string "New Silph Scope!\n"
-    .string "Make the Invisible Plain to See!\p"
-    .string "Silph Co.$"
+    .string "Make the Invisible Plain to See!$"
 
 LavenderTown_Text_VolunteerPokemonHouse::
     .string "Lavender Volunteer\n"
