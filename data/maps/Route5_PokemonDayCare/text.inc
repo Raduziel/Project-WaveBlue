@@ -66,3 +66,18 @@ Route5_PokemonDayCare_Text_WantMeToTakeALookAtYours::
 Route5_PokemonDayCare_Text_CantAcceptMonWithHM::
     .string "わるいけど　ひでんのわざを　もった\n"
     .string "ポケモンは　あずかれないなぁ$"
+
+Text_GiveLuckyEgg_Offer::
+    .string "I found this peculiar Egg, but\n"
+    .string "it refuses to hatch.\p"
+    .string "I've tried everything!\n"
+    .string "Maybe you'll be luckier.$"
+
+Text_GiveLuckyEgg_AfterGiving::
+    .string "How's that Egg doing?\p"
+    .string "Still hasn't hatched, has it?\n"
+    .string "I told you it was stubborn!$"
+
+Text_GiveLuckyEgg_BagFull::
+    .string "You don't have room for it!\p"
+    .string "Come back when you have space.$"

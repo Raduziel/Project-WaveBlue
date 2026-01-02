@@ -3201,15 +3201,10 @@ const struct Item gItemsInfo[] =
             "A piece of an "
             "ancient marine "
             "\nPokémon's seashell."),
-        #if I_KEY_FOSSILS >= GEN_4
-            .price = (I_PRICE >= GEN_7) ? 7000: 1000,
-            .pocket = POCKET_ITEMS,
-            .sortType = ITEM_TYPE_FOSSIL,
-        #else
-            .price = 0,
-            .importance = 1,
-            .pocket = POCKET_KEY_ITEMS,
-        #endif
+        .price = 0,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .sortType = ITEM_TYPE_FOSSIL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
@@ -3224,15 +3219,10 @@ const struct Item gItemsInfo[] =
             "A piece of an "
             "ancient marine "
             "\nPokémon's shell."),
-        #if I_KEY_FOSSILS >= GEN_4
-            .price = (I_PRICE >= GEN_7) ? 7000: 1000,
-            .pocket = POCKET_ITEMS,
-            .sortType = ITEM_TYPE_FOSSIL,
-        #else
-            .price = 0,
-            .importance = 1,
-            .pocket = POCKET_KEY_ITEMS,
-        #endif
+        .price = 0,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .sortType = ITEM_TYPE_FOSSIL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,
@@ -3247,15 +3237,10 @@ const struct Item gItemsInfo[] =
             "A stone containing "
             "the genes of\nan "
             "ancient Pokémon."),
-        #if I_KEY_FOSSILS >= GEN_4
-            .price = 1000,
-            .pocket = POCKET_ITEMS,
-            .sortType = ITEM_TYPE_FOSSIL,
-        #else
-            .price = 0,
-            .importance = 1,
-            .pocket = POCKET_KEY_ITEMS,
-        #endif
+        .price = 0,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .sortType = ITEM_TYPE_FOSSIL,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 100,

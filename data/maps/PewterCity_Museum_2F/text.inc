@@ -61,6 +61,22 @@ PewterCity_Museum_2F_Text_YouHaveHelixTakeDome:
     .string "Since you appreciate history,\n"
     .string "please take this Dome Fossil too.$"
 
+PewterCity_Museum_2F_Text_RevivedFossil_GiveHelix:
+    .string "Aren't you the kid who brought\n"
+    .string "a Fossil to Cinnabar Island?\p"
+    .string "I heard they revived a Kabuto!\n"
+    .string "Amazing work!\p"
+    .string "I trust you'll take good care\n"
+    .string "of this Helix Fossil as well.$"
+
+PewterCity_Museum_2F_Text_RevivedFossil_GiveDome:
+    .string "Aren't you the kid who brought\n"
+    .string "a Fossil to Cinnabar Island?\p"
+    .string "I heard they revived an Omanyte!\n"
+    .string "Amazing work!\p"
+    .string "I trust you'll take good care\n"
+    .string "of this Dome Fossil as well.$"
+
 PewterCity_Museum_2F_Text_PreserveFossils:
     .string "Fossils are a bridge to the past.\n"
     .string "Please treat them with care.$"

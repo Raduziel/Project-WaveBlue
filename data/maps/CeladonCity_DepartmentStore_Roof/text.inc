@@ -50,15 +50,20 @@ CeladonCity_DepartmentStore_Roof_Text_ImNotThirstyAfterAll::
     .string "No, thank you!\n"
     .string "I'm not thirsty after all!$"
 
-CeladonCity_DepartmentStore_Roof_Text_MySisterIsImmature::
-    .string "My sister is a Trainer, believe it\n"
-    .string "or not.\p"
-    .string "But, she's so immature, she drives\n"
-    .string "me nuts!$"
+CeladonCity_DepartmentStore_Roof_Text_NotThirsty::
+    .string "Not thirsty!$"
 
 CeladonCity_DepartmentStore_Roof_Text_ImThirstyIWantDrink::
     .string "I'm thirsty!\n"
     .string "I want something to drink!$"
+
+CeladonCity_DepartmentStore_Roof_Text_FinallyNotThirstyAnymore::
+    .string "Finally, I'm not thirsty anymore!\p"
+    .string "Thanks so much for all the drinks!$"
+
+CeladonCity_DepartmentStore_Roof_Text_FinallyNotThirsty::
+    .string "Thanks again for the drinks!\p"
+    .string "I'm finally not thirsty anymore!$"
 
 CeladonCity_DepartmentStore_Roof_Text_FloorSign::
     .string "Rooftop Square:\n"
@@ -77,6 +82,8 @@ CeladonCity_DepartmentStore_Roof_Text_DrinkCanPoppedOut::
 CeladonCity_DepartmentStore_Roof_Text_NoMoreRoomForStuff::
     .string "There's no more room for stuff!$"
 
-CeladonCity_DepartmentStore_Roof_Text_NotThirsty::
-    .string "Not thirsty!$"
-
+CeladonCity_DepartmentStore_Roof_Text_MySisterIsImmature::
+    .string "My sister is a Trainer, believe it\n"
+    .string "or not.\p"
+    .string "But, she's so immature, she drives\n"
+    .string "me nuts!$"
