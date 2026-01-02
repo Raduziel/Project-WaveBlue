@@ -663,6 +663,29 @@ void RegisteredItemHandleBikeSwap(void)
     }
 }
 
+static void SwapItemSlots(enum Pocket pocketId, u32 pocketPosA, u16 pocketPosB)
+{
+    struct ItemSlot *itemA = &gBagPockets[pocketId].itemSlots[pocketPosA],
+                    *itemB = &gBagPockets[pocketId].itemSlots[pocketPosB],
+                    temp;
+    SWAP(*itemA, *itemB, temp);
+}
+
+void CompactItemsInBagPocket(enum Pocket pocketId)
+{
+    struct BagPocket *bagPocket = &gBagPockets[pocketId];
+    u16 i, j;
+
+    for (i = 0; i < bagPocket->capacity - 1; i++)
+    {
+        for (j = i + 1; j < bagPocket->capacity; j++)
+        {
+            if (bagPocket->itemSlots[i].quantity == 0)
+                SwapItemSlots(pocketId, i, j);
+        }
+    }
+}
+
 u16 CountTotalItemQuantityInBag(u16 itemId)
 {
     u16 i;
@@ -715,8 +738,11 @@ void TrySetObtainedItemQuestLogEvent(u16 itemId)
 
 u16 SanitizeItemId(u16 itemId)
 {
-    if (itemId >= ITEMS_COUNT)
+    assertf(itemId < ITEMS_COUNT, "invalid item: %d", itemId)
+    {
         return ITEM_NONE;
+    }
+
     return itemId;
 }
 

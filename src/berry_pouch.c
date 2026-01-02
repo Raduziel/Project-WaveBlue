@@ -941,7 +941,7 @@ static void SortAndCountBerries(void)
     enum Pocket pocket = POCKET_BERRIES;
     struct BagPocket *bagPocket = &gBagPockets[pocket];
 
-     SortItemsInBag(bagPocket, SORT_BY_INDEX);
+    SortItemsInBag(bagPocket, SORT_BY_INDEX);
     sResources->listMenuNumItems = 0;
     for (i = 0; i < bagPocket->capacity; i++)
     {

@@ -5,6 +5,7 @@
 #include "pokemon_special_anim_internal.h"
 #include "item_use.h"
 #include "item.h"
+#include "item.h"
 #include "task.h"
 #include "move.h"
 #include "constants/songs.h"

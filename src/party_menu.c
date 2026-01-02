@@ -3973,7 +3973,7 @@ static void CursorCB_Enter(u8 taskId)
     u8 maxBattlers;
     u8 i;
     const u8 *str;
-    
+
     if (gPartyMenu.chooseMonsBattleType == CHOOSE_MONS_FOR_UNION_ROOM_BATTLE)
     {
         maxBattlers = 2;
