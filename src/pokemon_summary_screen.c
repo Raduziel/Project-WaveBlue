@@ -2560,7 +2560,7 @@ static const u8 sText_JudgePrettyGood[] = _("Pretty good");
 static const u8 sText_JudgeVeryGood[] = _("Very good");
 static const u8 sText_JudgeFantastic[] = _("Fantastic");
 static const u8 sText_JudgeBest[] = _("Best");
-static const u8 sText_JudgeHyperTrained[] = _("Hyper trained!");
+static const u8 sText_JudgeHyperTrained[] = _("HT");
 
 static void BufferIVString(u8 stat)
 {
@@ -2571,7 +2571,7 @@ static void BufferIVString(u8 stat)
     if (isHyperTrained)
     {
         StringCopy(dst, sText_JudgeHyperTrained);
-        SetStatXPos(stat, 0);
+        SetStatXPos(stat, GetNumberRightAlign63(dst));
     }
     else
     {
@@ -4299,6 +4299,7 @@ static void UpdateCurrentMonBufferFromPartyOrBox(struct Pokemon * mon)
     }
 }
 
+/*
 static u8 PokeSum_CanForgetSelectedMove(void)
 {
     u16 move;
@@ -4310,6 +4311,7 @@ static u8 PokeSum_CanForgetSelectedMove(void)
 
     return TRUE;
 }
+*/
 
 static void Task_InputHandler_SelectOrForgetMove(u8 taskId)
 {
@@ -4388,18 +4390,10 @@ static void Task_InputHandler_SelectOrForgetMove(u8 taskId)
         }
         else if (JOY_NEW(A_BUTTON))
         {
-            if (PokeSum_CanForgetSelectedMove() == TRUE || sMoveSelectionCursorPos == 4)
-            {
                 PlaySE(SE_SELECT);
                 sMoveSwapCursorPos = sMoveSelectionCursorPos;
                 gSpecialVar_0x8005 = sMoveSwapCursorPos;
                 sMonSummaryScreen->selectMoveInputHandlerState = 6;
-            }
-            else
-            {
-                PlaySE(SE_FAILURE);
-                sMonSummaryScreen->selectMoveInputHandlerState = 5;
-            }
         }
         else if (JOY_NEW(B_BUTTON))
         {

@@ -1923,7 +1923,7 @@ static void MoveSelectionDisplayMoveDescription(u32 battler)
     DrawStdWindowFrame(B_WIN_MOVE_DESCRIPTION, FALSE);
     FillWindowPixelRect(B_WIN_MOVE_DESCRIPTION, 14, 0, 0, 208, 48);
 
-    u8 colLabel[] = {14, 12, 15}; 
+    u8 colLabel[] = {14, 13, 15}; 
     u8 colVal[]   = {14, 13, 15}; 
     u8 colEff[]   = {14, effPaletteIndex, 15};
     u8 colDesc[]  = {14, 13, 15}; 
