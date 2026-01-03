@@ -81,8 +81,8 @@ SaffronCity_CopycatsHouse_2F_Text_MimickingFavoriteHobbyFemaleJP::
 
 SaffronCity_CopycatsHouse_2F_Text_Doduo::
     .string "Doduo: Giiih!\p"
-    .string "PRETTY MIRROR LOOK AT ME,\n"
-    .string "SEE HOW PRETTY I CAN BE?$"
+    .string "Pretty mirror look at me,\n"
+    .string "see how pretty I can be?$"
 
 SaffronCity_CopycatsHouse_2F_Text_RareMonOnlyDoll::
     .string "This is a rare Pokémon!\n"
