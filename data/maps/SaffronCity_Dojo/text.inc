@@ -1,7 +1,7 @@
 SaffronCity_Dojo_Text_MasterKoichiIntro::
     .string "Grunt!\p"
     .string "I am the Karate Master!\n"
-    .string "I am the  here!\p"
+    .string "I am the Leader here!\p"
     .string "You wish to challenge us?\n"
     .string "Expect no mercy!\p"
     .string "Fwaaa!$"

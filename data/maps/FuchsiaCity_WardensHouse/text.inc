@@ -24,7 +24,7 @@ FuchsiaCity_WardensHouse_Text_ThanksSonGiveYouSomething::
     .string "No one could understand a word\n"
     .string "that I said, not a one!\p"
     .string "I was too ashamed to show my face\n"
-    .string "around the Office, even.\p"
+    .string "around the office, even.\p"
     .string "Let me give you something for your\n"
     .string "trouble.$"
 
@@ -34,7 +34,7 @@ FuchsiaCity_WardensHouse_Text_ThanksLassieGiveYouSomething::
     .string "No one could understand a word\n"
     .string "that I said, not a one!\p"
     .string "I was too ashamed to show my face\n"
-    .string "around the Office, even.\p"
+    .string "around the office, even.\p"
     .string "Let me give you something for your\n"
     .string "trouble.$"
 

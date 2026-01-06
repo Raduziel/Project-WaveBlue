@@ -122,6 +122,8 @@ CeladonCity_DepartmentStore_4F_Herbs_2::
 	.2byte ITEM_LANSAT_BERRY
 	.2byte ITEM_KEE_BERRY
 	.2byte ITEM_MARANGA_BERRY
+	.2byte ITEM_BIG_MUSHROOM
+	.2byte ITEM_TINY_MUSHROOM
  	.2byte ITEM_NONE
 	release
 	end
