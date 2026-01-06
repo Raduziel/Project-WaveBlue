@@ -123,7 +123,7 @@ static const struct MapPreviewScreen sMapPreviewScreenData[MPS_COUNT] = {
     },
     [MPS_SAFARI_ZONE] = {
         .mapsec = MAPSEC_KANTO_SAFARI_ZONE,
-        .type = MPS_TYPE_FOREST,
+        .type = MPS_TYPE_CAVE,
         .flagId = FLAG_WORLD_MAP_SAFARI_ZONE_CENTER,
         .tilesptr = sSafariZoneMapPreviewTiles,
         .tilemapptr = sSafariZoneMapPreviewTilemap,
@@ -139,7 +139,7 @@ static const struct MapPreviewScreen sMapPreviewScreenData[MPS_COUNT] = {
     },
     [MPS_POKEMON_MANSION] = {
         .mapsec = MAPSEC_POKEMON_MANSION,
-        .type = MPS_TYPE_FOREST,
+        .type = MPS_TYPE_CAVE,
         .flagId = FLAG_WORLD_MAP_POKEMON_MANSION_1F,
         .tilesptr = sPokemonMansionMapPreviewTiles,
         .tilemapptr = sPokemonMansionMapPreviewTilemap,
@@ -147,7 +147,7 @@ static const struct MapPreviewScreen sMapPreviewScreenData[MPS_COUNT] = {
     },
     [MPS_ROCKET_HIDEOUT] = {
         .mapsec = MAPSEC_ROCKET_HIDEOUT,
-        .type = MPS_TYPE_FOREST,
+        .type = MPS_TYPE_CAVE,
         .flagId = FLAG_WORLD_MAP_ROCKET_HIDEOUT_B1F,
         .tilesptr = sRocketHideoutMapPreviewTiles,
         .tilemapptr = sRocketHideoutMapPreviewTilemap,
@@ -179,7 +179,7 @@ static const struct MapPreviewScreen sMapPreviewScreenData[MPS_COUNT] = {
     },
     [MPS_POWER_PLANT] = {
         .mapsec = MAPSEC_POWER_PLANT,
-        .type = MPS_TYPE_FOREST,
+        .type = MPS_TYPE_CAVE,
         .flagId = FLAG_WORLD_MAP_POWER_PLANT,
         .tilesptr = sPowerPlantMapPreviewTiles,
         .tilemapptr = sPowerPlantMapPreviewTilemap,
@@ -195,7 +195,7 @@ static const struct MapPreviewScreen sMapPreviewScreenData[MPS_COUNT] = {
     },
     [MPS_ROCKET_WAREHOUSE] = {
         .mapsec = MAPSEC_ROCKET_WAREHOUSE,
-        .type = MPS_TYPE_FOREST,
+        .type = MPS_TYPE_CAVE,
         .flagId = FLAG_WORLD_MAP_THREE_ISLAND_BERRY_FOREST,
         .tilesptr = sRocketWarehouseMapPreviewTiles,
         .tilemapptr = sRocketWarehouseMapPreviewTilemap,
