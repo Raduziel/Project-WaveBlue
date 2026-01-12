@@ -93,7 +93,7 @@ Route20_Text_MissyDefeat::
 Route20_Text_MissyPostBattle::
     .string "Pokémon have taken over an\n"
     .string "abandoned mansion on Cinnabar.\p"
-    .string "They call it the Pokémon MANSION\n"
+    .string "They call it the Pokémon Mansion\n"
     .string "now.$"
 
 Route20_Text_MelissaIntro::

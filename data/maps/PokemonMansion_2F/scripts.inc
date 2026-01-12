@@ -32,44 +32,39 @@ PokemonMansion_2F_EventScript_Arnie::
 PokeMansion_EventScript_Porygon::
     lock
     faceplayer
-    
     playse SE_PC_ON
     applymovement LOCALID_PORYGON, Movement_Porygon_Glitch
     waitmovement 0
     waitse
-    
     faceplayer
-    
     playmoncry SPECIES_PORYGON, CRY_MODE_ENCOUNTER
     msgbox Text_Porygon_Cry, MSGBOX_DEFAULT
     waitmoncry
     closemessage
-    
     setwildbattle SPECIES_PORYGON, 30
     setflag FLAG_HIDE_PORYGON
     setflag FLAG_SYS_SPECIAL_WILD_BATTLE
     dowildbattle
     clearflag FLAG_SYS_SPECIAL_WILD_BATTLE
-    
     specialvar VAR_RESULT, GetBattleOutcome
     goto_if_eq VAR_RESULT, B_OUTCOME_WON, PokeMansion_EventScript_FoughtPorygon
     goto_if_eq VAR_RESULT, B_OUTCOME_RAN, PokeMansion_EventScript_FoughtPorygon
     goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, PokeMansion_EventScript_FoughtPorygon
-    
+    fadescreen FADE_TO_BLACK
+    delay 60
     removeobject LOCALID_PORYGON
+    fadescreen FADE_FROM_BLACK
     release
     end
 
 PokeMansion_EventScript_FoughtPorygon::
     msgbox Text_Porygon_Disappears, MSGBOX_DEFAULT
     closemessage
-    
     fadescreen FADE_TO_WHITE
     playse SE_PC_OFF
     removeobject LOCALID_PORYGON
     delay 60
     fadescreen FADE_FROM_WHITE
-    
     release
     end
 

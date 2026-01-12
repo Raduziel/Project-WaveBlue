@@ -4096,11 +4096,11 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Poliwag
+Poliwhirl
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Poliwhirl
+Poliwrath
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -5963,8 +5963,8 @@ Hardy Nature
 - Laser Focus
 - Focus Energy
 
-Squirtle @ Oran Berry
-Level: 18
+Wartortle @ Oran Berry
+Level: 21
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 SpA / 188 Spe
 Docile Nature
@@ -6011,15 +6011,15 @@ Hardy Nature
 - Laser Focus
 - Focus Energy
 
-Bulbasaur @ Oran Berry
-Level: 18
+Ivysaur @ Oran Berry
+Level: 21
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
 Quirky Nature
 - Seed Bomb
 - Leech Seed
 - Sleep Powder
-- Poison Powder
+- Growth
 
 === TRAINER_RIVAL_CERULEAN_CHARMANDER ===
 Name: Terry
@@ -6059,8 +6059,8 @@ Hardy Nature
 - Laser Focus
 - Focus Energy
 
-Charmander @ Oran Berry
-Level: 18
+Charmeleon @ Oran Berry
+Level: 21
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
 Docile Nature
@@ -6409,7 +6409,7 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Tauros @ White Herb  
 Ability: Intimidate  
-Level: 24  
+Level: 26
 EVs: 4 HP / 252 Atk / 252 Spe  
 Adamant Nature  
 IVs: 0 SpA  
@@ -6420,7 +6420,7 @@ IVs: 0 SpA
 
 Beedrill @ Scope Lens  
 Ability: Sniper  
-Level: 24  
+Level: 26  
 EVs: 96 HP / 252 Atk / 160 Spe  
 Adamant Nature  
 - Focus Energy  
@@ -6430,7 +6430,7 @@ Adamant Nature
 
 Persian @ Black Glasses  
 Ability: Technician  
-Level: 25  
+Level: 27  
 EVs: 132 HP / 252 Atk / 124 Spe  
 Jolly Nature  
 - Power Gem
@@ -6440,7 +6440,7 @@ Jolly Nature
 
 Cloyster @ Leftovers  
 Ability: Skill Link  
-Level: 25  
+Level: 27  
 EVs: 152 HP / 156 Atk / 200 Def  
 Impish Nature  
 - Toxic Spikes  
@@ -6448,7 +6448,7 @@ Impish Nature
 - Liquidation  
 - Snowscape  
 
-Kangaskhan @ Assault Vest  
+Kangaskhan @ Toxic Orb 
 Ability: Scrappy  
 Level: 29  
 EVs: 120 HP / 252 Atk / 8 Def / 8 SpD / 120 Spe  
@@ -6478,67 +6478,67 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Tauros @ Sitrus Berry  
-Ability: Intimidate  
-Level: 35  
-EVs: 4 HP / 252 Atk / 252 Spe  
-Adamant Nature  
-IVs: 0 SpA  
+Tauros @ White Herb
+Ability: Intimidate
+Level: 39
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+IVs: 0 SpA
 - Close Combat
-- Zen Headbutt  
-- Wild Charge  
+- Zen Headbutt
+- Wild Charge
 - Iron Head
 
 Beedrill @ Scope Lens  
 Ability: Sniper  
-Level: 35  
+Level: 39
 EVs: 96 HP / 252 Atk / 160 Spe  
 Adamant Nature  
 - Focus Energy  
 - Poison Jab  
 - Aerial Ace  
-- X-Scissor  
+- X-Scissor
 
 Persian @ Black Glasses  
 Ability: Technician  
-Level: 37  
+Level: 41
 EVs: 132 HP / 252 Atk / 124 Spe  
 Jolly Nature  
 - Power Gem
 - Foul Play  
 - Fake Out  
-- Thief 
+- Thief
 
 Cloyster @ Leftovers  
 Ability: Skill Link  
-Level: 37  
+Level: 41
 EVs: 152 HP / 156 Atk / 200 Def  
 Impish Nature  
-- Toxic Spikes  
+- Shell Smash  
 - Icicle Spear  
-- Liquidation  
-- Snowscape  
+- Liquidation
+- Snowscape
 
-Kangaskhan @ Assault Vest  
-Ability: Scrappy  
-Level: 41  
+Kangaskhan @ Toxic Orb  
+Ability: Scrappy
+Level: 43
 EVs: 120 HP / 252 Atk / 8 Def / 8 SpD / 120 Spe  
 Adamant Nature  
-- Sucker Punch  
-- Drain Punch  
-- Fake Out  
-- Facade 
+- Sucker Punch
+- Drain Punch
+- Fake Out
+- Facade
 
 Nidoqueen @ Life Orb  
 Ability: Sheer Force  
-Level: 41  
+Level: 43
 EVs: 160 HP / 252 SpA / 16 SpD / 80 Spe  
 Calm Nature  
 IVs: 0 Atk  
-- Flamethrower  
-- Earth Power  
-- Thunderbolt  
-- Ice Beam  
+- Flamethrower
+- Earth Power
+- Thunderbolt
+- Ice Beam
 
 === TRAINER_LEADER_GIOVANNI ===
 Name: Giovanni
@@ -6555,8 +6555,8 @@ Level: 44
 EVs: 136 HP / 252 Atk / 120 Spe  
 Impish Nature  
 IVs: 0 SpA
-- Stealth Rock  
-- Bonemerang  
+- Stealth Rock
+- Bonemerang
 - Iron Head
 - Endeavor
 
@@ -6565,10 +6565,10 @@ Ability: Sheer Force
 Level: 45  
 EVs: 136 HP / 252 Atk / 120 Spe  
 Adamant Nature  
-- Earthquake  
-- Poison Jab  
-- Rock Slide  
-- Strength  
+- Earthquake
+- Poison Jab
+- Rock Slide
+- Strength
 
 Rhyperior @ Loaded Dice  
 Ability: Lightning Rod  
@@ -6576,8 +6576,8 @@ Level: 50
 EVs: 200 HP / 252 Atk / 56 Def  
 Adamant Nature  
 IVs: 0 SpA  
-- Rock Blast 
-- Earthquake  
+- Rock Blast
+- Earthquake
 - Heavy Slam
 - Body Press
 
@@ -9038,7 +9038,7 @@ Docile Nature
 - Flash
 
 Wartortle @ Oran Berry
-Level: 20
+Level: 24
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 156 HP / 200 SpA / 152 Spe
 Bashful Nature
@@ -9087,7 +9087,7 @@ Docile Nature
 - Flash
 
 Ivysaur @ Oran Berry
-Level: 20
+Level: 24
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 140 HP / 196 Atk / 172 Spe
 Quirky Nature
@@ -9136,7 +9136,7 @@ Docile Nature
 - Flash
 
 Charmeleon @ Oran Berry
-Level: 20
+Level: 24
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 140 HP / 196 Atk / 172 Spe
 Bashful Nature
@@ -9195,7 +9195,7 @@ Bashful Nature
 - Shock Wave
 
 Wartortle @ Sitrus Berry
-Level: 25
+Level: 27
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 156 HP / 200 SpA / 152 Spe
 Quirky Nature
@@ -9254,7 +9254,7 @@ Bashful Nature
 - Shock Wave
 
 Ivysaur @ Sitrus Berry
-Level: 25
+Level: 27
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 140 HP / 196 Atk / 172 Spe
 Quirky Nature
@@ -9313,7 +9313,7 @@ Bashful Nature
 - Shock Wave
 
 Charmeleon @ Sitrus Berry
-Level: 25
+Level: 27
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 140 HP / 200 Atk / 168 Spe
 Quirky Nature
@@ -9372,13 +9372,13 @@ Bashful Nature
 - Recover
 
 Blastoise @ Sitrus Berry
-Level: 40
+Level: 43
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 152 HP / 152 Atk / 48 SpA / 156 Spe
 Quirky Nature
 - Shell Smash
 - Aqua Tail
-- Ice Beam
+- Iron Defense
 - Bite
 
 === TRAINER_RIVAL_SILPH_BULBASAUR ===
@@ -9431,7 +9431,7 @@ Bashful Nature
 - Recover
 
 Venusaur @ Sitrus Berry
-Level: 40
+Level: 43
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 200 HP / 156 Def / 152 SpA
 Quirky Nature
@@ -9490,7 +9490,7 @@ Bashful Nature
 - Recover
 
 Charizard @ Sitrus Berry
-Level: 40
+Level: 43
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 100 HP / 200 SpA / 208 Spe
 Quirky Nature
@@ -9562,7 +9562,7 @@ IVs: 0 Atk
 
 Blastoise @ White Herb  
 Ability: Rain Dish  
-Level: 53  
+Level: 54  
 EVs: 248 SpA / 4 SpD / 252 Spe  
 Modest Nature  
 IVs: 0 Atk  
@@ -9633,7 +9633,7 @@ IVs: 0 Atk
 
 Venusaur @ Rocky Helmet  
 Ability: Overgrow  
-Level: 53  
+Level: 54  
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
@@ -9705,7 +9705,7 @@ IVs: 0 Atk
 
 Charizard @ Charti Berry  
 Ability: Solar Power  
-Level: 53  
+Level: 54  
 EVs: 8 HP / 252 SpA / 248 Spe  
 Timid Nature  
 IVs: 0 Atk  

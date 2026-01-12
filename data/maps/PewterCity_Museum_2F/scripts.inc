@@ -48,6 +48,7 @@ PewterCity_Museum_2F_EventScript_RevivedDome_GiveHelix::
     giveitem ITEM_HELIX_FOSSIL
     goto_if_eq VAR_RESULT, FALSE, PewterCity_Museum_2F_EventScript_BagIsFull
     setflag FLAG_GOT_MT_MOON_OTHER_FOSSIL
+    setflag FLAG_GOT_HELIX_FOSSIL
     textcolor NPC_TEXT_COLOR_NEUTRAL
     release
     end
@@ -57,6 +58,7 @@ PewterCity_Museum_2F_EventScript_RevivedHelix_GiveDome::
     giveitem ITEM_DOME_FOSSIL
     goto_if_eq VAR_RESULT, FALSE, PewterCity_Museum_2F_EventScript_BagIsFull
     setflag FLAG_GOT_MT_MOON_OTHER_FOSSIL
+    setflag FLAG_GOT_DOME_FOSSIL
     textcolor NPC_TEXT_COLOR_NEUTRAL
     release
     end    
@@ -66,6 +68,7 @@ PewterCity_Museum_2F_EventScript_GiveHelix::
     giveitem ITEM_HELIX_FOSSIL
     goto_if_eq VAR_RESULT, FALSE, PewterCity_Museum_2F_EventScript_BagIsFull
     setflag FLAG_GOT_MT_MOON_OTHER_FOSSIL
+    setflag FLAG_GOT_HELIX_FOSSIL
     textcolor NPC_TEXT_COLOR_NEUTRAL
     release
     end
@@ -75,6 +78,7 @@ PewterCity_Museum_2F_EventScript_GiveDome::
     giveitem ITEM_DOME_FOSSIL
     goto_if_eq VAR_RESULT, FALSE, PewterCity_Museum_2F_EventScript_BagIsFull
     setflag FLAG_GOT_MT_MOON_OTHER_FOSSIL
+    setflag FLAG_GOT_DOME_FOSSIL
     textcolor NPC_TEXT_COLOR_NEUTRAL
     release
     end

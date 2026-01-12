@@ -27,7 +27,7 @@ SaffronCity_Dojo_EventScript_HitmonleeBall::
 	waitmovement 0
 	textcolor NPC_TEXT_COLOR_MALE
 	msgbox SaffronCity_Dojo_Text_YouWantHitmonlee, MSGBOX_YESNO
-	call EventScript_RestorePrevTextColor
+	textcolor NPC_TEXT_COLOR_NEUTRAL
 	goto_if_eq VAR_RESULT, YES, SaffronCity_Dojo_EventScript_GiveHitmon
 	hidemonpic
 	release
@@ -43,7 +43,7 @@ SaffronCity_Dojo_EventScript_HitmontopBall::
 	waitmovement 0
 	textcolor NPC_TEXT_COLOR_MALE
 	msgbox SaffronCity_Dojo_Text_YouWantHitmontop, MSGBOX_YESNO
-	call EventScript_RestorePrevTextColor
+	textcolor NPC_TEXT_COLOR_NEUTRAL
 	goto_if_eq VAR_RESULT, YES, SaffronCity_Dojo_EventScript_GiveHitmon
 	hidemonpic
 	release
@@ -59,7 +59,7 @@ SaffronCity_Dojo_EventScript_HitmonchanBall::
 	waitmovement 0
 	textcolor NPC_TEXT_COLOR_MALE
 	msgbox SaffronCity_Dojo_Text_YouWantHitmonchan, MSGBOX_YESNO
-	call EventScript_RestorePrevTextColor
+	textcolor NPC_TEXT_COLOR_NEUTRAL
 	goto_if_eq VAR_RESULT, YES, SaffronCity_Dojo_EventScript_GiveHitmon
 	hidemonpic
 	release
@@ -80,7 +80,7 @@ SaffronCity_Dojo_EventScript_GiveHitmon::
 	end
 
 SaffronCity_Dojo_EventScript_ReceivedHitmonParty::
-	removeobject VAR_LAST_TALKED
+	call SaffronCity_Dojo_EventScript_RemoveSelectedBall
 	bufferspeciesname STR_VAR_1, VAR_TEMP_1
 	playfanfare MUS_LEVEL_UP
 	message SaffronCity_Dojo_Text_ReceivedMonFromKarateMaster
@@ -95,7 +95,7 @@ SaffronCity_Dojo_EventScript_ReceivedHitmonParty::
 	end
 
 SaffronCity_Dojo_EventScript_ReceivedHitmonPC::
-	removeobject VAR_LAST_TALKED
+	call SaffronCity_Dojo_EventScript_RemoveSelectedBall
 	bufferspeciesname STR_VAR_1, VAR_TEMP_1
 	playfanfare MUS_LEVEL_UP
 	message SaffronCity_Dojo_Text_ReceivedMonFromKarateMaster
@@ -107,6 +107,27 @@ SaffronCity_Dojo_EventScript_ReceivedHitmonPC::
 	call EventScript_NameReceivedBoxMon
 	goto SaffronCity_Dojo_EventScript_TransferredHitmonToPC
 	end
+
+SaffronCity_Dojo_EventScript_RemoveSelectedBall::
+    goto_if_eq VAR_TEMP_1, SPECIES_HITMONLEE, SaffronCity_Dojo_EventScript_RemoveLeeBall
+    goto_if_eq VAR_TEMP_1, SPECIES_HITMONCHAN, SaffronCity_Dojo_EventScript_RemoveChanBall
+    goto_if_eq VAR_TEMP_1, SPECIES_HITMONTOP, SaffronCity_Dojo_EventScript_RemoveTopBall
+    return
+
+SaffronCity_Dojo_EventScript_RemoveChanBall::
+    removeobject LOCALID_HITMONCHAN_BALL
+	setflag FLAG_HIDE_DOJO_HITMONCHAN_BALL
+    return
+
+SaffronCity_Dojo_EventScript_RemoveLeeBall::
+    removeobject LOCALID_HITMONLEE_BALL
+	setflag FLAG_HIDE_DOJO_HITMONLEE_BALL
+    return
+
+SaffronCity_Dojo_EventScript_RemoveTopBall::
+    removeobject LOCALID_HITMONTOP_BALL
+	setflag FLAG_HIDE_DOJO_HITMONTOP_BALL
+    return
 
 SaffronCity_Dojo_EventScript_TransferredHitmonToPC::
 	call EventScript_TransferredToPC
