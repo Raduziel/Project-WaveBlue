@@ -51,7 +51,6 @@ PokeMansion_EventScript_Porygon::
     goto_if_eq VAR_RESULT, B_OUTCOME_RAN, PokeMansion_EventScript_FoughtPorygon
     goto_if_eq VAR_RESULT, B_OUTCOME_PLAYER_TELEPORTED, PokeMansion_EventScript_FoughtPorygon
     fadescreen FADE_TO_BLACK
-    delay 60
     removeobject LOCALID_PORYGON
     fadescreen FADE_FROM_BLACK
     release
