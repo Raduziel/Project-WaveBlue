@@ -31,5 +31,10 @@ bool8 UsedPokemonCenterWarp(void);
 void QuestLog_CheckDepartingIndoorsMap(void);
 void QuestLog_TryRecordDepartedLocation(void);
 bool8 InPokemonCenter(void);
+void UpdateFrontierManiac(u16 daysSince);
+void UpdateFrontierGambler(u16 daysSince);
+void FrontierGamblerSetWonOrLost(bool8 won);
+bool8 InMultiPartnerRoom(void);
+void DoPicboxCancel(void);
 
 #endif // GUARD_FIELD_SPECIALS_H

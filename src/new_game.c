@@ -1,37 +1,38 @@
 #include "global.h"
 #include "gflib.h"
-#include "random.h"
-#include "overworld.h"
-#include "constants/maps.h"
-#include "load_save.h"
-#include "item_menu.h"
-#include "tm_case.h"
-#include "berry_pouch.h"
-#include "clock.h"
-#include "quest_log.h"
-#include "wild_encounter.h"
-#include "event_data.h"
-#include "mail.h"
-#include "play_time.h"
-#include "money.h"
 #include "battle_records.h"
+#include "berry_pouch.h"
+#include "berry_powder.h"
+#include "berry.h"
+#include "clock.h"
+#include "easy_chat.h"
+#include "event_data.h"
+#include "event_scripts.h"
+#include "follower_npc.h"
+#include "item_menu.h"
+#include "item.h"
+#include "load_save.h"
+#include "mail.h"
+#include "money.h"
+#include "mystery_gift.h"
+#include "overworld.h"
+#include "play_time.h"
+#include "player_pc.h"
+#include "pokemon_jump.h"
 #include "pokemon_size_record.h"
 #include "pokemon_storage_system.h"
-#include "roamer.h"
-#include "item.h"
-#include "player_pc.h"
-#include "berry.h"
-#include "easy_chat.h"
-#include "union_room_chat.h"
-#include "mystery_gift.h"
+#include "quest_log.h"
+#include "random.h"
 #include "renewable_hidden_items.h"
-#include "trainer_tower.h"
-#include "script.h"
-#include "berry_powder.h"
-#include "pokemon_jump.h"
-#include "event_scripts.h"
-#include "save.h"
+#include "roamer.h"
 #include "rtc.h"
+#include "save.h"
+#include "script.h"
+#include "tm_case.h"
+#include "trainer_tower.h"
+#include "union_room_chat.h"
+#include "wild_encounter.h"
+#include "constants/maps.h"
 
 // this file's functions
 static void ResetMiniGamesResults(void);
@@ -47,6 +48,11 @@ void SetTrainerId(u32 trainerId, u8 *dst)
     dst[1] = trainerId >> 8;
     dst[2] = trainerId >> 16;
     dst[3] = trainerId >> 24;
+}
+
+u32 GetTrainerId(u8 *trainerId)
+{
+    return (trainerId[3] << 24) | (trainerId[2] << 16) | (trainerId[1] << 8) | (trainerId[0]);
 }
 
 void CopyTrainerId(u8 *dst, u8 *src)
@@ -79,9 +85,11 @@ static void ClearPokedexFlags(void)
     memset(&gSaveBlock1Ptr->dexSeen, 0, sizeof(gSaveBlock1Ptr->dexSeen));
 }
 
-static void ClearBattleTower(void)
+static void ClearEReaderTrainer(void)
 {
-    CpuFill32(0, &gSaveBlock2Ptr->battleTower, sizeof(gSaveBlock2Ptr->battleTower));
+#if FREE_BATTLE_TOWER_E_READER == FALSE
+    CpuFill32(0, &gSaveBlock2Ptr->frontier.ereaderTrainer, sizeof(gSaveBlock2Ptr->frontier.ereaderTrainer));
+#endif
 }
 
 static void WarpToPlayersRoom(void)
@@ -112,7 +120,7 @@ void ResetMenuAndMonGlobals(void)
 void NewGameInitData(void)
 {
     u8 rivalName[PLAYER_NAME_LENGTH + 1];
-    
+
     if (gSaveFileStatus == SAVE_STATUS_EMPTY || gSaveFileStatus == SAVE_STATUS_INVALID)
         RtcReset();
 
@@ -120,7 +128,7 @@ void NewGameInitData(void)
     gDifferentSaveFile = TRUE;
     ZeroPlayerPartyMons();
     ZeroEnemyPartyMons();
-    ClearBattleTower();
+    ClearEReaderTrainer();
     ClearSav1();
     ClearSav3();
     ClearMailData();
@@ -160,6 +168,7 @@ void NewGameInitData(void)
     ResetTrainerTowerResults();
     ResetItemFlags();
     ResetDexNav();
+    ClearFollowerNPCData();
 }
 
 static void ResetMiniGamesResults(void)

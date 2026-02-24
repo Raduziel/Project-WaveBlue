@@ -99,7 +99,6 @@ void *AllocInternal(void *heapStart, u32 size, const char *location)
                 block = block->next;
             }
             while (block != head);
-            Test_ExitWithResult(TEST_RESULT_ERROR, SourceLine(0), ":L%s:%d, %s: OOM allocating %d bytes", gTestRunnerState.test->filename, SourceLine(0), location, size);
         }
 #endif
         assertf(pos->next != head, "%s: out of memory trying to allocate %d bytes", location, size)
@@ -111,14 +110,14 @@ void *AllocInternal(void *heapStart, u32 size, const char *location)
     }
 }
 
-void FreeInternal(void *heapStart, void *pointer)
+void FreeInternal(void *heapStart, void *pointer, const char *location)
 {
     if (pointer)
     {
         struct MemBlock *head = (struct MemBlock *)heapStart;
         struct MemBlock *block = (struct MemBlock *)((u8 *)pointer - sizeof(struct MemBlock));
-        AGB_ASSERT(block->magic == MALLOC_SYSTEM_ID);
-        AGB_ASSERT(block->allocated == TRUE);
+        assertf(block->magic == MALLOC_SYSTEM_ID, "%s: block->magic not equal to MALLOC_SYSTEM_ID", location);
+        assertf(block->allocated == TRUE, "%s: freeing already freed block block", location);
         block->allocated = FALSE;
 
         // If the freed block isn't the last one, merge with the next block
@@ -141,7 +140,7 @@ void FreeInternal(void *heapStart, void *pointer)
         {
             if (!block->prev->allocated)
             {
-                AGB_ASSERT(block->prev->magic == MALLOC_SYSTEM_ID);
+                assertf(block->prev->magic == MALLOC_SYSTEM_ID, "%s: block->prev->magic not equal to MALLOC_SYSTEM_ID", location);
 
                 block->prev->next = block->next;
 
@@ -213,9 +212,9 @@ void *AllocZeroed_(u32 size, const char *location)
     return AllocZeroedInternal(sHeapStart, size, location);
 }
 
-void Free(void *pointer)
+void Free_(void *pointer, const char *location)
 {
-    FreeInternal(sHeapStart, pointer);
+    FreeInternal(sHeapStart, pointer, location);
 }
 
 bool32 CheckMemBlock(void *pointer)

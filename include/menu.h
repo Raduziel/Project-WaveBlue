@@ -22,6 +22,15 @@
 #define MENU_INFO_ICON_PP        (NUMBER_OF_MON_TYPES + 4)
 #define MENU_INFO_ICON_EFFECT    (NUMBER_OF_MON_TYPES + 5)
 
+enum SaveStat
+{
+    SAVE_MENU_NAME = 0,
+    SAVE_MENU_POKEDEX,
+    SAVE_MENU_TIME,
+    SAVE_MENU_LOCATION,
+    SAVE_MENU_BADGES,
+};
+
 struct MenuAction
 {
     const u8 *text;
@@ -56,6 +65,9 @@ void MultichoiceGrid_PrintItems(u8 windowId, u8 fontId, u8 itemWidth, u8 itemHei
 void DestroyYesNoMenu(void);
 s8 Menu_ProcessInputNoWrapClearOnChoose(void);
 void CreateYesNoMenuAtPos(const struct WindowTemplate *window, u8 fontId, u8 left, u8 top, u16 baseTileNum, u8 paletteNum, u8 initialCursorPos);
+void PrintMenuActionGrid(u8 windowId, u8 fontId, u8 left, u8 top, u8 optionWidth, u8 horizontalCount, u8 verticalCount, const struct MenuAction *menuActions, const u8 *actionIds);
+u8 InitMenuActionGrid(u8 windowId, u8 optionWidth, u8 columns, u8 rows, u8 initialCursorPos);
+u8 ChangeMenuGridCursorPosition(s8 deltaX, s8 deltaY);
 void PrintMenuActionTexts(u8 windowId, u8 fontId, u8 left, u8 top, u8 letterSpacing, u8 lineHeight, u8 itemCount, const struct MenuAction *strs, const u8 *orderArray);
 void PrintMenuActionTextsAtTop(u8 windowId, u8 fontId, u8 lineHeight, u8 itemCount, const struct MenuAction *strs);
 void PrintMenuActionTextsWithSpacing(u8 windowId, u8 fontId, u8 left, u8 top, u8 lineHeight, u8 itemCount, const struct MenuAction *strs, u8 letterSpacing, u8 lineSpacing);
@@ -97,7 +109,6 @@ void LoadMessageBoxAndBorderGfx(void);
 void DrawStdWindowFrame(u8 windowId, bool8 copyNow);
 void Menu_LoadStdPal(void);
 void Menu_LoadStdPalAt(u16 offset);
-u8 GetPlayerTextSpeedDelay(void);
 void DoScheduledBgTilemapCopiesToVram(void);
 void ClearScheduledBgCopiesToVram(void);
 void ResetTempTileDataBuffers(void);
@@ -119,17 +130,17 @@ void DisplayItemMessageOnField(u8 taskId, u8 fontId, const u8 *src, TaskFunc cal
 void *malloc_and_decompress(const void *src, u32 * size);
 void DrawHelpMessageWindowWithText(const u8 * text);
 u8 GetStartMenuWindowId(void);
-void DestroyHelpMessageWindow_(void);
 u8 AddStartMenuWindow(u8 height);
 void RemoveStartMenuWindow(void);
 u16 RunTextPrintersAndIsPrinter0Active(void);
 void AddTextPrinterForMessage_2(bool8 allowSkippingDelayWithButtonPress);
-void DisplayYesNoMenuWithDefault(void);
+void DisplayYesNoMenuWithDefault(u8 initialCursorPos);
 void AddTextPrinterWithCustomSpeedForMessage(bool8 allowSkippingDelayWithButtonPress, u8 speed);
 void LoadSignPostWindowFrameGfx(void);
 void AddTextPrinterForMessage(bool8 allowSkippingDelayWithButtonPress);
 void DecompressAndLoadBgGfxUsingHeap2(u8 bgId, const void *src, u32 size, u16 offset, u8 mode);
 void FreeAllOverworldWindowBuffers(void);
 void CopyToBufferFromBgTilemap(u8 bgId, u16 *dest, u8 left, u8 top, u8 width, u8 height);
+void BufferSaveMenuText(enum SaveStat stat, u8 *dest, u8 color);
 
 #endif // GUARD_MENU_H

@@ -51,10 +51,17 @@ EventScript_ReceivedItemWaitFanfare::
 	delay 50
 	return
 
+Std_MsgboxGetPoints:
+	message NULL
+	playfanfare MUS_OBTAIN_B_POINTS
+	waitfanfare
+	waitmessage
+	return
+
 EventScript_UnusedReturn::
 	return
 
 EventScript_AskSaveGame::
-	special Field_AskSaveTheGame
+	special SaveGame
 	waitstate
 	return

@@ -2874,6 +2874,7 @@ extern const u16 gItemIconPalette_UltraBall[];
 extern const u32 gItemIcon_MasterBall[];
 extern const u16 gItemIconPalette_MasterBall[];
 extern const u32 gItemIcon_PremierBall[];
+extern const u16 gItemIconPalette_PremierBall[];
 extern const u32 gItemIcon_HealBall[];
 extern const u16 gItemIconPalette_HealBall[];
 extern const u32 gItemIcon_NetBall[];
@@ -2996,17 +2997,12 @@ extern const u16 gItemIconPalette_PPUp[];
 extern const u32 gItemIcon_PPMax[];
 extern const u16 gItemIconPalette_PPMax[];
 // EV Feathers
-extern const u32 gItemIcon_HealthFeather[];
+extern const u32 gItemIcon_EVFeather[];
 extern const u16 gItemIconPalette_HealthFeather[];
-extern const u32 gItemIcon_MuscleFeather[];
 extern const u16 gItemIconPalette_MuscleFeather[];
-extern const u32 gItemIcon_ResistFeather[];
 extern const u16 gItemIconPalette_ResistFeather[];
-extern const u32 gItemIcon_GeniusFeather[];
 extern const u16 gItemIconPalette_GeniusFeather[];
-extern const u32 gItemIcon_CleverFeather[];
 extern const u16 gItemIconPalette_CleverFeather[];
-extern const u32 gItemIcon_SwiftFeather[];
 extern const u16 gItemIconPalette_SwiftFeather[];
 // Ability Modifiers
 extern const u32 gItemIcon_AbilityCapsule[];
@@ -3164,19 +3160,13 @@ extern const u16 gItemIconPalette_SurpriseMulch[];
 extern const u16 gItemIconPalette_BoostMulch[];
 extern const u16 gItemIconPalette_AmazeMulch[];
 // Apricorns
-extern const u32 gItemIcon_RedApricorn[];
+extern const u32 gItemIcon_Apricorn[];
 extern const u16 gItemIconPalette_RedApricorn[];
-extern const u32 gItemIcon_BlueApricorn[];
 extern const u16 gItemIconPalette_BlueApricorn[];
-extern const u32 gItemIcon_YellowApricorn[];
 extern const u16 gItemIconPalette_YellowApricorn[];
-extern const u32 gItemIcon_GreenApricorn[];
 extern const u16 gItemIconPalette_GreenApricorn[];
-extern const u32 gItemIcon_PinkApricorn[];
 extern const u16 gItemIconPalette_PinkApricorn[];
-extern const u32 gItemIcon_WhiteApricorn[];
 extern const u16 gItemIconPalette_WhiteApricorn[];
-extern const u32 gItemIcon_BlackApricorn[];
 extern const u16 gItemIconPalette_BlackApricorn[];
 extern const u32 gItemIcon_WishingPiece[];
 extern const u16 gItemIconPalette_WishingPiece[];
@@ -3294,57 +3284,35 @@ extern const u16 gItemIconPalette_MasterpieceTeacup[];
 extern const u32 gItemIcon_MetalAlloy[];
 extern const u16 gItemIconPalette_MetalAlloy[];
 // Nectars
-extern const u32 gItemIcon_RedNectar[];
+extern const u32 gItemIcon_Nectar[];
 extern const u16 gItemIconPalette_RedNectar[];
-extern const u32 gItemIcon_YellowNectar[];
 extern const u16 gItemIconPalette_YellowNectar[];
-extern const u32 gItemIcon_PinkNectar[];
 extern const u16 gItemIconPalette_PinkNectar[];
-extern const u32 gItemIcon_PurpleNectar[];
 extern const u16 gItemIconPalette_PurpleNectar[];
 // Plates
-extern const u32 gItemIcon_FlamePlate[];
+extern const u32 gItemIcon_Plate[];
 extern const u16 gItemIconPalette_FlamePlate[];
-extern const u32 gItemIcon_SplashPlate[];
 extern const u16 gItemIconPalette_SplashPlate[];
-extern const u32 gItemIcon_ZapPlate[];
 extern const u16 gItemIconPalette_ZapPlate[];
-extern const u32 gItemIcon_MeadowPlate[];
 extern const u16 gItemIconPalette_MeadowPlate[];
-extern const u32 gItemIcon_IciclePlate[];
 extern const u16 gItemIconPalette_IciclePlate[];
-extern const u32 gItemIcon_FistPlate[];
 extern const u16 gItemIconPalette_FistPlate[];
-extern const u32 gItemIcon_ToxicPlate[];
 extern const u16 gItemIconPalette_ToxicPlate[];
-extern const u32 gItemIcon_EarthPlate[];
 extern const u16 gItemIconPalette_EarthPlate[];
-extern const u32 gItemIcon_SkyPlate[];
 extern const u16 gItemIconPalette_SkyPlate[];
-extern const u32 gItemIcon_MindPlate[];
 extern const u16 gItemIconPalette_MindPlate[];
-extern const u32 gItemIcon_InsectPlate[];
 extern const u16 gItemIconPalette_InsectPlate[];
-extern const u32 gItemIcon_StonePlate[];
 extern const u16 gItemIconPalette_StonePlate[];
-extern const u32 gItemIcon_SpookyPlate[];
 extern const u16 gItemIconPalette_SpookyPlate[];
-extern const u32 gItemIcon_DracoPlate[];
 extern const u16 gItemIconPalette_DracoPlate[];
-extern const u32 gItemIcon_DreadPlate[];
 extern const u16 gItemIconPalette_DreadPlate[];
-extern const u32 gItemIcon_IronPlate[];
 extern const u16 gItemIconPalette_IronPlate[];
-extern const u32 gItemIcon_PixiePlate[];
 extern const u16 gItemIconPalette_PixiePlate[];
 // Drives
-extern const u32 gItemIcon_DouseDrive[];
+extern const u32 gItemIcon_Drive[];
 extern const u16 gItemIconPalette_DouseDrive[];
-extern const u32 gItemIcon_ShockDrive[];
 extern const u16 gItemIconPalette_ShockDrive[];
-extern const u32 gItemIcon_BurnDrive[];
 extern const u16 gItemIconPalette_BurnDrive[];
-extern const u32 gItemIcon_ChillDrive[];
 extern const u16 gItemIconPalette_ChillDrive[];
 // Memories
 extern const u32 gItemIcon_FireMemory[];
@@ -3485,41 +3453,24 @@ extern const u16 gItemIconPalette_Audinite[];
 extern const u32 gItemIcon_Diancite[];
 extern const u16 gItemIconPalette_Diancite[];
 // Gems
-extern const u32 gItemIcon_NormalGem[];
+extern const u32 gItemIcon_TypeGem[];
 extern const u16 gItemIconPalette_NormalGem[];
-extern const u32 gItemIcon_FireGem[];
 extern const u16 gItemIconPalette_FireGem[];
-extern const u32 gItemIcon_WaterGem[];
 extern const u16 gItemIconPalette_WaterGem[];
-extern const u32 gItemIcon_ElectricGem[];
 extern const u16 gItemIconPalette_ElectricGem[];
-extern const u32 gItemIcon_GrassGem[];
 extern const u16 gItemIconPalette_GrassGem[];
-extern const u32 gItemIcon_IceGem[];
 extern const u16 gItemIconPalette_IceGem[];
-extern const u32 gItemIcon_FightingGem[];
 extern const u16 gItemIconPalette_FightingGem[];
-extern const u32 gItemIcon_PoisonGem[];
 extern const u16 gItemIconPalette_PoisonGem[];
-extern const u32 gItemIcon_GroundGem[];
 extern const u16 gItemIconPalette_GroundGem[];
-extern const u32 gItemIcon_FlyingGem[];
 extern const u16 gItemIconPalette_FlyingGem[];
-extern const u32 gItemIcon_PsychicGem[];
 extern const u16 gItemIconPalette_PsychicGem[];
-extern const u32 gItemIcon_BugGem[];
 extern const u16 gItemIconPalette_BugGem[];
-extern const u32 gItemIcon_RockGem[];
 extern const u16 gItemIconPalette_RockGem[];
-extern const u32 gItemIcon_GhostGem[];
 extern const u16 gItemIconPalette_GhostGem[];
-extern const u32 gItemIcon_DragonGem[];
 extern const u16 gItemIconPalette_DragonGem[];
-extern const u32 gItemIcon_DarkGem[];
 extern const u16 gItemIconPalette_DarkGem[];
-extern const u32 gItemIcon_SteelGem[];
 extern const u16 gItemIconPalette_SteelGem[];
-extern const u32 gItemIcon_FairyGem[];
 extern const u16 gItemIconPalette_FairyGem[];
 // Z-Crystals
 extern const u32 gItemIcon_NormaliumZ[];
@@ -3597,13 +3548,12 @@ extern const u32 gItemIcon_LightBall[];
 extern const u16 gItemIconPalette_LightBall[];
 extern const u32 gItemIcon_Leek[];
 extern const u16 gItemIconPalette_Leek[];
-extern const u32 gItemIcon_ThickClub[];
-extern const u16 gItemIconPalette_ThickClub[];
+extern const u32 gItemIcon_Bone[];
+extern const u16 gItemIconPalette_Bone[];
 extern const u32 gItemIcon_LuckyPunch[];
 extern const u16 gItemIconPalette_LuckyPunch[];
-extern const u32 gItemIcon_MetalPowder[];
+extern const u32 gItemIcon_DittoPowder[];
 extern const u16 gItemIconPalette_MetalPowder[];
-extern const u32 gItemIcon_QuickPowder[];
 extern const u16 gItemIconPalette_QuickPowder[];
 extern const u32 gItemIcon_DeepSeaScale[];
 extern const u16 gItemIconPalette_DeepSeaScale[];
@@ -3675,7 +3625,7 @@ extern const u32 gItemIcon_BlackBelt[];
 extern const u16 gItemIconPalette_BlackTypeEnhancingItem[];
 extern const u32 gItemIcon_PoisonBarb[];
 extern const u16 gItemIconPalette_PoisonBarb[];
-extern const u32 gItemIcon_SoftSand[];
+extern const u32 gItemIcon_Sand[];
 extern const u16 gItemIconPalette_SoftSand[];
 extern const u32 gItemIcon_SharpBeak[];
 extern const u16 gItemIconPalette_SharpBeak[];
@@ -3714,13 +3664,10 @@ extern const u16 gItemIconPalette_SmoothRock[];
 extern const u32 gItemIcon_IcyRock[];
 extern const u16 gItemIconPalette_IcyRock[];
 // Terrain Seeds
-extern const u32 gItemIcon_ElectricSeed[];
+extern const u32 gItemIcon_TerrainSeed[];
 extern const u16 gItemIconPalette_ElectricSeed[];
-extern const u32 gItemIcon_PsychicSeed[];
 extern const u16 gItemIconPalette_PsychicSeed[];
-extern const u32 gItemIcon_MistySeed[];
 extern const u16 gItemIconPalette_MistySeed[];
-extern const u32 gItemIcon_GrassySeed[];
 extern const u16 gItemIconPalette_GrassySeed[];
 // Type-activated Stat Modifiers
 extern const u32 gItemIcon_AbsorbBulb[];
@@ -6147,6 +6094,8 @@ extern const u32 gBattleAnimSpriteGfx_MegaParticles[];
 extern const u16 gBattleAnimSpritePal_MegaParticles[];
 extern const u32 gBattleAnimSpriteGfx_MegaSymbol[];
 extern const u16 gBattleAnimSpritePal_MegaSymbol[];
+extern const u32 gBattleAnimSpriteGfx_TeraSymbol[];
+extern const u16 gBattleAnimSpritePal_TeraSymbol[];
 extern const u32 gBattleAnimSpriteGfx_FlashCannonBall[];
 extern const u16 gBattleAnimSpritePal_FlashCannonBall[];
 extern const u32 gBattleAnimSpriteGfx_WaterGun[];
@@ -6159,6 +6108,13 @@ extern const u32 gBattleAnimSpriteGfx_TeraCrystal[];
 extern const u16 gBattleAnimSpritePal_TeraCrystal[];
 extern const u32 gBattleAnimSpriteGfx_TeraShatter[];
 extern const u16 gBattleAnimSpritePal_TeraShatter[];
+extern const u32 gBattleAnimSpriteGfx_TatsugiriCurly[];
+extern const u16 gBattleAnimSpritePal_TatsugiriCurly[];
+extern const u32 gBattleAnimSpriteGfx_TatsugiriDroopy[];
+extern const u16 gBattleAnimSpritePal_TatsugiriDroopy[];
+extern const u32 gBattleAnimSpriteGfx_TatsugiriStretchy[];
+extern const u16 gBattleAnimSpritePal_TatsugiriStretchy[];
+
 
 // New Battle Anim Particles
 extern const u32 gBattleAnimSpriteGfx_AlphaStone[];
@@ -6521,9 +6477,11 @@ extern const u32 gBattleAnimBgTilemap_Sandstorm[];
 extern const u32 gBattleAnimBgImage_Sandstorm[];
 
 // Pledge Effect field status - Rainbow
-extern const u32 gBattleAnimBgImage_Rainbow[];
+extern const u32 gBattleAnimBgImage_RainbowPlayer[];
+extern const u32 gBattleAnimBgImage_RainbowOpponent[];
 extern const u16 gBattleAnimBGPalette_Rainbow[];
-extern const u32 gBattleAnimBgTilemap_Rainbow[];
+extern const u32 gBattleAnimBgTilemap_RainbowPlayer[];
+extern const u32 gBattleAnimBgTilemap_RainbowOpponent[];
 
 // Pledge Effect field status - Swamp
 extern const u32 gBattleAnimBgImage_Swamp[];
@@ -6559,5 +6517,50 @@ extern const u16 gPokedexSearchMenu_Pal[];
 // Pokédex Area Screen
 extern const u32 gPokedexAreaScreenAreaUnknown_Gfx[];
 extern const u16 gPokedexAreaScreenAreaUnknown_Pal[];
+
+// Battle Factory Screen
+extern const u16 gFrontierFactoryMenu_Gfx[34 * TILE_SIZE_4BPP / 2];
+extern const u16 gFrontierFactoryMenu_Tilemap[];
+extern const u16 gFrontierFactoryMenu_Pal[];
+
+// Battle Dome
+extern const u32 gDomeTourneyInfoCard_Gfx[];
+extern const u32 gDomeTourneyInfoCard_Tilemap[];
+extern const u32 gDomeTourneyInfoCardBg_Tilemap[];
+extern const u16 gDomeTourneyTree_Pal[];
+extern const u16 gDomeTourneyTreeButtons_Pal[];
+extern const u16 gDomeTourneyMatchCardBg_Pal[];
+extern const u32 gDomeTourneyTree_Gfx[];
+extern const u32 gDomeTourneyLine_Gfx[];
+extern const u32 gDomeTourneyLineDown_Tilemap[];
+extern const u32 gDomeTourneyLineUp_Tilemap[];
+extern const u32 gDomeTourneyTree_Tilemap[];
+extern const u32 gDomeTourneyTreeButtons_Gfx[];
+extern const u16 gTilesetAnims_BattleDomePals0_0[];
+extern const u16 gTilesetAnims_BattleDomePals0_1[];
+extern const u16 gTilesetAnims_BattleDomePals0_2[];
+extern const u16 gTilesetAnims_BattleDomePals0_3[];
+
+extern const u32 gBattleArenaJudgmentSymbolsGfx[];
+extern const u16 gBattleArenaJudgmentSymbolsPalette[];
+
+extern const u32 gBattlePyramidBag_Gfx[];
+extern const u16 gBattlePyramidBag_Pal[];
+extern const u32 gBattlePyramidBagTilemap[];
+extern const u16 gBattlePyramidBagInterface_Pal[];
+extern const u16 gBattlePyramidFloor_Pal[][16];
+
+// Frontier Pass
+extern const u32 gFrontierPassBg_Gfx[];
+extern const u32 gFrontierPassBg_Tilemap[];
+extern const u16 gFrontierPassBg_Pal[][16];
+extern const u32 gFrontierPassMapAndCard_Gfx[];
+extern const u32 gFrontierPassCancelButton_Tilemap[];
+extern const u32 gFrontierPassCancelButtonHighlighted_Tilemap[];
+extern const u32 gFrontierPassMedals_Gfx[];
+extern const u16 gFrontierPassCursor_Pal[];
+extern const u16 gFrontierPassMedalsGold_Pal[];
+extern const u16 gFrontierPassMedalsSilver_Pal[];
+extern const u16 gFrontierPassMapCursor_Pal[];
 
 #endif //GUARD_GRAPHICS_H

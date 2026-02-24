@@ -373,7 +373,7 @@
       "MOVE_BABY_DOLL_EYES",
       "MOVE_CALM_MIND",
       "MOVE_CHARGE_BEAM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_DRAIN_PUNCH",
       "MOVE_FIRE_PUNCH",
       "MOVE_FLAMETHROWER",
@@ -439,7 +439,7 @@
       "MOVE_BABY_DOLL_EYES",
       "MOVE_CALM_MIND",
       "MOVE_CHARGE_BEAM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_DRAIN_PUNCH",
       "MOVE_FIRE_PUNCH",
       "MOVE_FLAMETHROWER",
@@ -1008,7 +1008,7 @@
     "TutorMoves": [
       "MOVE_CALM_MIND",
       "MOVE_CHARGE_BEAM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_DRAIN_PUNCH",
       "MOVE_ENERGY_BALL",
       "MOVE_FIRE_PUNCH",
@@ -1064,7 +1064,7 @@
     "TutorMoves": [
       "MOVE_CALM_MIND",
       "MOVE_CHARGE_BEAM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_DRAIN_PUNCH",
       "MOVE_ENERGY_BALL",
       "MOVE_FIRE_PUNCH",
@@ -1121,7 +1121,7 @@
     "TutorMoves": [
       "MOVE_CALM_MIND",
       "MOVE_CHARGE_BEAM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_DRAIN_PUNCH",
       "MOVE_ENERGY_BALL",
       "MOVE_FIRE_PUNCH",
@@ -1360,7 +1360,7 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": [
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_ICE_BEAM",
       "MOVE_ICY_WIND",
       "MOVE_POISON_JAB",
@@ -1404,7 +1404,7 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": [
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GIGA_IMPACT",
       "MOVE_HYPER_BEAM",
       "MOVE_ICE_BEAM",
@@ -1895,7 +1895,7 @@
     "EggMoves": [],
     "TutorMoves": [
       "MOVE_DARK_PULSE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_ENERGY_BALL",
       "MOVE_FIRE_PUNCH",
       "MOVE_ICE_PUNCH",
@@ -1946,7 +1946,7 @@
     "EggMoves": [],
     "TutorMoves": [
       "MOVE_DARK_PULSE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_ENERGY_BALL",
       "MOVE_FIRE_PUNCH",
       "MOVE_ICE_PUNCH",
@@ -1998,7 +1998,7 @@
     "EggMoves": [],
     "TutorMoves": [
       "MOVE_DARK_PULSE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_DRAIN_PUNCH",
       "MOVE_ENERGY_BALL",
       "MOVE_FIRE_PUNCH",
@@ -2385,7 +2385,7 @@
       "MOVE_BULLDOZE",
       "MOVE_CALM_MIND",
       "MOVE_CHARGE_BEAM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_DRAIN_PUNCH",
       "MOVE_FIRE_PUNCH",
       "MOVE_FLAMETHROWER",
@@ -2537,7 +2537,7 @@
       },
       {
         "Level": 46,
-        "Move": "MOVE_DAZZLE_GLEAM"
+        "Move": "MOVE_DAZZLING_GLEAM"
       }
     ],
     "PreEvoMoves": [],
@@ -2547,7 +2547,7 @@
       "MOVE_AERIAL_ACE",
       "MOVE_CALM_MIND",
       "MOVE_CHARGE_BEAM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_DRAIN_PUNCH",
       "MOVE_ENERGY_BALL",
       "MOVE_FIRE_PUNCH",
@@ -3671,7 +3671,7 @@
     "TutorMoves": [
       "MOVE_BABY_DOLL_EYES",
       "MOVE_CALM_MIND",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_FLAMETHROWER",
       "MOVE_MYSTICAL_FIRE",
       "MOVE_PLAY_ROUGH",
@@ -3731,7 +3731,7 @@
       "MOVE_AERIAL_ACE",
       "MOVE_BABY_DOLL_EYES",
       "MOVE_CALM_MIND",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_DRAIN_PUNCH",
       "MOVE_FLAMETHROWER",
       "MOVE_GIGA_IMPACT",
@@ -4055,7 +4055,7 @@
     "TutorMoves": [
       "MOVE_BABY_DOLL_EYES",
       "MOVE_CALM_MIND",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_FOCUS_ENERGY",
       "MOVE_GIGA_IMPACT",
       "MOVE_HYPER_BEAM",
@@ -4224,7 +4224,7 @@
       "MOVE_CALM_MIND",
       "MOVE_CHARGE_BEAM",
       "MOVE_DARK_PULSE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_ICY_WIND",
       "MOVE_OMINOUS_WIND",
       "MOVE_PSYCHIC",
@@ -5313,7 +5313,7 @@
       "MOVE_BULLDOZE",
       "MOVE_CALM_MIND",
       "MOVE_CHARGE_BEAM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_DRAIN_PUNCH",
       "MOVE_FIRE_PUNCH",
       "MOVE_FLAMETHROWER",
@@ -5761,7 +5761,7 @@
     "TutorMoves": [
       "MOVE_CALM_MIND",
       "MOVE_CHARGE_BEAM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_FIRE_PUNCH",
       "MOVE_ICE_BEAM",
       "MOVE_ICE_PUNCH",
@@ -5809,7 +5809,7 @@
     "TutorMoves": [
       "MOVE_CALM_MIND",
       "MOVE_CHARGE_BEAM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_FIRE_PUNCH",
       "MOVE_ICE_BEAM",
       "MOVE_ICE_PUNCH",
@@ -5828,7 +5828,7 @@
     "LevelMoves": [
       {
         "Level": 0,
-        "Move": "MOVE_DAZZLE_GLEAM"
+        "Move": "MOVE_DAZZLING_GLEAM"
       },
       {
         "Level": 1,
@@ -5873,7 +5873,7 @@
     "TutorMoves": [
       "MOVE_CALM_MIND",
       "MOVE_CHARGE_BEAM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_ENERGY_BALL",
       "MOVE_FIRE_PUNCH",
       "MOVE_GIGA_IMPACT",
@@ -6198,7 +6198,7 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": [
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_ENERGY_BALL",
       "MOVE_MAGICAL_LEAF",
       "MOVE_POISON_JAB",
@@ -6711,7 +6711,7 @@
     "TutorMoves": [
       "MOVE_CALM_MIND",
       "MOVE_CHARGE_BEAM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_ENERGY_BALL",
       "MOVE_ICY_WIND",
       "MOVE_OMINOUS_WIND",
@@ -8125,7 +8125,7 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": [
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_ENERGY_BALL",
       "MOVE_POISON_JAB",
       "MOVE_REST",
@@ -8174,7 +8174,7 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": [
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_ENERGY_BALL",
       "MOVE_GIGA_IMPACT",
       "MOVE_HYPER_BEAM",
@@ -8785,7 +8785,7 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": [
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_ENERGY_BALL",
       "MOVE_MAGICAL_LEAF",
       "MOVE_REST"
@@ -8830,7 +8830,7 @@
     "TMMoves": [],
     "EggMoves": [],
     "TutorMoves": [
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_ENERGY_BALL",
       "MOVE_GIGA_IMPACT",
       "MOVE_HYPER_BEAM",
@@ -9257,7 +9257,7 @@
       "MOVE_CALM_MIND",
       "MOVE_CHARGE_BEAM",
       "MOVE_DARK_PULSE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_ENERGY_BALL",
       "MOVE_GIGA_IMPACT",
       "MOVE_HYPER_BEAM",
@@ -9461,7 +9461,7 @@
     "TutorMoves": [
       "MOVE_CALM_MIND",
       "MOVE_CHARGE_BEAM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_ENERGY_BALL",
       "MOVE_ICY_WIND",
       "MOVE_OMINOUS_WIND",
@@ -9758,7 +9758,7 @@
     "TutorMoves": [
       "MOVE_CALM_MIND",
       "MOVE_CHARGE_BEAM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_DRAIN_PUNCH",
       "MOVE_ICY_WIND",
       "MOVE_PSYCHIC",
@@ -11324,7 +11324,7 @@
       "MOVE_AERIAL_ACE",
       "MOVE_BABY_DOLL_EYES",
       "MOVE_CALM_MIND",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_DRAIN_PUNCH",
       "MOVE_FLAMETHROWER",
       "MOVE_GIGA_IMPACT",
@@ -11753,7 +11753,7 @@
       "MOVE_BULLDOZE",
       "MOVE_CALM_MIND",
       "MOVE_CHARGE_BEAM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_DRAIN_PUNCH",
       "MOVE_ENERGY_BALL",
       "MOVE_FALSE_SWIPE",
@@ -12046,7 +12046,7 @@
     "TutorMoves": [
       "MOVE_CALM_MIND",
       "MOVE_CHARGE_BEAM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_DRAIN_PUNCH",
       "MOVE_ENERGY_BALL",
       "MOVE_FIRE_PUNCH",
@@ -12114,7 +12114,7 @@
     "TutorMoves": [
       "MOVE_CALM_MIND",
       "MOVE_CHARGE_BEAM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_DRAIN_PUNCH",
       "MOVE_ENERGY_BALL",
       "MOVE_FIRE_PUNCH",
@@ -12182,7 +12182,7 @@
     "TutorMoves": [
       "MOVE_CALM_MIND",
       "MOVE_CHARGE_BEAM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_DRAIN_PUNCH",
       "MOVE_ENERGY_BALL",
       "MOVE_FIRE_PUNCH",
@@ -12629,7 +12629,7 @@
     "EggMoves": [],
     "TutorMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_ICE_BEAM",
       "MOVE_ICY_WIND",
       "MOVE_REST",
@@ -12678,7 +12678,7 @@
     "EggMoves": [],
     "TutorMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_ENERGY_BALL",
       "MOVE_GIGA_IMPACT",
       "MOVE_HYPER_BEAM",
@@ -12796,7 +12796,7 @@
     "TutorMoves": [
       "MOVE_AERIAL_ACE",
       "MOVE_BABY_DOLL_EYES",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_EARTH_POWER",
       "MOVE_ENERGY_BALL",
       "MOVE_GIGA_IMPACT",
@@ -12855,7 +12855,7 @@
       "MOVE_CALM_MIND",
       "MOVE_CHARGE_BEAM",
       "MOVE_DARK_PULSE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_DRACO_METEOR",
       "MOVE_EARTH_POWER",
       "MOVE_ENERGY_BALL",
@@ -14694,7 +14694,7 @@
     "TutorMoves": [
       "MOVE_BABY_DOLL_EYES",
       "MOVE_CALM_MIND",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_FOCUS_ENERGY",
       "MOVE_GIGA_IMPACT",
       "MOVE_HYPER_BEAM",
@@ -16616,7 +16616,7 @@
     "EggMoves": [],
     "TutorMoves": [
       "MOVE_CALM_MIND",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_EARTH_POWER",
       "MOVE_GIGA_IMPACT",
       "MOVE_HYPER_BEAM",
@@ -16737,7 +16737,7 @@
       },
       {
         "Level": 29,
-        "Move": "MOVE_DAZZLE_GLEAM"
+        "Move": "MOVE_DAZZLING_GLEAM"
       },
       {
         "Level": 37,
@@ -16754,7 +16754,7 @@
     "TutorMoves": [
       "MOVE_BABY_DOLL_EYES",
       "MOVE_DARK_PULSE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_ENERGY_BALL",
       "MOVE_ICE_BEAM",
       "MOVE_ICE_FANG",
@@ -16789,7 +16789,7 @@
       },
       {
         "Level": 29,
-        "Move": "MOVE_DAZZLE_GLEAM"
+        "Move": "MOVE_DAZZLING_GLEAM"
       },
       {
         "Level": 37,
@@ -16807,7 +16807,7 @@
       "MOVE_BABY_DOLL_EYES",
       "MOVE_CALM_MIND",
       "MOVE_DARK_PULSE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_ENERGY_BALL",
       "MOVE_GIGA_IMPACT",
       "MOVE_HYPER_BEAM",
@@ -17633,7 +17633,7 @@
     "TutorMoves": [
       "MOVE_AERIAL_ACE",
       "MOVE_BABY_DOLL_EYES",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_EARTH_POWER",
       "MOVE_ENERGY_BALL",
       "MOVE_GIGA_IMPACT",
@@ -18472,7 +18472,7 @@
     "TutorMoves": [
       "MOVE_AERIAL_ACE",
       "MOVE_BULK_UP",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GIGA_IMPACT",
       "MOVE_HYPER_BEAM",
       "MOVE_MYSTICAL_FIRE",

@@ -168,7 +168,7 @@ static const u16 sPichuEggMoveLearnset[] = {
     MOVE_ENDURE,
     MOVE_LUCKY_CHANT,
     MOVE_BESTOW,
-    MOVE_DISARM_VOICE,
+    MOVE_DISARMING_VOICE,
     MOVE_ELECTRIC_TERRAIN,
     MOVE_UNAVAILABLE,
 };
@@ -547,6 +547,18 @@ static const u16 sGrowlitheEggMoveLearnset[] = {
     MOVE_BURN_UP,
     MOVE_UNAVAILABLE,
 };
+
+#if P_HISUIAN_FORMS
+static const u16 sGrowlitheHisuiEggMoveLearnset[] = {
+    MOVE_DOUBLE_KICK,
+    MOVE_THRASH,
+    MOVE_DOUBLE_EDGE,
+    MOVE_MORNING_SUN,
+    MOVE_COVET,
+    MOVE_HEAD_SMASH,
+    MOVE_UNAVAILABLE,
+};
+#endif
 #endif //P_FAMILY_GROWLITHE
 
 #if P_FAMILY_POLIWAG
@@ -2011,6 +2023,22 @@ static const u16 sQwilfishEggMoveLearnset[] = {
     MOVE_ACID_SPRAY,
     MOVE_UNAVAILABLE,
 };
+
+#if P_HISUIAN_FORMS
+static const u16 sQwilfishHisuiEggMoveLearnset[] = {
+    MOVE_SUPERSONIC,
+    MOVE_BUBBLE_BEAM,
+    MOVE_HAZE,
+    MOVE_SELF_DESTRUCT,
+    MOVE_FLAIL,
+    MOVE_ASTONISH,
+    MOVE_WATER_PULSE,
+    MOVE_AQUA_JET,
+    MOVE_ACID_SPRAY,
+    MOVE_AQUA_TAIL,
+    MOVE_UNAVAILABLE,
+};
+#endif
 #endif //P_FAMILY_QWILFISH
 
 #if P_FAMILY_SHUCKLE
@@ -2064,6 +2092,19 @@ static const u16 sSneaselEggMoveLearnset[] = {
     MOVE_THROAT_CHOP,
     MOVE_UNAVAILABLE,
 };
+
+#if P_HISUIAN_FORMS
+static const u16 sSneaselHisuiEggMoveLearnset[] = {
+    MOVE_COUNTER,
+    MOVE_FAKE_OUT,
+    MOVE_FEINT,
+    MOVE_DOUBLE_HIT,
+    MOVE_NIGHT_SLASH,
+    MOVE_SWITCHEROO,
+    MOVE_QUICK_GUARD,
+    MOVE_UNAVAILABLE,
+};
+#endif
 #endif //P_FAMILY_SNEASEL
 
 #if P_FAMILY_TEDDIURSA
@@ -2614,7 +2655,7 @@ static const u16 sWhismurEggMoveLearnset[] = {
     MOVE_HAMMER_ARM,
     MOVE_FAKE_TEARS,
     MOVE_CIRCLE_THROW,
-    MOVE_DISARM_VOICE,
+    MOVE_DISARMING_VOICE,
     MOVE_WHIRLWIND,
     MOVE_UNAVAILABLE,
 };
@@ -4016,7 +4057,7 @@ static const u16 sPansageEggMoveLearnset[] = {
     MOVE_MAGICAL_LEAF,
     MOVE_BULLET_SEED,
     MOVE_LEAF_STORM,
-    MOVE_DISARM_VOICE,
+    MOVE_DISARMING_VOICE,
     MOVE_SPIKY_SHIELD,
     MOVE_UNAVAILABLE,
 };
@@ -4034,7 +4075,7 @@ static const u16 sPansearEggMoveLearnset[] = {
     MOVE_FIRE_SPIN,
     MOVE_FIRE_PUNCH,
     MOVE_HEAT_WAVE,
-    MOVE_DISARM_VOICE,
+    MOVE_DISARMING_VOICE,
     MOVE_BELCH,
     MOVE_FLARE_BLITZ,
     MOVE_UNAVAILABLE,
@@ -4053,7 +4094,7 @@ static const u16 sPanpourEggMoveLearnset[] = {
     MOVE_AQUA_TAIL,
     MOVE_MUD_SPORT,
     MOVE_HYDRO_PUMP,
-    MOVE_DISARM_VOICE,
+    MOVE_DISARMING_VOICE,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_PANPOUR
@@ -4482,6 +4523,16 @@ static const u16 sZoruaEggMoveLearnset[] = {
     MOVE_COPYCAT,
     MOVE_UNAVAILABLE,
 };
+
+#if P_HISUIAN_FORMS
+static const u16 sZoruaHisuiEggMoveLearnset[] = {
+    MOVE_DETECT,
+    MOVE_MEMENTO,
+    MOVE_EXTRASENSORY,
+    MOVE_COMEUPPANCE,
+    MOVE_UNAVAILABLE,
+};
+#endif
 #endif //P_FAMILY_ZORUA
 
 #if P_FAMILY_MINCCINO
@@ -5552,7 +5603,7 @@ static const u16 sTogedemaruEggMoveLearnset[] = {
     MOVE_FAKE_OUT,
     MOVE_TICKLE,
     MOVE_FLAIL,
-    MOVE_DISARM_VOICE,
+    MOVE_DISARMING_VOICE,
     MOVE_UNAVAILABLE,
 };
 #endif //P_FAMILY_TOGEDEMARU

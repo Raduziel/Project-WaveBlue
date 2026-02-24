@@ -619,6 +619,178 @@ static const struct MenuAction sMultichoiceList_HyperCapChoice[] = {
     { gText_UseBottleCap },
     { gText_UseGoldBottleCap },
     { gOtherText_Exit }
+
+};
+
+static const struct MenuAction sMultichoiceList_FrontierRules[] =
+{
+    {COMPOUND_STRING("Two Styles")},
+    {COMPOUND_STRING("Lv. 50")},
+    {COMPOUND_STRING("Open Level")},
+    {COMPOUND_STRING("{PKMN} Type & No.")},
+    {COMPOUND_STRING("Hold Items")},
+    {gText_Exit},
+};
+
+static const struct MenuAction sMultichoiceList_FrontierPassInfo[] =
+{
+    {COMPOUND_STRING("Symbols")},
+    {COMPOUND_STRING("Record")},
+    {COMPOUND_STRING("Battle Pts")},
+    {gText_Exit},
+};
+
+static const struct MenuAction sMultichoiceList_FrontierGamblerBet[] =
+{
+    {COMPOUND_STRING("  5BP")},
+    {COMPOUND_STRING("10BP")},
+    {COMPOUND_STRING("15BP")},
+    {gText_Exit},
+};
+
+static const struct MenuAction sMultichoiceList_LevelMode[] =
+{
+    {gText_Lv50},
+    {gText_OpenLevel},
+    {gText_Exit},
+};
+
+static const struct MenuAction sMultichoiceList_BattleFactoryRules[] =
+{
+    {gText_BasicRules},
+    {gText_SwapPartners},
+    {gText_SwapNumber},
+    {gText_SwapNotes},
+    {COMPOUND_STRING("Open Level")},
+    {gText_Exit},
+};
+
+static const struct MenuAction sMultichoiceList_GoOnRecordRestRetire[] =
+{
+    {gText_GoOn},
+    {gText_Record2},
+    {gText_Rest},
+    {gText_Retire},
+};
+
+static const struct MenuAction sMultichoiceList_GoOnRestRetire[] =
+{
+    {gText_GoOn},
+    {gText_Rest},
+    {gText_Retire},
+};
+
+static const struct MenuAction sMultichoiceList_GoOnRecordRetire[] =
+{
+    {gText_GoOn},
+    {gText_Record2},
+    {gText_Retire},
+};
+
+static const struct MenuAction sMultichoiceList_GoOnRetire[] =
+{
+    {gText_GoOn},
+    {gText_Retire},
+};
+
+static const struct MenuAction sMultichoiceList_BattleArenaRules[] =
+{
+    {gText_BattleRules},
+    {gText_JudgeMind},
+    {gText_JudgeSkill},
+    {gText_JudgeBody},
+    {gText_Exit},
+};
+
+static const struct MenuAction sMultichoiceList_BattleDomeRules[] =
+{
+    {COMPOUND_STRING("Matchup")},
+    {COMPOUND_STRING("Tourney Tree")},
+    {COMPOUND_STRING("Double KO")},
+    {gText_Exit},
+};
+
+static const struct MenuAction sMultichoiceList_TourneyWithRecord[] =
+{
+    {gText_Opponent},
+    {gText_Tourney_Tree},
+    {gText_ReadyToStart},
+    {gText_Record2},
+    {gText_Rest},
+    {gText_Retire},
+};
+
+static const struct MenuAction sMultichoiceList_TourneyNoRecord[] =
+{
+    {gText_Opponent},
+    {gText_Tourney_Tree},
+    {gText_ReadyToStart},
+    {gText_Rest},
+    {gText_Retire},
+};
+
+static const struct MenuAction sMultichoiceList_BattlePalaceRules[] =
+{
+    {gText_BattleBasics},
+    {gText_PokemonNature},
+    {gText_PokemonMoves},
+    {gText_Underpowered},
+    {gText_WhenInDanger},
+    {gText_Exit},
+};
+
+static const struct MenuAction sMultichoiceList_BattlePyramidRules[] =
+{
+    {COMPOUND_STRING("Pyramid: Pokémon")},
+    {COMPOUND_STRING("Pyramid: Trainers")},
+    {COMPOUND_STRING("Pyramid: Maze")},
+    {COMPOUND_STRING("Battle Bag")},
+    {gText_Exit},
+};
+
+static const struct MenuAction sMultichoiceList_BattlePikeRules[] =
+{
+    {COMPOUND_STRING("PokéNav and Bag")},
+    {COMPOUND_STRING("Held Items")},
+    {COMPOUND_STRING("Pokémon Order")},
+    {gText_Exit},
+};
+
+static const struct MenuAction sMultichoiceList_FrontierItemChoose[] =
+{
+    {COMPOUND_STRING("Battle Bag")},
+    {COMPOUND_STRING("Held Item")},
+    {gText_Exit},
+};
+
+static const struct MenuAction sMultichoiceList_BattleTowerRules[] =
+{
+    {COMPOUND_STRING("Tower Info")},
+    {COMPOUND_STRING("Battle {PKMN}")},
+    {COMPOUND_STRING("Battle Salon")},
+    {COMPOUND_STRING("Multi-Link")},
+    {gText_Exit},
+};
+
+static const struct MenuAction sMultichoiceList_BattleTowerFeelings[] =
+{
+    {COMPOUND_STRING("I'll battle now!")},
+    {COMPOUND_STRING("I won!")},
+    {COMPOUND_STRING("I lost!")},
+    {COMPOUND_STRING("I won't tell.")},
+};
+
+static const struct MenuAction sMultichoiceList_LinkLeader[] =
+{
+    {COMPOUND_STRING("Join Group")},
+    {COMPOUND_STRING("Become Leader")},
+    {gText_Exit},
+};
+
+static const struct MenuAction sMultichoiceList_Satisfaction[] =
+{
+    {COMPOUND_STRING("Satisfied")},
+    {COMPOUND_STRING("Dissatisfied")},
 };
 
 static const struct MenuAction sMultichoiceList_Exit[] = {
@@ -626,7 +798,7 @@ static const struct MenuAction sMultichoiceList_Exit[] = {
 };
 
 static const struct MultichoiceListStruct sMultichoiceLists[] = {
-    [MULTICHOICE_YES_NO]                                     = MULTICHOICE(sMultichoiceList_YesNo),
+    [MULTI_YESNO]                                            = MULTICHOICE(sMultichoiceList_YesNo),
     [MULTICHOICE_EEVEELUTIONS]                               = MULTICHOICE(sMultichoiceList_Eeveelutions),
     [MULTICHOICE_TRAINER_CARD_ICON_TINT]                     = MULTICHOICE(sMultichoiceList_TrainerCardIconTint),
     [MULTICHOICE_HOF_QUIT]                                   = MULTICHOICE(sMultichoiceList_HOF_Quit),
@@ -645,7 +817,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] = {
     [MULTICHOICE_YES_NO_INFO]                                = MULTICHOICE(sMultichoiceList_YesNoInfo),
     [MULTICHOICE_SINGLE_DOUBLE_MULTI_INFO_EXIT]              = MULTICHOICE(sMultichoiceList_SingleDoubleMultiInfoExit),
     [MULTICHOICE_YES_NO_INFO_2]                              = MULTICHOICE(sMultichoiceList_YesNoInfo2),
-    [MULTICHOICE_CHALLENGE_INFO_EXIT]                        = MULTICHOICE(sMultichoiceList_ChallengeInfoExit),
+    [MULTI_CHALLENGEINFO]                                    = MULTICHOICE(sMultichoiceList_ChallengeInfoExit),
     [MULTICHOICE_ROOFTOP_B1F]                                = MULTICHOICE(sMultichoiceList_RooftopB1F),
     [MULTICHOICE_HELIX]                                      = MULTICHOICE(sMultichoiceList_Helix),
     [MULTICHOICE_DOME]                                       = MULTICHOICE(sMultichoiceList_Dome),
@@ -688,7 +860,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] = {
     [MULTICHOICE_SEAGALLOP_V13]                              = MULTICHOICE(sMultichoiceList_SeagallopV13),
     [MULTICHOICE_SEAGALLOP_V12]                              = MULTICHOICE(sMultichoiceList_SeagallopV12),
     [MULTICHOICE_SEAGALLOP_VERMILION]                        = MULTICHOICE(sMultichoiceList_SeagallopVermilion),
-    [MULTICHOICE_62]                                         = MULTICHOICE(sMultichoiceList_62),
+    [MULTI_SSTIDAL_BATTLE_FRONTIER]                          = MULTICHOICE(sMultichoiceList_62),
     [MULTICHOICE_JOIN_OR_LEAD]                               = MULTICHOICE(sMultichoiceList_JoinOrLead),
     [MULTICHOICE_TRAINER_TOWER_MODE]                         = MULTICHOICE(sMultichoiceList_TrainerTowerMode),
     [MULTICHOICE_HYPER_CAP_CHOICE]                           = MULTICHOICE(sMultichoiceList_HyperCapChoice),
@@ -696,6 +868,27 @@ static const struct MultichoiceListStruct sMultichoiceLists[] = {
     [MULTICHOICE_GAME_CORNER_CLERK_LEFT]                     = MULTICHOICE(sMultichoiceList_GameCornerClerkLeft),
     [MULTICHOICE_GAME_CORNER_CLERK_RIGHT]                    = MULTICHOICE(sMultichoiceList_GameCornerClerkRight),
     [MULTI_TM_MERCHANT_TYPES]                                = MULTICHOICE(sMultichoiceList_TMMerchantTypes),
+    [MULTI_FRONTIER_RULES]                                   = MULTICHOICE(sMultichoiceList_FrontierRules),
+    [MULTI_FRONTIER_PASS_INFO]                               = MULTICHOICE(sMultichoiceList_FrontierPassInfo),
+    [MULTI_FRONTIER_GAMBLER_BET]                             = MULTICHOICE(sMultichoiceList_FrontierGamblerBet),
+    [MULTI_LEVEL_MODE]                                       = MULTICHOICE(sMultichoiceList_LevelMode),
+    [MULTI_BATTLE_FACTORY_RULES]                             = MULTICHOICE(sMultichoiceList_BattleFactoryRules),
+    [MULTI_GO_ON_RECORD_REST_RETIRE]                         = MULTICHOICE(sMultichoiceList_GoOnRecordRestRetire),
+    [MULTI_GO_ON_REST_RETIRE]                                = MULTICHOICE(sMultichoiceList_GoOnRestRetire),
+    [MULTI_GO_ON_RECORD_RETIRE]                              = MULTICHOICE(sMultichoiceList_GoOnRecordRetire),
+    [MULTI_GO_ON_RETIRE]                                     = MULTICHOICE(sMultichoiceList_GoOnRetire),
+    [MULTI_BATTLE_ARENA_RULES]                               = MULTICHOICE(sMultichoiceList_BattleArenaRules),
+    [MULTI_BATTLE_DOME_RULES]                                = MULTICHOICE(sMultichoiceList_BattleDomeRules),
+    [MULTI_TOURNEY_WITH_RECORD]                              = MULTICHOICE(sMultichoiceList_TourneyWithRecord),
+    [MULTI_TOURNEY_NO_RECORD]                                = MULTICHOICE(sMultichoiceList_TourneyNoRecord),
+    [MULTI_BATTLE_PALACE_RULES]                              = MULTICHOICE(sMultichoiceList_BattlePalaceRules),
+    [MULTI_BATTLE_PYRAMID_RULES]                             = MULTICHOICE(sMultichoiceList_BattlePyramidRules),
+    [MULTI_BATTLE_PIKE_RULES]                                = MULTICHOICE(sMultichoiceList_BattlePikeRules),
+    [MULTI_FRONTIER_ITEM_CHOOSE]                             = MULTICHOICE(sMultichoiceList_FrontierItemChoose),
+    [MULTI_BATTLE_TOWER_RULES]                               = MULTICHOICE(sMultichoiceList_BattleTowerRules),
+    [MULTI_BATTLE_TOWER_FEELINGS]                            = MULTICHOICE(sMultichoiceList_BattleTowerFeelings),
+    [MULTI_LINK_LEADER]                                      = MULTICHOICE(sMultichoiceList_LinkLeader),
+    [MULTI_SATISFACTION]                                     = MULTICHOICE(sMultichoiceList_Satisfaction),
 };
 
 // From Cool to Berries goes unused
@@ -728,7 +921,17 @@ const u8 *const gStdStringPtrs[] = {
     [STDSTRING_KEY_ITEMS_POCKET] = gText_KeyItemsPocket,
     [STDSTRING_POKEBALLS_POCKET] = gText_PokeBallsPocket,
     [STDSTRING_TM_CASE]          = gText_TmCase,
-    [STDSTRING_BERRY_POUCH]      = gText_BerryPouch_2
+    [STDSTRING_BERRY_POUCH]      = gText_BerryPouch_2,
+    [STDSTRING_SINGLE]           = COMPOUND_STRING("SINGLE"),
+    [STDSTRING_DOUBLE]           = COMPOUND_STRING("DOUBLE"),
+    [STDSTRING_MULTI]            = COMPOUND_STRING("MULTI"),
+    [STDSTRING_MULTI_LINK]       = COMPOUND_STRING("MULTI-LINK"),
+    [STDSTRING_BATTLE_DOME]      = gText_BattleDome,
+    [STDSTRING_BATTLE_FACTORY]   = gText_BattleFactory,
+    [STDSTRING_BATTLE_PALACE]    = gText_BattlePalace,
+    [STDSTRING_BATTLE_ARENA]     = gText_BattleArena,
+    [STDSTRING_BATTLE_PIKE]      = gText_BattlePike,
+    [STDSTRING_BATTLE_PYRAMID]   = gText_BattlePyramid,
 };
 
 static const u8 sLinkServicesMultichoiceIds[] =
@@ -1716,7 +1919,7 @@ void DrawSeagallopDestinationMenu(void)
     fontHeight = GetFontAttribute(FONT_NORMAL, FONTATTR_MAX_LETTER_HEIGHT);
     windowId = CreateWindowFromRect(17, top, 11, numItems * 2);
     SetStandardWindowBorderStyle(windowId, FALSE);
-    
+
     // -2 excludes "Other" and "Exit", appended after the loop
     for (i = 0; i < numItems - 2; i++)
     {

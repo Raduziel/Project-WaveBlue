@@ -69,8 +69,8 @@ gSpecials::
 	def_special GetTrainerBattleMode
 	def_special ShowTrainerIntroSpeech
 	def_special ShowTrainerCantBattleSpeech
-	def_special Script_HasTrainerBeenFought
-	def_special EndTrainerApproach
+	def_special GetTrainerFlag
+	def_special DoTrainerApproach
 	def_special PlayTrainerEncounterMusic
 	def_special ShouldTryRematchBattle
 	def_special IsTrainerReadyForRematch
@@ -108,7 +108,7 @@ gSpecials::
 	def_special NullFieldSpecial
 	def_special NullFieldSpecial
 	def_special TryContestLinkup
-	def_special Field_AskSaveTheGame
+	def_special SaveGame
 	def_special DoWateringBerryTreeAnim
 	def_special ShowEasyChatScreen
 	def_special ShowEasyChatMessage
@@ -246,21 +246,7 @@ gSpecials::
 	def_special NullFieldSpecial
 	def_special NullFieldSpecial
 	def_special GetLeadMonFriendship
-	def_special BattleTowerMapScript2
-	def_special ChooseNextBattleTowerTrainer
-	def_special CheckPartyBattleTowerBanlist
-	def_special PrintBattleTowerTrainerGreeting
-	def_special BufferEReaderTrainerGreeting
-	def_special StartSpecialBattle
-	def_special SetBattleTowerProperty
-	def_special BattleTowerUtil
-	def_special SetBattleTowerParty
-	def_special SaveBattleTowerProgress
-	def_special BattleTower_SoftReset
-	def_special DetermineBattleTowerPrize
-	def_special GiveBattleTowerPrize
-	def_special AwardBattleTowerRibbons
-	def_special ChooseBattleTowerPlayerParty
+	def_special CopyEReaderTrainerGreeting
 	def_special ValidateEReaderTrainer
 	def_special NullFieldSpecial
 	def_special ReducePlayerPartyToSelectedMons
@@ -329,8 +315,8 @@ gSpecials::
 	def_special StartGroudonKyogreBattle
 	def_special BattleSetup_StartLegendaryBattle
 	def_special StartRegiBattle
-	def_special SetUpTrainerMovement
-	def_special NullFieldSpecial
+	def_special SetTrainerFacingDirection
+	def_special ShouldTryGetTrainerScript
 	def_special NullFieldSpecial
 	def_special StartDroughtWeatherBlend
 	def_special DoDiveWarp
@@ -353,13 +339,12 @@ gSpecials::
 	def_special HasAllKantoMons
 	def_special IsMonOTNameNotPlayers
 	def_special NullFieldSpecial
-	def_special Dummy_TryEnableBravoTrainerBattleTower
 	def_special DoesPartyHaveEnigmaBerry
 	def_special DoSpecialTrainerBattle
 	def_special SetPostgameFlags
 	def_special StartMarowakBattle
 	def_special ForcePlayerOntoBike
-	def_special ListMenu
+	def_special ShowScrollableMultichoice
 	def_special ReturnToListMenu
 	def_special DoPicboxCancel
 	def_special SetVermilionTrashCans
@@ -467,4 +452,53 @@ gSpecials::
 	def_special TryPrepareSecondApproachingTrainer
 	def_special SetHiddenNature
 	def_special SetAbility
+	def_special ShowRankingHallRecordsWindow
+	def_special ScrollRankingHallRecordsWindow
+	def_special RemoveRecordsWindow
+	def_special BufferVarsForIVRater
+	def_special ShowFrontierManiacMessage
+	def_special ShowFrontierGamblerLookingMessage
+	def_special ShowFrontierGamblerGoMessage
+	def_special ShowBattlePointsWindow
+	def_special UpdateBattlePointsWindow
+	def_special CloseBattlePointsWindow
+	def_special GiveFrontierBattlePoints
+	def_special GetFrontierBattlePoints
+	def_special TakeFrontierBattlePoints
+	def_special ShowNatureGirlMessage
+	def_special BufferBattleFrontierTutorMoveName
+	def_special CloseBattleFrontierTutorWindow
+	def_special CallApprenticeFunction
+	def_special CallFrontierUtilFunc
+	def_special CallBattleArenaFunction
+	def_special CallBattleDomeFunction
+	def_special CallBattleFactoryFunction
+	def_special CallBattlePalaceFunction
+	def_special CallBattlePikeFunction
+	def_special CallBattlePyramidFunction
+	def_special CallBattleTowerFunc
+	def_special ChoosePartyForBattleFrontier
+	def_special OffsetCameraForBattle
+	def_special DoDomeConfetti
+	def_special CloseBattlePikeCurtain
+	def_special DoBattlePyramidMonsHaveHeldItem
+	def_special BattlePyramidChooseMonHeldItems
+	def_special TryStoreHeldItemsInPyramidBag
+	def_special ChooseItemsToTossFromPyramidBag
+	def_special GetBattlePyramidHint
+	def_special ShowMapNamePopup
+	def_special TryHideBattleTowerReporter
+	def_special SaveForBattleTowerLink
+	def_special TrySetBattleTowerLinkType
+	def_special InterviewBefore
+	def_special InterviewAfter
+	def_special MoveElevator
+	def_special BufferBattleTowerElevatorFloors
+	def_special SetBattleTowerLinkPlayerGfx
+	def_special LinkRetireStatusWithBattleTowerPartner
+	def_special BattleTowerReconnectLink
+	def_special ShowFrontierExchangeCornerItemIconWindow
+	def_special CloseFrontierExchangeCornerItemIconWindow
+	def_special HasMovesToRelearn
+	def_special CanTeachMoveBoxMon
 gSpecialsEnd::

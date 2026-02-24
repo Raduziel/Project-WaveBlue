@@ -1,34 +1,38 @@
 #include "global.h"
-#include "gflib.h"
-#include "task.h"
-#include "menu.h"
-#include "menu_helpers.h"
-#include "text_window.h"
+#include "battle_pyramid.h"
 #include "event_data.h"
-#include "script.h"
-#include "overworld.h"
-#include "field_fadetransition.h"
-#include "field_weather.h"
-#include "event_object_movement.h"
 #include "event_object_lock.h"
+#include "event_object_movement.h"
+#include "field_fadetransition.h"
 #include "field_player_avatar.h"
-#include "item.h"
-#include "region_map.h"
-#include "map_name_popup.h"
-#include "wild_encounter.h"
+#include "field_specials.h"
+#include "field_weather.h"
 #include "help_system.h"
+#include "item.h"
+#include "malloc.h"
+#include "map_name_popup.h"
+#include "menu_helpers.h"
+#include "menu.h"
+#include "overworld.h"
+#include "palette.h"
 #include "pokemon_storage_system.h"
-#include "save.h"
 #include "quest_log_objects.h"
 #include "quest_log_player.h"
 #include "quest_log.h"
+#include "region_map.h"
 #include "rtc.h"
+#include "save.h"
+#include "script.h"
+#include "string_util.h"
 #include "strings.h"
+#include "task.h"
+#include "text_window.h"
+#include "wild_encounter.h"
+#include "constants/event_object_movement.h"
 #include "constants/event_objects.h"
+#include "constants/field_weather.h"
 #include "constants/maps.h"
 #include "constants/quest_log.h"
-#include "constants/field_weather.h"
-#include "constants/event_object_movement.h"
 
 enum {
     WIN_TOP_BAR,      // Contains the "Previously on..." text
@@ -137,7 +141,7 @@ static bool8 RecordHeadAtEndOfEntry(void);
 static const struct WindowTemplate sWindowTemplates[WIN_COUNT] = {
     [WIN_TOP_BAR] = {
         .bg = 0,
-        .tilemapLeft = 0, 
+        .tilemapLeft = 0,
         .tilemapTop = 0,
         .width = 30,
         .height = 2,
@@ -271,9 +275,9 @@ static void QLogCB_Playback(void)
 
     if (sPlaybackControl.endMode == END_MODE_NONE)
     {
-        if (gQuestLogPlaybackState != QL_PLAYBACK_STATE_STOPPED 
-         || sPlaybackControl.state == 1 
-         || (sPlaybackControl.cursor < ARRAY_COUNT(sEventData) 
+        if (gQuestLogPlaybackState != QL_PLAYBACK_STATE_STOPPED
+         || sPlaybackControl.state == 1
+         || (sPlaybackControl.cursor < ARRAY_COUNT(sEventData)
           && sEventData[sPlaybackControl.cursor] != NULL))
             QuestLog_PlayCurrentEvent();
         else
@@ -444,6 +448,12 @@ static bool8 TryRecordActionSequence(struct QuestLogAction * actions)
     return TRUE;
 }
 
+bool32 IsLastSaveInPyramid(void)
+{
+    return (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_FLOOR) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_FLOOR))
+        || (gSaveBlock1Ptr->location.mapGroup == MAP_GROUP(MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_TOP) && gSaveBlock1Ptr->location.mapNum == MAP_NUM(MAP_BATTLE_FRONTIER_BATTLE_PYRAMID_TOP));
+}
+
 void TryStartQuestLogPlayback(u8 taskId)
 {
     u8 i;
@@ -457,7 +467,7 @@ void TryStartQuestLogPlayback(u8 taskId)
             sNumScenes++;
     }
 
-    if (sNumScenes != 0)
+    if (!IsLastSaveInPyramid() && sNumScenes != 0)
     {
         gHelpSystemEnabled = FALSE;
         Task_BeginQuestLogPlayback(taskId);
@@ -546,7 +556,7 @@ static void QL_LoadObjectsAndTemplates(u8 sceneNum)
 {
     struct QuestLogScene *questLog = &gSaveBlock1Ptr->questLog[sceneNum];
     u16 i;
-    
+
     for (i = 0; i < OBJECT_EVENT_TEMPLATES_COUNT; i++)
     {
         if (questLog->objectEventTemplates[i].negx)
@@ -628,7 +638,7 @@ void QL_ResetPartyAndPC(void)
     } *prev = AllocZeroed(sizeof(*prev));
     u16 packedCounts, i, count, j;
 
-    CreateMon(&prev->mon, SPECIES_RATTATA, 1, USE_RANDOM_IVS, FALSE, 0, OT_ID_PLAYER_ID, 0);
+    CreateMon(&prev->mon, SPECIES_RATTATA, 1, 0, OTID_STRUCT_PLAYER_ID);
     packedCounts = VarGet(VAR_QUEST_LOG_MON_COUNTS);
     prev->partyCount = packedCounts >> NUM_PC_COUNT_BITS;
     prev->boxMonCount = packedCounts % (1 << NUM_PC_COUNT_BITS);
@@ -899,7 +909,7 @@ static void Task_AvoidDisplay(u8 taskId)
         if (!gPaletteFade.active)
         {
             gQuestLogPlaybackState = QL_PLAYBACK_STATE_STOPPED;
-            
+
             // Call the provided function (if any). In practice this is always QL_DestroyAbortedDisplay
             routine = (void (*)(void)) GetWordTaskArg(taskId, DATA_IDX_CALLBACK);
             if (routine != NULL)
@@ -1008,6 +1018,7 @@ void QL_HandleInput(void)
         // Pressed B, end playback
         sPlaybackControl.endMode = END_MODE_FINISH;
         gQuestLogPlaybackState = QL_PLAYBACK_STATE_STOPPED;
+        DoPicboxCancel();
         DoSkipToEndTransition(-3);
     }
 }
@@ -1226,7 +1237,7 @@ static void Task_EndQuestLog(u8 taskId)
         CpuCopy16(sPalettesBackup, gPlttBufferUnfaded, PLTT_SIZE);
         Free(sPalettesBackup);
         sPlaybackControl = (struct PlaybackControl){};
-        ClearPlayerHeldMovementAndUnfreezeObjectEvents();
+        ScriptUnfreezeObjectEvents();
         UnlockPlayerFieldControls();
         gTextFlags.autoScroll = FALSE;
         gGlobalFieldTintMode = QL_TINT_NONE;
@@ -1252,10 +1263,10 @@ static bool8 RestoreScreenAfterPlayback(u8 taskId)
 
     CopyPaletteInvertedTint(&gPlttBufferUnfaded[BG_PLTT_ID(0) + 1], &gPlttBufferFaded[BG_PLTT_ID(0) + 1], 0xDF, 15 - tTimer);
     CopyPaletteInvertedTint(&gPlttBufferUnfaded[OBJ_PLTT_ID(0)], &gPlttBufferFaded[OBJ_PLTT_ID(0)], 0x100, 15 - tTimer);
-                            
+
     gTimeUpdateCounter = 0;
     UpdateTimeOfDay();
-    
+
     if (MapHasNaturalLight(gMapHeader.mapType))
     {
         UpdateAltBgPalettes(PALETTES_BG);
@@ -1348,6 +1359,14 @@ void SaveQuestLogData(void)
     }
 }
 
+enum QLSpecialId
+{
+    QL_SPECIAL_ID_PLAYER,
+    QL_SPECIAL_ID_FOLLOWER,
+    QL_SPECIAL_ID_NPC_FOLLOWER,
+    QL_SPECIAL_ID_COUNT
+};
+
 void QL_UpdateObject(struct Sprite *sprite)
 {
     // index 0 is reserved for player, index 1 is reserved for follower
@@ -1355,36 +1374,43 @@ void QL_UpdateObject(struct Sprite *sprite)
     struct ObjectEvent *objectEvent = &gObjectEvents[sprite->data[0]];
     if (objectEvent->localId == LOCALID_PLAYER)
     {
-        if (sMovementScripts[0][0] != MOVEMENT_ACTION_NONE)
+        if (sMovementScripts[QL_SPECIAL_ID_PLAYER][0] != MOVEMENT_ACTION_NONE)
         {
-            ObjectEventSetHeldMovement(objectEvent, sMovementScripts[0][0]);
-            sMovementScripts[0][0] = MOVEMENT_ACTION_NONE;
+            ObjectEventSetHeldMovement(objectEvent, sMovementScripts[QL_SPECIAL_ID_PLAYER][0]);
+            sMovementScripts[QL_SPECIAL_ID_PLAYER][0] = MOVEMENT_ACTION_NONE;
         }
-        if (sMovementScripts[0][1] != QL_PLAYER_GFX_NONE)
+        if (sMovementScripts[QL_SPECIAL_ID_PLAYER][1] != QL_PLAYER_GFX_NONE)
         {
-            QuestLogUpdatePlayerSprite(sMovementScripts[0][1]);
-            sMovementScripts[0][1] = QL_PLAYER_GFX_NONE;
+            QuestLogUpdatePlayerSprite(sMovementScripts[QL_SPECIAL_ID_PLAYER][1]);
+            sMovementScripts[QL_SPECIAL_ID_PLAYER][1] = QL_PLAYER_GFX_NONE;
         }
-        QL_UpdateObjectEventCurrentMovement(objectEvent, sprite);
     }
     else if (objectEvent->localId == OBJ_EVENT_ID_FOLLOWER)
     {
-        if (sMovementScripts[1][0] != MOVEMENT_ACTION_NONE)
+        if (sMovementScripts[QL_SPECIAL_ID_FOLLOWER][0] != MOVEMENT_ACTION_NONE)
         {
-            ObjectEventSetHeldMovement(objectEvent, sMovementScripts[1][0]);
-            sMovementScripts[1][0] = MOVEMENT_ACTION_NONE;
+            ObjectEventSetHeldMovement(objectEvent, sMovementScripts[QL_SPECIAL_ID_FOLLOWER][0]);
+            sMovementScripts[QL_SPECIAL_ID_FOLLOWER][0] = MOVEMENT_ACTION_NONE;
         }
-        QL_UpdateObjectEventCurrentMovement(objectEvent, sprite);
+    }
+    else if (objectEvent->localId == OBJ_EVENT_ID_NPC_FOLLOWER)
+    {
+        if (sMovementScripts[QL_SPECIAL_ID_NPC_FOLLOWER][0] != MOVEMENT_ACTION_NONE)
+        {
+            ObjectEventSetHeldMovement(objectEvent, sMovementScripts[QL_SPECIAL_ID_NPC_FOLLOWER][0]);
+            sMovementScripts[QL_SPECIAL_ID_NPC_FOLLOWER][0] = MOVEMENT_ACTION_NONE;
+        }
     }
     else
     {
-        if (sMovementScripts[objectEvent->localId][0] != MOVEMENT_ACTION_NONE)
+        u16 objEventIndex = objectEvent->localId + QL_SPECIAL_ID_COUNT - 1;
+        if (sMovementScripts[objEventIndex][0] != MOVEMENT_ACTION_NONE)
         {
-            ObjectEventSetHeldMovement(objectEvent, sMovementScripts[objectEvent->localId + 1][0]);
-            sMovementScripts[objectEvent->localId + 1][0] = MOVEMENT_ACTION_NONE;
+            ObjectEventSetHeldMovement(objectEvent, sMovementScripts[objEventIndex][0]);
+            sMovementScripts[objEventIndex][0] = MOVEMENT_ACTION_NONE;
         }
-        QL_UpdateObjectEventCurrentMovement(objectEvent, sprite);
     }
+    QL_UpdateObjectEventCurrentMovement(objectEvent, sprite);
 }
 
 void QuestLogRecordNPCStep(u8 localId, u8 mapNum, u8 mapGroup, u8 movementActionId)
@@ -1394,9 +1420,11 @@ void QuestLogRecordNPCStep(u8 localId, u8 mapNum, u8 mapGroup, u8 movementAction
         sCurSceneActions[gQuestLogCurActionIdx].duration = sNextActionDelay;
         sCurSceneActions[gQuestLogCurActionIdx].type = QL_ACTION_MOVEMENT;
         if (localId == OBJ_EVENT_ID_FOLLOWER)
-            sCurSceneActions[gQuestLogCurActionIdx].data.a.localId = 1;
+            sCurSceneActions[gQuestLogCurActionIdx].data.a.localId = QL_SPECIAL_ID_FOLLOWER;
+        else if (localId == OBJ_EVENT_ID_NPC_FOLLOWER)
+            sCurSceneActions[gQuestLogCurActionIdx].data.a.localId = QL_SPECIAL_ID_NPC_FOLLOWER;
         else
-            sCurSceneActions[gQuestLogCurActionIdx].data.a.localId = localId + 1;
+            sCurSceneActions[gQuestLogCurActionIdx].data.a.localId = localId + QL_SPECIAL_ID_COUNT - 1;
         sCurSceneActions[gQuestLogCurActionIdx].data.a.mapNum = mapNum;
         sCurSceneActions[gQuestLogCurActionIdx].data.a.mapGroup = mapGroup;
         sCurSceneActions[gQuestLogCurActionIdx].data.a.movementActionId = movementActionId;
@@ -1412,9 +1440,11 @@ void QuestLogRecordNPCStepWithDuration(u8 localId, u8 mapNum, u8 mapGroup, u8 mo
         sCurSceneActions[gQuestLogCurActionIdx].duration = sNextActionDelay;
         sCurSceneActions[gQuestLogCurActionIdx].type = QL_ACTION_MOVEMENT;
         if (localId == OBJ_EVENT_ID_FOLLOWER)
-            sCurSceneActions[gQuestLogCurActionIdx].data.a.localId = 1;
+            sCurSceneActions[gQuestLogCurActionIdx].data.a.localId = QL_SPECIAL_ID_FOLLOWER;
+        else if (localId == OBJ_EVENT_ID_NPC_FOLLOWER)
+            sCurSceneActions[gQuestLogCurActionIdx].data.a.localId = QL_SPECIAL_ID_NPC_FOLLOWER;
         else
-            sCurSceneActions[gQuestLogCurActionIdx].data.a.localId = localId + 1;
+            sCurSceneActions[gQuestLogCurActionIdx].data.a.localId = localId + QL_SPECIAL_ID_COUNT - 1;
         sCurSceneActions[gQuestLogCurActionIdx].data.a.mapNum = mapNum;
         sCurSceneActions[gQuestLogCurActionIdx].data.a.mapGroup = mapGroup;
         sCurSceneActions[gQuestLogCurActionIdx].data.a.movementActionId = movementActionId;
@@ -1431,7 +1461,7 @@ void QuestLogRecordPlayerStep(u8 movementActionId)
         {
             sCurSceneActions[gQuestLogCurActionIdx].duration = sNextActionDelay;
             sCurSceneActions[gQuestLogCurActionIdx].type = QL_ACTION_MOVEMENT;
-            sCurSceneActions[gQuestLogCurActionIdx].data.a.localId = 0;
+            sCurSceneActions[gQuestLogCurActionIdx].data.a.localId = QL_SPECIAL_ID_PLAYER;
             sCurSceneActions[gQuestLogCurActionIdx].data.a.movementActionId = movementActionId;
             sLastQuestLogCursor = gQuestLogCurActionIdx;
             gQuestLogCurActionIdx++;
@@ -1446,7 +1476,7 @@ void QuestLogRecordPlayerStepWithDuration(u8 movementActionId, u8 duration)
     {
         sCurSceneActions[gQuestLogCurActionIdx].duration = sNextActionDelay;
         sCurSceneActions[gQuestLogCurActionIdx].type = QL_ACTION_MOVEMENT;
-        sCurSceneActions[gQuestLogCurActionIdx].data.a.localId = 0;
+        sCurSceneActions[gQuestLogCurActionIdx].data.a.localId = QL_SPECIAL_ID_PLAYER;
         sCurSceneActions[gQuestLogCurActionIdx].data.a.movementActionId = movementActionId;
         sLastQuestLogCursor = gQuestLogCurActionIdx;
         gQuestLogCurActionIdx++;
@@ -1460,7 +1490,7 @@ void QuestLogRecordPlayerAvatarGfxTransition(u8 gfxState)
     {
         sCurSceneActions[gQuestLogCurActionIdx].duration = sNextActionDelay;
         sCurSceneActions[gQuestLogCurActionIdx].type = QL_ACTION_GFX_CHANGE;
-        sCurSceneActions[gQuestLogCurActionIdx].data.b.localId = 0;
+        sCurSceneActions[gQuestLogCurActionIdx].data.b.localId = QL_SPECIAL_ID_PLAYER;
         sCurSceneActions[gQuestLogCurActionIdx].data.b.gfxState = gfxState;
         gQuestLogCurActionIdx++;
         sNextActionDelay = 0;
@@ -1473,7 +1503,7 @@ void QuestLogRecordPlayerAvatarGfxTransitionWithDuration(u8 gfxState, u8 duratio
     {
         sCurSceneActions[gQuestLogCurActionIdx].duration = sNextActionDelay;
         sCurSceneActions[gQuestLogCurActionIdx].type = QL_ACTION_GFX_CHANGE;
-        sCurSceneActions[gQuestLogCurActionIdx].data.b.localId = 0;
+        sCurSceneActions[gQuestLogCurActionIdx].data.b.localId = QL_SPECIAL_ID_PLAYER;
         sCurSceneActions[gQuestLogCurActionIdx].data.b.gfxState = gfxState;
         gQuestLogCurActionIdx++;
         sNextActionDelay = duration;

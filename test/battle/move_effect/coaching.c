@@ -74,7 +74,7 @@ DOUBLE_BATTLE_TEST("Coaching fails if all allies are is semi-invulnerable")
             MESSAGE("Hawlucha's Attack rose!");
             MESSAGE("Hawlucha's Defense rose!");
         }
-        MESSAGE("But it failed!");
+        MESSAGE("Hawlucha avoided the attack!");
     }
 }
 
@@ -99,7 +99,7 @@ DOUBLE_BATTLE_TEST("Coaching fails if there's no ally")
 {
     GIVEN {
         PLAYER(SPECIES_WOBBUFFET);
-        PLAYER(SPECIES_WYNAUT) { HP(1); };
+        PLAYER(SPECIES_WYNAUT) { HP(1); }
         OPPONENT(SPECIES_WOBBUFFET);
         OPPONENT(SPECIES_WOBBUFFET);
     } WHEN {
@@ -120,9 +120,9 @@ DOUBLE_BATTLE_TEST("Coaching fails if there's no ally")
 
 AI_DOUBLE_BATTLE_TEST("AI uses Coaching")
 {
-    u32 move;
+    enum Move move;
     PARAMETRIZE { move = MOVE_HEADBUTT; }
-    PARAMETRIZE { move = MOVE_DAZZLE_GLEAM; }
+    PARAMETRIZE { move = MOVE_DAZZLING_GLEAM; }
 
     GIVEN {
         AI_FLAGS(AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_CHECK_VIABILITY | AI_FLAG_TRY_TO_FAINT | AI_FLAG_OMNISCIENT);
@@ -132,7 +132,7 @@ AI_DOUBLE_BATTLE_TEST("AI uses Coaching")
         OPPONENT(SPECIES_WOBBUFFET) { Moves(move); }
     } WHEN {
         if (move == MOVE_HEADBUTT)
-            TURN {  EXPECT_MOVE(opponentLeft, MOVE_COACHING); }
+            TURN { EXPECT_MOVE(opponentLeft, MOVE_COACHING); }
         else
             TURN {  NOT_EXPECT_MOVE(opponentLeft, MOVE_COACHING); }
     }

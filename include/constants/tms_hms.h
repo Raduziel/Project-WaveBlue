@@ -80,8 +80,8 @@
     F(WILD_CHARGE) \
     F(ELECTROWEB) \
     F(THUNDER_WAVE) \
-    F(ALLURE_VOICE) \
-    F(DAZZLE_GLEAM) \
+    F(ALLURING_VOICE) \
+    F(DAZZLING_GLEAM) \
     F(DRAINING_KISS) \
     F(MISTY_TERRAIN) \
     F(PLAY_ROUGH) \
@@ -114,7 +114,7 @@
     F(EARTH_POWER) \
     F(SPIKES) \
     F(DRILL_RUN) \
-    F(SCORCHING_SAND) \
+    F(SCORCHING_SANDS) \
     F(MUD_SHOT) \
     F(AVALANCHE) \
     F(ICE_SPINNER) \
@@ -156,7 +156,7 @@
     F(COUNTER) \
     F(SEISMIC_TOSS) \
     F(DREAM_EATER) \
-    F(ROCK_SLIDE) \
+    F(ROCK_SLIDE)
 
 #define FOREACH_HM(F) \
     F(CUT) \

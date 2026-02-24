@@ -8355,7 +8355,7 @@ Level: 51
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Dazzle Gleam  
+- Dazzling Gleam  
 - Aurora Veil  
 - Fake Tears  
 - Blizzard  
@@ -8377,7 +8377,7 @@ Level: 52
 EVs: 160 HP / 200 SpA / 28 SpD / 120 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzle Gleam  
+- Dazzling Gleam  
 - Freeze-Dry  
 - Slack Off  
 - Psychic  
@@ -8520,7 +8520,7 @@ Level: 54
 EVs: 108 HP / 200 SpA / 80 SpD / 108 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Dazzle Gleam  
+- Dazzling Gleam  
 - Destiny Bond  
 - Shadow Ball  
 - Fake Tears  
@@ -8552,7 +8552,7 @@ Level: 58
 EVs: 160 HP / 252 SpA / 96 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzle Gleam  
+- Dazzling Gleam  
 - Sludge Bomb  
 - Shadow Ball  
 - Nasty Plot
@@ -8583,7 +8583,7 @@ Level: 54
 EVs: 136 HP / 252 SpA / 120 Spe  
 Mild Nature  
 IVs: 0 Atk  
-- Scorching Sand
+- Scorching Sands
 - Flamethrower
 - Dragon Pulse  
 - Air Slash  
@@ -8905,7 +8905,7 @@ Level: 39
 EVs: 48 HP / 200 SpA / 100 SpD / 160 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Dazzle Gleam  
+- Dazzling Gleam  
 - Calm Mind  
 - Icy Wind  
 - Psychic
@@ -8916,7 +8916,7 @@ Level: 43
 EVs: 20 HP / 252 SpA / 56 SpD / 180 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzle Gleam  
+- Dazzling Gleam  
 - Shadow Ball  
 - Calm Mind  
 - Psychic  
@@ -9555,7 +9555,7 @@ Level: 47
 EVs: 200 HP / 252 SpA / 56 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzle Gleam  
+- Dazzling Gleam  
 - Shadow Ball  
 - Calm Mind  
 - Psychic
@@ -9626,7 +9626,7 @@ Level: 47
 EVs: 200 HP / 252 SpA / 56 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzle Gleam  
+- Dazzling Gleam  
 - Shadow Ball  
 - Calm Mind  
 - Psychic 
@@ -9698,7 +9698,7 @@ Level: 47
 EVs: 200 HP / 252 SpA / 56 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzle Gleam  
+- Dazzling Gleam  
 - Shadow Ball  
 - Calm Mind  
 - Psychic
@@ -9709,7 +9709,7 @@ Level: 54
 EVs: 8 HP / 252 SpA / 248 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Scorching Sand  
+- Scorching Sands  
 - Flamethrower  
 - Sunny Day  
 - Air Slash 
@@ -9740,7 +9740,7 @@ Level: 57
 EVs: 200 HP / 252 SpA / 56 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzle Gleam  
+- Dazzling Gleam  
 - Shadow Ball  
 - Calm Mind  
 - Psychic  
@@ -9813,7 +9813,7 @@ Level: 57
 EVs: 200 HP / 252 SpA / 56 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzle Gleam  
+- Dazzling Gleam  
 - Shadow Ball  
 - Calm Mind  
 - Psychic  
@@ -9885,7 +9885,7 @@ Level: 57
 EVs: 200 HP / 252 SpA / 56 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzle Gleam  
+- Dazzling Gleam  
 - Shadow Ball  
 - Calm Mind  
 - Psychic  
@@ -9927,7 +9927,7 @@ Level: 63
 EVs: 8 HP / 252 SpA / 248 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Scorching Sand  
+- Scorching Sands  
 - Flamethrower  
 - Sunny Day  
 - Air Slash  
@@ -11125,7 +11125,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PLAYER_BRENDAN ===
 Name: Brendan
-Class: Player
+Class: Rival
 Pic: RS Brendan 2
 Gender: Male
 Music: Male
@@ -11138,7 +11138,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PLAYER_MAY ===
 Name: May
-Class: Player
+Class: Rival
 Pic: RS May 2
 Gender: Male
 Music: Female
@@ -11151,7 +11151,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PLAYER_RED ===
 Name: Red
-Class: Player
+Class: Rival
 Pic: Red
 Gender: Male
 Music: Male
@@ -11164,7 +11164,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PLAYER_LEAF ===
 Name: Leaf
-Class: Player
+Class: Rival
 Pic: Leaf
 Gender: Male
 Music: Female
@@ -11244,7 +11244,7 @@ IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
 === TRAINER_TUBER_AMIRA ===
 Name: Amira
-Class: Tuber
+Class: Tuber F
 Pic: Tuber F
 Gender: Male
 Music: Girl
@@ -11266,7 +11266,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 === TRAINER_PKMN_BREEDER_ALIZE ===
 Name: Alize
 Class: Pkmn Breeder
-Pic: Pokemon Breeder
+Pic: Pokemon Breeder F
 Gender: Male
 Music: Female
 Double Battle: No
@@ -12101,7 +12101,7 @@ IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_TUBER_ALEXIS ===
 Name: Alexis
-Class: Tuber
+Class: Tuber F
 Pic: Tuber F
 Gender: Male
 Music: Girl
@@ -13149,7 +13149,7 @@ IVs: 12 HP / 12 Atk / 12 Def / 12 SpA / 12 SpD / 12 Spe
 === TRAINER_PKMN_BREEDER_BETHANY ===
 Name: Bethany
 Class: Pkmn Breeder
-Pic: Pokemon Breeder
+Pic: Pokemon Breeder F
 Gender: Male
 Music: Female
 Double Battle: No
@@ -13162,7 +13162,7 @@ IVs: 3 HP / 3 Atk / 3 Def / 3 SpA / 3 SpD / 3 Spe
 === TRAINER_PKMN_BREEDER_ALLISON ===
 Name: Allison
 Class: Pkmn Breeder
-Pic: Pokemon Breeder
+Pic: Pokemon Breeder F
 Gender: Male
 Music: Female
 Double Battle: No
@@ -14880,7 +14880,7 @@ IVs: 20 HP / 20 Atk / 20 Def / 20 SpA / 20 SpD / 20 Spe
 
 === TRAINER_TUBER_AMIRA_2 ===
 Name: Amira
-Class: Tuber
+Class: Tuber F
 Pic: Tuber F
 Gender: Male
 Music: Girl
@@ -14953,7 +14953,7 @@ IVs: 14 HP / 14 Atk / 14 Def / 14 SpA / 14 SpD / 14 Spe
 === TRAINER_PKMN_BREEDER_ALIZE_2 ===
 Name: Alize
 Class: Pkmn Breeder
-Pic: Pokemon Breeder
+Pic: Pokemon Breeder F
 Gender: Male
 Music: Female
 Double Battle: No
@@ -15643,7 +15643,7 @@ Level: 63
 EVs: 252 SpA / 4 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Dazzle Gleam  
+- Dazzling Gleam  
 - Aurora Veil  
 - Fake Tears  
 - Blizzard  
@@ -15665,7 +15665,7 @@ Level: 64
 EVs: 160 HP / 200 SpA / 28 SpD / 120 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzle Gleam  
+- Dazzling Gleam  
 - Freeze-Dry  
 - Slack Off  
 - Psychic  
@@ -15808,7 +15808,7 @@ Level: 66
 EVs: 108 HP / 200 SpA / 80 SpD / 108 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Dazzle Gleam  
+- Dazzling Gleam  
 - Destiny Bond  
 - Shadow Ball  
 - Fake Tears  
@@ -15840,7 +15840,7 @@ Level: 70
 EVs: 160 HP / 252 SpA / 96 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzle Gleam  
+- Dazzling Gleam  
 - Sludge Bomb  
 - Shadow Ball  
 - Nasty Plot
@@ -15871,7 +15871,7 @@ Level: 66
 EVs: 136 HP / 252 SpA / 120 Spe  
 Mild Nature  
 IVs: 0 Atk  
-- Scorching Sand
+- Scorching Sands
 - Flamethrower
 - Dragon Pulse  
 - Air Slash  
@@ -15941,7 +15941,7 @@ Level: 73
 EVs: 200 HP / 252 SpA / 56 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzle Gleam  
+- Dazzling Gleam  
 - Shadow Ball  
 - Calm Mind  
 - Psychic
@@ -16014,7 +16014,7 @@ Level:73
 EVs: 200 HP / 252 SpA / 56 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzle Gleam  
+- Dazzling Gleam  
 - Shadow Ball  
 - Calm Mind  
 - Psychic 
@@ -16086,7 +16086,7 @@ Level: 73
 EVs: 200 HP / 252 SpA / 56 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Dazzle Gleam  
+- Dazzling Gleam  
 - Shadow Ball  
 - Calm Mind  
 - Psychic  
@@ -16128,7 +16128,7 @@ Level: 75
 EVs: 8 HP / 252 SpA / 248 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Scorching Sand  
+- Scorching Sands  
 - Flamethrower  
 - Sunny Day  
 - Air Slash
@@ -16186,7 +16186,7 @@ Level: 75
 EVs: 248 SpA / 8 SpD / 248 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Dazzle Gleam  
+- Dazzling Gleam  
 - Sludge Bomb  
 - Destiny Bond  
 - Shadow Ball 
@@ -16197,7 +16197,7 @@ Level: 75
 EVs: 248 SpA / 8 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Scorching Sand  
+- Scorching Sands  
 - Flamethrower  
 - Thunderbolt  
 - Rest  
@@ -16260,7 +16260,7 @@ Level: 75
 EVs: 248 SpA / 8 SpD / 248 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Dazzle Gleam  
+- Dazzling Gleam  
 - Sludge Bomb  
 - Destiny Bond  
 - Shadow Ball 
@@ -16292,7 +16292,7 @@ Level: 80
 EVs: 8 HP / 252 SpA / 248 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Scorching Sand  
+- Scorching Sands  
 - Flamethrower  
 - Sunny Day  
 - Air Slash
@@ -16333,7 +16333,7 @@ Level: 75
 EVs: 248 SpA / 8 SpD / 248 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Dazzle Gleam  
+- Dazzling Gleam  
 - Sludge Bomb  
 - Destiny Bond  
 - Shadow Ball 
@@ -16354,7 +16354,7 @@ Level: 75
 EVs: 248 SpA / 8 SpD / 252 Spe  
 Timid Nature  
 IVs: 0 Atk  
-- Scorching Sand  
+- Scorching Sands  
 - Flamethrower  
 - Thunderbolt  
 - Rest  
@@ -16369,3 +16369,95 @@ IVs: 0 Atk
 - Rain Dance  
 - Ice Beam  
 - Surf 
+
+=== TRAINER_ANABEL ===
+Name: Anabel
+Class: Salon Maiden
+Pic: Salon Maiden Anabel
+Gender: Female
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+
+Beldum
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_TUCKER ===
+Name: Tucker
+Class: Dome Ace
+Pic: Dome Ace Tucker
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+
+Beldum
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_SPENSER ===
+Name: Spenser
+Class: Palace Maven
+Pic: Palace Maven Spenser
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+
+Beldum
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_GRETA ===
+Name: Greta
+Class: Arena Tycoon
+Pic: Arena Tycoon Greta
+Gender: Female
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+
+Beldum
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_NOLAND ===
+Name: Noland
+Class: Factory Head
+Pic: Factory Head Noland
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+
+Beldum
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_LUCY ===
+Name: Lucy
+Class: Pike Queen
+Pic: Pike Queen Lucy
+Gender: Female
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+
+Beldum
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+
+=== TRAINER_BRANDON ===
+Name: Brandon
+Class: Pyramid King
+Pic: Pyramid King Brandon
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+
+Beldum
+Level: 5
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe

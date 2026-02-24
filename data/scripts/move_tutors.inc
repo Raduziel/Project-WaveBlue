@@ -269,7 +269,7 @@ TwoIsland_CapeBrink_House_EventScript_StarterTutor::
 	call_if_eq VAR_FACING, DIR_WEST, CapeBrinkTutor_EventScript_JumpInPlaceRight
 	msgbox Text_AllowMeToTeachMonUltimateMove, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, CapeBrinkTutor_EventScript_DeclineMove
-	call EventScript_CanOnlyBeLearnedOnce
+	call MoveTutor_EventScript_CanOnlyBeLearnedOnce
 	goto_if_eq VAR_RESULT, NO, CapeBrinkTutor_EventScript_DeclineMove
 	msgbox Text_LetMeConferUltimateMove
 	closemessage
@@ -344,13 +344,26 @@ EventScript_ChooseMoveTutorMon::
 	faceplayer
 	return
 
-EventScript_CanOnlyBeLearnedOnce::
+MoveTutor_EventScript_CanOnlyBeLearnedOnce::
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	special DisableMsgBoxWalkaway
 	signmsg
 	msgbox Text_MoveCanOnlyBeLearnedOnce, MSGBOX_YESNO
 	normalmsg
 	call EventScript_RestorePrevTextColor
+	return
+
+MoveTutor_EventScript_OpenBox::
+	chooseboxmon SELECT_PC_MON_MOVE_TUTOR
+	waitstate
+	lock
+	faceplayer
+	return
+
+MoveTutor_AfterChooseBoxMon::
+	waitstate
+	special CanTeachMoveBoxMon
+	waitstate
 	return
 
 Movement_JumpInPlaceDown:

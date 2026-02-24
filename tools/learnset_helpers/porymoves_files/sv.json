@@ -686,7 +686,7 @@
       "MOVE_WEATHER_BALL",
       "MOVE_DOUBLE_EDGE",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER"
     ],
@@ -1519,7 +1519,7 @@
       "MOVE_AGILITY",
       "MOVE_PROTECT",
       "MOVE_THIEF",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_CHARGE_BEAM",
       "MOVE_FACADE",
@@ -1558,12 +1558,12 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_ENDEAVOR",
       "MOVE_ELECTROWEB",
-      "MOVE_ALLURE_VOICE",
+      "MOVE_ALLURING_VOICE",
       "MOVE_UPPER_HAND"
     ],
     "EggMoves": [
       "MOVE_CHARGE",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_FAKE_OUT",
       "MOVE_FLAIL",
       "MOVE_PRESENT",
@@ -1666,7 +1666,7 @@
       "MOVE_AGILITY",
       "MOVE_PROTECT",
       "MOVE_THIEF",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_CHARGE_BEAM",
       "MOVE_FACADE",
@@ -1709,12 +1709,12 @@
       "MOVE_FAKE_TEARS",
       "MOVE_ENDEAVOR",
       "MOVE_ELECTROWEB",
-      "MOVE_ALLURE_VOICE",
+      "MOVE_ALLURING_VOICE",
       "MOVE_UPPER_HAND"
     ],
     "EggMoves": [
       "MOVE_CHARGE",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_FAKE_OUT",
       "MOVE_FLAIL",
       "MOVE_PRESENT",
@@ -1843,7 +1843,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_THROAT_CHOP",
       "MOVE_CURSE"
     ],
@@ -1986,7 +1986,7 @@
       "MOVE_FOCUS_PUNCH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_THROAT_CHOP",
       "MOVE_CURSE"
     ],
@@ -2062,7 +2062,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 1,
@@ -2138,7 +2138,7 @@
       "MOVE_WATER_PULSE",
       "MOVE_PSYBEAM",
       "MOVE_THIEF",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHILLING_WATER",
       "MOVE_CHARGE_BEAM",
       "MOVE_FACADE",
@@ -2164,7 +2164,7 @@
       "MOVE_DRAIN_PUNCH",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
@@ -2202,7 +2202,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_METEOR_BEAM",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_HEAL_PULSE",
@@ -2280,7 +2280,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 1,
@@ -2316,7 +2316,7 @@
       "MOVE_COPYCAT",
       "MOVE_AFTER_YOU",
       "MOVE_STORED_POWER",
-      "MOVE_DISARM_VOICE"
+      "MOVE_DISARMING_VOICE"
     ],
     "TMMoves": [
       "MOVE_TAKE_DOWN",
@@ -2326,7 +2326,7 @@
       "MOVE_WATER_PULSE",
       "MOVE_PSYBEAM",
       "MOVE_THIEF",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHILLING_WATER",
       "MOVE_CHARGE_BEAM",
       "MOVE_FACADE",
@@ -2352,7 +2352,7 @@
       "MOVE_DRAIN_PUNCH",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
@@ -2394,7 +2394,7 @@
       "MOVE_ENDEAVOR",
       "MOVE_FUTURE_SIGHT",
       "MOVE_METEOR_BEAM",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_HEAL_PULSE",
@@ -2656,7 +2656,7 @@
       "MOVE_PAIN_SPLIT",
       "MOVE_PSYCH_UP",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SAND"
+      "MOVE_SCORCHING_SANDS"
     ],
     "EggMoves": [
       "MOVE_BABY_DOLL_EYES",
@@ -2674,7 +2674,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 1,
@@ -2761,7 +2761,7 @@
       "MOVE_PROTECT",
       "MOVE_WATER_PULSE",
       "MOVE_THIEF",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
@@ -2787,7 +2787,7 @@
       "MOVE_DRAIN_PUNCH",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
@@ -2830,7 +2830,7 @@
       "MOVE_PSYCH_UP",
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
-      "MOVE_ALLURE_VOICE",
+      "MOVE_ALLURING_VOICE",
       "MOVE_PSYCHIC_NOISE"
     ],
     "EggMoves": [
@@ -2885,7 +2885,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 1,
@@ -2940,7 +2940,7 @@
       "MOVE_PROTECT",
       "MOVE_WATER_PULSE",
       "MOVE_THIEF",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
@@ -2966,7 +2966,7 @@
       "MOVE_DRAIN_PUNCH",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
@@ -3013,7 +3013,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_EXPANDING_FORCE",
-      "MOVE_ALLURE_VOICE",
+      "MOVE_ALLURING_VOICE",
       "MOVE_PSYCHIC_NOISE"
     ],
     "EggMoves": [
@@ -3325,7 +3325,7 @@
       "MOVE_BODY_SLAM",
       "MOVE_SLEEP_TALK",
       "MOVE_SEED_BOMB",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_REST",
       "MOVE_SWORDS_DANCE",
@@ -3697,7 +3697,7 @@
       "MOVE_UPROAR",
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_THROAT_CHOP",
       "MOVE_CURSE"
     ],
@@ -3819,7 +3819,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_THROAT_CHOP",
       "MOVE_CURSE"
     ],
@@ -4865,7 +4865,7 @@
       "MOVE_HEAT_CRASH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_CURSE"
     ],
     "EggMoves": [
@@ -5663,7 +5663,7 @@
       "MOVE_ENDURE",
       "MOVE_RAIN_DANCE",
       "MOVE_SLEEP_TALK",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_POISON_JAB",
       "MOVE_REST",
       "MOVE_SWORDS_DANCE",
@@ -5782,7 +5782,7 @@
       "MOVE_ENDURE",
       "MOVE_RAIN_DANCE",
       "MOVE_SLEEP_TALK",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_POISON_JAB",
       "MOVE_REST",
       "MOVE_SWORDS_DANCE",
@@ -7156,7 +7156,7 @@
       "MOVE_MUDDY_WATER",
       "MOVE_TRIPLE_AXEL",
       "MOVE_CURSE",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_BELCH",
@@ -7748,7 +7748,7 @@
       "MOVE_THUNDER_PUNCH",
       "MOVE_ICE_PUNCH",
       "MOVE_SLEEP_TALK",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_POISON_JAB",
       "MOVE_REST",
       "MOVE_TAUNT",
@@ -7876,7 +7876,7 @@
       "MOVE_THUNDER_PUNCH",
       "MOVE_ICE_PUNCH",
       "MOVE_SLEEP_TALK",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_POISON_JAB",
       "MOVE_REST",
@@ -8020,7 +8020,7 @@
       "MOVE_ICE_PUNCH",
       "MOVE_SLEEP_TALK",
       "MOVE_DRAIN_PUNCH",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_THUNDER_WAVE",
       "MOVE_POISON_JAB",
@@ -8170,7 +8170,7 @@
       "MOVE_DRAIN_PUNCH",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
@@ -8310,7 +8310,7 @@
       "MOVE_DRAIN_PUNCH",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
@@ -9497,7 +9497,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_SUPERCELL_SLAM",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_CURSE"
     ],
     "EggMoves": [
@@ -9644,7 +9644,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_SUPERCELL_SLAM",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_METEOR_BEAM",
       "MOVE_BREAKING_SWIPE",
       "MOVE_CURSE"
@@ -9675,7 +9675,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 1,
@@ -9749,7 +9749,7 @@
       "MOVE_PROTECT",
       "MOVE_WATER_PULSE",
       "MOVE_THIEF",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
@@ -9773,7 +9773,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_DRAIN_PUNCH",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
@@ -10402,7 +10402,7 @@
       "MOVE_BURNING_JEALOUSY",
       "MOVE_DOUBLE_EDGE",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_CURSE"
     ],
     "EggMoves": [
@@ -10768,7 +10768,7 @@
       "MOVE_PROTECT",
       "MOVE_WATER_PULSE",
       "MOVE_CONFUSE_RAY",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
       "MOVE_BULLDOZE",
@@ -10813,7 +10813,7 @@
       "MOVE_MUDDY_WATER",
       "MOVE_CURSE",
       "MOVE_DRAGON_CHEER",
-      "MOVE_ALLURE_VOICE",
+      "MOVE_ALLURING_VOICE",
       "MOVE_PSYCHIC_NOISE"
     ],
     "EggMoves": [
@@ -10935,7 +10935,7 @@
       "MOVE_WEATHER_BALL",
       "MOVE_DOUBLE_EDGE",
       "MOVE_CURSE",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_CURSE",
@@ -11093,7 +11093,7 @@
       "MOVE_WHIRLPOOL",
       "MOVE_MUDDY_WATER",
       "MOVE_CURSE",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_CURSE",
@@ -11252,7 +11252,7 @@
       "MOVE_ELECTROWEB",
       "MOVE_METAL_SOUND",
       "MOVE_CURSE",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_CURSE",
@@ -11404,9 +11404,9 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_CURSE",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_CURSE",
@@ -12078,7 +12078,7 @@
       "MOVE_DUAL_WINGBEAT",
       "MOVE_DOUBLE_EDGE",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SAND"
+      "MOVE_SCORCHING_SANDS"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -12713,7 +12713,7 @@
       "MOVE_PSYBEAM",
       "MOVE_CONFUSE_RAY",
       "MOVE_THIEF",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_POUNCE",
       "MOVE_CHILLING_WATER",
@@ -12773,7 +12773,7 @@
       "MOVE_ROCK_BLAST",
       "MOVE_WATERFALL",
       "MOVE_DRAGON_CLAW",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
@@ -12909,7 +12909,7 @@
       "MOVE_TRIPLE_AXEL",
       "MOVE_COACHING",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_FEATHER_DANCE",
       "MOVE_FUTURE_SIGHT",
       "MOVE_EXPANDING_FORCE",
@@ -12921,7 +12921,7 @@
       "MOVE_CURSE",
       "MOVE_HARD_PRESS",
       "MOVE_DRAGON_CHEER",
-      "MOVE_ALLURE_VOICE",
+      "MOVE_ALLURING_VOICE",
       "MOVE_PSYCHIC_NOISE",
       "MOVE_UPPER_HAND"
     ],
@@ -13621,7 +13621,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_THROAT_CHOP",
       "MOVE_CURSE"
     ],
@@ -14861,7 +14861,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_ELECTRO_BALL",
       "MOVE_WATERFALL",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
       "MOVE_EERIE_IMPULSE",
@@ -14984,7 +14984,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_ELECTRO_BALL",
       "MOVE_WATERFALL",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
       "MOVE_EERIE_IMPULSE",
@@ -15056,7 +15056,7 @@
       "MOVE_TAKE_DOWN",
       "MOVE_CHARM",
       "MOVE_PROTECT",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_FACADE",
       "MOVE_SWIFT",
@@ -15090,7 +15090,7 @@
     ],
     "EggMoves": [
       "MOVE_CHARGE",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_FAKE_OUT",
       "MOVE_FLAIL",
       "MOVE_PRESENT",
@@ -15123,7 +15123,7 @@
       },
       {
         "Level": 12,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 16,
@@ -15141,7 +15141,7 @@
       "MOVE_PROTECT",
       "MOVE_WATER_PULSE",
       "MOVE_PSYBEAM",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
       "MOVE_SWIFT",
@@ -15160,7 +15160,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
@@ -15183,7 +15183,7 @@
       "MOVE_GRAVITY",
       "MOVE_UPROAR",
       "MOVE_ENDEAVOR",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_HEAL_PULSE",
@@ -15217,7 +15217,7 @@
       },
       {
         "Level": 12,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 16,
@@ -15234,7 +15234,7 @@
       "MOVE_CHARM",
       "MOVE_FAKE_TEARS",
       "MOVE_PROTECT",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_FACADE",
       "MOVE_SWIFT",
@@ -15249,7 +15249,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
@@ -15271,7 +15271,7 @@
       "MOVE_PSYCH_UP",
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_COVET",
@@ -15365,7 +15365,7 @@
       },
       {
         "Level": 39,
-        "Move": "MOVE_DAZZLE_GLEAM"
+        "Move": "MOVE_DAZZLING_GLEAM"
       },
       {
         "Level": 43,
@@ -15395,7 +15395,7 @@
       "MOVE_ELECTRO_BALL",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
       "MOVE_EERIE_IMPULSE",
@@ -15474,7 +15474,7 @@
       },
       {
         "Level": 47,
-        "Move": "MOVE_DAZZLE_GLEAM"
+        "Move": "MOVE_DAZZLING_GLEAM"
       },
       {
         "Level": 52,
@@ -15511,7 +15511,7 @@
       "MOVE_ELECTRO_BALL",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
       "MOVE_EERIE_IMPULSE",
@@ -15612,7 +15612,7 @@
       },
       {
         "Level": 51,
-        "Move": "MOVE_DAZZLE_GLEAM"
+        "Move": "MOVE_DAZZLING_GLEAM"
       },
       {
         "Level": 57,
@@ -15651,7 +15651,7 @@
       "MOVE_ELECTRO_BALL",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_THUNDER_WAVE",
       "MOVE_STOMPING_TANTRUM",
       "MOVE_REST",
@@ -15773,7 +15773,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SEED_BOMB",
       "MOVE_DRAIN_PUNCH",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_REST",
       "MOVE_SWORDS_DANCE",
@@ -15893,7 +15893,7 @@
       "MOVE_MUD_SLAP",
       "MOVE_PROTECT",
       "MOVE_WATER_PULSE",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
@@ -15936,7 +15936,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_WHIRLPOOL",
       "MOVE_MUDDY_WATER",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_AQUA_JET",
@@ -16030,7 +16030,7 @@
       "MOVE_MUD_SLAP",
       "MOVE_PROTECT",
       "MOVE_WATER_PULSE",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
@@ -16076,7 +16076,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_WHIRLPOOL",
       "MOVE_MUDDY_WATER",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_AQUA_JET",
@@ -16464,7 +16464,7 @@
       "MOVE_SEED_BOMB",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_REST",
       "MOVE_SWORDS_DANCE",
@@ -16590,7 +16590,7 @@
       "MOVE_SEED_BOMB",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_REST",
       "MOVE_SWORDS_DANCE",
@@ -16719,7 +16719,7 @@
       "MOVE_SEED_BOMB",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_REST",
       "MOVE_SWORDS_DANCE",
@@ -17061,7 +17061,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SEED_BOMB",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_REST",
       "MOVE_SWORDS_DANCE",
@@ -17573,7 +17573,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
@@ -17601,7 +17601,7 @@
       "MOVE_FUTURE_SIGHT",
       "MOVE_EXPANDING_FORCE",
       "MOVE_CURSE",
-      "MOVE_ALLURE_VOICE",
+      "MOVE_ALLURING_VOICE",
       "MOVE_PSYCHIC_NOISE"
     ],
     "EggMoves": [
@@ -17764,7 +17764,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_THROAT_CHOP",
       "MOVE_CURSE",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_CURSE",
@@ -18145,7 +18145,7 @@
       "MOVE_PSYSHOCK",
       "MOVE_FOUL_PLAY",
       "MOVE_SLEEP_TALK",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
@@ -18300,7 +18300,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
       "MOVE_STOMPING_TANTRUM",
@@ -18995,7 +18995,7 @@
       "MOVE_THUNDER_PUNCH",
       "MOVE_ICE_PUNCH",
       "MOVE_SLEEP_TALK",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_THUNDER_WAVE",
       "MOVE_STOMPING_TANTRUM",
@@ -19144,7 +19144,7 @@
       "MOVE_THUNDER_PUNCH",
       "MOVE_ICE_PUNCH",
       "MOVE_SLEEP_TALK",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_THUNDER_WAVE",
       "MOVE_STOMPING_TANTRUM",
@@ -20227,7 +20227,7 @@
       "MOVE_BURNING_JEALOUSY",
       "MOVE_PAIN_SPLIT",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_CURSE"
     ],
     "EggMoves": [
@@ -22017,7 +22017,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 1,
@@ -22091,7 +22091,7 @@
       "MOVE_PROTECT",
       "MOVE_WATER_PULSE",
       "MOVE_THIEF",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
@@ -22116,7 +22116,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_DRAIN_PUNCH",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
@@ -22151,7 +22151,7 @@
       "MOVE_PSYCH_UP",
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_GRAVITY",
@@ -22411,7 +22411,7 @@
       "MOVE_ROAR",
       "MOVE_WEATHER_BALL",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SAND"
+      "MOVE_SCORCHING_SANDS"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -23234,7 +23234,7 @@
       "MOVE_DUAL_WINGBEAT",
       "MOVE_PSYCH_UP",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_FUTURE_SIGHT"
     ],
     "EggMoves": [],
@@ -24063,7 +24063,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_TEMPER_FLARE",
       "MOVE_COACHING",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_FEATHER_DANCE",
       "MOVE_CURSE",
       "MOVE_UPPER_HAND"
@@ -24841,7 +24841,7 @@
       "MOVE_PROTECT",
       "MOVE_WATER_PULSE",
       "MOVE_THIEF",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
@@ -24961,7 +24961,7 @@
       "MOVE_PROTECT",
       "MOVE_WATER_PULSE",
       "MOVE_THIEF",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
@@ -25104,7 +25104,7 @@
       "MOVE_PROTECT",
       "MOVE_WATER_PULSE",
       "MOVE_THIEF",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
@@ -25866,7 +25866,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 3,
@@ -25928,7 +25928,7 @@
       "MOVE_PSYBEAM",
       "MOVE_CONFUSE_RAY",
       "MOVE_THIEF",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHARGE_BEAM",
       "MOVE_FACADE",
       "MOVE_SWIFT",
@@ -25949,7 +25949,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
@@ -25976,7 +25976,7 @@
       "MOVE_PSYCH_UP",
       "MOVE_FUTURE_SIGHT",
       "MOVE_EXPANDING_FORCE",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_CONFUSE_RAY",
@@ -26006,7 +26006,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 9,
@@ -26060,7 +26060,7 @@
       "MOVE_PSYBEAM",
       "MOVE_CONFUSE_RAY",
       "MOVE_THIEF",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHARGE_BEAM",
       "MOVE_FACADE",
       "MOVE_SWIFT",
@@ -26081,7 +26081,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
@@ -26110,7 +26110,7 @@
       "MOVE_TRIPLE_AXEL",
       "MOVE_FUTURE_SIGHT",
       "MOVE_EXPANDING_FORCE",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_CONFUSE_RAY",
@@ -26128,7 +26128,7 @@
     "LevelMoves": [
       {
         "Level": 0,
-        "Move": "MOVE_DAZZLE_GLEAM"
+        "Move": "MOVE_DAZZLING_GLEAM"
       },
       {
         "Level": 1,
@@ -26156,7 +26156,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 1,
@@ -26218,7 +26218,7 @@
       "MOVE_PSYBEAM",
       "MOVE_CONFUSE_RAY",
       "MOVE_THIEF",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHARGE_BEAM",
       "MOVE_FACADE",
       "MOVE_SWIFT",
@@ -26240,7 +26240,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
@@ -26276,7 +26276,7 @@
       "MOVE_TRIPLE_AXEL",
       "MOVE_FUTURE_SIGHT",
       "MOVE_EXPANDING_FORCE",
-      "MOVE_ALLURE_VOICE",
+      "MOVE_ALLURING_VOICE",
       "MOVE_PSYCHIC_NOISE"
     ],
     "EggMoves": [
@@ -27535,7 +27535,7 @@
       "MOVE_ICE_BEAM",
       "MOVE_BLIZZARD",
       "MOVE_TERA_BLAST",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_AQUA_JET",
@@ -27634,7 +27634,7 @@
       "MOVE_ICE_PUNCH",
       "MOVE_SLEEP_TALK",
       "MOVE_ROCK_BLAST",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_THUNDER_WAVE",
       "MOVE_STOMPING_TANTRUM",
       "MOVE_REST",
@@ -27794,7 +27794,7 @@
       "MOVE_DRAIN_PUNCH",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_THUNDER_WAVE",
       "MOVE_POISON_JAB",
@@ -28305,7 +28305,7 @@
       "MOVE_UPROAR",
       "MOVE_ENDEAVOR",
       "MOVE_ELECTROWEB",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_SING",
@@ -28436,7 +28436,7 @@
       "MOVE_UPROAR",
       "MOVE_ENDEAVOR",
       "MOVE_ELECTROWEB",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_SING",
@@ -28537,7 +28537,7 @@
       "MOVE_ICE_PUNCH",
       "MOVE_SLEEP_TALK",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
@@ -28645,7 +28645,7 @@
       "MOVE_STRUGGLE_BUG",
       "MOVE_CONFUSE_RAY",
       "MOVE_THIEF",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_POUNCE",
       "MOVE_CHARGE_BEAM",
@@ -28666,7 +28666,7 @@
       "MOVE_ICE_PUNCH",
       "MOVE_SLEEP_TALK",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
@@ -29094,7 +29094,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_CURSE"
     ],
     "EggMoves": [
@@ -29237,7 +29237,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_CURSE"
     ],
     "EggMoves": [
@@ -29379,7 +29379,7 @@
       "MOVE_BURNING_JEALOUSY",
       "MOVE_DOUBLE_EDGE",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_CURSE"
     ],
     "EggMoves": [
@@ -29471,7 +29471,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
@@ -29612,7 +29612,7 @@
       "MOVE_DRAIN_PUNCH",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
@@ -29754,7 +29754,7 @@
       "MOVE_TERA_BLAST",
       "MOVE_SAND_TOMB",
       "MOVE_BUG_BITE",
-      "MOVE_SCORCHING_SAND"
+      "MOVE_SCORCHING_SANDS"
     ],
     "EggMoves": [
       "MOVE_GUST",
@@ -29901,7 +29901,7 @@
       "MOVE_BUG_BITE",
       "MOVE_UPROAR",
       "MOVE_DUAL_WINGBEAT",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_THROAT_CHOP"
     ],
     "EggMoves": [
@@ -30072,11 +30072,11 @@
       "MOVE_DUAL_WINGBEAT",
       "MOVE_SCALE_SHOT",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_THROAT_CHOP",
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER",
-      "MOVE_ALLURE_VOICE",
+      "MOVE_ALLURING_VOICE",
       "MOVE_PSYCHIC_NOISE"
     ],
     "EggMoves": [
@@ -30386,7 +30386,7 @@
       },
       {
         "Level": 4,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 8,
@@ -30436,7 +30436,7 @@
       "MOVE_PROTECT",
       "MOVE_ACROBATICS",
       "MOVE_THIEF",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_FACADE",
       "MOVE_AERIAL_ACE",
@@ -30446,7 +30446,7 @@
       "MOVE_RAIN_DANCE",
       "MOVE_BODY_SLAM",
       "MOVE_SLEEP_TALK",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_REST",
       "MOVE_FLY",
       "MOVE_SUBSTITUTE",
@@ -30502,7 +30502,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 12,
@@ -30552,7 +30552,7 @@
       "MOVE_PROTECT",
       "MOVE_ACROBATICS",
       "MOVE_THIEF",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_FIRE_SPIN",
       "MOVE_FACADE",
@@ -30566,7 +30566,7 @@
       "MOVE_BODY_SLAM",
       "MOVE_SLEEP_TALK",
       "MOVE_DRAGON_CLAW",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_REST",
       "MOVE_FLY",
       "MOVE_DRAGON_DANCE",
@@ -30599,7 +30599,7 @@
       "MOVE_FEATHER_DANCE",
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_ASTONISH",
@@ -31560,7 +31560,7 @@
       },
       {
         "Level": 4,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 8,
@@ -31617,7 +31617,7 @@
       "MOVE_PROTECT",
       "MOVE_WATER_PULSE",
       "MOVE_CONFUSE_RAY",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
       "MOVE_BULLDOZE",
@@ -31660,7 +31660,7 @@
       "MOVE_SKITTER_SMACK",
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_CONFUSE_RAY",
@@ -31760,7 +31760,7 @@
       "MOVE_RAIN_DANCE",
       "MOVE_FOUL_PLAY",
       "MOVE_SLEEP_TALK",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
@@ -31876,7 +31876,7 @@
       "MOVE_SHADOW_CLAW",
       "MOVE_FOUL_PLAY",
       "MOVE_SLEEP_TALK",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
@@ -32356,7 +32356,7 @@
       "MOVE_FAKE_TEARS",
       "MOVE_PROTECT",
       "MOVE_PSYBEAM",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHARGE_BEAM",
       "MOVE_FACADE",
       "MOVE_SNARL",
@@ -32372,7 +32372,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
@@ -33859,7 +33859,7 @@
       "MOVE_AGILITY",
       "MOVE_PROTECT",
       "MOVE_WATER_PULSE",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHILLING_WATER",
       "MOVE_CHARGE_BEAM",
       "MOVE_FACADE",
@@ -33922,7 +33922,7 @@
       "MOVE_FUTURE_SIGHT",
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -34293,7 +34293,7 @@
       "MOVE_HEAT_CRASH",
       "MOVE_FOCUS_PUNCH",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SAND"
+      "MOVE_SCORCHING_SANDS"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -34529,7 +34529,7 @@
       "MOVE_DRAIN_PUNCH",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
@@ -35041,7 +35041,7 @@
       "MOVE_HIGH_HORSEPOWER",
       "MOVE_GRASSY_GLIDE",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_CURSE",
       "MOVE_HARD_PRESS"
     ],
@@ -35475,7 +35475,7 @@
       "MOVE_ENDEAVOR",
       "MOVE_TEMPER_FLARE",
       "MOVE_COACHING",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_THROAT_CHOP",
       "MOVE_UPPER_HAND"
     ],
@@ -35554,7 +35554,7 @@
       "MOVE_AGILITY",
       "MOVE_PROTECT",
       "MOVE_WATER_PULSE",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
       "MOVE_AERIAL_ACE",
@@ -35661,7 +35661,7 @@
       "MOVE_AGILITY",
       "MOVE_PROTECT",
       "MOVE_WATER_PULSE",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
       "MOVE_AERIAL_ACE",
@@ -35785,7 +35785,7 @@
       "MOVE_SCARY_FACE",
       "MOVE_PROTECT",
       "MOVE_WATER_PULSE",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
       "MOVE_AERIAL_ACE",
@@ -36980,7 +36980,7 @@
       "MOVE_SAND_TOMB",
       "MOVE_SMACK_DOWN",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_METAL_SOUND",
       "MOVE_CURSE",
       "MOVE_HARD_PRESS"
@@ -37106,7 +37106,7 @@
       "MOVE_SAND_TOMB",
       "MOVE_SMACK_DOWN",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_METEOR_BEAM",
       "MOVE_METAL_SOUND",
       "MOVE_CURSE",
@@ -37418,7 +37418,7 @@
       "MOVE_UPROAR",
       "MOVE_ENDEAVOR",
       "MOVE_ELECTROWEB",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_BABY_DOLL_EYES",
@@ -38364,7 +38364,7 @@
       "MOVE_PSYSHOCK",
       "MOVE_FOUL_PLAY",
       "MOVE_SLEEP_TALK",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
@@ -38590,7 +38590,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
@@ -39273,7 +39273,7 @@
       },
       {
         "Level": 12,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 16,
@@ -39289,7 +39289,7 @@
       "MOVE_TAKE_DOWN",
       "MOVE_CHARM",
       "MOVE_PROTECT",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_FACADE",
       "MOVE_ICY_WIND",
       "MOVE_STORED_POWER",
@@ -39538,7 +39538,7 @@
       "MOVE_SAND_TOMB",
       "MOVE_SCALE_SHOT",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_DRAGON_CHEER"
     ],
     "EggMoves": [
@@ -39646,7 +39646,7 @@
       "MOVE_SAND_TOMB",
       "MOVE_SCALE_SHOT",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER"
     ],
@@ -39768,7 +39768,7 @@
       "MOVE_SAND_TOMB",
       "MOVE_SCALE_SHOT",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER"
     ],
@@ -40315,7 +40315,7 @@
       "MOVE_HIGH_HORSEPOWER",
       "MOVE_DOUBLE_EDGE",
       "MOVE_MUDDY_WATER",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_CURSE"
     ],
     "EggMoves": [
@@ -40443,7 +40443,7 @@
       "MOVE_HIGH_HORSEPOWER",
       "MOVE_DOUBLE_EDGE",
       "MOVE_MUDDY_WATER",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_CURSE",
       "MOVE_HARD_PRESS"
     ],
@@ -40821,7 +40821,7 @@
       "MOVE_U_TURN",
       "MOVE_SLEEP_TALK",
       "MOVE_WATERFALL",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_REST",
       "MOVE_SUBSTITUTE",
       "MOVE_TAILWIND",
@@ -40834,7 +40834,7 @@
       "MOVE_FLIP_TURN",
       "MOVE_PSYCH_UP",
       "MOVE_WHIRLPOOL",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_AGILITY",
@@ -40926,7 +40926,7 @@
       "MOVE_AIR_SLASH",
       "MOVE_SLEEP_TALK",
       "MOVE_WATERFALL",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_REST",
       "MOVE_SUBSTITUTE",
       "MOVE_TAILWIND",
@@ -40942,7 +40942,7 @@
       "MOVE_FLIP_TURN",
       "MOVE_PSYCH_UP",
       "MOVE_WHIRLPOOL",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_AGILITY",
@@ -41617,7 +41617,7 @@
       "MOVE_ENDEAVOR",
       "MOVE_TEMPER_FLARE",
       "MOVE_SUPERCELL_SLAM",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_METEOR_BEAM",
       "MOVE_BREAKING_SWIPE",
       "MOVE_CURSE"
@@ -41888,7 +41888,7 @@
       "MOVE_BURNING_JEALOUSY",
       "MOVE_DOUBLE_EDGE",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_CURSE"
     ],
     "EggMoves": [
@@ -42169,7 +42169,7 @@
       "MOVE_GRASSY_GLIDE",
       "MOVE_DOUBLE_EDGE",
       "MOVE_CURSE",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_CURSE",
@@ -42322,7 +42322,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_TRIPLE_AXEL",
       "MOVE_CURSE",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_CURSE",
@@ -42768,7 +42768,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 1,
@@ -42877,7 +42877,7 @@
       "MOVE_PSYBEAM",
       "MOVE_CONFUSE_RAY",
       "MOVE_THIEF",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHARGE_BEAM",
       "MOVE_FACADE",
       "MOVE_AERIAL_ACE",
@@ -42910,7 +42910,7 @@
       "MOVE_DRAIN_PUNCH",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
       "MOVE_POISON_JAB",
@@ -42956,7 +42956,7 @@
       "MOVE_FUTURE_SIGHT",
       "MOVE_EXPANDING_FORCE",
       "MOVE_THROAT_CHOP",
-      "MOVE_ALLURE_VOICE",
+      "MOVE_ALLURING_VOICE",
       "MOVE_UPPER_HAND"
     ],
     "EggMoves": [
@@ -43071,7 +43071,7 @@
       "MOVE_ICE_PUNCH",
       "MOVE_SLEEP_TALK",
       "MOVE_ROCK_BLAST",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_THUNDER_WAVE",
       "MOVE_STOMPING_TANTRUM",
       "MOVE_REST",
@@ -43655,7 +43655,7 @@
       "MOVE_DRAIN_PUNCH",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
@@ -43830,7 +43830,7 @@
       "MOVE_DRAIN_PUNCH",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
@@ -44020,7 +44020,7 @@
       "MOVE_DRAIN_PUNCH",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
@@ -44411,7 +44411,7 @@
       "MOVE_LUNGE",
       "MOVE_HEAT_CRASH",
       "MOVE_BURNING_JEALOUSY",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_METAL_SOUND",
       "MOVE_HARD_PRESS"
     ],
@@ -44732,7 +44732,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
@@ -44814,7 +44814,7 @@
       "MOVE_CHARM",
       "MOVE_PROTECT",
       "MOVE_WATER_PULSE",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
       "MOVE_SWIFT",
@@ -44826,7 +44826,7 @@
       "MOVE_U_TURN",
       "MOVE_SLEEP_TALK",
       "MOVE_WATERFALL",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_REST",
       "MOVE_SUBSTITUTE",
@@ -44845,7 +44845,7 @@
       "MOVE_FLIP_TURN",
       "MOVE_PSYCH_UP",
       "MOVE_WHIRLPOOL",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -44913,7 +44913,7 @@
       "MOVE_PROTECT",
       "MOVE_WATER_PULSE",
       "MOVE_PSYBEAM",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
       "MOVE_SWIFT",
@@ -44928,7 +44928,7 @@
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
       "MOVE_WATERFALL",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_REST",
       "MOVE_SKILL_SWAP",
@@ -44954,7 +44954,7 @@
       "MOVE_FLIP_TURN",
       "MOVE_PSYCH_UP",
       "MOVE_WHIRLPOOL",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -45120,7 +45120,7 @@
     "TMMoves": [
       "MOVE_TAKE_DOWN",
       "MOVE_PROTECT",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_FACADE",
       "MOVE_SWIFT",
@@ -45133,7 +45133,7 @@
       "MOVE_AIR_SLASH",
       "MOVE_SLEEP_TALK",
       "MOVE_SEED_BOMB",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_REST",
       "MOVE_SWORDS_DANCE",
@@ -45252,7 +45252,7 @@
       "MOVE_LIGHT_SCREEN",
       "MOVE_WATERFALL",
       "MOVE_DRAGON_CLAW",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
       "MOVE_POISON_JAB",
@@ -45324,7 +45324,7 @@
       "MOVE_PSYCH_UP",
       "MOVE_DOUBLE_EDGE",
       "MOVE_SUPERCELL_SLAM",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_FUTURE_SIGHT",
       "MOVE_METEOR_BEAM"
     ],
@@ -46884,7 +46884,7 @@
       "MOVE_SAND_TOMB",
       "MOVE_HIGH_HORSEPOWER",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_METAL_SOUND",
       "MOVE_CURSE"
     ],
@@ -47002,7 +47002,7 @@
       "MOVE_SAND_TOMB",
       "MOVE_HIGH_HORSEPOWER",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_THROAT_CHOP",
       "MOVE_METAL_SOUND",
       "MOVE_CURSE"
@@ -47783,7 +47783,7 @@
       "MOVE_SUNNY_DAY",
       "MOVE_SLEEP_TALK",
       "MOVE_SEED_BOMB",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_REST",
       "MOVE_TAUNT",
@@ -47914,7 +47914,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SEED_BOMB",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_REST",
       "MOVE_TAUNT",
@@ -48163,7 +48163,7 @@
       "MOVE_WEATHER_BALL",
       "MOVE_PSYCH_UP",
       "MOVE_PETAL_BLIZZARD",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_HEALING_WISH",
@@ -48392,7 +48392,7 @@
       "MOVE_SPITE",
       "MOVE_LASH_OUT",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_SKITTER_SMACK",
       "MOVE_CURSE"
     ],
@@ -48519,7 +48519,7 @@
       "MOVE_SCALE_SHOT",
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_SKITTER_SMACK",
       "MOVE_BREAKING_SWIPE",
       "MOVE_CURSE"
@@ -48661,7 +48661,7 @@
       "MOVE_SCALE_SHOT",
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_SKITTER_SMACK",
       "MOVE_THROAT_CHOP",
       "MOVE_BREAKING_SWIPE",
@@ -49382,7 +49382,7 @@
       "MOVE_U_TURN",
       "MOVE_SLEEP_TALK",
       "MOVE_SEED_BOMB",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
@@ -49401,7 +49401,7 @@
       "MOVE_UPROAR",
       "MOVE_ENDEAVOR",
       "MOVE_TRIPLE_AXEL",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_TAIL_WHIP",
@@ -49502,7 +49502,7 @@
       "MOVE_SEED_BOMB",
       "MOVE_LIGHT_SCREEN",
       "MOVE_ROCK_BLAST",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
@@ -49527,7 +49527,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_TRIPLE_AXEL",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_AQUA_TAIL",
@@ -50312,7 +50312,7 @@
     "TMMoves": [
       "MOVE_PROTECT",
       "MOVE_WATER_PULSE",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
@@ -50414,7 +50414,7 @@
       "MOVE_PROTECT",
       "MOVE_WATER_PULSE",
       "MOVE_ACROBATICS",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
@@ -50447,7 +50447,7 @@
       "MOVE_ENDEAVOR",
       "MOVE_WHIRLPOOL",
       "MOVE_FEATHER_DANCE",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_AQUA_JET",
@@ -51032,7 +51032,7 @@
       "MOVE_SCALE_SHOT",
       "MOVE_PAIN_SPLIT",
       "MOVE_WHIRLPOOL",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_BOUNCE",
@@ -53095,7 +53095,7 @@
       "MOVE_POLTERGEIST",
       "MOVE_PSYCH_UP",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_CURSE"
     ],
     "EggMoves": [],
@@ -53246,7 +53246,7 @@
       "MOVE_POLTERGEIST",
       "MOVE_PSYCH_UP",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_CURSE",
       "MOVE_HARD_PRESS"
     ],
@@ -55325,7 +55325,7 @@
       "MOVE_DUAL_WINGBEAT",
       "MOVE_SCALE_SHOT",
       "MOVE_DOUBLE_EDGE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER"
     ],
@@ -55585,7 +55585,7 @@
       "MOVE_SMACK_DOWN",
       "MOVE_WEATHER_BALL",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCORCHING_SAND"
+      "MOVE_SCORCHING_SANDS"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -55902,7 +55902,7 @@
       "MOVE_LOW_KICK",
       "MOVE_ACROBATICS",
       "MOVE_PSYBEAM",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_FACADE",
       "MOVE_SWIFT",
       "MOVE_LOW_SWEEP",
@@ -55921,7 +55921,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_DRAIN_PUNCH",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
@@ -55954,7 +55954,7 @@
       "MOVE_PSYCH_UP",
       "MOVE_TRIPLE_AXEL",
       "MOVE_COACHING",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -56716,7 +56716,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_GRASS_KNOT",
       "MOVE_REST",
@@ -56748,7 +56748,7 @@
       "MOVE_TERA_BLAST",
       "MOVE_BURNING_JEALOUSY",
       "MOVE_PSYCH_UP",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_FUTURE_SIGHT",
       "MOVE_EXPANDING_FORCE",
       "MOVE_PSYCHIC_NOISE"
@@ -57910,7 +57910,7 @@
     "TMMoves": [
       "MOVE_CHARM",
       "MOVE_PROTECT",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
@@ -57924,7 +57924,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SEED_BOMB",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_REST",
       "MOVE_SUBSTITUTE",
@@ -57941,7 +57941,7 @@
       "MOVE_TERA_BLAST",
       "MOVE_ENDEAVOR",
       "MOVE_PETAL_BLIZZARD",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_COPYCAT",
@@ -58013,7 +58013,7 @@
     "TMMoves": [
       "MOVE_CHARM",
       "MOVE_PROTECT",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
@@ -58027,7 +58027,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SEED_BOMB",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_GRASS_KNOT",
       "MOVE_REST",
@@ -58047,7 +58047,7 @@
       "MOVE_TERA_BLAST",
       "MOVE_ENDEAVOR",
       "MOVE_PETAL_BLIZZARD",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_COPYCAT",
@@ -58092,7 +58092,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 1,
@@ -58111,7 +58111,7 @@
     "TMMoves": [
       "MOVE_CHARM",
       "MOVE_PROTECT",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
@@ -58125,7 +58125,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SEED_BOMB",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_GRASS_KNOT",
       "MOVE_REST",
@@ -58148,7 +58148,7 @@
       "MOVE_MISTY_EXPLOSION",
       "MOVE_ENDEAVOR",
       "MOVE_PETAL_BLIZZARD",
-      "MOVE_ALLURE_VOICE",
+      "MOVE_ALLURING_VOICE",
       "MOVE_PSYCHIC_NOISE"
     ],
     "EggMoves": [
@@ -58437,7 +58437,7 @@
       },
       {
         "Level": 6,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 9,
@@ -58470,7 +58470,7 @@
       "MOVE_FAKE_TEARS",
       "MOVE_PROTECT",
       "MOVE_PSYBEAM",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHARGE_BEAM",
       "MOVE_FACADE",
       "MOVE_SWIFT",
@@ -58517,7 +58517,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 1,
@@ -58594,7 +58594,7 @@
       "MOVE_FAKE_TEARS",
       "MOVE_PROTECT",
       "MOVE_PSYBEAM",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_CHARGE_BEAM",
       "MOVE_FACADE",
@@ -58634,7 +58634,7 @@
       "MOVE_GRAVITY",
       "MOVE_PSYCH_UP",
       "MOVE_EXPANDING_FORCE",
-      "MOVE_ALLURE_VOICE",
+      "MOVE_ALLURING_VOICE",
       "MOVE_PSYCHIC_NOISE"
     ],
     "EggMoves": [
@@ -59437,7 +59437,7 @@
     "LevelMoves": [
       {
         "Level": 0,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 1,
@@ -59534,7 +59534,7 @@
       "MOVE_CHARM",
       "MOVE_FAKE_TEARS",
       "MOVE_PROTECT",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_FACADE",
       "MOVE_SWIFT",
@@ -59550,7 +59550,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_REST",
       "MOVE_SKILL_SWAP",
       "MOVE_SUBSTITUTE",
@@ -59572,7 +59572,7 @@
       "MOVE_PSYCH_UP",
       "MOVE_DOUBLE_EDGE",
       "MOVE_CURSE",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_CURSE",
@@ -59811,7 +59811,7 @@
       "MOVE_SEED_BOMB",
       "MOVE_ELECTRO_BALL",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
@@ -59914,7 +59914,7 @@
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
       "MOVE_ROCK_BLAST",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_STOMPING_TANTRUM",
       "MOVE_REST",
       "MOVE_ROCK_SLIDE",
@@ -60341,7 +60341,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
       "MOVE_SPIKES",
@@ -61226,7 +61226,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_REST",
       "MOVE_ROCK_SLIDE",
@@ -61258,7 +61258,7 @@
       "MOVE_MISTY_EXPLOSION",
       "MOVE_PSYCH_UP",
       "MOVE_ENDEAVOR",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_METEOR_BEAM"
     ],
     "EggMoves": [],
@@ -61535,7 +61535,7 @@
       "MOVE_WEATHER_BALL",
       "MOVE_DOUBLE_EDGE",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCORCHING_SAND"
+      "MOVE_SCORCHING_SANDS"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -62265,7 +62265,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_THROAT_CHOP"
     ],
     "EggMoves": [
@@ -62291,7 +62291,7 @@
       },
       {
         "Level": 6,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 9,
@@ -62340,7 +62340,7 @@
       "MOVE_PROTECT",
       "MOVE_WATER_PULSE",
       "MOVE_ACROBATICS",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
       "MOVE_SWIFT",
@@ -62393,7 +62393,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 9,
@@ -62442,7 +62442,7 @@
       "MOVE_PROTECT",
       "MOVE_WATER_PULSE",
       "MOVE_ACROBATICS",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
       "MOVE_SWIFT",
@@ -62500,7 +62500,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 9,
@@ -62549,7 +62549,7 @@
       "MOVE_PROTECT",
       "MOVE_WATER_PULSE",
       "MOVE_ACROBATICS",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
       "MOVE_SWIFT",
@@ -62564,7 +62564,7 @@
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
       "MOVE_WATERFALL",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_REST",
       "MOVE_SUBSTITUTE",
       "MOVE_LIQUIDATION",
@@ -62596,7 +62596,7 @@
       "MOVE_PSYCH_UP",
       "MOVE_WHIRLPOOL",
       "MOVE_TRIPLE_AXEL",
-      "MOVE_ALLURE_VOICE",
+      "MOVE_ALLURING_VOICE",
       "MOVE_PSYCHIC_NOISE"
     ],
     "EggMoves": [
@@ -63801,7 +63801,7 @@
       "MOVE_DUAL_WINGBEAT",
       "MOVE_PSYCH_UP",
       "MOVE_FEATHER_DANCE",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_ATTRACT",
@@ -63848,7 +63848,7 @@
       },
       {
         "Level": 42,
-        "Move": "MOVE_DAZZLE_GLEAM"
+        "Move": "MOVE_DAZZLING_GLEAM"
       },
       {
         "Level": 48,
@@ -63879,7 +63879,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_REST",
       "MOVE_IMPRISON",
@@ -63948,7 +63948,7 @@
       },
       {
         "Level": 48,
-        "Move": "MOVE_DAZZLE_GLEAM"
+        "Move": "MOVE_DAZZLING_GLEAM"
       },
       {
         "Level": 56,
@@ -63982,7 +63982,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_REST",
       "MOVE_IMPRISON",
@@ -64008,7 +64008,7 @@
       "MOVE_DUAL_WINGBEAT",
       "MOVE_PSYCH_UP",
       "MOVE_SKITTER_SMACK",
-      "MOVE_ALLURE_VOICE",
+      "MOVE_ALLURING_VOICE",
       "MOVE_PSYCHIC_NOISE"
     ],
     "EggMoves": [
@@ -65436,7 +65436,7 @@
       "MOVE_SEED_BOMB",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_REST",
       "MOVE_SUBSTITUTE",
@@ -65525,7 +65525,7 @@
       "MOVE_SEED_BOMB",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_REST",
       "MOVE_SUBSTITUTE",
@@ -65635,7 +65635,7 @@
       "MOVE_SEED_BOMB",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_REST",
       "MOVE_TAUNT",
@@ -65745,7 +65745,7 @@
       "MOVE_PROTECT",
       "MOVE_ACROBATICS",
       "MOVE_THIEF",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_FACADE",
       "MOVE_SWIFT",
@@ -65760,7 +65760,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SEED_BOMB",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_REST",
       "MOVE_TAUNT",
@@ -65785,7 +65785,7 @@
       "MOVE_PAIN_SPLIT",
       "MOVE_PSYCH_UP",
       "MOVE_PETAL_BLIZZARD",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_WORRY_SEED",
@@ -66157,7 +66157,7 @@
       "MOVE_GRAVITY",
       "MOVE_POLTERGEIST",
       "MOVE_PAIN_SPLIT",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_CURSE"
     ],
     "EggMoves": [
@@ -66275,7 +66275,7 @@
       "MOVE_GRAVITY",
       "MOVE_POLTERGEIST",
       "MOVE_PAIN_SPLIT",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_CURSE"
     ],
     "EggMoves": [
@@ -66391,7 +66391,7 @@
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
       "MOVE_ROCK_BLAST",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_REST",
       "MOVE_ROCK_SLIDE",
       "MOVE_IRON_HEAD",
@@ -66411,7 +66411,7 @@
       "MOVE_GYRO_BALL",
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_METEOR_BEAM"
     ],
     "EggMoves": [],
@@ -66627,7 +66627,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_DRAIN_PUNCH",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
       "MOVE_TAUNT",
@@ -67442,7 +67442,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_REST",
       "MOVE_FLY",
       "MOVE_SUBSTITUTE",
@@ -67734,7 +67734,7 @@
       "MOVE_PROTECT",
       "MOVE_PSYBEAM",
       "MOVE_CONFUSE_RAY",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHARGE_BEAM",
       "MOVE_FACADE",
       "MOVE_SWIFT",
@@ -67753,7 +67753,7 @@
       "MOVE_ELECTRO_BALL",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
@@ -68490,7 +68490,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_TEMPER_FLARE",
       "MOVE_COACHING",
-      "MOVE_SCORCHING_SAND"
+      "MOVE_SCORCHING_SANDS"
     ],
     "EggMoves": [
       "MOVE_HI_JUMP_KICK",
@@ -69745,7 +69745,7 @@
       "MOVE_SCALD",
       "MOVE_HEAT_CRASH",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_METEOR_BEAM",
       "MOVE_CURSE"
     ],
@@ -69860,7 +69860,7 @@
       "MOVE_HEAT_CRASH",
       "MOVE_MUD_SLAP",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_METEOR_BEAM",
       "MOVE_CURSE"
     ],
@@ -70220,7 +70220,7 @@
       "MOVE_TERA_BLAST",
       "MOVE_SAND_TOMB",
       "MOVE_SCALE_SHOT",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_SKITTER_SMACK"
     ],
     "EggMoves": [
@@ -70323,7 +70323,7 @@
       "MOVE_HIGH_HORSEPOWER",
       "MOVE_SCALE_SHOT",
       "MOVE_ENDEAVOR",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_SKITTER_SMACK"
     ],
     "EggMoves": [
@@ -71064,7 +71064,7 @@
       },
       {
         "Level": 10,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 15,
@@ -71080,7 +71080,7 @@
       },
       {
         "Level": 30,
-        "Move": "MOVE_DAZZLE_GLEAM"
+        "Move": "MOVE_DAZZLING_GLEAM"
       },
       {
         "Level": 35,
@@ -71100,7 +71100,7 @@
       "MOVE_CHARM",
       "MOVE_PROTECT",
       "MOVE_PSYBEAM",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_FACADE",
       "MOVE_SWIFT",
       "MOVE_MAGICAL_LEAF",
@@ -71111,7 +71111,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
@@ -71154,7 +71154,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 1,
@@ -71178,7 +71178,7 @@
       },
       {
         "Level": 30,
-        "Move": "MOVE_DAZZLE_GLEAM"
+        "Move": "MOVE_DAZZLING_GLEAM"
       },
       {
         "Level": 37,
@@ -71198,7 +71198,7 @@
       "MOVE_CHARM",
       "MOVE_PROTECT",
       "MOVE_PSYBEAM",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_FACADE",
       "MOVE_SWIFT",
       "MOVE_MAGICAL_LEAF",
@@ -71209,7 +71209,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
@@ -71252,7 +71252,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 1,
@@ -71280,7 +71280,7 @@
       },
       {
         "Level": 30,
-        "Move": "MOVE_DAZZLE_GLEAM"
+        "Move": "MOVE_DAZZLING_GLEAM"
       },
       {
         "Level": 37,
@@ -71305,7 +71305,7 @@
       "MOVE_AGILITY",
       "MOVE_PROTECT",
       "MOVE_PSYBEAM",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_FACADE",
       "MOVE_SWIFT",
       "MOVE_MAGICAL_LEAF",
@@ -71317,7 +71317,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
@@ -71430,7 +71430,7 @@
       "MOVE_DRAIN_PUNCH",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
@@ -71531,7 +71531,7 @@
       "MOVE_DRAIN_PUNCH",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
@@ -71652,7 +71652,7 @@
       "MOVE_DRAIN_PUNCH",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_THUNDER_WAVE",
       "MOVE_STOMPING_TANTRUM",
@@ -71879,7 +71879,7 @@
       },
       {
         "Level": 35,
-        "Move": "MOVE_DAZZLE_GLEAM"
+        "Move": "MOVE_DAZZLING_GLEAM"
       },
       {
         "Level": 40,
@@ -71903,7 +71903,7 @@
       "MOVE_STORED_POWER",
       "MOVE_ENDURE",
       "MOVE_SLEEP_TALK",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_REST",
       "MOVE_SUBSTITUTE",
       "MOVE_HELPING_HAND",
@@ -71956,7 +71956,7 @@
       },
       {
         "Level": 35,
-        "Move": "MOVE_DAZZLE_GLEAM"
+        "Move": "MOVE_DAZZLING_GLEAM"
       },
       {
         "Level": 40,
@@ -71976,7 +71976,7 @@
       "MOVE_CHARM",
       "MOVE_FAKE_TEARS",
       "MOVE_PROTECT",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_FACADE",
       "MOVE_MAGICAL_LEAF",
       "MOVE_DRAINING_KISS",
@@ -71987,7 +71987,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_DRAIN_PUNCH",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_REST",
       "MOVE_IMPRISON",
@@ -72008,7 +72008,7 @@
       "MOVE_PAIN_SPLIT",
       "MOVE_PSYCH_UP",
       "MOVE_ENDEAVOR",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_BABY_DOLL_EYES",
@@ -72355,7 +72355,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_REST",
       "MOVE_IMPRISON",
       "MOVE_LEECH_LIFE",
@@ -72609,7 +72609,7 @@
       },
       {
         "Level": 10,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 15,
@@ -72653,7 +72653,7 @@
       "MOVE_TAKE_DOWN",
       "MOVE_PROTECT",
       "MOVE_PSYBEAM",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_FACADE",
       "MOVE_SWIFT",
       "MOVE_MAGICAL_LEAF",
@@ -72665,7 +72665,7 @@
       "MOVE_BODY_SLAM",
       "MOVE_SLEEP_TALK",
       "MOVE_DRAIN_PUNCH",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_REST",
       "MOVE_IMPRISON",
@@ -73571,7 +73571,7 @@
       "MOVE_AIR_SLASH",
       "MOVE_BODY_SLAM",
       "MOVE_SLEEP_TALK",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_POISON_JAB",
       "MOVE_REST",
       "MOVE_SWORDS_DANCE",
@@ -73678,7 +73678,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_REST",
       "MOVE_BODY_PRESS",
       "MOVE_IMPRISON",
@@ -75552,7 +75552,7 @@
       },
       {
         "Level": 40,
-        "Move": "MOVE_DAZZLE_GLEAM"
+        "Move": "MOVE_DAZZLING_GLEAM"
       },
       {
         "Level": 45,
@@ -75589,7 +75589,7 @@
       "MOVE_AGILITY",
       "MOVE_SCARY_FACE",
       "MOVE_PROTECT",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_FACADE",
       "MOVE_DRAINING_KISS",
       "MOVE_ENDURE",
@@ -75598,7 +75598,7 @@
       "MOVE_ZEN_HEADBUTT",
       "MOVE_BODY_SLAM",
       "MOVE_SLEEP_TALK",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_REST",
       "MOVE_TAUNT",
@@ -75624,7 +75624,7 @@
       "MOVE_WEATHER_BALL",
       "MOVE_MISTY_EXPLOSION",
       "MOVE_PSYCH_UP",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -75693,7 +75693,7 @@
       "MOVE_MUD_SLAP",
       "MOVE_PROTECT",
       "MOVE_ACROBATICS",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_FACADE",
       "MOVE_SWIFT",
@@ -75799,7 +75799,7 @@
       "MOVE_PROTECT",
       "MOVE_LOW_KICK",
       "MOVE_ACROBATICS",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_FACADE",
       "MOVE_AERIAL_ACE",
@@ -75937,7 +75937,7 @@
       "MOVE_LOW_KICK",
       "MOVE_ACROBATICS",
       "MOVE_THIEF",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
@@ -76057,7 +76057,7 @@
       "MOVE_PROTECT",
       "MOVE_FIRE_FANG",
       "MOVE_THUNDER_FANG",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_FIRE_SPIN",
       "MOVE_FACADE",
       "MOVE_SNARL",
@@ -76163,7 +76163,7 @@
       "MOVE_PROTECT",
       "MOVE_FIRE_FANG",
       "MOVE_THUNDER_FANG",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_FIRE_SPIN",
       "MOVE_FACADE",
       "MOVE_SNARL",
@@ -76297,7 +76297,7 @@
       "MOVE_PROTECT",
       "MOVE_FIRE_FANG",
       "MOVE_THUNDER_FANG",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_FIRE_SPIN",
       "MOVE_FACADE",
       "MOVE_HEX",
@@ -76340,9 +76340,9 @@
       "MOVE_HEAT_CRASH",
       "MOVE_POLTERGEIST",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_CURSE",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_BELCH",
@@ -76409,7 +76409,7 @@
       "MOVE_PROTECT",
       "MOVE_LOW_KICK",
       "MOVE_ACROBATICS",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
       "MOVE_AERIAL_ACE",
@@ -76512,7 +76512,7 @@
       "MOVE_WATER_PULSE",
       "MOVE_LOW_KICK",
       "MOVE_ACROBATICS",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
       "MOVE_AERIAL_ACE",
@@ -76642,7 +76642,7 @@
       "MOVE_WATER_PULSE",
       "MOVE_LOW_KICK",
       "MOVE_ACROBATICS",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
       "MOVE_AERIAL_ACE",
@@ -76709,7 +76709,7 @@
       },
       {
         "Level": 5,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 8,
@@ -76758,7 +76758,7 @@
       "MOVE_MUD_SLAP",
       "MOVE_PROTECT",
       "MOVE_THIEF",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
@@ -76803,7 +76803,7 @@
       "MOVE_MUD_SLAP",
       "MOVE_PROTECT",
       "MOVE_THIEF",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
@@ -77969,7 +77969,7 @@
       "MOVE_PSYCHIC_FANGS",
       "MOVE_BODY_SLAM",
       "MOVE_SLEEP_TALK",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_STOMPING_TANTRUM",
       "MOVE_REST",
       "MOVE_SUBSTITUTE",
@@ -77983,7 +77983,7 @@
       "MOVE_PSYCH_UP",
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_COPYCAT",
@@ -78080,7 +78080,7 @@
       "MOVE_PSYCHIC_FANGS",
       "MOVE_BODY_SLAM",
       "MOVE_SLEEP_TALK",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_STOMPING_TANTRUM",
       "MOVE_REST",
       "MOVE_BODY_PRESS",
@@ -78097,7 +78097,7 @@
       "MOVE_PSYCH_UP",
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_COPYCAT",
@@ -78375,7 +78375,7 @@
       "MOVE_SEED_BOMB",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_GRASS_KNOT",
       "MOVE_REST",
@@ -78397,7 +78397,7 @@
       "MOVE_WEATHER_BALL",
       "MOVE_PSYCH_UP",
       "MOVE_PETAL_BLIZZARD",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_MEMENTO",
@@ -79062,7 +79062,7 @@
       "MOVE_SPITE",
       "MOVE_WEATHER_BALL",
       "MOVE_PSYCH_UP",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_EXPANDING_FORCE",
       "MOVE_METEOR_BEAM"
     ],
@@ -80401,7 +80401,7 @@
       "MOVE_SEED_BOMB",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_REST",
       "MOVE_TAUNT",
@@ -80532,7 +80532,7 @@
       "MOVE_SEED_BOMB",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_REST",
       "MOVE_TAUNT",
@@ -81091,7 +81091,7 @@
       "MOVE_ELECTRO_BALL",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_REST",
       "MOVE_IMPRISON",
       "MOVE_LEECH_LIFE",
@@ -81153,7 +81153,7 @@
       },
       {
         "Level": 11,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 15,
@@ -81185,7 +81185,7 @@
       "MOVE_PSYBEAM",
       "MOVE_CONFUSE_RAY",
       "MOVE_THIEF",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_POUNCE",
       "MOVE_FACADE",
       "MOVE_SWIFT",
@@ -81254,7 +81254,7 @@
       },
       {
         "Level": 11,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 15,
@@ -81278,7 +81278,7 @@
       },
       {
         "Level": 43,
-        "Move": "MOVE_DAZZLE_GLEAM"
+        "Move": "MOVE_DAZZLING_GLEAM"
       },
       {
         "Level": 49,
@@ -81299,7 +81299,7 @@
       "MOVE_PSYBEAM",
       "MOVE_CONFUSE_RAY",
       "MOVE_THIEF",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_POUNCE",
       "MOVE_FACADE",
       "MOVE_AERIAL_ACE",
@@ -81320,7 +81320,7 @@
       "MOVE_SEED_BOMB",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_REST",
       "MOVE_FLASH_CANNON",
       "MOVE_SKILL_SWAP",
@@ -82067,7 +82067,7 @@
       "MOVE_PROTECT",
       "MOVE_WATER_PULSE",
       "MOVE_ACROBATICS",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
       "MOVE_SWIFT",
@@ -82181,7 +82181,7 @@
       "MOVE_PROTECT",
       "MOVE_WATER_PULSE",
       "MOVE_ACROBATICS",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
       "MOVE_SWIFT",
@@ -82770,7 +82770,7 @@
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
       "MOVE_ROCK_BLAST",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_REST",
       "MOVE_ROCK_SLIDE",
       "MOVE_SPIKES",
@@ -82884,7 +82884,7 @@
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
       "MOVE_ROCK_BLAST",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_REST",
       "MOVE_ROCK_SLIDE",
       "MOVE_SPIKES",
@@ -84174,7 +84174,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
       "MOVE_STOMPING_TANTRUM",
@@ -84748,7 +84748,7 @@
       "MOVE_DRAIN_PUNCH",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
@@ -84941,7 +84941,7 @@
       },
       {
         "Level": 35,
-        "Move": "MOVE_DAZZLE_GLEAM"
+        "Move": "MOVE_DAZZLING_GLEAM"
       },
       {
         "Level": 42,
@@ -84985,7 +84985,7 @@
       "MOVE_PROTECT",
       "MOVE_PSYBEAM",
       "MOVE_CONFUSE_RAY",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHARGE_BEAM",
       "MOVE_HEX",
       "MOVE_SWIFT",
@@ -84998,7 +84998,7 @@
       "MOVE_SUNNY_DAY",
       "MOVE_PSYSHOCK",
       "MOVE_SLEEP_TALK",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
       "MOVE_TAUNT",
@@ -85278,7 +85278,7 @@
       "MOVE_HIGH_HORSEPOWER",
       "MOVE_SUPERCELL_SLAM",
       "MOVE_ELECTROWEB",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_METAL_SOUND"
     ],
     "EggMoves": [],
@@ -85865,7 +85865,7 @@
       "MOVE_AIR_SLASH",
       "MOVE_SLEEP_TALK",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_REST",
       "MOVE_TOXIC_SPIKES",
       "MOVE_FLASH_CANNON",
@@ -86464,7 +86464,7 @@
       "MOVE_ELECTRO_BALL",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
       "MOVE_FLASH_CANNON",
@@ -87160,7 +87160,7 @@
       },
       {
         "Level": 28,
-        "Move": "MOVE_DAZZLE_GLEAM"
+        "Move": "MOVE_DAZZLING_GLEAM"
       },
       {
         "Level": 35,
@@ -87233,7 +87233,7 @@
       "MOVE_DRAIN_PUNCH",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_GRASS_KNOT",
       "MOVE_THUNDER_WAVE",
@@ -87506,7 +87506,7 @@
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
       "MOVE_DRAGON_CLAW",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_THUNDER_WAVE",
       "MOVE_REST",
       "MOVE_TAUNT",
@@ -88336,7 +88336,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 8,
@@ -88388,7 +88388,7 @@
       "MOVE_ACID_SPRAY",
       "MOVE_ACROBATICS",
       "MOVE_THIEF",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_FACADE",
       "MOVE_POISON_TAIL",
       "MOVE_AERIAL_ACE",
@@ -88403,7 +88403,7 @@
       "MOVE_AIR_SLASH",
       "MOVE_SLEEP_TALK",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_POISON_JAB",
       "MOVE_REST",
       "MOVE_TAUNT",
@@ -88430,7 +88430,7 @@
       "MOVE_DUAL_WINGBEAT",
       "MOVE_LASH_OUT",
       "MOVE_PSYCH_UP",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [],
     "TutorMoves": []
@@ -88951,7 +88951,7 @@
       "MOVE_SCALE_SHOT",
       "MOVE_DOUBLE_EDGE",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_BREAKING_SWIPE",
       "MOVE_DRAGON_CHEER"
     ],
@@ -89381,7 +89381,7 @@
       "MOVE_ZEN_HEADBUTT",
       "MOVE_BODY_SLAM",
       "MOVE_SLEEP_TALK",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_REST",
       "MOVE_ROCK_SLIDE",
       "MOVE_BODY_PRESS",
@@ -89420,7 +89420,7 @@
       "MOVE_WEATHER_BALL",
       "MOVE_DOUBLE_EDGE",
       "MOVE_SUPERCELL_SLAM",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_METEOR_BEAM"
     ],
     "EggMoves": [],
@@ -89679,13 +89679,13 @@
       "MOVE_ENDEAVOR",
       "MOVE_ELECTROWEB",
       "MOVE_EXPANDING_FORCE",
-      "MOVE_ALLURE_VOICE",
+      "MOVE_ALLURING_VOICE",
       "MOVE_PSYCHIC_NOISE",
       "MOVE_UPPER_HAND"
     ],
     "EggMoves": [
       "MOVE_CHARGE",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_FAKE_OUT",
       "MOVE_FLAIL",
       "MOVE_PRESENT",
@@ -90070,7 +90070,7 @@
       "MOVE_AGILITY",
       "MOVE_PROTECT",
       "MOVE_CONFUSE_RAY",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
       "MOVE_HEX",
@@ -90086,7 +90086,7 @@
       "MOVE_FOUL_PLAY",
       "MOVE_BODY_SLAM",
       "MOVE_SLEEP_TALK",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_REST",
       "MOVE_IMPRISON",
       "MOVE_DARK_PULSE",
@@ -90122,7 +90122,7 @@
     "LevelMoves": [
       {
         "Level": 0,
-        "Move": "MOVE_DAZZLE_GLEAM"
+        "Move": "MOVE_DAZZLING_GLEAM"
       },
       {
         "Level": 1,
@@ -90210,7 +90210,7 @@
       "MOVE_AGILITY",
       "MOVE_PROTECT",
       "MOVE_CONFUSE_RAY",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
       "MOVE_HEX",
@@ -90228,7 +90228,7 @@
       "MOVE_FOUL_PLAY",
       "MOVE_BODY_SLAM",
       "MOVE_SLEEP_TALK",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_REST",
       "MOVE_IMPRISON",
       "MOVE_DARK_PULSE",
@@ -90361,7 +90361,7 @@
       "MOVE_TERA_BLAST",
       "MOVE_SAND_TOMB",
       "MOVE_SMACK_DOWN",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_METAL_SOUND"
     ],
     "EggMoves": [
@@ -90490,7 +90490,7 @@
       "MOVE_DOUBLE_EDGE",
       "MOVE_ENDEAVOR",
       "MOVE_SLUDGE_WAVE",
-      "MOVE_SCORCHING_SAND",
+      "MOVE_SCORCHING_SANDS",
       "MOVE_THROAT_CHOP",
       "MOVE_METAL_SOUND",
       "MOVE_CURSE"
@@ -92140,7 +92140,7 @@
       "MOVE_RAIN_DANCE",
       "MOVE_BODY_SLAM",
       "MOVE_SLEEP_TALK",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_REST",
       "MOVE_TAUNT",
       "MOVE_TOXIC_SPIKES",
@@ -92867,7 +92867,7 @@
       "MOVE_WILD_CHARGE",
       "MOVE_DOUBLE_EDGE",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SAND"
+      "MOVE_SCORCHING_SANDS"
     ],
     "EggMoves": [
       "MOVE_COVET",
@@ -93013,7 +93013,7 @@
       "MOVE_HEAT_CRASH",
       "MOVE_DOUBLE_EDGE",
       "MOVE_TEMPER_FLARE",
-      "MOVE_SCORCHING_SAND"
+      "MOVE_SCORCHING_SANDS"
     ],
     "EggMoves": [
       "MOVE_COVET",
@@ -94426,7 +94426,7 @@
       "MOVE_AIR_SLASH",
       "MOVE_BODY_SLAM",
       "MOVE_SLEEP_TALK",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_REST",
       "MOVE_ROCK_SLIDE",
       "MOVE_FLY",
@@ -96417,7 +96417,7 @@
     "TMMoves": [
       "MOVE_TAKE_DOWN",
       "MOVE_PROTECT",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_FACADE",
       "MOVE_SWIFT",
@@ -96430,7 +96430,7 @@
       "MOVE_AIR_SLASH",
       "MOVE_SLEEP_TALK",
       "MOVE_SEED_BOMB",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_GRASS_KNOT",
       "MOVE_REST",
       "MOVE_SWORDS_DANCE",
@@ -96772,7 +96772,7 @@
     "TMMoves": [
       "MOVE_CHARM",
       "MOVE_PROTECT",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_CHILLING_WATER",
       "MOVE_FACADE",
@@ -96786,7 +96786,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SEED_BOMB",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_GRASS_KNOT",
       "MOVE_REST",
@@ -96820,7 +96820,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 1,
@@ -96897,7 +96897,7 @@
       "MOVE_FAKE_TEARS",
       "MOVE_PROTECT",
       "MOVE_PSYBEAM",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_TRAILBLAZE",
       "MOVE_CHARGE_BEAM",
       "MOVE_FACADE",
@@ -96937,7 +96937,7 @@
       "MOVE_PSYCH_UP",
       "MOVE_FUTURE_SIGHT",
       "MOVE_EXPANDING_FORCE",
-      "MOVE_ALLURE_VOICE",
+      "MOVE_ALLURING_VOICE",
       "MOVE_PSYCHIC_NOISE"
     ],
     "EggMoves": [
@@ -97547,7 +97547,7 @@
       },
       {
         "Level": 10,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 15,
@@ -97588,7 +97588,7 @@
       "MOVE_CHARM",
       "MOVE_PROTECT",
       "MOVE_PSYBEAM",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_FACADE",
       "MOVE_SWIFT",
       "MOVE_MAGICAL_LEAF",
@@ -97602,7 +97602,7 @@
       "MOVE_DRAIN_PUNCH",
       "MOVE_REFLECT",
       "MOVE_LIGHT_SCREEN",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_METRONOME",
       "MOVE_REST",
       "MOVE_IMPRISON",
@@ -97621,7 +97621,7 @@
       "MOVE_TERA_BLAST",
       "MOVE_TRICK_ROOM",
       "MOVE_PSYCH_UP",
-      "MOVE_ALLURE_VOICE"
+      "MOVE_ALLURING_VOICE"
     ],
     "EggMoves": [
       "MOVE_FAKE_OUT",
@@ -98325,7 +98325,7 @@
       },
       {
         "Level": 5,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 8,
@@ -98393,7 +98393,7 @@
       },
       {
         "Level": 3,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 6,
@@ -98453,7 +98453,7 @@
       "MOVE_CHILLING_WATER",
       "MOVE_CURSE",
       "MOVE_DIG",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_DOUBLE_EDGE",
       "MOVE_EARTH_POWER",
       "MOVE_ENDEAVOR",

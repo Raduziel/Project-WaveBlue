@@ -14,6 +14,7 @@
 #include "field_player_avatar.h"
 #include "field_poison.h"
 #include "field_specials.h"
+#include "follower_npc.h"
 #include "item_menu.h"
 #include "link.h"
 #include "metatile_behavior.h"
@@ -314,7 +315,7 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
         ShowStartMenu();
         return TRUE;
     }
-    
+
     if (input->tookStep && TryFindHiddenPokemon())
         return TRUE;
 
@@ -323,7 +324,7 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
         gFieldInputRecord.pressedSelectButton = TRUE;
         return TRUE;
     }
-    
+
     if (input->pressedRButton && TryStartDexNavSearch())
         return TRUE;
 
@@ -340,36 +341,41 @@ int ProcessPlayerFieldInput(struct FieldInput *input)
 
 void FieldInput_HandleCancelSignpost(struct FieldInput * input)
 {
-    if (ScriptContext_IsEnabled() == TRUE)
+    if (!ScriptContext_IsEnabled())
+        return;
+
+    if (gWalkAwayFromSignInhibitTimer != 0)
     {
-        if (gWalkAwayFromSignInhibitTimer != 0)
-            gWalkAwayFromSignInhibitTimer--;
-        else if (CanWalkAwayToCancelMsgBox() == TRUE)
-        {
-            if (input->dpadDirection != 0 && GetPlayerFacingDirection() != input->dpadDirection)
-            {
-                if (IsMsgBoxWalkawayDisabled() == TRUE)
-                    return;
-                if (input->dpadDirection == DIR_NORTH)
-                    RegisterQuestLogInput(QL_INPUT_UP);
-                else if (input->dpadDirection == DIR_SOUTH)
-                    RegisterQuestLogInput(QL_INPUT_DOWN);
-                else if (input->dpadDirection == DIR_WEST)
-                    RegisterQuestLogInput(QL_INPUT_LEFT);
-                else if (input->dpadDirection == DIR_EAST)
-                    RegisterQuestLogInput(QL_INPUT_RIGHT);
-                ScriptContext_SetupScript(EventScript_CancelMessageBox);
-                LockPlayerFieldControls();
-            }
-            else if (input->pressedStartButton)
-            {
-                ScriptContext_SetupScript(EventScript_CancelMessageBox);
-                LockPlayerFieldControls();
-                if (!FuncIsActiveTask(Task_QuestLogPlayback_OpenStartMenu))
-                    CreateTask(Task_QuestLogPlayback_OpenStartMenu, 8);
-            }
-        }
+        gWalkAwayFromSignInhibitTimer--;
+        return;
     }
+
+    if (!CanWalkAwayToCancelMsgBox())
+        return;
+
+    if (input->dpadDirection != 0 && GetPlayerFacingDirection() != input->dpadDirection)
+    {
+        if (IsMsgBoxWalkawayDisabled() == TRUE)
+            return;
+        if (input->dpadDirection == DIR_NORTH)
+            RegisterQuestLogInput(QL_INPUT_UP);
+        else if (input->dpadDirection == DIR_SOUTH)
+            RegisterQuestLogInput(QL_INPUT_DOWN);
+        else if (input->dpadDirection == DIR_WEST)
+            RegisterQuestLogInput(QL_INPUT_LEFT);
+        else if (input->dpadDirection == DIR_EAST)
+            RegisterQuestLogInput(QL_INPUT_RIGHT);
+        ScriptContext_SetupScript(EventScript_CancelMessageBox);
+        LockPlayerFieldControls();
+    }
+    else if (input->pressedStartButton)
+    {
+        ScriptContext_SetupScript(EventScript_CancelMessageBox);
+        LockPlayerFieldControls();
+        if (!FuncIsActiveTask(Task_QuestLogPlayback_OpenStartMenu))
+            CreateTask(Task_QuestLogPlayback_OpenStartMenu, 8);
+    }
+
 }
 
 static void Task_QuestLogPlayback_OpenStartMenu(u8 taskId)
@@ -526,7 +532,10 @@ static const u8 *GetInteractedObjectEventScript(struct MapPosition *position, u8
     gSpecialVar_LastTalked = gObjectEvents[objectEventId].localId;
     gSpecialVar_Facing = direction;
 
-    script = GetObjectEventScriptPointerByObjectEventId(objectEventId);
+    if (PlayerHasFollowerNPC() && objectEventId == GetFollowerNPCObjectId())
+        script = GetFollowerNPCScriptPointer();
+    else
+        script = GetObjectEventScriptPointerByObjectEventId(objectEventId);
 
     script = GetRamScript(gSpecialVar_LastTalked, script);
     return script;
@@ -675,10 +684,13 @@ static const u8 *GetInteractedWaterScript(struct MapPosition *unused1, u8 metati
 {
     if (MetatileBehavior_IsFastWater(metatileBehavior) == TRUE && !TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING))
         return EventScript_CurrentTooFast;
-    if (!TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING) && IsPlayerFacingSurfableFishableWater() == TRUE)
+    if (!TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING)
+     && IsPlayerFacingSurfableFishableWater() == TRUE
+     && CheckFollowerNPCFlag(FOLLOWER_NPC_FLAG_CAN_SURF))
         return EventScript_UseSurf;
 
-    if (MetatileBehavior_IsWaterfall(metatileBehavior) == TRUE)
+    if (MetatileBehavior_IsWaterfall(metatileBehavior) == TRUE
+     && CheckFollowerNPCFlag(FOLLOWER_NPC_FLAG_CAN_WATERFALL))
     {
         if (IsPlayerSurfingNorth() == TRUE)
             return EventScript_Waterfall;
@@ -715,7 +727,11 @@ static bool8 TryStartCoordEventScript(struct MapPosition *position)
 
 static bool8 TryStartMiscWalkingScripts(u16 metatileBehavior)
 {
-    // Dummied
+    if (MetatileBehavior_IsBattlePyramidWarp(metatileBehavior))
+    {
+        ScriptContext_SetupScript(BattlePyramid_WarpToNextFloor);
+        return TRUE;
+    }
     return FALSE;
 }
 

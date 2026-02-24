@@ -751,12 +751,19 @@
 #define TRAINER_PROF_OAK_CHARMANDER              743
 #define TRAINER_PROF_OAK_SQUIRTLE                744
 #define TRAINER_PROF_OAK_BULBASAUR               745
+#define TRAINER_ANABEL                           746
+#define TRAINER_TUCKER                           747
+#define TRAINER_SPENSER                          748
+#define TRAINER_GRETA                            749
+#define TRAINER_NOLAND                           750
+#define TRAINER_LUCY                             751
+#define TRAINER_BRANDON                          752
 
-// NOTE: Because each Trainer uses a flag to determine when they are defeated, there is 
+// NOTE: Because each Trainer uses a flag to determine when they are defeated, there is
 //       only space for 25 additional trainers before trainer flag space overflows.
 //       MAX_TRAINERS_COUNT can be increased but will take up additional saveblock space
 
-#define TRAINERS_COUNT                           746
+#define TRAINERS_COUNT                           753
 #define MAX_TRAINERS_COUNT                       768
 #define TRAINER_PARTNER(partner)           (MAX_TRAINERS_COUNT + partner)
 

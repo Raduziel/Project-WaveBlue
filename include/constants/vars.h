@@ -200,12 +200,12 @@
 
 //Unused
 
-#define VAR_0x4091                 0x4091
-#define VAR_0x4092                 0x4092
-#define VAR_0x4093                 0x4093
-#define VAR_0x4094                 0x4094
-#define VAR_0x4095                 0x4095
-#define VAR_0x4096                 0x4096
+#define VAR_BRAVO_TRAINER_BATTLE_TOWER_ON   0x4091
+#define VAR_FRONTIER_MANIAC_FACILITY        0x4092
+#define VAR_FRONTIER_GAMBLER_CHALLENGE      0x4093
+#define VAR_FRONTIER_GAMBLER_STATE          0x4094
+#define VAR_FRONTIER_GAMBLER_SET_CHALLENGE  0x4095
+#define VAR_FRONTIER_GAMBLER_AMOUNT_BET     0x4096
 #define VAR_0x4097                 0x4097
 #define VAR_0x4098                 0x4098
 #define VAR_0x4099                 0x4099
@@ -260,10 +260,10 @@
 #define VAR_0x40CB                 0x40CB
 #define VAR_0x40CC                 0x40CC
 #define VAR_0x40CD                 0x40CD
-#define VAR_0x40CE                 0x40CE
+#define VAR_FRONTIER_BATTLE_MODE   0x40CE
 #define VAR_FRONTIER_FACILITY      0x40CF
-#define VAR_0x40D0                 0x40D0
-#define VAR_0x40D1                 0x40D1
+#define VAR_HAS_ENTERED_BATTLE_FRONTIER 0x40D0
+#define VAR_SCOTT_STATE            0x40D1
 #define VAR_0x40D2                 0x40D2
 #define VAR_0x40D3                 0x40D3
 #define VAR_0x40D4                 0x40D4
@@ -340,16 +340,27 @@
 
 #define SPECIAL_VARS_END           0x8014
 
+// Temp var aliases
+#define VAR_TEMP_CHALLENGE_STATUS  VAR_TEMP_0
+
+#define VAR_TEMP_MIXED_RECORDS         VAR_TEMP_0
+#define VAR_TEMP_RECORD_MIX_GIFT_ITEM  VAR_TEMP_1
+
+#define VAR_TEMP_PLAYING_PYRAMID_MUSIC  VAR_TEMP_E
+
+#define VAR_TEMP_FRONTIER_TUTOR_SELECTION  VAR_TEMP_D
+#define VAR_TEMP_FRONTIER_TUTOR_ID         VAR_TEMP_E
+
 #if TESTING
-#define TESTING_VARS_START             0x9000
-#define TESTING_VAR_DIFFICULTY         (TESTING_VARS_START + 0x0)
-#define TESTING_VAR_UNUSED_1           (TESTING_VARS_START + 0x1)
-#define TESTING_VAR_UNUSED_2           (TESTING_VARS_START + 0x2)
-#define TESTING_VAR_UNUSED_3           (TESTING_VARS_START + 0x3)
-#define TESTING_VAR_UNUSED_4           (TESTING_VARS_START + 0x4)
-#define TESTING_VAR_UNUSED_5           (TESTING_VARS_START + 0x5)
-#define TESTING_VAR_UNUSED_6           (TESTING_VARS_START + 0x6)
-#define TESTING_VAR_UNUSED_7           (TESTING_VARS_START + 0x7)
+#define TESTING_VARS_START                  0x9000
+#define TESTING_VAR_DIFFICULTY              (TESTING_VARS_START + 0x0)
+#define TESTING_VAR_TRAINER_SLIDES          (TESTING_VARS_START + 0x1)
+#define TESTING_VAR_UNUSED_2                (TESTING_VARS_START + 0x2)
+#define TESTING_VAR_UNUSED_3                (TESTING_VARS_START + 0x3)
+#define TESTING_VAR_UNUSED_4                (TESTING_VARS_START + 0x4)
+#define TESTING_VAR_UNUSED_5                (TESTING_VARS_START + 0x5)
+#define TESTING_VAR_UNUSED_6                (TESTING_VARS_START + 0x6)
+#define TESTING_VAR_UNUSED_7                (TESTING_VARS_START + 0x7)
 #endif // TESTING
 
 // Text color ids for VAR_TEXT_COLOR / VAR_PREV_TEXT_COLOR

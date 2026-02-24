@@ -103,7 +103,7 @@ void Overworld_SetSavedMusic(u16);
 void Overworld_ChangeMusicToDefault(void);
 void Overworld_ChangeMusicTo(u16);
 
-bool32 IsUpdateLinkStateCBActive(void);
+bool32 IsOverworldLinkActive(void);
 
 void ClearLinkPlayerObjectEvents(void);
 const struct MapHeader *const Overworld_GetMapHeaderByGroupAndId(u16, u16);
@@ -189,7 +189,8 @@ void SetMainCallback1(MainCallback cb);
 void CB1_Overworld(void);
 void CB2_ReturnToFieldContinueScript(void);
 void UpdateTimeOfDay(void);
-bool8 MapHasNaturalLight(u8 mapType);
+bool32 MapHasNaturalLight(u8 mapType);
+bool32 CurrentMapHasShadows(void);
 void UpdateAltBgPalettes(u16 palettes);
 void UpdatePalettesWithTime(u32);
 u8 GetLastUsedWarpMapSectionId(void);

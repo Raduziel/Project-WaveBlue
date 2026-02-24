@@ -11,6 +11,7 @@
 #include "main.h"
 #include "overworld.h"
 #include "wallclock.h"
+#include "pokerus.h"
 
 static void UpdatePerDay(struct Time *localTime);
 static void UpdatePerMinute(struct Time *localTime);
@@ -25,7 +26,7 @@ void InitTimeBasedEvents(void)
 
 void DoTimeBasedEvents(void)
 {
-    if (FlagGet(FLAG_SYS_CLOCK_SET) && !InPokemonCenter()) 
+    if (FlagGet(FLAG_SYS_CLOCK_SET) && !InPokemonCenter())
     {
         RtcCalcLocalTime();
         UpdatePerDay(&gLocalTime);
@@ -48,8 +49,8 @@ static void UpdatePerDay(struct Time *localTime)
         UpdatePartyPokerusTime(daysSince);
         // UpdateMirageRnd(daysSince);
         // UpdateBirchState(daysSince);
-        // UpdateFrontierManiac(daysSince);
-        // UpdateFrontierGambler(daysSince);
+        UpdateFrontierManiac(daysSince);
+        UpdateFrontierGambler(daysSince);
         // SetShoalItemFlag(daysSince);
         // SetRandomLotteryNumber(daysSince);
         UpdateDaysPassedSinceFormChange(daysSince);

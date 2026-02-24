@@ -2553,7 +2553,7 @@
       "MOVE_BESTOW",
       "MOVE_BIDE",
       "MOVE_CHARGE",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_DOUBLE_SLAP",
       "MOVE_ELECTRIC_TERRAIN",
       "MOVE_ENCORE",
@@ -2647,7 +2647,7 @@
       "MOVE_BESTOW",
       "MOVE_BIDE",
       "MOVE_CHARGE",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_DOUBLE_SLAP",
       "MOVE_ELECTRIC_TERRAIN",
       "MOVE_ENCORE",
@@ -3579,7 +3579,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 1,
@@ -3711,7 +3711,7 @@
       "MOVE_SWAGGER",
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -3740,7 +3740,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 1,
@@ -3824,7 +3824,7 @@
       "MOVE_SWAGGER",
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -4091,7 +4091,7 @@
       },
       {
         "Level": 11,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 14,
@@ -4194,7 +4194,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_WILD_CHARGE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -4245,7 +4245,7 @@
       "MOVE_BODY_SLAM",
       "MOVE_CHARM",
       "MOVE_COPYCAT",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_GYRO_BALL",
       "MOVE_HYPER_VOICE",
       "MOVE_MIMIC",
@@ -4302,7 +4302,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_WILD_CHARGE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -4659,7 +4659,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -4778,7 +4778,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -4867,7 +4867,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -6959,7 +6959,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -7085,7 +7085,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -7216,7 +7216,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -8076,7 +8076,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_SURF",
       "MOVE_WATERFALL",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -8218,7 +8218,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_SURF",
       "MOVE_WATERFALL",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -10547,7 +10547,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
       "MOVE_DARK_PULSE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -10680,7 +10680,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
       "MOVE_DARK_PULSE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -10818,7 +10818,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
       "MOVE_DARK_PULSE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -11085,7 +11085,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -11237,7 +11237,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -13265,7 +13265,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_WILD_CHARGE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -14060,7 +14060,7 @@
       "MOVE_FLASH_CANNON",
       "MOVE_SURF",
       "MOVE_WATERFALL",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -14147,7 +14147,7 @@
       "MOVE_TRICK_ROOM",
       "MOVE_SURF",
       "MOVE_WATERFALL",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -14299,7 +14299,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -17622,7 +17622,7 @@
       "MOVE_NATURE_POWER",
       "MOVE_DARK_PULSE",
       "MOVE_WATERFALL",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -19986,7 +19986,7 @@
       "MOVE_WILD_CHARGE",
       "MOVE_SURF",
       "MOVE_WATERFALL",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -20137,7 +20137,7 @@
       "MOVE_WILD_CHARGE",
       "MOVE_SURF",
       "MOVE_WATERFALL",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -20214,7 +20214,7 @@
       "MOVE_BESTOW",
       "MOVE_BIDE",
       "MOVE_CHARGE",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_DOUBLE_SLAP",
       "MOVE_ELECTRIC_TERRAIN",
       "MOVE_ENCORE",
@@ -20489,7 +20489,7 @@
       "MOVE_SWAGGER",
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -20628,7 +20628,7 @@
       "MOVE_SWAGGER",
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -20748,7 +20748,7 @@
       "MOVE_U_TURN",
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -20893,7 +20893,7 @@
       "MOVE_U_TURN",
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -21380,7 +21380,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -21985,7 +21985,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_U_TURN",
       "MOVE_SUBSTITUTE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -22120,7 +22120,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_U_TURN",
       "MOVE_SUBSTITUTE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -22257,7 +22257,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_U_TURN",
       "MOVE_SUBSTITUTE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -23068,7 +23068,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -23576,7 +23576,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
       "MOVE_DARK_PULSE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -23748,7 +23748,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -24565,7 +24565,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_WILD_CHARGE",
       "MOVE_SNARL",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -24704,7 +24704,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_WILD_CHARGE",
       "MOVE_SNARL",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -28490,7 +28490,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_WILD_CHARGE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -29548,7 +29548,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -32615,7 +32615,7 @@
       },
       {
         "Level": 11,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 14,
@@ -32703,7 +32703,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -32754,7 +32754,7 @@
       },
       {
         "Level": 11,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 14,
@@ -32842,7 +32842,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -32909,7 +32909,7 @@
       },
       {
         "Level": 11,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 14,
@@ -33008,7 +33008,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -34265,7 +34265,7 @@
     ],
     "EggMoves": [
       "MOVE_CIRCLE_THROW",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_ENDEAVOR",
       "MOVE_EXTRASENSORY",
       "MOVE_FAKE_TEARS",
@@ -34392,7 +34392,7 @@
     ],
     "EggMoves": [
       "MOVE_CIRCLE_THROW",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_ENDEAVOR",
       "MOVE_EXTRASENSORY",
       "MOVE_FAKE_TEARS",
@@ -34553,7 +34553,7 @@
     ],
     "EggMoves": [
       "MOVE_CIRCLE_THROW",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_ENDEAVOR",
       "MOVE_EXTRASENSORY",
       "MOVE_FAKE_TEARS",
@@ -35006,7 +35006,7 @@
       "MOVE_SWAGGER",
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -35052,7 +35052,7 @@
       },
       {
         "Level": 13,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 16,
@@ -35178,7 +35178,7 @@
       "MOVE_CHARM",
       "MOVE_COPYCAT",
       "MOVE_COVET",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_DOUBLE_EDGE",
       "MOVE_FAINT_ATTACK",
       "MOVE_FORESIGHT",
@@ -35365,7 +35365,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_SNARL",
       "MOVE_DARK_PULSE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -36797,7 +36797,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_U_TURN",
       "MOVE_SUBSTITUTE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -36911,7 +36911,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_U_TURN",
       "MOVE_SUBSTITUTE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -37027,7 +37027,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -39233,7 +39233,7 @@
       },
       {
         "Level": 11,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 14,
@@ -39304,7 +39304,7 @@
       "MOVE_SWAGGER",
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -39373,7 +39373,7 @@
       },
       {
         "Level": 11,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 14,
@@ -39458,7 +39458,7 @@
       "MOVE_SWAGGER",
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -40605,7 +40605,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -40744,7 +40744,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -41295,7 +41295,7 @@
       },
       {
         "Level": 11,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 14,
@@ -41733,7 +41733,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
       "MOVE_DARK_PULSE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -41873,7 +41873,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
       "MOVE_DARK_PULSE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -42407,7 +42407,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -45372,7 +45372,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_FLASH_CANNON",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -47645,7 +47645,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -47741,7 +47741,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -49040,7 +49040,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -49152,7 +49152,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -50108,7 +50108,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
       "MOVE_DARK_PULSE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -50545,7 +50545,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -54803,7 +54803,7 @@
       "MOVE_SWAGGER",
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -55749,7 +55749,7 @@
     "PreEvoMoves": [
       "MOVE_CALM_MIND",
       "MOVE_CHARM",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_DRAINING_KISS",
       "MOVE_DREAM_EATER",
       "MOVE_FUTURE_SIGHT",
@@ -55813,7 +55813,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -55972,7 +55972,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_FLASH_CANNON",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -56493,7 +56493,7 @@
       "MOVE_U_TURN",
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -56602,7 +56602,7 @@
       "MOVE_U_TURN",
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -56711,7 +56711,7 @@
       "MOVE_U_TURN",
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -57444,7 +57444,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_SURF",
       "MOVE_WATERFALL",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -57539,7 +57539,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_SURF",
       "MOVE_WATERFALL",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -57725,7 +57725,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -57980,7 +57980,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
       "MOVE_WILD_CHARGE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -60080,7 +60080,7 @@
       "MOVE_ASTONISH",
       "MOVE_BULLET_SEED",
       "MOVE_COVET",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_GRASS_WHISTLE",
       "MOVE_LEAF_STORM",
       "MOVE_LOW_KICK",
@@ -60166,7 +60166,7 @@
       "MOVE_ASTONISH",
       "MOVE_BULLET_SEED",
       "MOVE_COVET",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_GRASS_WHISTLE",
       "MOVE_LEAF_STORM",
       "MOVE_LOW_KICK",
@@ -60284,7 +60284,7 @@
     "EggMoves": [
       "MOVE_ASTONISH",
       "MOVE_COVET",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_FIRE_PUNCH",
       "MOVE_FIRE_SPIN",
       "MOVE_HEAT_WAVE",
@@ -60373,7 +60373,7 @@
     "EggMoves": [
       "MOVE_ASTONISH",
       "MOVE_COVET",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_FIRE_PUNCH",
       "MOVE_FIRE_SPIN",
       "MOVE_HEAT_WAVE",
@@ -60494,7 +60494,7 @@
       "MOVE_AQUA_TAIL",
       "MOVE_ASTONISH",
       "MOVE_COVET",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_HYDRO_PUMP",
       "MOVE_LOW_KICK",
       "MOVE_MUD_SPORT",
@@ -60583,7 +60583,7 @@
       "MOVE_AQUA_TAIL",
       "MOVE_ASTONISH",
       "MOVE_COVET",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_HYDRO_PUMP",
       "MOVE_LOW_KICK",
       "MOVE_MUD_SPORT",
@@ -60699,7 +60699,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -60788,7 +60788,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -62203,7 +62203,7 @@
       },
       {
         "Level": 13,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 17,
@@ -62293,7 +62293,7 @@
       "MOVE_TRICK_ROOM",
       "MOVE_WILD_CHARGE",
       "MOVE_SURF",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -63946,7 +63946,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -64044,7 +64044,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -65761,7 +65761,7 @@
       "MOVE_FLASH_CANNON",
       "MOVE_TRICK_ROOM",
       "MOVE_DARK_PULSE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -67119,7 +67119,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_U_TURN",
       "MOVE_SUBSTITUTE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -67208,7 +67208,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_U_TURN",
       "MOVE_SUBSTITUTE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -69455,7 +69455,7 @@
       "MOVE_SURF",
       "MOVE_DARK_PULSE",
       "MOVE_WATERFALL",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -69579,7 +69579,7 @@
       "MOVE_SURF",
       "MOVE_DARK_PULSE",
       "MOVE_WATERFALL",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -76117,7 +76117,7 @@
       "MOVE_U_TURN",
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -77022,7 +77022,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -78482,7 +78482,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -78580,7 +78580,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -78594,7 +78594,7 @@
     "LevelMoves": [
       {
         "Level": 1,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 1,
@@ -78675,7 +78675,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -79319,7 +79319,7 @@
       },
       {
         "Level": 22,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 25,
@@ -79423,7 +79423,7 @@
       },
       {
         "Level": 22,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 25,
@@ -79881,7 +79881,7 @@
       },
       {
         "Level": 50,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       }
     ],
     "PreEvoMoves": [],
@@ -79915,7 +79915,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_FLASH_CANNON",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -80006,7 +80006,7 @@
       },
       {
         "Level": 53,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 57,
@@ -80052,7 +80052,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_FLASH_CANNON",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -80158,7 +80158,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_SURF",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -80274,7 +80274,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_SURF",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -81985,7 +81985,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 1,
@@ -82082,7 +82082,7 @@
       "MOVE_SWAGGER",
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -82434,7 +82434,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -82837,7 +82837,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_FLASH_CANNON",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -83936,7 +83936,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_FLASH_CANNON",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -84272,7 +84272,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -85262,7 +85262,7 @@
       },
       {
         "Level": 8,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 11,
@@ -85364,7 +85364,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 4,
@@ -85372,7 +85372,7 @@
       },
       {
         "Level": 8,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 11,
@@ -85482,7 +85482,7 @@
       },
       {
         "Level": 1,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 4,
@@ -85490,7 +85490,7 @@
       },
       {
         "Level": 9,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 11,
@@ -85569,7 +85569,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_SURF",
       "MOVE_WATERFALL",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -86796,7 +86796,7 @@
       },
       {
         "Level": 31,
-        "Move": "MOVE_DAZZLE_GLEAM"
+        "Move": "MOVE_DAZZLING_GLEAM"
       },
       {
         "Level": 36,
@@ -86838,7 +86838,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_U_TURN",
       "MOVE_SUBSTITUTE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -86906,7 +86906,7 @@
       },
       {
         "Level": 35,
-        "Move": "MOVE_DAZZLE_GLEAM"
+        "Move": "MOVE_DAZZLING_GLEAM"
       },
       {
         "Level": 42,
@@ -86950,7 +86950,7 @@
       "MOVE_U_TURN",
       "MOVE_SUBSTITUTE",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -88186,7 +88186,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -88296,7 +88296,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -88816,7 +88816,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -88928,7 +88928,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -89053,7 +89053,7 @@
       "MOVE_U_TURN",
       "MOVE_SUBSTITUTE",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -89177,7 +89177,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -90266,7 +90266,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_U_TURN",
       "MOVE_SUBSTITUTE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -90582,7 +90582,7 @@
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_ENCORE",
       "MOVE_FAKE_OUT",
       "MOVE_FLAIL",
@@ -90702,7 +90702,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
       "MOVE_DARK_PULSE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -91560,7 +91560,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_WILD_CHARGE",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -91677,7 +91677,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -91800,7 +91800,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_SNARL",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -91915,7 +91915,7 @@
       "MOVE_SURF",
       "MOVE_NATURE_POWER",
       "MOVE_WATERFALL",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -92208,7 +92208,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -92325,7 +92325,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -92673,7 +92673,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_WILD_CHARGE",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -93264,7 +93264,7 @@
       "MOVE_SUBSTITUTE",
       "MOVE_FLASH_CANNON",
       "MOVE_TRICK_ROOM",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -93725,7 +93725,7 @@
       "MOVE_BESTOW",
       "MOVE_BIDE",
       "MOVE_CHARGE",
-      "MOVE_DISARM_VOICE",
+      "MOVE_DISARMING_VOICE",
       "MOVE_DOUBLE_SLAP",
       "MOVE_ELECTRIC_TERRAIN",
       "MOVE_ENCORE",
@@ -94101,11 +94101,11 @@
     "LevelMoves": [
       {
         "Level": 0,
-        "Move": "MOVE_DAZZLE_GLEAM"
+        "Move": "MOVE_DAZZLING_GLEAM"
       },
       {
         "Level": 1,
-        "Move": "MOVE_DAZZLE_GLEAM"
+        "Move": "MOVE_DAZZLING_GLEAM"
       },
       {
         "Level": 1,
@@ -94179,7 +94179,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_DARK_PULSE",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -96791,7 +96791,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [],
@@ -97107,7 +97107,7 @@
       "MOVE_SLEEP_TALK",
       "MOVE_SUBSTITUTE",
       "MOVE_NATURE_POWER",
-      "MOVE_DAZZLE_GLEAM",
+      "MOVE_DAZZLING_GLEAM",
       "MOVE_CONFIDE"
     ],
     "EggMoves": [
@@ -97169,7 +97169,7 @@
       },
       {
         "Level": 22,
-        "Move": "MOVE_DISARM_VOICE"
+        "Move": "MOVE_DISARMING_VOICE"
       },
       {
         "Level": 25,
