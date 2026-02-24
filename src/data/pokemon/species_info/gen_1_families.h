@@ -10909,7 +10909,7 @@ const struct SpeciesInfo gSpeciesInfoGen1[] =
         .levelUpLearnset = sMagnetonLevelUpLearnset,
         .teachableLearnset = sMagnetonTeachableLearnset,
     #if P_GEN_4_CROSS_EVOS
-        .evolutions = EVOLUTION({EVO_ITEM, ITEM_MAGNET, SPECIES_MAGNEZONE}),
+        .evolutions = EVOLUTION({EVO_LEVEL, 0, SPECIES_MAGNEZONE, CONDITIONS({IF_HOLD_ITEM, ITEM_MAGNET})}),
     #endif
     },
 

@@ -6364,7 +6364,9 @@ static void CB2_UseEvolutionStone(void)
      && gSpecialVar_ItemId != ITEM_ELECTIRIZER
      && gSpecialVar_ItemId != ITEM_KINGS_ROCK
      && gSpecialVar_ItemId != ITEM_DRAGON_SCALE
-     && gSpecialVar_ItemId != ITEM_MAGNET)
+     && gSpecialVar_ItemId != ITEM_MAGNET
+     && gSpecialVar_ItemId != ITEM_HARD_STONE
+     && gSpecialVar_ItemId != ITEM_MACHO_BRACE)
     {
         RemoveBagItem(gSpecialVar_ItemId, 1);
     }
