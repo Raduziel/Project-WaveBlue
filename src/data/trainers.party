@@ -5826,7 +5826,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Squirtle
+Squirtle (F)
 Level: 5
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Tackle
@@ -5841,7 +5841,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Bulbasaur
+Bulbasaur (F)
 Level: 5
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Tackle
@@ -5856,7 +5856,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Charmander
+Charmander (F)
 Level: 5
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Scratch
@@ -5871,13 +5871,13 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgey
+Pidgey (F)
 Level: 9
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Tackle
 - Sand Attack
 
-Squirtle
+Squirtle (F)
 Level: 9
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Tackle
@@ -5892,13 +5892,13 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgey
+Pidgey (F)
 Level: 9
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Tackle
 - Sand Attack
 
-Bulbasaur
+Bulbasaur (F)
 Level: 9
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Tackle
@@ -5913,13 +5913,13 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgey
+Pidgey (F)
 Level: 9
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Tackle
 - Sand Attack
 
-Charmander
+Charmander (F)
 Level: 9
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 - Scratch
@@ -5934,7 +5934,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgeotto
+Pidgeotto (F)
 Level: 18
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
@@ -5944,7 +5944,7 @@ Serious Nature
 - Gust
 - Sand Attack
 
-Abra
+Abra (M)
 Level: 16
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 SpA / 188 Spe
@@ -5953,7 +5953,7 @@ Bashful Nature
 - Thief
 - Flash
 
-Rattata
+Rattata (M)
 Level: 15
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 140 HP / 196 Atk / 172 Spe
@@ -5963,7 +5963,7 @@ Hardy Nature
 - Laser Focus
 - Focus Energy
 
-Wartortle @ Oran Berry
+Wartortle (F) @ Oran Berry
 Level: 21
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 SpA / 188 Spe
@@ -5982,7 +5982,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgeotto
+Pidgeotto (F)
 Level: 18
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
@@ -5992,7 +5992,7 @@ Serious Nature
 - Gust
 - Sand Attack
 
-Abra
+Abra (M)
 Level: 16
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 SpA / 188 Spe
@@ -6001,7 +6001,7 @@ Bashful Nature
 - Thief
 - Flash
 
-Rattata
+Rattata (M)
 Level: 15
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 140 HP / 196 Atk / 172 Spe
@@ -6011,7 +6011,7 @@ Hardy Nature
 - Laser Focus
 - Focus Energy
 
-Ivysaur @ Oran Berry
+Ivysaur (F) @ Oran Berry
 Level: 21
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
@@ -6030,7 +6030,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgeotto
+Pidgeotto (F)
 Level: 18
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
@@ -6040,7 +6040,7 @@ Serious Nature
 - Gust
 - Sand Attack
 
-Abra
+Abra (M)
 Level: 16
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 SpA / 188 Spe
@@ -6049,7 +6049,7 @@ Bashful Nature
 - Thief
 - Flash
 
-Rattata
+Rattata (M)
 Level: 15
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 140 HP / 196 Atk / 172 Spe
@@ -6059,7 +6059,7 @@ Hardy Nature
 - Laser Focus
 - Focus Energy
 
-Charmeleon @ Oran Berry
+Charmeleon (F) @ Oran Berry
 Level: 21
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
@@ -8349,7 +8349,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Purple
 
-Ninetales-Alola @ Light Ball  
+Ninetales-Alola (M) @ Light Ball
 Ability: Snow Warning  
 Level: 51  
 EVs: 252 SpA / 4 SpD / 252 Spe  
@@ -8360,7 +8360,7 @@ IVs: 0 Atk
 - Fake Tears  
 - Blizzard  
 
-Dewgong @ Leftovers  
+Dewgong (M) @ Leftovers
 Ability: Ice Body  
 Level: 51  
 EVs: 252 HP / 120 SpA / 116 Spe  
@@ -8371,7 +8371,7 @@ IVs: 0 Atk
 - Ice Beam
 - Surf 
 
-Mr. Rime @ Sitrus Berry  
+Mr. Rime (M) @ Sitrus Berry
 Ability: Tangled Feet  
 Level: 52  
 EVs: 160 HP / 200 SpA / 28 SpD / 120 Spe  
@@ -8382,7 +8382,7 @@ IVs: 0 Atk
 - Slack Off  
 - Psychic  
 
-Lapras @ Damp Rock  
+Lapras (F) @ Damp Rock
 Ability: Hydration  
 Level: 52  
 EVs: 252 HP / 100 SpA / 156 SpD  
@@ -8393,7 +8393,7 @@ IVs: 0 Atk
 - Surf  
 - Rest  
 
-Glaceon @ Icy Rock  
+Glaceon (F) @ Icy Rock
 Ability: Snow Cloak  
 Level: 54  
 EVs: 16 HP / 120 Def / 252 SpA / 120 Spe  
@@ -8404,7 +8404,7 @@ IVs: 0 Atk
 - Blizzard  
 - Yawn  
 
-Mamoswine @ Assault Vest  
+Mamoswine (M) @ Assault Vest
 Ability: Thick Fat  
 Level: 54  
 EVs: 96 HP / 168 Atk / 244 Spe  
@@ -8424,7 +8424,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Green
 
-Hitmontop @ White Herb  
+Hitmontop (F) @ White Herb
 Ability: Intimidate  
 Level: 51  
 EVs: 56 HP / 200 Atk / 252 Spe  
@@ -8434,7 +8434,7 @@ Adamant Nature
 - Ice Spinner  
 - Endeavor  
 
-Hitmonchan @ Punching Glove  
+Hitmonchan (F) @ Punching Glove
 Ability: Iron Fist  
 Level: 53  
 EVs: 96 HP / 252 Atk / 160 Spe  
@@ -8444,7 +8444,7 @@ Adamant Nature
 - Ice Punch  
 - Knock Off
 
-Hitmonlee @ Sitrus Berry  
+Hitmonlee (M) @ Sitrus Berry
 Ability: Reckless  
 Level: 53  
 EVs: 96 HP / 252 Atk / 160 Spe  
@@ -8454,7 +8454,7 @@ Adamant Nature
 - Poison Jab  
 - Reversal  
 
-Heracross @ Flame Orb  
+Heracross (F) @ Flame Orb
 Ability: Guts  
 Level: 54  
 EVs: 120 HP / 252 Atk / 16 Def / 120 Spe  
@@ -8464,7 +8464,7 @@ Serious Nature
 - Protect
 - Facade 
 
-Sirfetch’d @ Leek  
+Sirfetch’d (M) @ Leek
 Ability: Scrappy  
 Level: 54  
 - First Impression  
@@ -8472,7 +8472,7 @@ Level: 54
 - Brick Break  
 - Knock Off  
 
-Machamp @ Assault Vest  
+Machamp (M) @ Assault Vest
 Ability: No Guard  
 Level: 56  
 EVs: 120 HP / 252 Atk / 136 Spe  
@@ -8492,7 +8492,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Pink
 
-Murkrow @ Eviolite  
+Murkrow (M) @ Eviolite  
 Ability: Prankster  
 Level: 53  
 EVs: 252 HP / 160 SpA / 96 Spe  
@@ -8503,7 +8503,7 @@ IVs: 0 Atk
 - Tailwind
 - Snarl  
 
-Houndoom @ Expert Belt  
+Houndoom (F) @ Expert Belt  
 Ability: Unnerve  
 Level: 53  
 EVs: 136 HP / 252 SpA / 120 Spe  
@@ -8514,7 +8514,7 @@ IVs: 0 Atk
 - Dark Pulse  
 - Nasty Plot 
 
-Misdreavus @ Fairy Feather  
+Mismagius (F) @ Fairy Feather  
 Ability: Levitate  
 Level: 54  
 EVs: 108 HP / 200 SpA / 80 SpD / 108 Spe  
@@ -8525,7 +8525,7 @@ IVs: 0 Atk
 - Shadow Ball  
 - Fake Tears  
 
-Umbreon @ Mago Berry  
+Umbreon (F) @ Mago Berry  
 Ability: Synchronize  
 Level: 54  
 EVs: 108 HP / 192 SpA / 36 SpD / 120 Spe  
@@ -8536,7 +8536,7 @@ IVs: 0 Atk
 - Moonlight  
 - Yawn
 
-Annihilape @ Leftovers  
+Annihilape (M) @ Leftovers  
 Ability: Defiant  
 Level: 56  
 EVs: 252 HP / 160 Atk / 96 Spe  
@@ -8546,7 +8546,7 @@ Impish Nature
 - Bulk Up
 - U-turn  
 
-Gengar @ Life Orb  
+Gengar (M) @ Life Orb  
 Ability: Cursed Body  
 Level: 58  
 EVs: 160 HP / 252 SpA / 96 Spe  
@@ -8567,7 +8567,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Blue
 
-Gyarados @ Wacan Berry  
+Gyarados (M) @ Wacan Berry  
 Ability: Intimidate  
 Level: 56  
 EVs: 4 HP / 252 Atk / 252 Spe  
@@ -8577,7 +8577,7 @@ Jolly Nature
 - Aqua Tail  
 - Ice Fang  
 
-Charizard @ Heavy-Duty Boots  
+Charizard (F) @ Heavy-Duty Boots  
 Ability: Blaze  
 Level: 54  
 EVs: 136 HP / 252 SpA / 120 Spe  
@@ -8588,7 +8588,7 @@ IVs: 0 Atk
 - Dragon Pulse  
 - Air Slash  
 
-Kingdra @ Scope Lens  
+Kingdra (F) @ Scope Lens  
 Ability: Sniper  
 Level: 54  
 IVs: 0 Atk  
@@ -8597,7 +8597,7 @@ IVs: 0 Atk
 - Draco Meteor  
 - Surf  
 
-Aerodactyl @ Life Orb  
+Aerodactyl (M) @ Life Orb  
 Ability: Rock Head  
 Level: 58  
 EVs: 160 HP / 200 Atk / 28 SpD / 120 Spe  
@@ -8607,7 +8607,7 @@ Jolly Nature
 - Iron Head  
 - Tailwind  
 
-Tyranitar @ Assault Vest  
+Tyranitar (M) @ Assault Vest  
 Ability: Sand Stream  
 Level: 58  
 EVs: 76 HP / 180 Atk / 252 Spe  
@@ -8617,7 +8617,7 @@ Jolly Nature
 - Body Press
 - Crunch
 
-Dragonite @ Loaded Dice 
+Dragonite (F) @ Loaded Dice 
 Ability: Multiscale  
 Level: 60  
 EVs: 76 HP / 252 Atk / 180 Spe  
@@ -9007,7 +9007,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgeotto
+Pidgeotto (F)
 Level: 19
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
@@ -9017,7 +9017,7 @@ Serious Nature
 - Whirlwind
 - Sand Attack
 
-Raticate
+Raticate (M)
 Level: 20
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 140 HP / 196 Atk / 172 Spe
@@ -9027,7 +9027,7 @@ Hardy Nature
 - Quick Attack
 - Focus Energy
 
-Kadabra
+Kadabra (M)
 Level: 18
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 108 HP / 200 SpA / 200 Spe
@@ -9037,7 +9037,7 @@ Docile Nature
 - Reflect
 - Flash
 
-Wartortle @ Oran Berry
+Wartortle (F) @ Oran Berry
 Level: 24
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 156 HP / 200 SpA / 152 Spe
@@ -9056,7 +9056,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgeotto
+Pidgeotto (F)
 Level: 19
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
@@ -9066,7 +9066,7 @@ Serious Nature
 - Whirlwind
 - Sand Attack
 
-Raticate
+Raticate (M)
 Level: 20
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 140 HP / 196 Atk / 172 Spe
@@ -9076,7 +9076,7 @@ Hardy Nature
 - Quick Attack
 - Focus Energy
 
-Kadabra
+Kadabra (M)
 Level: 18
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 108 HP / 200 SpA / 200 Spe
@@ -9086,7 +9086,7 @@ Docile Nature
 - Reflect
 - Flash
 
-Ivysaur @ Oran Berry
+Ivysaur (F) @ Oran Berry
 Level: 24
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 140 HP / 196 Atk / 172 Spe
@@ -9105,7 +9105,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgeotto
+Pidgeotto (F)
 Level: 19
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
@@ -9115,7 +9115,7 @@ Serious Nature
 - Whirlwind
 - Sand Attack
 
-Raticate
+Raticate (M)
 Level: 20
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 140 HP / 196 Atk / 172 Spe
@@ -9125,7 +9125,7 @@ Hardy Nature
 - Quick Attack
 - Focus Energy
 
-Kadabra
+Kadabra (M)
 Level: 18
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 108 HP / 200 SpA / 200 Spe
@@ -9135,7 +9135,7 @@ Docile Nature
 - Reflect
 - Flash
 
-Charmeleon @ Oran Berry
+Charmeleon (F) @ Oran Berry
 Level: 24
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 140 HP / 196 Atk / 172 Spe
@@ -9154,7 +9154,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgeotto
+Pidgeotto (F)
 Level: 25
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
@@ -9164,7 +9164,7 @@ Serious Nature
 - Twister
 - Feather Dance
 
-Growlithe
+Growlithe (F)
 Level: 23
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
@@ -9174,7 +9174,7 @@ Hardy Nature
 - Dig
 - Agility
 
-Exeggcute
+Exeggcute (M)
 Level: 22
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 156 HP / 196 SpA / 156 SpD
@@ -9184,7 +9184,7 @@ Docile Nature
 - Leech Seed
 - Hypnosis
 
-Kadabra
+Kadabra (M)
 Level: 20
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 108 HP / 200 SpA / 200 Spe
@@ -9194,7 +9194,7 @@ Bashful Nature
 - Flash
 - Shock Wave
 
-Wartortle @ Sitrus Berry
+Wartortle (F) @ Sitrus Berry
 Level: 27
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 156 HP / 200 SpA / 152 Spe
@@ -9213,7 +9213,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgeotto
+Pidgeotto (F)
 Level: 25
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
@@ -9223,7 +9223,7 @@ Serious Nature
 - Twister
 - Feather Dance
 
-Gyarados
+Gyarados (M)
 Level: 23
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 200 Atk / 184 Spe
@@ -9233,7 +9233,7 @@ Hardy Nature
 - Ice Fang
 - Twister
 
-Growlithe
+Growlithe (F)
 Level: 22
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
@@ -9243,7 +9243,7 @@ Docile Nature
 - Dig
 - Agility
 
-Kadabra
+Kadabra (M)
 Level: 20
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 108 HP / 200 SpA / 200 Spe
@@ -9253,7 +9253,7 @@ Bashful Nature
 - Flash
 - Shock Wave
 
-Ivysaur @ Sitrus Berry
+Ivysaur (F) @ Sitrus Berry
 Level: 27
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 140 HP / 196 Atk / 172 Spe
@@ -9272,7 +9272,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgeotto
+Pidgeotto (F)
 Level: 25
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
@@ -9282,7 +9282,7 @@ Serious Nature
 - Twister
 - Feather Dance
 
-Exeggcute
+Exeggcute (M)
 Level: 23
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 156 HP / 196 SpA / 156 SpD
@@ -9292,7 +9292,7 @@ Hardy Nature
 - Leech Seed
 - Hypnosis
 
-Gyarados
+Gyarados (M)
 Level: 22
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 200 Atk / 184 Spe
@@ -9302,7 +9302,7 @@ Docile Nature
 - Ice Fang
 - Twister
 
-Kadabra
+Kadabra (M)
 Level: 20
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 108 HP / 200 SpA / 200 Spe
@@ -9312,7 +9312,7 @@ Bashful Nature
 - Flash
 - Shock Wave
 
-Charmeleon @ Sitrus Berry
+Charmeleon (F) @ Sitrus Berry
 Level: 27
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 140 HP / 200 Atk / 168 Spe
@@ -9331,7 +9331,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgeot @ Sharp Beak
+Pidgeot (F) @ Sharp Beak
 Level: 37
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 100 HP / 200 Atk / 208 Spe
@@ -9341,7 +9341,7 @@ Serious Nature
 - Steel Wing
 - Quick Attack
 
-Growlithe @ Charcoal
+Growlithe (F) @ Charcoal
 Level: 38
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 100 HP / 200 Atk / 208 Spe
@@ -9351,7 +9351,7 @@ Hardy Nature
 - Crunch
 - Dig
 
-Exeggcute @ Miracle Seed
+Exeggcute (M) @ Miracle Seed
 Level: 35
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 252 HP / 4 Def / 252 SpA
@@ -9361,7 +9361,7 @@ Docile Nature
 - Sleep Powder
 - Leech Seed
 
-Alakazam @ Twisted Spoon
+Alakazam (M) @ Twisted Spoon
 Level: 35
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 4 HP / 252 SpA / 252 Spe
@@ -9371,7 +9371,7 @@ Bashful Nature
 - Shock Wave
 - Recover
 
-Blastoise @ Sitrus Berry
+Blastoise (F) @ Sitrus Berry
 Level: 43
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 152 HP / 152 Atk / 48 SpA / 156 Spe
@@ -9390,7 +9390,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgeot @ Sharp Beak
+Pidgeot (F) @ Sharp Beak
 Level: 37
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 100 HP / 200 Atk / 208 Spe
@@ -9400,7 +9400,7 @@ Serious Nature
 - Steel Wing
 - Quick Attack
 
-Gyarados @ Mystic Water
+Gyarados (M) @ Mystic Water
 Level: 38
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 252 Atk / 132 Spe
@@ -9410,7 +9410,7 @@ Hardy Nature
 - Ice Fang
 - Bite
 
-Growlithe @ Charcoal
+Growlithe (F) @ Charcoal
 Level: 35
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 100 HP / 200 Atk / 208 Spe
@@ -9420,7 +9420,7 @@ Docile Nature
 - Dig
 - Agility
 
-Alakazam @ Twisted Spoon
+Alakazam (M) @ Twisted Spoon
 Level: 35
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 4 HP / 252 SpA / 252 Spe
@@ -9430,7 +9430,7 @@ Bashful Nature
 - Shock Wave
 - Recover
 
-Venusaur @ Sitrus Berry
+Venusaur (F) @ Sitrus Berry
 Level: 43
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 200 HP / 156 Def / 152 SpA
@@ -9449,7 +9449,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgeot @ Sharp Beak
+Pidgeot (F) @ Sharp Beak
 Level: 37
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 100 HP / 200 Atk / 208 Spe
@@ -9459,7 +9459,7 @@ Serious Nature
 - Steel Wing
 - Quick Attack
 
-Exeggcute @ Miracle Seed
+Exeggcute (M) @ Miracle Seed
 Level: 38
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 252 HP / 4 Def / 252 SpA
@@ -9469,7 +9469,7 @@ Hardy Nature
 - Reflect
 - Sleep Powder
 
-Gyarados @ Mystic Water
+Gyarados (M) @ Mystic Water
 Level: 35
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 252 Atk / 132 Spe
@@ -9479,7 +9479,7 @@ Docile Nature
 - Ice Fang
 - Rain Dance
 
-Alakazam @ Twisted Spoon
+Alakazam (M) @ Twisted Spoon
 Level: 35
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 4 HP / 252 SpA / 252 Spe
@@ -9489,7 +9489,7 @@ Bashful Nature
 - Shock Wave
 - Recover
 
-Charizard @ Sitrus Berry
+Charizard (F) @ Sitrus Berry
 Level: 43
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 100 HP / 200 SpA / 208 Spe
@@ -9508,7 +9508,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgeot @ Focus Sash  
+Pidgeot (F) @ Focus Sash  
 Ability: Keen Eye  
 Level: 47  
 EVs: 160 HP / 252 Atk / 96 Spe  
@@ -9518,7 +9518,7 @@ Adamant Nature
 - Facade  
 - Roost  
 
-Rhydon @ Eviolite  
+Rhydon (F) @ Eviolite  
 Ability: Lightning Rod  
 Level: 45  
 EVs: 160 HP / 120 Atk / 200 Def / 28 SpD  
@@ -9528,7 +9528,7 @@ Impish Nature
 - Avalanche  
 - Curse  
 
-Arcanine @ Leftovers  
+Arcanine (F) @ Leftovers  
 Ability: Intimidate  
 Level: 45  
 EVs: 56 HP / 252 Atk / 100 Def / 100 SpD  
@@ -9538,7 +9538,7 @@ Jolly Nature
 - Flare Blitz 
 - Play Rough  
 
-Exeggutor @ Sitrus Berry  
+Exeggutor (M) @ Sitrus Berry  
 Ability: Harvest  
 Level: 45  
 EVs: 100 HP / 200 SpA / 208 Spe  
@@ -9549,7 +9549,7 @@ IVs: 0 Atk
 - Sunny Day  
 - Psychic  
 
-Alakazam @ Life Orb  
+Alakazam (M) @ Life Orb  
 Ability: Magic Guard  
 Level: 47  
 EVs: 200 HP / 252 SpA / 56 Spe  
@@ -9560,7 +9560,7 @@ IVs: 0 Atk
 - Calm Mind  
 - Psychic
 
-Blastoise @ White Herb  
+Blastoise (F) @ White Herb  
 Ability: Rain Dish  
 Level: 54  
 EVs: 248 SpA / 4 SpD / 252 Spe  
@@ -9580,7 +9580,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgeot @ Focus Sash  
+Pidgeot (F) @ Focus Sash  
 Ability: Keen Eye  
 Level: 47  
 EVs: 160 HP / 252 Atk / 96 Spe  
@@ -9590,7 +9590,7 @@ Adamant Nature
 - Facade  
 - Roost 
 
-Rhydon @ Eviolite  
+Rhydon (F) @ Eviolite  
 Ability: Lightning Rod  
 Level: 45  
 EVs: 160 HP / 120 Atk / 200 Def / 28 SpD  
@@ -9600,7 +9600,7 @@ Impish Nature
 - Avalanche  
 - Curse
 
-Gyarados @ Lum Berry  
+Gyarados (M) @ Lum Berry  
 Ability: Intimidate  
 Level: 45  
 EVs: 56 HP / 252 Atk / 200 Spe  
@@ -9610,7 +9610,7 @@ Adamant Nature
 - Waterfall  
 - Ice Fang 
 
-Arcanine @ Leftovers  
+Arcanine (F) @ Leftovers  
 Ability: Intimidate  
 Level: 45  
 EVs: 56 HP / 252 Atk / 100 Def / 100 SpD  
@@ -9620,7 +9620,7 @@ Jolly Nature
 - Play Rough  
 - Flare Blitz
 
-Alakazam @ Life Orb  
+Alakazam (M) @ Life Orb  
 Ability: Magic Guard  
 Level: 47  
 EVs: 200 HP / 252 SpA / 56 Spe  
@@ -9631,7 +9631,7 @@ IVs: 0 Atk
 - Calm Mind  
 - Psychic 
 
-Venusaur @ Rocky Helmet  
+Venusaur (F) @ Rocky Helmet  
 Ability: Overgrow  
 Level: 54  
 EVs: 252 SpA / 4 SpD / 252 Spe  
@@ -9651,7 +9651,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgeot @ Focus Sash  
+Pidgeot (F) @ Focus Sash  
 Ability: Keen Eye  
 Level: 47  
 EVs: 160 HP / 252 Atk / 96 Spe  
@@ -9661,7 +9661,7 @@ Adamant Nature
 - Facade  
 - Roost  
 
-Rhydon @ Eviolite  
+Rhydon (F) @ Eviolite  
 Ability: Lightning Rod  
 Level: 45  
 EVs: 160 HP / 120 Atk / 200 Def / 28 SpD  
@@ -9671,7 +9671,7 @@ Impish Nature
 - Avalanche  
 - Curse  
 
-Exeggutor @ Sitrus Berry  
+Exeggutor (M) @ Sitrus Berry  
 Ability: Harvest  
 Level: 45  
 EVs: 100 HP / 200 SpA / 208 Spe  
@@ -9682,7 +9682,7 @@ IVs: 0 Atk
 - Sunny Day  
 - Psychic
 
-Gyarados @ Lum Berry  
+Gyarados (M) @ Lum Berry  
 Ability: Intimidate  
 Level: 45  
 EVs: 56 HP / 252 Atk / 200 Spe  
@@ -9692,7 +9692,7 @@ Adamant Nature
 - Waterfall  
 - Ice Fang 
 
-Alakazam @ Life Orb  
+Alakazam (M) @ Life Orb  
 Ability: Magic Guard  
 Level: 47  
 EVs: 200 HP / 252 SpA / 56 Spe  
@@ -9703,7 +9703,7 @@ IVs: 0 Atk
 - Calm Mind  
 - Psychic
 
-Charizard @ Charti Berry  
+Charizard (F) @ Charti Berry  
 Ability: Solar Power  
 Level: 54  
 EVs: 8 HP / 252 SpA / 248 Spe  
@@ -9724,7 +9724,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
 
-Pidgeot @ Focus Sash  
+Pidgeot (F) @ Focus Sash  
 Ability: Keen Eye  
 Level: 59  
 EVs: 160 HP / 252 Atk / 96 Spe  
@@ -9734,7 +9734,7 @@ Adamant Nature
 - Facade  
 - Roost
 
-Alakazam @ Life Orb  
+Alakazam (M) @ Life Orb  
 Ability: Magic Guard  
 Level: 57  
 EVs: 200 HP / 252 SpA / 56 Spe  
@@ -9745,7 +9745,7 @@ IVs: 0 Atk
 - Calm Mind  
 - Psychic  
 
-Rhydon @ Eviolite  
+Rhydon (F) @ Eviolite  
 Ability: Lightning Rod  
 Level: 59  
 EVs: 160 HP / 120 Atk / 200 Def / 28 SpD  
@@ -9755,7 +9755,7 @@ Impish Nature
 - Avalanche  
 - Curse
 
-Arcanine @ Leftovers  
+Arcanine (F) @ Leftovers  
 Ability: Intimidate  
 Level: 59  
 EVs: 56 HP / 252 Atk / 100 Def / 100 SpD  
@@ -9765,7 +9765,7 @@ Jolly Nature
 - Flare Blitz 
 - Play Rough  
  
-Exeggutor @ Sitrus Berry  
+Exeggutor (M) @ Sitrus Berry  
 Ability: Harvest  
 Level: 61 
 EVs: 100 HP / 200 SpA / 208 Spe  
@@ -9776,7 +9776,7 @@ IVs: 0 Atk
 - Sunny Day  
 - Psychic  
 
-Blastoise @ White Herb  
+Blastoise (F) @ White Herb  
 Ability: Rain Dish  
 Level: 63  
 EVs: 248 SpA / 4 SpD / 252 Spe  
@@ -9797,7 +9797,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
 
-Pidgeot @ Focus Sash  
+Pidgeot (F) @ Focus Sash  
 Ability: Keen Eye  
 Level: 59  
 EVs: 160 HP / 252 Atk / 96 Spe  
@@ -9807,7 +9807,7 @@ Adamant Nature
 - Facade  
 - Roost 
 
-Alakazam @ Life Orb  
+Alakazam (M) @ Life Orb  
 Ability: Magic Guard  
 Level: 57  
 EVs: 200 HP / 252 SpA / 56 Spe  
@@ -9818,7 +9818,7 @@ IVs: 0 Atk
 - Calm Mind  
 - Psychic  
 
-Rhydon @ Eviolite  
+Rhydon (F) @ Eviolite  
 Ability: Lightning Rod  
 Level: 59 
 EVs: 160 HP / 120 Atk / 200 Def / 28 SpD  
@@ -9828,7 +9828,7 @@ Impish Nature
 - Avalanche  
 - Curse  
 
-Gyarados @ Lum Berry  
+Gyarados (M) @ Lum Berry  
 Ability: Intimidate  
 Level: 59  
 EVs: 56 HP / 252 Atk / 200 Spe  
@@ -9838,7 +9838,7 @@ Adamant Nature
 - Waterfall  
 - Ice Fang 
 
-Arcanine @ Leftovers  
+Arcanine (F) @ Leftovers  
 Ability: Intimidate  
 Level: 61  
 EVs: 56 HP / 252 Atk / 100 Def / 100 SpD  
@@ -9848,7 +9848,7 @@ Jolly Nature
 - Flare Blitz
 - Play Rough  
 
-Venusaur @ Rocky Helmet  
+Venusaur (F) @ Rocky Helmet  
 Ability: Overgrow  
 Level: 63  
 EVs: 252 SpA / 4 SpD / 252 Spe  
@@ -9869,7 +9869,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
 
-Pidgeot @ Focus Sash  
+Pidgeot (F) @ Focus Sash  
 Ability: Keen Eye  
 Level: 59  
 EVs: 160 HP / 252 Atk / 96 Spe  
@@ -9879,7 +9879,7 @@ Adamant Nature
 - Facade  
 - Roost  
 
-Alakazam @ Life Orb  
+Alakazam (M) @ Life Orb  
 Ability: Magic Guard  
 Level: 57  
 EVs: 200 HP / 252 SpA / 56 Spe  
@@ -9890,7 +9890,7 @@ IVs: 0 Atk
 - Calm Mind  
 - Psychic  
 
-Rhydon @ Eviolite  
+Rhydon (F) @ Eviolite  
 Ability: Lightning Rod  
 Level: 59  
 EVs: 160 HP / 120 Atk / 200 Def / 28 SpD  
@@ -9900,7 +9900,7 @@ Impish Nature
 - Avalanche  
 - Curse  
 
-Exeggutor @ Sitrus Berry  
+Exeggutor (M) @ Sitrus Berry  
 Ability: Harvest  
 Level: 59  
 EVs: 100 HP / 200 SpA / 208 Spe  
@@ -9911,7 +9911,7 @@ IVs: 0 Atk
 - Sunny Day  
 - Psychic  
 
-Gyarados @ Lum Berry  
+Gyarados (M) @ Lum Berry  
 Ability: Intimidate  
 Level: 61  
 EVs: 56 HP / 252 Atk / 200 Spe  
@@ -9921,7 +9921,7 @@ Adamant Nature
 - Waterfall  
 - Ice Fang 
 
-Charizard @ Charti Berry  
+Charizard (F) @ Charti Berry  
 Ability: Solar Power  
 Level: 63  
 EVs: 8 HP / 252 SpA / 248 Spe  
@@ -15637,7 +15637,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Purple
 
-Ninetales-Alola @ Light Ball  
+Ninetales-Alola (M) @ Light Ball  
 Ability: Snow Warning  
 Level: 63 
 EVs: 252 SpA / 4 SpD / 252 Spe  
@@ -15648,7 +15648,7 @@ IVs: 0 Atk
 - Fake Tears  
 - Blizzard  
 
-Dewgong @ Leftovers  
+Dewgong (M) @ Leftovers  
 Ability: Ice Body  
 Level: 63  
 EVs: 252 HP / 120 SpA / 116 Spe  
@@ -15659,7 +15659,7 @@ IVs: 0 Atk
 - Ice Beam
 - Surf 
 
-Mr. Rime @ Sitrus Berry  
+Mr. Rime (M) @ Sitrus Berry  
 Ability: Tangled Feet  
 Level: 64 
 EVs: 160 HP / 200 SpA / 28 SpD / 120 Spe  
@@ -15670,7 +15670,7 @@ IVs: 0 Atk
 - Slack Off  
 - Psychic  
 
-Lapras @ Damp Rock  
+Lapras (F) @ Damp Rock  
 Ability: Hydration  
 Level: 64  
 EVs: 252 HP / 100 SpA / 156 SpD  
@@ -15681,7 +15681,7 @@ IVs: 0 Atk
 - Surf  
 - Rest  
 
-Glaceon @ Icy Rock  
+Glaceon (F) @ Icy Rock  
 Ability: Snow Cloak  
 Level: 66  
 EVs: 16 HP / 120 Def / 252 SpA / 120 Spe  
@@ -15692,7 +15692,7 @@ IVs: 0 Atk
 - Blizzard  
 - Yawn  
 
-Mamoswine @ Assault Vest  
+Mamoswine (M) @ Assault Vest  
 Ability: Thick Fat  
 Level: 66  
 EVs: 96 HP / 168 Atk / 244 Spe  
@@ -15712,7 +15712,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Green
 
-Hitmontop @ White Herb  
+Hitmontop (F) @ White Herb  
 Ability: Intimidate  
 Level: 65  
 EVs: 56 HP / 200 Atk / 252 Spe  
@@ -15722,7 +15722,7 @@ Adamant Nature
 - Ice Spinner  
 - Endeavor  
 
-Hitmonchan @ Punching Glove  
+Hitmonchan (F) @ Punching Glove  
 Ability: Iron Fist  
 Level: 65 
 EVs: 96 HP / 252 Atk / 160 Spe  
@@ -15732,7 +15732,7 @@ Adamant Nature
 - Ice Punch  
 - Knock Off
 
-Hitmonlee @ Sitrus Berry  
+Hitmonlee (M) @ Sitrus Berry  
 Ability: Reckless  
 Level: 65  
 EVs: 96 HP / 252 Atk / 160 Spe  
@@ -15742,7 +15742,7 @@ Adamant Nature
 - Poison Jab  
 - Reversal  
 
-Heracross @ Flame Orb  
+Heracross (F) @ Flame Orb  
 Ability: Guts  
 Level: 66  
 EVs: 120 HP / 252 Atk / 16 Def / 120 Spe  
@@ -15752,7 +15752,7 @@ Serious Nature
 - Protect
 - Facade 
 
-Sirfetch’d @ Leek  
+Sirfetch’d (M) @ Leek  
 Ability: Scrappy  
 Level: 66  
 - First Impression  
@@ -15760,7 +15760,7 @@ Level: 66
 - Brick Break  
 - Knock Off  
 
-Machamp @ Assault Vest  
+Machamp (M) @ Assault Vest  
 Ability: No Guard  
 Level: 68  
 EVs: 120 HP / 252 Atk / 136 Spe  
@@ -15780,7 +15780,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Pink
 
-Murkrow @ Eviolite  
+Murkrow (M) @ Eviolite  
 Ability: Prankster  
 Level: 65  
 EVs: 252 HP / 160 SpA / 96 Spe  
@@ -15791,7 +15791,7 @@ IVs: 0 Atk
 - Tailwind
 - Snarl  
 
-Houndoom @ Expert Belt  
+Houndoom (F) @ Expert Belt  
 Ability: Unnerve  
 Level: 65  
 EVs: 136 HP / 252 SpA / 120 Spe  
@@ -15802,7 +15802,7 @@ IVs: 0 Atk
 - Dark Pulse  
 - Nasty Plot 
 
-Misdreavus @ Fairy Feather  
+Mismagius (F) @ Fairy Feather  
 Ability: Levitate  
 Level: 66  
 EVs: 108 HP / 200 SpA / 80 SpD / 108 Spe  
@@ -15813,7 +15813,7 @@ IVs: 0 Atk
 - Shadow Ball  
 - Fake Tears  
 
-Umbreon @ Mago Berry  
+Umbreon (F) @ Mago Berry  
 Ability: Synchronize  
 Level: 66  
 EVs: 108 HP / 192 SpA / 36 SpD / 120 Spe  
@@ -15824,7 +15824,7 @@ IVs: 0 Atk
 - Moonlight  
 - Yawn
 
-Annihilape @ Leftovers  
+Annihilape (M) @ Leftovers  
 Ability: Defiant  
 Level: 68  
 EVs: 252 HP / 160 Atk / 96 Spe  
@@ -15834,7 +15834,7 @@ Impish Nature
 - Bulk Up
 - U-turn  
 
-Gengar @ Life Orb  
+Gengar (M) @ Life Orb  
 Ability: Cursed Body  
 Level: 70  
 EVs: 160 HP / 252 SpA / 96 Spe  
@@ -15855,7 +15855,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Blue
 
-Gyarados @ Wacan Berry  
+Gyarados (M) @ Wacan Berry  
 Ability: Intimidate  
 Level: 68  
 EVs: 4 HP / 252 Atk / 252 Spe  
@@ -15865,7 +15865,7 @@ Jolly Nature
 - Aqua Tail  
 - Ice Fang  
 
-Charizard @ Heavy-Duty Boots  
+Charizard (F) @ Heavy-Duty Boots  
 Ability: Blaze  
 Level: 66  
 EVs: 136 HP / 252 SpA / 120 Spe  
@@ -15876,7 +15876,7 @@ IVs: 0 Atk
 - Dragon Pulse  
 - Air Slash  
 
-Kingdra @ Scope Lens  
+Kingdra (F) @ Scope Lens  
 Ability: Sniper  
 Level: 66  
 IVs: 0 Atk  
@@ -15885,7 +15885,7 @@ IVs: 0 Atk
 - Draco Meteor  
 - Surf  
 
-Aerodactyl @ Life Orb  
+Aerodactyl (M) @ Life Orb  
 Ability: Rock Head  
 Level: 70  
 EVs: 160 HP / 200 Atk / 28 SpD / 120 Spe  
@@ -15895,7 +15895,7 @@ Jolly Nature
 - Iron Head  
 - Tailwind  
 
-Tyranitar @ Assault Vest  
+Tyranitar (M) @ Assault Vest  
 Ability: Sand Stream  
 Level: 70  
 EVs: 76 HP / 180 Atk / 252 Spe  
@@ -15905,7 +15905,7 @@ Jolly Nature
 - Body Press
 - Crunch
 
-Dragonite @ Loaded Dice  
+Dragonite (F) @ Loaded Dice  
 Ability: Multiscale  
 Level: 72  
 EVs: 76 HP / 252 Atk / 180 Spe  
@@ -15925,7 +15925,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
 
-Heracross @ Flame Orb  
+Heracross (F) @ Flame Orb  
 Ability: Guts  
 Level: 72  
 EVs: 252 Atk / 252 Spe  
@@ -15935,7 +15935,7 @@ Jolly Nature
 - Facade  
 - Protect  
 
-Alakazam @ Life Orb  
+Alakazam (M) @ Life Orb  
 Ability: Magic Guard  
 Level: 73  
 EVs: 200 HP / 252 SpA / 56 Spe  
@@ -15946,7 +15946,7 @@ IVs: 0 Atk
 - Calm Mind  
 - Psychic
 
-Tyranitar @ Assault Vest  
+Tyranitar (M) @ Assault Vest  
 Ability: Sand Stream  
 Level: 72  
 EVs: 252 HP / 252 Atk / 4 SpD  
@@ -15956,7 +15956,7 @@ Adamant Nature
 - Ice Fang  
 - Crunch
 
-Arcanine @ Leftovers  
+Arcanine (F) @ Leftovers  
 Ability: Intimidate  
 Level: 73  
 EVs: 56 HP / 252 Atk / 100 Def / 100 SpD  
@@ -15966,7 +15966,7 @@ Jolly Nature
 - Play Rough  
 - Flare Blitz
 
-Exeggutor @ Sitrus Berry  
+Exeggutor (M) @ Sitrus Berry  
 Ability: Harvest  
 Level: 73  
 EVs: 100 HP / 200 SpA / 208 Spe  
@@ -15977,7 +15977,7 @@ IVs: 0 Atk
 - Sunny Day  
 - Psychic
 
-Blastoise @ White Herb  
+Blastoise (F) @ White Herb  
 Ability: Rain Dish  
 Level: 75  
 EVs: 248 SpA / 4 SpD / 252 Spe  
@@ -15998,7 +15998,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
 
-Heracross @ Flame Orb  
+Heracross (F) @ Flame Orb  
 Ability: Guts  
 Level: 72  
 EVs: 252 Atk / 252 Spe  
@@ -16008,7 +16008,7 @@ Jolly Nature
 - Facade  
 - Protect
 
-Alakazam @ Life Orb  
+Alakazam (M) @ Life Orb  
 Ability: Magic Guard  
 Level:73  
 EVs: 200 HP / 252 SpA / 56 Spe  
@@ -16019,7 +16019,7 @@ IVs: 0 Atk
 - Calm Mind  
 - Psychic 
 
-Tyranitar @ Assault Vest  
+Tyranitar (M) @ Assault Vest  
 Ability: Sand Stream  
 Level: 72  
 EVs: 252 HP / 252 Atk / 4 SpD  
@@ -16029,7 +16029,7 @@ Adamant Nature
 - Ice Fang  
 - Crunch
 
-Gyarados @ Lum Berry  
+Gyarados (M) @ Lum Berry  
 Ability: Intimidate  
 Level: 73  
 EVs: 56 HP / 252 Atk / 200 Spe  
@@ -16039,7 +16039,7 @@ Adamant Nature
 - Waterfall  
 - Ice Fang 
 
-Arcanine @ Leftovers  
+Arcanine (F) @ Leftovers  
 Ability: Intimidate  
 Level: 73  
 EVs: 56 HP / 252 Atk / 100 Def / 100 SpD  
@@ -16049,7 +16049,7 @@ Jolly Nature
 - Play Rough  
 - Flare Blitz
 
-Venusaur @ Rocky Helmet  
+Venusaur (F) @ Rocky Helmet  
 Ability: Overgrow  
 Level: 75  
 EVs: 252 SpA / 4 SpD / 252 Spe  
@@ -16070,7 +16070,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 Mugshot: Yellow
 
-Heracross @ Flame Orb  
+Heracross (F) @ Flame Orb  
 Ability: Guts  
 Level: 72  
 EVs: 252 Atk / 252 Spe  
@@ -16080,7 +16080,7 @@ Jolly Nature
 - Facade  
 - Protect
 
-Alakazam @ Life Orb  
+Alakazam (M) @ Life Orb  
 Ability: Magic Guard  
 Level: 73  
 EVs: 200 HP / 252 SpA / 56 Spe  
@@ -16091,7 +16091,7 @@ IVs: 0 Atk
 - Calm Mind  
 - Psychic  
 
-Tyranitar @ Assault Vest  
+Tyranitar (M) @ Assault Vest  
 Ability: Sand Stream  
 Level: 72  
 EVs: 252 HP / 252 Atk / 4 SpD  
@@ -16101,7 +16101,7 @@ Adamant Nature
 - Ice Fang  
 - Crunch
 
-Exeggutor @ Sitrus Berry  
+Exeggutor (M) @ Sitrus Berry  
 Ability: Harvest  
 Level: 73  
 EVs: 100 HP / 200 SpA / 208 Spe  
@@ -16112,7 +16112,7 @@ IVs: 0 Atk
 - Sunny Day  
 - Psychic 
 
-Gyarados @ Lum Berry  
+Gyarados (M) @ Lum Berry  
 Ability: Intimidate  
 Level: 73  
 EVs: 56 HP / 252 Atk / 200 Spe  
@@ -16122,7 +16122,7 @@ Adamant Nature
 - Waterfall  
 - Ice Fang  
 
-Charizard @ Charti Berry  
+Charizard (F) @ Charti Berry  
 Ability: Solar Power  
 Level: 75  
 EVs: 8 HP / 252 SpA / 248 Spe  
@@ -16169,7 +16169,7 @@ Adamant Nature
 - Rock Polish  
 - Explosion  
 
-Clefable (F) @ Life Orb  
+Clefable @ Life Orb  
 Ability: Magic Guard  
 Level: 75
 EVs: 248 HP / 248 SpA / 8 SpD / 4 Spe  
@@ -16243,7 +16243,7 @@ Adamant Nature
 - Rock Polish  
 - Explosion  
 
-Clefable (F) @ Life Orb  
+Clefable @ Life Orb  
 Ability: Magic Guard  
 Level: 75  
 EVs: 248 HP / 248 SpA / 8 SpD / 4 Spe  
@@ -16316,7 +16316,7 @@ Adamant Nature
 - Rock Polish  
 - Explosion  
 
-Clefable (F) @ Life Orb  
+Clefable @ Life Orb  
 Ability: Magic Guard  
 Level: 75
 EVs: 248 HP / 248 SpA / 8 SpD / 4 Spe  
