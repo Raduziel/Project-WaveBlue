@@ -147,7 +147,7 @@ enum {
     LL_STATE_FAILED,
     LL_STATE_TRY_START_ACTIVITY = 26,
     LL_STATE_MEMBER_DISCONNECTED = 29,
-    LL_STATE_CANCEL_WITH_MSG
+    LL_STATE_CANCEL_WITH_MSG,
 };
 
 // States for Task_TryJoinLinkGroup
@@ -208,9 +208,9 @@ EWRAM_DATA u16 gUnionRoomOfferedSpecies = SPECIES_NONE;
 EWRAM_DATA u8 gUnionRoomRequestedMonType = TYPE_NONE;
 static EWRAM_DATA struct UnionRoomTrade sUnionRoomTrade = {};
 
-static struct WirelessLink_Leader * sLeader;
-static struct WirelessLink_Group * sGroup;
-static struct WirelessLink_URoom * sURoom;
+COMMON_DATA static struct WirelessLink_Leader *sLeader = NULL;
+COMMON_DATA static struct WirelessLink_Group *sGroup = NULL;
+COMMON_DATA static struct WirelessLink_URoom *sURoom = NULL;
 
 static void Task_TryBecomeLinkLeader(u8);
 static void Leader_DestroyResources(struct WirelessLink_Leader *);
@@ -578,6 +578,7 @@ static void Task_TryBecomeLinkLeader(u8 taskId)
     case LL_STATE_ACCEPTED_FINAL_MEMBER:
         if (PrintOnTextbox(&data->textState, gStringVar4))
             data->state = LL_STATE_WAIT_AND_CONFIRM_MEMBERS;
+
         break;
     case LL_STATE_WAIT_AND_CONFIRM_MEMBERS:
         if (++data->delayTimerAfterOk > 120)
@@ -827,8 +828,8 @@ static u8 LeaderUpdateGroupMembership(struct RfuPlayerList * list)
 {
     struct WirelessLink_Leader * data = sWirelessLinkMain.Leader;
     u8 ret = UNION_ROOM_SPAWN_NONE;
-    u8 i;
     s32 id;
+    u8 i;
 
     for (i = 1; i < MAX_RFU_PLAYERS; i++)
     {
@@ -866,9 +867,9 @@ static u8 LeaderUpdateGroupMembership(struct RfuPlayerList * list)
     return ret;
 }
 
-static u8 LeaderPrunePlayerList(struct RfuPlayerList * list)
+static u8 LeaderPrunePlayerList(struct RfuPlayerList *list)
 {
-    struct WirelessLink_Leader * data = sWirelessLinkMain.Leader;
+    struct WirelessLink_Leader *data = sWirelessLinkMain.Leader;
     u8 copiedCount;
     s32 i;
     u8 playerCount;
@@ -1113,8 +1114,10 @@ static void Task_TryJoinLinkGroup(u8 taskId)
         switch (UnionRoomHandleYesNo(&data->textState, RfuGetStatus()))
         {
         case 0: // YES
-            SendLeaveGroupNotice();
-            data->state = LG_STATE_WAIT_LEAVE_GROUP;
+            {
+                SendLeaveGroupNotice();
+                data->state = LG_STATE_WAIT_LEAVE_GROUP;
+            }
             RedrawListMenu(data->listTaskId);
             break;
         case 1: // NO
@@ -2532,7 +2535,9 @@ static void Task_RunUnionRoom(u8 taskId)
             if (IsUnionRoomListenTaskActive() == TRUE)
                 ScheduleFieldMessageAndExit(gText_UR_TrainerAppearsBusy);
             else
+            {
                 ScheduleFieldMessageWithFollowupState(UR_STATE_CANCEL_ACTIVITY_LINK_ERROR, gText_UR_TrainerAppearsBusy);
+            }
 
             sPlayerCurrActivity = IN_UNION_ROOM;
             break;
@@ -2748,7 +2753,9 @@ static void Task_RunUnionRoom(u8 taskId)
             if (IsUnionRoomListenTaskActive() == TRUE)
                 ScheduleFieldMessageAndExit(gTexts_UR_ChatDeclined[playerGender]);
             else
+            {
                 ScheduleFieldMessageWithFollowupState(UR_STATE_CANCEL_ACTIVITY_LINK_ERROR, gTexts_UR_ChatDeclined[playerGender]);
+            }
         }
         if (gReceivedRemoteLinkPlayers)
             uroom->state = UR_STATE_START_ACTIVITY_FREE_UROOM;
@@ -3157,6 +3164,7 @@ void InitUnionRoom(void)
     sUnionRoomPlayerName[0] = EOS;
     if (QL_IS_PLAYBACK_STATE)
         return;
+
     CreateTask(Task_InitUnionRoom, 0);
     sWirelessLinkMain.uRoom = sWirelessLinkMain.uRoom; // Needed to match.
     sWirelessLinkMain.uRoom = data = AllocZeroed(sizeof(struct WirelessLink_URoom));
@@ -3307,7 +3315,7 @@ static u8 HandlePlayerListUpdate(void)
             }
             else if (data->playerList->players[j].groupScheduledAnim != UNION_ROOM_SPAWN_OUT)
             {
-                // Person may have disconnected. Give them 10 seconds.
+                // Person may have disconnected. Give them 10 seconds. (15 seconds in rev 10)
                 data->playerList->players[j].timeoutCounter++;
                 if (data->playerList->players[j].timeoutCounter >= 600)
                 {
@@ -3317,7 +3325,7 @@ static u8 HandlePlayerListUpdate(void)
             }
             else if (data->playerList->players[j].groupScheduledAnim == UNION_ROOM_SPAWN_OUT)
             {
-                // Person dropped. Wait 15 seconds, then remove them.
+                // Person dropped. Wait 15 seconds (20 seconds in rev 10), then remove them.
                 data->playerList->players[j].timeoutCounter++;
                 if (data->playerList->players[j].timeoutCounter >= 900)
                 {

@@ -1,5 +1,4 @@
 #include "global.h"
-#include "gflib.h"
 #include "battle_anim.h"
 #include "battle_pyramid.h"
 #include "battle_util.h"
@@ -12,27 +11,31 @@
 #include "event_scripts.h"
 #include "field_camera.h"
 #include "field_control_avatar.h"
-#include "field_effect.h"
 #include "field_effect_helpers.h"
+#include "field_effect.h"
 #include "field_player_avatar.h"
 #include "field_weather.h"
 #include "fieldmap.h"
 #include "follower_helper.h"
 #include "follower_npc.h"
+#include "gpu_regs.h"
+#include "malloc.h"
 #include "metatile_behavior.h"
 #include "overworld.h"
+#include "palette.h"
 #include "party_menu.h"
 #include "pokeball.h"
 #include "quest_log.h"
 #include "random.h"
 #include "script.h"
+#include "sound.h"
 #include "trainer_see.h"
 #include "trig.h"
 #include "wild_encounter.h"
 #include "constants/abilities.h"
-#include "constants/maps.h"
 #include "constants/event_object_movement.h"
 #include "constants/event_objects.h"
+#include "constants/maps.h"
 #include "constants/songs.h"
 #include "constants/trainer_types.h"
 #include "constants/union_room.h"
@@ -98,10 +101,10 @@ static u8 LoadSpritePaletteIfTagExists(const struct SpritePalette *);
 static u8 FindObjectEventPaletteIndexByTag(u16);
 static bool8 ObjectEventDoesElevationMatch(struct ObjectEvent *, u8);
 static bool8 AreElevationsCompatible(u8 a, u8 b);
-static void ObjectCB_CameraObject(struct Sprite *);
-static void CameraObject_0(struct Sprite *);
-static void CameraObject_1(struct Sprite *);
-static void CameraObject_2(struct Sprite *);
+static void SpriteCB_CameraObject(struct Sprite *);
+static void CameraObject_Init(struct Sprite *);
+static void CameraObject_UpdateMove(struct Sprite *);
+static void CameraObject_UpdateFrozen(struct Sprite *);
 static const struct ObjectEventTemplate *FindObjectEventTemplateByLocalId(u8 localId, const struct ObjectEventTemplate *templates, u8 count);
 static void ObjectEventSetSingleMovement(struct ObjectEvent *, struct Sprite *, u8);
 u8 GetDirectionToFace(s16 x1, s16 y1, s16 x2, s16 y2);
@@ -247,20 +250,23 @@ const u8 gReflectionEffectPaletteMap[16] = {
     [PALSLOT_NPC_SPECIAL_REFLECTION] = PALSLOT_NPC_SPECIAL_REFLECTION
 };
 
-static const struct SpriteTemplate gCameraSpriteTemplate = {
+static const struct SpriteTemplate sCameraSpriteTemplate = {
     .tileTag = 0,
     .paletteTag = TAG_NONE,
     .oam = &gDummyOamData,
-    .anims = gDummySpriteAnimTable,
-    .images = NULL,
-    .affineAnims = gDummySpriteAffineAnimTable,
-    .callback = ObjectCB_CameraObject
+    .callback = SpriteCB_CameraObject
 };
 
-void (*const gCameraObjectFuncs[])(struct Sprite *) = {
-    CameraObject_0,
-    CameraObject_1,
-    CameraObject_2,
+enum {
+    CAMERA_STATE_INIT,
+    CAMERA_STATE_MOVE,
+    CAMERA_STATE_FROZEN,
+};
+
+static void (*const sCameraObjectFuncs[])(struct Sprite *) = {
+    [CAMERA_STATE_INIT]   = CameraObject_Init,
+    [CAMERA_STATE_MOVE]   = CameraObject_UpdateMove,
+    [CAMERA_STATE_FROZEN] = CameraObject_UpdateFrozen,
 };
 
 #include "data/object_events/object_event_graphics.h"
@@ -1575,8 +1581,8 @@ static u8 InitObjectEventStateFromTemplate(const struct ObjectEventTemplate *tem
     objectEvent->previousCoords.y = y;
     objectEvent->currentElevation = template->elevation;
     objectEvent->previousElevation = template->elevation;
-    objectEvent->rangeX = template->movementRangeX;
-    objectEvent->rangeY = template->movementRangeY;
+    objectEvent->range.rangeX = template->movementRangeX;
+    objectEvent->range.rangeY = template->movementRangeY;
     objectEvent->trainerType = template->trainerType;
     objectEvent->mapNum = mapNum;
     objectEvent->trainerRange_berryTreeId = template->trainerRange_berryTreeId;
@@ -1584,10 +1590,10 @@ static u8 InitObjectEventStateFromTemplate(const struct ObjectEventTemplate *tem
     SetObjectEventDirection(objectEvent, objectEvent->previousMovementDirection);
     if (gRangedMovementTypes[objectEvent->movementType])
     {
-        if (objectEvent->rangeX == 0)
-            objectEvent->rangeX++;
-        if (objectEvent->rangeY == 0)
-            objectEvent->rangeY++;
+        if (objectEvent->range.rangeX == 0)
+            objectEvent->range.rangeX++;
+        if (objectEvent->range.rangeY == 0)
+            objectEvent->range.rangeY++;
     }
     return objectEventId;
 }
@@ -2973,7 +2979,7 @@ static void ObjectEventSetGraphics(struct ObjectEvent *objectEvent, const struct
     sprite->x += 8;
     sprite->y += 16 + sprite->centerToCornerVecY;
     if (objectEvent->trackedByCamera)
-        CameraObjectReset1();
+        CameraObjectReset();
 }
 
 void ObjectEventSetGraphicsId(struct ObjectEvent *objectEvent, u16 graphicsId)
@@ -3033,7 +3039,7 @@ static void SetBerryTreeGraphicsById(struct ObjectEvent *objectEvent, u8 berryId
     sprite->x += 8;
     sprite->y += 16 + sprite->centerToCornerVecY;
     if (objectEvent->trackedByCamera)
-        CameraObjectReset1();
+        CameraObjectReset();
 }
 
 static void SetBerryTreeGraphics(struct ObjectEvent *objectEvent, struct Sprite *sprite)
@@ -3289,7 +3295,7 @@ void MoveObjectEventToMapCoords(struct ObjectEvent *objectEvent, s16 x, s16 y)
     sprite->y += 16 + sprite->centerToCornerVecY;
     ResetObjectEventFldEffData(objectEvent);
     if (objectEvent->trackedByCamera)
-        CameraObjectReset1();
+        CameraObjectReset();
 }
 
 void TryMoveObjectEventToMapCoords(u8 localId, u8 mapNum, u8 mapGroup, s16 x, s16 y)
@@ -3365,58 +3371,58 @@ void UpdateObjectEventsForCameraUpdate(s16 x, s16 y)
     RemoveObjectEventsOutsideView();
 }
 
-u8 AddCameraObject(u8 linkedSpriteId)
+u8 AddCameraObject(u8 followSpriteId)
 {
-    u8 spriteId = CreateSprite(&gCameraSpriteTemplate, 0, 0, 4);
+    u8 spriteId = CreateSprite(&sCameraSpriteTemplate, 0, 0, 4);
 
     gSprites[spriteId].invisible = TRUE;
-    gSprites[spriteId].data[0] = linkedSpriteId;
+    gSprites[spriteId].sCamera_FollowSpriteId = followSpriteId;
     return spriteId;
 }
 
-static void ObjectCB_CameraObject(struct Sprite *sprite)
+static void SpriteCB_CameraObject(struct Sprite *sprite)
 {
-    void (*callbacks[NELEMS(gCameraObjectFuncs)])(struct Sprite *);
+    void (*callbacks[ARRAY_COUNT(sCameraObjectFuncs)])(struct Sprite *);
 
-    memcpy(callbacks, gCameraObjectFuncs, sizeof gCameraObjectFuncs);
-    callbacks[sprite->data[1]](sprite);
+    memcpy(callbacks, sCameraObjectFuncs, sizeof sCameraObjectFuncs);
+    callbacks[sprite->sCamera_State](sprite);
 }
 
-static void CameraObject_0(struct Sprite *sprite)
+static void CameraObject_Init(struct Sprite *sprite)
 {
-    sprite->x = gSprites[sprite->data[0]].x;
-    sprite->y = gSprites[sprite->data[0]].y;
+    sprite->x = gSprites[sprite->sCamera_FollowSpriteId].x;
+    sprite->y = gSprites[sprite->sCamera_FollowSpriteId].y;
     sprite->invisible = TRUE;
-    sprite->data[1] = 1;
-    CameraObject_1(sprite);
+    sprite->sCamera_State = CAMERA_STATE_MOVE;
+    CameraObject_UpdateMove(sprite);
 }
 
-static void CameraObject_1(struct Sprite *sprite)
+static void CameraObject_UpdateMove(struct Sprite *sprite)
 {
-    s16 x = gSprites[sprite->data[0]].x;
-    s16 y = gSprites[sprite->data[0]].y;
+    s16 x = gSprites[sprite->sCamera_FollowSpriteId].x;
+    s16 y = gSprites[sprite->sCamera_FollowSpriteId].y;
 
-    sprite->data[2] = x - sprite->x;
-    sprite->data[3] = y - sprite->y;
+    sprite->sCamera_MoveX = x - sprite->x;
+    sprite->sCamera_MoveY = y - sprite->y;
     sprite->x = x;
     sprite->y = y;
 }
 
-static void CameraObject_2(struct Sprite *sprite)
+static void CameraObject_UpdateFrozen(struct Sprite *sprite)
 {
-    sprite->x = gSprites[sprite->data[0]].x;
-    sprite->y = gSprites[sprite->data[0]].y;
-    sprite->data[2] = 0;
-    sprite->data[3] = 0;
+    sprite->x = gSprites[sprite->sCamera_FollowSpriteId].x;
+    sprite->y = gSprites[sprite->sCamera_FollowSpriteId].y;
+    sprite->sCamera_MoveX = 0;
+    sprite->sCamera_MoveY = 0;
 }
 
-static struct Sprite *FindCameraObject(void)
+static struct Sprite *FindCameraSprite(void)
 {
     u8 i;
 
     for (i = 0; i < MAX_SPRITES; i++)
     {
-        if (gSprites[i].inUse && gSprites[i].callback == ObjectCB_CameraObject)
+        if (gSprites[i].inUse && gSprites[i].callback == SpriteCB_CameraObject)
         {
             return &gSprites[i];
         }
@@ -3424,50 +3430,44 @@ static struct Sprite *FindCameraObject(void)
     return NULL;
 }
 
-void CameraObjectReset1(void)
+void CameraObjectReset(void)
 {
-    struct Sprite *cameraObject;
-
-    cameraObject = FindCameraObject();
-    if (cameraObject != NULL)
+    struct Sprite *camera = FindCameraSprite();
+    if (camera != NULL)
     {
-        cameraObject->data[1] = 0;
-        cameraObject->callback(cameraObject);
+        camera->sCamera_State = CAMERA_STATE_INIT;
+        camera->callback(camera);
     }
 }
 
-void CameraObjectSetFollowedObjectId(u8 objectId)
+void CameraObjectSetFollowedObjectId(u8 spriteId)
 {
-    struct Sprite *cameraObject;
-
-    cameraObject = FindCameraObject();
-    if (cameraObject != NULL)
+    struct Sprite *camera = FindCameraSprite();
+    if (camera != NULL)
     {
-        cameraObject->data[0] = objectId;
-        CameraObjectReset1();
+        camera->sCamera_FollowSpriteId = spriteId;
+        CameraObjectReset();
     }
 }
 
-u8 CameraObjectGetFollowedObjectId(void)
+u8 UNUSED CameraObjectGetFollowedObjectId(void)
 {
-    struct Sprite *cameraObject;
+    struct Sprite *camera = FindCameraSprite();
 
-    cameraObject = FindCameraObject();
-    if (cameraObject == NULL)
-    {
+    if (camera == NULL)
         return MAX_SPRITES;
-    }
-    return cameraObject->data[0];
+
+    return camera->sCamera_FollowSpriteId;
 }
 
-void CameraObjectReset2(void)
+void CameraObjectFreeze(void)
 {
-    struct Sprite *cameraObject = FindCameraObject();
+    struct Sprite *camera = FindCameraSprite();
 #ifdef UBFIX
-    if (cameraObject == NULL)
+    if (camera == NULL)
         return;
 #endif
-    cameraObject->data[1] = 2;
+    camera->sCamera_State = CAMERA_STATE_FROZEN;
 }
 
 u8 CopySprite(struct Sprite *sprite, s16 x, s16 y, u8 subpriority)
@@ -6557,19 +6557,19 @@ static bool8 IsCoordOutsideObjectEventMovementRange(struct ObjectEvent *objectEv
     s16 top;
     s16 bottom;
 
-    if (objectEvent->rangeX != 0)
+    if (objectEvent->range.rangeX != 0)
     {
-        left = objectEvent->initialCoords.x - objectEvent->rangeX;
-        right = objectEvent->initialCoords.x + objectEvent->rangeX;
+        left = objectEvent->initialCoords.x - objectEvent->range.rangeX;
+        right = objectEvent->initialCoords.x + objectEvent->range.rangeX;
         if (left > x || right < x)
         {
             return TRUE;
         }
     }
-    if (objectEvent->rangeY != 0)
+    if (objectEvent->range.rangeY != 0)
     {
-        top = objectEvent->initialCoords.y - objectEvent->rangeY;
-        bottom = objectEvent->initialCoords.y + objectEvent->rangeY;
+        top = objectEvent->initialCoords.y - objectEvent->range.rangeY;
+        bottom = objectEvent->initialCoords.y + objectEvent->range.rangeY;
         if (top > y || bottom < y)
         {
             return TRUE;
@@ -7087,7 +7087,7 @@ void InitNpcForMovement(struct ObjectEvent *objectEvent, struct Sprite *sprite, 
 
 void InitMovementNormal(struct ObjectEvent *objectEvent, struct Sprite *sprite, u8 direction, u8 speed)
 {
-    u8 (*functions[NELEMS(sDirectionAnimFuncsBySpeed)])(u8);
+    u8 (*functions[ARRAY_COUNT(sDirectionAnimFuncsBySpeed)])(u8);
     memcpy(functions, sDirectionAnimFuncsBySpeed, sizeof sDirectionAnimFuncsBySpeed);
     InitNpcForMovement(objectEvent, sprite, direction, speed);
     SetStepAnimHandleAlternation(objectEvent, sprite, functions[speed](objectEvent->facingDirection));
@@ -7539,7 +7539,7 @@ void InitJumpRegular(struct ObjectEvent *objectEvent, struct Sprite *sprite, u8 
 
 u8 UpdateJumpAnim(struct ObjectEvent *objectEvent, struct Sprite *sprite, u8 callback(struct Sprite *))
 {
-    s16 displacements[NELEMS(sJumpDisplacements)];
+    s16 displacements[ARRAY_COUNT(sJumpDisplacements)];
     s16 x;
     s16 y;
     u8 result;
@@ -10321,7 +10321,7 @@ static void GetGroundEffectFlags_JumpLanding(struct ObjectEvent *objEvent, u32 *
     {
         u8 i;
 
-        for (i = 0; i < NELEMS(metatileFuncs); i++)
+        for (i = 0; i < ARRAY_COUNT(metatileFuncs); i++)
         {
             if (metatileFuncs[i](objEvent->currentMetatileBehavior))
             {
@@ -10902,7 +10902,7 @@ static void DoFlaggedGroundEffects(struct ObjectEvent *objEvent, struct Sprite *
     if (objEvent->localId == LOCALID_CAMERA && objEvent->invisible)
         return;
 
-    for (i = 0; i < NELEMS(sGroundEffectFuncs); i++, flags >>= 1)
+    for (i = 0; i < ARRAY_COUNT(sGroundEffectFuncs); i++, flags >>= 1)
         if (flags & 1)
             sGroundEffectFuncs[i](objEvent, sprite);
     if (!OW_OBJECT_VANILLA_SHADOWS && CurrentMapHasShadows() && !(gWeatherPtr->noShadows || objEvent->inHotSprings || objEvent->inSandPile || MetatileBehavior_IsPuddle(objEvent->currentMetatileBehavior)))
@@ -11167,11 +11167,11 @@ static const SpriteStepFunc *const sNpcStepFuncTables[] = {
 };
 
 static const s16 sStepTimes[] = {
-    [MOVE_SPEED_NORMAL]  = NELEMS(sSpeedNormalStepFuncs),
-    [MOVE_SPEED_FAST_1]  = NELEMS(sSpeedFast1StepFuncs),
-    [MOVE_SPEED_FAST_2]  = NELEMS(sSpeedFast2StepFuncs),
-    [MOVE_SPEED_FASTER]  = NELEMS(sSpeedFasterStepFuncs),
-    [MOVE_SPEED_FASTEST] = NELEMS(sSpeedFastestStepFuncs),
+    [MOVE_SPEED_NORMAL]  = ARRAY_COUNT(sSpeedNormalStepFuncs),
+    [MOVE_SPEED_FAST_1]  = ARRAY_COUNT(sSpeedFast1StepFuncs),
+    [MOVE_SPEED_FAST_2]  = ARRAY_COUNT(sSpeedFast2StepFuncs),
+    [MOVE_SPEED_FASTER]  = ARRAY_COUNT(sSpeedFasterStepFuncs),
+    [MOVE_SPEED_FASTEST] = ARRAY_COUNT(sSpeedFastestStepFuncs),
 };
 
 bool8 NpcTakeStep(struct Sprite *sprite)

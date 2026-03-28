@@ -1,41 +1,45 @@
 #include "global.h"
-#include "pokemon.h"
-#include "gflib.h"
-#include "data.h"
 #include "battle.h"
-#include "constants/items.h"
-#include "daycare.h"
-#include "mail.h"
-#include "pokemon_storage_system.h"
-#include "event_data.h"
-#include "random.h"
-#include "constants/moves.h"
 #include "caps.h"
-#include "menu.h"
-#include "script.h"
-#include "strings.h"
-#include "party_menu.h"
+#include "data.h"
+#include "daycare.h"
+#include "decompress.h"
+#include "event_data.h"
+#include "field_fadetransition.h"
+#include "gpu_regs.h"
+#include "graphics.h"
+#include "help_system.h"
 #include "item.h"
 #include "list_menu.h"
-#include "overworld.h"
-#include "pokedex.h"
-#include "decompress.h"
-#include "constants/songs.h"
-#include "text_window.h"
-#include "trig.h"
 #include "m4a.h"
-#include "graphics.h"
-#include "scanline_effect.h"
+#include "mail.h"
+#include "malloc.h"
+#include "menu.h"
 #include "naming_screen.h"
-#include "help_system.h"
-#include "field_fadetransition.h"
+#include "overworld.h"
+#include "palette.h"
+#include "party_menu.h"
+#include "pokedex.h"
+#include "pokemon_storage_system.h"
+#include "pokemon.h"
+#include "random.h"
 #include "regions.h"
+#include "scanline_effect.h"
+#include "script.h"
+#include "sound.h"
+#include "string_util.h"
+#include "strings.h"
+#include "text_window.h"
 #include "text.h"
 #include "trade.h"
+#include "trig.h"
 #include "constants/abilities.h"
 #include "constants/daycare.h"
 #include "constants/hold_effects.h"
+#include "constants/items.h"
+#include "constants/moves.h"
 #include "constants/region_map_sections.h"
+#include "constants/songs.h"
 
 #define IS_DITTO(species) (gSpeciesInfo[species].eggGroups[0] == EGG_GROUP_DITTO || gSpeciesInfo[species].eggGroups[1] == EGG_GROUP_DITTO)
 // Combination of RSE's Day-Care (re-used on Four Island), FRLG's Day-Care, and egg_hatch.c
@@ -102,8 +106,8 @@ static const struct WindowTemplate sDaycareLevelMenuWindowTemplate =
 
 static const struct ListMenuItem sLevelMenuItems[] =
 {
-    {gExpandedPlaceholder_Empty, 0},
-    {gExpandedPlaceholder_Empty, 1},
+    {gText_EmptyString, 0},
+    {gText_EmptyString, 1},
     {gOtherText_Exit, DAYCARE_LEVEL_MENU_EXIT}
 };
 
@@ -1350,7 +1354,7 @@ void CreateEgg(struct Pokemon *mon, u16 species, bool8 setHotSpringsLocation)
 {
     u8 metLevel;
     enum PokeBall ball;
-    u8 language;
+    enum Language language;
     u8 metLocation;
     u8 isEgg;
 
@@ -2046,7 +2050,7 @@ static void CB2_EggHatch_0(void)
 
         ResetTempTileDataBuffers();
         ResetBgsAndClearDma3BusyFlags(0);
-        InitBgsFromTemplates(0, sBgTemplates_EggHatch, NELEMS(sBgTemplates_EggHatch));
+        InitBgsFromTemplates(0, sBgTemplates_EggHatch, ARRAY_COUNT(sBgTemplates_EggHatch));
 
         ChangeBgX(1, 0, 0);
         ChangeBgY(1, 0, 0);

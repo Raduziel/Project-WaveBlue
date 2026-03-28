@@ -1,13 +1,15 @@
 #include "global.h"
-#include "gflib.h"
-#include "librfu.h"
 #include "battle.h"
-#include "link.h"
+#include "gpu_regs.h"
+#include "librfu.h"
 #include "link_rfu.h"
+#include "link.h"
 #include "mystery_gift_menu.h"
 #include "overworld.h"
+#include "palette.h"
 #include "quest_log.h"
 #include "random.h"
+#include "string_util.h"
 #include "task.h"
 #include "constants/union_room.h"
 
@@ -71,7 +73,7 @@ struct RfuDebug
 static EWRAM_DATA INIT_PARAM sRfuReqConfig = {};
 static EWRAM_DATA struct RfuDebug sRfuDebug = {};
 
-static u32 sRfuAPIBuffer[RFU_API_BUFF_SIZE_RAM / 4];
+static u32 sRfuAPIBuffer[RFU_API_BUFF_SIZE_RAM / 4] = {0};
 static u8 sResendBlock8[CMD_LENGTH * 2];
 static u16 sResendBlock16[CMD_LENGTH];
 
@@ -79,6 +81,7 @@ COMMON_DATA struct RfuGameData gHostRfuGameData = {0};
 COMMON_DATA struct RfuManager gRfu = {0};
 COMMON_DATA u8 gHostRfuUsername[PLAYER_NAME_LENGTH + 1] = {0};
 
+static u16 ReadU16(const void *ptr);
 static void InitChildRecvBuffers(void);
 static void InitParentSendData(void);
 static void MscCallback_Child(u16 REQ_commandID);
@@ -92,7 +95,6 @@ static void SendNextBlock(void);
 static void SendLastBlock(void);
 static void CallRfuFunc(void);
 static void UpdateChildStatuses(void);
-static s32 GetJoinGroupStatus(void);
 static void Task_PlayerExchange(u8 taskId);
 static void ClearSelectedLinkPlayerIds(u16 disconnectMask);
 static void ValidateAndReceivePokemonSioInfo(void *recvBuffer);
@@ -119,7 +121,7 @@ static const INIT_PARAM sRfuReqConfigTemplate = {
     .fastSearchParent_flag = TRUE,
     .linkRecovery_enable = FALSE,
     .linkRecovery_period = 600,
-    .NI_failCounter_limit = 300
+    .NI_failCounter_limit = 300,
 };
 
 static const u8 sAvailSlots[] = {
@@ -1547,6 +1549,7 @@ u8 Rfu_SetLinkRecovery(bool32 enable)
 {
     if (!enable)
         return rfu_LMAN_setLinkRecovery(FALSE, 0);
+
     rfu_LMAN_setLinkRecovery(TRUE, 600);
     return 0;
 }
@@ -1695,7 +1698,7 @@ static void UpdateChildStatuses(void)
     }
 }
 
-static s32 GetJoinGroupStatus(void)
+s32 GetJoinGroupStatus(void)
 {
     s32 status = RFU_STATUS_OK;
     if (gRfu.sendStatus == RFU_STATUS_LEAVE_GROUP_NOTICE)
@@ -1790,6 +1793,7 @@ static void Task_PlayerExchange(u8 taskId)
         gReceivedRemoteLinkPlayers = TRUE;
         gRfu.playerExchangeActive = FALSE;
         rfu_LMAN_setLinkRecovery(1, 600);
+
         if (gRfu.newChildQueue)
         {
             for (i = 0; i < RFU_CHILD_MAX; i++)

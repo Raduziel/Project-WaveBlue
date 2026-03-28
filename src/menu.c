@@ -1,18 +1,22 @@
 #include "global.h"
 #include "decompress.h"
-#include "gflib.h"
+#include "dma3.h"
 #include "event_data.h"
 #include "field_specials.h"
 #include "field_weather.h"
 #include "graphics.h"
 #include "help_message.h"
-#include "menu.h"
+#include "malloc.h"
 #include "menu_helpers.h"
+#include "menu.h"
+#include "palette.h"
 #include "pokedex.h"
 #include "pokemon_icon.h"
 #include "quest_log.h"
 #include "region_map.h"
 #include "script.h"
+#include "sound.h"
+#include "string_util.h"
 #include "strings.h"
 #include "text_window.h"
 #include "constants/songs.h"
@@ -53,7 +57,6 @@ static EWRAM_DATA u8 sPaletteNum = 0;
 static EWRAM_DATA u8 sYesNoWindowId = 0;
 static EWRAM_DATA u8 sTopBarWindowId = 0;
 static EWRAM_DATA u8 sMapNamePopupWindowId = 0;
-static EWRAM_DATA u8 sSecondaryPopupWindowId = 0;
 static EWRAM_DATA bool8 sScheduledBgCopiesToVram[4] = {FALSE};
 static EWRAM_DATA void *sTempTileDataBuffers[0x20] = {NULL};
 static EWRAM_DATA u16 sTempTileDataBufferCursor = {0};
@@ -436,12 +439,8 @@ void RemoveStartMenuWindow(void)
 u8 AddMapNamePopUpWindow(void)
 {
     if (sMapNamePopupWindowId == WINDOW_NONE)
-    {
-        if (OW_POPUP_GENERATION == GEN_5)
-            sMapNamePopupWindowId = AddWindowParameterized(0, 0, 0, 30, 3, 14, 0x107);
-        else
-            sMapNamePopupWindowId = AddWindowParameterized(0, 1, 1, 10, 3, 14, 0x107);
-    }
+        sMapNamePopupWindowId = AddWindowParameterized(0, 1, 1, 10, 3, 14, 0x107);
+
     return sMapNamePopupWindowId;
 }
 
@@ -940,7 +939,7 @@ void CreateYesNoMenuAtPos(const struct WindowTemplate *window, u8 fontId, u8 lef
     textSubPrinter.color.accent = GetFontAttribute(fontId, FONTATTR_COLOR_ACCENT);
     textSubPrinter.letterSpacing = GetFontAttribute(fontId, FONTATTR_LETTER_SPACING);
     textSubPrinter.lineSpacing = GetFontAttribute(fontId, FONTATTR_LINE_SPACING);
-    AddTextPrinter(&textSubPrinter, 0xFF, NULL);
+    AddTextPrinter(&textSubPrinter, TEXT_SKIP_DRAW, NULL);
     InitMenuNormal(sYesNoWindowId, fontId, left, top, GetFontAttribute(fontId, FONTATTR_MAX_LETTER_HEIGHT) + textSubPrinter.lineSpacing, 2, initialCursorPos);
 }
 
@@ -1127,7 +1126,7 @@ void ResetTempTileDataBuffers(void)
 {
     int i;
 
-    for (i = 0; i < (s32)NELEMS(sTempTileDataBuffers); i++)
+    for (i = 0; i < (s32)ARRAY_COUNT(sTempTileDataBuffers); i++)
     {
         sTempTileDataBuffers[i] = NULL;
     }
@@ -1160,7 +1159,7 @@ void *DecompressAndCopyTileDataToVram(u8 bgId, const void *src, u32 size, u16 of
 {
     u32 sizeOut;
 
-    if (sTempTileDataBufferCursor < NELEMS(sTempTileDataBuffers))
+    if (sTempTileDataBufferCursor < ARRAY_COUNT(sTempTileDataBuffers))
     {
         void *ptr = malloc_and_decompress(src, &sizeOut);
         if (!size)
@@ -1302,8 +1301,12 @@ void ResetBgPositions(void)
 
 void DestroyYesNoMenu(void)
 {
+    if (sYesNoWindowId == WINDOW_NONE)
+        return;
+
     ClearStdWindowAndFrameToTransparent(sYesNoWindowId, TRUE);
     RemoveWindow(sYesNoWindowId);
+    sYesNoWindowId = WINDOW_NONE;
 }
 
 void MultichoiceGrid_PrintItems(u8 windowId, u8 fontId, u8 itemWidth, u8 itemHeight, u8 cols, u8 rows, const struct MenuAction *strs)
@@ -1425,7 +1428,7 @@ static u8 MultichoiceGrid_MoveCursorIfValid(s8 deltaX, s8 deltaY)
     }
 }
 
-s8 Menu_ProcessInputGridLayout(void)
+s8 Menu_ProcessGridInput(void)
 {
     u8 oldPos = sMenu.cursorPos;
 
@@ -1468,8 +1471,6 @@ s8 Menu_ProcessInputGridLayout(void)
 void InitPopupWindows(void)
 {
     sMapNamePopupWindowId = WINDOW_NONE;
-    if (OW_POPUP_GENERATION == GEN_5)
-        sSecondaryPopupWindowId = WINDOW_NONE;
 }
 
 u16 GetStandardFrameBaseTileNum(void)
@@ -1610,7 +1611,6 @@ void BufferSaveMenuText(enum SaveStat gameStatId, u8 *dest0, u8 color)
         dest = StringCopy(dest, gSaveBlock2Ptr->playerName);
         break;
     case SAVE_MENU_POKEDEX:
-        break;
         if (IsNationalPokedexEnabled())
             dest = ConvertIntToDecimalStringN(dest, GetNationalPokedexCount(FLAG_GET_CAUGHT), STR_CONV_MODE_LEFT_ALIGN, 4);
         else
@@ -1633,45 +1633,6 @@ void BufferSaveMenuText(enum SaveStat gameStatId, u8 *dest0, u8 color)
         *dest++ = nBadges + CHAR_0;
         *dest++ = EOS;
         break;
-    }
-}
-
-// BW map pop-ups
-u8 AddSecondaryPopUpWindow(void)
-{
-    if (sSecondaryPopupWindowId == WINDOW_NONE)
-        sSecondaryPopupWindowId = AddWindowParameterized(0, 0, 17, 30, 3, 14, 0x161);
-    return sSecondaryPopupWindowId;
-}
-
-u8 GetSecondaryPopUpWindowId(void)
-{
-    return sSecondaryPopupWindowId;
-}
-
-void RemoveSecondaryPopUpWindow(void)
-{
-    if (sSecondaryPopupWindowId != WINDOW_NONE)
-    {
-        RemoveWindow(sSecondaryPopupWindowId);
-        sSecondaryPopupWindowId = WINDOW_NONE;
-    }
-}
-
-void HBlankCB_DoublePopupWindow(void)
-{
-    u16 offset = gTasks[gPopupTaskId].data[2];
-    u16 scanline = REG_VCOUNT;
-
-    if (scanline < 80 || scanline > 160)
-    {
-        REG_BG0VOFS = offset;
-        if(OW_POPUP_BW_ALPHA_BLEND && !IsWeatherAlphaBlend())
-            REG_BLDALPHA = BLDALPHA_BLEND(15, 5);
-    }
-    else
-    {
-        REG_BG0VOFS = 512 - offset;
     }
 }
 

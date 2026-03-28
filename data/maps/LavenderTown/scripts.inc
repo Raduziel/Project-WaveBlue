@@ -137,7 +137,7 @@ ChooseMonLoop::
 
 ChooseStatLoop::
     msgbox EVRemover_ChooseStatText, MSGBOX_DEFAULT
-    multichoice 0, 0, MULTICHOICE_HYPER_STATS, FALSE
+    multichoice 0, 0, MULTI_HYPER_STATS, FALSE
     
     compare VAR_RESULT, 6
     goto_if_eq AskAnotherMon

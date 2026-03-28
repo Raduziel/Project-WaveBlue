@@ -1,29 +1,34 @@
 #include "global.h"
-#include "decompress.h"
-#include "gflib.h"
+#include "bg.h"
 #include "data.h"
-#include "keyboard_text.h"
+#include "decompress.h"
 #include "event_data.h"
 #include "event_object_movement.h"
 #include "event_scripts.h"
 #include "field_effect.h"
 #include "field_player_avatar.h"
 #include "field_specials.h"
+#include "gpu_regs.h"
 #include "graphics.h"
 #include "help_system.h"
+#include "keyboard_text.h"
+#include "malloc.h"
 #include "menu.h"
-#include "overworld.h"
 #include "naming_screen.h"
+#include "overworld.h"
+#include "palette.h"
 #include "pokemon_icon.h"
 #include "pokemon_storage_system.h"
+#include "sound.h"
+#include "string_util.h"
 #include "strings.h"
 #include "task.h"
 #include "text_window.h"
 #include "trig.h"
 #include "constants/event_object_movement.h"
+#include "constants/event_objects.h"
 #include "constants/help_system.h"
 #include "constants/songs.h"
-#include "constants/event_objects.h"
 
 enum {
     INPUT_NONE,
@@ -1912,7 +1917,7 @@ static void DrawTextEntry(void)
     for (i = 0; i < maxChars; i++)
     {
         temp[0] = sNamingScreen->textBuffer[i];
-        temp[1] = gExpandedPlaceholder_Empty[0];
+        temp[1] = gText_EmptyString[0];
         extraWidth = (IsWideLetter(temp[0]) == TRUE) ? 2 : 0;
 
         AddTextPrinterParameterized(sNamingScreen->windows[WIN_TEXT_ENTRY], FONT_NORMAL, temp, i * 8 + xpos + extraWidth, 1, TEXT_SKIP_DRAW, NULL);

@@ -1,15 +1,18 @@
 #include "global.h"
-#include "gflib.h"
-#include "quest_log.h"
-#include "region_map.h"
-#include "menu.h"
+#include "event_data.h"
 #include "field_fadetransition.h"
 #include "field_weather.h"
-#include "script.h"
-#include "overworld.h"
-#include "event_data.h"
+#include "gpu_regs.h"
+#include "malloc.h"
 #include "map_preview_screen.h"
+#include "menu.h"
+#include "overworld.h"
+#include "palette.h"
+#include "quest_log.h"
+#include "region_map.h"
+#include "script.h"
 #include "constants/region_map_sections.h"
+#include "constants/weather.h"
 
 static EWRAM_DATA bool8 sHasVisitedMapBefore = FALSE;
 static EWRAM_DATA bool8 sAllocedBg0TilemapBuffer = FALSE;
@@ -381,7 +384,7 @@ bool32 MapHasPreviewScreen_HandleQLState2(u8 mapsec, u8 type)
 
 void MapPreview_InitBgs(void)
 {
-    InitBgsFromTemplates(0, sMapPreviewBgTemplate, NELEMS(sMapPreviewBgTemplate));
+    InitBgsFromTemplates(0, sMapPreviewBgTemplate, ARRAY_COUNT(sMapPreviewBgTemplate));
     ShowBg(0);
 }
 
@@ -473,11 +476,11 @@ bool32 ForestMapPreviewScreenIsRunning(void)
 {
     if (FuncIsActiveTask(Task_RunMapPreviewScreenForest) == TRUE)
     {
-        return FALSE;
+        return TRUE;
     }
     else
     {
-        return TRUE;
+        return FALSE;
     }
 }
 
@@ -554,6 +557,8 @@ static void Task_RunMapPreviewScreenForest(u8 taskId)
             SetGpuReg(REG_OFFSET_BLDALPHA, data[5]);
             SetGpuReg(REG_OFFSET_WININ, data[6]);
             SetGpuReg(REG_OFFSET_WINOUT, data[7]);
+            if (GetCurrentWeather() == WEATHER_SHADE)
+                Weather_SetBlendCoeffs(8, BASE_SHADOW_INTENSITY); // preserve shadow darkness
             DestroyTask(taskId);
         }
         break;

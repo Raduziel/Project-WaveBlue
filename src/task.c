@@ -83,6 +83,10 @@ static void InsertTask(u8 newTaskId)
 
 void DestroyTask(u8 taskId)
 {
+    // Bounds check on the task ID.
+    if (taskId >= NUM_TASKS)
+        return;
+
     if (gTasks[taskId].isActive)
     {
         gTasks[taskId].isActive = FALSE;

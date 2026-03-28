@@ -265,7 +265,7 @@ HT_CheckSingleItem:
 HT_MenuDual:
     msgbox HyperTraining_ExplainCaps, MSGBOX_DEFAULT
     waitmessage
-    multichoice 0, 0, MULTICHOICE_HYPER_CAP_CHOICE, FALSE
+    multichoice 0, 0, MULTI_HYPER_CAP_CHOICE, FALSE
     switch VAR_RESULT
     case 0, HT_SetBottlePath
     case 1, HT_SetGoldPath
@@ -362,7 +362,7 @@ HT_Menu_Bottle:
     goto_if_eq HT_NoItemError
     msgbox HyperTraining_ChooseStatText, MSGBOX_DEFAULT
     waitmessage
-    multichoice 0, 0, MULTICHOICE_HYPER_STATS, FALSE
+    multichoice 0, 0, MULTI_HYPER_STATS, FALSE
     compare VAR_RESULT, 6
     goto_if_eq HT_Exit
     compare VAR_RESULT, 127

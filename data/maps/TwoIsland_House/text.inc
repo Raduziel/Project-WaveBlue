@@ -3,7 +3,7 @@ TwoIsland_House_Text_TeachMonMoveForMushroom::
     .string "I know every single move that\n"
     .string "Pokémon learn growing up.\p"
     .string "I'm also a mushroom maniac.\p"
-    .string "Bring me two TinyMushroom,\n"
+    .string "Bring me two Tiny Mushroom,\n"
     .string "or one Big Mushroom.\p"
     .string "If you do that for me, I'll teach\n"
     .string "a move to one Pokémon.$"
@@ -31,7 +31,7 @@ TwoIsland_House_Text_IllNeedMushroomOrTwo::
 
 TwoIsland_House_Text_HandedOverTwoTinyMushrooms::
     .string "{PLAYER} handed over two\n"
-    .string "TinyMushrooms in exchange.$"
+    .string "Tiny Mushrooms in exchange.$"
 
 TwoIsland_House_Text_HandedOverOneBigMushroom::
     .string "{PLAYER} handed over one\n"

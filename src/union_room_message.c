@@ -512,14 +512,13 @@ const u8 *const gTexts_UR_NoWonderShared[] = {
     sText_NoNewsSharedRightNow
 };
 
-ALIGNED(4) const u8 gText_UR_Battle[] = _("BATTLE");
-ALIGNED(4) const u8 gText_UR_Chat2[] = _("CHAT");
-ALIGNED(4) const u8 gText_UR_Greetings[] = _("GREETINGS");
-ALIGNED(4) const u8 gText_UR_Exit[] = _("EXIT");
+ALIGNED(4) const u8 gText_UR_Battle[] = _("Battle");
+ALIGNED(4) const u8 gText_UR_Chat2[] = _("Chat");
+ALIGNED(4) const u8 gText_UR_Greetings[] = _("Greetings");
+ALIGNED(4) const u8 gText_UR_Exit[] = _("Exit");
 
-ALIGNED(4) const u8 gText_UR_Exit2[] = _("EXIT");
-ALIGNED(4) const u8 gText_UR_Info[] = _("INFO");
-ALIGNED(4) const u8 gText_UR_NameWantedOfferLv[] = _("NAME{CLEAR_TO 0x3C}WANTED{CLEAR_TO 0x6E}OFFER{CLEAR_TO 0xC6}LV.");
+ALIGNED(4) const u8 gText_UR_Exit2[] = _("Exit");
+ALIGNED(4) const u8 gText_UR_NameWantedOfferLv[] = _("Name{CLEAR_TO 0x3C}Wanter{CLEAR_TO 0x6E}Offer{CLEAR_TO 0xC6}LV.");
 
 ALIGNED(4) const u8 gText_UR_SingleBattle[] = _("Single Battle");
 ALIGNED(4) const u8 gText_UR_DoubleBattle[] = _("Double Battle");
@@ -532,7 +531,7 @@ ALIGNED(4) const u8 gText_UR_WonderNews[] = _("Wonder News");
 ALIGNED(4) const u8 gText_UR_PokemonJump[] = _("Pokémon Jump");
 ALIGNED(4) const u8 gText_UR_BerryCrush[] = _("Berry Crush");
 ALIGNED(4) const u8 gText_UR_BerryPicking[] = _("Berry-Picking");
-ALIGNED(4) const u8 gText_UR_Search[] = _("SEARCH");
+ALIGNED(4) const u8 gText_UR_Search[] = _("Search");
 ALIGNED(4) const u8 gText_UR_SpinTrade[] = _("ぐるぐるこうかん");
 ALIGNED(4) const u8 gText_UR_ItemTrade[] = _("アイテムトレード");
 
@@ -550,8 +549,8 @@ const u8 *const gTexts_UR_CardColor[] = {
     sText_ItsGoldCard
 };
 
-ALIGNED(4) const u8 gText_UR_TrainerCardInfoPage1[] = _("This is {DYNAMIC 0} {DYNAMIC 1}'s\nTrainer CARD…\l{DYNAMIC 2}\pPokédex: {DYNAMIC 3}\nTIME:    {DYNAMIC 4}:{DYNAMIC 5}\p");
-ALIGNED(4) const u8 gText_UR_TrainerCardInfoPage2[] = _("BATTLES: {DYNAMIC 0} WINS  {DYNAMIC 2} LOSSES\nTRADES:  {DYNAMIC 3} TIMES\p“{DYNAMIC 4} {DYNAMIC 5}\n{DYNAMIC 6} {DYNAMIC 7}”\p");
+ALIGNED(4) const u8 gText_UR_TrainerCardInfoPage1[] = _("This is {DYNAMIC 0} {DYNAMIC 1}'s\nTrainer CARD…\l{DYNAMIC 2}\pPokédex: {DYNAMIC 3}\nTime:    {DYNAMIC 4}:{DYNAMIC 5}\p");
+ALIGNED(4) const u8 gText_UR_TrainerCardInfoPage2[] = _("Battles: {DYNAMIC 0} Wins  {DYNAMIC 2} Losses\nTrades:  {DYNAMIC 3} Times\p“{DYNAMIC 4} {DYNAMIC 5}\n{DYNAMIC 6} {DYNAMIC 7}”\p");
 ALIGNED(4) static const u8 sText_GladToMeetYouMale[] = _("{DYNAMIC 1}: Glad to have met you!{PAUSE 60}");
 ALIGNED(4) static const u8 sText_GladToMeetYouFemale[] = _("{DYNAMIC 1}: Glad to meet you!{PAUSE 60}");
 

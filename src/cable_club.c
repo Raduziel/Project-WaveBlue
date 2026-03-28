@@ -1,8 +1,7 @@
 #include "global.h"
-#include "gflib.h"
-#include "battle.h"
 #include "battle_records.h"
 #include "battle_setup.h"
+#include "battle.h"
 #include "cable_club.h"
 #include "event_data.h"
 #include "event_scripts.h"
@@ -14,19 +13,22 @@
 #include "menu.h"
 #include "mystery_gift.h"
 #include "overworld.h"
+#include "palette.h"
 #include "quest_log.h"
-#include "script.h"
 #include "script_pokemon_util.h"
+#include "script.h"
+#include "sound.h"
 #include "start_menu.h"
+#include "string_util.h"
 #include "strings.h"
 #include "task.h"
 #include "trade.h"
 #include "trainer_card.h"
 #include "union_room.h"
-#include "constants/songs.h"
 #include "constants/cable_club.h"
 #include "constants/field_weather.h"
 #include "constants/maps.h"
+#include "constants/songs.h"
 
 COMMON_DATA u32 UnusedVarNeededToMatch[8] = {0};
 
@@ -345,12 +347,9 @@ static void Task_LinkupExchangeDataWithLeader(u8 taskId)
 
 static bool32 AnyConnectedPartnersPlayingRS(void)
 {
-    int i;
-    u16 version;
-
-    for (i = 0; i < GetLinkPlayerCount(); i++)
+    for (u32 i = 0; i < GetLinkPlayerCount(); i++)
     {
-        version = gLinkPlayers[i].version & 0xFF;
+        enum GameVersion version = gLinkPlayers[i].version & 0xFF;
         if (version == VERSION_RUBY || version == VERSION_SAPPHIRE)
             return TRUE;
     }
@@ -397,18 +396,15 @@ static void Task_LinkupCheckStatusAfterConfirm(u8 taskId)
 
 static void Task_LinkupAwaitTrainerCardData(u8 taskId)
 {
-    u8 i;
-    u16 version;
-
     if (CheckLinkErrored(taskId) == TRUE)
         return;
 
     if (GetBlockReceivedStatus() != GetSavedLinkPlayerCountAsBitFlags())
         return;
 
-    for (i = 0; i < GetLinkPlayerCount(); i++)
+    for (u32 i = 0; i < GetLinkPlayerCount(); i++)
     {
-        version = gLinkPlayers[i].version & 0xFF;
+        enum GameVersion version = gLinkPlayers[i].version & 0xFF;
         if (version != VERSION_FIRE_RED && version != VERSION_LEAF_GREEN)
         {
             const struct TrainerCardRSE * src = (const struct TrainerCardRSE *)gBlockRecvBuffer[i];
@@ -978,6 +974,7 @@ bool32 GetSeeingLinkPlayerCardMsg(u8 linkPlayerIndex)
 void Task_WaitForLinkPlayerConnection(u8 taskId)
 {
     struct Task *task = &gTasks[taskId];
+
     if (++task->tTimer > 300)
     {
         CloseLink();

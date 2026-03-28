@@ -1,15 +1,20 @@
 #include "global.h"
-#include "gflib.h"
 #include "battle_pyramid.h"
-#include "task.h"
 #include "event_data.h"
-#include "text_window.h"
+#include "gpu_regs.h"
+#include "map_name_popup_expansion.h"
+#include "palette.h"
 #include "quest_log.h"
 #include "region_map.h"
+#include "string_util.h"
 #include "strings.h"
-#include "map_name_popup_expansion.h"
+#include "task.h"
+#include "text_window.h"
+#include "text.h"
+#include "window.h"
 #include "constants/battle_frontier.h"
 #include "constants/battle_pyramid.h"
+#include "constants/characters.h"
 #include "constants/layouts.h"
 
 #define FLOOR_ROOFTOP 127
@@ -57,7 +62,7 @@ void ShowMapNamePopup(bool32 palIntoFadedBuffer)
     if (QL_IS_PLAYBACK_STATE)
         return;
 
-    if (OW_POPUP_GENERATION >= GEN_4)
+    if (OW_MAP_POPUP_EMERALD)
     {
         ShowMapNamePopupExpansion();
         return;
@@ -167,7 +172,7 @@ void HideMapNamePopUpWindow(void)
     u8 taskId;
     s16 *data;
 
-    if (OW_POPUP_GENERATION >= GEN_4)
+    if (OW_MAP_POPUP_EMERALD)
     {
         HideMapNamePopUpExpansionWindow();
         return;
@@ -269,7 +274,7 @@ static u8 *MapNamePopupAppendFloorNum(u8 *dest, s8 floorNum)
         return dest;
     *dest++ = CHAR_SPACE;
     if (floorNum == FLOOR_ROOFTOP)
-        return StringCopy(dest, gText_Rooftop2);
+        return StringCopy(dest, gText_Rooftop);
     if (floorNum < 0)
     {
         *dest++ = CHAR_B;

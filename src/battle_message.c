@@ -1,12 +1,11 @@
 #include "global.h"
-#include "gflib.h"
-#include "battle.h"
 #include "battle_anim.h"
 #include "battle_controllers.h"
 #include "battle_message.h"
 #include "battle_setup.h"
 #include "battle_special.h"
 #include "battle_z_move.h"
+#include "battle.h"
 #include "event_data.h"
 #include "event_scripts.h"
 #include "field_specials.h"
@@ -16,7 +15,9 @@
 #include "line_break.h"
 #include "link.h"
 #include "menu.h"
+#include "palette.h"
 #include "recorded_battle.h"
+#include "string_util.h"
 #include "strings.h"
 #include "test_runner.h"
 #include "trainer_tower.h"
@@ -24,8 +25,8 @@
 #include "constants/battle_dome.h"
 #include "constants/battle_string_ids.h"
 #include "constants/frontier_util.h"
-#include "constants/moves.h"
 #include "constants/items.h"
+#include "constants/moves.h"
 #include "constants/trainers.h"
 #include "constants/weather.h"
 
@@ -164,6 +165,7 @@ static const u8 sText_Lanettes[] = _("Lanette's"); //no decapitalize until it is
 static const u8 sText_EnigmaBerry[] = _("Enigma Berry"); //no decapitalize until it is everywhere
 static const u8 sText_BerrySuffix[] = _(" Berry"); //no decapitalize until it is everywhere
 const u8 gText_EmptyString3[] = _("");
+const u8 gText_EmptyString[] = _("");
 
 // New battle strings.
 const u8 gText_drastically[] = _("drastically ");
@@ -190,6 +192,9 @@ const u8 gText_BattleSwitchWhich3[] = _("{UP_ARROW}");
 const u8 gText_BattleSwitchWhich4[] = _("{ESCAPE 4}");
 const u8 gText_BattleSwitchWhich5[] = _("-");
 const u8 gText_SafariBalls[] = _("{HIGHLIGHT DARK_GRAY}Safari Balls");
+const u8 gText_HealthboxGender_Male[] = _("{COLOR DYNAMIC_COLOR2}♂");
+const u8 gText_HealthboxGender_Female[] = _("{COLOR DYNAMIC_COLOR1}♀");
+const u8 gText_HealthboxGender_None[] = _("{COLOR DYNAMIC_COLOR2}");
 const u8 gText_SafariBallLeft[] = _("{HIGHLIGHT DARK_GRAY}Left: $" "{HIGHLIGHT DARK_GRAY}");
 const u8 gText_Sleep[] = _("sleep");
 const u8 gText_Poison[] = _("poison");
@@ -3717,7 +3722,7 @@ u32 BattleStringExpandPlaceholders(const u8 *src, u8 *dst, u32 dstSize)
                 while (*toCpy != EOS)
                 {
                     if (*toCpy == CHAR_SPACE)
-                        dst[dstID] = CHAR_SPACE; // TODO: NBSP fails tests
+                        dst[dstID] = CHAR_NBSP;
                     else
                         dst[dstID] = *toCpy;
                     dstID++;

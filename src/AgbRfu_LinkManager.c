@@ -577,6 +577,7 @@ static void rfu_LMAN_settingPCSWITCH(u32 rand)
         lman.state = LMAN_STATE_START_SEARCH_CHILD;
         lman.connect_period = rand % 140;
         lman.pcswitch_period_bak = 140 - lman.connect_period;
+
         if (lman.connect_period)
         {
             lman.pcswitch_flag = PCSWITCH_1ST_SC;
@@ -1309,8 +1310,10 @@ u8 rfu_LMAN_setLinkRecovery(u8 enable_flag, u16 recovery_period)
     {
         return LMAN_ERROR_NOW_LINK_RECOVERY;
     }
+
     imeBak = REG_IME;
     REG_IME = 0;
+
     lman.linkRecovery_enable = enable_flag;
     lman.linkRecoveryTimer.count_max = recovery_period;
     REG_IME = imeBak;
