@@ -28,7 +28,7 @@ struct WildPokemon
 {
     u8 minLevel;
     u8 maxLevel;
-    u16 species;
+    enum Species species;
 };
 
 struct WildPokemonInfo
@@ -56,7 +56,7 @@ struct WildPokemonHeader
 extern const struct WildPokemonHeader gWildMonHeaders[];
 extern bool8 gIsFishingEncounter;
 extern bool8 gIsSurfingEncounter;
-extern u16 gChainFishingDexNavStreak;
+extern u8 gChainFishingDexNavStreak;
 
 void DisableWildEncounters(bool8 disabled);
 bool8 StandardWildEncounter(u32 currMetatileAttrs, u16 previousMetaTileBehavior);
@@ -72,10 +72,11 @@ void SeedWildEncounterRng(u16 randVal);
 void ResetEncounterRateModifiers(void);
 bool8 TryStandardWildEncounter(u32 currMetatileAttrs);
 bool8 TryDoDoubleWildBattle(void);
-void CreateWildMon(u16 species, u8 level, u8 unownSlot);
+void CreateWildMon(enum Species species, u8 level, u8 unownSlot);
 u16 GetCurrentMapWildMonHeaderId(void);
 u8 ChooseWildMonIndex_Land(void);
-u8 ChooseWildMonIndex_WaterRock(void);
+u32 ChooseWildMonIndex_Water(void);
+u32 ChooseWildMonIndex_Rocks(void);
 u8 ChooseHiddenMonIndex(void);
 bool32 MapHasNoEncounterData(void);
 void GetSeasonAndTimeOfDayForEncounters(u32 headerId, enum WildPokemonArea area, enum Season *season, enum TimeOfDay *timeOfDay);

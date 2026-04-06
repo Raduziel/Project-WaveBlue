@@ -85,11 +85,12 @@ static void ClearPokedexFlags(void)
     memset(&gSaveBlock1Ptr->dexSeen, 0, sizeof(gSaveBlock1Ptr->dexSeen));
 }
 
-static void ClearEReaderTrainer(void)
+static void ClearFrontierRecord(void)
 {
-#if FREE_BATTLE_TOWER_E_READER == FALSE
-    CpuFill32(0, &gSaveBlock2Ptr->frontier.ereaderTrainer, sizeof(gSaveBlock2Ptr->frontier.ereaderTrainer));
-#endif
+    CpuFill32(0, &gSaveBlock2Ptr->frontier, sizeof(gSaveBlock2Ptr->frontier));
+
+    gSaveBlock2Ptr->frontier.opponentNames[0][0] = EOS;
+    gSaveBlock2Ptr->frontier.opponentNames[1][0] = EOS;
 }
 
 static void WarpToPlayersRoom(void)
@@ -128,7 +129,7 @@ void NewGameInitData(void)
     gDifferentSaveFile = TRUE;
     ZeroPlayerPartyMons();
     ZeroEnemyPartyMons();
-    ClearEReaderTrainer();
+    ClearFrontierRecord();
     ClearSav1();
     ClearSav3();
     ClearMailData();

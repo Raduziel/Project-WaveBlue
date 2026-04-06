@@ -1,20 +1,18 @@
 #include "global.h"
-
-#include "io_reg.h"
-#include "gpu_regs.h"
-#include "malloc.h"
-#include "string_util.h"
-
 #include "battle.h"
+#include "bg.h"
 #include "decompress.h"
 #include "event_data.h"
+#include "gpu_regs.h"
 #include "graphics.h"
 #include "help_system.h"
+#include "io_reg.h"
 #include "item_menu.h"
 #include "librfu.h"
-#include "link.h"
 #include "link_rfu.h"
+#include "link.h"
 #include "m4a.h"
+#include "malloc.h"
 #include "menu.h"
 #include "overworld.h"
 #include "palette.h"
@@ -24,6 +22,7 @@
 #include "save.h"
 #include "scanline_effect.h"
 #include "sound.h"
+#include "string_util.h"
 #include "strings.h"
 #include "task.h"
 #include "trade.h"
@@ -1828,4 +1827,18 @@ void ResetRecvBuffer(void)
                 gLink.recvQueue.data[i][j][k] = LINKCMD_NONE;
         }
     }
+}
+
+bool32 ShouldCheckForUnionRoom(void)
+{
+    if (OW_UNION_DISABLE_CHECK)
+        return FALSE;
+
+    if (OW_FLAG_MOVE_UNION_ROOM_CHECK == 0)
+        return TRUE;
+
+    if (FlagGet(OW_FLAG_MOVE_UNION_ROOM_CHECK))
+        return TRUE;
+
+    return FALSE;
 }

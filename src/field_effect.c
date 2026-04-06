@@ -19,6 +19,7 @@
 #include "malloc.h"
 #include "menu.h"
 #include "metatile_behavior.h"
+#include "oras_dowse.h"
 #include "overworld.h"
 #include "palette.h"
 #include "party_menu.h"
@@ -375,6 +376,10 @@ static const u32 (*const sFieldEffectFuncs[FLDEFF_COUNT]) (void) =
     [FLDEFF_SNOW_TRACKS_BUG]              = FldEff_SnowTracksBug,
     [FLDEFF_SNOW_TRACKS_SPOT]             = FldEff_SnowTracksSpot,
     [FLDEFF_CAVE_DUST]                    = FldEff_CaveDust,
+    [FLDEFF_USE_ROCK_CLIMB]               = FldEff_UseRockClimb,
+    [FLDEFF_ROCK_CLIMB_DUST]              = FldEff_RockClimbDust,
+    [FLDEFF_DEFOG]                        = FldEff_Defog,
+    [FLDEFF_ORAS_DOWSE]                   = FldEff_ORASDowsing,
 };
 
 static const struct OamData sOamData_8x8 =
@@ -708,7 +713,7 @@ void ApplyGlobalFieldPaletteTint(u8 paletteIdx)
     CpuFastCopy(&gPlttBufferUnfaded[OBJ_PLTT_ID2(paletteIdx)], &gPlttBufferFaded[OBJ_PLTT_ID2(paletteIdx)], PLTT_SIZE_4BPP);
 }
 
-void FieldEffectScript_LoadFadedPal(const struct SpritePalette * spritePalette)
+void FieldEffectScript_LoadFadedPal(const struct SpritePalette *spritePalette)
 {
     bool32 isTagNew = IndexOfSpritePaletteTag(spritePalette->tag) == 0xFF;
     u32 paletteSlot = LoadSpritePalette(spritePalette);
@@ -719,7 +724,7 @@ void FieldEffectScript_LoadFadedPal(const struct SpritePalette * spritePalette)
     UpdateSpritePaletteWithWeather(paletteSlot, TRUE);
 }
 
-void FieldEffectScript_LoadPal(const struct SpritePalette * spritePalette)
+void FieldEffectScript_LoadPal(const struct SpritePalette *spritePalette)
 {
     u8 idx = IndexOfSpritePaletteTag(spritePalette->tag);
     LoadSpritePalette(spritePalette);
@@ -818,9 +823,10 @@ bool8 FieldEffectActiveListContains(enum FieldEffect fldeff)
     return FALSE;
 }
 
-u8 CreateMonSprite_PicBox(u16 species, s16 x, s16 y, u8 subpriority)
+u8 CreateMonSprite_PicBox(enum Species species, s16 x, s16 y, u8 subpriority)
 {
     u16 spriteId = CreateMonFrontPicSprite(species, FALSE, 0x8000, x, y, 0, species);
+
     PreservePaletteInWeather(IndexOfSpritePaletteTag(species) + 0x10);
     if (spriteId == 0xFFFF)
         return MAX_SPRITES;
@@ -828,7 +834,7 @@ u8 CreateMonSprite_PicBox(u16 species, s16 x, s16 y, u8 subpriority)
         return spriteId;
 }
 
-static u8 CreateMonSprite_FieldMove(u16 species, bool32 isShiny, u32 personality, s16 x, s16 y, u8 subpriority)
+static u8 CreateMonSprite_FieldMove(enum Species species, bool32 isShiny, u32 personality, s16 x, s16 y, u8 subpriority)
 {
     u16 spriteId = CreateMonFrontPicSprite(species, isShiny, personality, x, y, 0, species);
     PreservePaletteInWeather(IndexOfSpritePaletteTag(species) + 0x10);
@@ -1562,6 +1568,8 @@ void StartEscalatorWarp(u8 metatileBehavior, u8 priority)
     gTasks[taskId].tGoingUp = FALSE;
     if (metatileBehavior == MB_UP_ESCALATOR)
         gTasks[taskId].tGoingUp = TRUE;
+
+    EndORASDowsing();
 }
 
 static void Task_EscalatorWarpOut(u8 taskId)
@@ -2044,6 +2052,7 @@ static bool32 (*const sLavaridgeGymB1FWarpEffectFuncs[])(struct Task *task, stru
 
 void StartLavaridgeGymB1FWarp(u8 priority)
 {
+    EndORASDowsing();
     CreateTask(Task_LavaridgeGymB1FWarp, priority);
 }
 
@@ -2302,6 +2311,7 @@ void SpriteCB_AshLaunch(struct Sprite *sprite)
 
 void StartLavaridgeGym1FWarp(u8 priority)
 {
+    EndORASDowsing();
     CreateTask(Task_LavaridgeGym1FWarp, priority);
 }
 
@@ -2440,6 +2450,7 @@ void StartEscapeRopeFieldEffect(void)
     LockPlayerFieldControls();
     FreezeObjectEvents();
     HideFollowerForFieldEffect(); // hide follower before warping
+    EndORASDowsing();
     CreateTask(Task_EscapeRopeWarpOut, 80);
 }
 
@@ -2768,6 +2779,7 @@ static void TeleportWarpOutFieldEffect_Init(struct Task *task)
     LockPlayerFieldControls();
     FreezeObjectEvents();
     CameraObjectFreeze();
+    EndORASDowsing();
     task->tStartDir = GetPlayerFacingDirection();
     task->tState = TELEPORT_WARP_OUT_SPIN_GROUND;
 }
@@ -3029,7 +3041,7 @@ u32 FldEff_FieldMoveShowMonInit(void)
 
     if (gFieldEffectArguments[0] & SHOW_MON_NOT_IN_PARTY)
     {
-        u16 species = gFieldEffectArguments[0] & (~SHOW_MON_NOT_IN_PARTY);
+        u32 species = gFieldEffectArguments[0] & (~SHOW_MON_NOT_IN_PARTY);
 
         gFieldEffectArguments[0] = species;
         gFieldEffectArguments[1] = FALSE;

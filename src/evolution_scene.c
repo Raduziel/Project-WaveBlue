@@ -1,6 +1,7 @@
 #include "global.h"
 #include "battle_message.h"
 #include "battle.h"
+#include "bg.h"
 #include "data.h"
 #include "decompress.h"
 #include "event_data.h"
@@ -1004,7 +1005,7 @@ static void Task_EvolutionScene(u8 taskId)
                 else
                 {
                     // Selected move to forget
-                    u16 move = GetMonData(mon, var + MON_DATA_MOVE1);
+                    enum Move move = GetMonData(mon, var + MON_DATA_MOVE1);
                     if (CannotForgetMove(move))
                     {
                         // Can't forget HMs
@@ -1403,7 +1404,7 @@ static void Task_TradeEvolutionScene(u8 taskId)
                 else
                 {
                     // Selected move to forget
-                    u16 move = GetMonData(mon, var + MON_DATA_MOVE1);
+                    enum Move move = GetMonData(mon, var + MON_DATA_MOVE1);
                     if (CannotForgetMove(move))
                     {
                         // Can't forget HMs

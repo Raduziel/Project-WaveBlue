@@ -823,7 +823,7 @@
 #define FLAG_HIDE_BATTLE_FRONTIER_RECEPTION_GATE_SCOTT    0x31A
 #define FLAG_CANCEL_BATTLE_ROOM_CHALLENGE                 0x31B
 #define FLAG_BATTLE_FRONTIER_UNLOCKED                     0x31C
-#define FLAG_0x31D               0x31D
+#define FLAG_DOWSING_MACHINE                              0x31D
 #define FLAG_0x31E               0x31E
 #define FLAG_0x31F               0x31F
 #define FLAG_0x320               0x320

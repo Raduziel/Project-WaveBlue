@@ -8,6 +8,7 @@
 #include "event_object_movement.h"
 #include "event_scripts.h"
 #include "field_control_avatar.h"
+#include "field_effect.h"
 #include "field_player_avatar.h"
 #include "field_poison.h"
 #include "field_screen_effect.h"
@@ -600,7 +601,7 @@ static const u8 *GetInteractedMetatileScript(struct MapPosition *position, u8 me
     if (MetatileBehavior_IsPC(metatileBehavior) == TRUE)
         return EventScript_PC;
     if (MetatileBehavior_IsRegionMap(metatileBehavior) == TRUE)
-        return EventScript_WallTownMap;
+        return EventScript_RegionMap;
     if (MetatileBehavior_IsBookshelf(metatileBehavior) == TRUE)
         return EventScript_Bookshelf;
     if (MetatileBehavior_IsPokeMartShelf(metatileBehavior) == TRUE)
@@ -677,6 +678,9 @@ static const u8 *GetInteractedMetatileScript(struct MapPosition *position, u8 me
         MsgSetSignpost();
         return EventScript_PokecenterSign;
     }
+    if (MetatileBehavior_IsRockClimbable(metatileBehavior) == TRUE && !IsRockClimbActive())
+        return EventScript_UseRockClimb;
+
     return NULL;
 }
 
@@ -711,6 +715,8 @@ static bool8 TryStartStepBasedScript(struct MapPosition *position, u16 metatileB
     if (TryStartStepCountScript(metatileBehavior) == TRUE)
         return TRUE;
     if (!(gPlayerAvatar.flags & PLAYER_AVATAR_FLAG_FORCED) && !MetatileBehavior_IsForcedMovementTile(metatileBehavior) && UpdateRepelCounter() == TRUE)
+        return TRUE;
+    if (OnStep_DexNavSearch())
         return TRUE;
     return FALSE;
 }

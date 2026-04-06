@@ -12,6 +12,7 @@
 #include "help_system.h"
 #include "menu.h"
 #include "metatile_behavior.h"
+#include "oras_dowse.h"
 #include "overworld.h"
 #include "party_menu.h"
 #include "quest_log_player.h"
@@ -1149,7 +1150,7 @@ static const u8 sPlayerAvatarGfxIds[][GENDER_COUNT] = {
     [PLAYER_AVATAR_STATE_FIELD_MOVE] = {OBJ_EVENT_GFX_RED_FIELD_MOVE, OBJ_EVENT_GFX_GREEN_FIELD_MOVE},
     [PLAYER_AVATAR_STATE_FISHING]    = {OBJ_EVENT_GFX_RED_FISH,       OBJ_EVENT_GFX_GREEN_FISH},
     [PLAYER_AVATAR_STATE_VSSEEKER]   = {OBJ_EVENT_GFX_RED_VS_SEEKER,  OBJ_EVENT_GFX_GREEN_VS_SEEKER},
-    [PLAYER_AVATAR_STATE_WATERING]   = {OBJ_EVENT_GFX_RED_FIELD_MOVE, OBJ_EVENT_GFX_GREEN_FIELD_MOVE}, // placeholder gfx
+    [PLAYER_AVATAR_STATE_WATERING]   = {OBJ_EVENT_GFX_RED_WATERING,   OBJ_EVENT_GFX_GREEN_WATERING},
 };
 
 static const u8 sHoennLinkPartnerGfxIds[] = {
@@ -1319,6 +1320,7 @@ void SetPlayerInvisibility(bool8 invisible)
 
 void StartPlayerAvatarSummonMonForFieldMoveAnim(void)
 {
+    EndORASDowsing();
     ObjectEventSetGraphicsId(&gObjectEvents[gPlayerAvatar.objectEventId], GetPlayerAvatarGraphicsIdByStateId(PLAYER_AVATAR_STATE_FIELD_MOVE));
     StartSpriteAnim(&gSprites[gPlayerAvatar.spriteId], ANIM_FIELD_MOVE);
 }
@@ -1338,12 +1340,14 @@ u8 GetPlayerAvatarVsSeekerGfxId(void)
 
 void StartPlayerAvatarVsSeekerAnim(void)
 {
+    EndORASDowsing();
     ObjectEventSetGraphicsId(&gObjectEvents[gPlayerAvatar.objectEventId], GetPlayerAvatarVsSeekerGfxId());
     StartSpriteAnim(&gSprites[gPlayerAvatar.spriteId], ANIM_VS_SEEKER);
 }
 
 void SetPlayerAvatarFishing(u8 direction)
 {
+    EndORASDowsing();
     QuestLogCallUpdatePlayerSprite(QL_PLAYER_GFX_FISH);
 }
 
@@ -1355,6 +1359,7 @@ void PlayerUseAcroBikeOnBumpySlope(u8 direction)
 
 void SetPlayerAvatarWatering(u8 direction)
 {
+    EndORASDowsing();
     ObjectEventSetGraphicsId(&gObjectEvents[gPlayerAvatar.objectEventId], GetPlayerAvatarGraphicsIdByStateId(PLAYER_AVATAR_STATE_WATERING));
     StartSpriteAnim(&gSprites[gPlayerAvatar.spriteId], GetFaceDirectionAnimNum(direction));
 }

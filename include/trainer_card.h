@@ -41,12 +41,12 @@ struct TrainerCard
     /*0x4C*/ bool8 shouldDrawStickers;
     /*0x4D*/ bool8 hasAllMons;
     /*0x4E*/ u8 monIconTint;
-    /*0x4F*/ u8 facilityClass;
+    /*0x4F*/ enum FacilityClass facilityClass;
     /*0x50*/ u8 stickers[TRAINER_CARD_STICKER_TYPES];
     /*0x54*/ u16 monSpecies[PARTY_SIZE];
 };
 
-extern struct TrainerCard gTrainerCards[4];
+extern struct TrainerCard gTrainerCards[MAX_BATTLERS_COUNT];
 
 void ShowPlayerTrainerCard(void (*callback)(void));
 void ShowTrainerCardInLink(u8 whoseCard, MainCallback callback);

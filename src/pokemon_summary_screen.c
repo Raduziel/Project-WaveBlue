@@ -105,8 +105,8 @@ static void BufferMonSkills(void);
 static void BufferMonMoves(void);
 static u8 StatusToAilment(u32 status);
 static void BufferMonMoveI(u8);
-static u16 GetMonMoveBySlotId(struct Pokemon * mon, u8 moveSlot);
-static u16 GetMonPpByMoveSlot(struct Pokemon * mon, u8 moveSlot);
+static enum Move GetMonMoveBySlotId(struct Pokemon *mon, u8 moveSlot);
+static u16 GetMonPpByMoveSlot(struct Pokemon *mon, u8 moveSlot);
 static void CreateShinyStarObj(u16, u16);
 static void CreatePokerusIconObj(u16, u16);
 static void PokeSum_CreateMonMarkingsSprite(void);
@@ -130,7 +130,7 @@ static void PokeSum_PrintTrainerMemo_Mon(void);
 static void PokeSum_PrintTrainerMemo_Egg(void);
 static bool32 MapSecIsInKantoOrSevii(u8 mapSec);
 static bool32 IsMultiBattlePartner(void);
-static bool32 PokeSum_IsMonBoldOrGentle(u8 nature);
+static bool32 PokeSum_IsMonBoldOrGentle(enum Nature nature);
 static void PokeSum_PrintTrainerMemo_Mon_NotHeldByOT(void);
 static bool32 CurrentMonIsFromGBA(void);
 static u8 PokeSum_BufferOtName_IsEqualToCurrentOwner(struct Pokemon * mon);
@@ -227,8 +227,8 @@ struct PokemonSummaryScreenData
     u8 ALIGNED(4) unk3248; /* 0x3248 */
     s16 ALIGNED(4) flipPagesBgHofs; /* 0x324C */
 
-    u16 moveTypes[MAX_MON_MOVES + 1]; /* 0x3250 */
-    u16 moveIds[MAX_MON_MOVES + 1]; /* 0x325A */
+    enum Type moveTypes[MAX_MON_MOVES + 1]; /* 0x3250 */
+    enum Move moveIds[MAX_MON_MOVES + 1]; /* 0x325A */
     u8 ALIGNED(4) numMoves; /* 0x3264 */
     u8 ALIGNED(4) isSwappingMoves; /* 0x3268 */
 
@@ -1319,10 +1319,10 @@ void ShowPokemonSummaryScreen(void *party, u8 cursorPos, u8 lastIdx, MainCallbac
     SetMainCallback2(CB2_SetUpPSS);
 }
 
-void ShowSelectMovePokemonSummaryScreen(struct Pokemon *party, u8 cursorPos, MainCallback savedCallback, u16 move)
+void ShowSelectMovePokemonSummaryScreen(struct Pokemon *party, u8 cursorPos, MainCallback savedCallback, enum Move move)
 {
     ShowPokemonSummaryScreen(party, cursorPos, gPlayerPartyCount - 1, savedCallback, PSS_MODE_SELECT_MOVE);
-    sMonSummaryScreen->moveIds[4] = move;
+    sMonSummaryScreen->moveIds[MAX_MON_MOVES] = move;
 }
 
 static u8 PageFlipInputIsDisabled(u8 direction)
@@ -2526,7 +2526,7 @@ static void ApplyNatureColor(u8 *str, u8 stat)
     const u8 blue[] = _("{COLOR 7}");
     const u8 red[] = _("{COLOR 1}");
     const u8 none[] = _("");
-    u8 nature = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_HIDDEN_NATURE);
+    enum Nature nature = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_HIDDEN_NATURE);
     u8 tmp[20];
 
     StringCopy(tmp, str);
@@ -2625,8 +2625,8 @@ static void BufferStat(u8 stat)
 static void BufferMonSkills(void)
 {
     u8 level;
-    u16 type;
-    u16 species;
+    enum Ability ability;
+    enum Species species;
     u32 exp;
     u32 expToNextLevel;
 
@@ -2652,9 +2652,9 @@ static void BufferMonSkills(void)
     ConvertIntToDecimalStringN(sMonSummaryScreen->summary.expToNextLevelStrBuf, expToNextLevel, STR_CONV_MODE_LEFT_ALIGN, 7);
     sMonSkillsPrinterXpos->toNextLevel = GetNumberRightAlign63(sMonSummaryScreen->summary.expToNextLevelStrBuf);
 
-    type = GetAbilityBySpecies(GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_SPECIES), GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_ABILITY_NUM));
-    StringCopy(sMonSummaryScreen->summary.abilityNameStrBuf, gAbilitiesInfo[type].name);
-    StringCopy(sMonSummaryScreen->summary.abilityDescStrBuf, gAbilitiesInfo[type].description);
+    ability = GetAbilityBySpecies(GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_SPECIES), GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_ABILITY_NUM));
+    StringCopy(sMonSummaryScreen->summary.abilityNameStrBuf, gAbilitiesInfo[ability].name);
+    StringCopy(sMonSummaryScreen->summary.abilityDescStrBuf, gAbilitiesInfo[ability].description);
 
     sMonSummaryScreen->curMonStatusAilment = StatusToAilment(GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_STATUS));
     if (sMonSummaryScreen->curMonStatusAilment == AILMENT_NONE)
@@ -2680,7 +2680,7 @@ static void BufferMonMoveI(u8 i)
     if (i < MAX_MON_MOVES)
         sMonSummaryScreen->moveIds[i] = GetMonMoveBySlotId(&sMonSummaryScreen->currentMon, i);
 
-    if (sMonSummaryScreen->moveIds[i] == 0)
+    if (sMonSummaryScreen->moveIds[i] == MOVE_NONE)
     {
         StringCopy(sMonSummaryScreen->summary.moveNameStrBufs[i], gText_PokeSum_OneHyphen);
         StringCopy(sMonSummaryScreen->summary.moveCurPpStrBufs[i], gText_PokeSum_TwoHyphens);
@@ -2695,7 +2695,7 @@ static void BufferMonMoveI(u8 i)
     sMonSummaryScreen->moveTypes[i] = gMovesInfo[sMonSummaryScreen->moveIds[i]].type;
     StringCopy(sMonSummaryScreen->summary.moveNameStrBufs[i], gMovesInfo[sMonSummaryScreen->moveIds[i]].name);
 
-    if (i >= 4 && sMonSummaryScreen->mode == PSS_MODE_SELECT_MOVE)
+    if (i >= MAX_MON_MOVES && sMonSummaryScreen->mode == PSS_MODE_SELECT_MOVE)
     {
         ConvertIntToDecimalStringN(sMonSummaryScreen->summary.moveCurPpStrBufs[i],
                                    gMovesInfo[sMonSummaryScreen->moveIds[i]].pp, STR_CONV_MODE_LEFT_ALIGN, 3);
@@ -3001,7 +3001,7 @@ static void PokeSum_PrintMoveName(u8 i)
 {
     u8 colorIdx = 0;
     u8 curPP = GetMonPpByMoveSlot(&sMonSummaryScreen->currentMon, i);
-    u16 move = sMonSummaryScreen->moveIds[i];
+    enum Move move = sMonSummaryScreen->moveIds[i];
     u8 ppBonuses = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_PP_BONUSES);
     u8 maxPP = CalculatePPWithBonus(move, ppBonuses, i);
 
@@ -3077,7 +3077,7 @@ static void PokeSum_PrintTrainerMemo(void)
 
 static void PokeSum_PrintTrainerMemo_Mon_HeldByOT(void)
 {
-    u8 nature;
+    enum Nature nature;
     u8 level;
     u8 metLocation;
     u8 levelStr[5];
@@ -3151,7 +3151,7 @@ static void PokeSum_PrintTrainerMemo_Mon_HeldByOT(void)
 
 static void PokeSum_PrintTrainerMemo_Mon_NotHeldByOT(void)
 {
-    u8 nature;
+    enum Nature nature;
     u8 level;
     u8 metLocation;
     u8 levelStr[5];
@@ -3976,9 +3976,9 @@ static void BufferSelectedMonData(struct Pokemon * mon)
     }
 }
 
-static u16 GetMonMoveBySlotId(struct Pokemon * mon, u8 moveSlot)
+static enum Move GetMonMoveBySlotId(struct Pokemon * mon, u8 moveSlot)
 {
-    u16 move;
+    enum Move move;
 
     switch (moveSlot)
     {
@@ -4322,9 +4322,7 @@ static void UpdateCurrentMonBufferFromPartyOrBox(struct Pokemon * mon)
 /*
 static u8 PokeSum_CanForgetSelectedMove(void)
 {
-    u16 move;
-
-    move = GetMonMoveBySlotId(&sMonSummaryScreen->currentMon, sMoveSelectionCursorPos);
+    enum Move move = GetMonMoveBySlotId(&sMonSummaryScreen->currentMon, sMoveSelectionCursorPos);
 
     if (CannotForgetMove(move) == TRUE && sMonSummaryScreen->mode != PSS_MODE_FORGET_MOVE)
         return FALSE;
@@ -4558,7 +4556,7 @@ static void SpriteCB_MonPicDummy(struct Sprite *sprite)
 static void PokeSum_CreateMonPicSprite(void)
 {
     u16 spriteId;
-    u16 species;
+    enum Species species;
     u32 personality;
     bool32 isShiny;
 
@@ -4666,7 +4664,7 @@ static void DestroyBallIconObj(void)
 
 static void PokeSum_CreateMonIconSprite(void)
 {
-    u16 species;
+    enum Species species;
     u32 personality;
 
     species = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_SPECIES_OR_EGG);
@@ -4691,8 +4689,7 @@ static void PokeSum_ShowOrHideMonIconSprite(bool8 invisible)
 
 static void PokeSum_DestroyMonIconSprite(void)
 {
-    u16 species;
-    species = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_SPECIES_OR_EGG);
+    enum Species species = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_SPECIES_OR_EGG);
     SafeFreeMonIconPalette(species);
     FreeAndDestroyMonIconSprite(&gSprites[sMonSummaryScreen->monIconSpriteId]);
 }
@@ -5121,7 +5118,7 @@ static void UpdateExpBarObjs(void)
     u32 exp;
     u32 totalExpToNextLevel;
     u32 curExpToNextLevel;
-    u16 species;
+    enum Species species;
     s64 pointsPerTile;
     s64 totalPoints;
     u8 animNum;
@@ -5704,12 +5701,9 @@ static void PokeSum_TryPlayMonCry(void)
     }
 }
 
-static bool32 PokeSum_IsMonBoldOrGentle(u8 nature)
+static bool32 PokeSum_IsMonBoldOrGentle(enum Nature nature)
 {
-    if (nature == NATURE_BOLD || nature == NATURE_GENTLE)
-        return TRUE;
-
-    return FALSE;
+    return nature == NATURE_BOLD || nature == NATURE_GENTLE;
 }
 
 static bool32 CurrentMonIsFromGBA(void)

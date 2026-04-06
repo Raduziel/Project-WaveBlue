@@ -25,8 +25,10 @@ const u16 gObjectEventPic_GreenItem[] = INCBIN_U16("graphics/object_events/pics/
 const u16 gObjectEventPic_RedSurf[] = INCBIN_U16("graphics/object_events/pics/people/red_surf.4bpp");
 const u16 gObjectEventPic_GreenSurf[] = INCBIN_U16("graphics/object_events/pics/people/green_surf.4bpp");
 const u16 gObjectEventPic_RedBike[] = INCBIN_U16("graphics/object_events/pics/people/red_bike.4bpp");
+const u16 gObjectEventPic_RedWatering[] = INCBIN_U16("graphics/object_events/pics/people/red_watering.4bpp");
 const u16 gObjectEventPic_RedVSSeekerBike[] = INCBIN_U16("graphics/object_events/pics/people/red_vs_seeker_bike.4bpp");
 const u16 gObjectEventPic_GreenBike[] = INCBIN_U16("graphics/object_events/pics/people/green_bike.4bpp");
+const u16 gObjectEventPic_GreenWatering[] = INCBIN_U16("graphics/object_events/pics/people/green_watering.4bpp");
 const u16 gObjectEventPic_GreenVSSeekerBike[] = INCBIN_U16("graphics/object_events/pics/people/green_vs_seeker_bike.4bpp");
 const u16 gObjectEventPic_RSBrendan[] = INCBIN_U16("graphics/object_events/pics/people/rs_brendan.4bpp");
 const u16 gObjectEventPic_RSMay[] = INCBIN_U16("graphics/object_events/pics/people/rs_may.4bpp");
@@ -404,6 +406,10 @@ const u16 gObjectEventPal_StrangeBall[] = INCBIN_U16("graphics/object_events/pic
 
 const u32 gFieldEffectObjectPic_CaveDust[] = INCBIN_U32("graphics/field_effects/pics/cave_dust.4bpp");
 const u16 gFieldEffectObjectPalette_CaveDust[] = INCBIN_U16("graphics/field_effects/palettes/cave_dust.gbapal");
+const u32 gFieldEffectObjectPic_RockClimbBlob[] = INCBIN_U32("graphics/field_effects/pics/rock_climb_blob.4bpp");
+const u32 gFieldEffectObjectPic_RockClimbDust[] = INCBIN_U32("graphics/field_effects/pics/rock_climb_dust.4bpp");
+const u16 gFieldEffectPal_DustCloud[] = INCBIN_U16("graphics/field_effects/palettes/big_dust.gbapal");
+
 const u32 gObjectEventPic_Steven[] = INCBIN_U32("graphics/object_events/pics/people/steven.4bpp");
 const u32 gObjectEventPic_Scott[] = INCBIN_U32("graphics/object_events/pics/people/scott.4bpp");
 const u32 gObjectEventPic_Anabel[] = INCBIN_U32("graphics/object_events/pics/people/frontier_brains/anabel.4bpp");

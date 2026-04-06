@@ -64,8 +64,8 @@ struct PyramidFloorTemplate
 
 struct PyramidTrainerEncounterMusic
 {
-    u8 trainerClass;
-    u8 trainerEncounterMusic;
+    enum TrainerClassID trainerClass;
+    enum TrainerEncounterMusic trainerEncounterMusic;
 };
 
 // This file's functions.
@@ -1362,6 +1362,9 @@ static bool32 CheckBattlePyramidEvoRequirement(u16 species, const u16 *evoItems,
     u32 i, j, k;
     for (i = 0; i < NUM_SPECIES; i++)
     {
+        if (!IsSpeciesEnabled(i))
+            continue;
+
         const struct Evolution *evolutions = GetSpeciesEvolutions(i);
         if (evolutions == NULL)
             continue;
@@ -1691,7 +1694,7 @@ void CopyPyramidTrainerLoseSpeech(u16 trainerId)
     FrontierSpeechToString(gFacilityTrainers[trainerId].speechLose);
 }
 
-u8 GetTrainerEncounterMusicIdInBattlePyramid(u16 trainerId)
+enum TrainerEncounterMusic GetTrainerEncounterMusicIdInBattlePyramid(u16 trainerId)
 {
     int i;
 

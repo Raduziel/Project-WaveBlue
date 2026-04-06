@@ -368,3 +368,53 @@ EventScript_FailSweetScent::
 
 Text_LooksLikeNothingHere::
 	.string "Looks like there's nothing here…$"
+
+EventScript_UseDefog::
+	goto_if_questlog EventScript_ReleaseEnd
+	lockall
+	bufferpartymonnick STR_VAR_1, VAR_RESULT
+	buffermovename STR_VAR_2, MOVE_DEFOG
+	msgbox Text_MonUsedMove, MSGBOX_DEFAULT
+	closemessage
+	isfollowerfieldmoveuser VAR_0x8004
+	setfieldeffectargument 3, VAR_0x8004 @ skip pose if so
+	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
+	call_if_eq VAR_0x8004, TRUE, EventScript_FollowerFieldMove
+	waitmovement 0
+	setfieldeffectargument 0, VAR_RESULT
+	dofieldeffect FLDEFF_DEFOG
+	waitstate
+	releaseall
+	end
+
+EventScript_UseRockClimb::
+	goto_if_questlog EventScript_ReleaseEnd
+	lockall
+	checkfieldmoveusable FIELD_MOVE_ROCK_CLIMB
+	goto_if_eq VAR_RESULT, PARTY_SIZE, EventScript_CantRockClimb
+	msgbox Text_WantToRockClimb, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, EventScript_EndRockClimb
+	msgbox Text_MonUsedRockClimb, MSGBOX_DEFAULT
+	closemessage
+	dofieldeffect FLDEFF_USE_ROCK_CLIMB
+	waitstate
+	goto EventScript_EndRockClimb
+	end
+
+EventScript_CantRockClimb::
+	msgbox Text_CantRockClimb, MSGBOX_DEFAULT
+
+EventScript_EndRockClimb::
+	releaseall
+	end
+
+Text_WantToRockClimb:
+	.string "The cliff is steep.\n"
+	.string "Would you like to use Rock Climb?$"
+
+Text_MonUsedRockClimb:
+	.string "{STR_VAR_1} used Rock Climb!$"
+
+Text_CantRockClimb:
+	.string "The cliff is steep.\n"
+	.string "A Pokémon may be able to climb it.$"

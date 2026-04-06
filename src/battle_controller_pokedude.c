@@ -4,6 +4,7 @@
 #include "battle_interface.h"
 #include "battle_message.h"
 #include "battle.h"
+#include "bg.h"
 #include "data.h"
 #include "event_data.h"
 #include "palette.h"
@@ -34,11 +35,11 @@ struct PokedudeTextScriptHeader
 
 struct PokedudeBattlePartyInfo
 {
-    u8 side;
+    enum BattleSide side;
     u8 level;
-    u16 species;
-    u16 moves[MAX_MON_MOVES];
-    u8 nature;
+    enum Species species;
+    enum Move moves[MAX_MON_MOVES];
+    enum Nature nature;
     u8 gender;
 };
 
@@ -132,6 +133,7 @@ static void (*const sPokedudeBufferCommands[CONTROLLER_CMDS_COUNT])(enum Battler
 
 void SetControllerToPokedude(enum BattlerId battler)
 {
+    gBattlerBattleController[battler] = BATTLE_CONTROLLER_POKEDUDE;
     gBattlerControllerEndFuncs[battler] = PokedudeBufferExecCompleted;
     gBattlerControllerFuncs[battler] = PokedudeBufferRunCommand;
     *(&gBattleStruct->pdScriptNum) = gSpecialVar_0x8004;
@@ -1208,7 +1210,7 @@ void InitPokedudePartyAndOpponent(void)
         personality = GetMonPersonality(data[i].species, data[i].gender, data[i].nature, RANDOM_UNOWN_LETTER);
         CreateMonWithIVsPersonality(mon, data[i].species, data[i].level, 0, personality);
 
-        for (j = 0; j < 4; ++j)
+        for (j = 0; j < MAX_MON_MOVES; ++j)
             SetMonMoveSlot(mon, data[i].moves[j], j);
     } while (data[++i].side != 0xFF);
 }

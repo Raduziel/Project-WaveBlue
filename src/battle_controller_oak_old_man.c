@@ -148,8 +148,7 @@ static void OakOldManBufferRunCommand(enum BattlerId battler)
 
 static void HandleInputChooseAction(enum BattlerId battler)
 {
-
-    u16 itemId = gBattleResources->bufferA[battler][2] | (gBattleResources->bufferA[battler][3] << 8);
+    enum Item itemId = gBattleResources->bufferA[battler][2] | (gBattleResources->bufferA[battler][3] << 8);
 
     const u8 sText_ItemsCantBeUsed[] = _("Items can't be\nused now.");
 

@@ -240,12 +240,11 @@ PalletTown_ProfessorOaksLab_Text_OaksLastMon::
     .string "That's Prof. Oak's last Pokémon.$"
 
 PalletTown_ProfessorOaksLab_Text_PressStartToOpenMenu::
-    .string "Press Start to open the Menu!\n"
     .string "Press B to {COLOR GREEN}Enable{COLOR DARK_GRAY} or {COLOR RED}Disable{COLOR DARK_GRAY} Running!$"
 
 PalletTown_ProfessorOaksLab_Text_SaveOptionInMenu::
-    .string "The Save option is on the Menu.\n"
-    .string "Use it regularly.$"
+    .string "{COLOR GREEN}Enable{COLOR DARK_GRAY} or {COLOR RED}Disable{COLOR DARK_GRAY} the Level Cap\n"
+    .string "by holding L and pressing Start.$"
 
 PalletTown_ProfessorOaksLab_Text_AllMonTypesHaveStrongAndWeakPoints::
     .string "All Pokémon types have strong and\n"

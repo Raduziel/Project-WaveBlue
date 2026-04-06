@@ -3,6 +3,7 @@
 #include "battle_controllers.h"
 #include "battle_interface.h"
 #include "battle.h"
+#include "bg.h"
 #include "data.h"
 #include "gpu_regs.h"
 #include "help_system.h"
@@ -55,7 +56,7 @@ void ReshowBattleScreenAfterMenu(void)
 static void CB2_ReshowBattleScreenAfterMenu(void)
 {
     u8 opponentBattler;
-    u16 species;
+    enum Species species;
 
     switch (gBattleScripting.reshowMainState)
     {

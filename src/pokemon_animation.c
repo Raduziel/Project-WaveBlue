@@ -468,7 +468,7 @@ static void SetPosForRotation(struct Sprite *sprite, u16 index, s16 amplitudeX, 
     sprite->y2 = yAdder + amplitudeY;
 }
 
-enum BackAnim GetSpeciesBackAnimSet(u16 species)
+enum BackAnim GetSpeciesBackAnimSet(enum Species species)
 {
     if (gSpeciesInfo[species].backAnimId != BACK_ANIM_NONE)
         return gSpeciesInfo[species].backAnimId - 1;
@@ -549,7 +549,8 @@ void StartMonSummaryAnimation(struct Sprite *sprite, enum AnimFunctionIDs frontA
 
 void LaunchAnimationTaskForBackSprite(struct Sprite *sprite, enum BackAnim backAnimSet)
 {
-    u8 nature, taskId, animId, battlerId;
+    enum Nature nature;
+    u8 taskId, animId, battlerId;
 
     taskId = CreateTask(Task_HandleMonAnimation, 128);
     gTasks[taskId].tPtrHi = (u32)(sprite) >> 16;

@@ -1,6 +1,7 @@
 #include "global.h"
 #include "battle.h"
 #include "berry_crush.h"
+#include "bg.h"
 #include "cable_club.h"
 #include "data.h"
 #include "decompress.h"
@@ -3161,6 +3162,9 @@ void InitUnionRoom(void)
 {
     struct WirelessLink_URoom * data;
 
+    if (!ShouldCheckForUnionRoom())
+        return;
+
     sUnionRoomPlayerName[0] = EOS;
     if (QL_IS_PLAYBACK_STATE)
         return;
@@ -3247,6 +3251,9 @@ static void Task_InitUnionRoom(u8 taskId)
 
 bool16 BufferUnionRoomPlayerName(void)
 {
+    if (!ShouldCheckForUnionRoom())
+        return FALSE;
+
     if (sUnionRoomPlayerName[0] != EOS)
     {
         StringCopy(gStringVar1, sUnionRoomPlayerName);
@@ -3981,7 +3988,7 @@ static void ItemPrintFunc_Unused(u8 windowId, u32 itemId, u8 y)
 static void TradeBoardPrintItemInfo(u8 windowId, u8 y, struct RfuGameData * data, const u8 * playerName, u8 colorIdx)
 {
     u8 levelStr[4];
-    u16 species = data->tradeSpecies;
+    enum Species species = data->tradeSpecies;
     u8 type = data->tradeType;
     u8 level = data->tradeLevel;
 
@@ -4119,7 +4126,7 @@ static void GetURoomActivityStartMsg(u8 *dst, u8 activity)
 static s32 GetChatLeaderActionRequestMessage(u8 *dst, u32 gender, u16 *activityData, struct WirelessLink_URoom * uroom)
 {
     s32 result = 0;
-    u16 species = SPECIES_NONE;
+    enum Species species = SPECIES_NONE;
     s32 i;
 
     switch (activityData[0])
@@ -4251,10 +4258,10 @@ static void RegisterTradeMon(u32 monId, struct UnionRoomTrade * trade)
 static u32 GetPartyPositionOfRegisteredMon(struct UnionRoomTrade * trade, u8 multiplayerId)
 {
     u16 response = 0;
-    u16 species;
+    enum Species species;
     u32 personality;
     u32 cur_personality;
-    u16 cur_species;
+    enum Species cur_species;
     s32 i;
 
     // player
