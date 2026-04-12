@@ -19,6 +19,7 @@
 #include "strings.h"
 #include "task.h"
 #include "text_window.h"
+#include "text.h"
 #include "trainer_pokemon_sprites.h"
 #include "constants/event_objects.h"
 #include "constants/songs.h"
@@ -876,6 +877,7 @@ static void Task_FlavorTextDisplayHandleInput(u8 taskId)
     if (JOY_NEW(B_BUTTON))
     {
         u8 i;
+        DeactivateSingleTextPrinter(FCWINDOWID_MSGBOX, WINDOW_TEXT_PRINTER);
         PlaySE(SE_SELECT);
         for (i = 0; i < 6; i++)
             SetMessageSelectorIconObjMode(sFameCheckerData->spriteIds[i], ST_OAM_OBJ_NORMAL);
@@ -891,6 +893,7 @@ static void Task_FlavorTextDisplayHandleInput(u8 taskId)
     }
     else if (JOY_NEW(DPAD_UP) || JOY_NEW(DPAD_DOWN))
     {
+        DeactivateSingleTextPrinter(FCWINDOWID_MSGBOX, WINDOW_TEXT_PRINTER);
         if (task->data[1] >= 3)
         {
             task->data[1] -= 3;
@@ -904,6 +907,7 @@ static void Task_FlavorTextDisplayHandleInput(u8 taskId)
     }
     else if (JOY_NEW(DPAD_LEFT))
     {
+        DeactivateSingleTextPrinter(FCWINDOWID_MSGBOX, WINDOW_TEXT_PRINTER);
         if (task->data[1] == 0 || task->data[1] % 3 == 0)
         {
             task->data[1] += 2;
@@ -917,6 +921,7 @@ static void Task_FlavorTextDisplayHandleInput(u8 taskId)
     }
     else if (JOY_NEW(DPAD_RIGHT))
     {
+        DeactivateSingleTextPrinter(FCWINDOWID_MSGBOX, WINDOW_TEXT_PRINTER);
         if ((task->data[1] + 1) % 3 == 0)
         {
             task->data[1] -= 2;
