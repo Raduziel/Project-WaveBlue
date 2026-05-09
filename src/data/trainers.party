@@ -5326,20 +5326,20 @@ Impish Nature
 - Liquidation  
 - Snowscape  
 
-Kangaskhan @ Toxic Orb 
-Ability: Scrappy  
-Level: 29  
-EVs: 120 HP / 252 Atk / 8 Def / 8 SpD / 120 Spe  
-Adamant Nature  
-- Sucker Punch  
-- Drain Punch  
-- Fake Out  
-- Facade  
+Kangaskhan @ Toxic Orb
+Ability: Scrappy
+Level: 30
+EVs: 120 HP / 252 Atk / 8 Def / 8 SpD / 120 Spe
+Adamant Nature
+- Sucker Punch
+- Drain Punch
+- Fake Out
+- Facade
 
-Nidoqueen @ Life Orb  
-Ability: Sheer Force  
-Level: 29  
-EVs: 160 HP / 252 SpA / 16 SpD / 80 Spe  
+Nidoqueen @ Life Orb
+Ability: Sheer Force
+Level: 30
+EVs: 160 HP / 252 SpA / 16 SpD / 80 Spe
 Calm Nature  
 IVs: 0 Atk  
 - Flamethrower  
@@ -5358,7 +5358,7 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Tauros @ White Herb
 Ability: Intimidate
-Level: 39
+Level: 40
 EVs: 4 HP / 252 Atk / 252 Spe
 Adamant Nature
 IVs: 0 SpA
@@ -5369,33 +5369,33 @@ IVs: 0 SpA
 
 Beedrill @ Scope Lens  
 Ability: Sniper  
-Level: 39
+Level: 40
 EVs: 96 HP / 252 Atk / 160 Spe  
 Adamant Nature  
-- Focus Energy  
-- Poison Jab  
-- Aerial Ace  
+- Focus Energy
+- Poison Jab
+- Aerial Ace
 - X-Scissor
 
-Persian @ Black Glasses  
-Ability: Technician  
+Persian @ Black Glasses
+Ability: Technician
 Level: 41
-EVs: 132 HP / 252 Atk / 124 Spe  
-Jolly Nature  
+EVs: 132 HP / 252 Atk / 124 Spe
+Jolly Nature
 - Power Gem
-- Foul Play  
-- Fake Out  
+- Foul Play
+- Fake Out
 - Thief
 
-Cloyster @ Leftovers  
-Ability: Skill Link  
+Cloyster @ Leftovers
+Ability: Skill Link
 Level: 41
-EVs: 152 HP / 156 Atk / 200 Def  
+EVs: 152 HP / 156 Atk / 200 Def
 Impish Nature  
-- Shell Smash  
-- Icicle Spear  
+- Shell Smash
+- Icicle Spear
 - Liquidation
-- Snowscape
+- Drill Run
 
 Kangaskhan @ Toxic Orb  
 Ability: Scrappy
@@ -7620,7 +7620,7 @@ IVs: 0 Atk
 - Screech  
 - Swift  
 
-Raichu @ Shell Bell  
+Raichu @ Bright Powder  
 Ability: Static  
 Level: 24  
 EVs: 252 Atk / 120 Def / 36 SpD / 100 Spe  
