@@ -5409,7 +5409,7 @@ Adamant Nature
 
 Nidoqueen @ Life Orb  
 Ability: Sheer Force  
-Level: 43
+Level: 45
 EVs: 160 HP / 252 SpA / 16 SpD / 80 Spe  
 Calm Nature  
 IVs: 0 Atk  
@@ -5449,7 +5449,7 @@ Adamant Nature
 - Strength
 
 Rhyperior @ Loaded Dice  
-Ability: Lightning Rod  
+Ability: Solid Rock  
 Level: 50  
 EVs: 200 HP / 252 Atk / 56 Def  
 Adamant Nature  
@@ -8478,7 +8478,7 @@ Impish Nature
 - Avalanche  
 - Curse
 
-Gyarados (M) @ Lum Berry  
+Gyarados (M) @ Focus Sash  
 Ability: Intimidate  
 Level: 45  
 EVs: 56 HP / 252 Atk / 200 Spe  
@@ -8560,7 +8560,7 @@ IVs: 0 Atk
 - Sunny Day  
 - Psychic
 
-Gyarados (M) @ Lum Berry  
+Gyarados (M) @ Focus Sash  
 Ability: Intimidate  
 Level: 45  
 EVs: 56 HP / 252 Atk / 200 Spe  
@@ -8633,13 +8633,13 @@ Impish Nature
 - Avalanche  
 - Curse
 
-Arcanine (F) @ Leftovers  
+Arcanine (F) @ Choice Scarf  
 Ability: Intimidate  
 Level: 59  
 EVs: 56 HP / 252 Atk / 100 Def / 100 SpD  
 Jolly Nature  
-- Extreme Speed  
-- Will-O-Wisp  
+- Close Combat  
+- Wild Charge  
 - Flare Blitz 
 - Play Rough  
  
@@ -8706,9 +8706,9 @@ Impish Nature
 - Avalanche  
 - Curse  
 
-Gyarados (M) @ Lum Berry  
+Gyarados (M) @ Focus Sash  
 Ability: Intimidate  
-Level: 59  
+Level: 61  
 EVs: 56 HP / 252 Atk / 200 Spe  
 Adamant Nature  
 - Dragon Dance  
@@ -8716,14 +8716,14 @@ Adamant Nature
 - Waterfall  
 - Ice Fang 
 
-Arcanine (F) @ Leftovers  
+Arcanine (F) @ Choice Scarf  
 Ability: Intimidate  
-Level: 61  
+Level: 59  
 EVs: 56 HP / 252 Atk / 100 Def / 100 SpD  
 Jolly Nature  
-- Extreme Speed  
-- Will-O-Wisp  
-- Flare Blitz
+- Close Combat  
+- Wild Charge  
+- Flare Blitz 
 - Play Rough  
 
 Venusaur (F) @ Rocky Helmet  
@@ -8789,7 +8789,7 @@ IVs: 0 Atk
 - Sunny Day  
 - Psychic  
 
-Gyarados (M) @ Lum Berry  
+Gyarados (M) @ Focus Sash 
 Ability: Intimidate  
 Level: 61  
 EVs: 56 HP / 252 Atk / 200 Spe  
@@ -14834,15 +14834,15 @@ Adamant Nature
 - Ice Fang  
 - Crunch
 
-Arcanine (F) @ Leftovers  
+Arcanine (F) @ Choice Scarf  
 Ability: Intimidate  
 Level: 73  
 EVs: 56 HP / 252 Atk / 100 Def / 100 SpD  
 Jolly Nature  
-- Extreme Speed  
-- Will-O-Wisp  
-- Play Rough  
-- Flare Blitz
+- Close Combat  
+- Wild Charge  
+- Flare Blitz 
+- Play Rough 
 
 Exeggutor (M) @ Sitrus Berry  
 Ability: Harvest  
@@ -14907,7 +14907,7 @@ Adamant Nature
 - Ice Fang  
 - Crunch
 
-Gyarados (M) @ Lum Berry  
+Gyarados (M) @ Focus Sash
 Ability: Intimidate  
 Level: 73  
 EVs: 56 HP / 252 Atk / 200 Spe  
@@ -14917,15 +14917,15 @@ Adamant Nature
 - Waterfall  
 - Ice Fang 
 
-Arcanine (F) @ Leftovers  
+Arcanine (F) @ Choice Scarf  
 Ability: Intimidate  
 Level: 73  
 EVs: 56 HP / 252 Atk / 100 Def / 100 SpD  
 Jolly Nature  
-- Extreme Speed  
-- Will-O-Wisp  
-- Play Rough  
-- Flare Blitz
+- Close Combat  
+- Wild Charge  
+- Flare Blitz 
+- Play Rough 
 
 Venusaur (F) @ Rocky Helmet  
 Ability: Overgrow  
@@ -14990,7 +14990,7 @@ IVs: 0 Atk
 - Sunny Day  
 - Psychic 
 
-Gyarados (M) @ Lum Berry  
+Gyarados (M) @ Focus Sash
 Ability: Intimidate  
 Level: 73  
 EVs: 56 HP / 252 Atk / 200 Spe  
