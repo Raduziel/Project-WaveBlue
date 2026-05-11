@@ -68,32 +68,32 @@ static void Task_HandleMultichoiceInput(u8 taskId);
 static void Task_HandleScrollingMultichoiceInput(u8 taskId);
 static void Task_HandleYesNoInput(u8 taskId);
 
-static const u8 sText_MultiLink[] = _("MULTI-LINK");
-static const u8 sText_Opponent[] = _("OPPONENT");
-static const u8 sText_Tourney_Tree[] = _("TOURNEY TREE");
-static const u8 sText_ReadyToStart[] = _("READY TO START");
-static const u8 sText_Eggs[] = _("EGGS");
-static const u8 sText_Victories[] = _("VICTORIES");
-static const u8 sText_TradeCenter[] = _("TRADE CENTER");
-static const u8 sText_Colosseum[] = _("COLOSSEUM");
-static const u8 sText_GoOn[] = _("GO ON");
-static const u8 sText_HelixFossil[] = _("HELIX FOSSIL");
-static const u8 sText_DomeFossil[] = _("DOME FOSSIL");
-static const u8 sText_OldAmber[] = _("OLD AMBER");
-static const u8 sText_FreshWater[] = _("FRESH WATER");
-static const u8 sText_SodaPop[] = _("SODA POP");
-static const u8 sText_Lemonade[] = _("LEMONADE");
-static const u8 sText_Vermilion[] = _("VERMILION");
-static const u8 sText_OneIsland[] = _("ONE ISLAND");
-static const u8 sText_TwoIsland[] = _("TWO ISLAND");
-static const u8 sText_ThreeIsland[] = _("THREE ISLAND");
-static const u8 sText_SeviiIslands[] = _("SEVII ISLANDS");
-static const u8 sText_NavelRock[] = _("NAVEL ROCK");
-static const u8 sText_BirthIsland[] = _("BIRTH ISLAND");
-static const u8 sText_Retire[] = _("RETIRE");
-static const u8 sText_Other[] = _("OTHER");
-static const u8 sText_NoThanks[] = _("NO THANKS");
-static const u8 sText_Quit[] = _("QUIT");
+static const u8 sText_MultiLink[] = _("Multi-Link");
+static const u8 sText_Opponent[] = _("Opponent");
+static const u8 sText_Tourney_Tree[] = _("Tourney Tree");
+static const u8 sText_ReadyToStart[] = _("Ready to Start");
+static const u8 sText_Eggs[] = _("Eggs");
+static const u8 sText_Victories[] = _("Victories");
+static const u8 sText_TradeCenter[] = _("Trade Center");
+static const u8 sText_Colosseum[] = _("Colosseum");
+static const u8 sText_GoOn[] = _("Go on");
+static const u8 sText_HelixFossil[] = _("Helix Fossil");
+static const u8 sText_DomeFossil[] = _("Dome Fossil");
+static const u8 sText_OldAmber[] = _("Old Amber");
+static const u8 sText_FreshWater[] = _("Fresh Water");
+static const u8 sText_SodaPop[] = _("Soda Pop");
+static const u8 sText_Lemonade[] = _("Lemonade");
+static const u8 sText_Vermilion[] = _("Vermilion");
+static const u8 sText_OneIsland[] = _("One Island");
+static const u8 sText_TwoIsland[] = _("Two Island");
+static const u8 sText_ThreeIsland[] = _("Three Island");
+static const u8 sText_SeviiIslands[] = _("Sevii Islands");
+static const u8 sText_NavelRock[] = _("Navel Rock");
+static const u8 sText_BirthIsland[] = _("Birth Island");
+static const u8 sText_Retire[] = _("Retire");
+static const u8 sText_Other[] = _("Other");
+static const u8 sText_NoThanks[] = _("No thanks");
+static const u8 sText_Quit[] = _("Quit");
 
 static const struct DynamicListMenuEventCollection sDynamicListMenuEventCollections[] =
 {
@@ -129,10 +129,10 @@ static const struct MenuAction sMultichoiceList_YesNo[] = {
 };
 
 static const struct MenuAction sMultichoiceList_TrainerCardIconTint[] = {
-    { COMPOUND_STRING("NORMAL") },
-    { COMPOUND_STRING("BLACK") },
+    { COMPOUND_STRING("Normal") },
+    { COMPOUND_STRING("Black") },
     { gText_Pink },
-    { COMPOUND_STRING("SEPIA") }
+    { COMPOUND_STRING("Sepia") }
 };
 
 static const struct MenuAction sMultichoiceList_HOF_Quit[] = {
@@ -239,9 +239,9 @@ static const struct MenuAction sMultichoiceList_DomeAmber[] = {
 };
 
 static const struct MenuAction sMultichoiceList_CeladonVendingMachine[] = {
-    { COMPOUND_STRING("FRESH WATER{CLEAR_TO 0x57}{FONT_SMALL}¥200") },
-    { COMPOUND_STRING("SODA POP{CLEAR_TO 0x57}{FONT_SMALL}¥300") },
-    { COMPOUND_STRING("LEMONADE{CLEAR_TO 0x57}{FONT_SMALL}¥350") },
+    { COMPOUND_STRING("Fresh Water{CLEAR_TO 0x57}{FONT_SMALL}¥200") },
+    { COMPOUND_STRING("Soda Pop{CLEAR_TO 0x57}{FONT_SMALL}¥300") },
+    { COMPOUND_STRING("Lemonade{CLEAR_TO 0x57}{FONT_SMALL}¥350") },
     { gOtherText_Exit }
 };
 
@@ -390,14 +390,14 @@ static const struct MenuAction sMultichoiceList_BikeShop[] = {
 };
 
 static const struct MenuAction sMultichoiceList_GameCornerPokemonPrizes[] = {
-    { COMPOUND_STRING("Mr. Mime{CLEAR_TO 0x55}{FONT_SMALL} 5,500 COINS") },
-    { COMPOUND_STRING("Jynx{CLEAR_TO 0x55}{FONT_SMALL} 5,500 COINS") },
-    { COMPOUND_STRING("Pinsir{CLEAR_TO 0x4B}{FONT_SMALL} 5,500 COINS") },
-    { COMPOUND_STRING("Eevee{CLEAR_TO 0x4B}{FONT_SMALL} 3,000 COINS") },
-    { COMPOUND_STRING("Dratini{CLEAR_TO 0x4B}{FONT_SMALL} 8,000 COINS") },
-    { COMPOUND_STRING("Scyther{CLEAR_TO 0x55}{FONT_SMALL} 5,500 COINS") },
-    { COMPOUND_STRING("Porygon{CLEAR_TO 0x55}{FONT_SMALL} 6,500 COINS") },
-    { sText_NoThanks }
+    { gText_MrMime_5500 },
+    { gText_Jynx_5500 },
+    { gText_Pinsir_5500 },
+    { gText_Eevee_3000 },
+    { gText_Dratini_8000 },
+    { gText_Scyther_5500 },
+    { gText_Porygon_6500 },
+    { gOtherText_Exit }
 };
 
 static const struct MenuAction sMultichoiceList_TradeCenter_Colosseum[] = {
@@ -747,7 +747,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] = {
     [MULTI_CELADON_VENDING_MACHINE]                    = MULTICHOICE(sMultichoiceList_CeladonVendingMachine),
     [MULTI_GAME_CORNER_COIN_PURCHASE_COUNTER]          = MULTICHOICE(sMultichoiceList_GameCornerCoinPurchaseCounter),
 //  [MULTI_GAME_CORNER_TMPRIZES]                       = MULTICHOICE(sMultichoiceList_GameCornerTMPrizes),
-//  [MULTI_GAME_CORNER_POKEMON_PRIZES]                 = MULTICHOICE(sMultichoiceList_GameCornerPokemonPrizes),
+    [MULTI_GAME_CORNER_POKEMON_PRIZES]                 = MULTICHOICE(sMultichoiceList_GameCornerPokemonPrizes),
 //  [MULTI_GAME_CORNER_BATTLE_ITEM_PRIZES]             = MULTICHOICE(sMultichoiceList_GameCornerBattleItemPrizes),
     [MULTI_DEPT_STORE_ELEVATOR]                        = MULTICHOICE(sMultichoiceList_DeptStoreElevator),
     [MULTI_THIRSTY_GIRL_FRESH_WATER]                   = MULTICHOICE(sMultichoiceList_ThirstyGirlFreshWater),
@@ -894,10 +894,10 @@ static const u8 *const sSeagallopDestStrings[] = {
     [SEAGALLOP_ONE_ISLAND]     = sText_OneIsland,
     [SEAGALLOP_TWO_ISLAND]     = sText_TwoIsland,
     [SEAGALLOP_THREE_ISLAND]   = sText_ThreeIsland,
-    [SEAGALLOP_FOUR_ISLAND]    = COMPOUND_STRING("FOUR ISLAND"),
-    [SEAGALLOP_FIVE_ISLAND]    = COMPOUND_STRING("FIVE ISLAND"),
-    [SEAGALLOP_SIX_ISLAND]     = COMPOUND_STRING("SIX ISLAND"),
-    [SEAGALLOP_SEVEN_ISLAND]   = COMPOUND_STRING("SEVEN ISLAND"),
+    [SEAGALLOP_FOUR_ISLAND]    = COMPOUND_STRING("Four Island"),
+    [SEAGALLOP_FIVE_ISLAND]    = COMPOUND_STRING("Five Island"),
+    [SEAGALLOP_SIX_ISLAND]     = COMPOUND_STRING("Six Island"),
+    [SEAGALLOP_SEVEN_ISLAND]   = COMPOUND_STRING("Seven Island"),
 };
 
 bool8 ScriptMenu_MultichoiceDynamic(u8 left, u8 top, u8 argc, struct ListMenuItem *items, bool8 ignoreBPress, u8 maxBeforeScroll, u32 initialRow, u32 callbackSet)
