@@ -96,7 +96,7 @@
 #define OW_TIME_OF_DAY_ENCOUNTERS       FALSE        // If TRUE, will allow the user to define and use different encounter tables based on the time of day.
 #define OW_TIME_OF_DAY_DISABLE_FALLBACK FALSE        // If TRUE, if the encounter table for a specific map and time is empty, the area will have no encounters instead of falling back to the vanilla map and time.
 #define OW_TIME_OF_DAY_FALLBACK         TIME_MORNING // The time of day that encounter tables fall back to. If you set OW_TIMES_OF_DAY to GEN_3, change this to TIME_DAY or you won't have any encounters!
-#define OW_SEASONS                      FALSE         // Enables seasonal tilesets
+#define OW_SEASONS                      TRUE         // Enables seasonal tilesets
 #define OW_SEASON_ENCOUNTERS            FALSE
 #define OW_SEASON_DISABLE_FALLBACK      FALSE
 #define OW_SEASON_FALLBACK              SEASON_SPRING
@@ -107,7 +107,7 @@
 #define OW_ENABLE_DNS                   TRUE    // If set to TRUE, the overworld will be tinted depending on time of day.
 
 // Object Event Shadows
-#define OW_OBJECT_VANILLA_SHADOWS      FALSE    // When FALSE, every object in the overworld has a shadow. WARNING: This means every object will take up two sprites instead of one. When TRUE, an object's shadow is only shown when jumping.
+#define OW_OBJECT_VANILLA_SHADOWS      TRUE    // When FALSE, every object in the overworld has a shadow. WARNING: This means every object will take up two sprites instead of one. When TRUE, an object's shadow is only shown when jumping.
 
 // Overworld flags
 // To use the following features in scripting, replace the 0s with the flag ID you're assigning it to.
@@ -132,7 +132,7 @@
 #define OW_REMATCH_BADGE_COUNT      1 // Number of badges necessary before the match call or vs seeker features allow rematches
 
 // FRLG configs
-#define OW_FIELD_MOVES_WITHOUT_HMS  TRUE    // If TRUE, field moves can be used without having a Pokémon with the required move.
+#define OW_FIELD_MOVES_WITHOUT_HMS  FALSE   // If TRUE, field moves can be used without having a Pokémon with the required move.
 #define OW_BATTLE_FRONTIER          TRUE    // If TRUE, enables the Battle Frontier.
 #define OW_HOF_EVENT_TICKETS        FALSE   // If TRUE, enables event tickets after hall of fame.
 #define OW_MAP_POPUP_EMERALD        FALSE   // If TRUE, emerald-style map popups are used.
