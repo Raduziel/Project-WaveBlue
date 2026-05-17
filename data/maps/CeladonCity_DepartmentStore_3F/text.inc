@@ -22,10 +22,10 @@ CeladonCity_DepartmentStore_3F_Text_CanIdentifyTradeMonsByID::
     .string "in trades by their ID Numbers.$"
 
 CeladonCity_DepartmentStore_3F_Text_ItsSuperNES::
-    .string "It's a Super NES.$"
+    .string "It's a Super Nes.$"
 
 CeladonCity_DepartmentStore_3F_Text_AnRPG::
-    .string "An RPG!\n"
+    .string "An Rpg!\n"
     .string "There's no time for that!$"
 
 CeladonCity_DepartmentStore_3F_Text_SportsGame::

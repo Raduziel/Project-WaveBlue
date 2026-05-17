@@ -164,4 +164,4 @@ FourIsland_House2_Text_ComeBackWithBetterStoryLinkWins::
 FourIsland_House2_Text_LivingLegendLinkWins::
 	.string "Oh, no, no can do.\p"
 	.string "You're practically a living legend.\n"
-	.string "I have no SITCKERS left to give.$"
+	.string "I have no Sitckers left to give.$"

@@ -54,7 +54,7 @@ LavenderTown_VolunteerPokemonHouse_Text_HasPokeFluteHelpedYou::
     .string "helped you?$"
 
 LavenderTown_VolunteerPokemonHouse_Text_GrandPrizeDrawingClipped::
-    .string "Pokémon FAN MAGAZINE\n"
+    .string "Pokémon Fan Magazine\n"
     .string "Monthly Grand Prize Drawing!\p"
     .string "The application form is…\p"
     .string "Gone! It's been clipped out.\n"
@@ -62,6 +62,6 @@ LavenderTown_VolunteerPokemonHouse_Text_GrandPrizeDrawingClipped::
 
 LavenderTown_VolunteerPokemonHouse_Text_PokemonMagazinesLineShelf::
     .string "Pokémon magazines line the shelf.\p"
-    .string "Pokémon INSIDER…\p"
-    .string "Pokémon FAN…$"
+    .string "Pokémon Insider…\p"
+    .string "Pokémon Fan…$"
 

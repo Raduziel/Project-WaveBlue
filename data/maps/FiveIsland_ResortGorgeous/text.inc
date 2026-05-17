@@ -20,7 +20,7 @@ FiveIsland_ResortGorgeous_Text_CelinaDefeat::
     .string "I feel like I'm whiting out…$"
 
 FiveIsland_ResortGorgeous_Text_CelinaPostBattle::
-    .string "GILLIAN?\n"
+    .string "Gillian?\n"
     .string "Please tilt your head slightly…\l"
     .string "There! That's the look I want!$"
 

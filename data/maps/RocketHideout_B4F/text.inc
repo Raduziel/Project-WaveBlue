@@ -10,7 +10,7 @@ RocketHideout_B4F_Text_GiovanniIntro::
     .string "world of pain!$"
 
 RocketHideout_B4F_Text_GiovanniDefeat::
-    .string "WHAT!\n"
+    .string "What!\n"
     .string "This can't be!$"
 
 RocketHideout_B4F_Text_GiovanniPostBattle::

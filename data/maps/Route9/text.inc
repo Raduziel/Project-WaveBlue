@@ -71,7 +71,7 @@ Route9_Text_BrentIntro::
     .string "my Pokémon from cocoons!$"
 
 Route9_Text_BrentDefeat::
-    .string "WHAT?\p"
+    .string "What?\p"
     .string "What a total waste of time!$"
 
 Route9_Text_BrentPostBattle::

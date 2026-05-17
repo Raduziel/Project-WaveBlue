@@ -107,7 +107,7 @@ gFameCheckerFlavorText_Brock3:: @ 0x81AD908
 gFameCheckerFlavorText_Brock4:: @ 0x81AD99A
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}What does this person do?\p"
 	.string "{FONT_MALE}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Hi, I'm excavating for fossils here\n"
-	.string "under Mt. MOON.\p"
+	.string "under Mt. Moon.\p"
 	.string "Sometimes, Brock of Pewter Gym\n"
 	.string "lends me a hand.$"
 
@@ -165,7 +165,7 @@ gFameCheckerFlavorText_LtSurge1:: @ 0x81ADDA7
 gFameCheckerFlavorText_LtSurge2:: @ 0x81ADE0B
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}What is this person like?\p"
 	.string "{FONT_MALE}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}When I was in the Army, Lt. Surge\n"
-	.string "was my strict CO.\p"
+	.string "was my strict Co.\p"
 	.string "He was a hard taskmaster.$"
 
 gFameCheckerFlavorText_LtSurge3:: @ 0x81ADE82
@@ -846,7 +846,7 @@ gFameCheckerFlavorTextOriginLocation_Brock3::
 	.string "Route 4$"
 
 gFameCheckerFlavorTextOriginLocation_Brock4::
-	.string "Mt. MOON$"
+	.string "Mt. Moon$"
 
 gFameCheckerFlavorTextOriginLocation_Brock5::
 	.string "Pewter Museum$"
@@ -1480,7 +1480,7 @@ PokemonJournal_Text_SpecialFeatureDaisyOak::
 PokemonJournal_Text_SpecialFeatureMrFuji::
 	.string "Pokémon Journal\p"
 	.string "Special Feature:\n"
-	.string "Mr. Fuji of Pokémon HOUSE!\p"
+	.string "Mr. Fuji of Pokémon House!\p"
 	.string "Editor: The shy Mr. Fuji turned\n"
 	.string "down our interview requests.\p"
 	.string "He is a kindly man who is adored\n"

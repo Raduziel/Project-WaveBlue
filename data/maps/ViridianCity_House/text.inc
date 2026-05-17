@@ -12,5 +12,5 @@ ViridianCity_House_Text_Speary::
 
 ViridianCity_House_Text_SpearowNameSpeary::
     .string "Spearow\n"
-    .string "Name: SPEARY$"
+    .string "Name: Speary$"
 

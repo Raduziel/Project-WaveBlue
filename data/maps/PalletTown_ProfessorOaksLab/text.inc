@@ -32,7 +32,7 @@ PalletTown_ProfessorOaksLab_Text_RivalLetsCheckOutMons::
     .string "Come on, I'll take you on!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalDefeat::
-    .string "WHAT?\n"
+    .string "What?\n"
     .string "Unbelievable!\l"
     .string "I picked the wrong Pokémon!$"
 
@@ -284,7 +284,7 @@ PalletTown_ProfessorOaksLab_Text_OakIsGoingToHaveRadioShow::
     .string "Prof. Oak is going to have his own\n"
     .string "radio show soon.\p"
     .string "The program will be called Prof.\n"
-    .string "Oak's Pokémon SEMINAR.$"
+    .string "Oak's Pokémon Seminar.$"
 
 PalletTown_ProfessorOaksLab_Text_OakIsAuthorityOnMons::
     .string "Prof. Oak may not look like much,\n"

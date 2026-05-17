@@ -5,14 +5,14 @@ SafariZone_Text_WouldYouLikeToExit::
 	.string "Zone right now?$"
 
 SafariZone_Text_TimesUp::
-	.string "PA: Ding-dong!\p"
+	.string "Pa: Ding-dong!\p"
 	.string "Time's up!\p"
-	.string "PA: Your Safari Game is over!$"
+	.string "Pa: Your Safari Game is over!$"
 
 SafariZone_Text_OutOfBalls::
-	.string "PA: Ding-dong!\p"
+	.string "Pa: Ding-dong!\p"
 	.string "You are out of Safari Balls!\p"
-	.string "PA: Your Safari Game is over!$"
+	.string "Pa: Your Safari Game is over!$"
 
 SafariZone_Text_WelcomeToSafariZone::
 	.string "サファリゾーンへ　ようこそ！\p"

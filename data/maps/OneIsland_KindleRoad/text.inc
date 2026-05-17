@@ -155,10 +155,10 @@ OneIsland_KindleRoad_Text_MikNotEnoughMons::
     .string "you, then.$"
 
 OneIsland_KindleRoad_Text_RouteSign::
-    .string "This is KINDLE Road.\p"
+    .string "This is Kindle Road.\p"
     .string "Go straight for Mt. Ember.$"
 
 OneIsland_KindleRoad_Text_EmberSpaSign::
     .string "Light the Fire in Your Heart!\n"
-    .string "Ember SPA$"
+    .string "Ember Spa$"
 

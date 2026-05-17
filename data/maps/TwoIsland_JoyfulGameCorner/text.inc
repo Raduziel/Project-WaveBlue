@@ -23,7 +23,7 @@ TwoIsland_JoyfulGameCorner_Text_IsThisOnlyThreeIsland::
     .string "Those clowns…\p"
     .string "They said they'd be waiting on the\n"
     .string "island, so where are they?\p"
-    .string "Hey, you! Is this the only THREE\n"
+    .string "Hey, you! Is this the only Three\n"
     .string "Island around here?$"
 
 TwoIsland_JoyfulGameCorner_Text_ThisIsTwoIslandMoveIt::

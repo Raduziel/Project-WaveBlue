@@ -8,7 +8,7 @@ Text_MonsHealedShouldBuyPotions::
 	.string "If your Pokémon's energy, HP,\n"
 	.string "is down, please come see us.\p"
 	.string "If you're planning to go far in the\n"
-	.string "field, you should buy some POTIONS\l"
+	.string "field, you should buy some Potions\l"
 	.string "at the Pokémon Mart.\p"
 	.string "We hope you excel!$"
 
@@ -36,7 +36,7 @@ Text_MomExplainHPGetPotions::
 	.string "Pokémon Center.\p"
 	.string "If you're going to travel far away,\n"
 	.string "the smart Trainer stocks up on\l"
-	.string "POTIONS at the Pokémon Mart.\p"
+	.string "Potions at the Pokémon Mart.\p"
 	.string "Make me proud, honey!\p"
 	.string "Take care!$"
 

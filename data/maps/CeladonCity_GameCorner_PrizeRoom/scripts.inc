@@ -32,7 +32,6 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_ChoosePrizeMon::
 	case 5, CeladonCity_GameCorner_PrizeRoom_EventScript_Scyther
 	case 6, CeladonCity_GameCorner_PrizeRoom_EventScript_Porygon
 	case 7, CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
-	case 127, CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
 	end
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_MrMime::
@@ -225,7 +224,6 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_ChoosePrizeLeft::
 	case 9, CeladonCity_GameCorner_PrizeRoom_EventScript_FlameOrb
 	case 10, CeladonCity_GameCorner_PrizeRoom_EventScript_ToxicOrb
 	case 11, CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
-	case 127, CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
 	end
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_ChoiceBand::
@@ -310,7 +308,6 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_ChoosePrizeRight::
 	case 9, CeladonCity_GameCorner_PrizeRoom_EventScript_ThroatSpray
 	case 10, CeladonCity_GameCorner_PrizeRoom_EventScript_LightClay
 	case 11, CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
-	case 127, CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
 	end
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_FocusSash::

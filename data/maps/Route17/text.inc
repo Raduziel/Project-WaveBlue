@@ -60,7 +60,7 @@ Route17_Text_ZeekDefeat::
 
 Route17_Text_ZeekPostBattle::
     .string "Maybe some Pokémon need element\n"
-    .string "STONES to evolve.$"
+    .string "Stones to evolve.$"
 
 Route17_Text_JamalIntro::
     .string "I need a little exercise!$"

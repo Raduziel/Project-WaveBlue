@@ -7,7 +7,7 @@ TwoIsland_Text_JoyfulGameCornerSign::
     .string "Joyful Game Corner$"
 
 TwoIsland_Text_DangerFastCurrent::
-    .string "DANGER! FAST CURRENT!\n"
+    .string "Danger! Fast Current!\n"
     .string "Fishing and surfing prohibited!$"
 
 TwoIsland_Text_WelcomeToShopMerchandiseLimited::

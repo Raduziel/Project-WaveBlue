@@ -10,7 +10,7 @@ Text_DreamEaterTeach::
     .string "I can forget about it!$"
 
 Text_DreamEaterTaught::
-    .string "…ZZZ…\n"
+    .string "…Zzz…\n"
     .string "I…can't eat…anymore…$"
 
 ViridianCity_Text_CanCarryMonsAnywhere::
@@ -128,7 +128,7 @@ ViridianCity_Text_CatchMonsForEasierBattles::
 ViridianCity_Text_MovesLimitedByPP::
     .string "Trainer Tips\p"
     .string "The battle moves of Pokémon are\n"
-    .string "limited by their POWER POINTS, PP.\p"
+    .string "limited by their Power Points, PP.\p"
     .string "To replenish PP, rest your tired\n"
     .string "Pokémon at a Pokémon Center.$"
 

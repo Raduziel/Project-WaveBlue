@@ -110,7 +110,7 @@ Route13_Text_RobertDefeat::
 
 Route13_Text_RobertPostBattle::
     .string "I wish I could fly like Pidgey and\n"
-    .string "PIDGEOTTO…$"
+    .string "Pidgeotto…$"
 
 Route13_Text_LookToLeftOfThatPost::
     .string "Trainer Tips\p"

@@ -60,7 +60,7 @@ PewterCity_Text_TrainerTipsEarningEXP::
     .string "however briefly, earn Exp Points.$"
 
 PewterCity_Text_CallPoliceIfInfoOnThieves::
-    .string "NOTICE!\p"
+    .string "Notice!\p"
     .string "Thieves have been stealing Pokémon\n"
     .string "fossils from Mt. Moon.\p"
     .string "Please call the Pewter Police if\n"

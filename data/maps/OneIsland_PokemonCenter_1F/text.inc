@@ -13,15 +13,15 @@ OneIsland_PokemonCenter_1F_Text_BillHowsYourResearchComing::
 
 OneIsland_PokemonCenter_1F_Text_ThisIsMyBuddyCelio::
     .string "{PLAYER}, this is my buddy Celio.\n"
-    .string "He's one dedicated PC MANIAC!$"
+    .string "He's one dedicated PC Maniac!$"
 
 OneIsland_PokemonCenter_1F_Text_PlayerIsRisingPokemonChamp::
     .string "Celio, this is {PLAYER}, a rising\n"
-    .string "contender as the Pokémon CHAMP!$"
+    .string "contender as the Pokémon Champ!$"
 
 OneIsland_PokemonCenter_1F_Text_PlayerIsReigningPokemonChamp::
     .string "Celio, this is {PLAYER}, the\n"
-    .string "reigning Pokémon CHAMP!$"
+    .string "reigning Pokémon Champ!$"
 
 OneIsland_PokemonCenter_1F_Text_CelioThatsReallyImpressive::
     .string "Celio: That's really impressive.\p"
@@ -246,7 +246,7 @@ OneIsland_PokemonCenter_1F_Text_HandedSapphireToCelio::
 
 OneIsland_PokemonCenter_1F_Text_ThankYouGiveMeTime::
     .string "Celio: So this is the gem that\n"
-    .string "forms a pair with the RUBY…\p"
+    .string "forms a pair with the Ruby…\p"
     .string "{PLAYER}, you've gone through a lot\n"
     .string "to get this, didn't you?\p"
     .string "You don't have to tell me. I know\n"

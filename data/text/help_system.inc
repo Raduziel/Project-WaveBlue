@@ -260,7 +260,7 @@ Help_Text_AnswerWhatAreMyAdventureBasics::
 	.string "Get in the habit of saving your\l"
 	.string "game and recording your progress.\l"
 	.string "Stock up on healing items at\l"
-	.string "Pokémon MARTS before traveling far.$"
+	.string "Pokémon Marts before traveling far.$"
 
 Help_Text_AnswerHowAreRoadsForestsDifferent::
 	.string "Forests are basically the same as\n"
@@ -535,13 +535,13 @@ Help_Text_UsingPokemon::
 	.string " Using “Pokémon”$"
 
 Help_Text_UsingSummary::
-	.string "  Using “SUMMARY”$"
+	.string "  Using “Summary”$"
 
 Help_Text_UsingSwitch::
-	.string "  Using “SWITCH”$"
+	.string "  Using “Switch”$"
 
 Help_Text_UsingItem::
-	.string "  Using “ITEM”$"
+	.string "  Using “Item”$"
 
 Help_Text_UsingBag::
 	.string " Using “Bag”$"
@@ -559,10 +559,10 @@ Help_Text_UsingPlayer::
 	.string " Using “{PLAYER}”$"
 
 Help_Text_UsingSave::
-	.string " Using “SAVE”$"
+	.string " Using “Save”$"
 
 Help_Text_UsingOption::
-	.string " Using “OPTION”$"
+	.string " Using “Option”$"
 
 Help_Text_UsingPotion::
 	.string "    Using a Potion$"
@@ -631,7 +631,7 @@ Help_Text_UsingShift::
 	.string "  Using “Shift”$"
 
 Help_Text_UsingSummary2::
-	.string "  Using “SUMMARY”$"
+	.string "  Using “Summary”$"
 
 Help_Text_UsingBag2::
 	.string " Using “Bag”$"
@@ -676,7 +676,7 @@ Help_Text_HowToUsePokedex::
 	.string "{CIRCLE_1} Select “Pokédex” on the Menu.\n"
 	.string "{CIRCLE_2} Choose Pokémon using commands such\n"
 	.string "   as “Pokémon List,”\n"
-	.string "   “Habitats OF Pokémon,” and\n"
+	.string "   “Habitats Of Pokémon,” and\n"
 	.string "   “Search.”\n"
 	.string "{CIRCLE_3} Select a Pokémon to obtain detailed\n"
 	.string "   information.$"
@@ -685,7 +685,7 @@ Help_Text_HowToUsePokemon::
 	.string "{CIRCLE_1} Select “Pokémon” on the Menu.\n"
 	.string "{CIRCLE_2} Choose a Pokémon in your party.\n"
 	.string "{CIRCLE_3} Select “Summary,” “Switch,”\n"
-	.string "   or “ITEM.”$"
+	.string "   or “Item.”$"
 
 Help_Text_HowToUseSummary::
 	.string "{CIRCLE_1} Select “Summary.”\n"
@@ -793,7 +793,7 @@ Help_Text_HowToUseTM::
 	.string "{CIRCLE_1} Open the Menu.\n"
 	.string "{CIRCLE_2} Open the “Key Items” Pocket in the\n"
 	.string "   “Bag.”\n"
-	.string "{CIRCLE_3} “OPEN” the TM Case.\n"
+	.string "{CIRCLE_3} “Open” the TM Case.\n"
 	.string "{CIRCLE_4} Select and “Use” a TM.\n"
 	.string "{CIRCLE_5} Select a Pokémon that can learn the\n"
 	.string "   move in the TM.$"
@@ -802,7 +802,7 @@ Help_Text_HowToUseHM::
 	.string "{CIRCLE_1} Open the Menu.\n"
 	.string "{CIRCLE_2} Open the “Key Items” Pocket in the\n"
 	.string "   “Bag.”\n"
-	.string "{CIRCLE_3} “OPEN” the TM Case.\n"
+	.string "{CIRCLE_3} “Open” the TM Case.\n"
 	.string "{CIRCLE_4} Select and “Use” an HM.\n"
 	.string "{CIRCLE_5} Select a Pokémon that can learn it.\n"
 	.string "HMs are hard to remove, so be careful!$"
@@ -822,7 +822,7 @@ Help_Text_HowToRideBicycle::
 	.string "   and select the “Bicycle.”\n"
 	.string "{CIRCLE_2} The Bicycle can be ridden by\n"
 	.string "   selecting “Use.” You may also\n"
-	.string "   “REGISTER” it for instant use by\n"
+	.string "   “Register” it for instant use by\n"
 	.string "   pressing Select.$"
 
 Help_Text_HowToEnterName::
@@ -868,7 +868,7 @@ Help_Text_HowToUseDeposit::
 Help_Text_HowToUseMove::
 	.string "{CIRCLE_1} Select a Pokémon in the open Box.\n"
 	.string "{CIRCLE_2} Pick up the Pokémon by selecting\n"
-	.string "   “MOVE” and move it anywhere with\n"
+	.string "   “Move” and move it anywhere with\n"
 	.string "   the {PLUS} Control Pad.\n"
 	.string "{CIRCLE_3} Move the Pokémon to the Box name\n"
 	.string "   and press left or right to move it\n"
@@ -1116,7 +1116,7 @@ Help_Text_Accuracy::
 	.string "Accuracy$"
 
 Help_Text_FNT::
-	.string "FNT$"
+	.string "Fnt$"
 
 Help_Text_Items::
 	.string "Items$"
@@ -1137,7 +1137,7 @@ Help_Text_Badges::
 	.string "Badges$"
 
 Help_Text_TextSpeed::
-	.string "TEXT Speed$"
+	.string "Text Speed$"
 
 Help_Text_BattleScene::
 	.string "Battle Scene$"
@@ -1340,7 +1340,7 @@ Help_Text_DefineAccuracy::
 	.string "the move will strike the target.$"
 
 Help_Text_DefineFNT::
-	.string "FNT stands for “fainted.”\n"
+	.string "Fnt stands for “fainted.”\n"
 	.string "A Pokémon faints if its HP is reduced\l"
 	.string "to zero. It becomes incapable of taking\l"
 	.string "part in battle.\l"
@@ -1367,7 +1367,7 @@ Help_Text_DefinePokeBalls::
 	.string "catching wild Pokémon, are placed in\l"
 	.string "the Poké Balls Pocket.\l"
 	.string "Poké Balls may be bought at Pokémon\l"
-	.string "MARTS. They may be used, given to a\l"
+	.string "Marts. They may be used, given to a\l"
 	.string "Pokémon to hold, or tossed out as\l"
 	.string "garbage.$"
 
@@ -1492,7 +1492,7 @@ Help_Text_DefineMoney2::
 	.string "Whenever you win a battle against a\n"
 	.string "Trainer, you are given prize money.\l"
 	.string "Save up your prize money so you can\l"
-	.string "enjoy shopping at Pokémon MARTS!$"
+	.string "enjoy shopping at Pokémon Marts!$"
 
 Help_Text_DefineBadges2::
 	.string "This indicates the number of Pokémon\n"

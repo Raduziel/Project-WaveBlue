@@ -135,11 +135,11 @@ CeladonCity_GameCorner_Text_SlotMachineWantToPlay::
     .string "Want to play?$"
 
 CeladonCity_GameCorner_Text_OutOfOrder::
-    .string "OUT OF ORDER\n"
+    .string "Out Of Order\n"
     .string "This is broken.$"
 
 CeladonCity_GameCorner_Text_OutToLunch::
-    .string "OUT TO LUNCH\n"
+    .string "Out To Lunch\n"
     .string "This is reserved.$"
 
 CeladonCity_GameCorner_Text_SomeonesKeys::

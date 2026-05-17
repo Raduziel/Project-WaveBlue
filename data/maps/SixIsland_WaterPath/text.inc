@@ -33,7 +33,7 @@ SixIsland_WaterPath_Text_SamirDefeat::
 
 SixIsland_WaterPath_Text_SamirPostBattle::
     .string "I couldn't lift the stigma of being\n"
-    .string "a SWIMMER…$"
+    .string "a Swimmer…$"
 
 SixIsland_WaterPath_Text_DeniseIntro::
     .string "My boyfriend's always busy, so I\n"

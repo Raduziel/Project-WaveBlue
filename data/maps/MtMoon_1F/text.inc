@@ -1,5 +1,5 @@
 MtMoon_1F_Text_MarcosIntro::
-    .string "WHOA!\n"
+    .string "Whoa!\n"
     .string "You shocked me!\l"
     .string "…Oh, you're just a kid!$"
 

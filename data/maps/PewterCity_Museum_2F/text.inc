@@ -50,13 +50,13 @@ PewterCity_Museum_2F_Text_RumorsOfFossils:
     .string "I would love to study one someday.$"
 
 PewterCity_Museum_2F_Text_YouHaveDomeTakeHelix:
-    .string "Wait! That IS a Dome Fossil!\n"
+    .string "Wait! That Is a Dome Fossil!\n"
     .string "Incredible!\p"
     .string "Since you appreciate history,\n"
     .string "please take this Helix Fossil too.$"
 
 PewterCity_Museum_2F_Text_YouHaveHelixTakeDome:
-    .string "Wait! That IS a Helix Fossil!\n"
+    .string "Wait! That Is a Helix Fossil!\n"
     .string "Incredible!\p"
     .string "Since you appreciate history,\n"
     .string "please take this Dome Fossil too.$"

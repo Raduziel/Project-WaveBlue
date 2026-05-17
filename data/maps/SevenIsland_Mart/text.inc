@@ -6,7 +6,7 @@ SevenIsland_Mart_Text_MonHavePersonalitiesOfTheirOwn::
 
 SevenIsland_Mart_Text_PreparationsCompleteForRuins::
     .string "Okay, preparations are complete\n"
-    .string "for me to explore the RUINS.$"
+    .string "for me to explore the Ruins.$"
 
 SevenIsland_Mart_Text_NeedToFishOnSevenIsland::
     .string "I need to fish on Seven Island.\p"

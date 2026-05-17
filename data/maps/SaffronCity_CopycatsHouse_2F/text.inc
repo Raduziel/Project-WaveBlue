@@ -89,7 +89,7 @@ SaffronCity_CopycatsHouse_2F_Text_RareMonOnlyDoll::
     .string "Huh? It's only a doll!$"
 
 SaffronCity_CopycatsHouse_2F_Text_MarioWearingABucket::
-    .string "A game with MARIO wearing a bucket\n"
+    .string "A game with Mario wearing a bucket\n"
     .string "on his head!$"
 
 SaffronCity_CopycatsHouse_2F_Text_MySecrets::

@@ -104,7 +104,7 @@ Route25_Text_WaynePostBattle::
     .string "Cerulean City.$"
 
 Route25_Text_SeaCottageSign::
-    .string "SEA COTTAGE\n"
+    .string "Sea Cottage\n"
     .string "Bill lives here!$"
 
 Route25_Text_MistyHighHopesAboutThisPlace::
@@ -118,7 +118,7 @@ Route25_Text_AreYouHereAlone::
     .string "Well, it should be as a couple.$"
 
 Route25_Text_WaitAMoment::
-    .string "HEY! WAIT A MOMENT!$"
+    .string "Hey! Wait A Moment!$"
 
 Route25_Text_BillIntro::
     .string "Bill: Glad I caught you!\n"

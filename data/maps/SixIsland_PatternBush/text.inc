@@ -149,8 +149,8 @@ SixIsland_PatternBush_Text_LaytonDefeat::
     .string "your feet?$"
 
 SixIsland_PatternBush_Text_LaytonPostBattle::
-    .string "There are places here in PATTERN\n"
-    .string "BUSH where grass won't grow.\p"
+    .string "There are places here in Pattern\n"
+    .string "Bush where grass won't grow.\p"
     .string "What could be the cause of such\n"
     .string "a phenomenon?$"
 

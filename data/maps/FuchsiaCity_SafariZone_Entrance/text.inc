@@ -18,7 +18,7 @@ FuchsiaCity_SafariZone_Entrance_Text_PlayerReceived30SafariBalls::
     .string "from the attendant.$"
 
 FuchsiaCity_SafariZone_Entrance_Text_CallYouOnPAWhenYouRunOut::
-    .string "We'll call you on the PA when you\n"
+    .string "We'll call you on the Pa when you\n"
     .string "run out of time or Safari Balls.\p"
     .string "Well, I'll wish you the best of\n"
     .string "luck!$"

@@ -43,7 +43,7 @@ PokedexRating_Text_LessThan60::
 	.string "Ah, you've finally topped 50\n"
 	.string "species!\p"
 	.string "I've given one of my Aides an Exp.\n"
-	.string "SHARE. Be sure to go get it!$"
+	.string "Share. Be sure to go get it!$"
 
 PokedexRating_Text_LessThan70::
 	.string "Hoho! This is turning into quite the\n"

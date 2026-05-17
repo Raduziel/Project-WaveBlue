@@ -1,9 +1,9 @@
 PokemonLeague_HallOfFame_Text_OakCongratulations::
     .string "Oak: Er-hem!\n"
     .string "Congratulations, {PLAYER}!\p"
-    .string "This floor is the Pokémon HALL OF\n"
-    .string "FAME.\p"
-    .string "Pokémon League CHAMPIONS are\n"
+    .string "This floor is the Pokémon Hall Of\n"
+    .string "Fame.\p"
+    .string "Pokémon League Champions are\n"
     .string "honored for their exploits here.\p"
     .string "Their Pokémon are also recorded in\n"
     .string "the Hall of Fame.\p"
@@ -11,5 +11,5 @@ PokemonLeague_HallOfFame_Text_OakCongratulations::
     .string "You have worked hard to become\n"
     .string "the new League Champion.\p"
     .string "Congratulations, {PLAYER}, you and\n"
-    .string "your Pokémon are HALL OF FAMERS!$"
+    .string "your Pokémon are Hall Of Famers!$"
 

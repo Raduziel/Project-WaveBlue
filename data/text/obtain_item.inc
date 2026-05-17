@@ -17,7 +17,7 @@ Text_TooBadBagFull::
 
 gText_PlayerPutItemInBag::
 	.string "{PLAYER} put away the {STR_VAR_2}\n"
-	.string "in the BAG.$"
+	.string "in the Bag.$"
 
 Text_FoundXCoins::
 	.string "{PLAYER} found\n"

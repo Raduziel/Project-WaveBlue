@@ -29,7 +29,7 @@ FiveIsland_ResortGorgeous_House_Text_MonYouCaughtForMeThankYou::
     .string "You may leave.\p"
     .string "… …  … …  … …\n"
     .string "Oh, fine. I understand now.\p"
-    .string "SEBASTIAN!\n"
+    .string "Sebastian!\n"
     .string "I need you here this instant!$"
 
 FiveIsland_ResortGorgeous_House_Text_ButlerYesMyLady::
@@ -45,7 +45,7 @@ FiveIsland_ResortGorgeous_House_Text_ButlerIShallDoAsYouBid::
 
 FiveIsland_ResortGorgeous_House_Text_ButlerPleaseAcceptThisAsHerThanks::
     .string "Butler: I sincerely thank you for\n"
-    .string "pleasing Lady SELPHY.\p"
+    .string "pleasing Lady Selphy.\p"
     .string "Please accept this as her thanks…$"
 
 FiveIsland_ResortGorgeous_House_Text_ButlerBagAppearsToBeFull::
@@ -61,8 +61,8 @@ FiveIsland_ResortGorgeous_House_Text_SelphyWishYouBestOfLuck::
     .string "luck.$"
 
 FiveIsland_ResortGorgeous_House_Text_LadySelphySmileHasBrillianceOfSun::
-    .string "Butler: The smile of Lady SELPHY\n"
+    .string "Butler: The smile of Lady Selphy\n"
     .string "has the brilliance of the sun.\p"
     .string "Please, I beg you to bring joy\n"
-    .string "to Lady SELPHY.$"
+    .string "to Lady Selphy.$"
 

@@ -35,7 +35,7 @@ Text_ExplosionTaughtJP::
 MtEmber_Exterior_Text_WellTryDiggingHere::
     .string "Over here.\n"
     .string "We'll try digging here.\p"
-    .string "That treasure the ADMINS've been\n"
+    .string "That treasure the Admins've been\n"
     .string "talking about should be here.$"
 
 MtEmber_Exterior_Text_YoureInTheWayGetLost::

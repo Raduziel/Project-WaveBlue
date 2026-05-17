@@ -1520,9 +1520,9 @@ Text_DescribeWhichGame::
 	.string "Which game should I describe?$"
 
 Text_PokemonJumpInfo::
-	.string "“Pokémon JUMP”\p"
+	.string "“Pokémon Jump”\p"
 	.string "Make your Pokémon skip the\n"
-	.string "VINE WHIP rope with the A Button.\p"
+	.string "Vine Whip rope with the A Button.\p"
 	.string "Only mini Pokémon around 28 inches\n"
 	.string "or less may participate.\p"
 	.string "Pokémon that only swim, burrow, or\n"
@@ -1533,7 +1533,7 @@ Text_PokemonJumpInfo::
 	.string "jumps in time.$"
 
 Text_DodrioBerryPickingInfo::
-	.string "“Dodrio Berry-PICKING”\p"
+	.string "“Dodrio Berry-Picking”\p"
 	.string "Command Dodrio's three heads to\n"
 	.string "catch falling Berries.\p"
 	.string "Press right, up, or left on the\n"
@@ -1583,7 +1583,7 @@ EventScript_ExplainPokemonJumpRequirements::
 	.string "kinds of Pokémon can enter?$"
 
 Text_ShortJumpingPokemonAllowed::
-	.string "“Pokémon JUMP” is open to Pokémon\n"
+	.string "“Pokémon Jump” is open to Pokémon\n"
 	.string "around 28 inches or less.\p"
 	.string "What you can't enter are those\n"
 	.string "Pokémon that can't jump.\p"
@@ -1592,7 +1592,7 @@ Text_ShortJumpingPokemonAllowed::
 	.string "That's all you need to know.$"
 
 Text_OnlyDodrioAllowed::
-	.string "“DODRIO Berry-PICKING”…\n"
+	.string "“Dodrio Berry-Picking”…\n"
 	.string "Well, the name says it all.\p"
 	.string "You have to have a Dodrio to play\n"
 	.string "this game.$"

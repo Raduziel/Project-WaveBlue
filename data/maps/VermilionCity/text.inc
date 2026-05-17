@@ -34,7 +34,7 @@ VermilionCity_Text_CitySign::
     .string "The Port of Exquisite Sunsets$"
 
 VermilionCity_Text_SnorlaxBlockingRoute12::
-    .string "NOTICE!\p"
+    .string "Notice!\p"
     .string "Route 12 may be blocked off by a\n"
     .string "sleeping Pokémon.\p"
     .string "Detour through Rock Tunnel to\n"

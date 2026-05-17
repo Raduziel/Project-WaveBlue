@@ -115,7 +115,7 @@ SaffronCity_Gym_Text_TyronDefeat::
     .string "I don't believe this!$"
 
 SaffronCity_Gym_Text_TyronPostBattle::
-    .string "Sabrina just wiped out the KARATE\n"
+    .string "Sabrina just wiped out the Karate\n"
     .string "Master next door.$"
 
 SaffronCity_Gym_Text_TashaIntro::

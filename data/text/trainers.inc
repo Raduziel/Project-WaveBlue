@@ -6,7 +6,7 @@ VSSeeker_Text_BatteryNotChargedNeedXSteps::
 VSSeeker_Text_NoTrainersWithinRange::
 	.string "There are no Trainers within range\n"
 	.string "who can battle…\p"
-	.string "The VS Seeker was turned off.{PAUSE_UNTIL_PRESS}$"
+	.string "The Vs Seeker was turned off.{PAUSE_UNTIL_PRESS}$"
 
 VSSeeker_Text_TrainersNotReady::
 	.string "The other Trainers don't appear\n"
@@ -828,20 +828,20 @@ FiveIsland_ResortGorgeous_Text_TobyRematchIntro::
 	.string "Let us enjoy our time together!$"
 
 FiveIsland_MemorialPillar_Text_MiloRematchIntro::
-	.string "I'm the eldest of the BIRD\n"
-	.string "BROTHERS. Remember me?\p"
+	.string "I'm the eldest of the Bird\n"
+	.string "Brothers. Remember me?\p"
 	.string "That's right, I'm the one who loves\n"
 	.string "birds for their beaks!$"
 
 FiveIsland_MemorialPillar_Text_ChazRematchIntro::
-	.string "I'm the middle kid of the BIRD\n"
-	.string "BROTHERS.\p"
+	.string "I'm the middle kid of the Bird\n"
+	.string "Brothers.\p"
 	.string "I'm the one that loves wings.\n"
 	.string "Let's battle again!$"
 
 FiveIsland_MemorialPillar_Text_HaroldRematchIntro::
-	.string "I'm the youngest of the BIRD\n"
-	.string "BROTHERS.\p"
+	.string "I'm the youngest of the Bird\n"
+	.string "Brothers.\p"
 	.string "I love birds for their down.\n"
 	.string "I didn't think I'd see you again!$"
 
