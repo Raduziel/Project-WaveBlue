@@ -1,62 +1,52 @@
-CeruleanCity_House4_Text_NothingEntertaining::
-    .string "Sigh…\n"
-    .string "Too much time, too little to do…\p"
-    .string "Is nothing entertaining happening\n"
-    .string "anywhere?$"
+CeruleanCity_House4_Text_Hint0::
+	.string "I heard a rumor about a gentleman\n"
+	.string "near the Route 22 gate.\p"
+	.string "They say he can draw out the full\n"
+	.string "potential hidden within a Pokémon.\p"
+	.string "All he asks for in return are\n"
+	.string "a few Bottle Caps.$"
 
-CeruleanCity_House4_Text_NewNewsInformativeHaveThis::
-    .string "Ah!\n"
-    .string "A new news report!\p"
-    .string "Hmm…\p"
-    .string "I see!\n"
-    .string "That was quite informative!\p"
-    .string "I applaud you for taking interest\n"
-    .string "in the news at your young age.\p"
-    .string "As my thanks for sharing the news\n"
-    .string "with me, I want you to have this.$"
+CeruleanCity_House4_Text_Hint1::
+	.string "There's a medium at the entrance\n"
+	.string "of Lavender Tower.\p"
+	.string "They say she can wash away every\n"
+	.string "habit a Pokémon has built through\p"
+	.string "battle, leaving it free to grow\n"
+	.string "in any direction you choose.$"
 
-CeruleanCity_House4_Text_IncredibleNewsHaveBerries::
-    .string "Oh, oh!\n"
-    .string "Th-this news report!\p"
-    .string "Hmm…\p"
-    .string "Amazing!\n"
-    .string "What an incredible piece of news!\p"
-    .string "I haven't seen a news story this\n"
-    .string "incredible in too long a time!\p"
-    .string "Thanks for sharing this fantastic\n"
-    .string "news. Have a bunch of Berries!$"
+CeruleanCity_House4_Text_Hint2::
+	.string "Word has it that after someone\n"
+	.string "conquers the Pokémon League,\p"
+	.string "a certain Professor becomes eager\n"
+	.string "to test their skills personally.$"
 
-CeruleanCity_House4_Text_WishCouldShareNewsWithOthers::
-    .string "It seems such a shame to not share\n"
-    .string "this news with other folks…\p"
-    .string "I wish I could tell someone…\n"
-    .string "Let others know the news…$"
+CeruleanCity_House4_Text_Hint3::
+	.string "They say truly dedicated Trainers\n"
+	.string "are rewarded in unexpected ways.\p"
+	.string "Best the League, humble the\n"
+	.string "Professor, catch the mightiest\p"
+	.string "Pokémon in the world… and perhaps\n"
+	.string "something awaits you in Vermilion.$"
 
-CeruleanCity_House4_Text_ThanksForSpreadingNewsTakeThis::
-    .string "Ah, you've spread the news for me?\p"
-    .string "Good news becomes worthwhile when\n"
-    .string "all sorts of people share it.\p"
-    .string "As my thanks for your spreading\n"
-    .string "the news, take this!$"
+CeruleanCity_House4_Text_Hint4::
+	.string "Did you know there's someone in\n"
+	.string "Fuchsia City who can remind your\p"
+	.string "Pokémon of moves it may have\n"
+	.string "forgotten along the way?\p"
+	.string "A handy person to know!$"
 
-CeruleanCity_House4_Text_MagnificentNewsSpreadHaveBerries::
-    .string "You've spread the news some more?\n"
-    .string "Magnificent!\p"
-    .string "That piece of news must be\n"
-    .string "delighted to be passed around so.\p"
-    .string "Yes, indeed!\p"
-    .string "Consider this a show of\n"
-    .string "appreciation from me and the news.\p"
-    .string "I'll give you more Berries than\n"
-    .string "I usually do.$"
+CeruleanCity_House4_Text_Hint5::
+	.string "I once heard of a collector on\n"
+	.string "One Island with a trove of TMs.\p"
+	.string "Years of gathering, and now he\n"
+	.string "parts with them for the right price.$"
 
-CeruleanCity_House4_Text_EnjoyingMyselfWithAllSortsOfNews::
-    .string "I'm quite enjoying myself with all\n"
-    .string "sorts of news.\p"
-    .string "Yes, I am satisfied!\n"
-    .string "I won't be bored for a while.$"
-
-CeruleanCity_House4_Text_YourBerryPouchIsFull::
-    .string "Hm? Your Berry Pouch is full.\n"
-    .string "My gift remains ungiven, then.$"
-
+CeruleanCity_House4_Text_Hint6::
+	.string "A true Trainer's journey often\n"
+	.string "ends where it first began.\p"
+	.string "After making a name for yourself\n"
+	.string "out in the world,\p"
+	.string "it may be worth revisiting the\n"
+	.string "room you once called yours.\p"
+	.string "Some forgotten bonds have a way\n"
+	.string "of waiting patiently.$"

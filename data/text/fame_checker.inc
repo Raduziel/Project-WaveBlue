@@ -494,7 +494,7 @@ gFameCheckerFlavorText_Lance5:: @ 0x81AF7CB
 gFameCheckerFlavorText_Bill0:: @ 0x81AF83E
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}What does this person do?\p"
 	.string "{FONT_MALE}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}After all, Bill's world-famous as a\n"
-	.string "Pokémaniac.\p"
+	.string "Poké Maniac.\p"
 	.string "He invented the Pokémon Storage\n"
 	.string "System on PC, too.$"
 
@@ -511,7 +511,7 @@ gFameCheckerFlavorText_Bill2:: @ 0x81AF929
 
 gFameCheckerFlavorText_Bill3:: @ 0x81AF998
 	.string "{COLOR BLUE}{SHADOW LIGHT_BLUE}Favorite kind of Pokémon?\p"
-	.string "{FONT_MALE}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Bill is a Pokémaniac, so he loves\n"
+	.string "{FONT_MALE}{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Bill is a Poké Maniac, so he loves\n"
 	.string "every kind.\p"
 	.string "Apparently, the first one he caught\n"
 	.string "was an Abra.$"

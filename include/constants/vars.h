@@ -206,7 +206,7 @@
 #define VAR_FRONTIER_GAMBLER_STATE          0x4094
 #define VAR_FRONTIER_GAMBLER_SET_CHALLENGE  0x4095
 #define VAR_FRONTIER_GAMBLER_AMOUNT_BET     0x4096
-#define VAR_0x4097                 0x4097
+#define VAR_RANDOM_SPEECH                   0x4097
 #define VAR_0x4098                 0x4098
 #define VAR_0x4099                 0x4099
 #define VAR_0x409A                 0x409A

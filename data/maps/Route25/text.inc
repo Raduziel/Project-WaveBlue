@@ -79,7 +79,7 @@ Route25_Text_FranklinPostBattle::
     .string "A Zubat bit me back in that cave.$"
 
 Route25_Text_NobIntro::
-    .string "I'm off to see a Pokémaniac's\n"
+    .string "I'm off to see a Poké Maniac's\n"
     .string "collection at the cape.$"
 
 Route25_Text_NobDefeat::
@@ -87,7 +87,7 @@ Route25_Text_NobDefeat::
     .string "too!$"
 
 Route25_Text_NobPostBattle::
-    .string "The Pokémaniac sure lives up to\n"
+    .string "The Poké Maniac sure lives up to\n"
     .string "his name.\p"
     .string "His collection includes many rare\n"
     .string "species of Pokémon.$"

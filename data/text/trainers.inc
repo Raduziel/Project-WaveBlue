@@ -167,7 +167,7 @@ Route9_Text_ConnerRematchIntro::
 
 Route10_Text_MarkRematchIntro::
 	.string "Wow, you came here again?\n"
-	.string "Maybe you're a Pokémaniac, too?\l"
+	.string "Maybe you're a Poké Maniac, too?\l"
 	.string "Want to see my collection?$"
 
 Route10_Text_ClarkRematchIntro::
@@ -673,7 +673,7 @@ Route25_Text_FranklinRematchIntro::
 	.string "but I've still got gas in the tank!$"
 
 Route25_Text_NobRematchIntro::
-	.string "A Pokémaniac lives on the cape.\n"
+	.string "A Poké Maniac lives on the cape.\n"
 	.string "Have you seen his collection?$"
 
 Route25_Text_WayneRematchIntro::

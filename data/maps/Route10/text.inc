@@ -1,6 +1,6 @@
 Route10_Text_MarkIntro::
     .string "Wow, you came all the way here?\n"
-    .string "Maybe you're a Pokémaniac, too?\l"
+    .string "Maybe you're a Poké Maniac, too?\l"
     .string "Want to see my collection?$"
 
 Route10_Text_MarkDefeat::

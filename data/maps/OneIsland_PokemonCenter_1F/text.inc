@@ -289,7 +289,7 @@ OneIsland_PokemonCenter_1F_Text_CelioHearingRumorsAboutYou::
 OneIsland_PokemonCenter_1F_Text_BillsFirstMonWasAbra::
     .string "{PLAYER}, what's your favorite kind\n"
     .string "of Pokémon?\p"
-    .string "Bill is a Pokémaniac, so he loves\n"
+    .string "Bill is a Poké Maniac, so he loves\n"
     .string "every kind.\p"
     .string "Apparently, the first one he caught\n"
     .string "was an Abra.$"

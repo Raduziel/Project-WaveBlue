@@ -16,7 +16,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_4 = {
 	.id = 1,
 	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_SINGLE,
-	.prize = TTPRIZE_WHITE_HERB,
+	.prize = TTPRIZE_WEAKNESS_POLICY,
 	.trainers = {
 	    {
 			.name = _("Cole"),
@@ -171,7 +171,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_7 = {
 	.id = 2,
 	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_SINGLE,
-	.prize = TTPRIZE_DRAGON_SCALE,
+	.prize = TTPRIZE_CHOICE_SCARF,
 	.trainers = {
 	    {
 			.name = _("Jac"),
@@ -1372,7 +1372,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_1 = {
 	.id = 7,
 	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_KNOCKOUT,
-	.prize = TTPRIZE_METAL_COAT,
+	.prize = TTPRIZE_ASSAULT_VEST,
 	.trainers = {
 	    {
 			.name = _("Jordy"),
@@ -1811,7 +1811,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_2 = {
 	.id = 8,
 	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_KNOCKOUT,
-	.prize = TTPRIZE_UP_GRADE,
+	.prize = TTPRIZE_CHOICE_SPECS,
 	.trainers = {
 	    {
 			.name = _("Mike"),
@@ -2405,7 +2405,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_8 = {
 	.id = 10,
 	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_SINGLE,
-	.prize = TTPRIZE_METAL_COAT,
+	.prize = TTPRIZE_ASSAULT_VEST,
 	.trainers = {
 	    {
 			.name = _("Lily"),
@@ -2560,7 +2560,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_2 = {
 	.id = 11,
 	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_SINGLE,
-	.prize = TTPRIZE_UP_GRADE,
+	.prize = TTPRIZE_CHOICE_SPECS,
 	.trainers = {
 	    {
 			.name = _("Brandon"),
@@ -3012,7 +3012,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_1 = {
 	.id = 13,
 	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_DOUBLE,
-	.prize = TTPRIZE_DRAGON_SCALE,
+	.prize = TTPRIZE_CHOICE_SCARF,
 	.trainers = {
 	    {
 			.name = _("Jen & Kira"),
@@ -3309,7 +3309,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_4 = {
 	.id = 14,
 	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_DOUBLE,
-	.prize = TTPRIZE_MENTAL_HERB,
+	.prize = TTPRIZE_LIFE_ORB,
 	.trainers = {
 	    {
 			.name = _("Isac & Mag"),
@@ -3606,7 +3606,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_8 = {
 	.id = 15,
 	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_KNOCKOUT,
-	.prize = TTPRIZE_BRIGHT_POWDER,
+	.prize = TTPRIZE_FOCUS_SASH,
 	.trainers = {
 	    {
 			.name = _("Chelsea"),
@@ -4639,7 +4639,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Mixed_1 = {
 	.id = 18,
 	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_SINGLE,
-	.prize = TTPRIZE_KINGS_ROCK,
+	.prize = TTPRIZE_EVIOLITE,
 	.trainers = {
 	    {
 			.name = _("Allyson"),
@@ -4794,7 +4794,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_1 = {
 	.id = 19,
 	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_SINGLE,
-	.prize = TTPRIZE_UP_GRADE,
+	.prize = TTPRIZE_CHOICE_SPECS,
 	.trainers = {
 	    {
 			.name = _("Alberto"),
@@ -4949,7 +4949,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Mixed_5 = {
 	.id = 20,
 	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_DOUBLE,
-	.prize = TTPRIZE_METAL_COAT,
+	.prize = TTPRIZE_ASSAULT_VEST,
 	.trainers = {
 	    {
 			.name = _("Kat & Kipp"),
@@ -5246,7 +5246,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Double_8 = {
 	.id = 21,
 	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_DOUBLE,
-	.prize = TTPRIZE_MENTAL_HERB,
+	.prize = TTPRIZE_LIFE_ORB,
 	.trainers = {
 	    {
 			.name = _("Geb&Megan"),
@@ -6279,7 +6279,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_4 = {
 	.id = 24,
 	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_KNOCKOUT,
-	.prize = TTPRIZE_DRAGON_SCALE,
+	.prize = TTPRIZE_CHOICE_SCARF,
 	.trainers = {
 	    {
 			.name = _("Brennan"),
@@ -6718,7 +6718,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Single_3 = {
 	.id = 25,
 	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_SINGLE,
-	.prize = TTPRIZE_METAL_COAT,
+	.prize = TTPRIZE_ASSAULT_VEST,
 	.trainers = {
 	    {
 			.name = _("Jarrett"),
@@ -6873,7 +6873,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Mixed_3 = {
 	.id = 26,
 	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_SINGLE,
-	.prize = TTPRIZE_DRAGON_SCALE,
+	.prize = TTPRIZE_CHOICE_SCARF,
 	.trainers = {
 	    {
 			.name = _("Owen"),
@@ -8074,7 +8074,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_6 = {
 	.id = 31,
 	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_KNOCKOUT,
-	.prize = TTPRIZE_WHITE_HERB,
+	.prize = TTPRIZE_WEAKNESS_POLICY,
 	.trainers = {
 		{
 			.name = _("Ben"),
@@ -8513,7 +8513,7 @@ static const struct TrainerTowerFloor sTrainerTowerFloor_Knockout_5 = {
 	.id = 32,
 	.floorIdx = MAX_TRAINER_TOWER_FLOORS,
 	.challengeType = CHALLENGE_TYPE_KNOCKOUT,
-	.prize = TTPRIZE_UP_GRADE,
+	.prize = TTPRIZE_CHOICE_SPECS,
 	.trainers = {
 		{
 			.name = _("Maura"),

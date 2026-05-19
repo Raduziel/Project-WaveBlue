@@ -7,11 +7,11 @@ CeladonCity_DepartmentStore_4F_Text_GettingPokeDollAsPresent::
 CeladonCity_DepartmentStore_4F_Text_CanRunAwayWithPokeDoll::
     .string "Thanks to Erika and the ladies\n"
     .string "from the Gym, we have access to\p"
-    .string "a lot of berries, seeds, and\n"
-    .string "herbs here in Celadon.$"
+    .string "a lot of berries and seeds\n"
+    .string "here in Celadon.$"
 
 CeladonCity_DepartmentStore_4F_Text_FloorSign::
     .string "Express yourself with gifts!\n"
     .string "4F: Wise Man Gifts\p"
     .string "Evolution Special!\n"
-    .string "Berries, Herbs and Seeds!$"
+    .string "Berries and Seeds!$"

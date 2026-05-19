@@ -9,7 +9,7 @@ CeladonCity_Condominiums_RoofRoom_EventScript_EeveeBall::
 	lock
 	faceplayer
 	setvar VAR_TEMP_1, SPECIES_EEVEE
-	givemon SPECIES_EEVEE, 25
+	givemon SPECIES_EEVEE, 25, nature=NATURE_DOCILE, abilityNum=2, hpIv=31, move1=MOVE_QUICK_ATTACK, move2=MOVE_BABY_DOLL_EYES, move3=MOVE_WISH, move4=MOVE_YAWN
 	goto_if_eq VAR_RESULT, 0, CeladonCity_Condominiums_RoofRoom_EventScript_GetEeveeParty
 	goto_if_eq VAR_RESULT, 1, CeladonCity_Condominiums_RoofRoom_EventScript_GetEeveePC
 	goto_if_eq VAR_RESULT, 2, EventScript_NoMoreRoomForPokemon

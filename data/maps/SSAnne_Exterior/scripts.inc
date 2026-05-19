@@ -43,7 +43,7 @@ SSAnne_Exterior_EventScript_Mew::
     playmoncry SPECIES_MEW, CRY_MODE_ENCOUNTER
     msgbox SSAnne_Exterior_Text_Mew, MSGBOX_DEFAULT
     waitmoncry
-    setwildbattle SPECIES_MEW, 70, ITEM_NONE
+    setwildbattle SPECIES_MEW, 70
     setflag FLAG_SYS_SPECIAL_WILD_BATTLE
     special BattleSetup_StartLegendaryBattle
     waitstate

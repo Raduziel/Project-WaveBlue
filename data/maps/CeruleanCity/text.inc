@@ -19,7 +19,7 @@ CeruleanCity_Text_RivalPostBattle::
     .string "That added a lot of pages to my\n"
     .string "Pokédex!\p"
     .string "After all, Bill's world famous as a\n"
-    .string "Pokémaniac.\p"
+    .string "Poké Maniac.\p"
     .string "He invented the Pokémon Storage\n"
     .string "System on PC, too.\p"
     .string "Since you're using his system,\n"

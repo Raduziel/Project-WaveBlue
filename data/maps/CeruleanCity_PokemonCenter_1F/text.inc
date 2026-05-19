@@ -7,7 +7,7 @@ CeruleanCity_PokemonCenter_1F_Text_BillDoesWhateverForRareMons::
 
 CeruleanCity_PokemonCenter_1F_Text_EveryoneCallsBillPokemaniac::
     .string "Have you heard about Bill?\p"
-    .string "Everyone calls him a Pokémaniac!\p"
+    .string "Everyone calls him a Poké Maniac!\p"
     .string "I think people are just jealous of\n"
     .string "Bill, though.\p"
     .string "Who wouldn't want to boast about\n"

@@ -17,15 +17,15 @@
 #define TTPRIZE_CARBOS              3
 #define TTPRIZE_CALCIUM             4
 #define TTPRIZE_ZINC                5
-#define TTPRIZE_BRIGHT_POWDER       6
-#define TTPRIZE_WHITE_HERB          7
-#define TTPRIZE_MENTAL_HERB         8
+#define TTPRIZE_FOCUS_SASH          6
+#define TTPRIZE_WEAKNESS_POLICY     7
+#define TTPRIZE_LIFE_ORB            8
 #define TTPRIZE_CHOICE_BAND         9
-#define TTPRIZE_KINGS_ROCK         10
+#define TTPRIZE_EVIOLITE           10
 #define TTPRIZE_SCOPE_LENS         11
-#define TTPRIZE_METAL_COAT         12
-#define TTPRIZE_DRAGON_SCALE       13
-#define TTPRIZE_UP_GRADE           14
+#define TTPRIZE_ASSAULT_VEST       12
+#define TTPRIZE_CHOICE_SCARF       13
+#define TTPRIZE_CHOICE_SPECS       14
 
 #define MAX_TRAINER_TOWER_FLOORS 8
 
