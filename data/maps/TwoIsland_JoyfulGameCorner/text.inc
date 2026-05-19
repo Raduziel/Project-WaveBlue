@@ -60,8 +60,10 @@ TwoIsland_JoyfulGameCorner_Text_NotRunningAnyGamesToday::
     .string "We're not running any games today.$"
 
 TwoIsland_JoyfulGameCorner_Text_GetGamesGoingSoon::
-    .string "We'll get the games going soon\n"
-    .string "for you!$"
+	.string "The boss decided to close up\n"
+	.string "the place for good.\p"
+	.string "Can't say I blame him, really.\n"
+	.string "Family comes first.$"
 
 TwoIsland_JoyfulGameCorner_Text_YouRescuedLostelle::
     .string "So you rescued Lostelle?\n"
@@ -93,18 +95,20 @@ TwoIsland_JoyfulGameCorner_Text_OhThisIsFromBill::
     .string "I want you to have this.$"
 
 TwoIsland_JoyfulGameCorner_Text_ReceivedMoonStoneFromLostellesDaddy::
-    .string "{PLAYER} received a Moon Stone\n"
-    .string "from Lostelle's daddy.$"
+    .string "{PLAYER} received a Gold Bottle\n"
+    .string "Cap from Lostelle's daddy.$"
 
 TwoIsland_JoyfulGameCorner_Text_NotGoingToFitInBag::
     .string "Your Bag's not going to fit another\n"
     .string "thing…$"
 
 TwoIsland_JoyfulGameCorner_Text_IllGetGameCornerRunning::
-    .string "All right, I'll get the Game Corner\n"
-    .string "running right away.\p"
-    .string "You have to come visit with a\n"
-    .string "friend.$"
+    .string "You know, I've decided to close\n"
+    .string "this place down for good.\p"
+    .string "Lostelle needs me around more\n"
+    .string "and she's growing too fast.\p"
+    .string "If you want to play something,\n"
+    .string "Celadon has a nice Game Corner.$"
 
 TwoIsland_JoyfulGameCorner_Text_PleaseShowMeYouBeingCool::
     .string "Listen, listen!\p"
