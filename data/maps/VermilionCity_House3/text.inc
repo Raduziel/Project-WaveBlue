@@ -13,8 +13,8 @@ VermilionCity_House3_Text_DearPippiLetter::
     .string "Vermilion appears to be safe.$"
 
 VermilionCity_House3_Text_SendMyPidgeyToUnionRoom::
-    .string "I want to exchange Mail with all\n"
-    .string "sorts of people.\p"
-    .string "I send my Pidgey to a Union Room\n"
-    .string "to exchange Mail for me.$"
-
+	.string "My Pidgey usually flies me around,\n"
+	.string "but we got caught in a bad storm.\p"
+	.string "We stopped at a Pokémon Center\n"
+	.string "and the Nurse said he needs rest.\p"
+	.string "Guess I'm stuck here for a while.$"

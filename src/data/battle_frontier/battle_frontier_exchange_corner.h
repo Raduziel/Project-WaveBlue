@@ -37,14 +37,17 @@ static const u16 sFrontierExchangeCorner_Vitamins[] =
 static const u16 sFrontierExchangeCorner_HoldItems[] =
 {
     ITEM_LEFTOVERS,
-    ITEM_WHITE_HERB,
-    ITEM_QUICK_CLAW,
-    ITEM_MENTAL_HERB,
+    ITEM_EVIOLITE,
     ITEM_BRIGHT_POWDER,
+    ITEM_ASSAULT_VEST,
     ITEM_CHOICE_BAND,
+    ITEM_CHOICE_SCARF,
+    ITEM_CHOICE_SPECS,
+    ITEM_LIFE_ORB,
     ITEM_KINGS_ROCK,
-    ITEM_FOCUS_BAND,
+    ITEM_FOCUS_SASH,
     ITEM_SCOPE_LENS,
+    ITEM_WEAKNESS_POLICY,
     ITEM_LIST_END
 };
 
@@ -87,13 +90,15 @@ static const u8 *const sFrontierExchangeCorner_VitaminsDescriptions[] =
 static const u8 *const sFrontierExchangeCorner_HoldItemsDescriptions[] =
 {
     BattleFrontier_ExchangeServiceCorner_Text_LeftoversDesc,
-    BattleFrontier_ExchangeServiceCorner_Text_WhiteHerbDesc,
-    BattleFrontier_ExchangeServiceCorner_Text_QuickClawDesc,
-    BattleFrontier_ExchangeServiceCorner_Text_MentalHerbDesc,
+    BattleFrontier_ExchangeServiceCorner_Text_AssaultVestDesc,
+    BattleFrontier_ExchangeServiceCorner_Text_EvioliteDesc,
     BattleFrontier_ExchangeServiceCorner_Text_BrightpowderDesc,
     BattleFrontier_ExchangeServiceCorner_Text_ChoiceBandDesc,
+    BattleFrontier_ExchangeServiceCorner_Text_ChoiceScarfDesc,
+    BattleFrontier_ExchangeServiceCorner_Text_ChoiceSpecsDesc,
     BattleFrontier_ExchangeServiceCorner_Text_KingsRockDesc,
-    BattleFrontier_ExchangeServiceCorner_Text_FocusBandDesc,
+    BattleFrontier_ExchangeServiceCorner_Text_FocusSashDesc,
+    BattleFrontier_ExchangeServiceCorner_Text_LifeOrbDesc,
     BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDesc,
     gText_Exit
 };

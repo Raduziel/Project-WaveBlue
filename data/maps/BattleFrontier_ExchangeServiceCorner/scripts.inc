@@ -492,34 +492,46 @@ BattleFrontier_ExchangeServiceCorner_Text_LeftoversDesc::
 	.string "A hold item that gradually restores\n"
 	.string "HP in battle.$"
 
-BattleFrontier_ExchangeServiceCorner_Text_WhiteHerbDesc::
-	.string "A hold item that restores any\n"
-	.string "lowered stat.$"
-
-BattleFrontier_ExchangeServiceCorner_Text_QuickClawDesc::
-	.string "A hold item that occasionally allows\n"
-	.string "the first strike.$"
-
-BattleFrontier_ExchangeServiceCorner_Text_MentalHerbDesc::
-	.string "A hold item that snaps Pokémon out\n"
-	.string "of infatuation.$"
-
 BattleFrontier_ExchangeServiceCorner_Text_BrightpowderDesc::
 	.string "A hold item that casts a glare to\n"
 	.string "reduce accuracy.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_ChoiceBandDesc::
-	.string "Raises a move's power, but permits\n"
-	.string "only that move.$"
+	.string "Raises a physical move's power, but\n"
+	.string "permits only that move.$"
+
+BattleFrontier_ExchangeServiceCorner_Text_ChoiceSpecsDesc::
+	.string "Raises a special move's power, but\n"
+	.string "permits only that move.$"
 
 BattleFrontier_ExchangeServiceCorner_Text_KingsRockDesc::
 	.string "A hold item that may cause flinching\n"
 	.string "when the foe is hit.$"
 
-BattleFrontier_ExchangeServiceCorner_Text_FocusBandDesc::
-	.string "A hold item that occasionally\n"
-	.string "prevents fainting.$"
-
 BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDesc::
 	.string "A hold item that raises the\n"
 	.string "critical-hit rate.$"
+
+BattleFrontier_ExchangeServiceCorner_Text_AssaultVestDesc::
+	.string "Raises Sp. Def but prevents the\n"
+	.string "use of status moves.$"
+
+BattleFrontier_ExchangeServiceCorner_Text_EvioliteDesc::
+	.string "Raises Def and Sp. Def of Pokémon\n"
+	.string "that are not fully evolved.$"
+
+BattleFrontier_ExchangeServiceCorner_Text_ChoiceScarfDesc::
+	.string "Boosts Speed, but permits\n"
+	.string "only one move.$"
+
+BattleFrontier_ExchangeServiceCorner_Text_FocusSashDesc::
+	.string "At full HP, the holder survives\n"
+	.string "a KO hit with 1 HP.$"
+
+BattleFrontier_ExchangeServiceCorner_Text_LifeOrbDesc::
+	.string "Boosts move power but the holder\n"
+	.string "loses HP with each attack.$"
+
+BattleFrontier_ExchangeServiceCorner_Text_WeaknessPolicyDesc::
+	.string "If hit by a super-effective move,\n"
+	.string "raises Atk and Sp. Atk.$"

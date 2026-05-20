@@ -1736,14 +1736,17 @@ extern const u8 BattleFrontier_ExchangeServiceCorner_Text_ZincDesc[];
 extern const u8 BattleFrontier_ExchangeServiceCorner_Text_CarbosDesc[];
 extern const u8 BattleFrontier_ExchangeServiceCorner_Text_HPUpDesc[];
 extern const u8 BattleFrontier_ExchangeServiceCorner_Text_LeftoversDesc[];
-extern const u8 BattleFrontier_ExchangeServiceCorner_Text_WhiteHerbDesc[];
-extern const u8 BattleFrontier_ExchangeServiceCorner_Text_QuickClawDesc[];
-extern const u8 BattleFrontier_ExchangeServiceCorner_Text_MentalHerbDesc[];
+extern const u8 BattleFrontier_ExchangeServiceCorner_Text_AssaultVestDesc[];
+extern const u8 BattleFrontier_ExchangeServiceCorner_Text_EvioliteDesc[];
 extern const u8 BattleFrontier_ExchangeServiceCorner_Text_BrightpowderDesc[];
 extern const u8 BattleFrontier_ExchangeServiceCorner_Text_ChoiceBandDesc[];
+extern const u8 BattleFrontier_ExchangeServiceCorner_Text_ChoiceScarfDesc[];
+extern const u8 BattleFrontier_ExchangeServiceCorner_Text_ChoiceSpecsDesc[];
 extern const u8 BattleFrontier_ExchangeServiceCorner_Text_KingsRockDesc[];
-extern const u8 BattleFrontier_ExchangeServiceCorner_Text_FocusBandDesc[];
+extern const u8 BattleFrontier_ExchangeServiceCorner_Text_FocusSashDesc[];
+extern const u8 BattleFrontier_ExchangeServiceCorner_Text_LifeOrbDesc[];
 extern const u8 BattleFrontier_ExchangeServiceCorner_Text_ScopeLensDesc[];
+extern const u8 BattleFrontier_ExchangeServiceCorner_Text_WeaknessPolicyDesc[];
 
 // Battle Frontier Move Tutors
 extern const u8 BattleFrontier_Lounge7_Text_SoftboiledDesc[];

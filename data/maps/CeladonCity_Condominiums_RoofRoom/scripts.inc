@@ -60,45 +60,6 @@ CeladonCity_Condominiums_RoofRoom_EventScript_TMsPamphlet::
 CeladonCity_Condominiums_RoofRoom_EventScript_Blackboard::
 	lockall
 	msgbox CeladonCity_Condominiums_RoofRoom_Text_WirelessAdapterLecture
-	message CeladonCity_Condominiums_RoofRoom_Text_ReadWhichHeading
-	waitmessage
-	setvar VAR_0x8004, 4
-	multichoice 0, 0, MULTI_LINKED_DIRECT_UNION, FALSE
-	switch VAR_RESULT
-	case 0, CeladonCity_Condominiums_RoofRoom_EventScript_WirelessClub
-	case 1, CeladonCity_Condominiums_RoofRoom_EventScript_DirectCorner
-	case 2, CeladonCity_Condominiums_RoofRoom_EventScript_UnionRoom
-	case 3, CeladonCity_Condominiums_RoofRoom_EventScript_ExitBlackboard
-	case 127, CeladonCity_Condominiums_RoofRoom_EventScript_ExitBlackboard
-	end
-
-CeladonCity_Condominiums_RoofRoom_EventScript_ReadAnotherHeading::
-	message CeladonCity_Condominiums_RoofRoom_Text_ReadWhichHeading
-	waitmessage
-	multichoice 0, 0, MULTI_LINKED_DIRECT_UNION, FALSE
-	switch VAR_RESULT
-	case 0, CeladonCity_Condominiums_RoofRoom_EventScript_WirelessClub
-	case 1, CeladonCity_Condominiums_RoofRoom_EventScript_DirectCorner
-	case 2, CeladonCity_Condominiums_RoofRoom_EventScript_UnionRoom
-	case 3, CeladonCity_Condominiums_RoofRoom_EventScript_ExitBlackboard
-	case 127, CeladonCity_Condominiums_RoofRoom_EventScript_ExitBlackboard
-	end
-
-CeladonCity_Condominiums_RoofRoom_EventScript_WirelessClub::
-	msgbox CeladonCity_Condominiums_RoofRoom_Text_ExplainWirelessClub
-	goto CeladonCity_Condominiums_RoofRoom_EventScript_ReadAnotherHeading
-	end
-
-CeladonCity_Condominiums_RoofRoom_EventScript_DirectCorner::
-	msgbox CeladonCity_Condominiums_RoofRoom_Text_ExplainDirectCorner
-	goto CeladonCity_Condominiums_RoofRoom_EventScript_ReadAnotherHeading
-	end
-
-CeladonCity_Condominiums_RoofRoom_EventScript_UnionRoom::
-	msgbox CeladonCity_Condominiums_RoofRoom_Text_ExplainUnionRoom
-	goto CeladonCity_Condominiums_RoofRoom_EventScript_ReadAnotherHeading
-	end
-
-CeladonCity_Condominiums_RoofRoom_EventScript_ExitBlackboard::
 	releaseall
 	end
+	

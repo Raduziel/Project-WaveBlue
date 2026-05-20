@@ -9,15 +9,11 @@ CinnabarIsland_PokemonCenter_1F_Text_CinnabarGymLocked::
     .string "live there, they say.$"
 
 CinnabarIsland_PokemonCenter_1F_Text_VisitUnionRoom::
-    .string "Do you have lots of friends?\p"
-    .string "Linking up with the usual friends\n"
-    .string "is fun, of course.\p"
-    .string "But how about visiting the\n"
-    .string "Union Room every so often?\p"
-    .string "Who knows, you may end up making\n"
-    .string "new friends.\p"
-    .string "I think it would be worth your time\n"
-    .string "to check the Union Room.$"
+	.string "Do you have lots of friends?\p"
+	.string "Make sure to visit them every\n"
+	.string "now and then.\p"
+	.string "It's important to keep those\n"
+	.string "bonds alive, you know.$"
 
 CinnabarIsland_PokemonCenter_1F_Text_EvolutionCanWaitForNewMoves::
     .string "Pokémon can still learn techniques\n"

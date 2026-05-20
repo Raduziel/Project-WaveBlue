@@ -10,22 +10,22 @@ CeladonCity_DepartmentStore_3F_Text_BuddyTradingKangaskhanForHaunter::
     .string "Kangaskhan for my Haunter!$"
 
 CeladonCity_DepartmentStore_3F_Text_HaunterEvolvedOnTrade::
-    .string "Come on, Haunter!\p"
-    .string "I love Haunter!\n"
-    .string "I collect them!\p"
-    .string "Huh?\p"
-    .string "Haunter turned into a different\n"
-    .string "Pokémon while being traded!$"
+	.string "I love Haunter!\n"
+	.string "I collect them!\p"
+	.string "I just have to keep them away\n"
+	.string "from a Dusk Stone, or they'll\p"
+	.string "turn into a Gengar.\p"
+	.string "Who would want that, right?$"
 
 CeladonCity_DepartmentStore_3F_Text_CanIdentifyTradeMonsByID::
     .string "You can identify Pokémon you get\n"
     .string "in trades by their ID Numbers.$"
 
 CeladonCity_DepartmentStore_3F_Text_ItsSuperNES::
-    .string "It's a Super Nes.$"
+    .string "It's a Super NES.$"
 
 CeladonCity_DepartmentStore_3F_Text_AnRPG::
-    .string "An Rpg!\n"
+    .string "An RPG!\n"
     .string "There's no time for that!$"
 
 CeladonCity_DepartmentStore_3F_Text_SportsGame::

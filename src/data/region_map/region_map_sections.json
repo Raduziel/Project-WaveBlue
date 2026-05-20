@@ -176,7 +176,7 @@
     },
     {
       "id": "MAPSEC_BATTLE_FRONTIER",
-      "name": "BATTLE FRONTIER",
+      "name": "Battle Frontier",
       "x": 9,
       "y": 10,
       "width": 1,
@@ -1147,7 +1147,7 @@
     },
     {
       "id": "MAPSEC_ARTISAN_CAVE",
-      "name": "ARTISAN CAVE",
+      "name": "Artisan Cave",
       "x": 9,
       "y": 10,
       "width": 1,

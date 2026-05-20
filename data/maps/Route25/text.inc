@@ -118,7 +118,7 @@ Route25_Text_AreYouHereAlone::
     .string "Well, it should be as a couple.$"
 
 Route25_Text_WaitAMoment::
-    .string "Hey! Wait A Moment!$"
+    .string "Hey! Wait a moment!$"
 
 Route25_Text_BillIntro::
     .string "Bill: Glad I caught you!\n"

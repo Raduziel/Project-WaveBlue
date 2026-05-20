@@ -66,13 +66,6 @@
       "elevation": 3,
       "dest_map": "MAP_TWO_ISLAND",
       "dest_warp_id": "2"
-    },
-    {
-      "x": 1,
-      "y": 6,
-      "elevation": 4,
-      "dest_map": "MAP_TWO_ISLAND_POKEMON_CENTER_2F",
-      "dest_warp_id": "0"
     }
   ],
   "coord_events": [],

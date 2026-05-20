@@ -17,8 +17,8 @@
   "object_events": [
     {
       "type": "object",
-      "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
-      "x": 3,
+      "graphics_id": "OBJ_EVENT_GFX_POKE_MANIAC",
+      "x": 2,
       "y": 5,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",

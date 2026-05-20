@@ -322,8 +322,8 @@ BattleFrontier_OutsideEast_Text_OnceBeatGymLeader:
 	.string "another shot at glory.$"
 
 BattleFrontier_OutsideEast_Text_FastOnBikeAndBattles:
-	.string "I'm fast on my Bike, and that goes for\n"
-	.string "the way I battle, too.\p"
+	.string "I'm fast on my Bike, and that goes\n"
+	.string "for the way I battle, too.\p"
 	.string "I win matches in the blink of\n"
 	.string "an eye!$"
 
@@ -394,16 +394,17 @@ BattleFrontier_OutsideEast_Text_LikeToHaveNameRecordedHere:
 	.string "recorded here for posterity.$"
 
 BattleFrontier_OutsideEast_Text_CanDoAnythingWithYou:
-	.string "With you by my side, I can do anything.$"
+	.string "With you by my side, I can do\n"
+	.string "anything.$"
 
 BattleFrontier_OutsideEast_Text_PowerOfOurLoveWillOvercome:
 	.string "Ooh, darling, you are so wonderful!\p"
 	.string "Ooh, I just can't wait anymore!\p"
 	.string "Let's go to a Multi Battle Room\n"
 	.string "right this instant!\p"
-	.string "If we get together in the Battle Salon,\n"
-	.string "the power of our love will overcome\l"
-	.string "everyone we meet.\p"
+	.string "If we get together in the Battle\n"
+	.string "Salon, the power of our love will\l"
+	.string "overcome everyone we meet.\p"
 	.string "Why, before us, darling, everything\n"
 	.string "will topple like dominoes!$"
 

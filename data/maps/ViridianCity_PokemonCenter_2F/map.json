@@ -74,13 +74,6 @@
   ],
   "warp_events": [
     {
-      "x": 1,
-      "y": 6,
-      "elevation": 4,
-      "dest_map": "MAP_VIRIDIAN_CITY_POKEMON_CENTER_1F",
-      "dest_warp_id": "3"
-    },
-    {
       "x": 5,
       "y": 1,
       "elevation": 0,
