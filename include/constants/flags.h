@@ -233,7 +233,7 @@
 #define FLAG_HIDE_VICTORY_ROAD_1F_EXPERT_BELT            0x0D7
 #define FLAG_HIDE_ROUTE14_POISON_BARB                    0x0D8
 #define FLAG_HIDE_THREE_ISLAND_BERRY_FOREST_LAGGING_TAIL 0x0D9
-#define FLAG_0x0DA                                       0x0DA //Unused!
+#define FLAG_HIDE_ROUTE24_ROCKET_DISGUISE                0x0DA
 #define FLAG_GOT_MT_MOON_OTHER_FOSSIL                    0x0DB
 #define FLAG_HIDE_POSTGAME_STARTER_1                     0x0DC
 #define FLAG_HIDE_POSTGAME_STARTER_2                     0x0DD

@@ -27,7 +27,7 @@
   ],
   "object_events": [
     {
-      "local_id": "LOCALID_ROUTE24_ROCKET",
+      "local_id": "LOCALID_ROUTE24_ROCKET_DISGUISED",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_MAN",
       "x": 12,
@@ -38,8 +38,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "Route24_EventScript_Rocket",
-      "flag": "FLAG_HIDE_NUGGET_BRIDGE_ROCKET"
+      "script": "Route24_EventScript_RocketDirectApproach",
+      "flag": "FLAG_HIDE_ROUTE24_ROCKET_DISGUISE"
     },
     {
       "type": "object",
@@ -138,6 +138,21 @@
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route24_EventScript_ItemTM45",
       "flag": "FLAG_HIDE_ROUTE24_TM45"
+    },
+    {
+      "local_id": "LOCALID_ROUTE24_ROCKET_REVEALED",
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
+      "x": 12,
+      "y": 15,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "Route24_EventScript_Rocket",
+      "flag": "FLAG_HIDE_NUGGET_BRIDGE_ROCKET"
     }
   ],
   "warp_events": [],
