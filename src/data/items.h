@@ -16054,12 +16054,13 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_BLACK_AUGURITE] =
     {
         .name = ITEM_NAME("Blk Augurite"),
-        .price = 8000,
+        .price = 0,
+        .importance = 1,
         .description = COMPOUND_STRING(
             "A black stone that "
             "makes some\nPokémon "
             "evolve."),
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_KEY_ITEMS,
         .sortType = ITEM_TYPE_EVOLUTION_ITEM,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_EvolutionStone,

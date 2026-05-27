@@ -336,7 +336,7 @@
 #define FLAG_TM_MERCHANT_INTRODUCED                      0x13E
 #define FLAG_TOGGLE_LEVEL_CAP                            0x13F
 #define FLAG_HIDE_VERMILION_CITY_ELECTIRIZER             0x140
-#define FLAG_0x141                                       0x141
+#define FLAG_GOT_CLEAR_AMULET                            0x141
 #define FLAG_0x142                                       0x142
 #define FLAG_0x143                                       0x143
 #define FLAG_0x144                                       0x144

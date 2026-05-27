@@ -20,8 +20,7 @@ gText_PlayerPutItemInBag::
 	.string "in the Bag.$"
 
 Text_FoundXCoins::
-	.string "{PLAYER} found\n"
-	.string "{STR_VAR_1} {STR_VAR_2}!$"
+	.string "{PLAYER} found {STR_VAR_1} {STR_VAR_2}!$"
 
 Text_PutCoinsAwayInCoinCase::
 	.string "{PLAYER} put the Coins away in\n"

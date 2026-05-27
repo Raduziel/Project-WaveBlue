@@ -172,7 +172,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Nidoran M
+Nidorino
 Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -236,7 +236,7 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Nidoran M
+Nidorina
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -638,11 +638,11 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Nidoran M
+Nidorino
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Nidoran F
+Nidorina
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -714,11 +714,11 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Pidgey
+Pidgeotto
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Nidoran F
+Nidorina
 Level: 18
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -748,7 +748,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Nidoran F
+Nidorino
 Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -786,7 +786,7 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Pidgey
+Pidgeotto
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -794,7 +794,7 @@ Rattata
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Nidoran M
+Nidorino
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -1169,11 +1169,11 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Pidgey
+Farfetchd
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Pidgey
+Doduo
 Level: 16
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -1262,7 +1262,7 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Pidgey
+Fearow
 Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -1283,7 +1283,7 @@ Jigglypuff
 Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Pidgey
+Pidgeotto
 Level: 21
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -1334,7 +1334,7 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Pidgey
+Pidgeotto
 Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -1342,7 +1342,7 @@ Meowth
 Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Rattata
+Raticate
 Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -2936,7 +2936,7 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool
+Tentacruel
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -3189,7 +3189,7 @@ Poliwhirl
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Tentacool
+Tentacruel
 Level: 32
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -3351,15 +3351,15 @@ Double Battle: No
 AI: Check Bad Move
 
 Tentacool
-Level: 31
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Tentacool
-Level: 31
+Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Tentacruel
-Level: 31
+Level: 33
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_GAMER_HUGO ===
@@ -4169,7 +4169,7 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Pidgey
+Fearow
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -4190,19 +4190,19 @@ Spearow
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Pidgey
+Pidgeotto
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Pidgey
+Fearow
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Spearow
+Farfetchd
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Spearow
+Doduo
 Level: 25
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -4215,15 +4215,7 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Pidgey
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
 Pidgeotto
-Level: 26
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Spearow
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -4282,7 +4274,7 @@ Doduo
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Pidgey
+Fearow
 Level: 26
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -5287,7 +5279,7 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Tauros @ White Herb  
 Ability: Intimidate  
-Level: 26
+Level: 32
 EVs: 4 HP / 252 Atk / 252 Spe  
 Adamant Nature  
 IVs: 0 SpA  
@@ -5298,7 +5290,7 @@ IVs: 0 SpA
 
 Beedrill @ Scope Lens  
 Ability: Sniper  
-Level: 26  
+Level: 32  
 EVs: 96 HP / 252 Atk / 160 Spe  
 Adamant Nature  
 - Focus Energy  
@@ -5308,7 +5300,7 @@ Adamant Nature
 
 Persian @ Black Glasses  
 Ability: Technician  
-Level: 27  
+Level: 33  
 EVs: 132 HP / 252 Atk / 124 Spe  
 Jolly Nature  
 - Power Gem
@@ -5318,7 +5310,7 @@ Jolly Nature
 
 Cloyster @ Leftovers  
 Ability: Skill Link  
-Level: 27  
+Level: 33  
 EVs: 152 HP / 156 Atk / 200 Def  
 Impish Nature  
 - Toxic Spikes  
@@ -5328,7 +5320,7 @@ Impish Nature
 
 Kangaskhan @ Toxic Orb
 Ability: Scrappy
-Level: 30
+Level: 36
 EVs: 120 HP / 252 Atk / 8 Def / 8 SpD / 120 Spe
 Adamant Nature
 - Sucker Punch
@@ -5338,7 +5330,7 @@ Adamant Nature
 
 Nidoqueen @ Life Orb
 Ability: Sheer Force
-Level: 30
+Level: 36
 EVs: 160 HP / 252 SpA / 16 SpD / 80 Spe
 Calm Nature  
 IVs: 0 Atk  
@@ -5792,7 +5784,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Sandshrew
+Cubone
 Level: 23
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -7825,11 +7817,11 @@ Music: Rich
 Double Battle: No
 AI: Check Bad Move
 
-Nidoran M
+Nidorino
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Nidoran F
+Nidorina
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9184,7 +9176,7 @@ Goldeen
 Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Poliwag
+Poliwhirl
 Level: 28
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9201,7 +9193,7 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Pidgey
+Pidgeotto
 Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9217,10 +9209,6 @@ Pikachu
 Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Meowth
-Level: 24
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
 === TRAINER_PICNICKER_VALERIE ===
 Name: Valerie
 Class: Picnicker
@@ -9230,11 +9218,11 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Poliwag
+Poliwhirl
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Poliwag
+Poliwrath
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9247,15 +9235,11 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Pidgey
+Fearow
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Meowth
-Level: 27
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Pidgey
 Level: 27
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9339,7 +9323,7 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Tentacool
+Tentacruel
 Level: 30
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9368,7 +9352,7 @@ Oddish
 Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Pidgey
+Pidgeotto
 Level: 20
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9381,7 +9365,7 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Pidgey
+Pidgeotto
 Level: 19
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9423,11 +9407,11 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move
 
-Nidoran M
+Nidorino
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Nidorino
+Nidorina
 Level: 29
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9584,11 +9568,11 @@ Music: Girl
 Double Battle: Yes
 AI: Check Bad Move
 
-Nidoran M
+Nidorino
 Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Nidoran F
+Nidorina
 Level: 24
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -9815,11 +9799,11 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move
 
-Pidgey
+Pidgeotto
 Level: 20
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Nidoran F
+Nidorina
 Level: 20
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -9916,7 +9900,7 @@ Arbok
 Level: 28
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
-Sandshrew
+Sandslash
 Level: 28
 IVs: 7 HP / 7 Atk / 7 Def / 7 SpA / 7 SpD / 7 Spe
 
@@ -10129,16 +10113,16 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Poliwag
+Poliwhirl
 Level: 34
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Poliwhirl
+Poliwrath
 Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Poliwag
-Level: 34
+Politoed
+Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 === TRAINER_PKMN_BREEDER_ALIZE ===
@@ -10507,7 +10491,7 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Rattata
+Golbat
 Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10515,7 +10499,7 @@ Raticate
 Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Sandshrew
+Marowak
 Level: 35
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -10532,11 +10516,11 @@ Music: Aqua
 Double Battle: No
 AI: Check Bad Move
 
-Zubat
+Sandslash
 Level: 38
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Zubat
+Arbok
 Level: 38
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11114,15 +11098,15 @@ Music: Swimmer
 Double Battle: No
 AI: Check Bad Move
 
-Poliwhirl
-Level: 48
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-
-Tentacool
+Poliwrath
 Level: 48
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
 Tentacruel
+Level: 48
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+Seadra
 Level: 48
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -11202,11 +11186,11 @@ Music: Cool
 Double Battle: No
 AI: Check Bad Move
 
-Pidgey
+Dodrio
 Level: 47
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
-Pidgeotto
+Pidgeot
 Level: 49
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
 
@@ -12257,11 +12241,11 @@ Music: Girl
 Double Battle: No
 AI: Check Bad Move
 
-Nidoran M
+Nidorino
 Level: 21
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Nidoran F
+Nidorina
 Level: 21
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
@@ -12402,12 +12386,8 @@ Pidgeotto
 Level: 21
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
-Pidgeotto
+Doduo
 Level: 21
-IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
-
-Pidgey
-Level: 18
 IVs: 2 HP / 2 Atk / 2 Def / 2 SpA / 2 SpD / 2 Spe
 
 === TRAINER_PICNICKER_ISABELLE_3 ===
@@ -12724,7 +12704,7 @@ Raticate
 Level: 22
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 
-Nidoran M
+Nidorino
 Level: 23
 IVs: 4 HP / 4 Atk / 4 Def / 4 SpA / 4 SpD / 4 Spe
 

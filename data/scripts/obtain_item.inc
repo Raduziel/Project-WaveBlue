@@ -200,6 +200,7 @@ EventScript_FoundSingleItem::
 
 EventScript_FoundCoins::
 	buffernumberstring STR_VAR_1, VAR_0x8006
+	bufferstdstring STR_VAR_2, STDSTRING_COINS
 	message Text_FoundXCoins
 	return
 

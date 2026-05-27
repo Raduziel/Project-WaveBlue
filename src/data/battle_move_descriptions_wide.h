@@ -59,9 +59,8 @@ static const u8 sMoveDescription_SwordsDance[] = _(
     "raises Attack."
     );
 static const u8 sMoveDescription_Cut[] = _(
-    "Cuts with sharp scythes,\n" 
-    "claws, etc. Has a high\n" 
-    "critical- hit ratio."
+    "Cuts with sharp scythes, claws,\n"
+    "etc. High critical-hit ratio."
     );
 static const u8 sMoveDescription_Gust[] = _(
     "Strikes the foe with a gust of\n" 
@@ -199,10 +198,8 @@ static const u8 sMoveDescription_SonicBoom[] = _(
     "always inflict 20 HP damage."
     );
 static const u8 sMoveDescription_Disable[] = _(
-    "For 4 turns, prevents foe For\n" 
-    "4-7 turns, prevents foe For\n" 
-    "2-5 turns, prevents foe from\n" 
-    "using last used move."
+    "Prevents use of the foe's\n"
+    "last move for 4 turns."
     );
 static const u8 sMoveDescription_Acid[] = _(
     "Sprays a hide-melting acid.\n" 
@@ -281,9 +278,8 @@ static const u8 sMoveDescription_SeismicToss[] = _(
     "the user's level."
     );
 static const u8 sMoveDescription_Strength[] = _(
-    "Builds enormous power, then\n" 
-    "slams the foe. May raise the\n" 
-    "user's Attack."
+    "A powerful slam that may\n"
+    "raise the user's Attack."
     );
 static const u8 sMoveDescription_Absorb[] = _(
     "An attack that absorbs half\n" 
@@ -402,9 +398,8 @@ static const u8 sMoveDescription_Rage[] = _(
     "time it is hit."
     );
 static const u8 sMoveDescription_Teleport[] = _(
-    "Switches the user out last.\n" 
-    "Flees when used by wild\n" 
-    "{PKMN}."
+    "Switches the user out. Flees\n"
+    "if used by a wild Pokémon."
     );
 static const u8 sMoveDescription_NightShade[] = _(
     "Inflicts damage identical to\n" 
@@ -559,8 +554,7 @@ static const u8 sMoveDescription_DreamEater[] = _(
     "inflicted on a sleeping foe."
     );
 static const u8 sMoveDescription_PoisonGas[] = _(
-    "Envelops the foes in a toxic\n" 
-    "Envelops the foe in a toxic\n" 
+    "Envelops the foes in a toxic\n"
     "gas that may poison."
     );
 static const u8 sMoveDescription_Barrage[] = _(
@@ -596,9 +590,8 @@ static const u8 sMoveDescription_Spore[] = _(
     "that always induce sleep."
     );
 static const u8 sMoveDescription_Flash[] = _(
-    "Emits a bright flash that\n" 
-    "lowers accuracy. May cause\n" 
-    "flinching."
+    "Emits a bright flash that\n"
+    "lowers accuracy. May flinch."
     );
 static const u8 sMoveDescription_Psywave[] = _(
     "Attacks with a psychic wave of\n" 
@@ -717,8 +710,7 @@ static const u8 sMoveDescription_Aeroblast[] = _(
     "High critical-hit ratio."
     );
 static const u8 sMoveDescription_CottonSpore[] = _(
-    "Spores cling to the foes,\n" 
-    "Spores cling to the foe,\n" 
+    "Spores cling to the foes,\n"
     "sharply reducing Speed."
     );
 static const u8 sMoveDescription_Reversal[] = _(
@@ -1017,9 +1009,8 @@ static const u8 sMoveDescription_FakeOut[] = _(
     "works on user's 1st turn."
     );
 static const u8 sMoveDescription_Uproar[] = _(
-    "Causes an uproar for 3 Causes\n" 
-    "an uproar for 2 to 5 turns and\n" 
-    "prevents sleep."
+    "Causes an uproar for 3 turns\n"
+    "and prevents sleep."
     );
 static const u8 sMoveDescription_Stockpile[] = _(
     "Charges up power for up to 3\n" 
@@ -1182,8 +1173,7 @@ static const u8 sMoveDescription_Camouflage[] = _(
     "depending on the location."
     );
 static const u8 sMoveDescription_TailGlow[] = _(
-    "Flash light that drastically\n" 
-    "Flashes a light that sharply\n" 
+    "Emits a glow that drastically\n"
     "raises Sp. Atk."
     );
 static const u8 sMoveDescription_LusterPurge[] = _(
