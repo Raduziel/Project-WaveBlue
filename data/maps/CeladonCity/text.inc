@@ -36,12 +36,10 @@ CeladonCity_Text_KeepOutOfTeamRocketsWay::
 
 CeladonCity_Text_ExplainXAccuracyDireHit::
     .string "Trainer Tips\p"
-    .string "X Accuracy boosts the accuracy of\n"
-    .string "techniques.\p"
-    .string "Dire Hit jacks up the likelihood\n"
-    .string "of critical hits.\p"
-    .string "Get your items at the Celadon\n"
-    .string "Dept. Store!$"
+    .string "Some berries can boost\n"
+    .string "your Pokémon's stats.\p"
+    .string "Get your berries at the\n"
+    .string "Celadon Dept. Store!$"
 
 CeladonCity_Text_CitySign::
     .string "Celadon City\n"
@@ -61,10 +59,9 @@ CeladonCity_Text_DeptStoreSign::
 
 CeladonCity_Text_GuardSpecProtectsFromStatus::
     .string "Trainer Tips\p"
-    .string "Guard Spec. protects Pokémon\n"
-    .string "from status-reduction moves during\l"
-    .string "battle.\p"
-    .string "Get your items at the\n"
+    .string "Some berries can heal\n"
+    .string "your Pokémon during battle.\p"
+    .string "Get your berries at the\n"
     .string "Celadon Dept. Store!$"
 
 CeladonCity_Text_PrizeExchangeSign::

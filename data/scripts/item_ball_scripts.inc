@@ -80,7 +80,7 @@ SSAnne_2F_Room2_EventScript_ItemStardust::
 	end
 
 SSAnne_2F_Room4_EventScript_ItemXAttack::
-	finditem ITEM_X_ATTACK
+	finditem ITEM_PROTEIN
 	end
 
 SSAnne_B1F_Room2_EventScript_ItemTM44::
@@ -296,7 +296,7 @@ SilphCo_6F_EventScript_ItemHPUp::
 	end
 
 SilphCo_6F_EventScript_ItemXSpecial::
-	finditem ITEM_X_SPECIAL
+	finditem ITEM_ZINC
 	end
 
 SilphCo_7F_EventScript_ItemCalcium::
@@ -504,7 +504,7 @@ MtMoon_B2F_EventScript_ItemAntidote::
 	end
 
 Route11_EventScript_ItemXDefend::
-	finditem ITEM_X_DEFEND
+	finditem ITEM_IRON
 	end
 
 Route9_EventScript_ItemBurnHeal::
@@ -724,7 +724,7 @@ MtEmber_Exterior_EventScript_ItemMagmarizer::
 	end
 
 MtEmber_Exterior_EventScript_ItemDireHit::
-	finditem ITEM_DIRE_HIT
+	finditem ITEM_LANSAT_BERRY
 	end
 
 FourIsland_IcefallCave_1F_EventScript_ItemUltraBall::
