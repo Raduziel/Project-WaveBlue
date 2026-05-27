@@ -5279,7 +5279,7 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Tauros @ White Herb  
 Ability: Intimidate  
-Level: 32
+Level: 30
 EVs: 4 HP / 252 Atk / 252 Spe  
 Adamant Nature  
 IVs: 0 SpA  
@@ -5300,7 +5300,7 @@ Adamant Nature
 
 Persian @ Black Glasses  
 Ability: Technician  
-Level: 33  
+Level: 32 
 EVs: 132 HP / 252 Atk / 124 Spe  
 Jolly Nature  
 - Power Gem
@@ -5310,7 +5310,7 @@ Jolly Nature
 
 Cloyster @ Leftovers  
 Ability: Skill Link  
-Level: 33  
+Level: 32
 EVs: 152 HP / 156 Atk / 200 Def  
 Impish Nature  
 - Toxic Spikes  
@@ -5320,7 +5320,7 @@ Impish Nature
 
 Kangaskhan @ Toxic Orb
 Ability: Scrappy
-Level: 36
+Level: 33
 EVs: 120 HP / 252 Atk / 8 Def / 8 SpD / 120 Spe
 Adamant Nature
 - Sucker Punch
@@ -5330,7 +5330,7 @@ Adamant Nature
 
 Nidoqueen @ Life Orb
 Ability: Sheer Force
-Level: 36
+Level: 34
 EVs: 160 HP / 252 SpA / 16 SpD / 80 Spe
 Calm Nature  
 IVs: 0 Atk  
@@ -5350,7 +5350,7 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Tauros @ White Herb
 Ability: Intimidate
-Level: 40
+Level: 39
 EVs: 4 HP / 252 Atk / 252 Spe
 Adamant Nature
 IVs: 0 SpA
@@ -5371,7 +5371,7 @@ Adamant Nature
 
 Persian @ Black Glasses
 Ability: Technician
-Level: 41
+Level: 40
 EVs: 132 HP / 252 Atk / 124 Spe
 Jolly Nature
 - Power Gem
@@ -5381,7 +5381,7 @@ Jolly Nature
 
 Cloyster @ Leftovers
 Ability: Skill Link
-Level: 41
+Level: 40
 EVs: 152 HP / 156 Atk / 200 Def
 Impish Nature  
 - Shell Smash
@@ -5391,7 +5391,7 @@ Impish Nature
 
 Kangaskhan @ Toxic Orb  
 Ability: Scrappy
-Level: 43
+Level: 42
 EVs: 120 HP / 252 Atk / 8 Def / 8 SpD / 120 Spe  
 Adamant Nature  
 - Sucker Punch
@@ -5401,7 +5401,7 @@ Adamant Nature
 
 Nidoqueen @ Life Orb  
 Ability: Sheer Force  
-Level: 45
+Level: 43
 EVs: 160 HP / 252 SpA / 16 SpD / 80 Spe  
 Calm Nature  
 IVs: 0 Atk  
@@ -8025,7 +8025,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeotto (F)
-Level: 25
+Level: 29
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
 Serious Nature
@@ -8035,7 +8035,7 @@ Serious Nature
 - Feather Dance
 
 Growlithe (F)
-Level: 23
+Level: 25
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
 Hardy Nature
@@ -8045,7 +8045,7 @@ Hardy Nature
 - Agility
 
 Exeggcute (M)
-Level: 22
+Level: 25
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 156 HP / 196 SpA / 156 SpD
 Docile Nature
@@ -8055,7 +8055,7 @@ Docile Nature
 - Hypnosis
 
 Kadabra (M)
-Level: 20
+Level: 27
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 108 HP / 200 SpA / 200 Spe
 Bashful Nature
@@ -8065,7 +8065,7 @@ Bashful Nature
 - Shock Wave
 
 Wartortle (F) @ Sitrus Berry
-Level: 27
+Level: 31
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 156 HP / 200 SpA / 152 Spe
 Quirky Nature
@@ -8084,7 +8084,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeotto (F)
-Level: 25
+Level: 30
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
 Serious Nature
@@ -8094,7 +8094,7 @@ Serious Nature
 - Feather Dance
 
 Gyarados (M)
-Level: 23
+Level: 25
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 200 Atk / 184 Spe
 Hardy Nature
@@ -8104,7 +8104,7 @@ Hardy Nature
 - Twister
 
 Growlithe (F)
-Level: 22
+Level: 29
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
 Docile Nature
@@ -8114,7 +8114,7 @@ Docile Nature
 - Agility
 
 Kadabra (M)
-Level: 20
+Level: 27
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 108 HP / 200 SpA / 200 Spe
 Bashful Nature
@@ -8124,7 +8124,7 @@ Bashful Nature
 - Shock Wave
 
 Ivysaur (F) @ Sitrus Berry
-Level: 27
+Level: 31
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 140 HP / 196 Atk / 172 Spe
 Quirky Nature
@@ -8143,7 +8143,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeotto (F)
-Level: 25
+Level: 30
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
 Serious Nature
@@ -8153,7 +8153,7 @@ Serious Nature
 - Feather Dance
 
 Exeggcute (M)
-Level: 23
+Level: 25
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 156 HP / 196 SpA / 156 SpD
 Hardy Nature
@@ -8163,7 +8163,7 @@ Hardy Nature
 - Hypnosis
 
 Gyarados (M)
-Level: 22
+Level: 25
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 200 Atk / 184 Spe
 Docile Nature
@@ -8173,7 +8173,7 @@ Docile Nature
 - Twister
 
 Kadabra (M)
-Level: 20
+Level: 27
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 108 HP / 200 SpA / 200 Spe
 Bashful Nature
@@ -8183,7 +8183,7 @@ Bashful Nature
 - Shock Wave
 
 Charmeleon (F) @ Sitrus Berry
-Level: 27
+Level: 31
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 140 HP / 200 Atk / 168 Spe
 Quirky Nature
