@@ -50,3 +50,14 @@ CeruleanCity_House4_Text_Hint6::
 	.string "room you once called yours.\p"
 	.string "Some forgotten bonds have a way\n"
 	.string "of waiting patiently.$"
+
+CeruleanCity_House4_Text_Hint7::
+	.string "Word is there's an eccentric\n"
+	.string "researcher holed up in Cinnabar Lab.\p"
+	.string "Something about Pokémon and\n"
+	.string "secrets passed down through Eggs…\p"
+	.string "Nobody quite understands his work,\n"
+	.string "but trainers leave looking pleased.$"
+
+CeruleanCity_House4_Text_Hint8::
+	.string "PLACEHOLDER.$"

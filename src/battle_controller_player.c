@@ -1911,7 +1911,7 @@ static void MoveSelectionDisplayMoveDescription(enum BattlerId battler)
     {
         uq4_12_t mult = GetMoveEffectivenessMultiplier(battler, target, move);
         if (mult == 0) {
-            StringCopy(effStr, (u8[]){CHAR_I, CHAR_m, CHAR_m, CHAR_u, CHAR_n, CHAR_e, EOS});
+            StringCopy(effStr, (u8[]){CHAR_x, CHAR_0, EOS});
             effPaletteIndex = 7;
         } else {
             StringCopy(effStr, gText_ThreeHyphens);
@@ -1921,7 +1921,7 @@ static void MoveSelectionDisplayMoveDescription(enum BattlerId battler)
     {
         uq4_12_t mult = GetMoveEffectivenessMultiplier(battler, target, move);
         if (mult == 0) {
-            StringCopy(effStr, (u8[]){CHAR_I, CHAR_m, CHAR_m, CHAR_u, CHAR_n, CHAR_e, EOS});
+            StringCopy(effStr, (u8[]){CHAR_x, CHAR_0, EOS});
             effPaletteIndex = 7;
         } else if (mult >= UQ_4_12(2.0)) { 
             if (mult >= UQ_4_12(4.0)) StringCopy(effStr, (u8[]){CHAR_x, CHAR_4, EOS}); 

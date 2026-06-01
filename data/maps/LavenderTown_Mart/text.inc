@@ -1,11 +1,8 @@
 LavenderTown_Mart_Text_SearchingForStatRaiseItems::
-    .string "I'm searching for items that raise\n"
-    .string "the stats of Pokémon.\p"
-    .string "They're effective over the course\n"
-    .string "of a single battle.\p"
-    .string "X Attack, X Defend, X Speed, \n"
-    .string "and X Special are what I'm after.\p"
-    .string "Do you know where I can get them?$"
+    .string "I once dreamt of strange items\n"
+    .string "you could use in battle…\p"
+    .string "X-something, they were called.\n"
+    .string "Never found anything like them.$"
 
 LavenderTown_Mart_Text_DidYouBuyRevives::
     .string "Did you buy some Revives?\n"

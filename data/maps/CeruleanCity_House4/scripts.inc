@@ -12,6 +12,8 @@ CeruleanCity_House4_EventScript_RumorLady::
 	case 4, CeruleanCity_House4_EventScript_Hint4
 	case 5, CeruleanCity_House4_EventScript_Hint5
 	case 6, CeruleanCity_House4_EventScript_Hint6
+	case 7, CeruleanCity_House4_EventScript_Hint7
+	case 8, CeruleanCity_House4_EventScript_Hint8
 	end
 
 CeruleanCity_House4_EventScript_Hint0::
@@ -49,9 +51,19 @@ CeruleanCity_House4_EventScript_Hint6::
 	goto CeruleanCity_House4_EventScript_AdvanceCounter
 	end
 
+CeruleanCity_House4_EventScript_Hint7::
+	msgbox CeruleanCity_House4_Text_Hint7, MSGBOX_DEFAULT
+	goto CeruleanCity_House4_EventScript_AdvanceCounter
+	end
+
+CeruleanCity_House4_EventScript_Hint8::
+	msgbox CeruleanCity_House4_Text_Hint8, MSGBOX_DEFAULT
+	goto CeruleanCity_House4_EventScript_AdvanceCounter
+	end
+
 CeruleanCity_House4_EventScript_AdvanceCounter::
 	addvar VAR_RANDOM_SPEECH, 1
-	compare VAR_RANDOM_SPEECH, 7
+	compare VAR_RANDOM_SPEECH, 9
 	goto_if_ge CeruleanCity_House4_EventScript_ResetCounter
 	release
 	end
