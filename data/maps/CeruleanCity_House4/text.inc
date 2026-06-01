@@ -53,11 +53,16 @@ CeruleanCity_House4_Text_Hint6::
 
 CeruleanCity_House4_Text_Hint7::
 	.string "Word is there's an eccentric\n"
-	.string "researcher holed up in Cinnabar Lab.\p"
+	.string "researcher at Cinnabar Lab.\p"
 	.string "Something about Pokémon and\n"
 	.string "secrets passed down through Eggs…\p"
 	.string "Nobody quite understands his work,\n"
 	.string "but trainers leave looking pleased.$"
 
 CeruleanCity_House4_Text_Hint8::
-	.string "PLACEHOLDER.$"
+	.string "They say there's a young trainer\n"
+	.string "at the Trainer Fan Club.\p"
+	.string "She has a gift for sensing what\n"
+	.string "Pokémon keep hidden within.\p"
+	.string "Something every Pokémon carries,\n"
+	.string "yet few ever think to seek.$"

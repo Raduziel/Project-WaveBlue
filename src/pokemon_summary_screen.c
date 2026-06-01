@@ -3085,7 +3085,7 @@ static void PokeSum_PrintTrainerMemo_Mon_HeldByOT(void)
     u8 natureMetOrHatchedAtLevelStr[152];
 
     DynamicPlaceholderTextUtil_Reset();
-    nature = GetNature(&sMonSummaryScreen->currentMon);
+    nature = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_HIDDEN_NATURE);
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(0, gNaturesInfo[nature].name);
     level = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_MET_LEVEL);
 
@@ -3159,7 +3159,7 @@ static void PokeSum_PrintTrainerMemo_Mon_NotHeldByOT(void)
     u8 natureMetOrHatchedAtLevelStr[152];
 
     DynamicPlaceholderTextUtil_Reset();
-    nature = GetNature(&sMonSummaryScreen->currentMon);
+    nature = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_HIDDEN_NATURE);
     DynamicPlaceholderTextUtil_SetPlaceholderPtr(0, gNaturesInfo[nature].name);
 
     level = GetMonData(&sMonSummaryScreen->currentMon, MON_DATA_MET_LEVEL);
