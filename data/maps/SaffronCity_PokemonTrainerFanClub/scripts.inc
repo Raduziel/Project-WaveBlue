@@ -418,3 +418,27 @@ SaffronCity_PokemonTrainerFanClub_EventScript_BlackBeltOnlyNonFan::
 	msgbox SaffronCity_PokemonTrainerFanClub_Text_NeverBeFanOfAnyoneButMaster
 	release
 	end
+
+SaffronCity_PokemonTrainerFanClub_EventScript_HiddenPower::
+    lock
+    faceplayer
+    msgbox SaffronCity_PokemonTrainerFanClub_Text_HP_Intro, MSGBOX_YESNO
+    compare VAR_RESULT, YES
+    goto_if_eq SaffronCity_PokemonTrainerFanClub_EventScript_HP_ChooseMon
+    msgbox SaffronCity_PokemonTrainerFanClub_Text_HP_Decline, MSGBOX_DEFAULT
+    release
+    end
+
+SaffronCity_PokemonTrainerFanClub_EventScript_HP_ChooseMon::
+    special ChoosePartyMon
+    waitstate
+    compare VAR_0x8004, 6
+    goto_if_eq SaffronCity_PokemonTrainerFanClub_EventScript_HP_End
+    special Special_CalcHiddenPowerType
+    msgbox SaffronCity_PokemonTrainerFanClub_Text_HP_Result, MSGBOX_DEFAULT
+    release
+    end
+
+SaffronCity_PokemonTrainerFanClub_EventScript_HP_End::
+    release
+    end

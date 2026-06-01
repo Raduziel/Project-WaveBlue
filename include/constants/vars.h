@@ -190,16 +190,13 @@
 #define VAR_MAP_SCENE_CINNABAR_ISLAND_2                                        0x408A
 #define VAR_MAP_SCENE_MT_MOON_B2F                                              0x408B
 
-//My VARs
-
-#define VAR_ROUTE4_CAVEGUY         0x408C
-#define VAR_POKETOWER_TM10         0x408D
-#define VAR_BOXLINK_BILL           0x408E
-#define VAR_LAVENDER_AIR_BALLOON   0x408F
-#define VAR_LAST_REPEL_LURE_USED   0x4090
-
 //Unused
 
+#define VAR_ROUTE4_CAVEGUY                  0x408C
+#define VAR_POKETOWER_TM10                  0x408D
+#define VAR_BOXLINK_BILL                    0x408E
+#define VAR_LAVENDER_AIR_BALLOON            0x408F
+#define VAR_LAST_REPEL_LURE_USED            0x4090
 #define VAR_BRAVO_TRAINER_BATTLE_TOWER_ON   0x4091
 #define VAR_FRONTIER_MANIAC_FACILITY        0x4092
 #define VAR_FRONTIER_GAMBLER_CHALLENGE      0x4093
@@ -207,7 +204,7 @@
 #define VAR_FRONTIER_GAMBLER_SET_CHALLENGE  0x4095
 #define VAR_FRONTIER_GAMBLER_AMOUNT_BET     0x4096
 #define VAR_RANDOM_SPEECH                   0x4097
-#define VAR_0x4098                 0x4098
+#define VAR_HIDDEN_POWER_READER             0x4098
 #define VAR_0x4099                 0x4099
 #define VAR_0x409A                 0x409A
 #define VAR_0x409B                 0x409B

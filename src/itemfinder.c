@@ -14,6 +14,7 @@
 #include "task.h"
 #include "constants/event_bg.h"
 #include "constants/songs.h"
+#include "constants/event_objects.h"
 
 static void Task_NoResponse_CleanUp(u8 taskId);
 static void Task_ItemfinderResponseSoundsAndAnims(u8 taskId);
