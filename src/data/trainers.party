@@ -7674,37 +7674,79 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Venomoth @ Wide Lens  
-Ability: Tinted Lens  
-Level: 37  
-EVs: 160 HP / 120 SpA / 28 SpD / 200 Spe  
-Hasty Nature  
-IVs: 0 Atk  
-- Sleep Powder  
-- Sludge Bomb  
-- Giga Drain  
-- Bug Buzz  
+Venomoth @ Wide Lens
+Ability: Tinted Lens
+Level: 39
+EVs: 160 HP / 120 SpA / 28 SpD / 200 Spe
+Hasty Nature
+IVs: 0 Atk
+- Sleep Powder
+- Sludge Bomb
+- Giga Drain
+- Bug Buzz
 
-Muk @ Black Sludge  
-Ability: Poison Touch  
-Level: 39  
-EVs: 160 HP / 120 Atk / 28 Def / 200 SpD  
-Careful Nature  
-IVs: 0 SpA  
-- Poison Jab  
-- Knock Off  
+Muk @ Black Sludge
+Ability: Poison Touch
+Level: 41
+EVs: 160 HP / 120 Atk / 28 Def / 200 SpD
+Careful Nature
+IVs: 0 SpA
+- Poison Jab
+- Knock Off
 - Screech
-- Toxic  
+- Toxic
 
-Crobat @ Sitrus Berry  
-Ability: Inner Focus  
-Level: 43  
-EVs: 40 HP / 252 Atk / 36 Def / 80 SpD / 100 Spe  
-Adamant Nature  
-IVs: 0 SpA  
-- Cross Poison  
-- Acrobatics  
-- Leech Life 
+Crobat @ Sitrus Berry
+Ability: Inner Focus
+Level: 43
+EVs: 40 HP / 252 Atk / 36 Def / 80 SpD / 100 Spe
+Adamant Nature
+IVs: 0 SpA
+- Cross Poison
+- Acrobatics
+- Leech Life
+- Toxic
+
+=== TRAINER_LEADER_KOGA_2 ===
+Name: Koga
+Class: Leader
+Pic: Leader Koga
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Venomoth @ Wide Lens
+Ability: Tinted Lens
+Level: 41
+EVs: 160 HP / 120 SpA / 28 SpD / 200 Spe
+Hasty Nature
+IVs: 0 Atk
+- Sleep Powder
+- Sludge Bomb
+- Giga Drain
+- Bug Buzz
+
+Muk @ Black Sludge
+Ability: Poison Touch
+Level: 43
+EVs: 160 HP / 120 Atk / 28 Def / 200 SpD
+Careful Nature
+IVs: 0 SpA
+- Poison Jab
+- Knock Off
+- Screech
+- Toxic
+
+Crobat @ Sitrus Berry
+Ability: Inner Focus
+Level: 45
+EVs: 40 HP / 252 Atk / 36 Def / 80 SpD / 100 Spe
+Adamant Nature
+IVs: 0 SpA
+- Cross Poison
+- Acrobatics
+- Leech Life
 - Toxic
 
 === TRAINER_LEADER_BLAINE ===
@@ -7758,38 +7800,80 @@ Music: Female
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Hypno @ Wise Glasses  
-Ability: Insomnia  
-Level: 37  
-EVs: 68 HP / 160 SpA / 160 SpD / 120 Spe  
-Calm Nature  
-IVs: 0 Atk  
-- Psychic Terrain  
-- Foul Play  
-- Hypnosis  
+Hypno @ Wise Glasses
+Ability: Insomnia
+Level: 39
+EVs: 68 HP / 160 SpA / 160 SpD / 120 Spe
+Calm Nature
+IVs: 0 Atk
+- Psychic Terrain
+- Foul Play
+- Hypnosis
 - Psyshock
 
-Mr. Mime @ Eviolite  
-Ability: Soundproof  
-Level: 39  
-EVs: 48 HP / 200 SpA / 100 SpD / 160 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Dazzling Gleam  
-- Calm Mind  
-- Icy Wind  
+Mr. Mime @ Eviolite
+Ability: Filter
+Level: 41
+EVs: 48 HP / 200 SpA / 100 SpD / 160 Spe
+Timid Nature
+IVs: 0 Atk
+- Dazzling Gleam
+- Calm Mind
+- Icy Wind
 - Psychic
 
-Alakazam @ Life Orb  
-Ability: Magic Guard  
-Level: 43  
-EVs: 20 HP / 252 SpA / 56 SpD / 180 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Dazzling Gleam  
-- Shadow Ball  
-- Calm Mind  
-- Psychic  
+Alakazam @ Life Orb
+Ability: Magic Guard
+Level: 43
+EVs: 20 HP / 252 SpA / 56 SpD / 180 Spe
+Modest Nature
+IVs: 0 Atk
+- Dazzling Gleam
+- Shadow Ball
+- Calm Mind
+- Psychic
+
+=== TRAINER_LEADER_SABRINA_2 ===
+Name: Sabrina
+Class: Leader
+Pic: Leader Sabrina
+Gender: Male
+Music: Female
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Hypno @ Wise Glasses
+Ability: Insomnia
+Level: 41
+EVs: 68 HP / 160 SpA / 160 SpD / 120 Spe
+Calm Nature
+IVs: 0 Atk
+- Psychic Terrain
+- Foul Play
+- Hypnosis
+- Psyshock
+
+Mr. Mime @ Eviolite
+Ability: Filter
+Level: 43
+EVs: 48 HP / 200 SpA / 100 SpD / 160 Spe
+Timid Nature
+IVs: 0 Atk
+- Dazzling Gleam
+- Calm Mind
+- Icy Wind
+- Psychic
+
+Alakazam @ Life Orb
+Ability: Magic Guard
+Level: 45
+EVs: 20 HP / 252 SpA / 56 SpD / 180 Spe
+Modest Nature
+IVs: 0 Atk
+- Dazzling Gleam
+- Shadow Ball
+- Calm Mind
+- Psychic
 
 === TRAINER_GENTLEMAN_THOMAS ===
 Name: Thomas

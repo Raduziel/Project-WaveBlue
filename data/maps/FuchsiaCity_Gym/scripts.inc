@@ -25,12 +25,24 @@ FuchsiaCity_Gym_EventScript_Koga::
 	goto FuchsiaCity_Gym_EventScript_StillNot3
 
 FuchsiaCity_Gym_EventScript_StartBattle::
+	goto_if_set FLAG_DEFEATED_SABRINA, FuchsiaCity_Gym_EventScript_StartBattle_PostSabrina
 	trainerbattle_single TRAINER_LEADER_KOGA, FuchsiaCity_Gym_Text_KogaIntro, FuchsiaCity_Gym_Text_KogaDefeat, FuchsiaCity_Gym_EventScript_DefeatedKoga, NO_MUSIC
 	release
 	end
 
+FuchsiaCity_Gym_EventScript_StartBattle_PostSabrina::
+	trainerbattle_single TRAINER_LEADER_KOGA_2, FuchsiaCity_Gym_Text_KogaIntro, FuchsiaCity_Gym_Text_KogaDefeat, FuchsiaCity_Gym_EventScript_DefeatedKoga, NO_MUSIC
+	release
+	end
+
 FuchsiaCity_Gym_EventScript_StartBattle_FromPC::
+	goto_if_set FLAG_DEFEATED_SABRINA, FuchsiaCity_Gym_EventScript_StartBattle_FromPC_PostSabrina
 	trainerbattle_single TRAINER_LEADER_KOGA, FuchsiaCity_Gym_Text_KogaReady, FuchsiaCity_Gym_Text_KogaDefeat, FuchsiaCity_Gym_EventScript_DefeatedKoga, NO_MUSIC
+	release
+	end
+
+FuchsiaCity_Gym_EventScript_StartBattle_FromPC_PostSabrina::
+	trainerbattle_single TRAINER_LEADER_KOGA_2, FuchsiaCity_Gym_Text_KogaReady, FuchsiaCity_Gym_Text_KogaDefeat, FuchsiaCity_Gym_EventScript_DefeatedKoga, NO_MUSIC
 	release
 	end
 

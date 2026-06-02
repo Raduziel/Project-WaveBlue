@@ -242,7 +242,7 @@ static bool32 FieldMove_IsUnlockedFly(void)
 
 static bool32 FieldMove_IsUnlockedSurf(void)
 {
-    return FlagGet(FLAG_BADGE05_GET) && PartyHasMove(MOVE_SURF);
+    return FlagGet(FLAG_DEFEATED_KOGA) && PartyHasMove(MOVE_SURF);
 }
 
 static bool32 FieldMove_IsUnlockedStrength(void)

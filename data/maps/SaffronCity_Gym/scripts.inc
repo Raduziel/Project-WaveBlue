@@ -25,12 +25,24 @@ SaffronCity_Gym_EventScript_Sabrina::
 	goto SaffronCity_Gym_EventScript_StillNot3
 
 SaffronCity_Gym_EventScript_StartBattle::
+	goto_if_set FLAG_DEFEATED_KOGA, SaffronCity_Gym_EventScript_StartBattle_PostKoga
 	trainerbattle_single TRAINER_LEADER_SABRINA, SaffronCity_Gym_Text_SabrinaIntro, SaffronCity_Gym_Text_SabrinaDefeat, SaffronCity_Gym_EventScript_DefeatedSabrina, NO_MUSIC
 	release
 	end
 
+SaffronCity_Gym_EventScript_StartBattle_PostKoga::
+	trainerbattle_single TRAINER_LEADER_SABRINA_2, SaffronCity_Gym_Text_SabrinaIntro, SaffronCity_Gym_Text_SabrinaDefeat, SaffronCity_Gym_EventScript_DefeatedSabrina, NO_MUSIC
+	release
+	end
+
 SaffronCity_Gym_EventScript_StartBattle_FromPC::
+	goto_if_set FLAG_DEFEATED_KOGA, SaffronCity_Gym_EventScript_StartBattle_FromPC_PostKoga
 	trainerbattle_single TRAINER_LEADER_SABRINA, SaffronCity_Gym_Text_SabrinaReady, SaffronCity_Gym_Text_SabrinaDefeat, SaffronCity_Gym_EventScript_DefeatedSabrina, NO_MUSIC
+	release
+	end
+
+SaffronCity_Gym_EventScript_StartBattle_FromPC_PostKoga::
+	trainerbattle_single TRAINER_LEADER_SABRINA_2, SaffronCity_Gym_Text_SabrinaReady, SaffronCity_Gym_Text_SabrinaDefeat, SaffronCity_Gym_EventScript_DefeatedSabrina, NO_MUSIC
 	release
 	end
 

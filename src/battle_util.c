@@ -5606,7 +5606,7 @@ enum Obedience GetAttackerObedienceForAction(void)
         obedienceLevel = 30;
     if (FlagGet(FLAG_BADGE04_GET))
         obedienceLevel = 50;
-    if (FlagGet(FLAG_BADGE06_GET))
+    if (FlagGet(FLAG_DEFEATED_SABRINA))
         obedienceLevel = 70;
 
     if (B_OBEDIENCE_MECHANICS >= GEN_8
