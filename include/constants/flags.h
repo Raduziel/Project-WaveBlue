@@ -203,7 +203,7 @@
 #define FLAG_HIDE_PORYGON                                0x0B9
 #define FLAG_LAVENDER_TM10_CHANNELER                     0x0BA
 #define FLAG_HIDE_ROUTE25_BILL                           0x0BB
-#define FLAG_HIDE_ROUTE12_MYSTIC_WATER                   0x0BC
+#define FLAG_HIDE_ROUTE21_MYSTIC_WATER                   0x0BC
 #define FLAG_HIDE_POKEMON_MANSION_B1F_TM35               0x0BD
 #define FLAG_HIDE_CELADON_ROOFROOM_TM42                  0x0BE
 #define FLAG_HIDE_ROCKET_HIDEOUT_B3F_SMOKE_BALL          0x0BF
@@ -338,8 +338,8 @@
 #define FLAG_HIDE_VERMILION_CITY_ELECTIRIZER             0x140
 #define FLAG_GOT_CLEAR_AMULET                            0x141
 #define FLAG_EGG_TUTOR_INTRODUCED                        0x142
-#define FLAG_0x143                                       0x143
-#define FLAG_0x144                                       0x144
+#define FLAG_HIDE_SILPH_CO_8F_CELL_BATTERY               0x143
+#define FLAG_HIDE_ROUTE21_ABSORB_BULB                    0x144
 #define FLAG_0x145                                       0x145
 #define FLAG_0x146                                       0x146
 #define FLAG_0x147                                       0x147
@@ -499,7 +499,7 @@
 #define FLAG_HIDE_FIVE_ISLAND_MEADOW_PP_UP                      0x1DF
 #define FLAG_HIDE_FIVE_ISLAND_MEMORIAL_PILLAR_BOTTLE_CAP        0x1E0
 #define FLAG_HIDE_SIX_ISLAND_OUTCAST_ISLAND_PP_UP               0x1E1
-#define FLAG_HIDE_SIX_ISLAND_WATER_PATH_ELIXIR                  0x1E2
+#define FLAG_HIDE_SIX_ISLAND_WATER_PATH_ABILITY_PATCH           0x1E2
 #define FLAG_HIDE_SIX_ISLAND_WATER_PATH_GOLD_BOTTLE_CAP         0x1E3
 #define FLAG_HIDE_SIX_ISLAND_RUIN_VALLEY_FULL_RESTORE           0x1E4
 #define FLAG_HIDE_SIX_ISLAND_RUIN_VALLEY_HP_UP                  0x1E5
@@ -530,11 +530,11 @@
 #define FLAG_HIDE_SILPH_CO_4F_TM41                              0x1FE
 
 // Unused?
-#define FLAG_ITEM_ARTISAN_CAVE_1F_CARBOS                        0x1FF
-#define FLAG_ITEM_ARTISAN_CAVE_B1F_HP_UP                        0x200
-#define FLAG_0x201               0x201
-#define FLAG_0x202               0x202
-#define FLAG_0x203               0x203
+#define FLAG_ITEM_ARTISAN_CAVE_1F_CARBOS            0x1FF
+#define FLAG_ITEM_ARTISAN_CAVE_B1F_HP_UP            0x200
+#define FLAG_HIDDEN_ITEM_ROUTE2_ABILITY_CAPSULE     0x201
+#define FLAG_HIDDEN_ITEM_ROUTE20_SHELL_BELL         0x202
+#define FLAG_HIDDEN_ITEM_MT_MOON_B1F_LUMINOUS_MOSS  0x203
 #define FLAG_0x204               0x204
 #define FLAG_0x205               0x205
 #define FLAG_0x206               0x206

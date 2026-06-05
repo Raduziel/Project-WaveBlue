@@ -230,57 +230,57 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_ChoosePrizeLeft::
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_ChoiceBand::
 	setvar VAR_TEMP_1, ITEM_CHOICE_BAND
-	setvar VAR_TEMP_2, 7500
+	setvar VAR_TEMP_2, 5000
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_ChoiceSpecs::
 	setvar VAR_TEMP_1, ITEM_CHOICE_SPECS
-	setvar VAR_TEMP_2, 7500
+	setvar VAR_TEMP_2, 5000
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_ChoiceScarf::
 	setvar VAR_TEMP_1, ITEM_CHOICE_SCARF
-	setvar VAR_TEMP_2, 7500
+	setvar VAR_TEMP_2, 5000
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_AssaultVest::
 	setvar VAR_TEMP_1, ITEM_ASSAULT_VEST
-	setvar VAR_TEMP_2, 6500
+	setvar VAR_TEMP_2, 2500
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_LifeOrb::
 	setvar VAR_TEMP_1, ITEM_LIFE_ORB
-	setvar VAR_TEMP_2, 7500
+	setvar VAR_TEMP_2, 2500
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_Eviolite::
 	setvar VAR_TEMP_1, ITEM_EVIOLITE
-	setvar VAR_TEMP_2, 6500
+	setvar VAR_TEMP_2, 2500
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_WeaknessPolicy::
 	setvar VAR_TEMP_1, ITEM_WEAKNESS_POLICY
-	setvar VAR_TEMP_2, 4000
+	setvar VAR_TEMP_2, 2500
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_ScopeLens::
 	setvar VAR_TEMP_1, ITEM_SCOPE_LENS
-	setvar VAR_TEMP_2, 4000
+	setvar VAR_TEMP_2, 1500
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_LoadedDice::
 	setvar VAR_TEMP_1, ITEM_LOADED_DICE
-	setvar VAR_TEMP_2, 5000
+	setvar VAR_TEMP_2, 2000
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_FlameOrb::
 	setvar VAR_TEMP_1, ITEM_FLAME_ORB
-	setvar VAR_TEMP_2, 2000
+	setvar VAR_TEMP_2, 1000
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_ToxicOrb::
 	setvar VAR_TEMP_1, ITEM_TOXIC_ORB
-	setvar VAR_TEMP_2, 2000
+	setvar VAR_TEMP_2, 1000
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_PrizeClerkItems::
@@ -302,11 +302,11 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_ChoosePrizeRight::
 	case 1, CeladonCity_GameCorner_PrizeRoom_EventScript_BrightPowder
 	case 2, CeladonCity_GameCorner_PrizeRoom_EventScript_MuscleBand
 	case 3, CeladonCity_GameCorner_PrizeRoom_EventScript_WiseGlasses
-	case 4, CeladonCity_GameCorner_PrizeRoom_EventScript_PunchingGlove
+	case 4, CeladonCity_GameCorner_PrizeRoom_EventScript_ProtectPads
 	case 5, CeladonCity_GameCorner_PrizeRoom_EventScript_Metronome
 	case 6, CeladonCity_GameCorner_PrizeRoom_EventScript_CovertCloak
 	case 7, CeladonCity_GameCorner_PrizeRoom_EventScript_WideLens
-	case 8, CeladonCity_GameCorner_PrizeRoom_EventScript_ShellBell
+	case 8, CeladonCity_GameCorner_PrizeRoom_EventScript_ExpertBelt
 	case 9, CeladonCity_GameCorner_PrizeRoom_EventScript_ThroatSpray
 	case 10, CeladonCity_GameCorner_PrizeRoom_EventScript_LightClay
 	case 11, CeladonCity_GameCorner_PrizeRoom_EventScript_EndPrizeExchange
@@ -315,57 +315,57 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_ChoosePrizeRight::
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_FocusSash::
 	setvar VAR_TEMP_1, ITEM_FOCUS_SASH
-	setvar VAR_TEMP_2, 4000
+	setvar VAR_TEMP_2, 2500
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_BrightPowder::
 	setvar VAR_TEMP_1, ITEM_BRIGHT_POWDER
-	setvar VAR_TEMP_2, 1000
+	setvar VAR_TEMP_2, 1500
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_MuscleBand::
 	setvar VAR_TEMP_1, ITEM_MUSCLE_BAND
-	setvar VAR_TEMP_2, 2000
+	setvar VAR_TEMP_2, 500
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_WiseGlasses::
 	setvar VAR_TEMP_1, ITEM_WISE_GLASSES
-	setvar VAR_TEMP_2, 2000
+	setvar VAR_TEMP_2, 500
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 
-CeladonCity_GameCorner_PrizeRoom_EventScript_PunchingGlove::
-	setvar VAR_TEMP_1, ITEM_PUNCHING_GLOVE
+CeladonCity_GameCorner_PrizeRoom_EventScript_ProtectPads::
+	setvar VAR_TEMP_1, ITEM_PROTECTIVE_PADS
 	setvar VAR_TEMP_2, 1000
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_Metronome::
 	setvar VAR_TEMP_1, ITEM_METRONOME
-	setvar VAR_TEMP_2, 4000
+	setvar VAR_TEMP_2, 1000
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_CovertCloak::
 	setvar VAR_TEMP_1, ITEM_COVERT_CLOAK
-	setvar VAR_TEMP_2, 4000
+	setvar VAR_TEMP_2, 1500
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_WideLens::
 	setvar VAR_TEMP_1, ITEM_WIDE_LENS
-	setvar VAR_TEMP_2, 2000
+	setvar VAR_TEMP_2, 1500
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 
-CeladonCity_GameCorner_PrizeRoom_EventScript_ShellBell::
-	setvar VAR_TEMP_1, ITEM_SHELL_BELL
+CeladonCity_GameCorner_PrizeRoom_EventScript_ExpertBelt::
+	setvar VAR_TEMP_1, ITEM_EXPERT_BELT
 	setvar VAR_TEMP_2, 2000
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_ThroatSpray::
 	setvar VAR_TEMP_1, ITEM_THROAT_SPRAY
-	setvar VAR_TEMP_2, 2000
+	setvar VAR_TEMP_2, 1500
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_LightClay::
 	setvar VAR_TEMP_1, ITEM_LIGHT_CLAY
-	setvar VAR_TEMP_2, 4000
+	setvar VAR_TEMP_2, 1500
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 
 CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem::

@@ -101,7 +101,6 @@ CeladonCity_DepartmentStore_4F_Herbs_1::
 
 	.align 2
 CeladonCity_DepartmentStore_4F_Herbs_2::
-	.2byte ITEM_MIRACLE_SEED
 	.2byte ITEM_MISTY_SEED
 	.2byte ITEM_GRASSY_SEED
 	.2byte ITEM_PSYCHIC_SEED

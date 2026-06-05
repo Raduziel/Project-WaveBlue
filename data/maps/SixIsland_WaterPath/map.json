@@ -140,8 +140,8 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "SixIsland_WaterPath_EventScript_ItemElixir",
-      "flag": "FLAG_HIDE_SIX_ISLAND_WATER_PATH_ELIXIR"
+      "script": "SixIsland_WaterPath_EventScript_ItemAbilityPatch",
+      "flag": "FLAG_HIDE_SIX_ISLAND_WATER_PATH_ABILITY_PATCH"
     },
     {
       "type": "object",

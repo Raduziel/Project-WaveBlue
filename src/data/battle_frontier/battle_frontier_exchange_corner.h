@@ -44,7 +44,7 @@ static const u16 sFrontierExchangeCorner_HoldItems[] =
     ITEM_CHOICE_SCARF,
     ITEM_CHOICE_SPECS,
     ITEM_LIFE_ORB,
-    ITEM_KINGS_ROCK,
+    ITEM_RED_CARD,
     ITEM_FOCUS_SASH,
     ITEM_SCOPE_LENS,
     ITEM_WEAKNESS_POLICY,

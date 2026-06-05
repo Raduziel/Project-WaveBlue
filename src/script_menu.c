@@ -266,32 +266,32 @@ static const struct MenuAction sMultichoiceList_GameCornerBattleItemPrizes[] = {
 */
 
 static const struct MenuAction sMultichoiceList_GameCornerClerkLeft[] = {
-    { gText_ChoiceBand_7500 },
-    { gText_ChoiceSpecs_7500 },
-    { gText_ChoiceScarf_7500 },
-    { gText_AssaultVest_6500 },
-    { gText_LifeOrb_7500 },
-    { gText_Eviolite_6500 },
-    { gText_WeaknessPol_4000 },
-    { gText_ScopeLens_4000 },
-    { gText_LoadedDice_5000 },
-    { gText_FlameOrb_2000 },
-    { gText_ToxicOrb_2000 },
+    { gText_ChoiceBand_5000 },
+    { gText_ChoiceSpecs_5000 },
+    { gText_ChoiceScarf_5000 },
+    { gText_AssaultVest_2500 },
+    { gText_LifeOrb_2500 },
+    { gText_Eviolite_2500 },
+    { gText_WeaknessPol_2500 },
+    { gText_ScopeLens_1500 },
+    { gText_LoadedDice_2000 },
+    { gText_FlameOrb_1000 },
+    { gText_ToxicOrb_1000 },
     { gOtherText_Exit }
 };
 
 static const struct MenuAction sMultichoiceList_GameCornerClerkRight[] = {
-    { gText_FocusSash_4000 },
-    { gText_BrightPowder_1000 },
-    { gText_MuscleBand_2000 },
-    { gText_WiseGlasses_2000 },
-    { gText_PunchGlove_1000 },
-    { gText_Metronome_4000 },
-    { gText_CovertCloak_4000 },
-    { gText_WideLens_2000 },
-    { gText_ShellBell_2000 },
-    { gText_ThroatSpray_2000 },
-    { gText_LightClay_4000 },
+    { gText_FocusSash_2500 },
+    { gText_BrightPowder_1500 },
+    { gText_MuscleBand_500 },
+    { gText_WiseGlasses_500 },
+    { gText_ProtectPads_1000 },
+    { gText_Metronome_1000 },
+    { gText_CovertCloak_1500 },
+    { gText_WideLens_1500 },
+    { gText_ExpertBelt_2000 },
+    { gText_ThroatSpray_1500 },
+    { gText_LightClay_1500 },
     { gOtherText_Exit }
 };
 

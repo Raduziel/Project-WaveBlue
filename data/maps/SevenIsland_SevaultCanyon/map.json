@@ -197,8 +197,8 @@
     {
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ROCK_SMASH_ROCK",
-      "x": 15,
-      "y": 46,
+      "x": 9,
+      "y": -2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
       "movement_range_x": 1,

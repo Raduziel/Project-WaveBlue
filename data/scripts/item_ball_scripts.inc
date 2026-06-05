@@ -11,6 +11,18 @@ Route2_EventScript_ItemParalyzeHeal::
 	finditem ITEM_PARALYZE_HEAL
 	end
 
+Route20_EventScript_ItemShellBell::
+	finditem ITEM_SHELL_BELL
+	end
+
+Route21_EventScript_ItemMysticWater::
+	finditem ITEM_MYSTIC_WATER
+	end
+
+Route21_EventScript_ItemAbsorbBulb::
+	finditem ITEM_ABSORB_BULB
+	end
+
 ViridianForest_EventScript_ItemPokeBall::
 	finditem ITEM_POKE_BALL
 	end
@@ -45,6 +57,10 @@ MtMoon_1F_EventScript_ItemBottleCap::
 
 MtMoon_1F_EventScript_ItemMoonStone::
 	finditem ITEM_MOON_STONE
+	end
+
+MtMoon_B1F_EventScript_ItemLuminousMoss::
+	finditem ITEM_LUMINOUS_MOSS
 	end
 
 MtMoon_B2F_EventScript_ItemStarPiece::
@@ -108,7 +124,7 @@ RocketHideout_B1F_EventScript_ItemBottleCap::
 	end
 
 RocketHideout_B1F_EventScript_ItemHyperPotion::
-	finditem ITEM_HYPER_POTION
+	finditem ITEM_GRIP_CLAW
 	end
 
 RocketHideout_B1F_EventScript_ItemTM23::
@@ -185,10 +201,6 @@ PokemonTower_6F_EventScript_ItemTM30::
 
 Route12_EventScript_ItemTM48::
 	finditem ITEM_TM48
-	end
-
-Route12_EventScript_ItemMysticWater::
-	finditem ITEM_MYSTIC_WATER
 	end
 
 Route12_EventScript_ItemIron::
@@ -512,7 +524,7 @@ Route9_EventScript_ItemBurnHeal::
 	end
 
 RockTunnel_1F_EventScript_ItemRepel::
-	finditem ITEM_REPEL
+	finditem ITEM_LURE
 	end
 
 RockTunnel_1F_EventScript_ItemPearl::
@@ -541,6 +553,10 @@ RockTunnel_B1F_EventScript_ItemSmoothRock::
 
 SilphCo_8F_EventScript_ItemIron::
 	finditem ITEM_IRON
+	end
+
+SilphCo_8F_EventScript_ItemCellBattery::
+	finditem ITEM_CELL_BATTERY
 	end
 
 SilphCo_11F_EventScript_ItemUpgrade::
@@ -579,8 +595,8 @@ PokemonTower_5F_EventScript_ItemCleanseTag::
 	finditem ITEM_CLEANSE_TAG
 	end
 
-CeladonCity_EventScript_ItemEther::
-	finditem ITEM_ETHER
+CeladonCity_EventScript_MiracleSeed::
+	finditem ITEM_MIRACLE_SEED
 	end
 
 CeladonCity_Condominiums_RoofRoom_EventScript_ItemTM42::
@@ -596,7 +612,7 @@ SafariZone_North_EventScript_ItemQuickClaw::
 	end
 
 SeafoamIslands_1F_EventScript_ItemIceHeal::
-	finditem ITEM_ICE_HEAL
+	finditem ITEM_SNOWBALL
 	end
 
 SeafoamIslands_B1F_EventScript_ItemWaterStone::
@@ -640,7 +656,7 @@ OneIsland_KindleRoad_EventScript_ItemEther::
 	end
 
 OneIsland_KindleRoad_EventScript_ItemMaxRepel::
-	finditem ITEM_MAX_REPEL
+	finditem ITEM_MAX_LURE
 	end
 
 OneIsland_KindleRoad_EventScript_ItemCarbos::
@@ -663,8 +679,8 @@ SixIsland_OutcastIsland_EventScript_ItemPPUp::
 	finditem ITEM_PP_UP
 	end
 
-SixIsland_WaterPath_EventScript_ItemElixir::
-	finditem ITEM_ELIXIR
+SixIsland_WaterPath_EventScript_ItemAbilityPatch::
+	finditem ITEM_ABILITY_PATCH
 	end
 
 SixIsland_WaterPath_EventScript_ItemGoldBottleCap::
