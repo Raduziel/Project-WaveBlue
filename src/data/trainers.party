@@ -4805,7 +4805,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeotto (F)
-Level: 18
+Level: 21
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
 Serious Nature
@@ -4815,7 +4815,7 @@ Serious Nature
 - Sand Attack
 
 Abra (M)
-Level: 16
+Level: 21
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 SpA / 188 Spe
 Bashful Nature
@@ -4823,8 +4823,8 @@ Bashful Nature
 - Thief
 - Flash
 
-Rattata (M)
-Level: 15
+Raticate (M)
+Level: 21
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 140 HP / 196 Atk / 172 Spe
 Hardy Nature
@@ -4853,7 +4853,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeotto (F)
-Level: 18
+Level: 21
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
 Serious Nature
@@ -4863,7 +4863,7 @@ Serious Nature
 - Sand Attack
 
 Abra (M)
-Level: 16
+Level: 21
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 SpA / 188 Spe
 Bashful Nature
@@ -4871,8 +4871,8 @@ Bashful Nature
 - Thief
 - Flash
 
-Rattata (M)
-Level: 15
+Raticate (M)
+Level: 21
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 140 HP / 196 Atk / 172 Spe
 Hardy Nature
@@ -4901,7 +4901,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeotto (F)
-Level: 18
+Level: 21
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
 Serious Nature
@@ -4911,7 +4911,7 @@ Serious Nature
 - Sand Attack
 
 Abra (M)
-Level: 16
+Level: 21
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 SpA / 188 Spe
 Bashful Nature
@@ -4919,8 +4919,8 @@ Bashful Nature
 - Thief
 - Flash
 
-Rattata (M)
-Level: 15
+Raticate (M)
+Level: 21
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 140 HP / 196 Atk / 172 Spe
 Hardy Nature
@@ -7962,32 +7962,32 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeotto (F)
-Level: 19
+Level: 24
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
 Serious Nature
 - Quick Attack
 - Gust
-- Whirlwind
+- Twister
 - Sand Attack
 
 Raticate (M)
-Level: 20
+Level: 24
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 140 HP / 196 Atk / 172 Spe
 Hardy Nature
 - Cut
-- Bite
+- Crunch
 - Quick Attack
 - Focus Energy
 
 Kadabra (M)
-Level: 18
+Level: 24
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 108 HP / 200 SpA / 200 Spe
 Docile Nature
 - Psybeam
-- Confusion
+- Disable
 - Reflect
 - Flash
 
@@ -8011,32 +8011,32 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeotto (F)
-Level: 19
+Level: 24
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
 Serious Nature
 - Quick Attack
 - Gust
-- Whirlwind
+- Twister
 - Sand Attack
 
 Raticate (M)
-Level: 20
+Level: 24
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 140 HP / 196 Atk / 172 Spe
 Hardy Nature
-- Take Down
-- Bite
+- Cut
+- Crunch
 - Quick Attack
 - Focus Energy
 
 Kadabra (M)
-Level: 18
+Level: 24
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 108 HP / 200 SpA / 200 Spe
 Docile Nature
 - Psybeam
-- Confusion
+- Disable
 - Reflect
 - Flash
 
@@ -8060,32 +8060,32 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeotto (F)
-Level: 19
+Level: 24
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
 Serious Nature
 - Quick Attack
 - Gust
-- Whirlwind
+- Twister
 - Sand Attack
 
 Raticate (M)
-Level: 20
+Level: 24
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 140 HP / 196 Atk / 172 Spe
 Hardy Nature
-- Take Down
-- Bite
+- Cut
+- Crunch
 - Quick Attack
 - Focus Energy
 
 Kadabra (M)
-Level: 18
+Level: 24
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 108 HP / 200 SpA / 200 Spe
 Docile Nature
 - Psybeam
-- Confusion
+- Disable
 - Reflect
 - Flash
 
@@ -8109,7 +8109,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeotto (F)
-Level: 29
+Level: 31
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
 Serious Nature
@@ -8119,32 +8119,32 @@ Serious Nature
 - Feather Dance
 
 Growlithe (F)
-Level: 25
+Level: 31
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
 Hardy Nature
-- Flame Wheel
+- Fire Fang
 - Bite
 - Dig
-- Agility
+- Retaliate
 
 Exeggcute (M)
-Level: 25
+Level: 31
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 156 HP / 196 SpA / 156 SpD
 Docile Nature
 - Confusion
-- Mega Drain
+- Giga Drain
 - Leech Seed
 - Hypnosis
 
 Kadabra (M)
-Level: 27
+Level: 31
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 108 HP / 200 SpA / 200 Spe
 Bashful Nature
-- Psybeam
-- Psycho Cut
+- Psyshock
+- Recover
 - Flash
 - Shock Wave
 
@@ -8168,7 +8168,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeotto (F)
-Level: 30
+Level: 31
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
 Serious Nature
@@ -8178,32 +8178,32 @@ Serious Nature
 - Feather Dance
 
 Gyarados (M)
-Level: 25
+Level: 31
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 200 Atk / 184 Spe
 Hardy Nature
 - Waterfall
 - Bite
 - Ice Fang
-- Twister
+- Flail
 
 Growlithe (F)
-Level: 29
+Level: 31
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
-Docile Nature
-- Flame Wheel
+Hardy Nature
+- Fire Fang
 - Bite
 - Dig
-- Agility
+- Retaliate
 
 Kadabra (M)
-Level: 27
+Level: 31
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 108 HP / 200 SpA / 200 Spe
 Bashful Nature
-- Psybeam
-- Psycho Cut
+- Psyshock
+- Recover
 - Flash
 - Shock Wave
 
@@ -8227,7 +8227,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeotto (F)
-Level: 30
+Level: 31
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 196 Atk / 188 Spe
 Serious Nature
@@ -8237,32 +8237,32 @@ Serious Nature
 - Feather Dance
 
 Exeggcute (M)
-Level: 25
+Level: 31
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 156 HP / 196 SpA / 156 SpD
-Hardy Nature
+Docile Nature
 - Confusion
-- Mega Drain
+- Giga Drain
 - Leech Seed
 - Hypnosis
 
 Gyarados (M)
-Level: 25
+Level: 31
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 200 Atk / 184 Spe
-Docile Nature
+Hardy Nature
 - Waterfall
 - Bite
 - Ice Fang
-- Twister
+- Flail
 
 Kadabra (M)
-Level: 27
+Level: 31
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 108 HP / 200 SpA / 200 Spe
 Bashful Nature
-- Psybeam
-- Psycho Cut
+- Psyshock
+- Recover
 - Flash
 - Shock Wave
 
@@ -8286,7 +8286,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeot (F) @ Sharp Beak
-Level: 37
+Level: 43
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 100 HP / 200 Atk / 208 Spe
 Serious Nature
@@ -8296,17 +8296,17 @@ Serious Nature
 - Quick Attack
 
 Growlithe (F) @ Charcoal
-Level: 38
+Level: 43
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 100 HP / 200 Atk / 208 Spe
 Hardy Nature
 - Flamethrower
-- Take Down
+- Retaliate
 - Crunch
 - Dig
 
 Exeggcute (M) @ Miracle Seed
-Level: 35
+Level: 43
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 252 HP / 4 Def / 252 SpA
 Docile Nature
@@ -8316,7 +8316,7 @@ Docile Nature
 - Leech Seed
 
 Alakazam (M) @ Twisted Spoon
-Level: 35
+Level: 43
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 4 HP / 252 SpA / 252 Spe
 Bashful Nature
@@ -8345,7 +8345,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeot (F) @ Sharp Beak
-Level: 37
+Level: 43
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 100 HP / 200 Atk / 208 Spe
 Serious Nature
@@ -8355,7 +8355,7 @@ Serious Nature
 - Quick Attack
 
 Gyarados (M) @ Mystic Water
-Level: 38
+Level: 43
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 252 Atk / 132 Spe
 Hardy Nature
@@ -8365,17 +8365,17 @@ Hardy Nature
 - Bite
 
 Growlithe (F) @ Charcoal
-Level: 35
+Level: 43
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 100 HP / 200 Atk / 208 Spe
-Docile Nature
+Hardy Nature
 - Flamethrower
+- Retaliate
 - Crunch
 - Dig
-- Agility
 
 Alakazam (M) @ Twisted Spoon
-Level: 35
+Level: 43
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 4 HP / 252 SpA / 252 Spe
 Bashful Nature
@@ -8404,7 +8404,7 @@ Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeot (F) @ Sharp Beak
-Level: 37
+Level: 43
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 100 HP / 200 Atk / 208 Spe
 Serious Nature
@@ -8414,7 +8414,7 @@ Serious Nature
 - Quick Attack
 
 Exeggcute (M) @ Miracle Seed
-Level: 38
+Level: 43
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 252 HP / 4 Def / 252 SpA
 Hardy Nature
@@ -8424,17 +8424,17 @@ Hardy Nature
 - Sleep Powder
 
 Gyarados (M) @ Mystic Water
-Level: 35
+Level: 43
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 124 HP / 252 Atk / 132 Spe
-Docile Nature
+Hardy Nature
 - Waterfall
-- Bite
+- Dragon Dance
 - Ice Fang
-- Rain Dance
+- Bite
 
 Alakazam (M) @ Twisted Spoon
-Level: 35
+Level: 43
 IVs: 16 HP / 16 Atk / 16 Def / 16 SpA / 16 SpD / 16 Spe
 EVs: 4 HP / 252 SpA / 252 Spe
 Bashful Nature
@@ -8464,7 +8464,7 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeot (F) @ Focus Sash  
 Ability: Keen Eye  
-Level: 47  
+Level: 54
 EVs: 160 HP / 252 Atk / 96 Spe  
 Adamant Nature  
 - Brave Bird  
@@ -8472,58 +8472,58 @@ Adamant Nature
 - Facade  
 - Roost  
 
-Rhydon (F) @ Eviolite  
-Ability: Lightning Rod  
-Level: 45  
-EVs: 160 HP / 120 Atk / 200 Def / 28 SpD  
-Impish Nature  
-- Body Press  
-- Earthquake  
-- Avalanche  
-- Curse  
+Rhydon (F) @ Eviolite
+Ability: Lightning Rod
+Level: 54
+EVs: 160 HP / 120 Atk / 200 Def / 28 SpD
+Impish Nature
+- Body Press
+- Earthquake
+- Avalanche
+- Stone Edge
 
-Arcanine (F) @ Leftovers  
-Ability: Intimidate  
-Level: 45  
-EVs: 56 HP / 252 Atk / 100 Def / 100 SpD  
-Jolly Nature  
-- Extreme Speed  
-- Will-O-Wisp  
-- Flare Blitz 
-- Play Rough  
+Arcanine (F) @ Leftovers
+Ability: Intimidate
+Level: 54
+EVs: 56 HP / 252 Atk / 100 Def / 100 SpD
+Jolly Nature
+- Extreme Speed
+- Wild Charge
+- Flare Blitz
+- Play Rough
 
-Exeggutor (M) @ Sitrus Berry  
-Ability: Harvest  
-Level: 45  
-EVs: 100 HP / 200 SpA / 208 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Sludge Bomb  
-- Solar Beam  
-- Sunny Day  
-- Psychic  
-
-Alakazam (M) @ Life Orb  
-Ability: Magic Guard  
-Level: 47  
-EVs: 200 HP / 252 SpA / 56 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Dazzling Gleam  
-- Shadow Ball  
-- Calm Mind  
+Exeggutor (M) @ Sitrus Berry
+Ability: Harvest
+Level: 54
+EVs: 100 HP / 200 SpA / 208 Spe
+Timid Nature
+IVs: 0 Atk
+- Sludge Bomb
+- Giga Drain
+- Sunny Day
 - Psychic
 
-Blastoise (F) @ White Herb  
-Ability: Rain Dish  
-Level: 54  
-EVs: 248 SpA / 4 SpD / 252 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Shell Smash  
-- Rain Dance  
-- Ice Beam  
-- Surf  
+Alakazam (M) @ Life Orb
+Ability: Magic Guard
+Level: 54
+EVs: 200 HP / 252 SpA / 56 Spe
+Modest Nature
+IVs: 0 Atk
+- Dazzling Gleam
+- Shadow Ball
+- Calm Mind
+- Psychic
+
+Blastoise (F) @ White Herb
+Ability: Rain Dish
+Level: 54
+EVs: 248 SpA / 4 SpD / 252 Spe
+Modest Nature
+IVs: 0 Atk
+- Shell Smash
+- Rain Dance
+- Ice Beam
+- Surf
 
 === TRAINER_RIVAL_ROUTE22_LATE_BULBASAUR ===
 Name: Terry
@@ -8536,53 +8536,53 @@ AI: Check Bad Move / Try To Faint / Check Viability
 
 Pidgeot (F) @ Focus Sash  
 Ability: Keen Eye  
-Level: 47  
+Level: 54
 EVs: 160 HP / 252 Atk / 96 Spe  
 Adamant Nature  
 - Brave Bird  
 - Tailwind  
 - Facade  
-- Roost 
+- Roost
 
-Rhydon (F) @ Eviolite  
-Ability: Lightning Rod  
-Level: 45  
-EVs: 160 HP / 120 Atk / 200 Def / 28 SpD  
-Impish Nature  
-- Body Press  
-- Earthquake  
-- Avalanche  
-- Curse
+Rhydon (F) @ Eviolite
+Ability: Lightning Rod
+Level: 54
+EVs: 160 HP / 120 Atk / 200 Def / 28 SpD
+Impish Nature
+- Body Press
+- Earthquake
+- Avalanche
+- Stone Edge
 
-Gyarados (M) @ Focus Sash  
-Ability: Intimidate  
-Level: 45  
-EVs: 56 HP / 252 Atk / 200 Spe  
-Adamant Nature  
-- Dragon Dance  
-- Earthquake  
-- Waterfall  
-- Ice Fang 
+Gyarados (M) @ Focus Sash
+Ability: Intimidate
+Level: 54
+EVs: 56 HP / 252 Atk / 200 Spe
+Adamant Nature
+- Dragon Dance
+- Earthquake
+- Waterfall
+- Ice Fang
 
-Arcanine (F) @ Leftovers  
-Ability: Intimidate  
-Level: 45  
-EVs: 56 HP / 252 Atk / 100 Def / 100 SpD  
-Jolly Nature  
-- Extreme Speed  
-- Will-O-Wisp  
-- Play Rough  
+Arcanine (F) @ Leftovers
+Ability: Intimidate
+Level: 54
+EVs: 56 HP / 252 Atk / 100 Def / 100 SpD
+Jolly Nature
+- Extreme Speed
+- Wild Charge
 - Flare Blitz
+- Play Rough
 
-Alakazam (M) @ Life Orb  
-Ability: Magic Guard  
-Level: 47  
-EVs: 200 HP / 252 SpA / 56 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Dazzling Gleam  
-- Shadow Ball  
-- Calm Mind  
+Alakazam (M) @ Life Orb
+Ability: Magic Guard
+Level: 54
+EVs: 200 HP / 252 SpA / 56 Spe
+Modest Nature
+IVs: 0 Atk
+- Dazzling Gleam
+- Shadow Ball
+- Calm Mind
 - Psychic 
 
 Venusaur (F) @ Rocky Helmet  
@@ -8605,68 +8605,68 @@ Music: Male
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
-Pidgeot (F) @ Focus Sash  
-Ability: Keen Eye  
-Level: 47  
-EVs: 160 HP / 252 Atk / 96 Spe  
-Adamant Nature  
-- Brave Bird  
-- Tailwind  
-- Facade  
-- Roost  
+Pidgeot (F) @ Focus Sash
+Ability: Keen Eye
+Level: 54
+EVs: 160 HP / 252 Atk / 96 Spe
+Adamant Nature
+- Brave Bird
+- Tailwind
+- Facade
+- Roost
 
-Rhydon (F) @ Eviolite  
-Ability: Lightning Rod  
-Level: 45  
-EVs: 160 HP / 120 Atk / 200 Def / 28 SpD  
-Impish Nature  
-- Body Press  
-- Earthquake  
-- Avalanche  
-- Curse  
+Rhydon (F) @ Eviolite
+Ability: Lightning Rod
+Level: 54
+EVs: 160 HP / 120 Atk / 200 Def / 28 SpD
+Impish Nature
+- Body Press
+- Earthquake
+- Avalanche
+- Stone Edge
 
-Exeggutor (M) @ Sitrus Berry  
-Ability: Harvest  
-Level: 45  
-EVs: 100 HP / 200 SpA / 208 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Sludge Bomb  
-- Solar Beam  
-- Sunny Day  
+Exeggutor (M) @ Sitrus Berry
+Ability: Harvest
+Level: 54
+EVs: 100 HP / 200 SpA / 208 Spe
+Timid Nature
+IVs: 0 Atk
+- Sludge Bomb
+- Giga Drain
+- Sleep Powder
 - Psychic
 
-Gyarados (M) @ Focus Sash  
-Ability: Intimidate  
-Level: 45  
-EVs: 56 HP / 252 Atk / 200 Spe  
-Adamant Nature  
-- Dragon Dance  
-- Earthquake  
-- Waterfall  
-- Ice Fang 
+Gyarados (M) @ Focus Sash
+Ability: Intimidate
+Level: 54
+EVs: 56 HP / 252 Atk / 200 Spe
+Adamant Nature
+- Dragon Dance
+- Earthquake
+- Waterfall
+- Ice Fang
 
-Alakazam (M) @ Life Orb  
-Ability: Magic Guard  
-Level: 47  
-EVs: 200 HP / 252 SpA / 56 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Dazzling Gleam  
-- Shadow Ball  
-- Calm Mind  
+Alakazam (M) @ Life Orb
+Ability: Magic Guard
+Level: 54
+EVs: 200 HP / 252 SpA / 56 Spe
+Modest Nature
+IVs: 0 Atk
+- Dazzling Gleam
+- Shadow Ball
+- Calm Mind
 - Psychic
 
-Charizard (F) @ Charti Berry  
-Ability: Solar Power  
-Level: 54  
-EVs: 8 HP / 252 SpA / 248 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Scorching Sands  
+Charizard (F) @ Charti Berry
+Ability: Solar Power
+Level: 54
+EVs: 8 HP / 252 SpA / 248 Spe
+Timid Nature
+IVs: 0 Atk
+- Scorching Sands
 - Flamethrower  
-- Sunny Day  
-- Air Slash 
+- Sunny Day
+- Air Slash
 
 === TRAINER_CHAMPION_FIRST_SQUIRTLE ===
 Name: Terry
