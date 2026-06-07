@@ -210,7 +210,7 @@
       "y": 63,
       "elevation": 3,
       "item": "ITEM_LEPPA_BERRY",
-      "flag": "FLAG_HIDDEN_ITEM_SIX_ISLAND_WATER_PATH_PINAP_BERRY",
+      "flag": "FLAG_HIDDEN_ITEM_SIX_ISLAND_WATER_PATH_LEPPA_BERRY",
       "quantity": 1,
       "underfoot": false
     },

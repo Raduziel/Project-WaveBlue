@@ -95,7 +95,7 @@ SSAnne_2F_Room2_EventScript_ItemStardust::
 	finditem ITEM_STARDUST
 	end
 
-SSAnne_2F_Room4_EventScript_ItemXAttack::
+SSAnne_2F_Room4_EventScript_ItemProtein::
 	finditem ITEM_PROTEIN
 	end
 
@@ -123,7 +123,7 @@ RocketHideout_B1F_EventScript_ItemBottleCap::
 	finditem ITEM_BOTTLE_CAP
 	end
 
-RocketHideout_B1F_EventScript_ItemHyperPotion::
+RocketHideout_B1F_EventScript_ItemGripClaw::
 	finditem ITEM_GRIP_CLAW
 	end
 
@@ -307,7 +307,7 @@ SilphCo_6F_EventScript_ItemHPUp::
 	finditem ITEM_HP_UP
 	end
 
-SilphCo_6F_EventScript_ItemXSpecial::
+SilphCo_6F_EventScript_ItemZinc::
 	finditem ITEM_ZINC
 	end
 
@@ -515,7 +515,7 @@ MtMoon_B2F_EventScript_ItemAntidote::
 	finditem ITEM_ANTIDOTE
 	end
 
-Route11_EventScript_ItemXDefend::
+Route11_EventScript_ItemIron::
 	finditem ITEM_IRON
 	end
 
@@ -523,7 +523,7 @@ Route9_EventScript_ItemBurnHeal::
 	finditem ITEM_BURN_HEAL
 	end
 
-RockTunnel_1F_EventScript_ItemRepel::
+RockTunnel_1F_EventScript_ItemLure::
 	finditem ITEM_LURE
 	end
 
@@ -611,7 +611,7 @@ SafariZone_North_EventScript_ItemQuickClaw::
 	finditem ITEM_QUICK_CLAW
 	end
 
-SeafoamIslands_1F_EventScript_ItemIceHeal::
+SeafoamIslands_1F_EventScript_ItemSnowball::
 	finditem ITEM_SNOWBALL
 	end
 
@@ -655,7 +655,7 @@ OneIsland_KindleRoad_EventScript_ItemEther::
 	finditem ITEM_ETHER
 	end
 
-OneIsland_KindleRoad_EventScript_ItemMaxRepel::
+OneIsland_KindleRoad_EventScript_ItemMaxLure::
 	finditem ITEM_MAX_LURE
 	end
 
@@ -739,7 +739,7 @@ MtEmber_Exterior_EventScript_ItemMagmarizer::
 	finditem ITEM_MAGMARIZER
 	end
 
-MtEmber_Exterior_EventScript_ItemDireHit::
+MtEmber_Exterior_EventScript_ItemLansatBerry::
 	finditem ITEM_LANSAT_BERRY
 	end
 
@@ -795,8 +795,8 @@ FiveIsland_LostCave_Room14_EventScript_ItemRareCandy::
 	finditem ITEM_RARE_CANDY
 	end
 
-SevenIsland_SevaultCanyon_House_EventScript_ItemLuckyPunch::
-	finditem ITEM_LUCKY_PUNCH
+SevenIsland_SevaultCanyon_House_EventScript_ItemPunchingGlove::
+	finditem ITEM_PUNCHING_GLOVE
 	end
 
 SilphCo_4F_EventScript_ItemTM41::

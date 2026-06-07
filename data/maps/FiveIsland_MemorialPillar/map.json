@@ -120,7 +120,7 @@
       "y": 7,
       "elevation": 3,
       "item": "ITEM_BIG_MUSHROOM",
-      "flag": "FLAG_HIDDEN_ITEM_FIVE_ISLAND_MEMORIAL_PILLAR_RAZZ_BERRY",
+      "flag": "FLAG_HIDDEN_ITEM_FIVE_ISLAND_MEMORIAL_PILLAR_BIG_MUSHROOM_1",
       "quantity": 1,
       "underfoot": false
     },
@@ -140,7 +140,7 @@
       "y": 25,
       "elevation": 3,
       "item": "ITEM_BIG_MUSHROOM",
-      "flag": "FLAG_HIDDEN_ITEM_FIVE_ISLAND_MEMORIAL_PILLAR_BLUK_BERRY",
+      "flag": "FLAG_HIDDEN_ITEM_FIVE_ISLAND_MEMORIAL_PILLAR_BIG_MUSHROOM_2",
       "quantity": 1,
       "underfoot": false
     }
