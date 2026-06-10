@@ -40,6 +40,7 @@ CeladonCity_DepartmentStore_5F_Vitamins::
 	.2byte ITEM_CARBOS
 	.2byte ITEM_PP_UP
 	.2byte ITEM_ABILITY_CAPSULE
+	.2byte ITEM_ABILITY_PATCH
 	.2byte ITEM_NONE
 	release
 	end
