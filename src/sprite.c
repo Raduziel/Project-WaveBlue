@@ -1608,7 +1608,7 @@ void DoLoadSpritePalette(const u16 *src, u16 paletteOffset)
     LoadPaletteFast(src, OBJ_PLTT_OFFSET + paletteOffset, PLTT_SIZE_4BPP);
 }
 
-u32 AllocSpritePalette(u16 tag)
+u32 AllocSpritePaletteUnchecked(u16 tag)
 {
     u32 index = IndexOfSpritePaletteTag(TAG_NONE);
     if (index == 0xFF)
@@ -1620,6 +1620,22 @@ u32 AllocSpritePalette(u16 tag)
         sSpritePaletteTags[index] = tag;
         return index;
     }
+}
+
+u32 AllocSpritePalette(u16 tag)
+{
+    u32 index = IndexOfSpritePaletteTag(tag);
+    if (index != 0xFF)
+        return index;
+
+    index = AllocSpritePaletteUnchecked(tag);
+
+    assertf(index != 0xFF, "Failed allocating sprite palette for tag: %d", tag)
+    {
+        return 0xFF;
+    }
+
+    return index;
 }
 
 u32 IndexOfSpritePaletteTag(u16 tag)

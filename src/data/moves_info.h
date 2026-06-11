@@ -8347,8 +8347,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Meteor Mash"),
         .description = COMPOUND_STRING(
-            "Fires a\nmeteor-like punch.\n"
-            "May raise the user's Attack."),
+            "Fires a meteor-like\n"
+            "punch. May raise\n"
+            "the user's Attack."),
         .effect = EFFECT_HIT,
         .power = B_UPDATED_MOVE_DATA >= GEN_6 ? 90 : 100,
         .type = TYPE_STEEL,

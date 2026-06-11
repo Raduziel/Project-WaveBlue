@@ -1708,6 +1708,7 @@ static void CreateEventMon(struct Pokemon *mon, enum Species species, u8 level, 
 
     CreateMon(mon, species, level, personality, otId);
     SetMonData(mon, MON_DATA_MODERN_FATEFUL_ENCOUNTER, &isModernFatefulEncounter);
+    CalculateMonStats(mon);
 }
 
 static enum FacilityClass GetUnionRoomTrainerFacilityClass(void)
@@ -1750,6 +1751,7 @@ void CreateEnemyEventMon(void)
 
     CreateEventMon(&gEnemyParty[0], species, level, Random32(), OTID_STRUCT_PLAYER_ID);
     SetBoxMonIVs(&gEnemyParty[0].box, USE_RANDOM_IVS);
+    CalculateMonStats(&gEnemyParty[0]);
     GiveMonInitialMoveset(&gEnemyParty[0]);
     if (itemId)
     {

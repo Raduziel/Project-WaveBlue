@@ -27,7 +27,11 @@
 #include "constants/songs.h"
 #include "constants/sound.h"
 
+#define POKEDEX_WINDOW_COUNT 16
+#define MAX_DEX_ITEMS_SHOWN 9
 #define TAG_AREA_MARKERS 2001
+#define TAG_SILHOUETTE 30000
+#define TAG_CATEGORY_SELECTION_CURSOR 30001
 
 enum TextMode {
     TEXT_LEFT,
@@ -3155,6 +3159,7 @@ u8 DexScreen_DrawMonAreaPage(void)
     bool8 monIsCaught;
     s16 left, top;
     u16 species;
+    u32 palSlot;
     u16 kantoMapVoff;
 
     species = sPokedexScreenData->dexSpecies;
@@ -3267,19 +3272,20 @@ u8 DexScreen_DrawMonAreaPage(void)
 
     // Show size comparison
     ResetAllPicSprites();
-    LoadPalette(sPalette_Silhouette, OBJ_PLTT_ID(2), PLTT_SIZE_4BPP);
+    palSlot = AllocSpritePalette(TAG_SILHOUETTE);
+    LoadPalette(sPalette_Silhouette, OBJ_PLTT_ID(palSlot), PLTT_SIZE_4BPP);
 
     if (monIsCaught)
     {
         sPokedexScreenData->windowIds[14] = CreateMonFrontPicSprite(species, FALSE, DexScreen_GetDefaultPersonality(species), 40, 104, 0, TAG_NONE);
-        gSprites[sPokedexScreenData->windowIds[14]].oam.paletteNum = 2;
+        gSprites[sPokedexScreenData->windowIds[14]].oam.paletteNum = palSlot;
         gSprites[sPokedexScreenData->windowIds[14]].oam.affineMode = ST_OAM_AFFINE_NORMAL;
         gSprites[sPokedexScreenData->windowIds[14]].oam.matrixNum = 2;
         gSprites[sPokedexScreenData->windowIds[14]].oam.priority = 1;
         gSprites[sPokedexScreenData->windowIds[14]].y2 = gSpeciesInfo[species].pokemonOffset;
         SetOamMatrix(2, gSpeciesInfo[species].pokemonScale, 0, 0, gSpeciesInfo[species].pokemonScale);
         sPokedexScreenData->windowIds[15] = CreateTrainerFrontPicSprite(PlayerGenderToFrontTrainerPicId(gSaveBlock2Ptr->playerGender), 80, 104, 0);
-        gSprites[sPokedexScreenData->windowIds[15]].oam.paletteNum = 2;
+        gSprites[sPokedexScreenData->windowIds[15]].oam.paletteNum = palSlot;
         gSprites[sPokedexScreenData->windowIds[15]].oam.affineMode = ST_OAM_AFFINE_NORMAL;
         gSprites[sPokedexScreenData->windowIds[15]].oam.matrixNum = 1;
         gSprites[sPokedexScreenData->windowIds[15]].oam.priority = 1;

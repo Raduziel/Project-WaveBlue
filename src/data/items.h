@@ -2324,9 +2324,8 @@ const struct ItemInfo gItemsInfo[] =
         .price = 400,
         .holdEffectParam = 100,
         .description = COMPOUND_STRING(
-            "Makes Pokémon more "
-            "likely to\nappear "
-            "for 100 steps."),
+            "Encounters become the\n"
+            "highest level for 100 steps."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FIELD_USE,
         .type = ITEM_USE_BAG_MENU,
@@ -2343,9 +2342,8 @@ const struct ItemInfo gItemsInfo[] =
         .price = 700,
         .holdEffectParam = 200,
         .description = COMPOUND_STRING(
-            "Makes Pokémon more "
-            "likely to\nappear "
-            "for 200 steps."),
+            "Encounters become the\n"
+            "highest level for 200 steps."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FIELD_USE,
         .type = ITEM_USE_BAG_MENU,
@@ -2362,9 +2360,8 @@ const struct ItemInfo gItemsInfo[] =
         .price = 900,
         .holdEffectParam = 250,
         .description = COMPOUND_STRING(
-            "Makes Pokémon more "
-            "likely to\nappear "
-            "for 250 steps."),
+            "Encounters become the\n"
+            "highest level for 250 steps."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_FIELD_USE,
         .type = ITEM_USE_BAG_MENU,
