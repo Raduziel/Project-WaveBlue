@@ -62,4 +62,3 @@ CeladonCity_Condominiums_RoofRoom_EventScript_Blackboard::
 	msgbox CeladonCity_Condominiums_RoofRoom_Text_WirelessAdapterLecture
 	releaseall
 	end
-	

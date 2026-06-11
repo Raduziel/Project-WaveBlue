@@ -4776,7 +4776,7 @@ bool32 DoesMonMeetAdditionalConditions(struct Pokemon *mon, const struct Evoluti
             break;
         // Gen 5
         case IF_TRADE_PARTNER_SPECIES:
-            if (params[i].arg1 == partnerSpecies && partnerHoldEffect != HOLD_EFFECT_PREVENT_EVOLVE)
+            if (params[i].arg1 == partnerSpecies && !(partnerHoldEffect == HOLD_EFFECT_PREVENT_EVOLVE || partnerHoldEffect == HOLD_EFFECT_EVIOLITE))
                 currentCondition = TRUE;
             break;
         // Gen 6
@@ -4971,9 +4971,8 @@ u32 GetEvolutionTargetSpecies(struct Pokemon *mon, enum EvolutionMode mode, u16 
         holdEffect = GetItemHoldEffect(heldItem);
 
     // Prevent evolution with Everstone, unless we're just viewing the party menu with an evolution item
-    if (holdEffect == HOLD_EFFECT_PREVENT_EVOLVE
-        && mode != EVO_MODE_ITEM_CHECK
-        && (P_KADABRA_EVERSTONE < GEN_4 || species != SPECIES_KADABRA))
+    if ((holdEffect == HOLD_EFFECT_PREVENT_EVOLVE || holdEffect == HOLD_EFFECT_EVIOLITE)
+        && mode != EVO_MODE_ITEM_CHECK)
         return SPECIES_NONE;
 
     switch (mode)

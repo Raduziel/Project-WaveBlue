@@ -12,31 +12,24 @@ Route10_PokemonCenter_1F_Text_HeardGhostsHauntLavender::
     .string "I heard that ghosts haunt\n"
     .string "Lavender Town.$"
 
-Route10_PokemonCenter_1F_Text_GiveEverstoneIfCaught20Mons::
-    .string "Oh… {PLAYER}!\n"
-    .string "I've been looking for you!\p"
-    .string "It's me, one of the ever-present\n"
-    .string "Aides to Prof. Oak.\p"
+Route10_PokemonCenter_1F_Text_GiveAmuletCoinIfCaught40::
+    .string "Hi! Remember me?\n"
+    .string "I'm one of Prof. Oak's Aides.\p"
     .string "I'm supposed to give you a gift.\p"
-    .string "Prof. Oak entrusted me with this\n"
-    .string "Everstone.\p"
+    .string "Prof. Oak entrusted me with an\n"
+    .string "Amulet Coin for you.\p"
     .string "So, {PLAYER}, let me ask you.\p"
-    .string "Do you want the Everstone?$"
+    .string "Do you want the Amulet Coin?$"
 
 Route10_PokemonCenter_1F_Text_GreatHereYouGo::
     .string "Congratulations! Here you go!$"
 
-Route10_PokemonCenter_1F_Text_ReceivedEverstoneFromAide::
-    .string "{PLAYER} received the Everstone\n"
+Route10_PokemonCenter_1F_Text_ReceivedAmuletCoinFromAide::
+    .string "{PLAYER} received the Amulet Coin\n"
     .string "from the Aide.$"
 
-Route10_PokemonCenter_1F_Text_ExplainEverstone::
-    .string "Making Pokémon evolve certainly\n"
-    .string "can add to the Pokédex.\p"
-    .string "However, at times, you may not\n"
-    .string "want a certain Pokémon to evolve.\p"
-    .string "In that case, give the Everstone\n"
-    .string "to that Pokémon.\p"
-    .string "It will prevent evolution according\n"
-    .string "to the Professor.$"
-
+Route10_PokemonCenter_1F_Text_ExplainAmuletCoin::
+    .string "An Amulet Coin is an item to be\n"
+    .string "held by a Pokémon.\p"
+    .string "If the Pokémon appears in a winning\n"
+    .string "battle, you will earn more money.$"

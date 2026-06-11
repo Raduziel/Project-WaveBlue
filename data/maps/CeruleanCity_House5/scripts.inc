@@ -1,12 +1,12 @@
 CeruleanCity_House5_MapScripts::
 	.byte 0
 
-CeruleanCity_House5_EventScript_BerryPowderMan::
+CeruleanCity_House5_EventScript_BerryMartMan::
 	lock
 	faceplayer
-	goto_if_set FLAG_GOT_POWDER_JAR, CeruleanCity_House5_EventScript_ShortGreeting
+	goto_if_set FLAG_MET_BERRY_MART_MAN, CeruleanCity_House5_EventScript_ShortGreeting
 	msgbox CeruleanCity_House5_Text_Greeting, MSGBOX_DEFAULT
-	setflag FLAG_GOT_POWDER_JAR
+	setflag FLAG_MET_BERRY_MART_MAN
 	pokemart CeruleanCity_Herb_Berry_Mart
 	release
 	end

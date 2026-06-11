@@ -10468,9 +10468,9 @@ const struct ItemInfo gItemsInfo[] =
         .holdEffect = HOLD_EFFECT_EVIOLITE,
         .holdEffectParam = 50,
         .description = COMPOUND_STRING(
-            "Raises the Def and "
-            "Sp. Def of\nPokémon "
-            "that can evolve."),
+            "Prevents evolution. Raises\n"
+            "Def and Sp. Def of\n"
+            "Pokémon that can evolve."),
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_HELD_ITEM,
         .type = ITEM_USE_BAG_MENU,
