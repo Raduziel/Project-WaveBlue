@@ -11,7 +11,6 @@ LavenderTown_OnTransition::
     compare VAR_LAVENDER_AIR_BALLOON, 1
     goto_if_eq LavenderTown_EventScript_SetRefusedState
     setflag FLAG_HIDE_LAVENDER_TOWN_AIR_BALLOON
-    clearflag FLAG_HIDE_AIR_BALLOON_BOY
     end
 	
 LavenderTown_EventScript_SetRefusedState::

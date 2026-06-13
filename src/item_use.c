@@ -81,6 +81,7 @@ static void UseTownMapFromBag(void);
 static void Task_UseTownMapFromField(u8 taskId);
 static void UseFameCheckerFromBag(void);
 static void Task_UseFameCheckerFromField(u8 taskId);
+static void ItemUseOnFieldCB_WhiteFlute(u8 taskId);
 static void ItemUseOnFieldCB_WailmerPailBerry(u8);
 static void ItemUseOnFieldCB_WailmerPailSudowoodo(u8);
 static bool8 TryToWaterSudowoodo(void);
@@ -862,12 +863,8 @@ void ItemUseOutOfBattle_BlackWhiteFlute(u8 taskId)
     ItemUse_SetQuestLogEvent(QL_EVENT_USED_ITEM, NULL, gSpecialVar_ItemId, 0xFFFF);
     if (gSpecialVar_ItemId == ITEM_WHITE_FLUTE)
     {
-        FlagSet(FLAG_SYS_WHITE_FLUTE_ACTIVE);
-        FlagClear(FLAG_SYS_BLACK_FLUTE_ACTIVE);
-        CopyItemName(gSpecialVar_ItemId, gStringVar2);
-        StringExpandPlaceholders(gStringVar4, gText_UsedVar2WildLured);
-        gTasks[taskId].func = Task_UsedBlackWhiteFlute;
-        gTasks[taskId].data[8] = 0;
+        sItemUseOnFieldCB = ItemUseOnFieldCB_WhiteFlute;
+        SetUpItemUseOnFieldCallback(taskId);
     }
     else if (gSpecialVar_ItemId == ITEM_BLACK_FLUTE)
     {
@@ -1290,6 +1287,16 @@ void ItemUseOutOfBattle_Honey(u8 taskId)
 {
     sItemUseOnFieldCB = ItemUseOnFieldCB_Honey;
     SetUpItemUseOnFieldCallback(taskId);
+}
+
+static void ItemUseOnFieldCB_WhiteFlute(u8 taskId)
+{
+    Overworld_ResetStateAfterDigEscRope();
+    CopyItemName(gSpecialVar_ItemId, gStringVar2);
+    StringExpandPlaceholders(gStringVar4, gText_PlayerUsedVar2);
+    gTasks[taskId].data[0] = 0;
+    PlaySE(SE_GLASS_FLUTE);
+    DisplayItemMessageOnField(taskId, FONT_NORMAL, gStringVar4, Task_UseHoneyOnField);
 }
 
 void ItemUseOutOfBattle_CannotUse(u8 taskId)

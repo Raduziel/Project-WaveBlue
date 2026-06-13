@@ -2,7 +2,20 @@ CeladonCity_House1_MapScripts::
 	.byte 0
 
 CeladonCity_House1_EventScript_RocketChief::
-	msgbox CeladonCity_House1_Text_SlotsReelInTheDough, MSGBOX_NPC
+	lock
+	faceplayer
+	msgbox CeladonCity_House1_Text_ChiefFoundFlute, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_ROCKET_CELADON_CHIEF, CeladonCity_House1_Text_ChiefDefeated
+	msgbox CeladonCity_House1_Text_ChiefFlee
+	fadescreen FADE_TO_BLACK
+	closemessage
+	removeobject LOCALID_CELADON_ROCKET_CHIEF
+	removeobject LOCALID_CELADON_ROCKET_1
+	removeobject LOCALID_CELADON_ROCKET_2
+	addobject LOCALID_WEIRD_FLUTE
+	clearflag FLAG_HIDE_WEIRD_FLUTE
+	fadescreen FADE_FROM_BLACK
+	release
 	end
 
 CeladonCity_House1_EventScript_Rocket1::

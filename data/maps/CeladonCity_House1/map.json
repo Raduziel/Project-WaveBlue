@@ -16,6 +16,7 @@
   "connections": null,
   "object_events": [
     {
+      "local_id": "LOCALID_CELADON_ROCKET_CHIEF",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_OLD_MAN_2",
       "x": 5,
@@ -27,9 +28,10 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "CeladonCity_House1_EventScript_RocketChief",
-      "flag": "0"
+      "flag": "FLAG_CELADON_HOUSE1_ROCKETS_FLED"
     },
     {
+      "local_id": "LOCALID_CELADON_ROCKET_1",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
       "x": 2,
@@ -41,9 +43,10 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "CeladonCity_House1_EventScript_Rocket1",
-      "flag": "0"
+      "flag": "FLAG_CELADON_HOUSE1_ROCKETS_FLED"
     },
     {
+      "local_id": "LOCALID_CELADON_ROCKET_2",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ROCKET_M",
       "x": 8,
@@ -55,7 +58,22 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "CeladonCity_House1_EventScript_Rocket2",
-      "flag": "0"
+      "flag": "FLAG_CELADON_HOUSE1_ROCKETS_FLED"
+    },
+    {
+      "local_id": "LOCALID_WEIRD_FLUTE",
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "x": 4,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "CeladonCity_House1_EventScript_ItemWhiteFlute",
+      "flag": "FLAG_HIDE_WEIRD_FLUTE"
     }
   ],
   "warp_events": [

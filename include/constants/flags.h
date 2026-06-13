@@ -192,7 +192,7 @@
 // Unused?
 #define I_EXP_SHARE_FLAG                                 0x0AF
 #define FLAG_GOT_LUCKY_EGG                               0x0B0
-#define FLAG_0x0B1                                       0x0B1 //Unused
+#define FLAG_HIDE_WEIRD_FLUTE                            0x0B1
 #define OW_FLAG_NO_ENCOUNTER                             0x0B2
 #define OW_FLAG_POKE_RIDER                               0x0B3
 #define P_FLAG_EGG_MOVES                                 0x0B4
@@ -824,7 +824,7 @@
 #define FLAG_CANCEL_BATTLE_ROOM_CHALLENGE                 0x31B
 #define FLAG_BATTLE_FRONTIER_UNLOCKED                     0x31C
 #define FLAG_DOWSING_MACHINE                              0x31D
-#define FLAG_0x31E               0x31E
+#define FLAG_CELADON_HOUSE1_ROCKETS_FLED                  0x31E
 #define FLAG_0x31F               0x31F
 #define FLAG_0x320               0x320
 #define FLAG_0x321               0x321

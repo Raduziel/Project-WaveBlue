@@ -2247,17 +2247,15 @@ const struct ItemInfo gItemsInfo[] =
     [ITEM_WHITE_FLUTE] =
     {
         .name = ITEM_NAME("White Flute"),
-        .price = (I_PRICE >= GEN_7) ? 20 : 500,
-        .holdEffectParam = 150,
+        .price = 0,
         .description = COMPOUND_STRING(
-            "A glass flute that "
-            "lures wild\nPokémon."),
+            "A glass flute that\n"
+            "draws out wild Pokémon."),
         .notConsumed = TRUE,
-        .pocket = POCKET_ITEMS,
+        .pocket = POCKET_KEY_ITEMS,
         .sortType = ITEM_TYPE_FLUTE,
-        .type = ITEM_USE_PARTY_MENU,
+        .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_BlackWhiteFlute,
-        .flingPower = 30,
         .iconPic = gItemIcon_Flute,
         .iconPalette = gItemIconPalette_WhiteFlute,
     },

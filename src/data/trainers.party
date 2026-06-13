@@ -6315,7 +6315,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Super Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6365,7 +6364,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6415,7 +6413,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6465,7 +6462,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6515,7 +6511,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6565,7 +6560,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6615,7 +6609,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6665,7 +6658,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6715,7 +6707,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6765,7 +6756,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6815,7 +6805,6 @@ Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Male
 Music: Cool
-Items: Super Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6865,7 +6854,6 @@ Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6915,7 +6903,6 @@ Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -6965,7 +6952,6 @@ Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -7015,7 +7001,6 @@ Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -7065,7 +7050,6 @@ Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -7115,7 +7099,6 @@ Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -7165,7 +7148,6 @@ Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -10236,7 +10218,6 @@ Class: Pkmn Ranger
 Pic: Pokemon Ranger M
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -10262,7 +10243,6 @@ Class: Pkmn Ranger
 Pic: Pokemon Ranger F
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -10326,7 +10306,6 @@ Class: Lady
 Pic: Lady
 Gender: Male
 Music: Female
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
@@ -10677,7 +10656,6 @@ Class: Team Rocket
 Pic: Rocket Grunt F
 Gender: Male
 Music: Aqua
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -10711,7 +10689,6 @@ Class: Team Rocket
 Pic: Rocket Grunt M
 Gender: Male
 Music: Aqua
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -11140,7 +11117,6 @@ Class: Lady
 Pic: Lady
 Gender: Male
 Music: Female
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
@@ -11724,7 +11700,6 @@ Class: Pkmn Ranger
 Pic: Pokemon Ranger M
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -11750,7 +11725,6 @@ Class: Pkmn Ranger
 Pic: Pokemon Ranger M
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -11784,7 +11758,6 @@ Class: Pkmn Ranger
 Pic: Pokemon Ranger F
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -11806,7 +11779,6 @@ Class: Pkmn Ranger
 Pic: Pokemon Ranger F
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -11824,7 +11796,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -11874,7 +11845,6 @@ Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -11924,7 +11894,6 @@ Class: Cool Couple
 Pic: Cool Couple
 Gender: Male
 Music: Cool
-Items: Full Restore / Full Restore
 Double Battle: Yes
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -12030,7 +11999,6 @@ Class: Lady
 Pic: Lady
 Gender: Male
 Music: Female
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move
 
@@ -14189,7 +14157,6 @@ Class: Pkmn Ranger
 Pic: Pokemon Ranger M
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -14215,7 +14182,6 @@ Class: Pkmn Ranger
 Pic: Pokemon Ranger F
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -14283,7 +14249,6 @@ Class: Pkmn Ranger
 Pic: Pokemon Ranger M
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -14317,7 +14282,6 @@ Class: Pkmn Ranger
 Pic: Pokemon Ranger F
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -14335,7 +14299,6 @@ Class: Cooltrainer
 Pic: Cooltrainer M
 Gender: Male
 Music: Cool
-Items: Full Restore
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -14385,7 +14348,6 @@ Class: Cooltrainer
 Pic: Cooltrainer F
 Gender: Male
 Music: Cool
-Items: Hyper Potion
 Double Battle: No
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -14435,7 +14397,6 @@ Class: Cool Couple
 Pic: Cool Couple
 Gender: Male
 Music: Cool
-Items: Full Restore / Full Restore
 Double Battle: Yes
 AI: Check Bad Move / Try To Faint / Check Viability
 
@@ -15403,3 +15364,42 @@ AI: Basic Trainer
 Beldum
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_ROCKET_CELADON_CHIEF ===
+Name: Admin
+Class: Team Rocket
+Pic: Gentleman
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Arbok @ Sitrus Berry
+Ability: Intimidate
+Level: 27
+EVs: 6 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Crunch
+- Glare
+- Ice Fang
+- Dig
+
+Hypno @ Wide Lens
+Ability: Insomnia
+Level: 27
+EVs: 6 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Hypnosis
+- Ice Punch
+- Brick Break
+- Zen Headbutt
+
+Raticate @ Focus Sash
+Ability: Guts
+Level: 27
+EVs: 6 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Crunch
+- Facade
+- Swords Dance
+- Reversal

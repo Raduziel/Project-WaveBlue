@@ -603,6 +603,10 @@ CeladonCity_Condominiums_RoofRoom_EventScript_ItemTM42::
 	finditem ITEM_TM42
 	end
 
+	CeladonCity_House1_EventScript_ItemWhiteFlute::
+		finditem ITEM_WHITE_FLUTE
+		end	
+
 RocketHideout_B3F_EventScript_ItemBlackGlasses::
 	finditem ITEM_BLACK_GLASSES
 	end
