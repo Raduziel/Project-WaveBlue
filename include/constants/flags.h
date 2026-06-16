@@ -207,7 +207,7 @@
 #define FLAG_HIDE_POKEMON_MANSION_B1F_TM35               0x0BD
 #define FLAG_HIDE_CELADON_ROOFROOM_TM42                  0x0BE
 #define FLAG_HIDE_ROCKET_HIDEOUT_B3F_SMOKE_BALL          0x0BF
-#define FLAG_HIDE_ROUTE10_BLACK_SLUDGE                   0x0C0
+#define FLAG_GOT_BLACK_SLUDGE                            0x0C0
 #define FLAG_HIDE_MT_MOON_B1F_HARD_STONE                 0x0C1
 #define FLAG_HIDE_SEAFOAM_ISLANDS_B2F_TM13               0x0C2
 #define FLAG_HIDE_SEAFOAM_ISLANDS_B3F_ICY_ROCK           0x0C3

@@ -30,7 +30,20 @@ VermilionCity_EventScript_HideOaksAide::
 	return
 
 VermilionCity_EventScript_Woman::
-	msgbox VermilionCity_Text_GrimerMultipliesInSludge, MSGBOX_NPC
+	lock
+	faceplayer
+	goto_if_set FLAG_GOT_BLACK_SLUDGE, VermilionCity_EventScript_WomanAlreadyGaveSludge
+	msgbox VermilionCity_Text_GrimerMultipliesInSludge, MSGBOX_DEFAULT
+	giveitem ITEM_BLACK_SLUDGE
+	goto_if_eq VAR_RESULT, FALSE, EventScript_BagIsFull
+	setflag FLAG_GOT_BLACK_SLUDGE
+	msgbox VermilionCity_Text_ThankYouPoisonBenefit, MSGBOX_DEFAULT
+	release
+	end
+
+VermilionCity_EventScript_WomanAlreadyGaveSludge::
+	msgbox VermilionCity_Text_NoMoreToxicWaste, MSGBOX_NPC
+	release
 	end
 
 VermilionCity_EventScript_OldMan1::

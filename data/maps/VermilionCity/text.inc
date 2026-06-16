@@ -1,7 +1,17 @@
 VermilionCity_Text_GrimerMultipliesInSludge::
     .string "We're careful about pollution here.\p"
     .string "We've heard Grimer multiplies in\n"
-    .string "toxic sludge.$"
+    .string "toxic sludge.\p"
+    .string "We cleaned some up. Could you\n"
+    .string "take it away from here?$"
+
+VermilionCity_Text_ThankYouPoisonBenefit::
+    .string "Thank you! A Poison-type\n"
+    .string "Pokémon might benefit from it.$"
+
+VermilionCity_Text_NoMoreToxicWaste::
+    .string "I hope we won't find any more\n"
+    .string "toxic waste around here.$"
 
 VermilionCity_Text_DidYouSeeSSAnneInHarbor::
     .string "Did you see the S.S. Anne moored\n"

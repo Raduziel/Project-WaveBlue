@@ -579,10 +579,6 @@ ViridianCity_EventScript_ItemPotion::
 	finditem ITEM_POTION
 	end
 
-Route10_EventScript_ItemBlackSludge::
-	finditem ITEM_BLACK_SLUDGE
-	end		
-
 Route11_EventScript_ItemGreatBall::
 	finditem ITEM_GREAT_BALL
 	end
