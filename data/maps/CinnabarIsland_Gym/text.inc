@@ -124,7 +124,7 @@ CinnabarIsland_Gym_Text_DerekDefeat::
     .string "Ow!$"
 
 CinnabarIsland_Gym_Text_DerekPostBattle::
-    .string "Our , Blaine, became lost\n"
+    .string "Our Leader, Blaine, became lost\n"
     .string "in the mountains but good.\p"
     .string "Night fell when a fiery bird\n"
     .string "Pokémon appeared.\p"

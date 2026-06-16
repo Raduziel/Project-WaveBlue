@@ -1,5 +1,13 @@
 CeladonCity_House1_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, CeladonCity_House1_OnTransition
 	.byte 0
+
+CeladonCity_House1_OnTransition::
+	goto_if_set FLAG_CELADON_HOUSE1_ROCKETS_FLED, CeladonCity_House1_OnTransition_End
+	setflag FLAG_HIDE_WEIRD_FLUTE
+
+CeladonCity_House1_OnTransition_End::
+	end
 
 CeladonCity_House1_EventScript_RocketChief::
 	lock
