@@ -1,4 +1,5 @@
 #include "global.h"
+#include "battle_main.h"
 #include "bg.h"
 #include "data.h"
 #include "decompress.h"
@@ -16,6 +17,7 @@
 #include "palette.h"
 #include "party_menu.h"
 #include "pokemon_storage_system.h"
+#include "pokemon_summary_screen.h"
 #include "scanline_effect.h"
 #include "shop.h"
 #include "sound.h"
@@ -96,6 +98,7 @@ static EWRAM_DATA struct {
 static EWRAM_DATA struct {
     void (* nextScreenCallback)(void);
     u8 discSpriteId;
+    u8 typeIconSpriteId;
     u8 maxTMsShown;
     u8 numTMs;
     u8 contextMenuWindowId;
@@ -382,6 +385,12 @@ static const struct CompressedSpriteSheet sSpriteSheet_Disc = {
     .tag = TAG_DISC
 };
 
+static const u16 sDiscPaletteDummy[16] = {0};
+static const struct SpritePalette sSpritePalette_Disc = {
+    .data = sDiscPaletteDummy,
+    .tag = TAG_DISC
+};
+
 static const struct SpriteTemplate sSpriteTemplate_Disc = {
     .tileTag = TAG_DISC,
     .paletteTag = TAG_DISC,
@@ -535,6 +544,8 @@ static bool8 DoSetUpTMCaseUI(void)
         gMain.state++;
         break;
     case 14:
+        sTMCaseDynamicResources->typeIconSpriteId = CreateSprite(&gSpriteTemplate_MoveTypes, 0, 0, 2);
+        gSprites[sTMCaseDynamicResources->typeIconSpriteId].invisible = TRUE;
         if (sTMCaseStaticResources.menuType == TMCASE_POKEDUDE)
             taskId = CreateTask(Task_Pokedude_Start, 0);
         else
@@ -624,6 +635,9 @@ static bool8 HandleLoadTMCaseGraphicsAndPalettes(void)
         break;
     case 4:
         LoadCompressedSpriteSheet(&sSpriteSheet_Disc);
+        LoadSpritePalette(&sSpritePalette_Disc);
+        LoadCompressedSpriteSheet(&gSpriteSheet_MoveTypes);
+        LoadPalette(gMoveTypes_Pal, OBJ_PLTT_ID(13), 3 * PLTT_SIZE_4BPP);
         sTMCaseDynamicResources->seqId++;
         break;
     default:
@@ -1557,6 +1571,7 @@ static void PrintMoveInfo(enum Item itemId)
     FillWindowPixelRect(WIN_MOVE_INFO, 0, 0, 0, 40, 48);
     if (itemId == ITEM_NONE)
     {
+        gSprites[sTMCaseDynamicResources->typeIconSpriteId].invisible = TRUE;
         for (u32 i = 0; i < 4; i++)
             TMCase_Print(WIN_MOVE_INFO, FONT_NORMAL_COPY_2, gText_ThreeHyphens, 7, 12 * i, 0, 0, TEXT_SKIP_DRAW, COLOR_MOVE_INFO);
         CopyWindowToVram(WIN_MOVE_INFO, COPYWIN_GFX);
@@ -1565,8 +1580,16 @@ static void PrintMoveInfo(enum Item itemId)
     {
         const u8 *str;
         enum Move move = ItemIdToBattleMoveId(itemId);
-        // Draw type icon
-        BlitMenuInfoIcon(WIN_MOVE_INFO, gMovesInfo[move].type + 1, 0, 0);
+
+        // Draw type icon as a sprite, matching the summary screen
+        {
+            struct Sprite *sprite = &gSprites[sTMCaseDynamicResources->typeIconSpriteId];
+            StartSpriteAnim(sprite, gMovesInfo[move].type);
+            sprite->oam.paletteNum = gTypesInfo[gMovesInfo[move].type].palette;
+            sprite->x = 72;
+            sprite->y = 110;
+            sprite->invisible = FALSE;
+        }
 
         // Print power
         if (gMovesInfo[move].power < 2)
