@@ -50,11 +50,13 @@ OneIsland_EventScript_EnterOneIslandFirstTime::
 	.endm
 
 OneIsland_Movement_PlayerWalkToPokeCenter::
+	delay_16
 	walk_up
 	walk_to_pokecenter
 	step_end
 
 OneIsland_Movement_PlayerEnterPokeCenter::
+	delay_16
 	walk_up
 	walk_up
 	set_invisible
