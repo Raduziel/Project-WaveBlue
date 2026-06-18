@@ -39,7 +39,7 @@ Help_Text_DescAboutThisGame::
 	.string "about this game.$"
 
 Help_Text_DescTypeMatchupList::
-	.string "The matchups of  Pokémon types\n"
+	.string "The matchups of Pokémon types\n"
 	.string "and moves are listed.$"
 
 Help_Text_DescExit::
