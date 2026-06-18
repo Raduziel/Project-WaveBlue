@@ -94,7 +94,7 @@ TwoIsland_JoyfulGameCorner_Text_OhThisIsFromBill::
     .string "You know, you've been fantastic.\n"
     .string "I want you to have this.$"
 
-TwoIsland_JoyfulGameCorner_Text_ReceivedMoonStoneFromLostellesDaddy::
+TwoIsland_JoyfulGameCorner_Text_ReceivedGoldBottleCapFromLostellesDaddy::
     .string "{PLAYER} received a Gold Bottle\n"
     .string "Cap from Lostelle's daddy.$"
 

@@ -1,11 +1,30 @@
 ThreeIsland_House1_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, ThreeIsland_House1_OnTransition
 	.byte 0
+
+ThreeIsland_House1_OnTransition::
+	goto_if_set FLAG_HIDE_LOSTELLE_IN_HER_HOME, ThreeIsland_House1_OnTransition_HideDaddy
+	clearflag FLAG_HIDE_LOSTELLE_DADDY_IN_HER_HOME
+	goto ThreeIsland_House1_OnTransition_End
+
+ThreeIsland_House1_OnTransition_HideDaddy::
+	setflag FLAG_HIDE_LOSTELLE_DADDY_IN_HER_HOME
+
+ThreeIsland_House1_OnTransition_End::
+	end
 
 ThreeIsland_House1_EventScript_Lostelle::
 	lock
 	faceplayer
 	special BufferBigGuyOrBigGirlString
 	msgbox ThreeIsland_House1_Text_YoureAlwaysSoCool
+	release
+	end
+
+ThreeIsland_House1_EventScript_Daddy::
+	lock
+	faceplayer
+	msgbox ThreeIsland_House1_Text_WeAreHavingAGoodTime
 	release
 	end
 

@@ -24,7 +24,7 @@ ViridianCity_Text_GymClosedWonderWhoLeaderIs::
     .string "I wonder who the Leader is?$"
 
 ViridianCity_Text_ViridiansGymLeaderReturned::
-    .string "Viridian Gym's  returned!$"
+    .string "Viridian Gym's Leader returned!$"
 
 ViridianCity_Text_WantToKnowAboutCaterpillarMons::
     .string "You want to know about the two\n"
