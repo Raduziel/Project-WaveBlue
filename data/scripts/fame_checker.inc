@@ -47,7 +47,15 @@ MtMoon_1F_EventScript_BaldingMan::
 	lock
 	faceplayer
 	famechecker FAMECHECKER_BROCK, 4
+	goto_if_set FLAG_GOT_HARD_STONE, MtMoon_1F_EventScript_BaldingManGaveStone
 	msgbox MtMoon_1F_Text_BrockHelpsExcavateFossils
+	giveitem ITEM_HARD_STONE
+	setflag FLAG_GOT_HARD_STONE
+	release
+	end
+
+MtMoon_1F_EventScript_BaldingManGaveStone::
+	msgbox MtMoon_1F_Text_NoFossilsYet
 	release
 	end
 

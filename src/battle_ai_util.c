@@ -5690,9 +5690,35 @@ bool32 AI_ShouldCopyStatChanges(enum BattlerId battlerAtk, enum BattlerId battle
 //TODO - track entire opponent party data to determine hazard effectiveness
 bool32 AI_ShouldSetUpHazards(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, struct AiLogicData *aiData)
 {
+    enum BattleSide targetSide = GetBattlerSide(battlerDef);
+    enum BattleMoveEffects effect = GetMoveEffect(move);
+
     if (CountUsablePartyMons(battlerDef) == 0
      || HasBattlerSideMoveWithAIEffect(battlerDef, AI_EFFECT_CLEAR_HAZARDS))
         return FALSE;
+
+    // Don't set up a hazard that is already at its max layers
+    switch (effect)
+    {
+    case EFFECT_STEALTH_ROCK:
+        if (IsHazardOnSide(targetSide, HAZARDS_STEALTH_ROCK))
+            return FALSE;
+        break;
+    case EFFECT_STICKY_WEB:
+        if (IsHazardOnSide(targetSide, HAZARDS_STICKY_WEB))
+            return FALSE;
+        break;
+    case EFFECT_SPIKES:
+        if (gSideTimers[targetSide].spikesAmount >= 3)
+            return FALSE;
+        break;
+    case EFFECT_TOXIC_SPIKES:
+        if (gSideTimers[targetSide].toxicSpikesAmount >= 2)
+            return FALSE;
+        break;
+    default:
+        break;
+    }
 
     if (IsBattleMoveStatus(move))
     {

@@ -86,7 +86,15 @@ MtMoon_1F_Text_ZubatIsABloodsucker::
     .string "Zubat is a bloodsucker!$"
 
 MtMoon_1F_Text_BrockHelpsExcavateFossils::
-    .string "Hi, I'm excavating for fossils here\n"
-    .string "under Mt. Moon.\p"
-    .string "Sometimes, Brock of Pewter Gym\n"
-    .string "lends me a hand.$"
+	.string "Hi, I'm excavating for fossils here\n"
+	.string "under Mt. Moon.\p"
+	.string "Sometimes, Brock of Pewter Gym\n"
+	.string "lends me a hand.\p"
+	.string "I haven't found any fossils yet,\n"
+	.string "but I did dig up this. You can\l"
+	.string "have it.$"
+
+MtMoon_1F_Text_NoFossilsYet::
+	.string "No fossils so far.\p"
+	.string "Maybe I'm digging in the wrong\n"
+	.string "place.$"

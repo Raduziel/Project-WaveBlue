@@ -208,7 +208,7 @@
 #define FLAG_HIDE_CELADON_ROOFROOM_TM42                  0x0BE
 #define FLAG_HIDE_ROCKET_HIDEOUT_B3F_SMOKE_BALL          0x0BF
 #define FLAG_GOT_BLACK_SLUDGE                            0x0C0
-#define FLAG_HIDE_MT_MOON_B1F_HARD_STONE                 0x0C1
+#define FLAG_GOT_HARD_STONE                              0x0C1
 #define FLAG_HIDE_SEAFOAM_ISLANDS_B2F_TM13               0x0C2
 #define FLAG_HIDE_SEAFOAM_ISLANDS_B3F_ICY_ROCK           0x0C3
 #define FLAG_GOT_ROCKY_HELMET                            0x0C4
@@ -762,7 +762,7 @@
 #define FLAG_TUTOR_BLAST_BURN                               0x2DF
 #define FLAG_TUTOR_HYDRO_CANNON                             0x2E0
 #define FLAG_LEARNED_ALL_MOVES_AT_CAPE_BRINK                0x2E1
-#define FLAG_GOT_NUGGET_FROM_DUNSPARCE_TUNNEL               0x2E2
+#define FLAG_GOT_TERRAIN_EXTENDER_FROM_DUNSPARCE_TUNNEL     0x2E2
 #define FLAG_USED_CUT_ON_RUIN_VALLEY_BRAILLE                0x2E3
 #define FLAG_FOUGHT_DEOXYS                                  0x2E4
 #define FLAG_0x2E5                                          0x2E5

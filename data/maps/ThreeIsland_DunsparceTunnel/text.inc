@@ -11,15 +11,17 @@ ThreeIsland_DunsparceTunnel_Text_StruckGoldThisIsForYou::
     .string "Did you hear? I've struck gold!\p"
     .string "You remembered that I was\n"
     .string "prospecting, didn't you?\p"
-    .string "You can't begin to imagine just\n"
-    .string "how happy I am.\p"
-    .string "So, I'll show you!\n"
+    .string "I've found this amidst the\n"
+    .string "debris.\p"
+    .string "You can't imagine just how\n"
+    .string "happy I am!\p"
+    .string "So I'll share my luck.\n"
     .string "This is for you!$"
 
-ThreeIsland_DunsparceTunnel_Text_ThatsANugget::
-    .string "That's a Nugget!\p"
-    .string "I can't give you any nuggets of\n"
-    .string "wisdom, so that'll have to do!$"
+ThreeIsland_DunsparceTunnel_Text_ThatsATerrainExtender::
+    .string "That's a Terrain Extender!\p"
+    .string "This is the sort of gift that only\n"
+    .string "a rich man can give!$"
 
 ThreeIsland_DunsparceTunnel_Text_WhoopsBagCrammedFull::
     .string "Whoops, your Bag is crammed full!\n"

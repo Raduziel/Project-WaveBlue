@@ -4045,24 +4045,28 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
         .validApprenticeMove = TRUE,
     },
 
-    [MOVE_FLASH] =
+   [MOVE_FLASH] =
     {
         .name = COMPOUND_STRING("Flash"),
         .description = COMPOUND_STRING(
-            "Emits a bright flash\n"
-            "that lowers accuracy.\n"
-            "May cause flinching."),
-        .effect = EFFECT_ACCURACY_DOWN,
-        .power = 0,
+            "Hits all others and lowers\n"
+            "their accuracy. Wakes any\n"
+            "sleeping Pokémon."),
+        .effect = EFFECT_HIT,
+        .power = 40,
         .type = TYPE_STEEL,
-        .accuracy = 95,
+        .accuracy = 100,
         .pp = 20,
-        .target = TARGET_SELECTED,
+        .target = TARGET_FOES_AND_ALLY,
         .priority = 0,
-        .category = DAMAGE_CATEGORY_STATUS,
+        .category = DAMAGE_CATEGORY_SPECIAL,
+        .argument = { .status = STATUS1_SLEEP },
         .additionalEffects = ADDITIONAL_EFFECTS({
-            .moveEffect = MOVE_EFFECT_FLINCH,
-            .chance = 30,
+            .moveEffect = MOVE_EFFECT_ACC_MINUS_1,
+            .chance = 100,
+        },
+        {
+            .moveEffect = MOVE_EFFECT_REMOVE_STATUS,
         }),
         .zMove = { .effect = Z_EFFECT_EVSN_UP_1 },
         .magicCoatAffected = TRUE,

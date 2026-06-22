@@ -503,10 +503,6 @@ ViridianForest_EventScript_ItemBigRoot::
 	finditem ITEM_BIG_ROOT
 	end	
 
-MtMoon_B1F_EventScript_ItemHardStone::
-	finditem ITEM_HARD_STONE
-	end
-
 MtMoon_B2F_EventScript_ItemRevive::
 	finditem ITEM_REVIVE
 	end

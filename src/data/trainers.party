@@ -4802,7 +4802,7 @@ Pic: Rival Early
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / HP Aware
 
 Pidgeotto (F)
 Level: 21
@@ -4850,7 +4850,7 @@ Pic: Rival Early
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / HP Aware
 
 Pidgeotto (F)
 Level: 21
@@ -4898,7 +4898,7 @@ Pic: Rival Early
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / HP Aware
 
 Pidgeotto (F)
 Level: 21
@@ -5275,52 +5275,52 @@ Pic: Leader Giovanni
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Prefer Status Moves / HP Aware
 
-Tauros @ White Herb  
-Ability: Intimidate  
-Level: 30
-EVs: 4 HP / 252 Atk / 252 Spe  
-Adamant Nature  
-IVs: 0 SpA  
+Tauros @ White Herb
+Ability: Intimidate
+Level: 34
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+IVs: 0 SpA
 - Close Combat
-- Zen Headbutt  
-- Wild Charge  
-- Iron Head 
+- Zen Headbutt
+- Wild Charge
+- Iron Head
 
-Beedrill @ Scope Lens  
-Ability: Sniper  
-Level: 32  
-EVs: 96 HP / 252 Atk / 160 Spe  
-Adamant Nature  
-- Focus Energy  
-- Poison Jab  
-- Aerial Ace  
-- X-Scissor  
+Beedrill @ Scope Lens
+Ability: Sniper
+Level: 34
+EVs: 96 HP / 252 Atk / 160 Spe
+Adamant Nature
+- Focus Energy
+- Poison Jab
+- Aerial Ace
+- X-Scissor
 
-Persian @ Black Glasses  
-Ability: Technician  
-Level: 32 
-EVs: 132 HP / 252 Atk / 124 Spe  
-Jolly Nature  
+Persian @ Black Glasses
+Ability: Technician
+Level: 34
+EVs: 132 HP / 252 Atk / 124 Spe
+Jolly Nature
 - Power Gem
-- Foul Play  
-- Fake Out  
-- Thief  
+- Foul Play
+- Fake Out
+- Thief
 
-Cloyster @ Leftovers  
-Ability: Skill Link  
-Level: 32
-EVs: 152 HP / 156 Atk / 200 Def  
-Impish Nature  
-- Toxic Spikes  
-- Icicle Spear  
-- Liquidation  
-- Snowscape  
+Cloyster @ Leftovers
+Ability: Skill Link
+Level: 34
+EVs: 152 HP / 156 Atk / 200 Def
+Impish Nature
+- Aqua Ring
+- Icicle Spear
+- Liquidation
+- Snowscape
 
 Kangaskhan @ Toxic Orb
 Ability: Scrappy
-Level: 33
+Level: 34
 EVs: 120 HP / 252 Atk / 8 Def / 8 SpD / 120 Spe
 Adamant Nature
 - Sucker Punch
@@ -5332,12 +5332,12 @@ Nidoqueen @ Life Orb
 Ability: Sheer Force
 Level: 34
 EVs: 160 HP / 252 SpA / 16 SpD / 80 Spe
-Calm Nature  
-IVs: 0 Atk  
-- Flamethrower  
-- Earth Power  
-- Thunderbolt  
-- Ice Beam  
+Calm Nature
+IVs: 0 Atk
+- Flamethrower
+- Earth Power
+- Thunderbolt
+- Ice Beam
 
 === TRAINER_BOSS_GIOVANNI_2 ===
 Name: Giovanni
@@ -5346,11 +5346,11 @@ Pic: Leader Giovanni
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Prefer Status Moves / HP Aware
 
 Tauros @ White Herb
 Ability: Intimidate
-Level: 39
+Level: 44
 EVs: 4 HP / 252 Atk / 252 Spe
 Adamant Nature
 IVs: 0 SpA
@@ -5361,7 +5361,7 @@ IVs: 0 SpA
 
 Beedrill @ Scope Lens  
 Ability: Sniper  
-Level: 40
+Level: 44
 EVs: 96 HP / 252 Atk / 160 Spe  
 Adamant Nature  
 - Focus Energy
@@ -5371,7 +5371,7 @@ Adamant Nature
 
 Persian @ Black Glasses
 Ability: Technician
-Level: 40
+Level: 44
 EVs: 132 HP / 252 Atk / 124 Spe
 Jolly Nature
 - Power Gem
@@ -5381,7 +5381,7 @@ Jolly Nature
 
 Cloyster @ Leftovers
 Ability: Skill Link
-Level: 40
+Level: 44
 EVs: 152 HP / 156 Atk / 200 Def
 Impish Nature  
 - Shell Smash
@@ -5391,7 +5391,7 @@ Impish Nature
 
 Kangaskhan @ Toxic Orb  
 Ability: Scrappy
-Level: 42
+Level: 44
 EVs: 120 HP / 252 Atk / 8 Def / 8 SpD / 120 Spe  
 Adamant Nature  
 - Sucker Punch
@@ -5401,7 +5401,7 @@ Adamant Nature
 
 Nidoqueen @ Life Orb  
 Ability: Sheer Force  
-Level: 43
+Level: 44
 EVs: 160 HP / 252 SpA / 16 SpD / 80 Spe  
 Calm Nature  
 IVs: 0 Atk  
@@ -5417,22 +5417,22 @@ Pic: Leader Giovanni
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Highest Damage Move / HP Aware
 
 Marowak @ Thick Club  
 Ability: Battle Armor  
-Level: 44  
+Level: 50
 EVs: 136 HP / 252 Atk / 120 Spe  
 Impish Nature  
 IVs: 0 SpA
-- Stealth Rock
-- Bonemerang
+- Swords Dance
+- Perish Song
+- Earthquake
 - Iron Head
-- Endeavor
 
 Nidoking @ Life Orb  
 Ability: Sheer Force  
-Level: 45  
+Level: 50
 EVs: 136 HP / 252 Atk / 120 Spe  
 Adamant Nature  
 - Earthquake
@@ -5442,9 +5442,9 @@ Adamant Nature
 
 Rhyperior @ Loaded Dice  
 Ability: Solid Rock  
-Level: 50  
+Level: 50
 EVs: 200 HP / 252 Atk / 56 Def  
-Adamant Nature  
+Adamant Nature
 IVs: 0 SpA  
 - Rock Blast
 - Earthquake
@@ -7198,73 +7198,73 @@ Pic: Elite Four Lorelei
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Status Moves / HP Aware
 Mugshot: Purple
 
-Ninetales-Alola (M) @ Light Ball
-Ability: Snow Warning  
-Level: 51  
-EVs: 252 SpA / 4 SpD / 252 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Dazzling Gleam  
-- Aurora Veil  
-- Fake Tears  
-- Blizzard  
+Ninetales-Alola (M) @ Light Clay
+Ability: Snow Warning
+Level: 54
+EVs: 252 SpA / 4 SpD / 252 Spe
+Timid Nature
+IVs: 0 Atk
+- Dazzling Gleam
+- Aurora Veil
+- Fake Tears
+- Blizzard
 
 Dewgong (M) @ Leftovers
-Ability: Ice Body  
-Level: 51  
-EVs: 252 HP / 120 SpA / 116 Spe  
-Calm Nature  
-IVs: 0 Atk 
+Ability: Ice Body
+Level: 54
+EVs: 252 HP / 120 SpA / 116 Spe
+Calm Nature
+IVs: 0 Atk
 - Perish Song
 - Aqua Ring
-- Ice Beam
-- Surf 
+- Blizzard
+- Surf
 
-Mr. Rime (M) @ Sitrus Berry
-Ability: Tangled Feet  
-Level: 52  
-EVs: 160 HP / 200 SpA / 28 SpD / 120 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Dazzling Gleam  
-- Freeze-Dry  
-- Slack Off  
-- Psychic  
+Jynx (F) @ Sitrus Berry
+Ability: Dry Skin
+Level: 54
+EVs: 160 HP / 200 SpA / 28 SpD / 120 Spe
+Modest Nature
+IVs: 0 Atk
+- Rain Dance
+- Ice Beam
+- Grass Knot
+- Psychic
 
 Lapras (F) @ Damp Rock
 Ability: Hydration  
-Level: 52  
+Level: 54
 EVs: 252 HP / 100 SpA / 156 SpD  
 Calm Nature  
 IVs: 0 Atk  
-- Rain Dance  
-- Ice Beam  
-- Surf  
-- Rest  
+- Weather Ball
+- Freeze-Dry
+- Rain Dance
+- Rest
 
 Glaceon (F) @ Icy Rock
 Ability: Snow Cloak  
-Level: 54  
+Level: 54
 EVs: 16 HP / 120 Def / 252 SpA / 120 Spe  
 Modest Nature  
 IVs: 0 Atk  
-- Freeze-Dry  
+- Freeze-Dry
 - Snowscape
-- Blizzard  
-- Yawn  
+- Blizzard
+- Yawn
 
 Mamoswine (M) @ Assault Vest
-Ability: Thick Fat  
-Level: 54  
-EVs: 96 HP / 168 Atk / 244 Spe  
-Adamant Nature  
-- Earthquake  
-- Heavy Slam  
+Ability: Thick Fat
+Level: 54
+EVs: 96 HP / 168 Atk / 244 Def
+Adamant Nature
+- Earthquake
+- Heavy Slam
 - Body Press
-- Avalanche  
+- Icicle Crash
  
 === TRAINER_ELITE_FOUR_BRUNO ===
 Name: Bruno
@@ -7273,65 +7273,67 @@ Pic: Elite Four Bruno
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Highest Damage Move / HP Aware
 Mugshot: Green
 
 Hitmontop (F) @ White Herb
-Ability: Intimidate  
-Level: 51  
-EVs: 56 HP / 200 Atk / 252 Spe  
-Adamant Nature  
-- Sucker Punch  
-- Close Combat  
-- Ice Spinner  
-- Endeavor  
+Ability: Intimidate
+Level: 56
+EVs: 56 HP / 200 Atk / 252 Spe
+Adamant Nature
+- Sucker Punch
+- Close Combat
+- Ice Spinner
+- Endeavor
 
 Hitmonchan (F) @ Punching Glove
-Ability: Iron Fist  
-Level: 53  
-EVs: 96 HP / 252 Atk / 160 Spe  
+Ability: Iron Fist
+Level: 56
+EVs: 96 HP / 252 Atk / 160 Spe
 Adamant Nature  
 - Drain Punch  
-- Mach Punch  
+- Bullet Punch  
 - Ice Punch  
-- Knock Off
+- Poison Jab
 
-Hitmonlee (M) @ Sitrus Berry
-Ability: Reckless  
-Level: 53  
-EVs: 96 HP / 252 Atk / 160 Spe  
-Adamant Nature  
-- High Jump Kick  
-- Sucker Punch  
-- Poison Jab  
-- Reversal  
+Hitmonlee (M) @ Wide Lens
+Ability: Reckless
+Level: 56
+EVs: 96 HP / 252 Atk / 160 Spe
+Adamant Nature
+- Axe Kick
+- Stone Edge
+- Throat Chop
+- Reversal
 
 Heracross (F) @ Flame Orb
-Ability: Guts  
-Level: 54  
-EVs: 120 HP / 252 Atk / 16 Def / 120 Spe  
-Serious Nature  
-- Close Combat  
-- Megahorn  
+Ability: Guts
+Level: 56
+EVs: 120 HP / 252 Atk / 16 Def / 120 Spe
+Serious Nature
+- Close Combat
+- Megahorn
 - Protect
-- Facade 
+- Facade
 
 Sirfetch’d (M) @ Leek
 Ability: Scrappy  
-Level: 54  
-- First Impression  
-- Swords Dance  
-- Brick Break  
-- Knock Off  
+Level: 56
+EVs: 138 HP / 252 Atk / 120 Spe
+Adamant Nature
+- First Impression
+- Swords Dance
+- Superpower
+- Brave Bird
 
 Machamp (M) @ Assault Vest
-Ability: No Guard  
-Level: 56  
-EVs: 120 HP / 252 Atk / 136 Spe  
+Ability: No Guard
+Level: 56
+EVs: 120 HP / 252 Atk / 136 Spe
 Adamant Nature  
-- Dynamic Punch  
-- Bullet Punch  
-- Stone Edge  
+- Dynamic Punch
+- Bullet Punch
+- Stone Edge
 - Knock Off
 
 === TRAINER_ELITE_FOUR_AGATHA ===
@@ -7341,72 +7343,72 @@ Pic: Elite Four Agatha
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Status Moves / HP Aware
 Mugshot: Pink
 
-Murkrow (M) @ Eviolite  
-Ability: Prankster  
-Level: 53  
-EVs: 252 HP / 160 SpA / 96 Spe  
-Calm Nature  
-IVs: 0 Atk  
+Murkrow (M) @ Eviolite
+Ability: Prankster
+Level: 58
+EVs: 252 HP / 129 Def / 129 SpD
+Calm Nature
+IVs: 0 Atk
 - Perish Song
-- Foul Play  
-- Tailwind
-- Snarl  
+- U-turn
+- Mean Look
+- Roost
 
-Houndoom (F) @ Expert Belt  
-Ability: Unnerve  
-Level: 53  
-EVs: 136 HP / 252 SpA / 120 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Flamethrower  
-- Sludge Bomb  
-- Dark Pulse  
-- Nasty Plot 
+Houndoom (F) @ Expert Belt
+Ability: Unnerve
+Level: 58
+EVs: 136 HP / 252 SpA / 120 Spe
+Modest Nature
+IVs: 0 Atk
+- Flamethrower
+- Sludge Bomb
+- Dark Pulse
+- Nasty Plot
 
-Mismagius (F) @ Fairy Feather  
-Ability: Levitate  
-Level: 54  
-EVs: 108 HP / 200 SpA / 80 SpD / 108 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Dazzling Gleam  
-- Destiny Bond  
-- Shadow Ball  
+Mismagius (F) @ Fairy Feather
+Ability: Levitate
+Level: 58
+EVs: 108 HP / 200 SpA / 80 SpD / 108 Spe
+Timid Nature
+IVs: 0 Atk
+- Dazzling Gleam
+- Destiny Bond
+- Shadow Ball
+- Fake Tears
+
+Umbreon (F) @ Mago Berry
+Ability: Synchronize
+Level: 58
+EVs: 108 HP / 192 SpA / 36 SpD / 120 Spe
+Calm Nature
+IVs: 0 Atk
 - Fake Tears  
-
-Umbreon (F) @ Mago Berry  
-Ability: Synchronize  
-Level: 54  
-EVs: 108 HP / 192 SpA / 36 SpD / 120 Spe  
-Calm Nature  
-IVs: 0 Atk  
-- Fake Tears  
-- Dark Pulse  
-- Moonlight  
+- Dark Pulse
+- Moonlight
 - Yawn
 
-Annihilape (M) @ Leftovers  
-Ability: Defiant  
-Level: 56  
-EVs: 252 HP / 160 Atk / 96 Spe  
-Impish Nature  
-- Drain Punch  
-- Rage Fist  
+Annihilape (M) @ Leftovers
+Ability: Defiant
+Level: 58
+EVs: 252 HP / 160 Atk / 96 Spe
+Impish Nature
+- Drain Punch
+- Rage Fist
 - Bulk Up
-- U-turn  
+- Substitute
 
-Gengar (M) @ Life Orb  
-Ability: Cursed Body  
-Level: 58  
-EVs: 160 HP / 252 SpA / 96 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Dazzling Gleam  
-- Sludge Bomb  
-- Shadow Ball  
+Gengar (M) @ Life Orb
+Ability: Cursed Body
+Level: 58
+EVs: 160 HP / 252 SpA / 96 Spe
+Modest Nature
+IVs: 0 Atk
+- Dazzling Gleam
+- Sludge Bomb
+- Shadow Ball
 - Nasty Plot
 
 === TRAINER_ELITE_FOUR_LANCE ===
@@ -7416,68 +7418,68 @@ Pic: Elite Four Lance
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Highest Damage Move / HP Aware
 Mugshot: Blue
 
-Gyarados (M) @ Wacan Berry  
-Ability: Intimidate  
-Level: 56  
-EVs: 4 HP / 252 Atk / 252 Spe  
-Jolly Nature  
+Gyarados (M) @ Wacan Berry
+Ability: Intimidate
+Level: 60
+EVs: 4 HP / 252 Atk / 252 Spe
+Jolly Nature
 - Dragon Dance
-- Earthquake  
-- Aqua Tail  
-- Ice Fang  
+- Earthquake
+- Aqua Tail
+- Ice Fang
 
-Charizard (F) @ Heavy-Duty Boots  
-Ability: Blaze  
-Level: 54  
-EVs: 136 HP / 252 SpA / 120 Spe  
-Mild Nature  
-IVs: 0 Atk  
-- Scorching Sands
-- Flamethrower
-- Dragon Pulse  
-- Air Slash  
-
-Kingdra (F) @ Scope Lens  
-Ability: Sniper  
-Level: 54  
-IVs: 0 Atk  
-- Focus Energy  
-- Flash Cannon 
-- Draco Meteor  
-- Surf  
-
-Aerodactyl (M) @ Life Orb  
-Ability: Rock Head  
-Level: 58  
-EVs: 160 HP / 200 Atk / 28 SpD / 120 Spe  
-Jolly Nature  
-- Dragon Claw  
+Aerodactyl (M) @ Life Orb
+Ability: Unnerve
+Level: 60
+EVs: 160 HP / 200 Atk / 28 SpD / 120 Spe
+Jolly Nature
+- Earthquake
 - Rock Slide
-- Iron Head  
-- Tailwind  
+- Iron Head
+- Tailwind
 
-Tyranitar (M) @ Assault Vest  
-Ability: Sand Stream  
-Level: 58  
-EVs: 76 HP / 180 Atk / 252 Spe  
-Jolly Nature  
-- Earthquake  
-- Stone Edge 
+Charizard (F) @ Sitrus Berry
+Ability: Blaze
+Level: 60
+EVs: 136 HP / 252 Atk / 120 Spe  
+Lonely Nature  
+IVs: 0 Atk
+- Belly Drum
+- Acrobatics
+- Dragon Claw
+- Flare Blitz
+
+Kingdra (F) @ Scope Lens
+Ability: Sniper
+Level: 60
+IVs: 0 Atk
+- Focus Energy
+- Flash Cannon
+- Draco Meteor
+- Surf
+
+Tyranitar (M) @ Assault Vest
+Ability: Sand Stream
+Level: 60
+EVs: 76 HP / 180 Atk / 252 Spe
+Jolly Nature
+- Earthquake
+- Stone Edge
 - Body Press
 - Crunch
 
-Dragonite (F) @ Loaded Dice 
-Ability: Multiscale  
-Level: 60  
-EVs: 76 HP / 252 Atk / 180 Spe  
-Adamant Nature  
-- Extreme Speed 
-- Dragon Dance  
-- Scale Shot 
-- Iron Head  
+Dragonite (F) @ Loaded Dice
+Ability: Multiscale
+Level: 60
+EVs: 76 HP / 252 Atk / 180 Spe
+Adamant Nature
+- Extreme Speed
+- Dragon Dance
+- Scale Shot
+- Iron Head
 
 === TRAINER_LEADER_BROCK ===
 Name: Brock
@@ -7486,11 +7488,11 @@ Pic: Leader Brock
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn / Powerful Status / Smart Switching / Ace Pokemon / HP Aware
 
 Geodude @ Weakness Policy  
 Ability: Sturdy  
-Level: 10  
+Level: 14
 EVs: 160 HP / 120 Atk / 200 Def / 28 SpD  
 Relaxed Nature  
 IVs: 0 SpA / 0 Spe  
@@ -7501,7 +7503,7 @@ IVs: 0 SpA / 0 Spe
 
 Kabuto @ Smooth Rock  
 Ability: Battle Armor  
-Level: 12  
+Level: 14
 EVs: 120 HP / 120 Atk / 68 Def / 200 Spe  
 Naughty Nature  
 IVs: 0 HP / 0 SpA  
@@ -7528,40 +7530,39 @@ Pic: Leader Misty
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Smart Switching / Ace Pokemon / HP Aware
 
-Psyduck @ Damp Rock  
-Ability: Swift Swim  
-Level: 15  
-EVs: 100 HP / 200 SpA / 128 SpD / 80 Spe  
+Psyduck @ Damp Rock
+Ability: Swift Swim
+Level: 21
+EVs: 100 HP / 200 SpA / 128 SpD / 80 Spe
 Calm Nature
 IVs: 0 Atk / 0 Def
+- Confuse Ray
 - Water Pulse
 - Rain Dance
 - Confusion
-- Disable
 
-Goldeen @ Rindo Berry  
-Ability: Lightning Rod  
-Level: 18  
-EVs: 100 HP / 180 Atk / 100 Def / 8 SpD / 120 Spe  
-IVs: 0 Def / 0 SpA  
+Goldeen @ Rindo Berry
+Ability: Lightning Rod
+Level: 21
+EVs: 100 HP / 180 Atk / 100 Def / 8 SpD / 120 Spe
+IVs: 0 Def / 0 SpA
+- Swords Dance
 - Poison Jab
-- Supersonic
-- Drill Run
 - Aqua Tail
+- Drill Run
 
-Starmie @ Wacan Berry 
-Ability: Illuminate  
-Level: 21  
-EVs: 200 HP / 40 Def / 252 SpA / 16 SpD  
-Quiet Nature  
-IVs: 0 Atk / 0 Spe  
-- Confuse Ray  
-- Water Pulse  
-- Psybeam  
-- Flash
- 
+Starmie @ Wacan Berry
+Ability: Illuminate
+Level: 21
+EVs: 200 HP / 40 Def / 252 SpA / 16 SpD
+Quiet Nature
+IVs: 0 Atk / 0 Spe
+- Thunder Wave
+- Water Pulse
+- Psybeam
+- Recover
 
 === TRAINER_LEADER_LT_SURGE ===
 Name: Lt. Surge
@@ -7570,40 +7571,40 @@ Pic: Leader Lt Surge
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Will Suicide / HP Aware
 
-Magnemite @ Light Clay  
-Ability: Sturdy  
-Level: 18  
-EVs: 160 HP / 28 Def / 120 SpA / 200 Spe  
-Bold Nature  
-IVs: 0 Atk / 0 SpD  
+Magnemite @ Light Clay
+Ability: Sturdy
+Level: 24
+EVs: 160 HP / 28 Def / 120 SpA / 200 Spe
+Bold Nature
+IVs: 0 Atk / 0 SpD
 - Light Screen
 - Flash Cannon
-- Shock Wave  
-- Reflect  
+- Shock Wave
+- Reflect
 
-Voltorb @ Magnet  
-Ability: Aftermath  
-Level: 21  
-EVs: 120 HP / 48 Def / 120 SpA / 20 SpD / 200 Spe  
-Rash Nature  
-IVs: 0 Atk  
-- Thunder Wave  
-- Shock Wave  
-- Screech  
-- Swift  
+Voltorb @ Magnet
+Ability: Aftermath
+Level: 24
+EVs: 120 HP / 48 Def / 120 SpA / 20 SpD / 200 Spe
+Rash Nature
+IVs: 0 Atk
+- Thunder Wave
+- Shock Wave
+- Explosion
+- Screech
 
-Raichu @ Bright Powder  
-Ability: Static  
-Level: 24  
-EVs: 252 Atk / 120 Def / 36 SpD / 100 Spe  
-Adamant Nature  
-IVs: 0 HP / 0 SpA  
-- Double Team  
-- Trailblaze  
-- Play Rough
-- Nuzzle
+Raichu @ Bright Powder
+Ability: Static
+Level: 24
+EVs: 252 Atk / 120 Def / 36 SpD / 100 Spe
+Adamant Nature
+IVs: 0 HP / 0 SpA
+- Thunder Punch
+- Brick Break
+- Trailblaze
+- Fake Out
 
 === TRAINER_LEADER_ERIKA ===
 Name: Erika
@@ -7612,40 +7613,40 @@ Pic: Leader Erika
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Status Moves / HP Aware / Stall
 
-Tangela @ Eviolite  
-Ability: Chlorophyll  
-Level: 24  
-EVs: 120 HP / 160 Def / 120 SpA / 100 SpD / 8 Spe  
-Bold Nature  
-IVs: 0 Atk / 0 SpD  
+Tangela @ Eviolite
+Ability: Chlorophyll
+Level: 29
+EVs: 120 HP / 160 Def / 120 SpA / 100 SpD / 8 Spe
+Bold Nature
+IVs: 0 Atk / 0 SpD
 - Grassy Terrain
-- Ancient Power  
-- Leech Seed  
-- Giga Drain  
+- Ancient Power
+- Leech Seed
+- Giga Drain
 
-Leafeon @ Loaded Dice  
-Ability: Chlorophyll  
-Level: 29  
-EVs: 4 HP / 252 Atk / 252 Spe  
-Impish Nature  
-IVs: 0 SpA / 0 SpD  
-- Bullet Seed 
+Leafeon @ Miracle Seed
+Ability: Chlorophyll
+Level: 29
+EVs: 4 HP / 252 Atk / 252 Spe
+Impish Nature
+IVs: 0 SpA / 0 SpD
+- Seed Bomb
 - Rock Smash
-- X-Scissor  
+- X-Scissor
 - Yawn
 
-Vileplume @ Grassy Seed 
-Ability: Effect Spore  
-Level: 29  
-EVs: 120 HP / 120 Def / 200 SpA / 60 SpD / 8 Spe  
-Calm Nature  
-IVs: 0 Atk / 0 Spe  
+Bellossom @ Big Root
+Ability: Effect Spore
+Level: 29
+EVs: 120 HP / 120 Def / 200 SpA / 60 SpD / 8 Spe
+Calm Nature
+IVs: 0 Atk / 0 Spe
 - Strength Sap
-- Sleep Powder  
-- Giga Drain  
-- Acid Spray  
+- Leech Seed
+- Giga Drain
+- Acid Spray
 
 === TRAINER_LEADER_KOGA ===
 Name: Koga
@@ -7654,11 +7655,11 @@ Pic: Leader Koga
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Status Moves / HP Aware
 
 Venomoth @ Wide Lens
 Ability: Tinted Lens
-Level: 39
+Level: 43
 EVs: 160 HP / 120 SpA / 28 SpD / 200 Spe
 Hasty Nature
 IVs: 0 Atk
@@ -7669,13 +7670,13 @@ IVs: 0 Atk
 
 Muk @ Black Sludge
 Ability: Poison Touch
-Level: 41
+Level: 43
 EVs: 160 HP / 120 Atk / 28 Def / 200 SpD
 Careful Nature
 IVs: 0 SpA
 - Poison Jab
 - Knock Off
-- Screech
+- Protect
 - Toxic
 
 Crobat @ Sitrus Berry
@@ -7687,7 +7688,7 @@ IVs: 0 SpA
 - Cross Poison
 - Acrobatics
 - Leech Life
-- Toxic
+- Substitute
 
 === TRAINER_LEADER_KOGA_2 ===
 Name: Koga
@@ -7696,11 +7697,11 @@ Pic: Leader Koga
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Status Moves / HP Aware
 
 Venomoth @ Wide Lens
 Ability: Tinted Lens
-Level: 41
+Level: 45
 EVs: 160 HP / 120 SpA / 28 SpD / 200 Spe
 Hasty Nature
 IVs: 0 Atk
@@ -7711,13 +7712,13 @@ IVs: 0 Atk
 
 Muk @ Black Sludge
 Ability: Poison Touch
-Level: 43
+Level: 45
 EVs: 160 HP / 120 Atk / 28 Def / 200 SpD
 Careful Nature
 IVs: 0 SpA
 - Poison Jab
 - Knock Off
-- Screech
+- Protect
 - Toxic
 
 Crobat @ Sitrus Berry
@@ -7729,7 +7730,7 @@ IVs: 0 SpA
 - Cross Poison
 - Acrobatics
 - Leech Life
-- Toxic
+- Substitute
 
 === TRAINER_LEADER_BLAINE ===
 Name: Blaine
@@ -7738,40 +7739,40 @@ Pic: Leader Blaine
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Prefer Highest Damage Move / HP Aware
 
-Ninetales @ Heat Rock  
-Ability: Drought  
-Level: 40  
-EVs: 100 HP / 120 SpA / 128 SpD / 160 Spe  
-Calm Nature  
-IVs: 0 Atk  
-- Will-O-Wisp 
-- Solar Beam  
-- Fake Tears  
-- Fire Blast  
-
-Arcanine @ Assault Vest  
+Arcanine @ Leftovers
 Ability: Intimidate  
-Level: 42  
+Level: 47
 EVs: 200 HP / 120 Atk / 32 Def / 36 SpD / 120 Spe  
 Jolly Nature  
 IVs: 0 SpA  
-- Extreme Speed
-- Wild Charge
+- Morning Sun
 - Flare Blitz
-- Reversal
+- Wild Charge
+- Iron Head
 
-Magmortar @ Expert Belt  
-Ability: Flame Body  
-Level: 47  
-EVs: 68 HP / 220 SpA / 120 SpD / 100 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Flamethrower  
-- Thunderbolt  
-- Acid Spray
-- Sunny Day
+Ninetales @ Heat Rock
+Ability: Drought
+Level: 47
+EVs: 100 HP / 120 SpA / 128 SpD / 160 Spe
+Calm Nature
+IVs: 0 Atk
+- Weather Ball
+- Solar Beam
+- Fake Tears
+- Hex
+
+Magmortar @ Assault Vest
+Ability: Flame Body
+Level: 47
+EVs: 68 HP / 220 SpA / 120 SpD / 100 Spe
+Modest Nature
+IVs: 0 Atk
+- Scorching Sands
+- Flamethrower
+- Solar Beam
+- Thunderbolt
 
 === TRAINER_LEADER_SABRINA ===
 Name: Sabrina
@@ -7780,28 +7781,28 @@ Pic: Leader Sabrina
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware
 
-Hypno @ Wise Glasses
+Hypno @ Terrain Extender
 Ability: Insomnia
-Level: 39
-EVs: 68 HP / 160 SpA / 160 SpD / 120 Spe
-Calm Nature
+Level: 43
+EVs: 68 HP / 160 Atk / 160 SpD / 120 Spe
+Careful Nature
 IVs: 0 Atk
 - Psychic Terrain
-- Foul Play
+- Zen Headbutt
+- Drain Punch
 - Hypnosis
-- Psyshock
 
 Mr. Mime @ Eviolite
 Ability: Filter
-Level: 41
+Level: 43
 EVs: 48 HP / 200 SpA / 100 SpD / 160 Spe
 Timid Nature
 IVs: 0 Atk
 - Dazzling Gleam
+- Thunder Wave
 - Calm Mind
-- Icy Wind
 - Psychic
 
 Alakazam @ Life Orb
@@ -7822,28 +7823,28 @@ Pic: Leader Sabrina
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware
 
 Hypno @ Wise Glasses
 Ability: Insomnia
-Level: 41
-EVs: 68 HP / 160 SpA / 160 SpD / 120 Spe
-Calm Nature
+Level: 45
+EVs: 68 HP / 160 Atk / 160 SpD / 120 Spe
+Careful Nature
 IVs: 0 Atk
 - Psychic Terrain
-- Foul Play
+- Zen Headbutt
+- Drain Punch
 - Hypnosis
-- Psyshock
 
 Mr. Mime @ Eviolite
 Ability: Filter
-Level: 43
+Level: 45
 EVs: 48 HP / 200 SpA / 100 SpD / 160 Spe
 Timid Nature
 IVs: 0 Atk
 - Dazzling Gleam
+- Thunder Wave
 - Calm Mind
-- Icy Wind
 - Psychic
 
 Alakazam @ Life Orb
@@ -7941,7 +7942,7 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / HP Aware
 
 Pidgeotto (F)
 Level: 24
@@ -7990,7 +7991,7 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / HP Aware
 
 Pidgeotto (F)
 Level: 24
@@ -8039,7 +8040,7 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / HP Aware
 
 Pidgeotto (F)
 Level: 24
@@ -8088,7 +8089,7 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / HP Aware
 
 Pidgeotto (F)
 Level: 31
@@ -8147,7 +8148,7 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / HP Aware
 
 Pidgeotto (F)
 Level: 31
@@ -8206,7 +8207,7 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / HP Aware
 
 Pidgeotto (F)
 Level: 31
@@ -8265,7 +8266,7 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Prefer Highest Damage Move / Predict Switch / HP Aware
 
 Pidgeot (F) @ Sharp Beak
 Level: 43
@@ -8324,7 +8325,7 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Prefer Highest Damage Move / Predict Switch / HP Aware
 
 Pidgeot (F) @ Sharp Beak
 Level: 43
@@ -8383,7 +8384,7 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Prefer Highest Damage Move / Predict Switch / HP Aware
 
 Pidgeot (F) @ Sharp Beak
 Level: 43
@@ -8442,17 +8443,17 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Prefer Highest Damage Move / Predict Switch / HP Aware
 
 Pidgeot (F) @ Focus Sash  
 Ability: Keen Eye  
 Level: 54
 EVs: 160 HP / 252 Atk / 96 Spe  
 Adamant Nature  
-- Brave Bird  
-- Tailwind  
-- Facade  
-- Roost  
+- Dual Wingbeat
+- Tailwind
+- U-turn
+- Roost
 
 Rhydon (F) @ Eviolite
 Ability: Lightning Rod
@@ -8514,16 +8515,16 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Prefer Highest Damage Move / Predict Switch / HP Aware
 
 Pidgeot (F) @ Focus Sash  
 Ability: Keen Eye  
 Level: 54
 EVs: 160 HP / 252 Atk / 96 Spe  
 Adamant Nature  
-- Brave Bird  
-- Tailwind  
-- Facade  
+- Dual Wingbeat
+- Tailwind
+- U-turn
 - Roost
 
 Rhydon (F) @ Eviolite
@@ -8536,7 +8537,7 @@ Impish Nature
 - Avalanche
 - Stone Edge
 
-Gyarados (M) @ Focus Sash
+Gyarados (M) @ Wacan Berry
 Ability: Intimidate
 Level: 54
 EVs: 56 HP / 252 Atk / 200 Spe
@@ -8567,7 +8568,7 @@ IVs: 0 Atk
 - Calm Mind
 - Psychic 
 
-Venusaur (F) @ Rocky Helmet  
+Venusaur (F) @ Wide Lens 
 Ability: Overgrow  
 Level: 54  
 EVs: 252 SpA / 4 SpD / 252 Spe  
@@ -8585,16 +8586,16 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Prefer Highest Damage Move / Predict Switch / HP Aware
 
 Pidgeot (F) @ Focus Sash
 Ability: Keen Eye
 Level: 54
 EVs: 160 HP / 252 Atk / 96 Spe
-Adamant Nature
-- Brave Bird
+Adamant Nature  
+- Dual Wingbeat
 - Tailwind
-- Facade
+- U-turn
 - Roost
 
 Rhydon (F) @ Eviolite
@@ -8618,7 +8619,7 @@ IVs: 0 Atk
 - Sleep Powder
 - Psychic
 
-Gyarados (M) @ Focus Sash
+Gyarados (M) @ Wacan Berry
 Ability: Intimidate
 Level: 54
 EVs: 56 HP / 252 Atk / 200 Spe
@@ -8646,7 +8647,7 @@ EVs: 8 HP / 252 SpA / 248 Spe
 Timid Nature
 IVs: 0 Atk
 - Scorching Sands
-- Flamethrower  
+- Flamethrower
 - Sunny Day
 - Air Slash
 
@@ -8657,71 +8658,71 @@ Pic: Champion Rival
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware
 Mugshot: Yellow
 
-Pidgeot (F) @ Focus Sash  
-Ability: Keen Eye  
-Level: 59  
-EVs: 160 HP / 252 Atk / 96 Spe  
-Adamant Nature  
-- Brave Bird  
-- Tailwind  
-- Facade  
-- Roost
+Pidgeot (F) @ Focus Sash
+Ability: Keen Eye
+Level: 63
+EVs: 160 HP / 252 Atk / 96 Spe
+Adamant Nature
+- Brave Bird
+- Tailwind
+- Facade
+- U-turn
 
-Alakazam (M) @ Life Orb  
-Ability: Magic Guard  
-Level: 57  
-EVs: 200 HP / 252 SpA / 56 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Dazzling Gleam  
-- Shadow Ball  
-- Calm Mind  
-- Psychic  
+Alakazam (M) @ Life Orb
+Ability: Magic Guard
+Level: 63
+EVs: 200 HP / 252 SpA / 56 Spe
+Modest Nature
+IVs: 0 Atk
+- Thunder Wave
+- Shadow Ball
+- Energy Ball
+- Psychic
 
-Rhydon (F) @ Eviolite  
-Ability: Lightning Rod  
-Level: 59  
-EVs: 160 HP / 120 Atk / 200 Def / 28 SpD  
-Impish Nature  
-- Earthquake  
+Rhydon (F) @ Eviolite
+Ability: Lightning Rod
+Level: 63
+EVs: 160 HP / 120 Atk / 200 Def / 28 SpD
+Impish Nature
+- Earthquake
 - Body Press
-- Avalanche  
-- Curse
+- Rock Smash
+- Ice Fang
 
-Arcanine (F) @ Choice Scarf  
-Ability: Intimidate  
-Level: 59  
-EVs: 56 HP / 252 Atk / 100 Def / 100 SpD  
-Jolly Nature  
-- Close Combat  
-- Wild Charge  
-- Flare Blitz 
-- Play Rough  
+Arcanine (F) @ Choice Scarf
+Ability: Intimidate
+Level: 63
+EVs: 56 HP / 252 Atk / 100 Def / 100 SpD
+Jolly Nature
+- Close Combat
+- Wild Charge
+- Flare Blitz
+- Play Rough
  
-Exeggutor (M) @ Sitrus Berry  
-Ability: Harvest  
-Level: 61 
-EVs: 100 HP / 200 SpA / 208 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Sludge Bomb 
-- Solar Beam  
-- Sunny Day  
-- Psychic  
+Exeggutor (M) @ Sitrus Berry
+Ability: Harvest
+Level: 63
+EVs: 100 HP / 200 SpA / 208 Spe
+Timid Nature
+IVs: 0 Atk
+- Sludge Bomb
+- Solar Beam
+- Sunny Day
+- Psychic
 
-Blastoise (F) @ White Herb  
-Ability: Rain Dish  
-Level: 63  
-EVs: 248 SpA / 4 SpD / 252 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Shell Smash  
-- Rain Dance  
-- Ice Beam  
-- Surf  
+Blastoise (F) @ White Herb
+Ability: Torrent
+Level: 63
+EVs: 248 SpA / 4 SpD / 252 Spe
+Modest Nature
+IVs: 0 Atk
+- Dragon Pulse
+- Shell Smash
+- Ice Beam
+- Surf
 
 === TRAINER_CHAMPION_FIRST_BULBASAUR ===
 Name: Terry
@@ -8730,69 +8731,69 @@ Pic: Champion Rival
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware
 Mugshot: Yellow
 
-Pidgeot (F) @ Focus Sash  
-Ability: Keen Eye  
-Level: 59  
-EVs: 160 HP / 252 Atk / 96 Spe  
-Adamant Nature  
-- Brave Bird  
-- Tailwind  
-- Facade  
-- Roost 
+Pidgeot (F) @ Focus Sash
+Ability: Keen Eye
+Level: 63
+EVs: 160 HP / 252 Atk / 96 Spe
+Adamant Nature
+- Brave Bird
+- Tailwind
+- Facade
+- U-turn
 
-Alakazam (M) @ Life Orb  
-Ability: Magic Guard  
-Level: 57  
-EVs: 200 HP / 252 SpA / 56 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Dazzling Gleam  
-- Shadow Ball  
-- Calm Mind  
-- Psychic  
-
-Rhydon (F) @ Eviolite  
-Ability: Lightning Rod  
-Level: 59 
-EVs: 160 HP / 120 Atk / 200 Def / 28 SpD  
-Impish Nature  
-- Earthquake  
-- Body Press
-- Avalanche  
-- Curse  
-
-Gyarados (M) @ Focus Sash  
-Ability: Intimidate  
-Level: 61  
-EVs: 56 HP / 252 Atk / 200 Spe  
-Adamant Nature  
-- Dragon Dance  
-- Earthquake  
-- Waterfall  
-- Ice Fang 
-
-Arcanine (F) @ Choice Scarf  
-Ability: Intimidate  
-Level: 59  
-EVs: 56 HP / 252 Atk / 100 Def / 100 SpD  
-Jolly Nature  
-- Close Combat  
-- Wild Charge  
-- Flare Blitz 
-- Play Rough  
-
-Venusaur (F) @ Rocky Helmet  
-Ability: Overgrow  
-Level: 63  
-EVs: 252 SpA / 4 SpD / 252 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Sleep Powder
-- Sludge Bomb  
+Alakazam (M) @ Life Orb
+Ability: Magic Guard
+Level: 63
+EVs: 200 HP / 252 SpA / 56 Spe
+Modest Nature
+IVs: 0 Atk
+- Thunder Wave
+- Shadow Ball
 - Energy Ball
+- Psychic
+
+Rhydon (F) @ Eviolite
+Ability: Lightning Rod
+Level: 63
+EVs: 160 HP / 120 Atk / 200 Def / 28 SpD
+Impish Nature
+- Earthquake
+- Body Press
+- Rock Smash
+- Ice Fang
+
+Arcanine (F) @ Choice Scarf
+Ability: Intimidate
+Level: 63
+EVs: 56 HP / 252 Atk / 100 Def / 100 SpD
+Jolly Nature
+- Close Combat
+- Wild Charge
+- Flare Blitz
+- Play Rough
+
+Gyarados (M) @ Wacan Berry
+Ability: Intimidate
+Level: 63
+EVs: 56 HP / 252 Atk / 200 Spe
+Adamant Nature
+- Dragon Dance
+- Earthquake
+- Waterfall
+- Ice Fang
+
+Venusaur (F) @ Leftovers
+Ability: Chlorophyll
+Level: 63
+EVs: 252 SpA / 4 SpD / 252 Spe
+Bold Nature
+IVs: 0 Atk
+- Sleep Powder
+- Sludge Bomb
+- Giga Drain
 - Leech Seed
 
 === TRAINER_CHAMPION_FIRST_CHARMANDER ===
@@ -8802,71 +8803,71 @@ Pic: Champion Rival
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware
 Mugshot: Yellow
 
-Pidgeot (F) @ Focus Sash  
-Ability: Keen Eye  
-Level: 59  
-EVs: 160 HP / 252 Atk / 96 Spe  
-Adamant Nature  
-- Brave Bird  
-- Tailwind  
-- Facade  
-- Roost  
+Pidgeot (F) @ Focus Sash
+Ability: Keen Eye
+Level: 63
+EVs: 160 HP / 252 Atk / 96 Spe
+Adamant Nature
+- Brave Bird
+- Tailwind
+- Facade
+- U-turn
 
-Alakazam (M) @ Life Orb  
-Ability: Magic Guard  
-Level: 57  
-EVs: 200 HP / 252 SpA / 56 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Dazzling Gleam  
-- Shadow Ball  
-- Calm Mind  
-- Psychic  
+Alakazam (M) @ Life Orb
+Ability: Magic Guard
+Level: 63
+EVs: 200 HP / 252 SpA / 56 Spe
+Modest Nature
+IVs: 0 Atk
+- Thunder Wave
+- Shadow Ball
+- Energy Ball
+- Psychic
 
-Rhydon (F) @ Eviolite  
-Ability: Lightning Rod  
-Level: 59  
-EVs: 160 HP / 120 Atk / 200 Def / 28 SpD  
-Impish Nature  
+Rhydon (F) @ Eviolite
+Ability: Lightning Rod
+Level: 63
+EVs: 160 HP / 120 Atk / 200 Def / 28 SpD
+Impish Nature
 - Earthquake
 - Body Press
-- Avalanche  
-- Curse  
+- Rock Smash
+- Ice Fang
 
-Exeggutor (M) @ Sitrus Berry  
-Ability: Harvest  
-Level: 59  
-EVs: 100 HP / 200 SpA / 208 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Sludge Bomb  
-- Solar Beam  
-- Sunny Day  
-- Psychic  
+Gyarados (M) @ Wacan Berry
+Ability: Intimidate
+Level: 63
+EVs: 56 HP / 252 Atk / 200 Spe
+Adamant Nature
+- Dragon Dance
+- Earthquake
+- Waterfall
+- Ice Fang
+ 
+Exeggutor (M) @ Sitrus Berry
+Ability: Harvest
+Level: 63
+EVs: 100 HP / 200 SpA / 208 Spe
+Timid Nature
+IVs: 0 Atk
+- Sludge Bomb
+- Solar Beam
+- Sunny Day
+- Psychic
 
-Gyarados (M) @ Focus Sash 
-Ability: Intimidate  
-Level: 61  
-EVs: 56 HP / 252 Atk / 200 Spe  
-Adamant Nature  
-- Dragon Dance  
-- Earthquake  
-- Waterfall  
-- Ice Fang 
-
-Charizard (F) @ Charti Berry  
-Ability: Solar Power  
-Level: 63  
-EVs: 8 HP / 252 SpA / 248 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Scorching Sands  
-- Flamethrower  
-- Sunny Day  
-- Air Slash  
+Charizard (F) @ Charti Berry
+Ability: Solar Power
+Level: 63
+EVs: 8 HP / 252 SpA / 248 Spe
+Timid Nature
+IVs: 0 Atk
+- Scorching Sands
+- Flamethrower
+- Sunny Day
+- Air Slash
 
 === TRAINER_CHANNELER_PATRICIA ===
 Name: Patricia
@@ -14537,56 +14538,56 @@ Pic: Elite Four Lorelei
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Status Moves / HP Aware
 Mugshot: Purple
 
-Ninetales-Alola (M) @ Light Ball  
-Ability: Snow Warning  
-Level: 63 
-EVs: 252 SpA / 4 SpD / 252 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Dazzling Gleam  
-- Aurora Veil  
-- Fake Tears  
-- Blizzard  
+Ninetales-Alola (M) @ Light Clay
+Ability: Snow Warning
+Level: 66
+EVs: 252 SpA / 4 SpD / 252 Spe
+Timid Nature
+IVs: 0 Atk
+- Dazzling Gleam
+- Aurora Veil
+- Fake Tears
+- Blizzard
 
-Dewgong (M) @ Leftovers  
-Ability: Ice Body  
-Level: 63  
-EVs: 252 HP / 120 SpA / 116 Spe  
-Calm Nature  
-IVs: 0 Atk 
+Dewgong (M) @ Leftovers
+Ability: Ice Body
+Level: 66
+EVs: 252 HP / 120 SpA / 116 Spe
+Calm Nature
+IVs: 0 Atk
 - Perish Song
 - Aqua Ring
-- Ice Beam
-- Surf 
+- Blizzard
+- Surf
 
-Mr. Rime (M) @ Sitrus Berry  
-Ability: Tangled Feet  
-Level: 64 
-EVs: 160 HP / 200 SpA / 28 SpD / 120 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Dazzling Gleam  
-- Freeze-Dry  
-- Slack Off  
-- Psychic  
+Jynx (F) @ Sitrus Berry
+Ability: Dry Skin
+Level: 66
+EVs: 160 HP / 200 SpA / 28 SpD / 120 Spe
+Modest Nature
+IVs: 0 Atk
+- Rain Dance
+- Ice Beam
+- Grass Knot
+- Psychic
 
 Lapras (F) @ Damp Rock  
 Ability: Hydration  
-Level: 64  
+Level: 66
 EVs: 252 HP / 100 SpA / 156 SpD  
 Calm Nature  
 IVs: 0 Atk  
+- Weather Ball
+- Freeze-Dry
 - Rain Dance  
-- Ice Beam  
-- Surf  
-- Rest  
+- Rest
 
 Glaceon (F) @ Icy Rock  
 Ability: Snow Cloak  
-Level: 66  
+Level: 66
 EVs: 16 HP / 120 Def / 252 SpA / 120 Spe  
 Modest Nature  
 IVs: 0 Atk  
@@ -14597,13 +14598,13 @@ IVs: 0 Atk
 
 Mamoswine (M) @ Assault Vest  
 Ability: Thick Fat  
-Level: 66  
-EVs: 96 HP / 168 Atk / 244 Spe  
+Level: 66
+EVs: 96 HP / 168 Atk / 244 Def  
 Adamant Nature  
 - Earthquake  
 - Heavy Slam  
 - Body Press
-- Avalanche  
+- Icicle Crash  
 
 === TRAINER_ELITE_FOUR_BRUNO_2 ===
 Name: Bruno
@@ -14612,7 +14613,7 @@ Pic: Elite Four Bruno
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Highest Damage Move / HP Aware
 Mugshot: Green
 
 Hitmontop (F) @ White Herb  
@@ -14631,9 +14632,9 @@ Level: 65
 EVs: 96 HP / 252 Atk / 160 Spe  
 Adamant Nature  
 - Drain Punch  
-- Mach Punch  
+- Bullet Punch  
 - Ice Punch  
-- Knock Off
+- Poison Jab
 
 Hitmonlee (M) @ Sitrus Berry  
 Ability: Reckless  
@@ -14658,10 +14659,12 @@ Serious Nature
 Sirfetch’d (M) @ Leek  
 Ability: Scrappy  
 Level: 66  
-- First Impression  
-- Swords Dance  
-- Brick Break  
-- Knock Off  
+EVs: 138 HP / 252 Atk / 120 Spe
+Adamant Nature
+- First Impression
+- Swords Dance
+- Superpower
+- Brave Bird  
 
 Machamp (M) @ Assault Vest  
 Ability: No Guard  
@@ -14680,7 +14683,7 @@ Pic: Elite Four Agatha
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Status Moves / HP Aware
 Mugshot: Pink
 
 Murkrow (M) @ Eviolite  
@@ -14688,11 +14691,11 @@ Ability: Prankster
 Level: 65  
 EVs: 252 HP / 160 SpA / 96 Spe  
 Calm Nature  
-IVs: 0 Atk  
+IVs: 0 Atk
 - Perish Song
-- Foul Play  
-- Tailwind
-- Snarl  
+- U-turn
+- Mean Look
+- Roost 
 
 Houndoom (F) @ Expert Belt  
 Ability: Unnerve  
@@ -14755,7 +14758,7 @@ Pic: Elite Four Lance
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Highest Damage Move / HP Aware
 Mugshot: Blue
 
 Gyarados (M) @ Wacan Berry  
@@ -14768,16 +14771,26 @@ Jolly Nature
 - Aqua Tail  
 - Ice Fang  
 
+Aerodactyl (M) @ Life Orb  
+Ability: Unnerve  
+Level: 70  
+EVs: 160 HP / 200 Atk / 28 SpD / 120 Spe  
+Jolly Nature  
+- Earthquake  
+- Rock Slide
+- Iron Head  
+- Tailwind  
+
 Charizard (F) @ Heavy-Duty Boots  
 Ability: Blaze  
 Level: 66  
-EVs: 136 HP / 252 SpA / 120 Spe  
-Mild Nature  
-IVs: 0 Atk  
-- Scorching Sands
-- Flamethrower
-- Dragon Pulse  
-- Air Slash  
+EVs: 136 HP / 252 Atk / 120 Spe  
+Lonely Nature  
+IVs: 0 Atk
+- Belly Drum
+- Acrobatics
+- Dragon Claw
+- Flare Blitz
 
 Kingdra (F) @ Scope Lens  
 Ability: Sniper  
@@ -14787,16 +14800,6 @@ IVs: 0 Atk
 - Flash Cannon 
 - Draco Meteor  
 - Surf  
-
-Aerodactyl (M) @ Life Orb  
-Ability: Rock Head  
-Level: 70  
-EVs: 160 HP / 200 Atk / 28 SpD / 120 Spe  
-Jolly Nature  
-- Dragon Claw  
-- Rock Slide
-- Iron Head  
-- Tailwind  
 
 Tyranitar (M) @ Assault Vest  
 Ability: Sand Stream  
@@ -14825,71 +14828,71 @@ Pic: Champion Rival
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware
 Mugshot: Yellow
 
-Heracross (F) @ Flame Orb  
-Ability: Guts  
-Level: 72  
-EVs: 252 Atk / 252 Spe  
-Jolly Nature  
-- Close Combat  
-- Megahorn  
-- Facade  
-- Protect  
+Heracross (F) @ Flame Orb
+Ability: Guts
+Level: 72
+EVs: 252 Atk / 252 Spe
+Jolly Nature
+- Close Combat
+- Megahorn
+- Facade
+- Protect
 
-Alakazam (M) @ Life Orb  
-Ability: Magic Guard  
-Level: 73  
-EVs: 200 HP / 252 SpA / 56 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Dazzling Gleam  
-- Shadow Ball  
-- Calm Mind  
+Alakazam (M) @ Life Orb
+Ability: Magic Guard
+Level: 75
+EVs: 200 HP / 252 SpA / 56 Spe
+Modest Nature
+IVs: 0 Atk
+- Dazzling Gleam
+- Shadow Ball
+- Thunder Wave
 - Psychic
 
-Tyranitar (M) @ Assault Vest  
-Ability: Sand Stream  
-Level: 72  
-EVs: 252 HP / 252 Atk / 4 SpD  
-Adamant Nature  
-- Stone Edge  
-- Earthquake  
-- Ice Fang  
+Tyranitar (M) @ Assault Vest
+Ability: Sand Stream
+Level: 75
+EVs: 252 HP / 252 Atk / 4 SpD
+Adamant Nature
+- Stone Edge
+- Earthquake
+- Ice Fang
 - Crunch
 
-Arcanine (F) @ Choice Scarf  
-Ability: Intimidate  
-Level: 73  
-EVs: 56 HP / 252 Atk / 100 Def / 100 SpD  
-Jolly Nature  
-- Close Combat  
-- Wild Charge  
-- Flare Blitz 
-- Play Rough 
+Arcanine (F) @ Choice Scarf
+Ability: Intimidate
+Level: 75
+EVs: 56 HP / 252 Atk / 100 Def / 100 SpD
+Jolly Nature
+- Close Combat
+- Wild Charge
+- Flare Blitz
+- Play Rough
 
-Exeggutor (M) @ Sitrus Berry  
-Ability: Harvest  
-Level: 73  
-EVs: 100 HP / 200 SpA / 208 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Sludge Bomb  
-- Solar Beam  
-- Sunny Day  
+Exeggutor (M) @ Sitrus Berry
+Ability: Harvest
+Level: 75
+EVs: 100 HP / 200 SpA / 208 Spe
+Timid Nature
+IVs: 0 Atk
+- Sludge Bomb
+- Solar Beam
+- Sunny Day
 - Psychic
 
-Blastoise (F) @ White Herb  
-Ability: Rain Dish  
-Level: 75  
-EVs: 248 SpA / 4 SpD / 252 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Shell Smash  
-- Rain Dance  
-- Ice Beam  
-- Surf  
+Blastoise (F) @ White Herb
+Ability: Torrent
+Level: 75
+EVs: 248 SpA / 4 SpD / 252 Spe
+Modest Nature
+IVs: 0 Atk
+- Shell Smash
+- Dragon Pulse
+- Ice Beam
+- Surf
 
 === TRAINER_CHAMPION_REMATCH_BULBASAUR ===
 Name: Terry
@@ -14898,70 +14901,70 @@ Pic: Champion Rival
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware
 Mugshot: Yellow
 
-Heracross (F) @ Flame Orb  
-Ability: Guts  
-Level: 72  
-EVs: 252 Atk / 252 Spe  
-Jolly Nature  
-- Close Combat  
-- Megahorn  
-- Facade  
+Heracross (F) @ Flame Orb
+Ability: Guts
+Level: 75
+EVs: 252 Atk / 252 Spe
+Jolly Nature
+- Close Combat
+- Megahorn
+- Facade
 - Protect
 
-Alakazam (M) @ Life Orb  
-Ability: Magic Guard  
-Level:73  
-EVs: 200 HP / 252 SpA / 56 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Dazzling Gleam  
-- Shadow Ball  
-- Calm Mind  
-- Psychic 
+Alakazam (M) @ Life Orb
+Ability: Magic Guard
+Level:75
+EVs: 200 HP / 252 SpA / 56 Spe
+Modest Nature
+IVs: 0 Atk
+- Thunder Wave
+- Dazzling Gleam
+- Shadow Ball
+- Psychic
 
-Tyranitar (M) @ Assault Vest  
-Ability: Sand Stream  
-Level: 72  
-EVs: 252 HP / 252 Atk / 4 SpD  
-Adamant Nature  
-- Stone Edge  
-- Earthquake  
-- Ice Fang  
+Tyranitar (M) @ Assault Vest
+Ability: Sand Stream
+Level: 75
+EVs: 252 HP / 252 Atk / 4 SpD
+Adamant Nature
+- Stone Edge
+- Earthquake
+- Ice Fang
 - Crunch
 
-Gyarados (M) @ Focus Sash
-Ability: Intimidate  
-Level: 73  
-EVs: 56 HP / 252 Atk / 200 Spe  
-Adamant Nature  
-- Dragon Dance  
-- Earthquake  
-- Waterfall  
-- Ice Fang 
+Gyarados (M) @ Wacan Berry
+Ability: Intimidate
+Level: 75
+EVs: 56 HP / 252 Atk / 200 Spe
+Adamant Nature
+- Dragon Dance
+- Earthquake
+- Waterfall
+- Ice Fang
 
-Arcanine (F) @ Choice Scarf  
-Ability: Intimidate  
-Level: 73  
-EVs: 56 HP / 252 Atk / 100 Def / 100 SpD  
-Jolly Nature  
-- Close Combat  
-- Wild Charge  
-- Flare Blitz 
-- Play Rough 
+Arcanine (F) @ Choice Scarf
+Ability: Intimidate
+Level: 75
+EVs: 56 HP / 252 Atk / 100 Def / 100 SpD
+Jolly Nature
+- Close Combat
+- Wild Charge
+- Flare Blitz
+- Play Rough
 
-Venusaur (F) @ Rocky Helmet  
-Ability: Overgrow  
-Level: 75  
-EVs: 252 SpA / 4 SpD / 252 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Sludge Bomb  
-- Sleep Powder  
-- Leech Seed  
-- Energy Ball
+Venusaur (F) @ Leftovers
+Ability: Chlorophyll
+Level: 75
+EVs: 252 SpA / 4 SpD / 252 Spe
+Timid Nature
+IVs: 0 Atk
+- Sludge Bomb
+- Sleep Powder
+- Leech Seed
+- Giga Drain
 
 === TRAINER_CHAMPION_REMATCH_CHARMANDER ===
 Name: Terry
@@ -14970,70 +14973,70 @@ Pic: Champion Rival
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware
 Mugshot: Yellow
 
-Heracross (F) @ Flame Orb  
-Ability: Guts  
-Level: 72  
-EVs: 252 Atk / 252 Spe  
-Jolly Nature  
-- Close Combat  
-- Megahorn  
-- Facade  
+Heracross (F) @ Flame Orb
+Ability: Guts
+Level: 75
+EVs: 252 Atk / 252 Spe
+Jolly Nature
+- Close Combat
+- Megahorn
+- Facade
 - Protect
 
-Alakazam (M) @ Life Orb  
-Ability: Magic Guard  
-Level: 73  
-EVs: 200 HP / 252 SpA / 56 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Dazzling Gleam  
-- Shadow Ball  
-- Calm Mind  
-- Psychic  
+Alakazam (M) @ Life Orb
+Ability: Magic Guard
+Level: 75
+EVs: 200 HP / 252 SpA / 56 Spe
+Modest Nature
+IVs: 0 Atk
+- Dazzling Gleam
+- Shadow Ball
+- Thunder Wave
+- Psychic
 
-Tyranitar (M) @ Assault Vest  
-Ability: Sand Stream  
-Level: 72  
-EVs: 252 HP / 252 Atk / 4 SpD  
-Adamant Nature  
-- Stone Edge  
-- Earthquake  
-- Ice Fang  
+Tyranitar (M) @ Assault Vest
+Ability: Sand Stream
+Level: 75
+EVs: 252 HP / 252 Atk / 4 SpD
+Adamant Nature
+- Stone Edge
+- Earthquake
+- Ice Fang
 - Crunch
 
-Exeggutor (M) @ Sitrus Berry  
-Ability: Harvest  
-Level: 73  
-EVs: 100 HP / 200 SpA / 208 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Sludge Bomb  
-- Solar Beam  
-- Sunny Day  
-- Psychic 
+Exeggutor (M) @ Sitrus Berry
+Ability: Harvest
+Level: 75
+EVs: 100 HP / 200 SpA / 208 Spe
+Timid Nature
+IVs: 0 Atk
+- Sludge Bomb
+- Solar Beam
+- Sunny Day
+- Psychic
 
-Gyarados (M) @ Focus Sash
-Ability: Intimidate  
-Level: 73  
-EVs: 56 HP / 252 Atk / 200 Spe  
-Adamant Nature  
-- Dragon Dance  
-- Earthquake  
-- Waterfall  
-- Ice Fang  
+Gyarados (M) @ Wacan Berry
+Ability: Intimidate
+Level: 75
+EVs: 56 HP / 252 Atk / 200 Spe
+Adamant Nature
+- Dragon Dance
+- Earthquake
+- Waterfall
+- Ice Fang
 
-Charizard (F) @ Charti Berry  
-Ability: Solar Power  
-Level: 75  
-EVs: 8 HP / 252 SpA / 248 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Scorching Sands  
-- Flamethrower  
-- Sunny Day  
+Charizard (F) @ Charti Berry
+Ability: Solar Power
+Level: 75
+EVs: 8 HP / 252 SpA / 248 Spe
+Timid Nature
+IVs: 0 Atk
+- Scorching Sands
+- Flamethrower
+- Sunny Day
 - Air Slash
 
 === TRAINER_CUE_BALL_PAXTON ===
