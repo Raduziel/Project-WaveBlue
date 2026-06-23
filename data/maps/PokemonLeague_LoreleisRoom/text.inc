@@ -3,9 +3,10 @@ PokemonLeague_LoreleisRoom_Text_Intro::
     .string "I am Lorelei of the Elite Four.\p"
     .string "No one can best me when it comes\n"
     .string "to icy Pokémon.\p"
-    .string "Freezing moves are powerful.\p"
-    .string "Your Pokémon will be at my mercy\n"
-    .string "when they are frozen solid.\p"
+    .string "My frostbite will creep into your\n"
+    .string "team and sap their strength.\p"
+    .string "Their power will wither with every\n"
+    .string "passing turn.\p"
     .string "Hahaha!\n"
     .string "Are you ready?{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
 

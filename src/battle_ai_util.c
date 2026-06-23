@@ -5072,6 +5072,9 @@ void IncreaseSleepScore(enum BattlerId battlerAtk, enum BattlerId battlerDef, en
     if (gAiLogicData->holdEffects[battlerDef] == HOLD_EFFECT_CURE_SLP || gAiLogicData->holdEffects[battlerDef] == HOLD_EFFECT_CURE_STATUS)
         return;
 
+    if (gBattleMons[battlerDef].volatiles.yawn || gBattleMons[battlerDef].status1 & STATUS1_SLEEP)
+        return;
+
     if (((gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_TRY_TO_FAINT) && CanAIFaintTarget(battlerAtk, battlerDef, 0)))
     {
         enum Move bestMoves[MAX_MON_MOVES] = {MOVE_NONE};

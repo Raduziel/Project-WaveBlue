@@ -4802,7 +4802,7 @@ Pic: Rival Early
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / HP Aware / Try to 2HKO
 
 Pidgeotto (F)
 Level: 21
@@ -4850,7 +4850,7 @@ Pic: Rival Early
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / HP Aware / Try to 2HKO
 
 Pidgeotto (F)
 Level: 21
@@ -4898,7 +4898,7 @@ Pic: Rival Early
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / HP Aware / Try to 2HKO
 
 Pidgeotto (F)
 Level: 21
@@ -5275,7 +5275,7 @@ Pic: Leader Giovanni
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Prefer Status Moves / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Prefer Status Moves / HP Aware / Try to 2HKO
 
 Tauros @ White Herb
 Ability: Intimidate
@@ -5346,7 +5346,7 @@ Pic: Leader Giovanni
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Prefer Status Moves / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Prefer Status Moves / HP Aware / Try to 2HKO
 
 Tauros @ White Herb
 Ability: Intimidate
@@ -5417,7 +5417,7 @@ Pic: Leader Giovanni
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Powerful Status / Prefer Status Moves / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Powerful Status / Prefer Status Moves / HP Aware / Try to 2HKO
 
 Dragonite @ White Herb
 Ability: Multiscale
@@ -5490,7 +5490,7 @@ Pic: Leader Giovanni
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Highest Damage Move / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Highest Damage Move / HP Aware / Try to 2HKO
 
 Marowak @ Thick Club  
 Ability: Battle Armor  
@@ -7271,7 +7271,7 @@ Pic: Elite Four Lorelei
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Status Moves / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Status Moves / HP Aware / Try to 2HKO
 Mugshot: Purple
 
 Ninetales-Alola (M) @ Light Clay
@@ -7346,7 +7346,7 @@ Pic: Elite Four Bruno
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Highest Damage Move / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Highest Damage Move / HP Aware / Try to 2HKO
 Mugshot: Green
 
 Hitmontop (F) @ White Herb
@@ -7416,7 +7416,7 @@ Pic: Elite Four Agatha
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Status Moves / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Status Moves / HP Aware / Try to 2HKO
 Mugshot: Pink
 
 Murkrow (M) @ Eviolite
@@ -7491,7 +7491,7 @@ Pic: Elite Four Lance
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Highest Damage Move / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Highest Damage Move / HP Aware / Try to 2HKO
 Mugshot: Blue
 
 Gyarados (M) @ Wacan Berry
@@ -7561,7 +7561,7 @@ Pic: Leader Brock
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn / Powerful Status / Smart Switching / Ace Pokemon / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn / Powerful Status / Smart Switching / Ace Pokemon / HP Aware / Try to 2HKO
 
 Geodude @ Weakness Policy  
 Ability: Sturdy  
@@ -7603,7 +7603,7 @@ Pic: Leader Misty
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Smart Switching / Ace Pokemon / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Smart Switching / Ace Pokemon / HP Aware / Try to 2HKO
 
 Psyduck @ Damp Rock
 Ability: Swift Swim
@@ -7644,7 +7644,7 @@ Pic: Leader Lt Surge
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Will Suicide / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Will Suicide / HP Aware / Try to 2HKO
 
 Magnemite @ Light Clay
 Ability: Sturdy
@@ -7686,7 +7686,7 @@ Pic: Leader Erika
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Status Moves / HP Aware / Stall
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Status Moves / HP Aware / Stall / Try to 2HKO
 
 Tangela @ Eviolite
 Ability: Chlorophyll
@@ -7728,7 +7728,7 @@ Pic: Leader Koga
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Status Moves / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Status Moves / HP Aware / Try to 2HKO
 
 Venomoth @ Wide Lens
 Ability: Tinted Lens
@@ -7770,7 +7770,7 @@ Pic: Leader Koga
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Status Moves / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Status Moves / HP Aware / Try to 2HKO
 
 Venomoth @ Wide Lens
 Ability: Tinted Lens
@@ -7805,48 +7805,6 @@ IVs: 0 SpA
 - Leech Life
 - Substitute
 
-=== TRAINER_LEADER_BLAINE ===
-Name: Blaine
-Class: Leader
-Pic: Leader Blaine
-Gender: Male
-Music: Male
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Prefer Highest Damage Move / HP Aware
-
-Arcanine @ Leftovers
-Ability: Intimidate  
-Level: 47
-EVs: 200 HP / 120 Atk / 32 Def / 36 SpD / 120 Spe  
-Jolly Nature  
-IVs: 0 SpA  
-- Morning Sun
-- Flare Blitz
-- Wild Charge
-- Iron Head
-
-Ninetales @ Heat Rock
-Ability: Drought
-Level: 47
-EVs: 100 HP / 120 SpA / 128 SpD / 160 Spe
-Calm Nature
-IVs: 0 Atk
-- Weather Ball
-- Solar Beam
-- Fake Tears
-- Hex
-
-Magmortar @ Assault Vest
-Ability: Flame Body
-Level: 47
-EVs: 68 HP / 220 SpA / 120 SpD / 100 Spe
-Modest Nature
-IVs: 0 Atk
-- Scorching Sands
-- Flamethrower
-- Solar Beam
-- Thunderbolt
-
 === TRAINER_LEADER_SABRINA ===
 Name: Sabrina
 Class: Leader
@@ -7854,7 +7812,7 @@ Pic: Leader Sabrina
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO
 
 Hypno @ Terrain Extender
 Ability: Insomnia
@@ -7896,7 +7854,7 @@ Pic: Leader Sabrina
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO
 
 Hypno @ Wise Glasses
 Ability: Insomnia
@@ -7930,6 +7888,48 @@ IVs: 0 Atk
 - Shadow Ball
 - Calm Mind
 - Psychic
+
+=== TRAINER_LEADER_BLAINE ===
+Name: Blaine
+Class: Leader
+Pic: Leader Blaine
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Prefer Highest Damage Move / HP Aware / Try to 2HKO
+
+Arcanine @ Leftovers
+Ability: Intimidate  
+Level: 47
+EVs: 200 HP / 120 Atk / 32 Def / 36 SpD / 120 Spe  
+Jolly Nature  
+IVs: 0 SpA  
+- Morning Sun
+- Flare Blitz
+- Wild Charge
+- Iron Head
+
+Ninetales @ Heat Rock
+Ability: Drought
+Level: 47
+EVs: 100 HP / 120 SpA / 128 SpD / 160 Spe
+Calm Nature
+IVs: 0 Atk
+- Weather Ball
+- Solar Beam
+- Fake Tears
+- Hex
+
+Magmortar @ Assault Vest
+Ability: Flame Body
+Level: 47
+EVs: 68 HP / 220 SpA / 120 SpD / 100 Spe
+Modest Nature
+IVs: 0 Atk
+- Scorching Sands
+- Flamethrower
+- Solar Beam
+- Thunderbolt
 
 === TRAINER_GENTLEMAN_THOMAS ===
 Name: Thomas
@@ -8015,7 +8015,7 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / HP Aware / Try to 2HKO
 
 Pidgeotto (F)
 Level: 24
@@ -8064,7 +8064,7 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / HP Aware / Try to 2HKO
 
 Pidgeotto (F)
 Level: 24
@@ -8113,7 +8113,7 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / HP Aware / Try to 2HKO
 
 Pidgeotto (F)
 Level: 24
@@ -8162,7 +8162,7 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / HP Aware / Try to 2HKO
 
 Pidgeotto (F)
 Level: 31
@@ -8221,7 +8221,7 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / HP Aware / Try to 2HKO
 
 Pidgeotto (F)
 Level: 31
@@ -8280,7 +8280,7 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / HP Aware / Try to 2HKO
 
 Pidgeotto (F)
 Level: 31
@@ -8339,7 +8339,7 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Prefer Highest Damage Move / Predict Switch / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Prefer Highest Damage Move / Predict Switch / HP Aware / Try to 2HKO
 
 Pidgeot (F) @ Sharp Beak
 Level: 43
@@ -8398,7 +8398,7 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Prefer Highest Damage Move / Predict Switch / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Prefer Highest Damage Move / Predict Switch / HP Aware / Try to 2HKO
 
 Pidgeot (F) @ Sharp Beak
 Level: 43
@@ -8457,7 +8457,7 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Prefer Highest Damage Move / Predict Switch / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Prefer Highest Damage Move / Predict Switch / HP Aware / Try to 2HKO
 
 Pidgeot (F) @ Sharp Beak
 Level: 43
@@ -8516,7 +8516,7 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Prefer Highest Damage Move / Predict Switch / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Prefer Highest Damage Move / Predict Switch / HP Aware / Try to 2HKO
 
 Pidgeot (F) @ Focus Sash  
 Ability: Keen Eye  
@@ -8588,7 +8588,7 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Prefer Highest Damage Move / Predict Switch / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Prefer Highest Damage Move / Predict Switch / HP Aware / Try to 2HKO
 
 Pidgeot (F) @ Focus Sash  
 Ability: Keen Eye  
@@ -8659,7 +8659,7 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Prefer Highest Damage Move / Predict Switch / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Prefer Highest Damage Move / Predict Switch / HP Aware / Try to 2HKO
 
 Pidgeot (F) @ Focus Sash
 Ability: Keen Eye
@@ -8731,7 +8731,7 @@ Pic: Champion Rival
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO
 Mugshot: Yellow
 
 Pidgeot (F) @ Focus Sash
@@ -8804,7 +8804,7 @@ Pic: Champion Rival
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO
 Mugshot: Yellow
 
 Pidgeot (F) @ Focus Sash
@@ -8876,7 +8876,7 @@ Pic: Champion Rival
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO
 Mugshot: Yellow
 
 Pidgeot (F) @ Focus Sash
@@ -10797,7 +10797,7 @@ Pic: Scientist
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Will Suicide / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Will Suicide / HP Aware / Try to 2HKO
 
 Magnezone @ Air Balloon
 Ability: Sturdy
@@ -14630,7 +14630,7 @@ Pic: Elite Four Lorelei
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Status Moves / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Status Moves / HP Aware / Try to 2HKO
 Mugshot: Purple
 
 Ninetales-Alola (M) @ Light Clay
@@ -14705,7 +14705,7 @@ Pic: Elite Four Bruno
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Highest Damage Move / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Highest Damage Move / HP Aware / Try to 2HKO
 Mugshot: Green
 
 Hitmontop (F) @ White Herb  
@@ -14775,7 +14775,7 @@ Pic: Elite Four Agatha
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Status Moves / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Status Moves / HP Aware / Try to 2HKO
 Mugshot: Pink
 
 Murkrow (M) @ Eviolite  
@@ -14850,7 +14850,7 @@ Pic: Elite Four Lance
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Highest Damage Move / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Highest Damage Move / HP Aware / Try to 2HKO
 Mugshot: Blue
 
 Gyarados (M) @ Wacan Berry  
@@ -14920,7 +14920,7 @@ Pic: Champion Rival
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO
 Mugshot: Yellow
 
 Heracross (F) @ Flame Orb
@@ -14993,7 +14993,7 @@ Pic: Champion Rival
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO
 Mugshot: Yellow
 
 Heracross (F) @ Flame Orb
@@ -15065,7 +15065,7 @@ Pic: Champion Rival
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO
 Mugshot: Yellow
 
 Heracross (F) @ Flame Orb
@@ -15148,6 +15148,80 @@ Muk
 Level: 39
 IVs: 6 HP / 6 Atk / 6 Def / 6 SpA / 6 SpD / 6 Spe
 
+=== TRAINER_PROF_OAK_BULBASAUR ===
+Name: Oak
+Class: Pkmn Prof
+Pic: Professor Oak
+Gender: Male
+Music: Intense
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Will Suicide / HP Aware / Try to 2HKO
+
+Steelix @ Leftovers
+Ability: Rock Head
+Level: 80
+EVs: 248 Atk / 8 SpD / 248 Spe
+Adamant Nature
+- Head Smash
+- Heavy Slam
+- Rock Polish
+- Explosion
+
+Clefable @ Life Orb
+Ability: Magic Guard
+Level: 80
+EVs: 248 HP / 248 SpA / 8 SpD / 4 Spe
+Modest Nature
+IVs: 0 Atk
+- Flamethrower
+- Fake Tears
+- Moonblast
+- Psychic
+
+Gengar
+Ability: Cursed Body
+Level: 80
+EVs: 248 SpA / 8 SpD / 248 Spe
+Timid Nature
+IVs: 0 Atk
+- Dazzling Gleam
+- Sludge Bomb
+- Destiny Bond
+- Shadow Ball
+
+Magmortar @ Lum Berry
+Ability: Flame Body
+Level: 80
+EVs: 248 SpA / 8 SpD / 252 Spe
+Timid Nature
+IVs: 0 Atk
+- Scorching Sands
+- Flamethrower
+- Thunderbolt
+- Rest
+
+Politoed @ Damp Rock
+Ability: Drizzle
+Level: 80
+EVs: 248 HP / 248 SpA / 8 SpD / 4 Spe
+Modest Nature
+IVs: 0 Atk
+- Weather Ball
+- Earth Power
+- Ice Beam
+- Encore
+
+Venusaur @ Rocky Helmet  
+Ability: Overgrow
+Level: 80
+EVs: 252 SpA / 4 SpD / 252 Spe
+Timid Nature
+IVs: 0 Atk
+- Sludge Bomb
+- Sleep Powder
+- Leech Seed
+- Energy Ball
+
 === TRAINER_PROF_OAK_CHARMANDER ===
 Name: Oak
 Class: Pkmn Prof
@@ -15155,72 +15229,71 @@ Pic: Professor Oak
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Will Suicide / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Will Suicide / HP Aware / Try to 2HKO
 
-Steelix @ Leftovers  
-Ability: Rock Head  
-Level: 75
-EVs: 248 Atk / 8 SpD / 248 Spe  
-Adamant Nature  
-- Head Smash  
-- Heavy Slam  
-- Rock Polish  
-- Explosion  
+Steelix @ Leftovers
+Ability: Rock Head
+Level: 80
+EVs: 248 Atk / 8 SpD / 248 Spe
+Adamant Nature
+- Head Smash
+- Heavy Slam
+- Rock Polish
+- Explosion
 
-Clefable @ Life Orb  
-Ability: Magic Guard  
-Level: 75
-EVs: 248 HP / 248 SpA / 8 SpD / 4 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Flamethrower  
-- Fake Tears  
-- Moonblast  
-- Psychic  
+Clefable @ Life Orb
+Ability: Magic Guard
+Level: 80
+EVs: 248 HP / 248 SpA / 8 SpD / 4 Spe
+Modest Nature
+IVs: 0 Atk
+- Flamethrower
+- Fake Tears
+- Moonblast
+- Psychic
 
-Gengar  
-Ability: Cursed Body  
-Level: 75
-EVs: 248 SpA / 8 SpD / 248 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Dazzling Gleam  
-- Sludge Bomb  
-- Destiny Bond  
-- Shadow Ball 
+Gengar
+Ability: Cursed Body
+Level: 80
+EVs: 248 SpA / 8 SpD / 248 Spe
+Timid Nature
+IVs: 0 Atk
+- Dazzling Gleam
+- Sludge Bomb
+- Destiny Bond
+- Shadow Ball
 
-Magmortar @ Lum Berry  
-Ability: Flame Body  
-Level: 75  
-EVs: 248 SpA / 8 SpD / 252 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Scorching Sands  
-- Flamethrower  
-- Thunderbolt  
-- Rest  
+Tangrowth @ Wide Lens
+Ability: Chlorophyll
+Level: 80
+EVs: 248 Atk / 8 SpD / 248 Spe
+Adamant Nature
+- Swords Dance
+- Sleep Powder
+- Power Whip
+- Earthquake
 
-Politoed @ Damp Rock  
-Ability: Drizzle  
-Level: 75
-EVs: 248 HP / 248 SpA / 8 SpD / 4 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Weather Ball  
-- Earth Power  
-- Ice Beam  
+Politoed @ Damp Rock
+Ability: Drizzle
+Level: 80
+EVs: 248 HP / 248 SpA / 8 SpD / 4 Spe
+Modest Nature
+IVs: 0 Atk
+- Weather Ball
+- Earth Power
+- Ice Beam
 - Encore
 
-Venusaur @ Rocky Helmet  
-Ability: Overgrow  
-Level: 80  
-EVs: 252 SpA / 4 SpD / 252 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Sludge Bomb  
-- Sleep Powder  
-- Leech Seed  
-- Energy Ball
+Charizard @ Charti Berry
+Ability: Solar Power
+Level: 80
+EVs: 8 HP / 252 SpA / 248 Spe
+Timid Nature
+IVs: 0 Atk
+- Scorching Sands
+- Flamethrower
+- Sunny Day
+- Air Slash
 
 === TRAINER_PROF_OAK_SQUIRTLE ===
 Name: Oak
@@ -15229,144 +15302,71 @@ Pic: Professor Oak
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Will Suicide / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Will Suicide / HP Aware / Try to 2HKO
 
-Steelix @ Leftovers  
-Ability: Rock Head  
-Level: 75  
-EVs: 248 Atk / 8 SpD / 248 Spe  
-Adamant Nature  
-- Head Smash  
-- Heavy Slam  
-- Rock Polish  
-- Explosion  
+Steelix @ Leftovers
+Ability: Rock Head
+Level: 80
+EVs: 248 Atk / 8 SpD / 248 Spe
+Adamant Nature
+- Head Smash
+- Heavy Slam
+- Rock Polish
+- Explosion
 
-Clefable @ Life Orb  
-Ability: Magic Guard  
-Level: 75  
-EVs: 248 HP / 248 SpA / 8 SpD / 4 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Flamethrower  
-- Fake Tears  
-- Moonblast  
-- Psychic  
+Clefable @ Life Orb
+Ability: Magic Guard
+Level: 80
+EVs: 248 HP / 248 SpA / 8 SpD / 4 Spe
+Modest Nature
+IVs: 0 Atk
+- Flamethrower
+- Fake Tears
+- Moonblast
+- Psychic
 
-Gengar  
-Ability: Cursed Body  
-Level: 75  
-EVs: 248 SpA / 8 SpD / 248 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Dazzling Gleam  
-- Sludge Bomb  
-- Destiny Bond  
-- Shadow Ball 
+Gengar
+Ability: Cursed Body
+Level: 80
+EVs: 248 SpA / 8 SpD / 248 Spe
+Timid Nature
+IVs: 0 Atk
+- Dazzling Gleam
+- Sludge Bomb
+- Destiny Bond
+- Shadow Ball
 
-Tangrowth @ Wide Lens  
-Ability: Chlorophyll  
-Level: 75  
-EVs: 248 Atk / 8 SpD / 248 Spe  
-Adamant Nature  
-- Swords Dance  
-- Sleep Powder  
-- Power Whip  
-- Earthquake  
+Tangrowth @ Wide Lens
+Ability: Chlorophyll
+Level: 80
+EVs: 248 Atk / 8 SpD / 248 Spe
+Adamant Nature
+- Swords Dance
+- Sleep Powder
+- Power Whip
+- Earthquake
 
-Politoed @ Damp Rock  
-Ability: Drizzle  
-Level: 75  
-EVs: 248 HP / 248 SpA / 8 SpD / 4 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Weather Ball  
-- Earth Power  
-- Ice Beam  
-- Encore
+Magmortar @ Lum Berry
+Ability: Flame Body
+Level: 80
+EVs: 248 SpA / 8 SpD / 252 Spe
+Timid Nature
+IVs: 0 Atk
+- Scorching Sands
+- Flamethrower
+- Thunderbolt
+- Rest
 
-Charizard @ Charti Berry  
-Ability: Solar Power  
-Level: 80  
-EVs: 8 HP / 252 SpA / 248 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Scorching Sands  
-- Flamethrower  
-- Sunny Day  
-- Air Slash
-
-=== TRAINER_PROF_OAK_BULBASAUR ===
-Name: Oak
-Class: Pkmn Prof
-Pic: Professor Oak
-Gender: Male
-Music: Intense
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Will Suicide / HP Aware
-
-Steelix @ Leftovers  
-Ability: Rock Head  
-Level: 75
-EVs: 248 Atk / 8 SpD / 248 Spe  
-Adamant Nature  
-- Head Smash  
-- Heavy Slam  
-- Rock Polish  
-- Explosion  
-
-Clefable @ Life Orb  
-Ability: Magic Guard  
-Level: 75
-EVs: 248 HP / 248 SpA / 8 SpD / 4 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Flamethrower  
-- Fake Tears  
-- Moonblast  
-- Psychic  
-
-Gengar  
-Ability: Cursed Body  
-Level: 75
-EVs: 248 SpA / 8 SpD / 248 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Dazzling Gleam  
-- Sludge Bomb  
-- Destiny Bond  
-- Shadow Ball 
-
-Tangrowth @ Wide Lens  
-Ability: Chlorophyll  
-Level: 75  
-EVs: 248 Atk / 8 SpD / 248 Spe  
-Adamant Nature  
-- Swords Dance  
-- Sleep Powder  
-- Power Whip  
-- Earthquake  
-
-Magmortar @ Lum Berry  
-Ability: Flame Body  
-Level: 75 
-EVs: 248 SpA / 8 SpD / 252 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Scorching Sands  
-- Flamethrower  
-- Thunderbolt  
-- Rest  
-
-Blastoise @ White Herb  
-Ability: Rain Dish  
-Level: 80  
-EVs: 248 SpA / 4 SpD / 252 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Shell Smash  
-- Rain Dance  
-- Ice Beam  
-- Surf 
+Blastoise @ White Herb
+Ability: Rain Dish
+Level: 80
+EVs: 248 SpA / 4 SpD / 252 Spe
+Modest Nature
+IVs: 0 Atk
+- Shell Smash
+- Rain Dance
+- Ice Beam
+- Surf
 
 === TRAINER_ANABEL ===
 Name: Anabel
@@ -15467,7 +15467,7 @@ Pic: Gentleman
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Sequence Switching / Force Setup First Turn / Prefer Highest Damage Move / HP Aware
+AI: Check Bad Move / Try To Faint / Check Viability / Sequence Switching / Force Setup First Turn / Prefer Highest Damage Move / HP Aware / Try to 2HKO
 
 Kabutops @ Rindo Berry
 Ability: Swift Swim

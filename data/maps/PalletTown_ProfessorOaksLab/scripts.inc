@@ -1312,11 +1312,11 @@ PalletTown_ProfessorOaksLab_EventScript_CheckOakBattle::
     
 	msgbox PalletTown_ProfessorOaksLab_Text_OakAccepted, MSGBOX_DEFAULT
 	compare VAR_STARTER_MON, 2
-    goto_if_eq PalletTown_ProfessorOaksLab_EventScript_BattleOakVenusaur
+    goto_if_eq PalletTown_ProfessorOaksLab_EventScript_BattleOakBulbasaur
     compare VAR_STARTER_MON, 1
-    goto_if_eq PalletTown_ProfessorOaksLab_EventScript_BattleOakCharizard
+    goto_if_eq PalletTown_ProfessorOaksLab_EventScript_BattleOakCharmander
     compare VAR_STARTER_MON, 0
-    goto_if_eq PalletTown_ProfessorOaksLab_EventScript_BattleOakBlastoise
+    goto_if_eq PalletTown_ProfessorOaksLab_EventScript_BattleOakSquirtle
     end
 
 PalletTown_ProfessorOaksLab_EventScript_BufferLeftoverSquirtle::
@@ -1331,18 +1331,18 @@ PalletTown_ProfessorOaksLab_EventScript_BufferLeftoverBulbasaur::
     bufferspeciesname STR_VAR_1, SPECIES_BULBASAUR
     return
 
-PalletTown_ProfessorOaksLab_EventScript_BattleOakVenusaur::
+PalletTown_ProfessorOaksLab_EventScript_BattleOakBulbasaur::
+    trainerbattle_no_intro TRAINER_PROF_OAK_BULBASAUR, PalletTown_ProfessorOaksLab_Text_OakDefeat
+    goto PalletTown_ProfessorOaksLab_EventScript_PostOakBattle
+    end
+
+PalletTown_ProfessorOaksLab_EventScript_BattleOakCharmander::
     trainerbattle_no_intro TRAINER_PROF_OAK_CHARMANDER, PalletTown_ProfessorOaksLab_Text_OakDefeat
     goto PalletTown_ProfessorOaksLab_EventScript_PostOakBattle
     end
 
-PalletTown_ProfessorOaksLab_EventScript_BattleOakCharizard::
+PalletTown_ProfessorOaksLab_EventScript_BattleOakSquirtle::
     trainerbattle_no_intro TRAINER_PROF_OAK_SQUIRTLE, PalletTown_ProfessorOaksLab_Text_OakDefeat
-    goto PalletTown_ProfessorOaksLab_EventScript_PostOakBattle
-    end
-
-PalletTown_ProfessorOaksLab_EventScript_BattleOakBlastoise::
-    trainerbattle_no_intro TRAINER_PROF_OAK_BULBASAUR, PalletTown_ProfessorOaksLab_Text_OakDefeat
     goto PalletTown_ProfessorOaksLab_EventScript_PostOakBattle
     end
 
