@@ -5410,6 +5410,79 @@ IVs: 0 Atk
 - Thunderbolt
 - Ice Beam
 
+=== TRAINER_BOSS_GIOVANNI_3 ===
+Name: Giovanni
+Class: Boss
+Pic: Leader Giovanni
+Gender: Male
+Music: Aqua
+Double Battle: No
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Powerful Status / Prefer Status Moves / HP Aware
+
+Dragonite @ White Herb
+Ability: Multiscale
+Level: 65
+EVs: 4 HP / 252 SpA / 252 Spe
+Modest Nature
+IVs: 0 Atk
+- Rain Dance
+- Thunder
+- Hurricane
+- Draco Meteor
+
+Scizor @ Focus Sash
+Ability: Technician
+Level: 65
+EVs: 6 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Swords Dance
+- Bullet Punch
+- Iron Head
+- Lunge
+
+Aerodactyl @ Wide Lens
+Ability: Unnerve
+Level: 65
+EVs: 132 HP / 252 Atk / 124 Spe
+Jolly Nature
+- Dual Wingbeat
+- Crunch
+- Earthquake
+- Stone Edge
+
+Umbreon @ Light Clay
+Ability: Synchronize
+Level: 65
+EVs: 152 HP / 156 SpA / 200 SpD
+Calm Nature
+IVs: 0 Atk
+- Snarl
+- Light Screen
+- Moonlight
+- Thunder Wave
+
+Gengar @ Sitrus Berry
+Ability: Cursed Body
+Level: 65
+EVs: 120 HP / 252 Atk / 16 SpD / 120 Spe
+Timid Nature
+IVs: 0 Atk
+- Sludge Bomb
+- Perish Song
+- Shadow Ball
+- Curse
+
+Alakazam @ Life Orb
+Ability: Magic Guard
+Level: 65
+EVs: 6 HP / 252 SpA / 252 Spe
+Modest Nature
+IVs: 0 Atk
+- Shadow Ball
+- Psychic
+- Dazzling Gleam
+- Taunt
+
 === TRAINER_LEADER_GIOVANNI ===
 Name: Giovanni
 Class: Leader
@@ -10724,47 +10797,66 @@ Pic: Scientist
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Check Bad Move
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Will Suicide / HP Aware
 
-Voltorb
-Level: 46
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Swift
-- Screech
-- Spark
-- Sonic Boom
-
-Electrode
-Level: 46
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Spark
-- Sonic Boom
-- Screech
-- Charge
-
-Magnemite
-Level: 46
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Screech
-- Swift
-- Spark
+Magnezone @ Air Balloon
+Ability: Sturdy
+Level: 60
+EVs: 120 HP / 120 Def / 252 SpA / 18 Spe
+Bold Nature
+IVs: 0 Atk
+- Thunderbolt
+- Flash Cannon
 - Thunder Wave
+- Reflect
 
-Magneton
-Level: 46
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Tri Attack
-- Spark
-- Thunder Wave
-- Sonic Boom
+Ditto @ White Herb
+Ability: Imposter
+Level: 60
+EVs: 252 HP / 6 Def / 252 Spe
+Naive Nature
+- Transform
 
-Porygon
-Level: 46
-IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
-- Tri Attack
-- Conversion
+Hypno @ Sitrus Berry
+Ability: Insomnia
+Level: 60
+EVs: 120 HP / 120 SpA / 18 SpD / 252 Spe
+Modest Nature
+IVs: 0 Atk
+- Hypnosis
+- Nasty Plot
+- Psychic
+- Shadow Ball
+
+Electrode @ Life Orb
+Ability: Static
+Level: 60
+EVs: 120 HP / 120 SpA / 18 SpD / 252 Spe
+Timid Nature
+- Explosion
+- Electro Ball
+- Light Screen
+- Endure
+
+Porygon2 @ Eviolite
+Ability: Download
+Level: 60
+EVs: 252 HP / 252 SpA / 6 Spe
+Modest Nature
 - Recover
-- Psybeam
+- Ice Beam
+- Thunderbolt
+- Psychic
+
+Muk @ Black Sludge
+Ability: Poison Touch
+Level: 60
+EVs: 252 HP / 252 Atk / 6 Spe
+Adamant Nature
+- Substitute
+- Poison Jab
+- Drain Punch
+- Knock Off
 
 === TRAINER_SWIMMER_FEMALE_AMARA ===
 Name: Amara
@@ -15375,34 +15467,44 @@ Pic: Gentleman
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Sequence Switching / Force Setup First Turn / Prefer Highest Damage Move / HP Aware
 
-Arbok @ Sitrus Berry
-Ability: Intimidate
-Level: 27
+Kabutops @ Rindo Berry
+Ability: Swift Swim
+Level: 30
 EVs: 6 HP / 252 Atk / 252 Spe
 Adamant Nature
-- Crunch
-- Glare
-- Ice Fang
-- Dig
+- Rain Dance
+- Waterfall
+- Leech Life
+- Rock Slide
 
-Hypno @ Wide Lens
-Ability: Insomnia
-Level: 27
+Scizor @ Occa Berry
+Ability: Technician
+Level: 30
 EVs: 6 HP / 252 Atk / 252 Spe
 Adamant Nature
-- Hypnosis
-- Ice Punch
-- Brick Break
-- Zen Headbutt
-
-Raticate @ Focus Sash
-Ability: Guts
-Level: 27
-EVs: 6 HP / 252 Atk / 252 Spe
-Adamant Nature
-- Crunch
-- Facade
 - Swords Dance
-- Reversal
+- Bullet Punch
+- Iron Head
+- Double Hit
+
+Scyther @ Charti Berry
+Ability: Technician
+Level: 30
+EVs: 6 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Swords Dance
+- Dual Wingbeat
+- Trailblaze
+- X-Scissor
+
+Kleavor @ Sitrus Berry
+Ability: Sharpness
+Level: 30
+EVs: 6 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Air Slash
+- Stone Axe
+- Night Slash
+- X-Scissor
