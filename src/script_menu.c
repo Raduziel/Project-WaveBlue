@@ -271,7 +271,7 @@ static const struct MenuAction sMultichoiceList_GameCornerClerkLeft[] = {
     { gText_ChoiceScarf_5000 },
     { gText_AssaultVest_2500 },
     { gText_LifeOrb_2500 },
-    { gText_HeavyDutyBoots_1000 },
+    { gText_EjectPack_1000 },
     { gText_WeaknessPol_2500 },
     { gText_ScopeLens_1500 },
     { gText_LoadedDice_2000 },

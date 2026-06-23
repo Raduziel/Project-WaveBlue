@@ -1584,7 +1584,7 @@ extern const u8 gText_ChoiceSpecs_5000[];
 extern const u8 gText_ChoiceScarf_5000[];
 extern const u8 gText_AssaultVest_2500[];
 extern const u8 gText_LifeOrb_2500[];
-extern const u8 gText_HeavyDutyBoots_1000[];
+extern const u8 gText_EjectPack_1000[];
 extern const u8 gText_WeaknessPol_2500[];
 extern const u8 gText_ScopeLens_1500[];
 extern const u8 gText_LoadedDice_2000[];

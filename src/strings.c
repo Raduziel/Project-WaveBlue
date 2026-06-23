@@ -1409,8 +1409,8 @@ const u8 gText_SpAtk[] = _("Sp. Atk");
 const u8 gText_SpDef[] = _("Sp. Def");
 const u8 gText_Speed[] = _("Speed");
 
-const u8 gText_AM[] = _("Am");
-const u8 gText_PM[] = _("Pm");
+const u8 gText_AM[] = _("AM");
+const u8 gText_PM[] = _("PM");
 const u8 gText_CannotSendMonToBoxHM[] = _("Cannot send that mon to the box,\nbecause it knows a HM move.{PAUSE_UNTIL_PRESS}");
 
 const u8 gText_Power[] = _("Power");
@@ -1472,7 +1472,7 @@ const u8 gText_ChoiceSpecs_5000[]  = _("Choice Specs{CLEAR_TO 0x50}{FONT_SMALL}5
 const u8 gText_ChoiceScarf_5000[]  = _("Choice Scarf{CLEAR_TO 0x50}{FONT_SMALL}5000");
 const u8 gText_AssaultVest_2500[]  = _("Assault Vest{CLEAR_TO 0x50}{FONT_SMALL}2500");
 const u8 gText_LifeOrb_2500[]      = _("Life Orb{CLEAR_TO 0x50}{FONT_SMALL}2500");
-const u8 gText_HeavyDutyBoots_1000[] = _("Hvy. D. Boots{CLEAR_TO 0x50}{FONT_SMALL}1000");
+const u8 gText_EjectPack_1000[] = _("Eject Pack{CLEAR_TO 0x50}{FONT_SMALL}1000");
 const u8 gText_WeaknessPol_2500[]  = _("Wkns. Policy{CLEAR_TO 0x50}{FONT_SMALL}2500");
 const u8 gText_ScopeLens_1500[]    = _("Scope Lens{CLEAR_TO 0x50}{FONT_SMALL}1500");
 const u8 gText_LoadedDice_2000[]   = _("Loaded Dice{CLEAR_TO 0x50}{FONT_SMALL}2000");

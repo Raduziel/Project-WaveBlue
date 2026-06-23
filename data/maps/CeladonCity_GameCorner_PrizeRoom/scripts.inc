@@ -218,7 +218,7 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_ChoosePrizeLeft::
 	case 2, CeladonCity_GameCorner_PrizeRoom_EventScript_ChoiceScarf
 	case 3, CeladonCity_GameCorner_PrizeRoom_EventScript_AssaultVest
 	case 4, CeladonCity_GameCorner_PrizeRoom_EventScript_LifeOrb
-	case 5, CeladonCity_GameCorner_PrizeRoom_EventScript_HeavyDutyBoots
+	case 5, CeladonCity_GameCorner_PrizeRoom_EventScript_EjectPack
 	case 6, CeladonCity_GameCorner_PrizeRoom_EventScript_WeaknessPolicy
 	case 7, CeladonCity_GameCorner_PrizeRoom_EventScript_ScopeLens
 	case 8, CeladonCity_GameCorner_PrizeRoom_EventScript_LoadedDice
@@ -253,8 +253,8 @@ CeladonCity_GameCorner_PrizeRoom_EventScript_LifeOrb::
 	setvar VAR_TEMP_2, 2500
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 
-CeladonCity_GameCorner_PrizeRoom_EventScript_HeavyDutyBoots::
-	setvar VAR_TEMP_1, ITEM_HEAVY_DUTY_BOOTS
+CeladonCity_GameCorner_PrizeRoom_EventScript_EjectPack::
+	setvar VAR_TEMP_1, ITEM_EJECT_PACK
 	setvar VAR_TEMP_2, 1000
 	goto CeladonCity_GameCorner_PrizeRoom_EventScript_ConfirmPrizeItem
 

@@ -15155,7 +15155,7 @@ Pic: Professor Oak
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Will Suicide / HP Aware
 
 Steelix @ Leftovers  
 Ability: Rock Head  
@@ -15229,7 +15229,7 @@ Pic: Professor Oak
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Will Suicide / HP Aware
 
 Steelix @ Leftovers  
 Ability: Rock Head  
@@ -15302,7 +15302,7 @@ Pic: Professor Oak
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Will Suicide / HP Aware
 
 Steelix @ Leftovers  
 Ability: Rock Head  
