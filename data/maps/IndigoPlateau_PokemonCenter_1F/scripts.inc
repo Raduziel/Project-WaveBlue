@@ -72,3 +72,31 @@ IndigoPlateau_PokemonCenter_1F_EventScript_Nurse::
 	call EventScript_PkmnCenterNurse
 	release
 	end
+
+IndigoPlateau_PokemonCenter_1F_EventScript_CapCandyGiver::
+	lock
+	faceplayer
+	goto_if_set FLAG_GOT_CAP_CANDY, IndigoPlateau_PokemonCenter_1F_EventScript_CapCandyAlreadyGot
+	goto_if_set FLAG_TOGGLE_LEVEL_CAP, IndigoPlateau_PokemonCenter_1F_EventScript_CapCandyNoCapDeny
+	msgbox IndigoPlateau_PokemonCenter_1F_Text_CapCandyGiverPre1, MSGBOX_DEFAULT
+	giveitem ITEM_CAP_CANDY
+	msgbox IndigoPlateau_PokemonCenter_1F_Text_CapCandyGiverGive, MSGBOX_DEFAULT
+	setflag FLAG_GOT_CAP_CANDY
+	release
+	end
+
+IndigoPlateau_PokemonCenter_1F_EventScript_CapCandyNoCapDeny::
+	msgbox IndigoPlateau_PokemonCenter_1F_Text_CapCandyGiverPre2, MSGBOX_DEFAULT
+	release
+	end
+
+IndigoPlateau_PokemonCenter_1F_EventScript_CapCandyAlreadyGot::
+	goto_if_set FLAG_TOGGLE_LEVEL_CAP, IndigoPlateau_PokemonCenter_1F_EventScript_CapCandyPostNoCap
+	msgbox IndigoPlateau_PokemonCenter_1F_Text_CapCandyGiverPostCap, MSGBOX_DEFAULT
+	release
+	end
+
+IndigoPlateau_PokemonCenter_1F_EventScript_CapCandyPostNoCap::
+	msgbox IndigoPlateau_PokemonCenter_1F_Text_CapCandyGiverPostNoCap, MSGBOX_DEFAULT
+	release
+	end

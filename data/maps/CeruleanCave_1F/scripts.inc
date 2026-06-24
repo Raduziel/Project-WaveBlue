@@ -80,6 +80,7 @@ CeruleanCave_1F_EventScript_GiovanniLeave_Right::
 CeruleanCave_1F_EventScript_GiovanniDisappear::
 	playse SE_EXIT
 	setflag FLAG_HIDE_CERULEAN_CAVE_GIOVANNI
+	setflag FLAG_DEFEATED_BOSS_GIOVANNI
 	removeobject LOCALID_CERULEAN_CAVE_GIOVANNI
 
 CeruleanCave_1F_EventScript_GiovanniTriggerEnd::

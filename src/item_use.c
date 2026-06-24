@@ -679,6 +679,12 @@ void ItemUseOutOfBattle_RareCandy(u8 taskId)
     DoSetUpItemUseCallback(taskId);
 }
 
+void ItemUseOutOfBattle_CapCandy(u8 taskId)
+{
+    gItemUseCB = ItemUseCB_CapCandy;
+    DoSetUpItemUseCallback(taskId);
+}
+
 void ItemUseOutOfBattle_EvolutionStone(u8 taskId)
 {
     gItemUseCB = ItemUseCB_EvolutionStone;

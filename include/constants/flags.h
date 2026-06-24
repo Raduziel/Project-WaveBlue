@@ -340,8 +340,8 @@
 #define FLAG_EGG_TUTOR_INTRODUCED                        0x142
 #define FLAG_HIDE_SILPH_CO_8F_CELL_BATTERY               0x143
 #define FLAG_HIDE_ROUTE21_ABSORB_BULB                    0x144
-#define FLAG_0x145                                       0x145
-#define FLAG_0x146                                       0x146
+#define FLAG_GOT_CAP_CANDY                               0x145
+#define FLAG_DEFEATED_BOSS_GIOVANNI                      0x146
 #define FLAG_0x147                                       0x147
 #define FLAG_0x148                                       0x148
 #define FLAG_0x149                                       0x149

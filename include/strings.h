@@ -1568,6 +1568,7 @@ extern const u8 gText_DexSearchDontSpecify[];
 extern const u8 gText_DexSearchTypeNone[];
 
 //New strings
+extern const u8 gText_CapCandyNoEffect[];
 extern const u8 gText_InfiniteRepelOn[];
 extern const u8 gText_InfiniteRepelOff[];
 extern const u8 gText_UseBottleCap[];

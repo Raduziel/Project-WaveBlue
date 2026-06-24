@@ -6022,7 +6022,10 @@ static void ItemUseCB_RareCandyStep(u8 taskId, TaskFunc func)
     gPartyMenuUseExitCallback = TRUE;
     ItemUse_SetQuestLogEvent(QL_EVENT_USED_ITEM, mon, gSpecialVar_ItemId, 0xFFFF);
     UpdateMonDisplayInfoAfterRareCandy(gPartyMenu.slotId, mon);
-    RemoveBagItem(gSpecialVar_ItemId, 1);
+    if (GetItemConsumability(gSpecialVar_ItemId))
+    {
+        RemoveBagItem(gSpecialVar_ItemId, 1);
+    }
     GetMonNickname(mon, gStringVar1);
     if (sFinalLevel > sInitialLevel)
     {
@@ -6064,6 +6067,73 @@ static void UpdateMonDisplayInfoAfterRareCandy(u8 slot, struct Pokemon *mon)
     UpdatePartyMonHPBar(sPartyMenuBoxes[slot].monSpriteId, mon);
     AnimatePartySlot(slot, 1);
     ScheduleBgCopyTilemapToVram(0);
+}
+
+void ItemUseCB_CapCandy(u8 taskId, TaskFunc func)
+{
+    struct Pokemon *mon = &gPlayerParty[gPartyMenu.slotId];
+    u16 *itemPtr = &gSpecialVar_ItemId;
+    bool8 cannotUseEffect;
+    u8 holdEffectParam = GetItemHoldEffectParam(*itemPtr);
+
+    if (FlagGet(FLAG_TOGGLE_LEVEL_CAP))
+    {
+        PlaySE(SE_BOO);
+        gPartyMenuUseExitCallback = FALSE;
+        DisplayPartyMenuMessage(gText_CapCandyNoEffect, TRUE);
+        ScheduleBgCopyTilemapToVram(2);
+        gTasks[taskId].func = func;
+        return;
+    }
+
+    sInitialLevel = GetMonData(mon, MON_DATA_LEVEL);
+    if (!(sInitialLevel >= GetCurrentLevelCap()))
+    {
+        GetMonLevelUpWindowStats(mon, sLevelUpStatsBefore);
+        cannotUseEffect = ExecuteTableBasedItemEffect(mon, ITEM_RARE_CANDY, gPartyMenu.slotId, 0);
+        GetMonLevelUpWindowStats(mon, sLevelUpStatsAfter);
+    }
+    else
+    {
+        cannotUseEffect = TRUE;
+    }
+    PlaySE(SE_SELECT);
+    if (cannotUseEffect)
+    {
+        u16 targetSpecies = SPECIES_NONE;
+        bool32 canStopEvo = TRUE;
+
+        sInitialLevel = 0;
+        sFinalLevel = 0;
+
+        if (holdEffectParam == 0)
+            targetSpecies = GetEvolutionTargetSpecies(mon, EVO_MODE_NORMAL, ITEM_NONE, NULL, &canStopEvo, CHECK_EVO);
+
+        if (targetSpecies != SPECIES_NONE)
+        {
+            GetEvolutionTargetSpecies(mon, EVO_MODE_NORMAL, ITEM_NONE, NULL, &canStopEvo, DO_EVO);
+            FreePartyPointers();
+            gCB2_AfterEvolution = gPartyMenu.exitCallback;
+            BeginEvolutionScene(mon, targetSpecies, canStopEvo, gPartyMenu.slotId);
+            DestroyTask(taskId);
+        }
+        else
+        {
+            gPartyMenuUseExitCallback = FALSE;
+            DisplayPartyMenuMessage(gText_WontHaveEffect, TRUE);
+            ScheduleBgCopyTilemapToVram(2);
+            gTasks[taskId].func = func;
+        }
+    }
+    else
+    {
+        u8 i;
+        sFinalLevel = GetMonData(mon, MON_DATA_LEVEL, NULL);
+        for (i = sInitialLevel; i < sFinalLevel; i++)
+            AdjustFriendship(mon, FRIENDSHIP_EVENT_GROW_LEVEL);
+        Task_DoUseItemAnim(taskId);
+        gItemUseCB = ItemUseCB_RareCandyStep;
+    }
 }
 
 static void Task_DisplayLevelUpStatsPg1(u8 taskId)

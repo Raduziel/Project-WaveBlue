@@ -1458,6 +1458,7 @@ const u8 gText_DexSearchDontSpecify[] = _("Don't Specify.");
 const u8 gText_DexSearchTypeNone[] = _("None");
 const u8 gText_InfiniteRepelOn[] = _("Infinite Repel {COLOR GREEN}{SHADOW LIGHT_GREEN}activated{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}!\nWild {PKMN} will no longer appear.{PAUSE_UNTIL_PRESS}");
 const u8 gText_InfiniteRepelOff[] = _("Infinite Repel {COLOR RED}{SHADOW LIGHT_RED}deactivated{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}!\nWild {PKMN} may appear again.{PAUSE_UNTIL_PRESS}");
+const u8 gText_CapCandyNoEffect[] = _("It can only be used while\nthe Level Cap is in effect.{PAUSE_UNTIL_PRESS}");
 const u8 gText_UseBottleCap[] = _("Use Bottle Cap");
 const u8 gText_UseGoldBottleCap[] = _("Use Gold Bottle Cap");
 const u8 gText_MrMime_5500[] = _("Mr. Mime{CLEAR_TO 0x55}{FONT_SMALL} 5500");

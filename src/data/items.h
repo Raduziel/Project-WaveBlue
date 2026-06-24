@@ -2023,6 +2023,22 @@ const struct ItemInfo gItemsInfo[] =
     },
 
 // Candy
+        [ITEM_CAP_CANDY] =
+    {
+        .name = ITEM_NAME("Cap Candy"),
+        .pluralName = ITEM_PLURAL_NAME("Cap Candies"),
+        .description = COMPOUND_STRING(
+            "Raises a Pokémon's level\n"
+            "by one, up to the cap."),
+        .notConsumed = TRUE,
+        .price = 0,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CapCandy,
+        .iconPic = gItemIcon_RareCandy,
+        .iconPalette = gItemIconPalette_CapCandy,
+    },
 
     [ITEM_RARE_CANDY] =
     {
@@ -2040,7 +2056,7 @@ const struct ItemInfo gItemsInfo[] =
         .effect = gItemEffect_RareCandy,
         .flingPower = 30,
         .iconPic = gItemIcon_RareCandy,
-        .iconPalette = gItemIconPalette_RareCandy,
+        .iconPalette = gItemIconPalette_CapCandy,
     },
 
     [ITEM_EXP_CANDY_XS] =
