@@ -15475,6 +15475,24 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_Sapphire,
     },
 
+    [ITEM_FLIGHT_TICKET] =
+    {
+        .name = ITEM_NAME("Flight Ticket"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Lets you fly to any town\n"
+            "you've already visited."),
+        .notConsumed = TRUE,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_FlightTicket,
+        .iconPic = gItemIcon_EonTicket,
+        .iconPalette = gItemIconPalette_EonTicket,
+    },
+
+// GEN 9 Items
+
     [ITEM_ABILITY_SHIELD] =
     {
         .name = ITEM_NAME("Ability Shield"),
@@ -15491,8 +15509,6 @@ const struct ItemInfo gItemsInfo[] =
         .iconPic = gItemIcon_AbilityShield,
         .iconPalette = gItemIconPalette_AbilityShield,
     },
-
-// GEN 9 Items
 
     [ITEM_CLEAR_AMULET] =
     {

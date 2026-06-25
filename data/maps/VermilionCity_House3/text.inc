@@ -12,9 +12,13 @@ VermilionCity_House3_Text_DearPippiLetter::
     .string "Team Rocket.\p"
     .string "Vermilion appears to be safe.$"
 
-VermilionCity_House3_Text_SendMyPidgeyToUnionRoom::
-	.string "My Pidgey usually flies me around,\n"
-	.string "but we got caught in a bad storm.\p"
-	.string "We stopped at a Pokémon Center\n"
-	.string "and the Nurse said he needs rest.\p"
-	.string "Guess I'm stuck here for a while.$"
+VermilionCity_House3_Text_BoyGiveFlightTicket::
+	.string "I love Vermilion City!\n"
+	.string "I want to stay here longer.\p"
+	.string "I got this Flight Ticket, but\n"
+	.string "I won't be needing it.\p"
+	.string "Here, you can have it!$"
+
+VermilionCity_House3_Text_BoyAlreadyGave::
+	.string "Take good care of that ticket!\n"
+	.string "Fly all over Kanto for me.$"

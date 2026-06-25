@@ -43,6 +43,7 @@ void ItemUseOutOfBattle_WailmerPail(u8);
 void ItemUseOutOfBattle_ZygardeCube(u8 taskId);
 void ItemUseOutOfBattle_CannotUse(u8 taskId);
 void ItemUseOutOfBattle_InfiniteRepel(u8 taskId);
+void ItemUseOutOfBattle_FlightTicket (u8 taskId);
 void ItemUseInBattle_BagMenu(u8 taskId);
 void ItemUseInBattle_PartyMenu(u8 taskId);
 void ItemUseInBattle_PartyMenuChooseMove(u8 taskId);

@@ -77,6 +77,7 @@ static void Task_UseLure(u8 taskId);
 static void RemoveUsedItem(void);
 static void Task_UsedBlackWhiteFlute(u8 taskId);
 static void ItemUseOnFieldCB_EscapeRope(u8 taskId);
+static void ItemUseOnFieldCB_FlightTicket(u8 taskId);
 static void UseTownMapFromBag(void);
 static void Task_UseTownMapFromField(u8 taskId);
 static void UseFameCheckerFromBag(void);
@@ -392,6 +393,25 @@ void ItemUseOutOfBattle_InfiniteRepel(u8 taskId)
     }
 }
 
+static void ItemUseOnFieldCB_FlightTicket(u8 taskId)
+{
+    SetMainCallback2(CB2_OpenFlyMap);
+    DestroyTask(taskId);
+}
+
+void ItemUseOutOfBattle_FlightTicket(u8 taskId)
+{
+    if (Overworld_MapTypeAllowsTeleportAndFly(gMapHeader.mapType) == TRUE)
+    {
+        sItemUseOnFieldCB = ItemUseOnFieldCB_FlightTicket;
+        SetUpItemUseOnFieldCallback(taskId);
+    }
+    else
+    {
+        PrintNotTheTimeToUseThat(taskId, gTasks[taskId].data[3]);
+    }
+}
+
 static bool8 CanFish(void)
 {
     s16 x, y;
@@ -681,8 +701,15 @@ void ItemUseOutOfBattle_RareCandy(u8 taskId)
 
 void ItemUseOutOfBattle_CapCandy(u8 taskId)
 {
-    gItemUseCB = ItemUseCB_CapCandy;
-    DoSetUpItemUseCallback(taskId);
+    if (gTasks[taskId].tUsingRegisteredKeyItem != TRUE)
+    {
+        gItemUseCB = ItemUseCB_CapCandy;
+        DoSetUpItemUseCallback(taskId);
+    }
+    else
+    {
+        PrintNotTheTimeToUseThat(taskId, gTasks[taskId].data[3]);
+    }
 }
 
 void ItemUseOutOfBattle_EvolutionStone(u8 taskId)
