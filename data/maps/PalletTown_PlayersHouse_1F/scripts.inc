@@ -1,5 +1,57 @@
 PalletTown_PlayersHouse_1F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, PalletTown_PlayersHouse_1F_OnTransition
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, PalletTown_PlayersHouse_1F_OnFrame
 	.byte 0
+
+PalletTown_PlayersHouse_1F_OnTransition::
+	call_if_set FLAG_SYS_GAME_CLEAR, PalletTown_PlayersHouse_1F_EventScript_TryArmBillGiftScene
+	end
+
+PalletTown_PlayersHouse_1F_EventScript_TryArmBillGiftScene::
+	goto_if_eq VAR_MOM_PLAYERHOUSE_SCENE, 0, PalletTown_PlayersHouse_1F_EventScript_ArmBillGiftScene
+	return
+
+PalletTown_PlayersHouse_1F_EventScript_ArmBillGiftScene::
+	setvar VAR_MOM_PLAYERHOUSE_SCENE, 1
+	return
+
+PalletTown_PlayersHouse_1F_OnFrame::
+	map_script_2 VAR_MOM_PLAYERHOUSE_SCENE, 1, PalletTown_PlayersHouse_1F_EventScript_BillGiftScene
+	.2byte 0
+
+PalletTown_PlayersHouse_1F_EventScript_BillGiftScene::
+	lockall
+	applymovement LOCALID_MOM, PalletTown_PlayersHouse_1F_Movement_MomSmile
+	waitmovement 0
+	applymovement LOCALID_PLAYER, PalletTown_PlayersHouse_1F_Movement_PlayerApproachMom
+	waitmovement 0
+	textcolor NPC_TEXT_COLOR_FEMALE
+	msgbox PalletTown_PlayersHouse_1F_Text_BillLeftGift, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_MOM, Common_Movement_FaceLeft
+	waitmovement 0
+	setvar VAR_MOM_PLAYERHOUSE_SCENE, 2
+	releaseall
+	end
+
+PalletTown_PlayersHouse_1F_EventScript_BillGiftAbort::
+	releaseall
+	end
+
+PalletTown_PlayersHouse_1F_Movement_MomSmile::
+	face_down
+	delay_16
+	emote_smile
+	step_end
+
+PalletTown_PlayersHouse_1F_Movement_PlayerApproachMom::
+	walk_up
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_up
+	step_end
 
 PalletTown_PlayersHouse_1F_EventScript_Mom::
 	lock
