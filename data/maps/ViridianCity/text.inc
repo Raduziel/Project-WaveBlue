@@ -56,63 +56,32 @@ ViridianCity_Text_ThisIsPrivateProperty::
     .string "going through here!\p"
     .string "This is private property!$"
 
+ViridianCity_Text_OldManOfferTutorial::
+	.string "Well, now, I've had my coffee!\p"
+	.string "Say, do you know how to catch\n"
+	.string "a Pokémon?\p"
+	.string "Want me to show you?$"
+
+ViridianCity_Text_OldManTutorialDeclined::
+	.string "Oh? You already know your stuff.\n"
+	.string "Good, good!\p"
+	.string "Come talk to me if you change\n"
+	.string "your mind.$"
+
 ViridianCity_Text_ShowYouHowToCatchMons::
-    .string "Well, now, I've had my coffee, and\n"
-    .string "that's what I need to get going!\p"
-    .string "Hm?\n"
-    .string "What is that red box you have?\p"
-    .string "Ah, so you're working on your\n"
-    .string "Pokédex.\p"
-    .string "Then let me give you a word of\n"
-    .string "advice.\p"
-    .string "Whenever you catch a Pokémon,\n"
-    .string "the Pokédex automatically updates\l"
-    .string "its data.\p"
-    .string "…You don't know how to catch\n"
-    .string "a Pokémon?\p"
-    .string "I suppose I had better show you\n"
-    .string "then!$"
+	.string "All right, watch closely!\p"
+	.string "First, weaken the wild Pokémon\n"
+	.string "in battle.\p"
+	.string "Then throw a Poké Ball to catch\n"
+	.string "it. Like this!$"
 
-ViridianCity_Text_ThatWasEducationalTakeThis::
-    .string "There! Now tell me, that was\n"
-    .string "educational, was it not?\p"
-    .string "And here, take this, too.$"
-
-ViridianCity_Text_WatchThatToLearnBasics::
-    .string "If there's something you don't\n"
-    .string "understand, watch that.\p"
-    .string "It will teach you about the basics\n"
-    .string "of being a Pokémon Trainer.$"
+ViridianCity_Text_ThatWasEducational::
+	.string "There! Now tell me, that was\n"
+	.string "educational, was it not?$"
 
 ViridianCity_Text_WeakenMonsFirstToCatch::
-    .string "Well, now, I've had my coffee, and\n"
-    .string "that's what I need to get going!\p"
-    .string "But I made it too strong.\n"
-    .string "It gave me a headache…\p"
-    .string "Incidentally, are you filling your\n"
-    .string "Pokédex?\p"
     .string "At first, focus on weakening the\n"
     .string "Pokémon before trying to catch it.$"
-
-ViridianCity_Text_HowsTeachyTVHelping::
-    .string "Well, now, I've had my coffee, and\n"
-    .string "that's what I need to get going!\p"
-    .string "But I made it too strong.\n"
-    .string "It gave me a headache…\p"
-    .string "Incidentally, is my old Teachy TV\n"
-    .string "helping you?$"
-
-ViridianCity_Text_MyGrandsonOnTheShow::
-    .string "Wahaha!\n"
-    .string "It's my grandson on the show!\p"
-    .string "Since he's the one doing the\n"
-    .string "teaching, you're bound to learn.$"
-
-ViridianCity_Text_TooBusyForTeachyTV::
-    .string "Hm… You're too busy to not even\n"
-    .string "have the time for Teachy TV…\p"
-    .string "Time is money, and neither should\n"
-    .string "be ill spent…$"
 
 ViridianCity_Text_CitySign::
     .string "Viridian City \n"
@@ -137,4 +106,3 @@ ViridianCity_Text_GymSign::
 
 ViridianCity_Text_GymDoorsAreLocked::
     .string "Viridian Gym's doors are locked…$"
-

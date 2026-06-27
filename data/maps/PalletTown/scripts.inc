@@ -38,7 +38,6 @@ PalletTown_OnFrame::
 	map_script_2 VAR_MAP_SCENE_PALLET_TOWN_OAK, 2, PalletTown_EventScript_OakRatingScene
 	.2byte 0
 
-@ Oak approaches player after exiting their house post Elite Four to check if they should receieve the National Dex
 PalletTown_EventScript_OakRatingScene::
 	lockall
 	textcolor NPC_TEXT_COLOR_MALE
@@ -49,14 +48,6 @@ PalletTown_EventScript_OakRatingScene::
 	waitmovement 0
 	goto_if_unset FLAG_WORLD_MAP_ONE_ISLAND, PalletTown_EventScript_NotBeenToOneIslandYet
 	msgbox PalletTown_Text_OakLetMeSeePokedex
-	setvar VAR_0x8004, 0
-	specialvar VAR_RESULT, GetPokedexCount
-	copyvar VAR_0x8008, VAR_0x8005
-	copyvar VAR_0x8009, VAR_0x8006
-	buffernumberstring STR_VAR_1, VAR_0x8008
-	buffernumberstring STR_VAR_2, VAR_0x8009
-	goto_if_lt VAR_0x8009, 60, PalletTown_EventScript_NotEnoughMonsForNationalDex
-	msgbox PalletTown_Text_CaughtXImpressiveFollowMe
 	closemessage
 	playbgm MUS_FOLLOW_ME, 0
 	applymovement LOCALID_PLAYER, PalletTown_Movement_PlayerWalkToLabFromHouse
@@ -84,11 +75,6 @@ PalletTown_EventScript_EndOakRatingScene::
 	removeobject LOCALID_PALLET_PROF_OAK
 	setvar VAR_MAP_SCENE_PALLET_TOWN_OAK, 3
 	releaseall
-	end
-
-PalletTown_EventScript_NotEnoughMonsForNationalDex::
-	msgbox PalletTown_Text_CaughtXPuttingInHonestEffort
-	goto PalletTown_EventScript_EndOakRatingScene
 	end
 
 PalletTown_EventScript_NotBeenToOneIslandYet::

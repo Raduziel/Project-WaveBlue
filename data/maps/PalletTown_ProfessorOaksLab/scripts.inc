@@ -900,7 +900,6 @@ PalletTown_ProfessorOaksLab_Movement_VerticalPacing:
 PalletTown_ProfessorOaksLab_EventScript_TryStartNationalDexScene::
 	call PokedexRating_EventScript_RateInPerson
 	closemessage
-    goto_if_lt VAR_0x8009, 1, PalletTown_ProfessorOaksLab_EventScript_DontStartNationalDexScene
 	goto_if_unset FLAG_WORLD_MAP_ONE_ISLAND, PalletTown_ProfessorOaksLab_EventScript_DontStartNationalDexScene
 	delay 30
 	msgbox PalletTown_ProfessorOaksLab_Text_OakFavorToAskYouPlayer
@@ -1298,8 +1297,9 @@ PalletTown_ProfessorOaksLab_EventScript_RightSignAlt::
 	end
 
 PalletTown_ProfessorOaksLab_EventScript_CheckOakBattle::
-    goto_if_set FLAG_DEFEATED_OAK, PalletTown_ProfessorOaksLab_EventScript_RatePokedex
-    textcolor NPC_TEXT_COLOR_MALE
+	goto_if_set FLAG_DEFEATED_OAK, PalletTown_ProfessorOaksLab_EventScript_RatePokedex
+	goto_if_unset FLAG_DEFEATED_BOSS_GIOVANNI, PalletTown_ProfessorOaksLab_EventScript_OakNotReadyYet
+	textcolor NPC_TEXT_COLOR_MALE
     compare VAR_STARTER_MON, 0
     call_if_eq PalletTown_ProfessorOaksLab_EventScript_BufferLeftoverSquirtle
     compare VAR_STARTER_MON, 1
@@ -1317,6 +1317,13 @@ PalletTown_ProfessorOaksLab_EventScript_CheckOakBattle::
     goto_if_eq PalletTown_ProfessorOaksLab_EventScript_BattleOakCharmander
     compare VAR_STARTER_MON, 0
     goto_if_eq PalletTown_ProfessorOaksLab_EventScript_BattleOakSquirtle
+    end
+
+PalletTown_ProfessorOaksLab_EventScript_OakNotReadyYet::
+    textcolor NPC_TEXT_COLOR_MALE
+    msgbox PalletTown_ProfessorOaksLab_Text_OakNotReadyYet, MSGBOX_DEFAULT
+    call EventScript_RestorePrevTextColor
+    goto PalletTown_ProfessorOaksLab_EventScript_RatePokedex
     end
 
 PalletTown_ProfessorOaksLab_EventScript_BufferLeftoverSquirtle::

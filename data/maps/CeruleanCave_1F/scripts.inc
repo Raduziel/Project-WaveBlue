@@ -49,11 +49,14 @@ CeruleanCave_1F_EventScript_GiovanniTrigger_Right::
 	end
 
 CeruleanCave_1F_EventScript_GiovanniConfront::
+	textcolor NPC_TEXT_COLOR_MALE
 	msgbox CeruleanCave_1F_Text_GiovanniIntro, MSGBOX_DEFAULT
 	closemessage
 	trainerbattle_no_intro TRAINER_BOSS_GIOVANNI_3, CeruleanCave_1F_Text_GiovanniDefeat
+	textcolor NPC_TEXT_COLOR_MALE
 	msgbox CeruleanCave_1F_Text_GiovanniFarewell, MSGBOX_DEFAULT
 	closemessage
+	call CeruleanCave_1F_EventScript_GiovanniGiveCatchingCharm
 	compare VAR_MAP_SCENE_GIOVANNI_CERULEAN_CAVE, 1
 	goto_if_eq CeruleanCave_1F_EventScript_GiovanniLeave_Center
 	compare VAR_MAP_SCENE_GIOVANNI_CERULEAN_CAVE, 2
@@ -61,6 +64,16 @@ CeruleanCave_1F_EventScript_GiovanniConfront::
 	compare VAR_MAP_SCENE_GIOVANNI_CERULEAN_CAVE, 3
 	goto_if_eq CeruleanCave_1F_EventScript_GiovanniLeave_Right
 	end
+
+CeruleanCave_1F_EventScript_GiovanniGiveCatchingCharm::
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox CeruleanCave_1F_Text_GiovanniTakeThis, MSGBOX_DEFAULT
+	closemessage
+	giveitem_msg CeruleanCave_1F_Text_ObtainedCatchingCharm, ITEM_CATCHING_CHARM, 1, MUS_OBTAIN_KEY_ITEM
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox CeruleanCave_1F_Text_GiovanniCatchingCharm, MSGBOX_DEFAULT
+	closemessage
+	return
 
 CeruleanCave_1F_EventScript_GiovanniLeave_Center::
 	applymovement LOCALID_CERULEAN_CAVE_GIOVANNI, CeruleanCave_1F_Movement_GiovanniLeave_Center
@@ -90,6 +103,7 @@ CeruleanCave_1F_EventScript_GiovanniTriggerEnd::
 CeruleanCave_1F_EventScript_Giovanni::
 	lock
 	faceplayer
+	textcolor NPC_TEXT_COLOR_MALE
 	msgbox CeruleanCave_1F_Text_GiovanniIntro, MSGBOX_DEFAULT
 	release
 	end

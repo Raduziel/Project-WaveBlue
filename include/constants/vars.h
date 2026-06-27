@@ -205,7 +205,7 @@
 #define VAR_FRONTIER_GAMBLER_AMOUNT_BET     0x4096
 #define VAR_RANDOM_SPEECH                   0x4097
 #define VAR_HIDDEN_POWER_READER             0x4098
-#define VAR_0x4099                 0x4099
+#define VAR_FUJI_VERMILION_SCENE            0x4099
 #define VAR_0x409A                 0x409A
 #define VAR_0x409B                 0x409B
 #define VAR_0x409C                 0x409C

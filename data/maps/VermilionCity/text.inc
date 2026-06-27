@@ -71,18 +71,35 @@ VermilionCity_Text_DoYouHaveATicket::
     .string "Excuse me, do you have a ticket?$"
 
 VermilionCity_Text_FlashedSSTicket::
-    .string "{FONT_NORMAL}{PLAYER} flashed the S.S. Ticket!\p"
-    .string "{FONT_MALE}Great!\n"
-    .string "Welcome to the S.S. Anne!$"
+	.string "{PLAYER} flashed the S.S. Ticket!$"
+
+VermilionCity_Text_WelcomeAboardSSAnne::
+	.string "Great!\n"
+	.string "Welcome to the S.S. Anne!$"
 
 VermilionCity_Text_DontHaveNeededSSTicket::
-    .string "{FONT_NORMAL}{PLAYER} doesn't have the needed\n"
-    .string "S.S. Ticket.\p"
-    .string "{FONT_MALE}Sorry!\p"
-    .string "You need a ticket to get aboard.$"
+	.string "{PLAYER} doesn't have the needed\n"
+	.string "S.S. Ticket.$"
+
+VermilionCity_Text_NeedTicketToBoard::
+	.string "Sorry!\p"
+	.string "You need a ticket to get aboard.$"
 
 VermilionCity_Text_TheShipSetSail::
     .string "The ship set sail.$"
+
+VermilionCity_Text_MissedShipTakeTicket::
+	.string "Oh! Too bad you missed\n"
+	.string "the ship.\p"
+	.string "I'll have to take that ticket\n"
+	.string "back from you.$"
+
+VermilionCity_Text_HandedOverSSTicket::
+	.string "{PLAYER} handed over the\n"
+	.string "S.S. Ticket.$"
+
+VermilionCity_Text_SailorThankYou::
+	.string "Thank you!$"
 
 VermilionCity_Text_BoardSeagallopTriPass::
     .string "Ah, you have a Tri-Pass.\p"
@@ -139,3 +156,25 @@ VermilionCity_Text_Route2AideHasPackageForYou::
     .string "If you're in the Route 2 area,\n"
     .string "please look for him.$"
 
+VermilionCity_Text_FujiCallout::
+	.string "Fuji: Ah, Champion!$"
+
+VermilionCity_Text_FujiCaveWarning::
+	.string "Fuji: I thought I might find you\n"
+	.string "aboard that ship.\p"
+	.string "Word reached me of an explosion\n"
+	.string "in a cave near Cerulean.\p"
+	.string "Something stirs within it, or so\n"
+	.string "I am told.\p"
+	.string "I would ask you to look into it,\n"
+	.string "as our Champion.\p"
+	.string "There is no one I would trust\n"
+	.string "with this more than you.\p"
+	.string "I would go myself, but these old\n"
+	.string "bones are past such journeys.\p"
+	.string "I must hurry back to the Volunteer\n"
+	.string "House now.\p"
+	.string "My Abra will see me there in but\n"
+	.string "a blink.\p"
+	.string "Do be careful out there.\n"
+	.string "I am counting on you, {PLAYER}.$"

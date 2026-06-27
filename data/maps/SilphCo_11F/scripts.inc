@@ -18,8 +18,46 @@ SilphCo_11F_EventScript_President::
 	giveitem_msg SilphCo_11F_Text_ObtainedMasterBallFromPresident, ITEM_MASTER_BALL, 1, MUS_OBTAIN_KEY_ITEM
 	msgbox SilphCo_11F_Text_ThatsOurSecretPrototype
 	setflag FLAG_GOT_MASTER_BALL_FROM_SILPH
+	call_if_set FLAG_HIDE_SILPH_CO_5F_CARD_KEY, SilphCo_11F_EventScript_TakeCardKey
 	release
 	end
+
+SilphCo_11F_EventScript_TakeCardKey::
+	msgbox SilphCo_11F_Text_TakeCardKey, MSGBOX_DEFAULT
+	checkitem ITEM_CARD_KEY
+	call_if_eq VAR_RESULT, TRUE, SilphCo_11F_EventScript_RemoveCardKey
+	call SilphCo_11F_EventScript_OpenAllDoors
+	return
+
+SilphCo_11F_EventScript_RemoveCardKey::
+	removeitem ITEM_CARD_KEY
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+	msgbox SilphCo_11F_Text_HandedCardKey, MSGBOX_DEFAULT
+	call EventScript_RestorePrevTextColor
+	return
+
+SilphCo_11F_EventScript_OpenAllDoors::
+	setflag FLAG_SILPH_2F_DOOR_1
+	setflag FLAG_SILPH_2F_DOOR_2
+	setflag FLAG_SILPH_3F_DOOR_1
+	setflag FLAG_SILPH_3F_DOOR_2
+	setflag FLAG_SILPH_4F_DOOR_1
+	setflag FLAG_SILPH_4F_DOOR_2
+	setflag FLAG_SILPH_5F_DOOR_1
+	setflag FLAG_SILPH_5F_DOOR_2
+	setflag FLAG_SILPH_5F_DOOR_3
+	setflag FLAG_SILPH_6F_DOOR
+	setflag FLAG_SILPH_7F_DOOR_1
+	setflag FLAG_SILPH_7F_DOOR_2
+	setflag FLAG_SILPH_7F_DOOR_3
+	setflag FLAG_SILPH_8F_DOOR
+	setflag FLAG_SILPH_9F_DOOR_1
+	setflag FLAG_SILPH_9F_DOOR_2
+	setflag FLAG_SILPH_9F_DOOR_3
+	setflag FLAG_SILPH_9F_DOOR_4
+	setflag FLAG_SILPH_10F_DOOR
+	setflag FLAG_SILPH_11F_DOOR
+	return
 
 SilphCo_11F_EventScript_PresidentThanksMale::
 	msgbox SilphCo_11F_Text_ThanksForSavingMeDearBoy

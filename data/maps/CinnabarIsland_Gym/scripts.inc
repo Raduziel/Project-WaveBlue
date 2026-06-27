@@ -86,8 +86,17 @@ CinnabarIsland_Gym_EventScript_DefeatedBlaine::
 	setvar VAR_MAP_SCENE_CINNABAR_ISLAND, 1
 	clearflag FLAG_HIDE_CINNABAR_BILL
 	set_gym_trainers 7
+	call_if_set FLAG_HIDE_POKEMON_MANSION_B1F_SECRET_KEY, CinnabarIsland_Gym_EventScript_BlaineTakeSecretKey
 	goto CinnabarIsland_Gym_EventScript_GiveTM38
 	end
+
+CinnabarIsland_Gym_EventScript_BlaineTakeSecretKey::
+	msgbox CinnabarIsland_Gym_Text_BlaineTakeSecretKey, MSGBOX_DEFAULT
+	removeitem ITEM_SECRET_KEY
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+	msgbox CinnabarIsland_Gym_Text_BlaineReturnedSecretKey, MSGBOX_DEFAULT
+	call EventScript_RestorePrevTextColor
+	return
 
 CinnabarIsland_Gym_EventScript_GiveTM38::
 	msgbox CinnabarIsland_Gym_Text_ExplainVolcanoBadge

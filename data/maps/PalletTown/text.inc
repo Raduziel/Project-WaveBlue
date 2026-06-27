@@ -34,34 +34,23 @@ PalletTown_Text_TownSign::
     .string "Shades of your journey await!$"
 
 PalletTown_Text_OakLetMeSeePokedex::
-    .string "Oak: Ah, {PLAYER}!\n"
-    .string "You're back, are you?\p"
-    .string "How much have you filled in your\n"
-    .string "Pokédex?\p"
-    .string "May I see it?\p"
-    .string "Let's see…$"
-
-PalletTown_Text_CaughtXPuttingInHonestEffort::
-    .string "You've caught {STR_VAR_2}…\p"
-    .string "Hm, it looks as if you're putting\n"
-    .string "in an honest effort.\p"
-    .string "When you manage to fill it some\n"
-    .string "more, come show me, please.$"
-
-PalletTown_Text_CaughtXImpressiveFollowMe::
-    .string "You've caught… {STR_VAR_2}!?\n"
-    .string "Now, this is impressive!\p"
-    .string "There's something I wanted to ask\n"
-    .string "of you, {PLAYER}.\p"
-    .string "Come.\n"
-    .string "Follow me.$"
+	.string "Oak: Ah, {PLAYER}!\n"
+	.string "You're back, are you?\p"
+	.string "You just missed Bill.\n"
+	.string "He had something for you.\p"
+	.string "He left it in your old room,\n"
+	.string "I believe. Take a look later.\p"
+	.string "For now, follow me to my lab.\n"
+	.string "I have a gift as well.$"
 
 PalletTown_Text_OakYouEnjoyingTraveling::
-    .string "Oak: Ah, {PLAYER}!\n"
-    .string "You seem to be enjoying traveling.\p"
-    .string "Knowing you, {PLAYER}, I can easily\n"
-    .string "imagine you going out to even more\l"
-    .string "exotic locales.\p"
-    .string "Good for you, good for you.\n"
-    .string "Hohoho.$"
-
+	.string "Oak: Ah, {PLAYER}!\n"
+	.string "You seem to be enjoying traveling.\p"
+	.string "Knowing you, {PLAYER}, I can easily\n"
+	.string "picture you in far-off lands.\p"
+	.string "Good for you, good for you.\n"
+	.string "Hohoho.\p"
+	.string "Oh, you just missed Bill.\n"
+	.string "He had something for you.\p"
+	.string "He left it in your old room,\n"
+	.string "I believe. Take a look later.$"

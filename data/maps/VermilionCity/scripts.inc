@@ -7,23 +7,46 @@ VermilionCity_OnFrame::
 	map_script_2 VAR_MAP_SCENE_VERMILION_CITY, 2, VermilionCity_EventScript_ExitSSAnne
 	.2byte 0
 
+VermilionCity_OnTransition::
+	setworldmapflag FLAG_WORLD_MAP_VERMILION_CITY
+	call_if_set FLAG_TALKED_TO_OAKS_AIDE_IN_VERMILION, VermilionCity_EventScript_HideOaksAide
+	setflag FLAG_HIDE_VERMILLION_FUJI
+	end
+
 VermilionCity_EventScript_ExitSSAnne::
 	lockall
-	applymovement LOCALID_PLAYER, VermilionCity_Movement_ExitSSAnne
+	applymovement LOCALID_PLAYER, VermilionCity_Movement_ExitSSAnneToSailor
+	waitmovement 0
+	checkitem ITEM_SS_TICKET
+	call_if_eq VAR_RESULT, TRUE, VermilionCity_EventScript_CollectSSTicketOnExit
+	applymovement LOCALID_PLAYER, VermilionCity_Movement_ExitSSAnnePastTrigger
 	waitmovement 0
 	setvar VAR_MAP_SCENE_VERMILION_CITY, 3
 	releaseall
 	end
 
-VermilionCity_Movement_ExitSSAnne::
-	walk_up
+VermilionCity_EventScript_CollectSSTicketOnExit::
+	textcolor NPC_TEXT_COLOR_MALE
+	applymovement LOCALID_PLAYER, Common_Movement_FaceRight
+	waitmovement 0
+	applymovement LOCALID_VERMILION_FERRY_SAILOR, Common_Movement_FaceLeft
+	waitmovement 0
+	msgbox VermilionCity_Text_MissedShipTakeTicket, MSGBOX_DEFAULT
+	removeitem ITEM_SS_TICKET
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+	msgbox VermilionCity_Text_HandedOverSSTicket, MSGBOX_DEFAULT
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox VermilionCity_Text_SailorThankYou, MSGBOX_DEFAULT
+	closemessage
+	return
+
+VermilionCity_Movement_ExitSSAnneToSailor::
 	walk_up
 	step_end
 
-VermilionCity_OnTransition::
-	setworldmapflag FLAG_WORLD_MAP_VERMILION_CITY
-	call_if_set FLAG_TALKED_TO_OAKS_AIDE_IN_VERMILION, VermilionCity_EventScript_HideOaksAide
-	end
+VermilionCity_Movement_ExitSSAnnePastTrigger::
+	walk_up
+	step_end
 
 VermilionCity_EventScript_HideOaksAide::
 	setflag FLAG_HIDE_VERMILION_CITY_OAKS_AIDE
@@ -119,6 +142,111 @@ VermilionCity_AddMysticTicket::
 VermilionCity_AddAuroraTicket::
 	dynmultipush Seagallop_BirthIsland, 3
 	return
+
+VermilionCity_EventScript_MewTwoEventCenter::
+	lockall
+	goto_if_unset FLAG_HIDE_CERULEAN_CAVE_GUARD, VermilionCity_EventScript_FujiSceneAbort
+	call VermilionCity_EventScript_FujiAppear
+	applymovement LOCALID_FUJI_VERMILLION, VermilionCity_Movement_FujiApproach_Center
+	applymovement LOCALID_ABRA_VERMILLION, VermilionCity_Movement_AbraApproach_Center
+	waitmovement 0
+	goto VermilionCity_EventScript_FujiSpeech
+	end
+
+VermilionCity_EventScript_MewTwoEventLeft::
+	lockall
+	goto_if_unset FLAG_HIDE_CERULEAN_CAVE_GUARD, VermilionCity_EventScript_FujiSceneAbort
+	call VermilionCity_EventScript_FujiAppear
+	applymovement LOCALID_FUJI_VERMILLION, VermilionCity_Movement_FujiApproach_Left
+	applymovement LOCALID_ABRA_VERMILLION, VermilionCity_Movement_AbraApproach_LeftRight
+	waitmovement 0
+	applymovement LOCALID_PLAYER, Common_Movement_FaceRight
+	waitmovement 0
+	goto VermilionCity_EventScript_FujiSpeech
+	end
+
+VermilionCity_EventScript_MewTwoEventRight::
+	lockall
+	goto_if_unset FLAG_HIDE_CERULEAN_CAVE_GUARD, VermilionCity_EventScript_FujiSceneAbort
+	call VermilionCity_EventScript_FujiAppear
+	applymovement LOCALID_FUJI_VERMILLION, VermilionCity_Movement_FujiApproach_Right
+	applymovement LOCALID_ABRA_VERMILLION, VermilionCity_Movement_AbraApproach_LeftRight
+	waitmovement 0
+	applymovement LOCALID_PLAYER, Common_Movement_FaceLeft
+	waitmovement 0
+	goto VermilionCity_EventScript_FujiSpeech
+	end
+
+VermilionCity_EventScript_FujiSceneAbort::
+	releaseall
+	end
+
+VermilionCity_EventScript_FujiAppear::
+	clearflag FLAG_HIDE_VERMILLION_FUJI
+	addobject LOCALID_FUJI_VERMILLION
+	addobject LOCALID_ABRA_VERMILLION
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox VermilionCity_Text_FujiCallout, MSGBOX_DEFAULT
+	closemessage
+	playse SE_PIN
+	applymovement LOCALID_PLAYER, Common_Movement_ExclamationMark
+	waitmovement 0
+	delay 30
+	return
+
+VermilionCity_EventScript_FujiSpeech::
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox VermilionCity_Text_FujiCaveWarning, MSGBOX_DEFAULT
+	closemessage
+	fadescreenswapbuffers FADE_TO_WHITE
+	playse SE_WARP_OUT
+	removeobject LOCALID_FUJI_VERMILLION
+	removeobject LOCALID_ABRA_VERMILLION
+	setflag FLAG_HIDE_VERMILLION_FUJI
+	fadescreenswapbuffers FADE_FROM_WHITE
+	setvar VAR_FUJI_VERMILION_SCENE, 1
+	releaseall
+	end
+
+VermilionCity_Movement_FujiApproach_Center::
+	walk_slower_down
+	walk_slower_down
+	walk_slower_down
+	walk_slower_down
+	step_end
+
+VermilionCity_Movement_AbraApproach_Center::
+	walk_slower_down
+	walk_slower_down
+	walk_slower_down
+	walk_slower_down
+	step_end
+
+VermilionCity_Movement_FujiApproach_Left::
+	walk_slower_down
+	walk_slower_down
+	walk_slower_down
+	walk_slower_down
+	walk_slower_down
+	face_left
+	step_end
+
+VermilionCity_Movement_FujiApproach_Right::
+	walk_slower_down
+	walk_slower_down
+	walk_slower_down
+	walk_slower_down
+	walk_slower_down
+	face_right
+	step_end
+
+VermilionCity_Movement_AbraApproach_LeftRight::
+	walk_slower_down
+	walk_slower_down
+	walk_slower_down
+	walk_slower_down
+	walk_slower_down
+	step_end
 
 Seagallop_SeviiIslands::
 	.string "Sevii Islands$"
@@ -261,13 +389,19 @@ VermilionCity_EventScript_CheckTicket::
 	goto_if_eq VAR_MAP_SCENE_VERMILION_CITY, 3, VermilionCity_EventScript_CheckSeagallopPresentTrigger
 	msgbox VermilionCity_Text_DoYouHaveATicket
 	goto_if_unset FLAG_GOT_SS_TICKET, VermilionCity_EventScript_DontHaveSSTicket
-	msgbox VermilionCity_Text_FlashedSSTicket
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+	msgbox VermilionCity_Text_FlashedSSTicket, MSGBOX_DEFAULT
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox VermilionCity_Text_WelcomeAboardSSAnne, MSGBOX_DEFAULT
 	setvar VAR_VERMILION_CITY_TICKET_CHECK_TRIGGER, 1
 	releaseall
 	end
 
 VermilionCity_EventScript_DontHaveSSTicket::
-	msgbox VermilionCity_Text_DontHaveNeededSSTicket
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+	msgbox VermilionCity_Text_DontHaveNeededSSTicket, MSGBOX_DEFAULT
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox VermilionCity_Text_NeedTicketToBoard, MSGBOX_DEFAULT
 	closemessage
 	goto VermilionCity_EventScript_WalkUpPier
 	end

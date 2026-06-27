@@ -208,8 +208,10 @@ PalletTown_ProfessorOaksLab_Text_OakCompleteMonGuideWasMyDream::
     .string "Pokémon history!$"
 
 PalletTown_ProfessorOaksLab_Text_OakMonsAroundWorldWait::
-    .string "Pokémon around the world wait for\n"
-    .string "you, {PLAYER}!$"
+	.string "Pokémon around the world wait for\n"
+	.string "you, {PLAYER}!\p"
+	.string "But come see me again later.\n"
+	.string "I may have a proposal for you.$"
 
 PalletTown_ProfessorOaksLab_Text_OakAddedNothingToPokedex::
     .string "Ah, {PLAYER}!\n"
@@ -321,7 +323,7 @@ PalletTown_ProfessorOaksLab_Text_OakNeedYourHelpTooNeedToSeePokedexes::
     .string "Oak: I know, I know.\n"
     .string "Of course I need your help, too.\p"
     .string "Now, I need to see both your\n"
-    .string "POKéDEXES.$"
+    .string "Pokédexes.$"
 
 PalletTown_ProfessorOaksLab_Text_OakTookBothPokedexUnits::
     .string "Prof. Oak took both Pokédex\n"
@@ -340,7 +342,7 @@ PalletTown_ProfessorOaksLab_Text_PlayersPokedexWasUpgraded::
 PalletTown_ProfessorOaksLab_Text_OakMustReallyWorkToFillPokedex::
     .string "Now, {PLAYER} and {RIVAL}!\p"
     .string "This time, you really must work\n"
-    .string "towards filling your POKéDEXES.\p"
+    .string "towards filling your Pokédexes.\p"
     .string "I urge you to make them the best\n"
     .string "and the most complete of all time!\p"
     .string "Truly, this is a monumentally great\n"
@@ -354,6 +356,11 @@ PalletTown_ProfessorOaksLab_Text_RivalIllCompleteThePokedex::
     .string "I think I'll try looking around\n"
     .string "One Island first…\p"
     .string "Anyways, I'm outta here!$"
+
+PalletTown_ProfessorOaksLab_Text_OakNotReadyYet::
+	.string "Hm… I don't think you're quite\n"
+	.string "ready yet.\p"
+	.string "Explore a little further.$"
 
 PalletTown_ProfessorOaksLab_Text_OakChallenge_Lore::
     .string "Oak: Ah, {PLAYER}!\n"

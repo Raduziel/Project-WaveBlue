@@ -19,7 +19,7 @@ CinnabarIsland_Gym_Text_FireBlastIsUltimateFireMove::
     .string "Don't waste it on Water Pokémon.$"
 
 CinnabarIsland_Gym_Text_ExplainVolcanoBadge::
-    .string "Hah!\p"
+    .string "Hah! Now, your reward.\p"
     .string "The Volcano Badge heightens the\n"
     .string "Special stats of your Pokémon.\p"
     .string "Here, you can have this, too!$"
@@ -219,3 +219,14 @@ CinnabarIsland_Gym_Text_SorryBadCall::
     .string "Sorry!\n"
     .string "Bad call!$"
 
+CinnabarIsland_Gym_Text_BlaineTakeSecretKey::
+	.string "First, return the Secret\n"
+	.string "Key to me.\p"
+	.string "I must ready the Gym for the\n"
+	.string "next kid.\p"
+	.string "Don't worry, though.\n"
+	.string "My doors stay open to you!$"
+
+CinnabarIsland_Gym_Text_BlaineReturnedSecretKey::
+	.string "{PLAYER} handed the Secret Key\n"
+	.string "to Leader Blaine.$"

@@ -92,3 +92,14 @@ SilphCo_11F_Text_FloorSign::
     .string "Silph Co. Head Office\n"
     .string "11F$"
 
+SilphCo_11F_Text_TakeCardKey::
+	.string "Oh, before you go…\p"
+	.string "Might I have the Card Key back?\p"
+	.string "I've unlocked every door for you,\n"
+	.string "so feel free to look around.\p"
+	.string "Thanks again, child!$"
+
+SilphCo_11F_Text_HandedCardKey::
+	.string "{PLAYER} handed the Card Key\n"
+	.string "to the President.$"
+

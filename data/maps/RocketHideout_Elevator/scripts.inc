@@ -4,6 +4,8 @@ RocketHideout_Elevator_MapScripts::
 RocketHideout_Elevator_EventScript_FloorSelect::
 	lockall
 	goto_if_unset FLAG_CAN_USE_ROCKET_HIDEOUT_LIFT, RocketHideout_Elevator_EventScript_NeedKey
+	checkitem ITEM_LIFT_KEY
+	call_if_eq VAR_RESULT, TRUE, RocketHideout_Elevator_EventScript_InsertLiftKey
 	setvar VAR_0x8004, 2
 	call_if_unset FLAG_TEMP_2, EventScript_GetElevatorFloor
 	copyvar VAR_0x8005, VAR_ELEVATOR_FLOOR
@@ -17,6 +19,13 @@ RocketHideout_Elevator_EventScript_FloorSelect::
 	case 1, RocketHideout_Elevator_EventScript_FloorSelectFromB2F
 	case 2, RocketHideout_Elevator_EventScript_FloorSelectFromB4F
 	end
+
+RocketHideout_Elevator_EventScript_InsertLiftKey::
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+	msgbox RocketHideout_Elevator_Text_InsertLiftKey, MSGBOX_DEFAULT
+	removeitem ITEM_LIFT_KEY
+	call EventScript_RestorePrevTextColor
+	return
 
 RocketHideout_Elevator_EventScript_FloorSelectFromB1F::
 	multichoicedefault 0, 0, MULTI_ROCKET_HIDEOUT_ELEVATOR, 0, FALSE

@@ -11,8 +11,12 @@ BattleFrontier_OutsideWest_EventScript_FerryAttendant::
 	lock
 	faceplayer
 	msgbox BattleFrontier_OutsideWest_Text_MayISeeYourTicket, MSGBOX_DEFAULT
-	checkitem ITEM_SS_TICKET
+	checkitem ITEM_RAINBOW_PASS
+	goto_if_eq VAR_RESULT, TRUE, BattleFrontier_OutsideWest_EventScript_FerryHasPass
+	checkitem ITEM_TRI_PASS
 	goto_if_eq VAR_RESULT, FALSE, BattleFrontier_OutsideWest_EventScript_NoSSTicket
+
+BattleFrontier_OutsideWest_EventScript_FerryHasPass::
 	message BattleFrontier_OutsideWest_Text_WhereWouldYouLikeToGo
 	waitmessage
 	setvar VAR_0x8004, SEAGALLOP_NAVEL_ROCK

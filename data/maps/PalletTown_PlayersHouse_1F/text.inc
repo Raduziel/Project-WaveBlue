@@ -36,3 +36,11 @@ PalletTown_PlayersHouse_1F_Text_MovieOnTVGirlOnBrickRoad::
 PalletTown_PlayersHouse_1F_Text_OopsWrongSide::
     .string "Oops, wrong side…$"
 
+PalletTown_PlayersHouse_1F_Text_BillLeftGift::
+	.string "Mom: Welcome home, champ!\n"
+    .string "Glad to see you! How is everything?\p"
+	.string "Oh, before I forget…\n"
+	.string "Bill stopped by earlier.\p"
+	.string "He left a little something for\n"
+	.string "you up in your room.\p"
+	.string "Go on up and take a look, dear!$"

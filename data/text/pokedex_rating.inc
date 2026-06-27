@@ -1,6 +1,5 @@
 PokedexRating_Text_HowIsPokedexComingAlong::
-	.string "Oak: Good to see you!\n"
-	.string "How is your Pokédex coming along?\p"
+	.string "How is your Pokédex coming along?\n"
 	.string "Here, let me take a look.$"
 
 PokedexRating_Text_SeenXOwnedY::
@@ -17,9 +16,7 @@ PokedexRating_Text_LessThan10::
 
 PokedexRating_Text_LessThan20::
 	.string "It looks as if you're getting on\n"
-	.string "the right track!\p"
-	.string "I've given one of my Aides a Flash\n"
-	.string "HM. Make sure you go get it!$"
+	.string "the right track!$"
 
 PokedexRating_Text_LessThan30::
 	.string "Your Pokédex could use a bit more\n"
@@ -29,21 +26,15 @@ PokedexRating_Text_LessThan30::
 
 PokedexRating_Text_LessThan40::
 	.string "Good, it's apparent that you're\n"
-	.string "trying hard!\p"
-	.string "I've given one of my Aides an\n"
-	.string "Itemfinder. Be sure to collect it!$"
+	.string "trying hard!$"
 
 PokedexRating_Text_LessThan50::
 	.string "Your Pokédex is coming along quite\n"
-	.string "well!\p"
-	.string "I've given one of my Aides an\n"
-	.string "Amulet Coin. Be sure to get it!$"
+	.string "well!$"
 
 PokedexRating_Text_LessThan60::
 	.string "Ah, you've finally topped 50\n"
-	.string "species!\p"
-	.string "I've given one of my Aides an Exp.\n"
-	.string "Share. Be sure to go get it!$"
+	.string "species!$"
 
 PokedexRating_Text_LessThan70::
 	.string "Hoho! This is turning into quite the\n"
