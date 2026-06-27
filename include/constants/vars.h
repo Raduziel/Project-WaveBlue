@@ -206,8 +206,8 @@
 #define VAR_RANDOM_SPEECH                   0x4097
 #define VAR_HIDDEN_POWER_READER             0x4098
 #define VAR_FUJI_VERMILION_SCENE            0x4099
-#define VAR_0x409A                 0x409A
-#define VAR_0x409B                 0x409B
+#define VAR_MOM_PLAYERHOUSE_SCENE           0x409A
+#define VAR_LANCE_CERULEAN_SCENE            0x409B
 #define VAR_0x409C                 0x409C
 #define VAR_0x409D                 0x409D
 #define VAR_0x409E                 0x409E

@@ -180,3 +180,18 @@ CeruleanCity_Text_GymSign::
     .string "Leader: Misty\l"
     .string "The Tomboyish Mermaid!$"
 
+CeruleanCity_Text_LanceScene::
+	.string "Lance: So it was you.\p"
+	.string "I heard of a turmoil in this\n"
+	.string "cave, and I came to see.\p"
+	.string "But it seems the Champion has\n"
+	.string "already set things right.\p"
+	.string "Heh. Then there is nothing\n"
+	.string "here for me to do.\p"
+	.string "Still, a Champion like you\n"
+	.string "should not grow idle.\p"
+	.string "If you crave a true challenge,\n"
+	.string "seek out Professor Oak.\p"
+	.string "That old man is far stronger\n"
+	.string "than he lets on.\p"
+	.string "Farewell, {PLAYER}.$"

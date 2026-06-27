@@ -1,11 +1,81 @@
 CeruleanCity_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, CeruleanCity_OnTransition
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, CeruleanCity_OnFrame
 	.byte 0
 
 CeruleanCity_OnTransition::
 	setworldmapflag FLAG_WORLD_MAP_CERULEAN_CITY
 	call_if_unset FLAG_GOT_SS_TICKET, CeruleanCity_EventScript_BlockExits
+	call_if_set FLAG_DEFEATED_BOSS_GIOVANNI, CeruleanCity_EventScript_TryArmLanceScene
 	end
+
+CeruleanCity_OnFrame::
+	map_script_2 VAR_LANCE_CERULEAN_SCENE, 1, CeruleanCity_EventScript_LanceScene
+	.2byte 0
+
+CeruleanCity_EventScript_TryArmLanceScene::
+	goto_if_eq VAR_LANCE_CERULEAN_SCENE, 0, CeruleanCity_EventScript_ArmLanceScene
+	return
+
+CeruleanCity_EventScript_ArmLanceScene::
+	setvar VAR_LANCE_CERULEAN_SCENE, 1
+	return
+
+CeruleanCity_EventScript_LanceScene::
+	lockall
+	clearflag FLAG_HIDE_CERULEAN_LANCE
+	addobject LOCALID_CERULEAN_LANCE
+	addobject LOCALID_CERULEAN_LANCEDRAGONITE
+	applymovement LOCALID_CERULEAN_LANCE, CeruleanCity_Movement_LanceApproach
+	applymovement LOCALID_CERULEAN_LANCEDRAGONITE, CeruleanCity_Movement_DragoniteApproach
+	waitmovement 0
+	delay 15
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox CeruleanCity_Text_LanceScene, MSGBOX_DEFAULT
+	closemessage
+	playse SE_M_FLY
+	applymovement LOCALID_CERULEAN_LANCEDRAGONITE, CeruleanCity_Movement_DragoniteJumpAway
+	waitmovement 0
+	removeobject LOCALID_CERULEAN_LANCEDRAGONITE
+	applymovement LOCALID_CERULEAN_LANCE, Common_Movement_WalkInPlaceFasterDown
+	waitmovement 0
+	delay 30
+	setfieldeffectargument 0, 1
+	dofieldeffect FLDEFF_NPCFLY_OUT
+	delay 15
+	removeobject LOCALID_CERULEAN_LANCE
+	waitfieldeffect FLDEFF_NPCFLY_OUT
+	setflag FLAG_HIDE_CERULEAN_LANCE
+	setvar VAR_LANCE_CERULEAN_SCENE, 2
+	releaseall
+	end
+
+CeruleanCity_Movement_LanceApproach::
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	face_up
+	step_end
+
+CeruleanCity_Movement_DragoniteApproach::
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	step_end
+
+CeruleanCity_Movement_DragoniteJumpAway::
+	jump_special_up
+	set_invisible
+	step_end
 
 CeruleanCity_EventScript_BlockExits::
 	setobjectxyperm LOCALID_CERULEAN_POLICEMAN, 30, 12

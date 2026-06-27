@@ -358,9 +358,11 @@ PalletTown_ProfessorOaksLab_Text_RivalIllCompleteThePokedex::
     .string "Anyways, I'm outta here!$"
 
 PalletTown_ProfessorOaksLab_Text_OakNotReadyYet::
-	.string "Hm… I don't think you're quite\n"
-	.string "ready yet.\p"
-	.string "Explore a little further.$"
+	.string "Oak: {PLAYER}, I have something in\n"
+	.string "mind for you.\p"
+	.string "But I don't think you are quite\n"
+	.string "ready for it yet.\p"
+	.string "Explore a little further first.$"
 
 PalletTown_ProfessorOaksLab_Text_OakChallenge_Lore::
     .string "Oak: Ah, {PLAYER}!\n"
