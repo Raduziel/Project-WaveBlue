@@ -1091,9 +1091,9 @@ enum __attribute__((packed)) Item
     ITEM_FLIGHT_TICKET = 912,
     ITEM_LANTERN = 913,
     ITEM_LIFT_BELT = 914,
-    ITEM_HEDGE_SHEARS = 915,
-    ITEM_INFLATABLE_BOAT = 916,
-    ITEM_SLEGDEHAMMER = 917,
+    ITEM_RUBBER_BOAT = 915,
+    ITEM_HEDGE_SHEARS = 916,
+    ITEM_SLEDGEHAMMER = 917,
     ITEM_OUTBOARD_MOTOR = 918,
 
     // Legends Z-A: Mega Dimension DLC Mega Stones

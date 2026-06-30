@@ -2111,3 +2111,20 @@ const u16 gItemIconPalette_SwapSnack[] = INCBIN_U16("graphics/items/icon_palette
 
 const u32 gItemIcon_TwiceSpicedRadish[] = INCBIN_U32("graphics/items/icons/twice_spiced_radish.4bpp.smol");
 const u16 gItemIconPalette_TwiceSpicedRadish[] = INCBIN_U16("graphics/items/icon_palettes/twice_spiced_radish.gbapal");
+
+//HM-Key Items
+
+const u32 gItemIcon_FlashLantern[] = INCBIN_U32("graphics/items/icons/lantern.4bpp.smol");
+const u16 gItemIconPalette_FlashLantern[] = INCBIN_U16("graphics/items/icons/lantern.gbapal");
+
+const u32 gItemIcon_StrengthBelt[] = INCBIN_U32("graphics/items/icons/belt.4bpp.smol");
+const u16 gItemIconPalette_StrengthBelt[] = INCBIN_U16("graphics/items/icons/belt.gbapal");
+
+const u32 gItemIcon_CutShears[] = INCBIN_U32("graphics/items/icons/shears.4bpp.smol");
+const u16 gItemIconPalette_CutShears[] = INCBIN_U16("graphics/items/icons/shears.gbapal");
+
+const u32 gItemIcon_SurfBoat[] = INCBIN_U32("graphics/items/icons/boat.4bpp.smol");
+const u16 gItemIconPalette_SurfBoat[] = INCBIN_U16("graphics/items/icons/boat.gbapal");
+
+const u32 gItemIcon_RockSmashHammer[] = INCBIN_U32("graphics/items/icons/hammer.4bpp.smol");
+const u16 gItemIconPalette_RockSmashHammer[] = INCBIN_U16("graphics/items/icons/hammer.gbapal");

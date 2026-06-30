@@ -6345,4 +6345,16 @@ extern const u16 gFrontierPassMedalsGold_Pal[];
 extern const u16 gFrontierPassMedalsSilver_Pal[];
 extern const u16 gFrontierPassMapCursor_Pal[];
 
+//HM-Key Items
+extern const u32 gItemIcon_FlashLantern[];
+extern const u16 gItemIconPalette_FlashLantern[];
+extern const u32 gItemIcon_StrengthBelt[];
+extern const u16 gItemIconPalette_StrengthBelt[];
+extern const u32 gItemIcon_CutShears[];
+extern const u16 gItemIconPalette_CutShears[];
+extern const u32 gItemIcon_SurfBoat[];
+extern const u16 gItemIconPalette_SurfBoat[];
+extern const u32 gItemIcon_RockSmashHammer[];
+extern const u16 gItemIconPalette_RockSmashHammer[];
+
 #endif //GUARD_GRAPHICS_H
