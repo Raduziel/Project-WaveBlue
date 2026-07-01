@@ -16,17 +16,17 @@ CeruleanCave_1F_Text_GiovanniDefeat::
 
 CeruleanCave_1F_Text_GiovanniFarewell::
 	.string "It is over.\p"
-	.string "I will not chase this creature\n"
-	.string "any further.\p"
-	.string "Perhaps it is fitting\n"
-	.string "that the beast falls to you now…$"
+	.string "I will not chase this creature any\n"
+	.string "further.\p"
+	.string "Perhaps it is fitting that the beast\n"
+	.string "falls to you now…$"
 
 CeruleanCave_1F_Text_GiovanniTakeThis::
 	.string "Take this.$"
 
 CeruleanCave_1F_Text_ObtainedCatchingCharm::
-	.string "{PLAYER} received the Catching\n"
-	.string "Charm from Giovanni.$"
+	.string "{PLAYER} received the Catching Charm\n"
+	.string "from Giovanni.$"
 
 CeruleanCave_1F_Text_GiovanniCatchingCharm::
 	.string "The creature is your burden now…\p"

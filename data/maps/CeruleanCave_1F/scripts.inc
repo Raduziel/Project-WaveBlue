@@ -29,7 +29,9 @@ CeruleanCave_1F_EventScript_GiovanniTrigger_Left::
 	waitmovement 0
 	waitse
 	delay 30
-	applymovement LOCALID_CERULEAN_CAVE_GIOVANNI, CeruleanCave_1F_Movement_GiovanniApproach_Left
+	applymovement LOCALID_CERULEAN_CAVE_GIOVANNI, CeruleanCave_1F_Movement_GiovanniApproach_LeftRight
+	waitmovement 0
+	applymovement LOCALID_PLAYER, CeruleanCave_1F_Movement_PlayerGiovanniApproach_Left
 	waitmovement 0
 	goto CeruleanCave_1F_EventScript_GiovanniConfront
 	end
@@ -37,13 +39,15 @@ CeruleanCave_1F_EventScript_GiovanniTrigger_Left::
 CeruleanCave_1F_EventScript_GiovanniTrigger_Right::
 	lockall
 	goto_if_set FLAG_HIDE_CERULEAN_CAVE_GIOVANNI, CeruleanCave_1F_EventScript_GiovanniTriggerEnd
-	setvar VAR_MAP_SCENE_GIOVANNI_CERULEAN_CAVE, 3
+	setvar VAR_MAP_SCENE_GIOVANNI_CERULEAN_CAVE, 2
 	playse SE_PIN
 	applymovement LOCALID_CERULEAN_CAVE_GIOVANNI, Common_Movement_ExclamationMark
 	waitmovement 0
 	waitse
 	delay 30
-	applymovement LOCALID_CERULEAN_CAVE_GIOVANNI, CeruleanCave_1F_Movement_GiovanniApproach_Right
+	applymovement LOCALID_CERULEAN_CAVE_GIOVANNI, CeruleanCave_1F_Movement_GiovanniApproach_LeftRight
+	waitmovement 0
+	applymovement LOCALID_PLAYER, CeruleanCave_1F_Movement_PlayerGiovanniApproach_Right
 	waitmovement 0
 	goto CeruleanCave_1F_EventScript_GiovanniConfront
 	end
@@ -60,9 +64,7 @@ CeruleanCave_1F_EventScript_GiovanniConfront::
 	compare VAR_MAP_SCENE_GIOVANNI_CERULEAN_CAVE, 1
 	goto_if_eq CeruleanCave_1F_EventScript_GiovanniLeave_Center
 	compare VAR_MAP_SCENE_GIOVANNI_CERULEAN_CAVE, 2
-	goto_if_eq CeruleanCave_1F_EventScript_GiovanniLeave_Left
-	compare VAR_MAP_SCENE_GIOVANNI_CERULEAN_CAVE, 3
-	goto_if_eq CeruleanCave_1F_EventScript_GiovanniLeave_Right
+	goto_if_eq CeruleanCave_1F_EventScript_GiovanniLeave_LeftRight
 	end
 
 CeruleanCave_1F_EventScript_GiovanniGiveCatchingCharm::
@@ -80,13 +82,8 @@ CeruleanCave_1F_EventScript_GiovanniLeave_Center::
 	waitmovement 0
 	goto CeruleanCave_1F_EventScript_GiovanniDisappear
 
-CeruleanCave_1F_EventScript_GiovanniLeave_Left::
-	applymovement LOCALID_CERULEAN_CAVE_GIOVANNI, CeruleanCave_1F_Movement_GiovanniLeave_Left
-	waitmovement 0
-	goto CeruleanCave_1F_EventScript_GiovanniDisappear
-
-CeruleanCave_1F_EventScript_GiovanniLeave_Right::
-	applymovement LOCALID_CERULEAN_CAVE_GIOVANNI, CeruleanCave_1F_Movement_GiovanniLeave_Right
+CeruleanCave_1F_EventScript_GiovanniLeave_LeftRight::
+	applymovement LOCALID_CERULEAN_CAVE_GIOVANNI, CeruleanCave_1F_Movement_GiovanniLeave_LeftRight
 	waitmovement 0
 	goto CeruleanCave_1F_EventScript_GiovanniDisappear
 
@@ -108,23 +105,24 @@ CeruleanCave_1F_EventScript_Giovanni::
 	release
 	end
 
+CeruleanCave_1F_Movement_PlayerGiovanniApproach_Left:
+	face_right
+	step_end
+
+CeruleanCave_1F_Movement_PlayerGiovanniApproach_Right:
+	face_left
+	step_end
+
 CeruleanCave_1F_Movement_GiovanniApproach_Center:
 	walk_down
 	walk_down
 	step_end
 
-CeruleanCave_1F_Movement_GiovanniApproach_Left:
+CeruleanCave_1F_Movement_GiovanniApproach_LeftRight:
 	walk_down
 	walk_down
-	walk_left
-	face_down
-	step_end
-
-CeruleanCave_1F_Movement_GiovanniApproach_Right:
 	walk_down
-	walk_down
-	walk_right
-	face_down
+	face_player
 	step_end
 
 CeruleanCave_1F_Movement_GiovanniLeave_Center:
@@ -137,16 +135,8 @@ CeruleanCave_1F_Movement_GiovanniLeave_Center:
 	set_invisible
 	step_end
 
-CeruleanCave_1F_Movement_GiovanniLeave_Left:
-	walk_right
+CeruleanCave_1F_Movement_GiovanniLeave_LeftRight:
 	walk_down
-	walk_down
-	set_invisible
-	step_end
-
-CeruleanCave_1F_Movement_GiovanniLeave_Right:
-	walk_left
-	walk_down
-	walk_down
+	delay_16
 	set_invisible
 	step_end

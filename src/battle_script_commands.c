@@ -2371,7 +2371,10 @@ static void SetNonVolatileStatus(enum BattlerId effectBattler, enum MoveEffect e
      || effect == MOVE_EFFECT_TOXIC
      || effect == MOVE_EFFECT_PARALYSIS
      || effect == MOVE_EFFECT_BURN)
+    {
         gBattleStruct->synchronizeMoveEffect = effect;
+        gBattleStruct->synchronizeBattler = effectBattler;
+    }
 
     if (effect == MOVE_EFFECT_POISON || effect == MOVE_EFFECT_TOXIC)
         gBattleStruct->poisonPuppeteerConfusion = TRUE;
