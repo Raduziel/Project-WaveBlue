@@ -47,6 +47,7 @@
 #include "constants/items.h"
 #include "constants/maps.h"
 #include "constants/moves.h"
+#include "constants/pokemon.h"
 #include "constants/songs.h"
 #include "constants/sound.h"
 
@@ -85,6 +86,11 @@ static void Task_UseFameCheckerFromField(u8 taskId);
 static void ItemUseOnFieldCB_WhiteFlute(u8 taskId);
 static void ItemUseOnFieldCB_WailmerPailBerry(u8);
 static void ItemUseOnFieldCB_WailmerPailSudowoodo(u8);
+static void ItemUseOnFieldCB_HedgeShears(u8 taskId);
+static void ItemUseOnFieldCB_Lantern(u8 taskId);
+static void ItemUseOnFieldCB_Sledgehammer(u8 taskId);
+static void ItemUseOnFieldCB_RubberBoat(u8 taskId);
+static void Task_StartSurfFromBag(u8 taskId);
 static bool8 TryToWaterSudowoodo(void);
 
 
@@ -300,6 +306,7 @@ static void ItemUseOnFieldCB_Bicycle(u8 taskId)
     DestroyTask(taskId);
 }
 
+
 void ItemUseOutOfBattle_Rod(u8 taskId)
 {
     if (CanFish() == TRUE)
@@ -410,6 +417,129 @@ void ItemUseOutOfBattle_FlightTicket(u8 taskId)
     {
         PrintNotTheTimeToUseThat(taskId, gTasks[taskId].data[3]);
     }
+}
+
+void ItemUseOutOfBattle_HedgeShears(u8 taskId)
+{
+    if (CanCutFromBag() == TRUE)
+    {
+        sItemUseOnFieldCB = ItemUseOnFieldCB_HedgeShears;
+        SetUpItemUseOnFieldCallback(taskId);
+    }
+    else
+    {
+        PrintNotTheTimeToUseThat(taskId, gTasks[taskId].data[3]);
+    }
+}
+
+static void ItemUseOnFieldCB_HedgeShears(u8 taskId)
+{
+    DoCutFromBag();
+    DestroyTask(taskId);
+}
+
+void ItemUseOutOfBattle_LiftBelt(u8 taskId)
+{
+    const u8 *msg;
+
+    if (FlagGet(FLAG_TOGGLE_LIFT_BELT))
+    {
+        FlagClear(FLAG_TOGGLE_LIFT_BELT);
+        msg = gText_LiftBeltOff;
+    }
+    else
+    {
+        FlagSet(FLAG_TOGGLE_LIFT_BELT);
+        msg = gText_LiftBeltOn;
+    }
+
+    StringExpandPlaceholders(gStringVar4, msg);
+    if (gTasks[taskId].data[3] == FALSE)
+        DisplayItemMessage(taskId, FONT_NORMAL, gStringVar4, CloseItemMessage);
+    else
+        DisplayItemMessageOnField(taskId, FONT_NORMAL, gStringVar4, Task_ItemUse_CloseMessageBoxAndReturnToField);
+}
+
+void ItemUseOutOfBattle_Lantern(u8 taskId)
+{
+    if (gMapHeader.cave == TRUE && !FlagGet(FLAG_SYS_FLASH_ACTIVE))
+    {
+        sItemUseOnFieldCB = ItemUseOnFieldCB_Lantern;
+        SetUpItemUseOnFieldCallback(taskId);
+    }
+    else
+    {
+        PrintNotTheTimeToUseThat(taskId, gTasks[taskId].data[3]);
+    }
+}
+
+static void ItemUseOnFieldCB_Lantern(u8 taskId)
+{
+    PlaySE(SE_M_REFLECT);
+    FlagSet(FLAG_SYS_FLASH_ACTIVE);
+    ScriptContext_SetupScript(EventScript_FldEffFlash);
+    DestroyTask(taskId);
+}
+
+void ItemUseOutOfBattle_Sledgehammer(u8 taskId)
+{
+    if (CanSmashRockFromBag() == TRUE)
+    {
+        sItemUseOnFieldCB = ItemUseOnFieldCB_Sledgehammer;
+        SetUpItemUseOnFieldCallback(taskId);
+    }
+    else
+    {
+        PrintNotTheTimeToUseThat(taskId, gTasks[taskId].data[3]);
+    }
+}
+
+static void ItemUseOnFieldCB_Sledgehammer(u8 taskId)
+{
+    DoSmashRockFromBag();
+    DestroyTask(taskId);
+}
+
+static bool8 CanUseRubberBoat(void)
+{
+    s16 x, y;
+
+    if (!CheckFollowerNPCFlag(FOLLOWER_NPC_FLAG_CAN_SURF))
+        return FALSE;
+
+    GetXYCoordsOneStepInFrontOfPlayer(&x, &y);
+    if (MetatileBehavior_IsFastWater(MapGridGetMetatileBehaviorAt(x, y)) != TRUE
+     && !TestPlayerAvatarFlags(PLAYER_AVATAR_FLAG_SURFING)
+     && IsPlayerFacingSurfableFishableWater() == TRUE)
+        return TRUE;
+    return FALSE;
+}
+
+void ItemUseOutOfBattle_RubberBoat(u8 taskId)
+{
+    if (CanUseRubberBoat() == TRUE)
+    {
+        sItemUseOnFieldCB = ItemUseOnFieldCB_RubberBoat;
+        SetUpItemUseOnFieldCallback(taskId);
+    }
+    else
+    {
+        PrintNotTheTimeToUseThat(taskId, gTasks[taskId].data[3]);
+    }
+}
+
+static void ItemUseOnFieldCB_RubberBoat(u8 taskId)
+{
+    StringExpandPlaceholders(gStringVar4, gText_UsedRubberBoat);
+    DisplayItemMessageOnField(taskId, FONT_NORMAL, gStringVar4, Task_StartSurfFromBag);
+}
+
+static void Task_StartSurfFromBag(u8 taskId)
+{
+    ClearDialogWindowAndFrame(0, 1);
+    gFieldEffectArguments[0] = PARTY_SIZE;
+    FieldEffectStart(FLDEFF_USE_SURF);
+    DestroyTask(taskId);
 }
 
 static bool8 CanFish(void)

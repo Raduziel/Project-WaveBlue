@@ -6,10 +6,21 @@ EventScript_UseSurf::
 	lockall
 	msgbox Text_WantToSurf, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_UseSurfRelease
+	goto_if_eq VAR_0x8004, SPECIES_NONE, EventScript_UseSurfViaItem
 	dofieldeffect FLDEFF_USE_SURF
+
 EventScript_UseSurfRelease:
 	releaseall
+
 EventScript_UseSurfEnd:
+	end
+
+EventScript_UseSurfViaItem::
+	closemessage
+	msgbox Text_UsedRubberBoat, MSGBOX_SIGN
+	setfieldeffectargument 0, PARTY_SIZE
+	dofieldeffect FLDEFF_USE_SURF
+	releaseall
 	end
 
 EventScript_CurrentTooFast::
@@ -18,6 +29,7 @@ EventScript_CurrentTooFast::
 	goto_if_eq VAR_RESULT, FALSE, EventScript_CurrentTooFastEndMsg
 	playse SE_SELECT
 	msgbox Text_CurrentTooFast
+
 EventScript_CurrentTooFastEndMsg::
 	releaseall
 	end

@@ -3515,7 +3515,10 @@ static void SurfFieldEffect_Init(struct Task *task)
     SetPlayerAvatarStateMask(PLAYER_AVATAR_FLAG_SURFING);
     PlayerGetDestCoords(&task->tDestX, &task->tDestY);
     MoveCoords(gObjectEvents[gPlayerAvatar.objectEventId].movementDirection, &task->tDestX, &task->tDestY);
-    task->tState = SURF_FIELD_MOVE_POSE;
+    if (task->tMonId >= PARTY_SIZE)
+        task->tState = SURF_JUMP_ON_SURF_BLOB;
+    else
+        task->tState = SURF_FIELD_MOVE_POSE;
 }
 
 static void SurfFieldEffect_FieldMovePose(struct Task *task)

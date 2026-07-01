@@ -6,11 +6,15 @@ EventScript_CutTree::
 	msgbox Text_CutTreeDown, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_DontCutTree
 	closemessage
+
 EventScript_CutTreeCommon:
 	isfollowerfieldmoveuser VAR_0x8004
 	setfieldeffectargument 3, VAR_0x8004
+
+EventScript_CutTreeDoEffect:
 	dofieldeffect FLDEFF_USE_CUT_ON_TREE
 	waitstate
+
 EventScript_CutTreeDown::
 	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
 	call_if_eq VAR_0x8004, TRUE, EventScript_FollowerFieldMove
@@ -23,7 +27,9 @@ EventScript_CutTreeDown::
 
 EventScript_FldEffCut::
 	lockall
-	goto EventScript_CutTreeCommon
+	setfieldeffectargument 3, 1
+	setvar VAR_0x8004, FALSE
+	goto EventScript_CutTreeDoEffect
 
 Movement_CutTreeDown::
 	cut_tree
@@ -40,18 +46,20 @@ EventScript_DontCutTree::
 	end
 
 Text_CutTreeDown::
-	.string "Would you like to use Cut?$"
+	.string "Would you like to cut this?$"
 
 Text_MonUsedMove::
 	.string "{STR_VAR_1} used {STR_VAR_2}!$"
 
 Text_TreeCanBeCutDown::
-	.string "This tree looks like it can be Cut\n"
-	.string "down!$"
+	.string "This tree looks like it can be cut\n"
+	.string "down by a Pokémon or a tool!$"
 
 EventScript_FldEffRockSmash::
 	lockall
-	goto EventScript_RockSmashCommon
+	setfieldeffectargument 3, 1
+	setvar VAR_0x8004, FALSE
+	goto EventScript_RockSmashDoEffect
 
 EventScript_RockSmash::
 	goto_if_questlog EventScript_ReleaseEnd
@@ -61,13 +69,16 @@ EventScript_RockSmash::
 	msgbox Text_UseRockSmash, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_DontSmashRock
 	closemessage
+
 EventScript_RockSmashCommon:
-	@ check if follower should use the field move
 	isfollowerfieldmoveuser VAR_0x8004
-	setfieldeffectargument 3, VAR_0x8004 @ skip pose if so
+	setfieldeffectargument 3, VAR_0x8004
+
+EventScript_RockSmashDoEffect:
 	dofieldeffect FLDEFF_USE_ROCK_SMASH
 	waitstate
-EventScript_SmashRock:: @ fallthrough
+
+EventScript_SmashRock::
 	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
 	call_if_eq VAR_0x8004, TRUE, EventScript_FollowerFieldMove
 	applymovement VAR_LAST_TALKED, Movement_BreakRock
@@ -79,21 +90,23 @@ EventScript_SmashRock:: @ fallthrough
 	releaseall
 	end
 
-
-
 EventScript_FollowerFieldMove:
 	getdirectiontoface VAR_0x8005, OBJ_EVENT_ID_FOLLOWER, OBJ_EVENT_ID_PLAYER
 	specialvar VAR_0x8006, GetPlayerFacingDirection
 	goto_if_eq VAR_0x8005, DIR_NONE, EventScript_FollowerFieldMoveEnd
-	@ Swap follower and player
 	call EventScript_FollowerSwap
-	@ Face follower in direction and jump
 	switch VAR_0x8006
 	case DIR_NORTH, EventScript_FollowerJumpNorth
 	case DIR_EAST, EventScript_FollowerJumpEast
 	case DIR_SOUTH, EventScript_FollowerJumpSouth
 	case DIR_WEST, EventScript_FollowerJumpWest
+
 EventScript_FollowerFieldMoveEnd:
+	return
+
+EventScript_FollowerJumpInPlace:
+	applymovement OBJ_EVENT_ID_FOLLOWER, Movement_JumpDown
+	waitmovement 0
 	return
 
 EventScript_FollowerSwap:
@@ -206,24 +219,43 @@ EventScript_DontSmashRock::
 	end
 
 Text_UseRockSmash::
-	.string "Would you like to use Rock Smash?$"
+	.string "Would you like to break this rock?$"
 
 Text_MonMaySmashRock::
-	.string "It's a rugged rock, but a Pokémon\n"
-	.string "may be able to smash it.$"
+	.string "It's a rugged rock, but a Pokémon \n"
+	.string "or a proper tool may smash it.$"
 
 EventScript_StrengthBoulder::
 	goto_if_questlog EventScript_ReleaseEnd
 	lockall
 	goto_if_set FLAG_SYS_USE_STRENGTH, EventScript_AlreadyUsedStrength
+	goto_if_set FLAG_TOGGLE_LIFT_BELT, EventScript_LiftBeltAlreadyOn
 	checkfieldmoveusable FIELD_MOVE_STRENGTH
 	goto_if_eq VAR_RESULT, FALSE, EventScript_CantMoveBoulder
+	goto_if_eq VAR_0x8004, SPECIES_NONE, EventScript_OfferLiftBelt
 	msgbox Text_UseStrength, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_DontUseStrength
 	closemessage
+	isfollowerfieldmoveuser VAR_0x8004
+	setfieldeffectargument 3, VAR_0x8004
 	dofieldeffect FLDEFF_USE_STRENGTH
 	waitstate
+	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
+	call_if_eq VAR_0x8004, TRUE, EventScript_FollowerJumpInPlace
 	goto EventScript_UseStrength
+
+EventScript_OfferLiftBelt::
+	msgbox Text_WearLiftBeltToPush, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, EventScript_DontUseStrength
+	closemessage
+	setflag FLAG_TOGGLE_LIFT_BELT
+	msgbox Text_LiftBeltLetsYouPush, MSGBOX_SIGN
+	releaseall
+	end
+
+EventScript_LiftBeltAlreadyOn::
+	msgbox Text_LiftBeltLetsYouPush, MSGBOX_SIGN
+	releaseall
 	end
 
 EventScript_FldEffStrength::
@@ -252,18 +284,26 @@ EventScript_DontUseStrength::
 	end
 
 Text_UseStrength::
-	.string "Would you like to use Strength?$"
+	.string "Would you like to push this boulder?$"
 
 Text_MonUsedStrengthCanMoveBoulders::
 	.string "{STR_VAR_1} used Strength!$"
 	
 Text_MonMayPushBoulder::
-	.string "It's a big boulder, but a Pokémon\n"
-	.string "may be able to push it aside.$"
+	.string "You'll need a Pokémon or proper\n"
+	.string "gear to push this boulder.$"
 
 Text_StrengthMadeMovingBouldersPossible::
 	.string "Strength made it possible to move\n"
 	.string "boulders around.$"
+
+Text_WearLiftBeltToPush::
+	.string "Would you like to wear the Lift Belt\n"
+	.string "to push this boulder?$"
+
+Text_LiftBeltLetsYouPush::
+	.string "The Lift Belt lets {PLAYER} push\n"
+	.string "heavy boulders!$"
 
 EventScript_Waterfall::
 	goto_if_questlog EventScript_ReleaseEnd
@@ -279,8 +319,10 @@ EventScript_Waterfall::
 
 EventScript_CantUseWaterfall::
 	lockall
+
 EventScript_WaterCrashingDown:
 	msgbox Text_WallOfWaterCrashingDown
+
 EventScript_EndWaterfall:
 	releaseall
 	end
@@ -310,8 +352,10 @@ EventScript_DeepWater::
 
 EventScript_CantDive::
 	lockall
+
 EventScript_MayGoUnderwater:
 	msgbox Text_MonMayGoUnderwater
+
 EventScript_EndDive:
 	releaseall
 	end
@@ -335,6 +379,7 @@ EventScript_CantSurface::
 EventScript_ObstacleCantSurface::
 	lockall
 	msgbox Text_DiveCantBeUsedHere
+
 EventScript_EndSurface:
 	releaseall
 	end
@@ -377,7 +422,7 @@ EventScript_UseDefog::
 	msgbox Text_MonUsedMove, MSGBOX_DEFAULT
 	closemessage
 	isfollowerfieldmoveuser VAR_0x8004
-	setfieldeffectargument 3, VAR_0x8004 @ skip pose if so
+	setfieldeffectargument 3, VAR_0x8004
 	setflag FLAG_SAFE_FOLLOWER_MOVEMENT
 	call_if_eq VAR_0x8004, TRUE, EventScript_FollowerFieldMove
 	waitmovement 0

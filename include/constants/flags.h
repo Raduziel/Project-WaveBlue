@@ -827,7 +827,7 @@
 #define FLAG_CELADON_HOUSE1_ROCKETS_FLED                  0x31E
 #define FLAG_HIDE_TWO_ISLAND_GAME_CORNER_DADDY            0x31F
 #define FLAG_HIDE_LOSTELLE_DADDY_IN_HER_HOME              0x320
-#define FLAG_0x321               0x321
+#define FLAG_TOGGLE_LIFT_BELT                             0x321
 #define FLAG_0x322               0x322
 #define FLAG_0x323               0x323
 #define FLAG_0x324               0x324

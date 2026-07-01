@@ -2379,6 +2379,12 @@ bool8 ScrCmd_checkfieldmoveusable(struct ScriptContext* ctx)
         StringGet_Nickname(gStringVar1);
         StringCopy(gStringVar2, gMovesInfo[moveId].name);
     }
+    else if (FieldMove_HasKeyItem(fieldMove))
+    {
+        gFieldEffectArguments[0] = PARTY_SIZE;
+        gSpecialVar_0x8004 = SPECIES_NONE;
+        gSpecialVar_Result = TRUE;
+    }
     else if (OW_FIELD_MOVES_WITHOUT_HMS)
     {
         enum Species species = FieldMove_GetDefaultSpecies(fieldMove);

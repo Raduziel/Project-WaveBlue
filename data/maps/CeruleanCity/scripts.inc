@@ -6,6 +6,7 @@ CeruleanCity_MapScripts::
 CeruleanCity_OnTransition::
 	setworldmapflag FLAG_WORLD_MAP_CERULEAN_CITY
 	call_if_unset FLAG_GOT_SS_TICKET, CeruleanCity_EventScript_BlockExits
+	setflag FLAG_HIDE_CERULEAN_LANCE
 	call_if_set FLAG_DEFEATED_BOSS_GIOVANNI, CeruleanCity_EventScript_TryArmLanceScene
 	end
 

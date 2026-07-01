@@ -135,3 +135,27 @@ static void StartRockSmashFieldEffect(void)
     FieldEffectActiveListRemove(FLDEFF_USE_ROCK_SMASH);
     ScriptContext_Enable();
 }
+
+static bool32 SmashRockFromBag_Internal(bool32 execute)
+{
+    if (CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_ROCK_SMASH_ROCK) == TRUE)
+    {
+        if (execute)
+        {
+            gFieldEffectArguments[0] = PARTY_SIZE;
+            ScriptContext_SetupScript(EventScript_FldEffRockSmash);
+        }
+        return TRUE;
+    }
+    return FALSE;
+}
+
+bool32 CanSmashRockFromBag(void)
+{
+    return SmashRockFromBag_Internal(FALSE);
+}
+
+void DoSmashRockFromBag(void)
+{
+    SmashRockFromBag_Internal(TRUE);
+}

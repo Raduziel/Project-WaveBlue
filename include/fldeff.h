@@ -27,6 +27,11 @@ bool32 FieldMove_SetUpSweetScent(void);
 bool32 SetUpFieldMove_RockClimb(void);
 bool32 SetUpFieldMove_Defog(void);
 
+bool32 CanCutFromBag(void);
+void DoCutFromBag(void);
+bool32 CanSmashRockFromBag(void);
+void DoSmashRockFromBag(void);
+
 // flash
 u8 MapTransitionIsExit(u8 lightLevel, u8 mapType);
 u8 MapTransitionIsEnter(u8 mapType1, u8 mapType2);

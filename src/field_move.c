@@ -3,9 +3,11 @@
 #include "field_move.h"
 #include "fldeff.h"
 #include "pokemon.h"
+#include "item.h"
 #include "constants/field_move.h"
 #include "constants/moves.h"
 #include "constants/party_menu.h"
+#include "constants/items.h"
 
 static bool32 FieldMove_IsUnlockedCut(void);
 static bool32 FieldMove_IsUnlockedFly(void);
@@ -230,33 +232,66 @@ bool32 FieldMove_IsUnlocked(enum FieldMove fieldMove)
     return gFieldMovesInfo[fieldMove].isUnlockedFunc();
 }
 
+bool32 FieldMove_HasKeyItem(enum FieldMove fieldMove)
+{
+    switch (fieldMove)
+    {
+    case FIELD_MOVE_CUT:
+        return CheckBagHasItem(ITEM_HEDGE_SHEARS, 1);
+    case FIELD_MOVE_FLY:
+        return CheckBagHasItem(ITEM_FLIGHT_TICKET, 1);
+    case FIELD_MOVE_SURF:
+        return CheckBagHasItem(ITEM_RUBBER_BOAT, 1);
+    case FIELD_MOVE_STRENGTH:
+        return CheckBagHasItem(ITEM_LIFT_BELT, 1);
+    case FIELD_MOVE_FLASH:
+        return CheckBagHasItem(ITEM_LANTERN, 1);
+    case FIELD_MOVE_ROCK_SMASH:
+        return CheckBagHasItem(ITEM_SLEDGEHAMMER, 1);        
+    default:
+        return FALSE;
+    }
+}
+
 static bool32 FieldMove_IsUnlockedCut(void)
 {
+    if (CheckBagHasItem(ITEM_HEDGE_SHEARS, 1))
+        return TRUE;
     return FlagGet(FLAG_BADGE02_GET) && PartyHasMove(MOVE_CUT);
 }
 
 static bool32 FieldMove_IsUnlockedFly(void)
 {
+    if (CheckBagHasItem(ITEM_FLIGHT_TICKET, 1))
+        return TRUE;
     return FlagGet(FLAG_BADGE03_GET) && PartyHasMove(MOVE_FLY);
 }
 
 static bool32 FieldMove_IsUnlockedSurf(void)
 {
+    if (CheckBagHasItem(ITEM_RUBBER_BOAT, 1))
+        return TRUE;    
     return FlagGet(FLAG_DEFEATED_KOGA) && PartyHasMove(MOVE_SURF);
 }
 
 static bool32 FieldMove_IsUnlockedStrength(void)
 {
+    if (CheckBagHasItem(ITEM_LIFT_BELT, 1))
+        return TRUE; 
     return FlagGet(FLAG_BADGE04_GET) && PartyHasMove(MOVE_STRENGTH);
 }
 
 static bool32 FieldMove_IsUnlockedFlash(void)
 {
+    if (CheckBagHasItem(ITEM_LANTERN, 1))
+        return TRUE; 
     return FlagGet(FLAG_BADGE01_GET) && PartyHasMove(MOVE_FLASH);
 }
 
 static bool32 FieldMove_IsUnlockedRockSmash(void)
 {
+    if (CheckBagHasItem(ITEM_SLEDGEHAMMER, 1))
+        return TRUE; 
     return FlagGet(FLAG_BADGE06_GET) && PartyHasMove(MOVE_ROCK_SMASH);
 }
 

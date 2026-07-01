@@ -15475,12 +15475,14 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_Sapphire,
     },
 
+// HM-Key Items
+
     [ITEM_FLIGHT_TICKET] =
     {
         .name = ITEM_NAME("Flight Ticket"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "Lets you fly to any town\n"
+            "A flight pass to any town\n"
             "you've already visited."),
         .notConsumed = TRUE,
         .importance = 1,
@@ -15489,6 +15491,86 @@ const struct ItemInfo gItemsInfo[] =
         .fieldUseFunc = ItemUseOutOfBattle_FlightTicket,
         .iconPic = gItemIcon_EonTicket,
         .iconPalette = gItemIconPalette_EonTicket,
+    },
+
+    [ITEM_LANTERN] =
+    {
+        .name = ITEM_NAME("Lantern"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "An old-fashioned lantern\n"
+            "for lighting dark caves."),
+        .notConsumed = TRUE,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_Lantern,
+        .iconPic = gItemIcon_FlashLantern,
+        .iconPalette = gItemIconPalette_FlashLantern,
+    },
+
+    [ITEM_LIFT_BELT] =
+    {
+        .name = ITEM_NAME("Lifting Belt"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A lifter's belt for pushing\n"
+            "boulders out of the way."),
+        .notConsumed = TRUE,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_LiftBelt,
+        .iconPic = gItemIcon_StrengthBelt,
+        .iconPalette = gItemIconPalette_StrengthBelt,
+    },
+
+    [ITEM_HEDGE_SHEARS] =
+    {
+        .name = ITEM_NAME("Hedge Shears"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "Shears that cut down\n"
+            "small trees and bushes."),
+        .notConsumed = TRUE,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_HedgeShears,
+        .iconPic = gItemIcon_CutShears,
+        .iconPalette = gItemIconPalette_CutShears,
+    },
+
+    [ITEM_RUBBER_BOAT] =
+    {
+        .name = ITEM_NAME("Rubber Boat"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "An inflatable boat that lets\n"
+            "you sail across the water."),
+        .notConsumed = TRUE,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_RubberBoat,
+        .iconPic = gItemIcon_SurfBoat,
+        .iconPalette = gItemIconPalette_SurfBoat,
+    },
+
+    [ITEM_SLEDGEHAMMER] =
+    {
+        .name = ITEM_NAME("Sledgehammer"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A heavy hammer for smashing\n"
+            "cracked rocks."),
+        .notConsumed = TRUE,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_Sledgehammer,
+        .iconPic = gItemIcon_RockSmashHammer,
+        .iconPalette = gItemIconPalette_RockSmashHammer,
     },
 
 // GEN 9 Items

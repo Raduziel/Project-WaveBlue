@@ -1,5 +1,15 @@
 RockTunnel_B1F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, RockTunnel_B1F_OnTransition
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, RockTunnel_B1F_OnFrame
 	.byte 0
+
+RockTunnel_B1F_OnTransition::
+	call DarkCave_OnTransition
+	end
+
+RockTunnel_B1F_OnFrame::
+	map_script_2 VAR_DARKCAVE_OFFER, 1, DarkCave_EventScript_OfferLantern
+	.2byte 0
 
 RockTunnel_B1F_EventScript_Sofia::
 	trainerbattle_single TRAINER_PICNICKER_SOFIA, RockTunnel_B1F_Text_SofiaIntro, RockTunnel_B1F_Text_SofiaDefeat

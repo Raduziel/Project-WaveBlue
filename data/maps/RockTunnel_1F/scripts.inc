@@ -1,10 +1,16 @@
 RockTunnel_1F_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, RockTunnel_1F_OnTransition
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, RockTunnel_1F_OnFrame
 	.byte 0
 
 RockTunnel_1F_OnTransition::
 	setworldmapflag FLAG_WORLD_MAP_ROCK_TUNNEL_1F
+	call DarkCave_OnTransition
 	end
+
+RockTunnel_1F_OnFrame::
+	map_script_2 VAR_DARKCAVE_OFFER, 1, DarkCave_EventScript_OfferLantern
+	.2byte 0
 
 RockTunnel_1F_EventScript_RouteSign::
 	msgbox RockTunnel_1F_Text_RouteSign, MSGBOX_SIGN

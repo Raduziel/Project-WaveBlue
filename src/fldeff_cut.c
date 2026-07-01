@@ -162,6 +162,54 @@ bool32 FieldMove_SetUpCut(void)
     }
 }
 
+static bool32 CutFromBag_Internal(bool32 execute)
+{
+    s16 x, y;
+    u8 i, j;
+
+    if (CheckObjectGraphicsInFrontOfPlayer(OBJ_EVENT_GFX_CUT_TREE) == TRUE)
+    {
+        if (execute)
+        {
+            gFieldEffectArguments[0] = PARTY_SIZE;
+            ScriptContext_SetupScript(EventScript_FldEffCut);
+        }
+        return TRUE;
+    }
+
+    PlayerGetDestCoords(&gPlayerFacingPosition.x, &gPlayerFacingPosition.y);
+    for (i = 0; i < CUT_SIDE; i++)
+    {
+        y = gPlayerFacingPosition.y - 1 + i;
+        for (j = 0; j < CUT_SIDE; j++)
+        {
+            x = gPlayerFacingPosition.x - 1 + j;
+            if (MapGridGetElevationAt(x, y) == gPlayerFacingPosition.elevation
+             && MetatileAtCoordsIsGrassTile(x, y) == TRUE)
+            {
+                if (execute)
+                {
+                    gFieldEffectArguments[0] = PARTY_SIZE;
+                    sScheduleOpenDottedHole = FALSE;
+                    FieldEffectStart(FLDEFF_USE_CUT_ON_GRASS);
+                }
+                return TRUE;
+            }
+        }
+    }
+    return FALSE;
+}
+
+bool32 CanCutFromBag(void)
+{
+    return CutFromBag_Internal(FALSE);
+}
+
+void DoCutFromBag(void)
+{
+    CutFromBag_Internal(TRUE);
+}
+
 static void FieldCallback_CutGrass(void)
 {
     FieldEffectStart(FLDEFF_USE_CUT_ON_GRASS);
