@@ -243,7 +243,7 @@ bool32 FieldMove_HasKeyItem(enum FieldMove fieldMove)
     case FIELD_MOVE_SURF:
         return CheckBagHasItem(ITEM_RUBBER_BOAT, 1);
     case FIELD_MOVE_STRENGTH:
-        return CheckBagHasItem(ITEM_LIFT_BELT, 1);
+        return CheckBagHasItem(ITEM_HAUL_BELT, 1);
     case FIELD_MOVE_FLASH:
         return CheckBagHasItem(ITEM_LANTERN, 1);
     case FIELD_MOVE_ROCK_SMASH:
@@ -276,7 +276,7 @@ static bool32 FieldMove_IsUnlockedSurf(void)
 
 static bool32 FieldMove_IsUnlockedStrength(void)
 {
-    if (CheckBagHasItem(ITEM_LIFT_BELT, 1))
+    if (CheckBagHasItem(ITEM_HAUL_BELT, 1))
         return TRUE; 
     return FlagGet(FLAG_BADGE04_GET) && PartyHasMove(MOVE_STRENGTH);
 }

@@ -68,6 +68,7 @@ static s32 AI_Safari(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum 
 static s32 AI_FirstBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
 static s32 AI_DoubleBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
 static s32 AI_PowerfulStatus(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
+static s32 AI_TeamSynergy(enum BattlerId, enum BattlerId, enum Move, s32);
 static s32 AI_DynamicFunc(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
 static s32 AI_PredictSwitch(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
 static s32 AI_CheckPpStall(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score);
@@ -105,10 +106,10 @@ static s32 (*const sBattleAiFuncTable[])(enum BattlerId, enum BattlerId, enum Mo
     [28] = NULL,                     // AI_FLAG_ASSUME_STAB
     [29] = NULL,                     // AI_FLAG_ASSUME_STATUS_MOVES
     [30] = AI_AttacksPartner,        // AI_FLAG_ATTACKS_PARTNER
-    [31] = NULL,                     // Unused
-    [32] = NULL,                     // Unused
-    [33] = NULL,                     // Unused
-    [34] = NULL,                     // Unused
+    [31] = NULL,                     // AI_FLAG_KNOW_OPPONENT_PARTY
+    [32] = NULL,                     // AI_FLAG_RANDOMIZE_SWITCHIN
+    [33] = NULL,                     // AI_FLAG_RANDOMIZE_PARTY_INDICES
+    [34] = AI_TeamSynergy,           // AI_FLAG_TEAM_SYNERGY
     [35] = NULL,                     // Unused
     [36] = NULL,                     // Unused
     [37] = NULL,                     // Unused
@@ -7081,6 +7082,241 @@ static s32 AI_Safari(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum 
 // First battle logic
 static s32 AI_FirstBattle(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score)
 {
+    return score;
+}
+
+struct BenchSynergyInfo
+{
+    u8 aliveReserves;
+    u8 fireWeak;
+    u8 waterWeak;
+    u8 dragonWeak;
+    u8 iceTyped;
+    u8 rockTyped;
+    u8 electricTyped;
+    u8 grassTyped;
+    u8 psychicTyped;
+    u8 rainAbilities;
+    u8 sunAbilities;
+    u8 sandAbilities;
+    u8 snowAbilities;
+    u8 setupSweepers;
+    u8 healthySetupSweepers;
+};
+
+static uq4_12_t BenchDamageTakenFromType(enum Type atkType, u32 species)
+{
+    enum Type type1 = GetSpeciesType(species, 0);
+    enum Type type2 = GetSpeciesType(species, 1);
+    uq4_12_t mod = GetTypeModifier(atkType, type1);
+
+    if (type2 != type1)
+        mod = uq4_12_multiply(mod, GetTypeModifier(atkType, type2));
+    return mod;
+}
+
+static bool32 BenchSpeciesHasType(u32 species, enum Type type)
+{
+    return GetSpeciesType(species, 0) == type || GetSpeciesType(species, 1) == type;
+}
+
+static bool32 BenchAbilityLikesWeather(enum Ability ability, u32 weather)
+{
+    switch (ability)
+    {
+    case ABILITY_SWIFT_SWIM:
+    case ABILITY_RAIN_DISH:
+    case ABILITY_DRY_SKIN:
+    case ABILITY_HYDRATION:
+        return (weather & B_WEATHER_RAIN) != 0;
+    case ABILITY_CHLOROPHYLL:
+    case ABILITY_SOLAR_POWER:
+    case ABILITY_LEAF_GUARD:
+    case ABILITY_HARVEST:
+        return (weather & B_WEATHER_SUN) != 0;
+    case ABILITY_SAND_RUSH:
+    case ABILITY_SAND_FORCE:
+    case ABILITY_SAND_VEIL:
+        return (weather & B_WEATHER_SANDSTORM) != 0;
+    case ABILITY_SLUSH_RUSH:
+    case ABILITY_ICE_BODY:
+    case ABILITY_SNOW_CLOAK:
+    case ABILITY_ICE_FACE:
+        return (weather & B_WEATHER_ICY_ANY) != 0;
+    default:
+        return FALSE;
+    }
+}
+
+static void GetBenchSynergyInfo(enum BattlerId battler, struct BenchSynergyInfo *bench)
+{
+    struct Pokemon *party = GetBattlerParty(battler);
+
+    memset(bench, 0, sizeof(*bench));
+
+    for (u32 monIndex = 0; monIndex < PARTY_SIZE; monIndex++)
+    {
+        if (monIndex == gBattlerPartyIndexes[battler])
+            continue;
+        if (IsDoubleBattle() && monIndex == gBattlerPartyIndexes[BATTLE_PARTNER(battler)])
+            continue;
+
+        u32 species = GetMonData(&party[monIndex], MON_DATA_SPECIES_OR_EGG);
+        if (species == SPECIES_NONE || species == SPECIES_EGG
+         || GetMonData(&party[monIndex], MON_DATA_HP) == 0)
+            continue;
+
+        bench->aliveReserves++;
+
+        if (BenchDamageTakenFromType(TYPE_FIRE, species) > UQ_4_12(1.0))
+            bench->fireWeak++;
+        if (BenchDamageTakenFromType(TYPE_WATER, species) > UQ_4_12(1.0))
+            bench->waterWeak++;
+        if (BenchDamageTakenFromType(TYPE_DRAGON, species) > UQ_4_12(1.0))
+            bench->dragonWeak++;
+        if (BenchSpeciesHasType(species, TYPE_ICE))
+            bench->iceTyped++;
+        if (BenchSpeciesHasType(species, TYPE_ROCK))
+            bench->rockTyped++;
+        if (BenchSpeciesHasType(species, TYPE_ELECTRIC))
+            bench->electricTyped++;
+        if (BenchSpeciesHasType(species, TYPE_GRASS))
+            bench->grassTyped++;
+        if (BenchSpeciesHasType(species, TYPE_PSYCHIC))
+            bench->psychicTyped++;
+
+        enum Ability ability = GetMonAbility(&party[monIndex]);
+        if (BenchAbilityLikesWeather(ability, B_WEATHER_RAIN))
+            bench->rainAbilities++;
+        if (BenchAbilityLikesWeather(ability, B_WEATHER_SUN))
+            bench->sunAbilities++;
+        if (BenchAbilityLikesWeather(ability, B_WEATHER_SANDSTORM))
+            bench->sandAbilities++;
+        if (BenchAbilityLikesWeather(ability, B_WEATHER_ICY_ANY))
+            bench->snowAbilities++;
+
+        bool32 hasSetupMove = FALSE;
+        for (u32 moveIndex = 0; moveIndex < MAX_MON_MOVES; moveIndex++)
+        {
+            u32 monMove = GetMonData(&party[monIndex], MON_DATA_MOVE1 + moveIndex);
+            if (monMove != MOVE_NONE && IsStatRaisingEffect(GetMoveEffect(monMove)))
+            {
+                hasSetupMove = TRUE;
+                break;
+            }
+        }
+        if (hasSetupMove)
+        {
+            bench->setupSweepers++;
+            if (GetMonData(&party[monIndex], MON_DATA_HP) * 3
+             >= GetMonData(&party[monIndex], MON_DATA_MAX_HP) * 2)
+                bench->healthySetupSweepers++;
+        }
+    }
+}
+
+static s32 AI_TeamSynergy(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move, s32 score)
+{
+    struct BenchSynergyInfo bench;
+
+    if (IsTargetingPartner(battlerAtk, battlerDef))
+        return score;
+
+    GetBenchSynergyInfo(battlerAtk, &bench);
+    if (bench.aliveReserves == 0)
+        return score;
+
+    switch (GetMoveEffect(move))
+    {
+    case EFFECT_REFLECT:
+    case EFFECT_LIGHT_SCREEN:
+    case EFFECT_AURORA_VEIL:
+        if (bench.aliveReserves >= 2)
+            ADJUST_SCORE(WEAK_EFFECT);
+        if (bench.setupSweepers != 0)
+            ADJUST_SCORE(DECENT_EFFECT);
+        break;
+    case EFFECT_MEMENTO:
+    case EFFECT_FINAL_GAMBIT:
+    case EFFECT_DESTINY_BOND:
+    case EFFECT_PERISH_SONG:
+        if (CanTargetFaintAi(battlerDef, battlerAtk) && bench.healthySetupSweepers != 0)
+            ADJUST_SCORE(DECENT_EFFECT);
+        break;
+    default:
+        break;
+    }
+
+    if (IsExplosionMove(move) && CanTargetFaintAi(battlerDef, battlerAtk) && bench.healthySetupSweepers != 0)
+        ADJUST_SCORE(DECENT_EFFECT);
+
+    u32 additionalEffectCount = GetMoveAdditionalEffectCount(move);
+    for (u32 effectId = 0; effectId < additionalEffectCount; effectId++)
+    {
+        const struct AdditionalEffect *additionalEffect = GetMoveAdditionalEffectById(move, effectId);
+        switch (additionalEffect->moveEffect)
+        {
+        case MOVE_EFFECT_RAIN:
+            if (AI_GetWeather() & B_WEATHER_RAIN)
+                break;
+            if (bench.fireWeak != 0)
+                ADJUST_SCORE(DECENT_EFFECT);
+            if (bench.rainAbilities != 0)
+                ADJUST_SCORE(WEAK_EFFECT);
+            break;
+        case MOVE_EFFECT_SUN:
+            if (AI_GetWeather() & B_WEATHER_SUN)
+                break;
+            if (bench.waterWeak != 0)
+                ADJUST_SCORE(DECENT_EFFECT);
+            if (bench.sunAbilities != 0)
+                ADJUST_SCORE(WEAK_EFFECT);
+            break;
+        case MOVE_EFFECT_SANDSTORM:
+            if (AI_GetWeather() & B_WEATHER_SANDSTORM)
+                break;
+            if (bench.rockTyped != 0)
+                ADJUST_SCORE(WEAK_EFFECT);
+            if (bench.sandAbilities != 0)
+                ADJUST_SCORE(WEAK_EFFECT);
+            break;
+        case MOVE_EFFECT_HAIL:
+            if (AI_GetWeather() & B_WEATHER_ICY_ANY)
+                break;
+            if (bench.iceTyped != 0)
+                ADJUST_SCORE(WEAK_EFFECT);
+            if (bench.snowAbilities != 0)
+                ADJUST_SCORE(WEAK_EFFECT);
+            break;
+        case MOVE_EFFECT_ELECTRIC_TERRAIN:
+            if (gFieldStatuses & STATUS_FIELD_ELECTRIC_TERRAIN)
+                break;
+            if (bench.electricTyped != 0)
+                ADJUST_SCORE(DECENT_EFFECT);
+            break;
+        case MOVE_EFFECT_GRASSY_TERRAIN:
+            if (gFieldStatuses & STATUS_FIELD_GRASSY_TERRAIN)
+                break;
+            if (bench.grassTyped != 0)
+                ADJUST_SCORE(DECENT_EFFECT);
+            break;
+        case MOVE_EFFECT_PSYCHIC_TERRAIN:
+            if (gFieldStatuses & STATUS_FIELD_PSYCHIC_TERRAIN)
+                break;
+            if (bench.psychicTyped != 0)
+                ADJUST_SCORE(DECENT_EFFECT);
+            break;
+        case MOVE_EFFECT_MISTY_TERRAIN:
+            if (gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN)
+                break;
+            if (bench.dragonWeak != 0)
+                ADJUST_SCORE(DECENT_EFFECT);
+            break;
+        default:
+            break;
+        }
+    }
+
     return score;
 }
 

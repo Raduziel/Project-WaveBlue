@@ -438,19 +438,19 @@ static void ItemUseOnFieldCB_HedgeShears(u8 taskId)
     DestroyTask(taskId);
 }
 
-void ItemUseOutOfBattle_LiftBelt(u8 taskId)
+void ItemUseOutOfBattle_HaulBelt(u8 taskId)
 {
     const u8 *msg;
 
-    if (FlagGet(FLAG_TOGGLE_LIFT_BELT))
+    if (FlagGet(FLAG_TOGGLE_HAUL_BELT))
     {
-        FlagClear(FLAG_TOGGLE_LIFT_BELT);
-        msg = gText_LiftBeltOff;
+        FlagClear(FLAG_TOGGLE_HAUL_BELT);
+        msg = gText_HaulBeltOff;
     }
     else
     {
-        FlagSet(FLAG_TOGGLE_LIFT_BELT);
-        msg = gText_LiftBeltOn;
+        FlagSet(FLAG_TOGGLE_HAUL_BELT);
+        msg = gText_HaulBeltOn;
     }
 
     StringExpandPlaceholders(gStringVar4, msg);

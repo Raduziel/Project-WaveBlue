@@ -3,9 +3,25 @@ CeladonCity_Text_GotMyKoffingInCinnabar::
     .string "It's usually nice, but it breathes\n"
     .string "poison when it's angry.$"
 
-CeladonCity_Text_GymIsGreatFullOfWomen::
-    .string "Heheh! This Gym is great!\n"
-    .string "It's full of women!$"
+CeladonCity_Text_GardenerIntro::
+	.string "Ah, a Trainer! I've tended this Gym's\n"
+	.string "garden for forty years now…\p"
+	.string "But these old hands have earned\n"
+	.string "their rest. I'm retiring.\p"
+	.string "Here, take these. An old gardener has\n"
+	.string "no more use for them.$"
+
+CeladonCity_Text_GardenerGoodbye::
+	.string "Use them to clear the bushes that\n"
+	.string "block the paths out there.\p"
+	.string "Farewell… may your journey flourish\n"
+	.string "like a well-kept garden.$"
+
+CeladonCity_Text_GardenerRetired::
+	.string "Off you go, now. The road's waiting\n"
+	.string "for a young Trainer like you.\p"
+	.string "As for me, I'll linger here a while\n"
+	.string "longer, admiring my life's work.$"
 
 CeladonCity_Text_GameCornerIsBadForCitysImage::
     .string "Celadon takes pride in its efforts\n"

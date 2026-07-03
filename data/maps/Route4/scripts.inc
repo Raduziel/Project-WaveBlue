@@ -76,7 +76,7 @@ Route4_EventScript_CaveGuy::
     applymovement LOCALID_CAVEGUY, Movement_CaveGuyApproach 
     waitmovement 0
     msgbox Route4_Text_CaveGuyDialogue2, MSGBOX_DEFAULT
-	giveitem ITEM_ESCAPE_ROPE, 1
+	giveitem ITEM_ESCAPE_ROPE
     waitfanfare
     textcolor NPC_TEXT_COLOR_MALE
     msgbox Route4_Text_CaveGuyDialogue3, MSGBOX_DEFAULT

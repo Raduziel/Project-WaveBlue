@@ -45,7 +45,7 @@ void ItemUseOutOfBattle_CannotUse(u8 taskId);
 void ItemUseOutOfBattle_InfiniteRepel(u8 taskId);
 void ItemUseOutOfBattle_FlightTicket (u8 taskId);
 void ItemUseOutOfBattle_HedgeShears(u8 taskId);
-void ItemUseOutOfBattle_LiftBelt(u8 taskId);
+void ItemUseOutOfBattle_HaulBelt(u8 taskId);
 void ItemUseOutOfBattle_Lantern(u8 taskId);
 void ItemUseOutOfBattle_Sledgehammer(u8 taskId);
 void ItemUseOutOfBattle_RubberBoat(u8 taskId);

@@ -13,12 +13,12 @@ VermilionCity_House3_Text_DearPippiLetter::
     .string "Vermilion appears to be safe.$"
 
 VermilionCity_House3_Text_BoyGiveFlightTicket::
-	.string "I love Vermilion City!\n"
-	.string "I want to stay here longer.\p"
-	.string "I got this Flight Ticket, but\n"
-	.string "I won't be needing it.\p"
+	.string "I love Vermilion City! I want to stay\n"
+	.string "here longer.\p"
+	.string "I got this Flight Ticket, but I won't\n"
+	.string "be needing it.\p"
 	.string "Here, you can have it!$"
 
 VermilionCity_House3_Text_BoyAlreadyGave::
-	.string "Take good care of that ticket!\n"
-	.string "Fly all over Kanto for me.$"
+	.string "Take good care of that ticket! Fly\n"
+	.string "all over Kanto for me.$"

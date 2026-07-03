@@ -66,14 +66,14 @@ Route4_Text_CaveGuyDialogue1::
     .string "Hey! You there!$"
 
 Route4_Text_CaveGuyDialogue2::
-    .string "You're a Pokémon Trainer, right?\n"
-    .string "Be careful! Caves can be very tricky.\p"
+    .string "You're a Pokémon Trainer, right? Be\n"
+    .string "careful! Caves can be very tricky.\p"
     .string "I bought this, but I think you could\n"
     .string "use it. Take it.$"
 
 Route4_Text_CaveGuyDialogue3::
     .string "The Escape Rope is a Key Item.\p"
-    .string "Use it from your Bag to escape\n"
-    .string "from any cave instantly.\p"
-    .string "Now, if you'll excuse me, I need\n"
-    .string "to go on a hike.$"
+    .string "Use it from your Bag to escape from\n"
+    .string "any cave instantly.\p"
+    .string "Now, if you'll excuse me, I need to\n"
+    .string "go on a hike.$"

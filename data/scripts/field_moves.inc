@@ -229,7 +229,7 @@ EventScript_StrengthBoulder::
 	goto_if_questlog EventScript_ReleaseEnd
 	lockall
 	goto_if_set FLAG_SYS_USE_STRENGTH, EventScript_AlreadyUsedStrength
-	goto_if_set FLAG_TOGGLE_LIFT_BELT, EventScript_LiftBeltAlreadyOn
+	goto_if_set FLAG_TOGGLE_HAUL_BELT, EventScript_LiftBeltAlreadyOn
 	checkfieldmoveusable FIELD_MOVE_STRENGTH
 	goto_if_eq VAR_RESULT, FALSE, EventScript_CantMoveBoulder
 	goto_if_eq VAR_0x8004, SPECIES_NONE, EventScript_OfferLiftBelt
@@ -245,16 +245,16 @@ EventScript_StrengthBoulder::
 	goto EventScript_UseStrength
 
 EventScript_OfferLiftBelt::
-	msgbox Text_WearLiftBeltToPush, MSGBOX_YESNO
+	msgbox Text_WearHaulBeltToPush, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_DontUseStrength
 	closemessage
-	setflag FLAG_TOGGLE_LIFT_BELT
-	msgbox Text_LiftBeltLetsYouPush, MSGBOX_SIGN
+	setflag FLAG_TOGGLE_HAUL_BELT
+	msgbox Text_HaulBeltLetsYouPush, MSGBOX_SIGN
 	releaseall
 	end
 
 EventScript_LiftBeltAlreadyOn::
-	msgbox Text_LiftBeltLetsYouPush, MSGBOX_SIGN
+	msgbox Text_HaulBeltLetsYouPush, MSGBOX_SIGN
 	releaseall
 	end
 
@@ -290,19 +290,19 @@ Text_MonUsedStrengthCanMoveBoulders::
 	.string "{STR_VAR_1} used Strength!$"
 	
 Text_MonMayPushBoulder::
-	.string "You'll need a Pokémon or proper\n"
-	.string "gear to push this boulder.$"
+	.string "You'll need a Pokémon or proper gear\n"
+	.string "to push this boulder.$"
 
 Text_StrengthMadeMovingBouldersPossible::
 	.string "Strength made it possible to move\n"
 	.string "boulders around.$"
 
-Text_WearLiftBeltToPush::
-	.string "Would you like to wear the Lift Belt\n"
+Text_WearHaulBeltToPush::
+	.string "Would you like to wear the Haul Belt\n"
 	.string "to push this boulder?$"
 
-Text_LiftBeltLetsYouPush::
-	.string "The Lift Belt lets {PLAYER} push\n"
+Text_HaulBeltLetsYouPush::
+	.string "The Haul Belt lets {PLAYER} push\n"
 	.string "heavy boulders!$"
 
 EventScript_Waterfall::

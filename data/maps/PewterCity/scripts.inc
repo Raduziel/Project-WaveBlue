@@ -493,7 +493,7 @@ PewterCity_EventScript_AideGiveExpShare::
 	call_if_eq VAR_TEMP_1, 2, PewterCity_EventScript_AideApproachPlayer2
 	call_if_eq VAR_TEMP_1, 3, PewterCity_EventScript_AideApproachPlayer3
 	msgbox PewterCity_Text_AskedToDeliverThis
-	giveitem ITEM_EXP_SHARE, 1
+	giveitem ITEM_EXP_SHARE
 	textcolor NPC_TEXT_COLOR_MALE
 	msgbox PewterCity_Text_ExplainExpShare
 	msgbox PewterCity_Text_MustBeGoingBackToLab

@@ -502,4 +502,5 @@ gSpecials::
 	def_special HasMovesToRelearn
 	def_special CanTeachMoveBoxMon
 	def_special Special_CalcHiddenPowerType
+	def_special TryTakeGeodudeForSledgehammer
 gSpecialsEnd::

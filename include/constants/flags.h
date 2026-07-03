@@ -342,8 +342,8 @@
 #define FLAG_HIDE_ROUTE21_ABSORB_BULB                    0x144
 #define FLAG_GOT_CAP_CANDY                               0x145
 #define FLAG_DEFEATED_BOSS_GIOVANNI                      0x146
-#define FLAG_GOT_FLIGHT_TICKET                           0x147
-#define FLAG_HIDE_CERULEAN_LANCE                         0x148
+#define FLAG_HIDE_CERULEAN_LANCE                         0x147
+#define FLAG_0x148                                       0x148
 #define FLAG_0x149                                       0x149
 #define FLAG_0x14A                                       0x14A
 #define FLAG_0x14B                                       0x14B
@@ -532,12 +532,12 @@
 // Unused?
 #define FLAG_ITEM_ARTISAN_CAVE_1F_CARBOS            0x1FF
 #define FLAG_ITEM_ARTISAN_CAVE_B1F_HP_UP            0x200
-#define FLAG_0x201               0x201
-#define FLAG_0x202               0x202
-#define FLAG_0x203               0x203
-#define FLAG_0x204               0x204
-#define FLAG_0x205               0x205
-#define FLAG_0x206               0x206
+#define FLAG_GOT_HEDGE_SHEARS                       0x201
+#define FLAG_GOT_FLIGHT_TICKET                      0x202
+#define FLAG_GOT_RUBBER_BOAT                        0x203
+#define FLAG_GOT_HAUL_BELT                          0x204
+#define FLAG_GOT_LANTERN                            0x205
+#define FLAG_GOT_SLEDGEHAMMER                       0x206
 #define FLAG_0x207               0x207
 #define FLAG_0x208               0x208
 #define FLAG_0x209               0x209
@@ -827,7 +827,7 @@
 #define FLAG_CELADON_HOUSE1_ROCKETS_FLED                  0x31E
 #define FLAG_HIDE_TWO_ISLAND_GAME_CORNER_DADDY            0x31F
 #define FLAG_HIDE_LOSTELLE_DADDY_IN_HER_HOME              0x320
-#define FLAG_TOGGLE_LIFT_BELT                             0x321
+#define FLAG_TOGGLE_HAUL_BELT                             0x321
 #define FLAG_0x322               0x322
 #define FLAG_0x323               0x323
 #define FLAG_0x324               0x324

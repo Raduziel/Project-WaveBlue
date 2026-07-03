@@ -15509,18 +15509,18 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_FlashLantern,
     },
 
-    [ITEM_LIFT_BELT] =
+    [ITEM_HAUL_BELT] =
     {
-        .name = ITEM_NAME("Lifting Belt"),
+        .name = ITEM_NAME("Haul Belt"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "A lifter's belt for pushing\n"
+            "A sturdy belt for shoving\n"
             "boulders out of the way."),
         .notConsumed = TRUE,
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
-        .fieldUseFunc = ItemUseOutOfBattle_LiftBelt,
+        .fieldUseFunc = ItemUseOutOfBattle_HaulBelt,
         .iconPic = gItemIcon_StrengthBelt,
         .iconPalette = gItemIconPalette_StrengthBelt,
     },

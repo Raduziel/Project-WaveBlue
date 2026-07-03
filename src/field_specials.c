@@ -2012,6 +2012,34 @@ bool8 DoesPlayerPartyContainSpecies(void)
     return FALSE;
 }
 
+void TryTakeGeodudeForSledgehammer(void)
+{
+    u8 slot = gSpecialVar_0x8004;
+
+    if (slot >= PARTY_SIZE) // SLOT_CANCEL entra aqui
+    {
+        gSpecialVar_Result = 0;
+        return;
+    }
+
+    if (GetMonData(&gPlayerParty[slot], MON_DATA_IS_EGG, NULL) || GetMonData(&gPlayerParty[slot], MON_DATA_SPECIES, NULL) != SPECIES_GEODUDE)
+    {
+        gSpecialVar_Result = 1;
+        return;
+    }
+
+    if (CalculatePlayerPartyCount() <= 1)
+    {
+        gSpecialVar_Result = 2;
+        return;
+    }
+
+    ZeroMonData(&gPlayerParty[slot]);
+    CompactPartySlots();
+    CalculatePlayerPartyCount();
+    gSpecialVar_Result = 3;
+}
+
 static const u8 sMartMaps[][3] = {
     {MAP(MAP_VIRIDIAN_CITY_MART),   1},
     {MAP(MAP_PEWTER_CITY_MART),     3},

@@ -152,3 +152,33 @@ Route19_Text_LucNotEnoughMons::
     .string "Luc: I don't want to if I can't\n"
     .string "battle you with my big sis.\p"
     .string "Don't you have two Pokémon?$"
+
+Route19_Text_RubberBoatGate::
+	.string "Oh, a little trainer! You want to go\n"
+	.string "sailing around all on your own?\p"
+	.string "Hmm… you don't look quite ready to\n"
+	.string "handle the open water yet.\p"
+	.string "Come back when you've proven you can\n"
+	.string "hold your own. Try the Gym here!$"
+
+Route19_Text_RubberBoatOffer::
+    .string "Well now! You've beaten Koga!\p"
+    .string "You've proven you can handle\n"
+    .string "yourself.\p"
+    .string "You see, I used to be so terrified of\n"
+    .string "swimming that I always carried this.\p"
+    .string "It's a rubber boat! You just puff it\n"
+    .string "up with air and off you go.\p"
+    .string "I've finally learned how to swim on\n"
+    .string "my own and I won't need it anymore.$"
+
+Route19_Text_RubberBoatFarewell::
+	.string "Just inflate it when you reach the\n"
+	.string "water, and you can navigate anywhere.\p"
+	.string "Isn't it wonderful? Go on and see the\n"
+	.string "sea for yourself. Safe travels!$"
+
+Route19_Text_RubberBoatPostGift::
+	.string "How's the rubber boat treating you?\p"
+	.string "The water's nothing to fear once you\n"
+	.string "know you'll always stay afloat.$"

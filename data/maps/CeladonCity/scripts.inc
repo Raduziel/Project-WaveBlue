@@ -10,9 +10,22 @@ CeladonCity_EventScript_LittleGirl::
 	msgbox CeladonCity_Text_GotMyKoffingInCinnabar, MSGBOX_NPC
 	end
 
-CeladonCity_EventScript_OldMan1::
+CeladonCity_EventScript_HedgeShears::
 	lock
-	msgbox CeladonCity_Text_GymIsGreatFullOfWomen
+	faceplayer
+	goto_if_set FLAG_GOT_HEDGE_SHEARS, CeladonCity_EventScript_GardenerRetired
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox CeladonCity_Text_GardenerIntro, MSGBOX_DEFAULT
+	giveitem ITEM_HEDGE_SHEARS
+	setflag FLAG_GOT_HEDGE_SHEARS
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox CeladonCity_Text_GardenerGoodbye, MSGBOX_DEFAULT
+	release
+	end
+
+CeladonCity_EventScript_GardenerRetired::
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox CeladonCity_Text_GardenerRetired, MSGBOX_DEFAULT
 	release
 	end
 

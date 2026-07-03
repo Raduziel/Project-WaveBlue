@@ -681,7 +681,7 @@ static bool8 TryPushBoulder(s16 x, s16 y, u8 direction)
 {
     u8 objectEventId;
     u8 direction_ = direction;
-    if (!FlagGet(FLAG_SYS_USE_STRENGTH) && !FlagGet(FLAG_TOGGLE_LIFT_BELT))
+    if (!FlagGet(FLAG_SYS_USE_STRENGTH) && !FlagGet(FLAG_TOGGLE_HAUL_BELT))
         return FALSE;
 
     objectEventId = GetObjectEventIdByXY(x, y);

@@ -84,3 +84,24 @@ Route10_Text_RockTunnel::
 Route10_Text_PowerPlant::
     .string "Power Plant$"
 
+Route10_Text_LanternOffer::
+	.string "You there! Come look at this… no,\n"
+	.string "wait. Don't bother.\p"
+	.string "I was sure I'd found a Lampent. A\n"
+	.string "Pokémon all the way from Unova!\p"
+	.string "Can you imagine? Something that rare,\n"
+	.string "out here in Kanto of all places…\p"
+	.string "I stayed up all night watching it\n"
+	.string "glow. My big discovery.\p"
+	.string "Turns out it was just a Lantern. An\n"
+	.string "ordinary, everyday Lantern.$"
+
+Route10_Text_LanternFarewell::
+	.string "Just take it. I can't even look at\n"
+	.string "the thing anymore.\p"
+	.string "I have my Abra to light up that cave\n"
+	.string "anyway.$"
+
+Route10_Text_LanternPostGift::
+	.string "A Lampent. In Kanto. What was I even\n"
+	.string "thinking…$"

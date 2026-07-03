@@ -8,3 +8,53 @@ OneIsland_KindleRoad_EventScript_RouteSign::
 OneIsland_KindleRoad_EventScript_EmberSpaSign::
 	msgbox OneIsland_KindleRoad_Text_EmberSpaSign, MSGBOX_SIGN
 	end
+
+OneIsland_KindleRoad_EventScript_Sledgehammer::
+	lock
+	faceplayer
+	goto_if_set FLAG_GOT_SLEDGEHAMMER, OneIsland_KindleRoad_EventScript_SledgehammerPostGift
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox OneIsland_KindleRoad_Text_SledgehammerIntro, MSGBOX_DEFAULT
+	msgbox OneIsland_KindleRoad_Text_SledgehammerAskTrade, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq OneIsland_KindleRoad_EventScript_SledgehammerDeclined
+	special ChoosePartyMon
+	waitstate
+	special TryTakeGeodudeForSledgehammer
+	compare VAR_RESULT, 0
+	goto_if_eq OneIsland_KindleRoad_EventScript_SledgehammerDeclined
+	compare VAR_RESULT, 1
+	goto_if_eq OneIsland_KindleRoad_EventScript_SledgehammerNotGeodude
+	compare VAR_RESULT, 2
+	goto_if_eq OneIsland_KindleRoad_EventScript_SledgehammerOnlyMon
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox OneIsland_KindleRoad_Text_SledgehammerFarewell, MSGBOX_DEFAULT
+	giveitem ITEM_SLEDGEHAMMER
+	setflag FLAG_GOT_SLEDGEHAMMER
+	msgbox OneIsland_KindleRoad_Text_SledgehammerCloseConvo, MSGBOX_DEFAULT
+	release
+	end
+
+OneIsland_KindleRoad_EventScript_SledgehammerNotGeodude::
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox OneIsland_KindleRoad_Text_SledgehammerNotGeodude, MSGBOX_DEFAULT
+	release
+	end
+
+OneIsland_KindleRoad_EventScript_SledgehammerOnlyMon::
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox OneIsland_KindleRoad_Text_SledgehammerOnlyMon, MSGBOX_DEFAULT
+	release
+	end
+
+OneIsland_KindleRoad_EventScript_SledgehammerDeclined::
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox OneIsland_KindleRoad_Text_SledgehammerDeclined, MSGBOX_DEFAULT
+	release
+	end
+
+OneIsland_KindleRoad_EventScript_SledgehammerPostGift::
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox OneIsland_KindleRoad_Text_SledgehammerPostGift, MSGBOX_DEFAULT
+	release
+	end

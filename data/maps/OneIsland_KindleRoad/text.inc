@@ -162,3 +162,46 @@ OneIsland_KindleRoad_Text_EmberSpaSign::
     .string "Light the Fire in Your Heart!\n"
     .string "Ember Spa$"
 
+OneIsland_KindleRoad_Text_SledgehammerIntro::
+	.string "Argh, of all the rotten luck!\p"
+	.string "There was a Geodude right here, and\n"
+	.string "I ran clean out of Poké Balls.\p"
+	.string "Watched it Dig away right in front of\n"
+	.string "me. Couldn't do a thing about it.$"
+
+OneIsland_KindleRoad_Text_SledgehammerAskTrade::
+	.string "Say… you wouldn't happen to have a\n"
+	.string "Geodude on you, would you?\p"
+	.string "Hand one over and I'll give you\n"
+	.string "something good in return.\p"
+	.string "What do you say?$"
+
+OneIsland_KindleRoad_Text_SledgehammerNotGeodude::
+	.string "You probably need to study harder if\n"
+	.string "you think that's a Geodude.$"
+
+OneIsland_KindleRoad_Text_SledgehammerOnlyMon::
+	.string "Are you crazy, kid? You can't give\n"
+	.string "me your only Pokémon!$"
+
+OneIsland_KindleRoad_Text_SledgehammerDeclined::
+	.string "No? Well, the offer stands if you\n"
+	.string "change your mind.$"
+
+OneIsland_KindleRoad_Text_SledgehammerFarewell::
+	.string "A Geodude of my very own… I never\n"
+	.string "thought I'd feel this way.\p"
+    .string "Now that I've got one, I don't need\n"
+	.string "to go smashing rocks anymore.\p"
+	.string "Take this Sledgehammer. It's yours.\n"
+	.string "I won't be needing it.$"
+
+OneIsland_KindleRoad_Text_SledgehammerCloseConvo::
+	.string "Just make sure you don't hit any\n"
+	.string "Geodude out there!$"
+
+OneIsland_KindleRoad_Text_SledgehammerPostGift::
+	.string "My little Geodude and I are getting\n"
+	.string "along just fine, thanks to you.\p"
+	.string "Go put that Sledgehammer to good use\n"
+	.string "out there.$"

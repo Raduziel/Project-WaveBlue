@@ -24,10 +24,6 @@ CeruleanCave_1F_Text_GiovanniFarewell::
 CeruleanCave_1F_Text_GiovanniTakeThis::
 	.string "Take this.$"
 
-CeruleanCave_1F_Text_ObtainedCatchingCharm::
-	.string "{PLAYER} received the Catching Charm\n"
-	.string "from Giovanni.$"
-
 CeruleanCave_1F_Text_GiovanniCatchingCharm::
 	.string "The creature is your burden now…\p"
 	.string "A burden for someone who lacks\n"

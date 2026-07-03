@@ -7,11 +7,22 @@ SilphCo_4F_OnLoad::
 	call_if_unset FLAG_SILPH_4F_DOOR_2, EventScript_Close4FDoor2
 	end
 
-SilphCo_4F_EventScript_WorkerM::
+SilphCo_4F_EventScript_HaulBelt::
 	lock
 	faceplayer
-	goto_if_ge VAR_MAP_SCENE_SILPH_CO_11F, 1, SilphCo_4F_EventScript_WorkerMRocketsGone
-	msgbox SilphCo_4F_Text_CantYouSeeImHiding
+	goto_if_set FLAG_GOT_HAUL_BELT, SilphCo_4F_EventScript_HaulBeltPostGift
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox SilphCo_4F_Text_HaulBeltOffer, MSGBOX_DEFAULT
+	giveitem ITEM_HAUL_BELT
+	setflag FLAG_GOT_HAUL_BELT
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox SilphCo_4F_Text_HaulBeltFarewell, MSGBOX_DEFAULT
+	release
+	end
+
+SilphCo_4F_EventScript_HaulBeltPostGift::
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox SilphCo_4F_Text_HaulBeltPostGift, MSGBOX_DEFAULT
 	release
 	end
 

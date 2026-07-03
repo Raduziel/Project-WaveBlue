@@ -71,7 +71,7 @@ CeruleanCave_1F_EventScript_GiovanniGiveCatchingCharm::
 	textcolor NPC_TEXT_COLOR_MALE
 	msgbox CeruleanCave_1F_Text_GiovanniTakeThis, MSGBOX_DEFAULT
 	closemessage
-	giveitem_msg CeruleanCave_1F_Text_ObtainedCatchingCharm, ITEM_CATCHING_CHARM, 1, MUS_OBTAIN_KEY_ITEM
+	giveitem ITEM_CATCHING_CHARM
 	textcolor NPC_TEXT_COLOR_MALE
 	msgbox CeruleanCave_1F_Text_GiovanniCatchingCharm, MSGBOX_DEFAULT
 	closemessage
