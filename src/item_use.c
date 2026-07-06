@@ -307,6 +307,64 @@ static void ItemUseOnFieldCB_Bicycle(u8 taskId)
 }
 
 
+static u8 BuildAvailableFishingTiers(u8 *outTiers)
+{
+    u8 count = 0;
+
+    if (FlagGet(FLAG_GOT_OLD_ROD))
+        outTiers[count++] = OLD_ROD;
+    if (FlagGet(FLAG_GOT_GOOD_ROD))
+        outTiers[count++] = GOOD_ROD;
+    if (FlagGet(FLAG_GOT_SUPER_ROD))
+        outTiers[count++] = SUPER_ROD;
+
+    return count;
+}
+
+static bool8 NormalizeFishingMode(void)
+{
+    u8 tiers[3];
+    u8 count = BuildAvailableFishingTiers(tiers);
+    u8 current = VarGet(VAR_FISHING_MODE);
+    u8 i;
+
+    if (count == 0)
+        return FALSE;
+
+    for (i = 0; i < count; i++)
+    {
+        if (tiers[i] == current)
+            return TRUE;
+    }
+
+    VarSet(VAR_FISHING_MODE, tiers[0]);
+    return TRUE;
+}
+
+u8 CycleFishingMode(void)
+{
+    u8 tiers[3];
+    u8 count = BuildAvailableFishingTiers(tiers);
+    u8 current = VarGet(VAR_FISHING_MODE);
+    u8 i;
+
+    if (count == 0)
+        return current;
+
+    for (i = 0; i < count; i++)
+    {
+        if (tiers[i] == current)
+        {
+            u8 next = tiers[(i + 1) % count];
+            VarSet(VAR_FISHING_MODE, next);
+            return next;
+        }
+    }
+
+    VarSet(VAR_FISHING_MODE, tiers[0]);
+    return tiers[0];
+}
+
 void ItemUseOutOfBattle_Rod(u8 taskId)
 {
     if (CanFish() == TRUE)
@@ -571,7 +629,8 @@ static bool8 CanFish(void)
 
 static void ItemUseOnFieldCB_Rod(u8 taskId)
 {
-    StartFishing(GetItemSecondaryId(gSpecialVar_ItemId));
+    NormalizeFishingMode();
+    StartFishing(VarGet(VAR_FISHING_MODE));
     DestroyTask(taskId);
 }
 

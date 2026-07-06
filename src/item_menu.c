@@ -93,6 +93,7 @@ enum {
     ACTION_BY_TYPE,
     ACTION_BY_AMOUNT,
     ACTION_BY_INDEX,
+    ACTION_CHANGE,
     ACTION_DUMMY,
 };
 
@@ -183,6 +184,7 @@ static void ItemMenu_UseOutOfBattle(u8 taskId);
 static void ItemMenu_Toss(u8 taskId);
 static void ItemMenu_Register(u8 taskId);
 static void ItemMenu_Give(u8 taskId);
+static void ItemMenu_ChangeFishingBait(u8 taskId);
 static void Task_ItemContext_Normal(u8 taskId);
 static void Task_ItemContext_GiveToParty(u8 taskId);
 static void Task_ItemContext_Sell(u8 taskId);
@@ -220,6 +222,9 @@ static const u8 sText_DepositHowManyVar1[] = _("Deposit how many\n{STR_VAR_1}(s)
 static const u8 sText_DepositedVar2Var1s[] = _("Deposited {STR_VAR_2}\n{STR_VAR_1}(s).");
 static const u8 sText_NoRoomForItems[] = _("There's no room to\nstore items.");
 static const u8 sText_CantStoreImportantItems[] = _("Important items\ncan't be stored in\nthe PC!");
+static const u8 sText_OldBaitOnHook[]   = _("Old bait is on the hook!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_GoodBaitOnHook[]  = _("Good bait is on the hook!{PAUSE_UNTIL_PRESS}");
+static const u8 sText_SuperBaitOnHook[] = _("Super bait is on the hook!{PAUSE_UNTIL_PRESS}");
 
 static void Task_LoadBagSortOptions(u8 taskId);
 static void ItemMenu_SortByName(u8 taskId);
@@ -292,6 +297,7 @@ static const struct MenuAction sItemMenuActions[] = {
     [ACTION_BY_TYPE]           = {COMPOUND_STRING("Type"),      {ItemMenu_SortByType}},
     [ACTION_BY_AMOUNT]         = {COMPOUND_STRING("Amount"),    {ItemMenu_SortByAmount}},
     [ACTION_BY_INDEX]          = {COMPOUND_STRING("Index"),     {ItemMenu_SortByIndex}},
+    [ACTION_CHANGE]            = {COMPOUND_STRING("Change"), {ItemMenu_ChangeFishingBait}},
     [ACTION_DUMMY] = {gString_Dummy, {.void_u8 = NULL}}
 };
 
@@ -1655,6 +1661,19 @@ static void OpenContextMenu(u8 taskId)
                     gBagMenu->contextMenuItemsPtr = sContextMenuItems_Field[gBagPosition.pocket];
                 break;
             case POCKET_KEY_ITEMS:
+                if (gSpecialVar_ItemId == ITEM_FISHING_ROD)
+                {
+                    gBagMenu->contextMenuItemsPtr = gBagMenu->contextMenuItemsBuffer;
+                    gBagMenu->contextMenuNumItems = 4;
+                    gBagMenu->contextMenuItemsBuffer[0] = ACTION_USE;
+                    gBagMenu->contextMenuItemsBuffer[1] = ACTION_CHANGE;
+                    if (gSaveBlock1Ptr->registeredItem == gSpecialVar_ItemId)
+                        gBagMenu->contextMenuItemsBuffer[2] = ACTION_DESELECT;
+                    else
+                        gBagMenu->contextMenuItemsBuffer[2] = ACTION_REGISTER;
+                    gBagMenu->contextMenuItemsBuffer[3] = ACTION_CANCEL;
+                    break;
+                }
                 gBagMenu->contextMenuItemsPtr = gBagMenu->contextMenuItemsBuffer;
                 gBagMenu->contextMenuNumItems = 3;
                 gBagMenu->contextMenuItemsBuffer[2] = ACTION_CANCEL;
@@ -1930,6 +1949,26 @@ static void ItemMenu_Give(u8 taskId)
     {
         PrintItemCantBeHeld(taskId);
     }
+}
+
+static void ItemMenu_ChangeFishingBait(u8 taskId)
+{
+    const u8 *msg;
+
+    switch (CycleFishingMode())
+    {
+    case GOOD_ROD:  msg = sText_GoodBaitOnHook;  break;
+    case SUPER_ROD: msg = sText_SuperBaitOnHook; break;
+    case OLD_ROD:
+    default:        msg = sText_OldBaitOnHook;   break;
+    }
+
+    RemoveContextWindow();
+    BagMenu_RemoveWindow(ITEMWIN_SELECTIONTEXT);
+    PutWindowTilemap(WIN_ITEM_LIST);
+    PutWindowTilemap(WIN_DESCRIPTION);
+    ScheduleBgCopyTilemapToVram(0);
+    DisplayItemMessage(taskId, FONT_NORMAL, msg, CloseItemMessage);
 }
 
 static void PrintThereIsNoPokemon(u8 taskId)

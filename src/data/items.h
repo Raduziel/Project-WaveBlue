@@ -2427,6 +2427,20 @@ const struct ItemInfo gItemsInfo[] =
         .iconPalette = gItemIconPalette_MaxRepel,
     },
 
+    [ITEM_FISHING_ROD] =
+    {
+        .name = ITEM_NAME("Fishing Rod"),
+        .price = 0,
+        .description = COMPOUND_STRING(
+            "A rod for reeling in wild Pokémon\n"
+            "Change the bait to lure new kinds."),
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_FIELD,
+        .fieldUseFunc = ItemUseOutOfBattle_Rod,
+        .iconPic = gItemIcon_SuperRod,
+        .iconPalette = gItemIconPalette_SuperRod,
+    },
 // X Items
 
     [ITEM_X_ATTACK] =

@@ -54,6 +54,7 @@ void ItemUseInBattle_PartyMenu(u8 taskId);
 void ItemUseInBattle_PartyMenuChooseMove(u8 taskId);
 void Task_UseDigEscapeRopeOnField(u8 taskId);
 u8 CanUseEscapeRopeOnCurrMap(void);
+u8 CycleFishingMode(void);
 u8 CheckIfItemIsTMHMOrEvolutionStone(enum Item itemId);
 void Task_ItemUse_CloseMessageBoxAndReturnToField_VsSeeker(u8);
 void ItemUse_SetQuestLogEvent(u8 eventId, struct Pokemon *pokemon, enum Item itemId, u16 param);

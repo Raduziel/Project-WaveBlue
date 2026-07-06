@@ -4,30 +4,40 @@ VermilionCity_House1_MapScripts::
 VermilionCity_House1_EventScript_FishingGuru::
 	lock
 	faceplayer
-	goto_if_set FLAG_GOT_OLD_ROD, VermilionCity_House1_EventScript_AlreadyGotOldRod
+	goto_if_set FLAG_GOT_OLD_ROD, VermilionCity_House1_EventScript_AlreadyGotOldBait
 	msgbox VermilionCity_House1_Text_ImFishingGuruDoYouLikeToFish, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, VermilionCity_House1_EventScript_GiveOldRod
+	goto_if_eq VAR_RESULT, YES, VermilionCity_House1_EventScript_FishingGuruLikesToFish
 	msgbox VermilionCity_House1_Text_OhThatsSoDisappointing
 	release
 	end
 
-VermilionCity_House1_EventScript_AlreadyGotOldRod::
-	msgbox VermilionCity_House1_Text_HowAreTheFishBiting
-	release
-	end
+VermilionCity_House1_EventScript_FishingGuruLikesToFish::
+	checkitem ITEM_FISHING_ROD
+	goto_if_eq VAR_RESULT, FALSE, VermilionCity_House1_EventScript_GiveFishingRod
+	msgbox VermilionCity_House1_Text_AlreadyHaveRodTakeMyBait
+	goto VermilionCity_House1_EventScript_UnlockOldBait
 
-VermilionCity_House1_EventScript_GiveOldRod::
-	checkitemspace ITEM_OLD_ROD
-	goto_if_eq VAR_RESULT, FALSE, VermilionCity_House1_EventScript_NoRoomForOldRod
-	additem ITEM_OLD_ROD
+VermilionCity_House1_EventScript_GiveFishingRod::
 	msgbox VermilionCity_House1_Text_TakeThisAndFish
-	msgreceiveditem VermilionCity_House1_Text_ReceivedOldRodFromFishingGuru, ITEM_OLD_ROD
+	giveitem ITEM_FISHING_ROD
+	msgbox VermilionCity_House1_Text_BaitExplanation
+	goto VermilionCity_House1_EventScript_UnlockOldBait
+
+VermilionCity_House1_EventScript_UnlockOldBait::
 	setflag FLAG_GOT_OLD_ROD
-	msgbox VermilionCity_House1_Text_FishingIsAWayOfLife
+	msgbox VermilionCity_House1_Text_OldBaitFlavor
+	goto_if_unset FLAG_GOT_GOOD_ROD, VermilionCity_House1_EventScript_BaitKitIncomplete
+	goto_if_unset FLAG_GOT_SUPER_ROD, VermilionCity_House1_EventScript_BaitKitIncomplete
+	msgbox VermilionCity_House1_Text_BaitKitComplete
 	release
 	end
 
-VermilionCity_House1_EventScript_NoRoomForOldRod::
-	msgbox VermilionCity_House1_Text_NoRoomForNiceGift
+VermilionCity_House1_EventScript_BaitKitIncomplete::
+	msgbox VermilionCity_House1_Text_SeekMyBrothers
+	release
+	end
+
+VermilionCity_House1_EventScript_AlreadyGotOldBait::
+	msgbox VermilionCity_House1_Text_HowAreTheFishBiting
 	release
 	end

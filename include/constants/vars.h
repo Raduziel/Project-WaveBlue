@@ -209,7 +209,7 @@
 #define VAR_MOM_PLAYERHOUSE_SCENE           0x409A
 #define VAR_LANCE_CERULEAN_SCENE            0x409B
 #define VAR_DARKCAVE_OFFER                  0x409C
-#define VAR_0x409D                 0x409D
+#define VAR_FISHING_MODE                    0x409D
 #define VAR_0x409E                 0x409E
 #define VAR_0x409F                 0x409F
 #define VAR_0x40A0                 0x40A0

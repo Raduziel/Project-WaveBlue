@@ -6,24 +6,35 @@ Route12_FishingHouse_EventScript_FishingGuruBrother::
 	faceplayer
 	goto_if_set FLAG_GOT_SUPER_ROD, Route12_FishingHouse_EventScript_CheckMagikarpRecord
 	msgbox Route12_FishingHouse_Text_DoYouLikeToFish, MSGBOX_YESNO
-	goto_if_eq VAR_RESULT, YES, Route12_FishingHouse_EventScript_GiveSuperRod
+	goto_if_eq VAR_RESULT, YES, Route12_FishingHouse_EventScript_FishingGuruLikesToFish
 	msgbox Route12_FishingHouse_Text_OhThatsDisappointing
 	release
 	end
 
-Route12_FishingHouse_EventScript_GiveSuperRod::
-	checkitemspace ITEM_SUPER_ROD
-	goto_if_eq VAR_RESULT, FALSE, Route12_FishingHouse_EventScript_NoRoomForSuperRod
-	additem ITEM_SUPER_ROD
+Route12_FishingHouse_EventScript_FishingGuruLikesToFish::
+	checkitem ITEM_FISHING_ROD
+	goto_if_eq VAR_RESULT, FALSE, Route12_FishingHouse_EventScript_GiveFishingRod
+	msgbox Route12_FishingHouse_Text_AlreadyHaveRodTakeMyBait
+	goto Route12_FishingHouse_EventScript_UnlockSuperBait
+
+Route12_FishingHouse_EventScript_GiveFishingRod::
 	msgbox Route12_FishingHouse_Text_TakeThisAndFish
-	msgreceiveditem Route12_FishingHouse_Text_ReceivedSuperRod, ITEM_SUPER_ROD
+	giveitem ITEM_FISHING_ROD
+	msgbox Route12_FishingHouse_Text_BaitExplanation
+	goto Route12_FishingHouse_EventScript_UnlockSuperBait
+
+Route12_FishingHouse_EventScript_UnlockSuperBait::
 	setflag FLAG_GOT_SUPER_ROD
+	msgbox Route12_FishingHouse_Text_SuperBaitFlavor
 	msgbox Route12_FishingHouse_Text_IfYouCatchBigMagikarpShowMe
+	goto_if_unset FLAG_GOT_OLD_ROD, Route12_FishingHouse_EventScript_BaitKitIncomplete
+	goto_if_unset FLAG_GOT_GOOD_ROD, Route12_FishingHouse_EventScript_BaitKitIncomplete
+	msgbox Route12_FishingHouse_Text_BaitKitComplete
 	release
 	end
 
-Route12_FishingHouse_EventScript_NoRoomForSuperRod::
-	msgbox Route12_FishingHouse_Text_NoRoomForGift
+Route12_FishingHouse_EventScript_BaitKitIncomplete::
+	msgbox Route12_FishingHouse_Text_SeekMyBrothers
 	release
 	end
 
