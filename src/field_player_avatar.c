@@ -1348,7 +1348,8 @@ void StartPlayerAvatarVsSeekerAnim(void)
 void SetPlayerAvatarFishing(u8 direction)
 {
     EndORASDowsing();
-    QuestLogCallUpdatePlayerSprite(QL_PLAYER_GFX_FISH);
+    ObjectEventSetGraphicsId(&gObjectEvents[gPlayerAvatar.objectEventId], GetPlayerAvatarGraphicsIdByStateId(PLAYER_AVATAR_STATE_FISHING));
+    StartSpriteAnim(&gSprites[gPlayerAvatar.spriteId], GetFishingDirectionAnimNum(direction));
 }
 
 // Stubbed from R/S

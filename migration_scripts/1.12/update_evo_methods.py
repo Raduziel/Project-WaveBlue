@@ -188,7 +188,7 @@ def convert_methods(data):
         elif "EVO_USE_MOVE_TWENTY_TIMES," in line:
             match = re.search(pattern, line)
             members = match.group(1).split(",")
-            new_data = new_data + re.sub(pattern, "{EVO_LEVEL, " + f'0, {members[SPECIES].strip()}' + ", CONDITIONS({IF_USED_MOVE_X_TIMES, " + f'{members[CONDTION].strip()}' + ", 20})}", line)
+            new_data = new_data + re.sub(pattern, "{EVO_BATTLE_END, " + f'0, {members[SPECIES].strip()}' + ", CONDITIONS({IF_USED_MOVE_X_TIMES, " + f'{members[CONDTION].strip()}' + ", 21})}", line)
         elif "EVO_RECOIL_DAMAGE_MALE," in line:
             match = re.search(pattern, line)
             members = match.group(1).split(",")
