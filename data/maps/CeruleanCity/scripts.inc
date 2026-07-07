@@ -30,7 +30,7 @@ CeruleanCity_EventScript_LanceScene::
 	applymovement LOCALID_CERULEAN_LANCE, CeruleanCity_Movement_LanceApproach
 	applymovement LOCALID_CERULEAN_LANCEDRAGONITE, CeruleanCity_Movement_DragoniteApproach
 	waitmovement 0
-	delay 15
+	delay 30
 	textcolor NPC_TEXT_COLOR_MALE
 	msgbox CeruleanCity_Text_LanceScene, MSGBOX_DEFAULT
 	closemessage
@@ -52,25 +52,26 @@ CeruleanCity_EventScript_LanceScene::
 	end
 
 CeruleanCity_Movement_LanceApproach::
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
+	walk_slow_right
+	walk_slow_right
+	walk_slow_right
+	walk_slow_right
+	walk_slow_right
+	walk_slow_right
+	walk_slow_right
+	walk_slow_right
 	face_up
 	step_end
 
 CeruleanCity_Movement_DragoniteApproach::
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
-	walk_right
+	walk_slow_right
+	walk_slow_right
+	walk_slow_right
+	walk_slow_right
+	walk_slow_right
+	walk_slow_right
+	walk_slow_right
+	face_right
 	step_end
 
 CeruleanCity_Movement_DragoniteJumpAway::

@@ -9,5 +9,4 @@ Text_CurrentTooFast::
 	.string "Can't navigate here…$"
 
 Text_UsedRubberBoat::
-	.string "{PLAYER} inflated the\n"
-	.string "Rubber Boat!$"
+	.string "{PLAYER} inflated the Rubber Boat!$"

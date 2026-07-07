@@ -1913,9 +1913,16 @@ static bool32 WaterfallFieldEffect_ShowMon(struct Task *task, struct ObjectEvent
     if (!ObjectEventIsMovementOverridden(playerObj))
     {
         ObjectEventClearHeldMovementIfFinished(playerObj);
-        gFieldEffectArguments[0] = task->tMonId;
-        FieldEffectStart(FLDEFF_FIELD_MOVE_SHOW_MON_INIT);
-        task->tState = WATERFALL_WAITMON;
+        if (task->tMonId == PARTY_SIZE)
+        {
+            task->tState = WATERFALL_RIDE_UP;
+        }
+        else
+        {
+            gFieldEffectArguments[0] = task->tMonId;
+            FieldEffectStart(FLDEFF_FIELD_MOVE_SHOW_MON_INIT);
+            task->tState = WATERFALL_WAITMON;
+        }
     }
     return FALSE;
 }

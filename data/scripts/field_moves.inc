@@ -309,12 +309,23 @@ EventScript_Waterfall::
 	goto_if_questlog EventScript_ReleaseEnd
 	lockall
 	checkfieldmoveusable FIELD_MOVE_WATERFALL
-	goto_if_eq VAR_RESULT, FALSE, EventScript_WaterCrashingDown
+	goto_if_eq VAR_RESULT, FALSE, EventScript_TryWaterfallMotor
 	msgbox Text_UseWaterfall, MSGBOX_YESNO
 	goto_if_eq VAR_RESULT, NO, EventScript_EndWaterfall
 	msgbox Text_MonUsedWaterfall
 	dofieldeffect FLDEFF_USE_WATERFALL
 	callnative FollowerNPC_WarpSetEnd
+	goto EventScript_EndWaterfall
+
+EventScript_TryWaterfallMotor::
+	goto_if_set FLAG_GOT_WATERFALL_MOTOR, EventScript_UseWaterfallMotor
+	goto EventScript_WaterCrashingDown
+
+EventScript_UseWaterfallMotor::
+	msgbox Text_UseWaterfallMotor, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, NO, EventScript_EndWaterfall
+	msgbox Text_BoatMotorWaterfall
+	dofieldeffect FLDEFF_USE_WATERFALL
 	goto EventScript_EndWaterfall
 
 EventScript_CantUseWaterfall::
@@ -334,6 +345,14 @@ Text_WallOfWaterCrashingDown::
 Text_UseWaterfall::
 	.string "It's a large waterfall.\n"
 	.string "Would you like to use Waterfall?$"
+
+Text_UseWaterfallMotor::
+	.string "It's a large waterfall. Use the boat's\n"
+	.string "motor to climb it?$"
+
+Text_BoatMotorWaterfall::
+	.string "{PLAYER} gunned the motor and climbed\n"
+	.string "the waterfall!$"
 
 Text_MonUsedWaterfall::
 	.string "{STR_VAR_1} used Waterfall.$"

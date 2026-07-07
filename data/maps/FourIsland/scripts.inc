@@ -161,3 +161,83 @@ FourIsland_EventScript_IslandSign::
 FourIsland_EventScript_LoreleisHouseSign::
 	msgbox FourIsland_Text_LoreleisHouse, MSGBOX_SIGN
 	end
+
+FourIsland_EventScript_BoatMotor::
+	lockall
+	goto_if_set FLAG_GOT_WATERFALL_MOTOR, FourIsland_EventScript_BoatMotorInstalled
+	faceplayer
+	setvar VAR_TEMP_1, 0
+	goto FourIsland_EventScript_BoatMotorGive
+
+FourIsland_EventScript_BoatMotorTrigger::
+	lockall
+	goto_if_set FLAG_GOT_WATERFALL_MOTOR, FourIsland_EventScript_BoatMotorEnd
+	setvar VAR_BOAT_MOTOR_STATE, 1
+	playse SE_PIN
+	applymovement LOCALID_BOATMOTORGUY, Common_Movement_ExclamationMark
+	waitmovement 0
+	waitse
+	delay 30
+	applymovement LOCALID_BOATMOTORGUY, Movement_BoatMotorGuyApproach
+	waitmovement 0
+	applymovement OBJ_EVENT_ID_PLAYER, Movement_BoatMotorPlayerFaceLeft
+	waitmovement 0
+	setvar VAR_TEMP_1, 1
+	goto FourIsland_EventScript_BoatMotorGive
+
+FourIsland_EventScript_BoatMotorGive::
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox FourIsland_Text_BoatMotorPitch, MSGBOX_DEFAULT
+	checkitem ITEM_RUBBER_BOAT
+	goto_if_eq VAR_RESULT, FALSE, FourIsland_EventScript_BoatMotorNoBoat
+	playfanfare MUS_OBTAIN_KEY_ITEM
+	textcolor NPC_TEXT_COLOR_NEUTRAL
+	message FourIsland_Text_BoatMotorEngineInstalled
+	waitmessage
+	waitfanfare
+	setflag FLAG_GOT_WATERFALL_MOTOR
+	textcolor NPC_TEXT_COLOR_MALE
+	delay 30
+	msgbox FourIsland_Text_BoatMotorInstall, MSGBOX_DEFAULT
+	goto FourIsland_EventScript_BoatMotorFinish
+
+FourIsland_EventScript_BoatMotorNoBoat::
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox FourIsland_Text_BoatMotorNoBoat, MSGBOX_DEFAULT
+	goto FourIsland_EventScript_BoatMotorFinish
+
+FourIsland_EventScript_BoatMotorInstalled::
+	faceplayer
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox FourIsland_Text_BoatMotorInstalled, MSGBOX_DEFAULT
+	goto FourIsland_EventScript_BoatMotorEnd
+
+FourIsland_EventScript_BoatMotorFinish::
+	compare VAR_TEMP_1, 1
+	goto_if_eq FourIsland_EventScript_BoatMotorEndReturn
+	goto FourIsland_EventScript_BoatMotorEnd
+
+FourIsland_EventScript_BoatMotorEndReturn::
+	applymovement LOCALID_BOATMOTORGUY, Movement_BoatMotorGuyReturn
+	waitmovement 0
+	releaseall
+	end
+
+FourIsland_EventScript_BoatMotorEnd::
+	releaseall
+	end
+
+Movement_BoatMotorGuyApproach:
+	walk_slow_right
+	face_right
+	step_end
+
+Movement_BoatMotorPlayerFaceLeft:
+	face_left
+	step_end
+
+Movement_BoatMotorGuyReturn:
+	delay_16
+	walk_slow_left
+	face_down
+	step_end

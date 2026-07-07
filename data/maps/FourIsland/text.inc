@@ -54,3 +54,32 @@ FourIsland_Text_MadeSlushieUsingIcefallCaveIce::
 FourIsland_Text_LoreleisHouse::
     .string "Lorelei's House$"
 
+FourIsland_Text_BoatMotorPitch::
+	.string "You there! Yes, the Champion!\p"
+	.string "I've invented the most marvelous\n"
+	.string "little motor you've ever seen.\p"
+	.string "Portable! Powerful! It'll send a boat\n"
+	.string "straight up a roaring waterfall!\p"
+	.string "And who better to show it off than\n"
+	.string "the region's very best?\p"
+	.string "Here, let me set you up!$"
+
+FourIsland_Text_BoatMotorInstall::
+	.string "There! Snug as can be.\p"
+	.string "Give it a whirl on any waterfall you\n"
+	.string "find. Go on, show them what it does!$"
+
+FourIsland_Text_BoatMotorNoBoat::
+	.string "Hm? You haven't got a boat to fit it\n"
+	.string "onto!\p"
+	.string "Come back once you've got yourself a\n"
+	.string "Rubber Boat, and I'll set you up.$"
+
+FourIsland_Text_BoatMotorInstalled::
+	.string "How's my engine doing?\p"
+	.string "Climbing waterfalls like a pro, I'll\n"
+	.string "bet! Tell your friends who built it!$"
+
+FourIsland_Text_BoatMotorEngineInstalled::
+	.string "The inventor installed his engine on\n"
+	.string "{PLAYER}'s Rubber Boat.$"

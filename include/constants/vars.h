@@ -210,7 +210,7 @@
 #define VAR_LANCE_CERULEAN_SCENE            0x409B
 #define VAR_DARKCAVE_OFFER                  0x409C
 #define VAR_FISHING_MODE                    0x409D
-#define VAR_0x409E                 0x409E
+#define VAR_BOAT_MOTOR_STATE                0x409E
 #define VAR_0x409F                 0x409F
 #define VAR_0x40A0                 0x40A0
 #define VAR_0x40A1                 0x40A1
