@@ -31,9 +31,14 @@ static const u8 sMoveDescription_FirePunch[] = _(
     "the foe."
     );
 static const u8 sMoveDescription_IcePunch[] = _(
-    "An icy punch that may leave\n" 
+#if B_USE_FROSTBITE == TRUE
+    "An icy punch that may leave\n"
     "the foe with frostbite."
-    );
+#else
+    "An icy punch that may\n"
+    "freeze the foe."
+#endif
+);
 static const u8 sMoveDescription_ThunderPunch[] = _(
     "An electrified punch that may\n" 
     "paralyze the foe."
@@ -230,13 +235,24 @@ static const u8 sMoveDescription_Surf[] = _(
     "crashes it down on the field."
     );
 static const u8 sMoveDescription_IceBeam[] = _(
-    "Blasts the foe with an icy\n" 
+#if B_USE_FROSTBITE == TRUE
+    "Blasts the foe with an icy\n"
     "beam. May cause frostbite."
-    );
+#else
+    "Blasts the foe with an icy\n"
+    "beam. May freeze the foe."
+#endif
+);
+
 static const u8 sMoveDescription_Blizzard[] = _(
-    "Hits the foes with an icy\n" 
+#if B_USE_FROSTBITE == TRUE
+    "Hits the foes with an icy\n"
     "storm. May cause frostbite."
-    );
+#else
+    "Hits the foes with an icy\n"
+    "storm. May freeze the foe."
+#endif
+);
 static const u8 sMoveDescription_Psybeam[] = _(
     "Fires a peculiar ray that may\n" 
     "confuse the foe."
@@ -642,9 +658,14 @@ static const u8 sMoveDescription_Conversion[] = _(
     "first known move's type."
     );
 static const u8 sMoveDescription_TriAttack[] = _(
-    "Fires three types of beams.\n" 
-    "May burn/para/frostbite."
-    );
+    "Fires three types of beams.\n"
+    "May burn/paralyze/"
+#if B_USE_FROSTBITE == TRUE
+    "frostbite."
+#else
+    "freeze."
+#endif
+);
 static const u8 sMoveDescription_SuperFang[] = _(
     "Attacks with sharp fangs and\n" 
     "cuts half the foe's HP."
@@ -722,9 +743,14 @@ static const u8 sMoveDescription_Spite[] = _(
     "foe's last move by 4."
     );
 static const u8 sMoveDescription_PowderSnow[] = _(
-    "Blasts the foes with a snowy\n" 
+#if B_USE_FROSTBITE == TRUE
+    "Blasts the foes with a snowy\n"
     "gust. May cause frostbite."
-    );
+#else
+    "Blasts the foes with a snowy\n"
+    "gust. May freeze the foes."
+#endif
+);
 static const u8 sMoveDescription_Protect[] = _(
     "Evades attack, but may fail if\n" 
     "used in succession."
@@ -1689,9 +1715,14 @@ static const u8 sMoveDescription_ThunderFang[] = _(
     "the foe paralyzed."
     );
 static const u8 sMoveDescription_IceFang[] = _(
-    "May cause flinching or leave\n" 
+#if B_USE_FROSTBITE == TRUE
+    "May cause flinching or leave\n"
     "the foe with frostbite."
-    );
+#else
+    "May cause flinching or\n"
+    "freeze the foe."
+#endif
+);
 static const u8 sMoveDescription_FireFang[] = _(
     "May cause flinching or leave\n" 
     "the foe with a burn."
@@ -2289,9 +2320,14 @@ static const u8 sMoveDescription_PetalBlizzard[] = _(
     "petals to attack all."
     );
 static const u8 sMoveDescription_FreezeDry[] = _(
-    "Super effective on Water-\n" 
+#if B_USE_FROSTBITE == TRUE
+    "Super effective on Water-\n"
     "types. May cause frostbite."
-    );
+#else
+    "Super effective on Water-\n"
+    "types. May freeze the foe."
+#endif
+);
 static const u8 sMoveDescription_DisarmingVoice[] = _(
     "Lets out a charming cry that\n" 
     "cannot be evaded."
@@ -2993,9 +3029,14 @@ static const u8 sMoveDescription_DragonEnergy[] = _(
     "more damage caused."
     );
 static const u8 sMoveDescription_FreezingGlare[] = _(
-    "Shoots psychic power from the\n" 
+#if B_USE_FROSTBITE == TRUE
+    "Shoots psychic power from the\n"
     "eyes. May frostbite."
-    );
+#else
+    "Shoots psychic power from the\n"
+    "eyes. May freeze the foe."
+#endif
+);
 static const u8 sMoveDescription_FieryWrath[] = _(
     "An attack fueled by your\n" 
     "wrath. May cause flinching."
