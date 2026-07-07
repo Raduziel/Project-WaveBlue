@@ -1019,11 +1019,10 @@ const struct ItemInfo gItemsInfo[] =
     #endif
         .description = COMPOUND_STRING(
         #if B_USE_FROSTBITE
-            "Heals Pokémon\n"
+            "Heals Pokémon "
             "of frostbite."),
         #else
-            "Defrosts a frozen\n"
-            "Pokémon."),
+            "Defrosts a frozen Pokémon."),
         #endif
         .pocket = POCKET_ITEMS,
         .sortType = ITEM_TYPE_STATUS_RECOVERY,
@@ -11010,13 +11009,13 @@ const struct ItemInfo gItemsInfo[] =
         .price = (I_BERRY_PRICE >= GEN_8) ? 80 : 20,
         .holdEffect = HOLD_EFFECT_CURE_FRZ,
         .description = COMPOUND_STRING(
-            "A held item that\n"
+            "A hold item that "
         #if B_USE_FROSTBITE
-            "heals frostbite\n"
+            "heals frostbite "
         #else
-            "defrosts Pokémon\n"
+            "defrosts Pokémon "
         #endif
-            "in battle."),
+            "\nin battle."),
         .pocket = POCKET_BERRIES,
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_Medicine,
