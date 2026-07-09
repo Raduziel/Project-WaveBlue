@@ -78,12 +78,12 @@ enum Language
 
 // capacities of various saveblock objects
 #define DAYCARE_MON_COUNT   2
-#define PC_ITEMS_COUNT      30
-#define BAG_ITEMS_COUNT     42
+#define PC_ITEMS_COUNT      99
+#define BAG_ITEMS_COUNT     99
 #define BAG_KEYITEMS_COUNT  33
-#define BAG_POKEBALLS_COUNT 27
-#define BAG_TMHM_COUNT      163
-#define BAG_BERRIES_COUNT   43
+#define BAG_POKEBALLS_COUNT 30
+#define BAG_TMHM_COUNT      173
+#define BAG_BERRIES_COUNT   50
 #define OBJECT_EVENTS_COUNT 16
 #define OBJECT_EVENT_TEMPLATES_COUNT 64
 #define MAIL_COUNT         (PARTY_SIZE + 10)
