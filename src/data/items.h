@@ -198,7 +198,7 @@ const struct ItemInfo gItemsInfo[] =
         .price = 200,
         .description = COMPOUND_STRING(
             "A tool used for "
-            "catching wild "
+            "catching wild"
             "\nPokémon."),
         .pocket = POCKET_POKE_BALLS,
         .type = ITEM_USE_BAG_MENU,

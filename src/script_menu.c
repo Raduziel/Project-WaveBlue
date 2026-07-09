@@ -181,7 +181,7 @@ static const struct MenuAction sMultichoiceList_TrainerSchoolWhiteboard[] = {
     { COMPOUND_STRING("PSN") },
     { COMPOUND_STRING("PAR") },
     { COMPOUND_STRING("BRN") },
-    { COMPOUND_STRING("FRB") },
+    { COMPOUND_STRING("FRZ") },
     { gOtherText_Exit }
 };
 
