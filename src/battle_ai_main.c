@@ -7222,6 +7222,9 @@ static s32 AI_TeamSynergy(enum BattlerId battlerAtk, enum BattlerId battlerDef, 
     if (IsTargetingPartner(battlerAtk, battlerDef))
         return score;
 
+    if (move == MOVE_NONE || move >= MOVES_COUNT_ALL)
+        return score;
+
     GetBenchSynergyInfo(battlerAtk, &bench);
     if (bench.aliveReserves == 0)
         return score;

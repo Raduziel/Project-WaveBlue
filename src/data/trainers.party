@@ -5275,7 +5275,7 @@ Pic: Leader Giovanni
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Will Suicide / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Incoming Mon / Predict Move / PP Stall Prevention / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Will Suicide / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Incoming Mon / Predict Move / PP Stall Prevention
 
 Tauros @ White Herb
 Ability: Intimidate
@@ -5346,7 +5346,7 @@ Pic: Leader Giovanni
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Will Suicide / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Incoming Mon / Predict Move / PP Stall Prevention / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Will Suicide / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Incoming Mon / Predict Move / PP Stall Prevention
 
 Tauros @ White Herb
 Ability: Intimidate
@@ -5417,7 +5417,7 @@ Pic: Leader Giovanni
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Will Suicide / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Incoming Mon / Predict Move / PP Stall Prevention / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Will Suicide / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Incoming Mon / Predict Move / PP Stall Prevention
 
 Dragonite @ White Herb
 Ability: Multiscale
@@ -5490,7 +5490,7 @@ Pic: Leader Giovanni
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Will Suicide / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Incoming Mon / Predict Move / PP Stall Prevention / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Will Suicide / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Incoming Mon / Predict Move / PP Stall Prevention
 
 Marowak @ Thick Club  
 Ability: Battle Armor  
@@ -7271,7 +7271,7 @@ Pic: Elite Four Lorelei
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Status Moves / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Status Moves / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch
 Mugshot: Purple
 
 Ninetales-Alola (M) @ Light Clay
@@ -7346,7 +7346,7 @@ Pic: Elite Four Bruno
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch
 Mugshot: Green
 
 Hitmontop (F) @ White Herb
@@ -7416,7 +7416,7 @@ Pic: Elite Four Agatha
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Status Moves / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Status Moves / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch
 Mugshot: Pink
 
 Murkrow (M) @ Eviolite
@@ -7491,7 +7491,7 @@ Pic: Elite Four Lance
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch
 Mugshot: Blue
 
 Gyarados (M) @ Wacan Berry
@@ -7561,7 +7561,7 @@ Pic: Leader Brock
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn / Powerful Status / Smart Switching / Ace Pokemon / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn / Powerful Status / Smart Switching / Ace Pokemon / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch
 
 Geodude @ Weakness Policy  
 Ability: Sturdy  
@@ -7603,7 +7603,7 @@ Pic: Leader Misty
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Smart Switching / Ace Pokemon / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Smart Switching / Ace Pokemon / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch
 
 Psyduck @ Damp Rock
 Ability: Swift Swim
@@ -7644,7 +7644,7 @@ Pic: Leader Lt Surge
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Will Suicide / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Will Suicide / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch
 
 Magnemite @ Light Clay
 Ability: Sturdy
@@ -7686,7 +7686,7 @@ Pic: Leader Erika
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Status Moves / HP Aware / Stall / Try to 2HKO / Weigh Ability Prediction / Predict Switch / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Status Moves / HP Aware / Stall / Try to 2HKO / Weigh Ability Prediction / Predict Switch
 
 Tangela @ Eviolite
 Ability: Chlorophyll
@@ -7711,7 +7711,7 @@ IVs: 0 SpA / 0 SpD
 - Yawn
 
 Bellossom @ Big Root
-Ability: Effect Spore
+Ability: Chlorophyll
 Level: 29
 EVs: 120 HP / 120 Def / 200 SpA / 60 SpD / 8 Spe
 Calm Nature
@@ -7728,7 +7728,7 @@ Pic: Leader Koga
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Status Moves / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Status Moves / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch
 
 Venomoth @ Wide Lens
 Ability: Tinted Lens
@@ -7770,7 +7770,7 @@ Pic: Leader Koga
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Status Moves / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Status Moves / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch
 
 Venomoth @ Wide Lens
 Ability: Tinted Lens
@@ -7812,7 +7812,7 @@ Pic: Leader Sabrina
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch
 
 Hypno @ Terrain Extender
 Ability: Insomnia
@@ -7854,7 +7854,7 @@ Pic: Leader Sabrina
 Gender: Male
 Music: Female
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch
 
 Hypno @ Wise Glasses
 Ability: Insomnia
@@ -7896,7 +7896,7 @@ Pic: Leader Blaine
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch
 
 Arcanine @ Leftovers
 Ability: Intimidate  
@@ -8339,7 +8339,7 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Incoming Mon / Predict Move / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Incoming Mon / Predict Move
 
 Pidgeot (F) @ Sharp Beak
 Level: 43
@@ -8398,7 +8398,7 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Incoming Mon / Predict Move / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Incoming Mon / Predict Move
 
 Pidgeot (F) @ Sharp Beak
 Level: 43
@@ -8457,7 +8457,7 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Incoming Mon / Predict Move / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Incoming Mon / Predict Move
 
 Pidgeot (F) @ Sharp Beak
 Level: 43
@@ -8516,7 +8516,7 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Incoming Mon / Predict Move / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Incoming Mon / Predict Move
 
 Pidgeot (F) @ Focus Sash  
 Ability: Keen Eye  
@@ -8588,7 +8588,7 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Incoming Mon / Predict Move / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Incoming Mon / Predict Move
 
 Pidgeot (F) @ Focus Sash  
 Ability: Keen Eye  
@@ -8659,7 +8659,7 @@ Pic: Rival Late
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Incoming Mon / Predict Move / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Incoming Mon / Predict Move
 
 Pidgeot (F) @ Focus Sash
 Ability: Keen Eye
@@ -8731,7 +8731,7 @@ Pic: Champion Rival
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO
 Mugshot: Yellow
 
 Pidgeot (F) @ Focus Sash
@@ -8804,7 +8804,7 @@ Pic: Champion Rival
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO
 Mugshot: Yellow
 
 Pidgeot (F) @ Focus Sash
@@ -8876,7 +8876,7 @@ Pic: Champion Rival
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO
 Mugshot: Yellow
 
 Pidgeot (F) @ Focus Sash
@@ -10797,7 +10797,7 @@ Pic: Scientist
 Gender: Male
 Music: Suspicious
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Will Suicide / HP Aware / Try to 2HKO / Weigh Ability Prediction / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Will Suicide / HP Aware / Try to 2HKO / Weigh Ability Prediction
 
 Magnezone @ Air Balloon
 Ability: Sturdy
@@ -14630,7 +14630,7 @@ Pic: Elite Four Lorelei
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Status Moves / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Status Moves / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch
 Mugshot: Purple
 
 Ninetales-Alola (M) @ Light Clay
@@ -14705,7 +14705,7 @@ Pic: Elite Four Bruno
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch
 Mugshot: Green
 
 Hitmontop (F) @ White Herb  
@@ -14775,7 +14775,7 @@ Pic: Elite Four Agatha
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Status Moves / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Status Moves / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch
 Mugshot: Pink
 
 Murkrow (M) @ Eviolite  
@@ -14850,7 +14850,7 @@ Pic: Elite Four Lance
 Gender: Male
 Music: Elite Four
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch
 Mugshot: Blue
 
 Gyarados (M) @ Wacan Berry  
@@ -14920,7 +14920,7 @@ Pic: Champion Rival
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO
 Mugshot: Yellow
 
 Heracross (F) @ Flame Orb
@@ -14993,7 +14993,7 @@ Pic: Champion Rival
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO
 Mugshot: Yellow
 
 Heracross (F) @ Flame Orb
@@ -15065,7 +15065,7 @@ Pic: Champion Rival
 Gender: Male
 Music: Male
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO
 Mugshot: Yellow
 
 Heracross (F) @ Flame Orb
@@ -15155,7 +15155,7 @@ Pic: Professor Oak
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Will Suicide / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Incoming Mon / Predict Move / PP Stall Prevention / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Will Suicide / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Incoming Mon / Predict Move / PP Stall Prevention
 
 Steelix @ Leftovers
 Ability: Rock Head
@@ -15229,7 +15229,7 @@ Pic: Professor Oak
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Will Suicide / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Incoming Mon / Predict Move / PP Stall Prevention / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Will Suicide / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Incoming Mon / Predict Move / PP Stall Prevention
 
 Steelix @ Leftovers
 Ability: Rock Head
@@ -15302,7 +15302,7 @@ Pic: Professor Oak
 Gender: Male
 Music: Intense
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Will Suicide / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Incoming Mon / Predict Move / PP Stall Prevention / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / Will Suicide / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Incoming Mon / Predict Move / PP Stall Prevention
 
 Steelix @ Leftovers
 Ability: Rock Head
@@ -15467,7 +15467,7 @@ Pic: Gentleman
 Gender: Male
 Music: Aqua
 Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Team Synergy
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction
 
 Kabutops @ Rindo Berry
 Ability: Swift Swim

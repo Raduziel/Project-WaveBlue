@@ -41,6 +41,7 @@ Movement_CaveGuyApproach:
 	walk_slow_up
 	walk_slow_up
 	walk_slow_up
+    face_up
 	delay_16
 	step_end
 
