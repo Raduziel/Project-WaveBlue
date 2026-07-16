@@ -13,7 +13,7 @@ CeladonCity_DepartmentStore_3F_Text_HaunterEvolvedOnTrade::
 	.string "I love Haunter!\n"
 	.string "I collect them!\p"
 	.string "I just have to keep them away\n"
-	.string "from a Dusk Stone, or they'll\p"
+	.string "from a Dusk Stone, or they'll\l"
 	.string "turn into a Gengar.\p"
 	.string "Who would want that, right?$"
 

@@ -606,8 +606,8 @@ static const u8 sMoveDescription_Spore[] = _(
     "that always induce sleep."
     );
 static const u8 sMoveDescription_Flash[] = _(
-    "Hits all others, lowering\n"
-    "accuracy. Wakes sleepers."
+    "Hits all others, lowering accuracy\n"
+    "Also cures Sleep."
     );
 static const u8 sMoveDescription_Psywave[] = _(
     "Attacks with a psychic wave of\n" 

@@ -2269,8 +2269,8 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("White Flute"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "A glass flute that\n"
-            "draws out wild Pokémon."),
+            "A glass flute that draws out wild\n"
+            "Pokémon."),
         .notConsumed = TRUE,
         .pocket = POCKET_KEY_ITEMS,
         .sortType = ITEM_TYPE_FLUTE,
@@ -8293,7 +8293,7 @@ const struct ItemInfo gItemsInfo[] =
         .price = (I_PRICE >= GEN_7) ? 1000 : 500,
         .holdEffect = HOLD_EFFECT_THICK_CLUB,
         .description = COMPOUND_STRING(
-            "A hold item that  "
+            "A hold item that "
             "raises Cubone\nor "
             "Marowak's Attack."),
         .pocket = POCKET_ITEMS,
@@ -9707,8 +9707,7 @@ const struct ItemInfo gItemsInfo[] =
         .price = 0,
         .importance = 1,
         .description = COMPOUND_STRING(
-            "This device gives "
-            "\nexp. to other "
+            "This device gives exp. to other\n"
             "party members."),
         .pocket = POCKET_KEY_ITEMS,
     #else
@@ -14337,9 +14336,10 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("HM05"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "Emits a bright flash\n"
-            "that lowers accuracy.\n"
-            "May cause flinching."),
+            "Hits all Pokémon\n"
+            "and lowers their\n"
+            "accuracy.\n"
+            "Also cures Sleep."),
         .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,
@@ -14766,8 +14766,7 @@ const struct ItemInfo gItemsInfo[] =
 #endif
         .price = 0,
         .description = COMPOUND_STRING(
-            "A device that "
-            "signals an\ninvisible "
+            "A device that signals an invisible\n"
             "item by sound."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
@@ -14798,8 +14797,8 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Vs. Seeker"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "Flags Trainers ready\n"
-             "for a rematch battle."),
+            "Flags Trainers ready for a rematch\n"
+            "battle."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_FIELD,
@@ -14975,9 +14974,8 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Fame Checker"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "Stores information "
-            "on famous\npeople "
-            "for instant recall."),
+            "Stores information people for\n"
+            "instant recall."),
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
@@ -15507,8 +15505,8 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Flight Ticket"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "A flight pass to any town\n"
-            "you've already visited."),
+            "A flight pass to any town you've\n"
+            "already visited."),
         .notConsumed = TRUE,
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
@@ -15523,8 +15521,8 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Lantern"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "An old-fashioned lantern\n"
-            "for lighting dark caves."),
+            "An old-fashioned lantern for\n"
+            "lighting dark caves."),
         .notConsumed = TRUE,
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
@@ -15555,8 +15553,8 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("Hedge Shears"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "Shears that cut down\n"
-            "small trees and bushes."),
+            "Shears that cut down small trees\n"
+            "and bushes."),
         .notConsumed = TRUE,
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,

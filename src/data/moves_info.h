@@ -4049,8 +4049,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Flash"),
         .description = COMPOUND_STRING(
-            "Hits all Pokémon and\n"
-            "lowers their accuracy.\n"
+            "Hits all Pokémon\n"
+            "and lowers their\n"
+            "accuracy.\n"
             "Also cures Sleep."),
         .effect = EFFECT_HIT,
         .power = 40,

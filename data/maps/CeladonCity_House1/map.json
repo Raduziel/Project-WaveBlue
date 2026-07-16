@@ -64,7 +64,7 @@
       "local_id": "LOCALID_WEIRD_FLUTE",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
-      "x": 4,
+      "x": 5,
       "y": 2,
       "elevation": 3,
       "movement_type": "MOVEMENT_TYPE_FACE_DOWN",

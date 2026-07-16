@@ -31,8 +31,8 @@ LavenderTown_VolunteerPokemonHouse_Text_IdLikeYouToHaveThis::
     .string "Mr. Fuji: {PLAYER}…\p"
     .string "Your Pokédex quest is one that\n"
     .string "requires strong dedication.\p"
-    .string "Without deep love for Pokémon,\n"
-    .string "your quest may fail.\p"
+    .string "Without deep love for Pokémon, your\n"
+    .string "quest may fail.\p"
     .string "I'm not sure if this will help you,\n"
     .string "but I'd like you to have it.$"
 
@@ -41,10 +41,44 @@ LavenderTown_VolunteerPokemonHouse_Text_ReceivedPokeFluteFromMrFuji::
     .string "from Mr. Fuji.$"
 
 LavenderTown_VolunteerPokemonHouse_Text_ExplainPokeFlute::
-    .string "Upon hearing the Poké Flute,\n"
-    .string "sleeping Pokémon will spring awake.\p"
+    .string "Upon hearing the Poké Flute, sleeping\n"
+    .string "Pokémon will spring awake.\p"
     .string "Try using it on Pokémon that are\n"
     .string "sleeping obstacles.$"
+
+LavenderTown_VolunteerPokemonHouse_Text_AskSilphScope::
+    .string "…\p"
+    .string "{PLAYER}, may I ask one more thing of\n"
+    .string "you?\p"
+    .string "The spirits in the tower still need\n"
+    .string "guidance to find rest.\p"
+    .string "Would you give me your Silph Scope,\n"
+    .string "so I can help them?$"
+
+LavenderTown_VolunteerPokemonHouse_Text_PlayerGaveSilphScope::
+    .string "{PLAYER} gave the Silph Scope\n"
+    .string "to Mr. Fuji.$"
+
+LavenderTown_VolunteerPokemonHouse_Text_FujiThanksAndOffers::
+    .string "Thank you, {PLAYER}.\p"
+    .string "Do not worry. I will make sure the\n"
+    .string "tower's spirits keep revealing\l"
+    .string "themselves to you.\p"
+    .string "Since you were kind enough to give\n"
+    .string "me the Scope, let me give you this\l"
+    .string "in return.$"
+
+LavenderTown_VolunteerPokemonHouse_Text_ExplainAndFarewell::
+    .string "A Pokémon holding the Soothe Bell\n"
+    .string "grows closer to you as you travel\l"
+    .string "together.\p"
+    .string "Cherish that bond, {PLAYER}.\p"
+    .string "The stronger your bond grows, the\n"
+    .string "further you'll go together.\p"
+    .string "May it show your kindness to your\n"
+    .string "Pokémon.\p"
+    .string "Don't let me delay your journey any\n"
+    .string "further. Good luck!$"
 
 LavenderTown_VolunteerPokemonHouse_Text_MustMakeRoomForThis::
     .string "You must make room for this!$"
