@@ -1,6 +1,8 @@
 #include "global.h"
+#include "battle_main.h"
 #include "bg.h"
 #include "data.h"
+#include "decompress.h"
 #include "event_data.h"
 #include "field_fadetransition.h"
 #include "gpu_regs.h"
@@ -139,6 +141,7 @@ static void DoMoveRelearnerMain(void);
 static void DrawWindowTextBorders(void);
 static void ShowTeachMoveText(void);
 static void InitMoveRelearnerBackgroundLayers(void);
+static void CreateMoveRelearnerTypeIconSprite(void);
 static void CreateLearnableMovesList(void);
 static void HandleInput(void);
 static void MoveLearnerInitListMenu(void);
@@ -178,6 +181,7 @@ static EWRAM_DATA struct
     u8 numToShowAtOnce;
     u8 moveSlot;
     u8 partyMon;
+    u8 typeIconSpriteId;
 } *sMoveRelearnerStruct = NULL;
 
 static const u8 sTextColors[][3] =
@@ -405,6 +409,7 @@ void CB2_InitLearnMove(void)
 
     InitMoveRelearnerBackgroundLayers();
     InitMoveRelearnerWindows();
+    CreateMoveRelearnerTypeIconSprite();
 
     sMoveRelearnerStruct->listOffset = 0;
     sMoveRelearnerStruct->listRow = 0;
@@ -458,7 +463,8 @@ static void CB2_InitLearnMoveReturnFromSelectMove(void)
 
     InitMoveRelearnerBackgroundLayers();
     InitMoveRelearnerWindows();
-
+    CreateMoveRelearnerTypeIconSprite();
+    
     SetBackdropFromColor(RGB_BLACK);
 
     RunTasks();
@@ -473,6 +479,15 @@ static void InitMoveRelearnerBackgroundLayers(void)
     ResetBgsAndClearDma3BusyFlags(FALSE);
     InitBgsFromTemplates(0, sMoveRelearnerMenuBackgroundTemplates, ARRAY_COUNT(sMoveRelearnerMenuBackgroundTemplates));
     ResetTempTileDataBuffers();
+}
+
+static void CreateMoveRelearnerTypeIconSprite(void)
+{
+    LoadCompressedSpriteSheet(&gSpriteSheet_MoveTypes);
+    LoadPalette(gMoveTypes_Pal, OBJ_PLTT_ID(13), 3 * PLTT_SIZE_4BPP);
+    sMoveRelearnerStruct->typeIconSpriteId = CreateSprite(&gSpriteTemplate_MoveTypes, 0, 0, 2);
+    gSprites[sMoveRelearnerStruct->typeIconSpriteId].invisible = TRUE;
+    SetGpuReg(REG_OFFSET_DISPCNT, GetGpuReg(REG_OFFSET_DISPCNT) | DISPCNT_OBJ_1D_MAP | DISPCNT_OBJ_ON);
 }
 
 static void CB2_MoveRelearnerMain(void)
@@ -872,7 +887,14 @@ static void PrintMoveInfo(enum Move move)
     u16 power = GetMovePower(move);
     u16 accuracy = GetMoveAccuracy(move);
 
-    BlitMenuInfoIcon(RELEARNER_WIN_MOVE_TYPE, GetMoveType(move) + 1, 1, 4);
+    {
+        struct Sprite *sprite = &gSprites[sMoveRelearnerStruct->typeIconSpriteId];
+        StartSpriteAnim(sprite, GetMoveType(move));
+        sprite->oam.paletteNum = gTypesInfo[GetMoveType(move)].palette;
+        sprite->x = 57;
+        sprite->y = 11;
+        sprite->invisible = FALSE;
+    }
 
     FillWindowPixelBuffer(RELEARNER_WIN_MOVE_PP, PIXEL_FILL(colors[0]));
     FillWindowPixelBuffer(RELEARNER_WIN_MOVE_POW_ACC, PIXEL_FILL(colors[0]));
@@ -915,6 +937,7 @@ static void PrintMoveInfoHandleCancel_CopyToVram(void)
     }
     else
     {
+        gSprites[sMoveRelearnerStruct->typeIconSpriteId].invisible = TRUE;
         FillWindowPixelBuffer(RELEARNER_WIN_MOVE_TYPE, PIXEL_FILL(0));
         FillWindowPixelBuffer(RELEARNER_WIN_MOVE_POW_ACC, PIXEL_FILL(0));
         FillWindowPixelBuffer(RELEARNER_WIN_MOVE_PP, PIXEL_FILL(0));

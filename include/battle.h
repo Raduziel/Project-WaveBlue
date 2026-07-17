@@ -17,6 +17,7 @@
 #include "battle_gfx_sfx_util.h"
 #include "battle_util2.h"
 #include "battle_bg.h"
+#include "event_data.h"
 #include "pokeball.h"
 #include "main.h"
 #include "battle_debug.h"
@@ -1197,7 +1198,7 @@ static inline void SetHealAmount(enum BattlerId battler, s32 value)
 
 static inline bool32 IsGhostBattleWithoutScope(void)
 {
-    return (gBattleTypeFlags & BATTLE_TYPE_GHOST) && !CheckBagHasItem(ITEM_SILPH_SCOPE, 1);
+    return (gBattleTypeFlags & BATTLE_TYPE_GHOST) && !(CheckBagHasItem(ITEM_SILPH_SCOPE, 1) || FlagGet(FLAG_DELIVERED_SILPH_SCOPE));
 }
 
 #endif // GUARD_BATTLE_H

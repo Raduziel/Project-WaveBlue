@@ -15,6 +15,7 @@ LavenderTown_VolunteerPokemonHouse_EventScript_MrFuji::
 	giveitem_msg LavenderTown_VolunteerPokemonHouse_Text_ReceivedPokeFluteFromMrFuji, ITEM_POKE_FLUTE, 1, MUS_OBTAIN_KEY_ITEM
 	msgbox LavenderTown_VolunteerPokemonHouse_Text_ExplainPokeFlute
 	msgbox LavenderTown_VolunteerPokemonHouse_Text_AskSilphScope
+	setflag FLAG_DELIVERED_SILPH_SCOPE
 	removeitem ITEM_SILPH_SCOPE, 1
 	textcolor NPC_TEXT_COLOR_NEUTRAL
 	msgbox LavenderTown_VolunteerPokemonHouse_Text_PlayerGaveSilphScope

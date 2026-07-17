@@ -1513,7 +1513,6 @@ void ItemUseOutOfBattle_Honey(u8 taskId)
 
 static void ItemUseOnFieldCB_WhiteFlute(u8 taskId)
 {
-    Overworld_ResetStateAfterDigEscRope();
     CopyItemName(gSpecialVar_ItemId, gStringVar2);
     StringExpandPlaceholders(gStringVar4, gText_PlayerUsedVar2);
     gTasks[taskId].data[0] = 0;

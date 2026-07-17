@@ -344,7 +344,7 @@
 #define FLAG_DEFEATED_BOSS_GIOVANNI                      0x146
 #define FLAG_HIDE_CERULEAN_LANCE                         0x147
 #define FLAG_GOT_WATERFALL_MOTOR                         0x148
-#define FLAG_0x149                                       0x149
+#define FLAG_DELIVERED_SILPH_SCOPE                       0x149
 #define FLAG_0x14A                                       0x14A
 #define FLAG_0x14B                                       0x14B
 #define FLAG_0x14C                                       0x14C

@@ -216,7 +216,7 @@ static bool8 CheckSilphScopeInPokemonTower(u16 mapGroup, u16 mapNum)
       || mapNum == MAP_NUM(MAP_POKEMON_TOWER_5F)
       || mapNum == MAP_NUM(MAP_POKEMON_TOWER_6F)
       || mapNum == MAP_NUM(MAP_POKEMON_TOWER_7F))
-     && !(CheckBagHasItem(ITEM_SILPH_SCOPE, 1)))
+     && !(CheckBagHasItem(ITEM_SILPH_SCOPE, 1) || FlagGet(FLAG_DELIVERED_SILPH_SCOPE)))
         return TRUE;
     else
         return FALSE;
