@@ -18,9 +18,15 @@ SaffronCity_Dojo_Text_ChoosePrizedFightingMon::
     .string "Fighting Pokémon!\p"
     .string "Choose whichever one you like!$"
 
-SaffronCity_Dojo_Text_StayAndTrainWithUs::
-    .string "Grunt!\n"
-    .string "Stay and train at karate with us!$"
+SaffronCity_Dojo_Text_MayHaveToolsToHelp::
+    .string "Grunt!\p"
+    .string "You're tough, but you can still\n"
+    .string "improve through hard work.\p"
+    .string "I may have the tools to help you.\n"
+    .string "Take a look.$"
+
+SaffronCity_Dojo_Text_MasterKoichiComeAgain::
+    .string "Now go and train harder!$"
 
 SaffronCity_Dojo_Text_MikeIntro::
     .string "Hoargh!\n"

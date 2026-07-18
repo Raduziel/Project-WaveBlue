@@ -172,11 +172,14 @@ SaffronCity_Dojo_EventScript_Mike::
 
 SaffronCity_Dojo_EventScript_MasterKoichi::
 	trainerbattle_single TRAINER_BLACK_BELT_KOICHI, SaffronCity_Dojo_Text_MasterKoichiIntro, SaffronCity_Dojo_Text_MasterKoichiDefeat, SaffronCity_Dojo_EventScript_DefeatedMasterKoichi
-	goto_if_set FLAG_GOT_HITMON_FROM_DOJO, SaffronCity_Dojo_EventScript_MasterKoichiAlreadyGotHitmon
+	goto_if_set FLAG_GOT_HITMON_FROM_DOJO, SaffronCity_Dojo_EventScript_MasterKoichiSellPowerItems
 	goto SaffronCity_Dojo_EventScript_ChoosePrizedMon
 
-SaffronCity_Dojo_EventScript_MasterKoichiAlreadyGotHitmon::
-	msgbox SaffronCity_Dojo_Text_StayAndTrainWithUs
+SaffronCity_Dojo_EventScript_MasterKoichiSellPowerItems::
+	message SaffronCity_Dojo_Text_MayHaveToolsToHelp
+	waitmessage
+	pokemart SaffronCity_Dojo_PowerItemsForSale
+	msgbox SaffronCity_Dojo_Text_MasterKoichiComeAgain, MSGBOX_DEFAULT
 	release
 	end
 
@@ -188,3 +191,13 @@ SaffronCity_Dojo_EventScript_DefeatedMasterKoichi::
 SaffronCity_Dojo_EventScript_ChoosePrizedMon::
 	msgbox SaffronCity_Dojo_Text_ChoosePrizedFightingMon, MSGBOX_AUTOCLOSE
 	end
+
+	.align 2
+SaffronCity_Dojo_PowerItemsForSale:
+	.2byte ITEM_POWER_WEIGHT
+	.2byte ITEM_POWER_BRACER
+	.2byte ITEM_POWER_BELT
+	.2byte ITEM_POWER_LENS
+	.2byte ITEM_POWER_BAND
+	.2byte ITEM_POWER_ANKLET
+	.2byte ITEM_NONE
