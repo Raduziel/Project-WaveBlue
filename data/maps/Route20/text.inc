@@ -51,8 +51,7 @@ Route20_Text_DeanPostBattle::
     .string "Pokémon, not me!$"
 
 Route20_Text_DarrinIntro::
-    .string "Why are you riding a Pokémon?\n"
-    .string "Can't you swim?$"
+    .string "Why aren't you swimming?$"
 
 Route20_Text_DarrinDefeat::
     .string "Ouch!\n"

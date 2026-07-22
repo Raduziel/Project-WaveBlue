@@ -2,9 +2,10 @@ Text_MayIHelpYou::
 	.string "Hi, there!\n"
 	.string "May I help you?$"
 
-Text_FillOutQuestionnaire::
-	.string "There is a questionnaire.\n"
-	.string "Would you like to fill it out?$"
+Text_MartNonRefundable::
+	.string "A notice reads:\p"
+	.string "All purchases are final.\n"
+	.string "No refunds, sorry!$"
 
 Text_QuestionnaireThankYou::
 	.string "Thank you for taking the time to\n"

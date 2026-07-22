@@ -1863,7 +1863,7 @@ static uq4_12_t GetMoveEffectivenessMultiplier(u32 battlerAtk, u32 battlerDef, u
     ctx.battlerAtk = battlerAtk;
     ctx.battlerDef = battlerDef;
     ctx.move = ctx.chosenMove = move;
-    ctx.moveType = GetBattleMoveType(move);
+    ctx.moveType = CheckDynamicMoveType(GetBattlerMon(battlerAtk), move, battlerAtk, MON_IN_BATTLE);
     ctx.abilityAtk = GetBattlerAbility(battlerAtk);
     ctx.abilityDef = GetBattlerAbility(battlerDef);
     ctx.holdEffectAtk = GetBattlerHoldEffect(battlerAtk);

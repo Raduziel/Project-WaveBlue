@@ -11067,8 +11067,9 @@ const struct MoveInfo gMovesInfo[MOVES_COUNT_ALL] =
     {
         .name = COMPOUND_STRING("Bullet Punch"),
         .description = COMPOUND_STRING(
-            "Punches as fast as\na bul- "
-            "let. It\nalways hits first."),
+            "Punches as fast as\n"
+            "a bullet. This move\n"
+            "always hits first."),
         .effect = EFFECT_HIT,
         .power = 40,
         .type = TYPE_STEEL,

@@ -288,22 +288,24 @@ SaffronCity_PokemonTrainerFanClub_Text_NeverBeFanOfAnyoneButMaster::
     .string "to spread word of his greatness.\p"
     .string "Hiyah!$"
 
-SaffronCity_PokemonTrainerFanClub_Text_HP_Intro:
-    .string "I spend all my time studying\n"
-    .string "Pokémon. It is my passion!\p"
-    .string "All those years of research\n"
-    .string "paid off in a special way!\p"
-    .string "Shall I reveal one of your\n"
-    .string "Pokémon's Hidden Power?$"
+SaffronCity_PokemonTrainerFanClub_Text_HP_Intro::
+    .string "I spend all my time studying Pokémon.\n"
+    .string "It is my passion!\p"
+    .string "All those years of research paid off\n"
+    .string "in a special way!\p"
+    .string "Shall I reveal one of your Pokémon's\n"
+    .string "Hidden Power?$"
 
-SaffronCity_PokemonTrainerFanClub_Text_HP_Decline:
-    .string "No problem! Feel free to\n"
-    .string "come back anytime.$"
+SaffronCity_PokemonTrainerFanClub_Text_HP_Decline::
+    .string "No problem! Feel free to come back\n"
+    .string "anytime.$"
 
-SaffronCity_PokemonTrainerFanClub_Text_HP_Result:
+SaffronCity_PokemonTrainerFanClub_Text_HP_GaveUp::
+    .string "What's wrong?\n"
+    .string "Don't wanna spoil the mystery?$"
+
+SaffronCity_PokemonTrainerFanClub_Text_HP_Result::
     .string "Let me analyze this one…\p"
     .string "Yes! I can see it clearly!\p"
-    .string "The Hidden Power is…\n"
-    .string "{STR_VAR_1}!\p"
-    .string "That can be a great asset\n"
-    .string "in battle!$"
+    .string "The Hidden Power is… {STR_VAR_1}!\p"
+    .string "That can be a great asset in battle!$"

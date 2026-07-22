@@ -13036,8 +13036,8 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("TM61"),
         .price = 3000,
         .description = COMPOUND_STRING(
-            "Sharpens its claws\nto raise "
-            "Attack\nand Accuracy."),
+            "Chops the throat\nto disable "
+            "sound\nmoves for 2 turns."),
         .importance = I_REUSABLE_TMS,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,

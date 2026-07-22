@@ -156,7 +156,7 @@ void BedroomPC(void)
     sItemOrder = sItemOrder_BedroomPC;
     sTopMenuItemCount = 3;
     taskId = CreateTask(TaskDummy, 0);
-    DisplayItemMessageOnField(taskId, FONT_NORMAL, gText_WhatWouldYouLikeToDo, Task_DrawPlayerPcTopMenu);
+    Task_PlayerPcItemStorage(taskId);
 }
 
 void PlayerPC(void)
@@ -168,7 +168,7 @@ void PlayerPC(void)
     sItemOrder = sItemOrder_PlayerPC;
     sTopMenuItemCount = 3;
     taskId = CreateTask(TaskDummy, 0);
-    DisplayItemMessageOnField(taskId, FONT_NORMAL, gText_WhatWouldYouLikeToDo, Task_DrawPlayerPcTopMenu);
+    Task_PlayerPcItemStorage(taskId);
 }
 
 static void Task_DrawPlayerPcTopMenu(u8 taskId)
@@ -402,7 +402,7 @@ static void Task_PlayerPcCancel(u8 taskId)
     ClearWindowTilemap(tWindowId);
     CopyWindowToVram(tWindowId, COPYWIN_MAP);
     RemoveWindow(tWindowId);
-    Task_ReturnToTopMenu(taskId);
+    Task_PlayerPcTurnOff(taskId);
 }
 
 static void Task_SetPageItemVars(u8 taskId)

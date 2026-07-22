@@ -43,3 +43,10 @@ PewterCity_PokemonCenter_1F_EventScript_GBAKid1::
 PewterCity_PokemonCenter_1F_EventScript_GBAKid2::
 	msgbox PewterCity_PokemonCenter_1F_Text_TradingPikachuWithKid, MSGBOX_NPC
 	end
+
+PewterCity_PokemonCenter_1F_EventScript_Woman::
+	lock
+	faceplayer
+	msgbox PewterCity_PokemonCenter_1F_Text_WomanForgotJob, MSGBOX_DEFAULT
+	release
+	end

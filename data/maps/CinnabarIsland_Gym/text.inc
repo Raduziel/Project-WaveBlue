@@ -220,12 +220,11 @@ CinnabarIsland_Gym_Text_SorryBadCall::
     .string "Bad call!$"
 
 CinnabarIsland_Gym_Text_BlaineTakeSecretKey::
-	.string "First, return the Secret\n"
-	.string "Key to me.\p"
-	.string "I must ready the Gym for the\n"
-	.string "next kid.\p"
-	.string "Don't worry, though.\n"
-	.string "My doors stay open to you!$"
+	.string "First, return the Secret Key to me.\p"
+	.string "I must ready the Gym for the next\n"
+    .string "challenger.\p"
+	.string "Don't worry, though. My doors stay\n"
+	.string "open to you!$"
 
 CinnabarIsland_Gym_Text_BlaineReturnedSecretKey::
 	.string "{PLAYER} handed the Secret Key\n"

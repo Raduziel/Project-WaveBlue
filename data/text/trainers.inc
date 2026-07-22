@@ -580,8 +580,7 @@ Route20_Text_DeanRematchIntro::
 	.string "before!$"
 
 Route20_Text_DarrinRematchIntro::
-	.string "Why are you riding a Pokémon?\n"
-	.string "Haven't you learned to swim yet?$"
+	.string "Why aren't you swimming?$"
 
 Route20_Text_RogerRematchIntro::
 	.string "I rode my bird Pokémon here.$"

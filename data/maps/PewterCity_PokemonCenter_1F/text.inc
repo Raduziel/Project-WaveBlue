@@ -25,3 +25,6 @@ PewterCity_PokemonCenter_1F_Text_TradingPikachuWithKid::
     .string "I had two Pikachu, so I figured\n"
     .string "I might as well trade one.$"
 
+PewterCity_PokemonCenter_1F_Text_WomanForgotJob::
+    .string "I used to have a wonderful job, but\n"
+    .string "I can't quite remember what it was.$"

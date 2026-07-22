@@ -1695,7 +1695,7 @@ static const u8 sMoveDescription_NastyPlot[] = _(
     "boost Sp. Atk."
     );
 static const u8 sMoveDescription_BulletPunch[] = _(
-    "Punches as fast as a bul- let.\n" 
+    "Punches as fast as a bullet.\n" 
     "It always hits first."
     );
 static const u8 sMoveDescription_Avalanche[] = _(

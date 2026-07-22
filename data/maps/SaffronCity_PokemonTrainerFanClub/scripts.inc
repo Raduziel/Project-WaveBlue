@@ -432,7 +432,7 @@ SaffronCity_PokemonTrainerFanClub_EventScript_HiddenPower::
 SaffronCity_PokemonTrainerFanClub_EventScript_HP_ChooseMon::
     special ChoosePartyMon
     waitstate
-    compare VAR_0x8004, 6
+    compare VAR_0x8004, PARTY_NOTHING_CHOSEN
     goto_if_eq SaffronCity_PokemonTrainerFanClub_EventScript_HP_End
     special Special_CalcHiddenPowerType
     msgbox SaffronCity_PokemonTrainerFanClub_Text_HP_Result, MSGBOX_DEFAULT
@@ -440,5 +440,6 @@ SaffronCity_PokemonTrainerFanClub_EventScript_HP_ChooseMon::
     end
 
 SaffronCity_PokemonTrainerFanClub_EventScript_HP_End::
+    msgbox SaffronCity_PokemonTrainerFanClub_Text_HP_GaveUp, MSGBOX_DEFAULT
     release
     end
