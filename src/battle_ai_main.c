@@ -1854,10 +1854,12 @@ static s32 AI_CheckBadMove(enum BattlerId battlerAtk, enum BattlerId battlerDef,
         || !AI_CanConfuse(battlerAtk, battlerDef, aiData->abilities[battlerDef], BATTLE_PARTNER(battlerAtk), move, aiData->partnerMove))
             ADJUST_SCORE(-10);
         break;
-    case EFFECT_SUBSTITUTE:
+case EFFECT_SUBSTITUTE:
         if (gBattleMons[battlerAtk].volatiles.substitute || aiData->abilities[battlerDef] == ABILITY_INFILTRATOR)
             ADJUST_SCORE(-8);
         else if (aiData->hpPercents[battlerAtk] <= 25)
+            ADJUST_SCORE(-10);
+        else if (aiData->lastUsedMove[battlerAtk] == move)
             ADJUST_SCORE(-10);
         else if (HasMoveWithFlag(battlerDef, MoveIgnoresSubstitute))
             ADJUST_SCORE(-8);
@@ -4359,8 +4361,11 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
     }
 
     // check status move preference
-    if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_PREFER_STATUS_MOVES && IsBattleMoveStatus(move) && effectiveness != UQ_4_12(0.0))
-        ADJUST_SCORE(10);
+    if (gAiThinkingStruct->aiFlags[battlerAtk] & AI_FLAG_PREFER_STATUS_MOVES
+     && IsBattleMoveStatus(move)
+     && effectiveness != UQ_4_12(0.0)
+     && gAiThinkingStruct->score[gAiThinkingStruct->movesetIndex] >= AI_SCORE_DEFAULT)
+        ADJUST_SCORE(DECENT_EFFECT);
 
     // don't get baited into encore
     if (gBattleMoveEffects[moveEffect].encourageEncore
