@@ -441,6 +441,8 @@ OneIsland_PokemonCenter_1F_EventScript_LeaveOneIslandScene::
 	waitmovement 0
 	msgbox OneIsland_PokemonCenter_1F_Text_BillOhHeyPlayer
 	closemessage
+	applymovement OBJ_EVENT_ID_FOLLOWER, EnterPokeballMovement
+	waitmovement 0
 	call_if_eq VAR_TEMP_1, 1, OneIsland_PokemonCenter_1F_EventScript_PlayerWalkToBillTop
 	call_if_eq VAR_TEMP_1, 2, OneIsland_PokemonCenter_1F_EventScript_PlayerWalkToBillMidTop
 	call_if_eq VAR_TEMP_1, 3, OneIsland_PokemonCenter_1F_EventScript_PlayerWalkToBillMidBottom

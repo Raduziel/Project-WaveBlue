@@ -63,7 +63,7 @@ PalletTown_PlayersHouse_2F_EventScript_Ball1_GiveSquirtle::
 PalletTown_PlayersHouse_2F_EventScript_GiveStarter1::
     call_if_unset FLAG_HIDE_POSTGAME_STARTER_2, PalletTown_PlayersHouse_2F_EventScript_PlayBillMessage
     bufferspeciesname STR_VAR_1, VAR_TEMP_1
-    givemon VAR_TEMP_1, 5, ITEM_NONE
+    givemon VAR_TEMP_1, 5, item=ITEM_NONE, abilityNum=2, hpIv=31
     
     goto_if_eq VAR_RESULT, 0, PalletTown_PlayersHouse_2F_EventScript_ReceivedStarter1
     goto_if_eq VAR_RESULT, 1, PalletTown_PlayersHouse_2F_EventScript_SendToPC1
@@ -119,7 +119,7 @@ PalletTown_PlayersHouse_2F_EventScript_Ball2_GiveSquirtle::
 PalletTown_PlayersHouse_2F_EventScript_GiveStarter2::
     call_if_unset FLAG_HIDE_POSTGAME_STARTER_1, PalletTown_PlayersHouse_2F_EventScript_PlayBillMessage
     bufferspeciesname STR_VAR_1, VAR_TEMP_1
-    givemon VAR_TEMP_1, 5, ITEM_NONE
+    givemon VAR_TEMP_1, 5, item=ITEM_NONE, abilityNum=2, hpIv=31
     
     goto_if_eq VAR_RESULT, 0, PalletTown_PlayersHouse_2F_EventScript_ReceivedStarter2
     goto_if_eq VAR_RESULT, 1, PalletTown_PlayersHouse_2F_EventScript_SendToPC2

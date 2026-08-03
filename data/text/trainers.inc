@@ -330,7 +330,7 @@ Route14_Text_BeckRematchIntro::
 
 Route14_Text_MarlonRematchIntro::
 	.string "Have you taught your bird Pokémon\n"
-	.string "how to Fly?\p"
+	.string "how to fly?\p"
 	.string "You'll be able to soar with it into\n"
 	.string "the sky! Give it a try.$"
 
@@ -425,7 +425,7 @@ Route16_Text_LaoRematchIntro::
 	.string "What do you want?$"
 
 Route16_Text_KojiRematchIntro::
-	.string "Nice Bike!\n"
+	.string "Nice bike!\n"
 	.string "Hand it over quick!$"
 
 Route16_Text_LukeRematchIntro::
@@ -483,7 +483,7 @@ Route17_Text_CoreyRematchIntro::
 	.string "Be a rebel!$"
 
 Route17_Text_JaxonRematchIntro::
-	.string "Yep, that's a nice Bike!\n"
+	.string "Yep, that's a nice bike!\n"
 	.string "How's it handle?$"
 
 Route17_Text_WilliamRematchIntro::

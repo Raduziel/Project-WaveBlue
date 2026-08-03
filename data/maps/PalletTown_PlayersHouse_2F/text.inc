@@ -12,8 +12,8 @@ PalletTown_PlayersHouse_2F_Text_BillLetter:
     .string "There is a letter attached.\p"
     .string "“Heard you did great against the\n"
     .string "Elite Four.\p"
-    .string "I'm curious how you will raise\n"
-    .string "these two.\p"
+    .string "I'm curious how you will raise these\n"
+    .string "two.\p"
     .string "Take care of them and do your best!”\n"
     .string "- Bill$"
 

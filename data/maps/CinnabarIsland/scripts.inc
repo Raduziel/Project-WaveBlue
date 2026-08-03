@@ -67,9 +67,16 @@ CinnabarIsland_EventScript_ReturnFromSeviiIslands::
 	textcolor NPC_TEXT_COLOR_MALE
 	msgbox CinnabarIsland_Text_IfYouHaveTriPassYouCanGoAgain
 	closemessage
-	applymovement LOCALID_CINNABAR_BILL, CinnabarIsland_Movement_BillExit
+	playse SE_M_FLY
+	applymovement LOCALID_CINNABAR_BILL, Common_Movement_WalkInPlaceFasterDown
 	waitmovement 0
+	delay 30
+	setfieldeffectargument 0, 1
+	dofieldeffect FLDEFF_NPCFLY_OUT
+	delay 15
 	removeobject LOCALID_CINNABAR_BILL
+	waitfieldeffect FLDEFF_NPCFLY_OUT
+	setflag FLAG_HIDE_CINNABAR_POKECENTER_BILL
 	setvar VAR_MAP_SCENE_CINNABAR_ISLAND, 4
 	setflag FLAG_HIDE_TWO_ISLAND_GAME_CORNER_LOSTELLE
 	setflag FLAG_HIDE_TWO_ISLAND_GAME_CORNER_DADDY
@@ -77,15 +84,6 @@ CinnabarIsland_EventScript_ReturnFromSeviiIslands::
 	clearflag FLAG_HIDE_LOSTELLE_DADDY_IN_HER_HOME
 	releaseall
 	end
-
-CinnabarIsland_Movement_BillExit::
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	walk_down
-	step_end
 
 CinnabarIsland_EventScript_BillScene::
 	lockall

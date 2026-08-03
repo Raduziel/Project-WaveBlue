@@ -17,13 +17,15 @@ ViridianCity_Gym_Text_GiovanniDefeat::
     .string "{PAUSE_MUSIC}{PLAY_BGM}{MUS_OBTAIN_BADGE}{PAUSE 0xFE}{PAUSE 0x56}{RESUME_MUSIC}$"
 
 ViridianCity_Gym_Text_GiovanniPostBattle::
-    .string "Having lost in this fashion, \n"
-    .string "I can't face my followers.\l"
+    .string "Having lost in this fashion, I can't\n"
+    .string "face my followers.\l"
     .string "I have betrayed their trust.\p"
-    .string "As of today, Team Rocket is\n"
-    .string "finished forever!\p"
-    .string "As for myself, I shall dedicate\n"
-    .string "my life to training again.\p"
+    .string "As of today, Team Rocket is finished\n"
+    .string "forever!\p"
+    .string "I have no more need for a Gym or an\n"
+    .string "organization.\p"
+    .string "Now nothing can distract me from my\n"
+    .string "true ambition.\p"
     .string "Let us meet again someday!\n"
     .string "Farewell!$"
 

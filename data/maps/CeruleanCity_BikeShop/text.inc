@@ -44,7 +44,7 @@ CeruleanCity_BikeShop_Text_BikesCoolButExpensive::
 
 CeruleanCity_BikeShop_Text_WowYourBikeIsCool::
     .string "Wow.\n"
-    .string "Your Bike is really cool!$"
+    .string "Your bike is really cool!$"
 
 @ Unused
 CeruleanCity_BikeShop_Text_GermanFoldableBicyleFinallyOnMarket::

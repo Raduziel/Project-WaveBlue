@@ -10,6 +10,6 @@ CeladonCity_PokemonCenter_1F_Text_RodeHereFromFuchsia::
     .string "Road, so I'm exhausted.$"
 
 CeladonCity_PokemonCenter_1F_Text_GoToCyclingRoadIfIHadBike::
-    .string "If I had a Bike, I would go to\n"
+    .string "If I had a bike, I would go to\n"
     .string "Cycling Road!$"
 

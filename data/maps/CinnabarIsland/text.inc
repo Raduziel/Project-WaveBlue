@@ -71,5 +71,6 @@ CinnabarIsland_Text_IfYouHaveTriPassYouCanGoAgain::
     .string "If you have a Tri-Pass, you can\n"
     .string "always take a ferry there from\l"
     .string "Vermilion Port.\p"
-    .string "All right, thanks for your company!$"
+    .string "All right, thanks for your company!\n"
+    .string "I'll fly back home on my Pidgeot.$"
 

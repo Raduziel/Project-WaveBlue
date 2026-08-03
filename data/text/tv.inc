@@ -1686,7 +1686,7 @@ gTVTrainerFanClubText05::
 
 gTVTrainerFanClubText06::
 	.string "Fans: The Trainer's amazing\n"
-	.string "Bike-riding techniques!$"
+	.string "bike-riding techniques!$"
 
 gTVTrainerFanClubText07::
 	.string "Fans: The Trainer's impressive\n"

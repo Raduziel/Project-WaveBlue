@@ -82,7 +82,7 @@ Route17_Text_CoreyPostBattle::
     .string "Be ready to fight for your beliefs!$"
 
 Route17_Text_JaxonIntro::
-    .string "Nice Bike!\n"
+    .string "Nice bike!\n"
     .string "How's it handle?$"
 
 Route17_Text_JaxonDefeat::

@@ -22,5 +22,5 @@ CeladonCity_DepartmentStore_5F_Text_Drugstore::
     .string "5F: Drugstore$"
 
 CeladonCity_DepartmentStore_5F_Text_NoBattleItems::
-	.string "I'm sorry, we don't sell\n"
-	.string "Battle Items anymore.$"
+	.string "I'm sorry, we don't sell Battle Items\n"
+	.string "anymore.$"
