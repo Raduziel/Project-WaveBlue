@@ -62,5 +62,5 @@ OneIsland_Text_ReturnToCinnabar::
 
 OneIsland_Text_IsntWarmClimateHereGreat::
     .string "Hi, sight-seeing, are you?\n"
-    .string "Isn't the warm climate here great?$"
+    .string "Isn't the climate here great?$"
 

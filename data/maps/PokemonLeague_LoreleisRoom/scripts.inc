@@ -87,6 +87,7 @@ PokemonLeague_LoreleisRoom_EventScript_PostBattle::
 
 PokemonLeague_LoreleisRoom_EventScript_DefeatedLorelei::
 	setflag FLAG_DEFEATED_LORELEI
+	setflag FLAG_CAP_LORELEI
 	call PokemonLeague_EventScript_OpenDoor
 	msgbox PokemonLeague_LoreleisRoom_Text_PostBattle
 	release

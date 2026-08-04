@@ -60,8 +60,8 @@ TwoIsland_JoyfulGameCorner_Text_NotRunningAnyGamesToday::
     .string "We're not running any games today.$"
 
 TwoIsland_JoyfulGameCorner_Text_BossClosedThePlace::
-	.string "The boss decided to close up\n"
-	.string "the place for good.\p"
+	.string "The boss decided to close up the\n"
+	.string "place for good.\p"
 	.string "Can't say I blame him, really.\n"
 	.string "Family comes first.$"
 

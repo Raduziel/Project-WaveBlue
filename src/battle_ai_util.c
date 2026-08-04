@@ -4866,7 +4866,7 @@ static enum AIScore IncreaseStatUpScoreInternal(enum BattlerId battlerAtk, enum 
         for (u32 monIndex = 0; monIndex < MAX_MON_MOVES; monIndex++)
         {
             if (GetMoveEffect(GetMonData(&playerParty[gAiLogicData->mostSuitableMonId[battlerDef]], MON_DATA_MOVE1 + monIndex)) == EFFECT_ENCORE
-                && GetMonData(&playerParty[gAiLogicData->mostSuitableMonId[battlerDef]], MON_DATA_PP1 + monIndex) > 0);
+                && GetMonData(&playerParty[gAiLogicData->mostSuitableMonId[battlerDef]], MON_DATA_PP1 + monIndex) > 0)
             {
                 if (GetMonData(&playerParty[gAiLogicData->mostSuitableMonId[battlerDef]], MON_DATA_SPEED) > gBattleMons[battlerAtk].speed)
                     return NO_INCREASE;
@@ -4875,6 +4875,10 @@ static enum AIScore IncreaseStatUpScoreInternal(enum BattlerId battlerAtk, enum 
         // Otherwise if predicting switch, stat increases are great momentum
         tempScore += WEAK_EFFECT;
     }
+
+    // If not switching, don't pile on setup while the target is already boosting
+    if (!IsBattlerPredictedToSwitch(battlerDef) && CountPositiveStatStages(battlerDef) >= 2)
+        return NO_INCREASE;
 
     switch (statId)
     {

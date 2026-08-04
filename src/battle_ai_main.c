@@ -5776,9 +5776,13 @@ static s32 AI_CalcMoveEffectScore(enum BattlerId battlerAtk, enum BattlerId batt
             ADJUST_SCORE(DECENT_EFFECT);
         break;
     case EFFECT_ENDEAVOR:
-        if (AI_IsSlower(battlerAtk, battlerDef, move, predictedMoveSpeedCheck, CONSIDER_PRIORITY) && !CanTargetFaintAi(battlerDef, battlerAtk))
+    {
+        s32 endeavorDamage = gBattleMons[battlerDef].hp - gBattleMons[battlerAtk].hp;
+        s32 bestAttackDamage = GetBestDmgFromBattler(battlerAtk, battlerDef, AI_ATTACKING);
+        if (endeavorDamage > bestAttackDamage)
             ADJUST_SCORE(DECENT_EFFECT);
         break;
+    }
     case EFFECT_REVIVAL_BLESSING:
         if (GetFirstFaintedPartyIndex(battlerAtk) != PARTY_SIZE)
         {
