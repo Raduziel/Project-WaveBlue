@@ -5,7 +5,13 @@ PewterCity_Gym_EventScript_Brock::
 	lock
 	faceplayer
 	famechecker FAMECHECKER_BROCK, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
-	goto_if_set FLAG_DEFEATED_BROCK, PewterCity_Gym_EventScript_BrockPostBattle
+	goto_if_unset FLAG_DEFEATED_BROCK, PewterCity_Gym_EventScript_BrockFirstBattle
+	goto_if_unset FLAG_SYS_GAME_CLEAR, PewterCity_Gym_EventScript_BrockPostBattle
+	goto_if_unset FLAG_SYS_CAN_LINK_WITH_RS, PewterCity_Gym_EventScript_BrockPostBattle
+	goto_if_unset FLAG_REMATCH_BROCK, PewterCity_Gym_EventScript_BrockRematchOffer
+	goto PewterCity_Gym_EventScript_BrockPostRematchBattle	
+	
+PewterCity_Gym_EventScript_BrockFirstBattle::	
 	getpartysize
 	compare VAR_RESULT, 3
 	goto_if_eq PewterCity_Gym_EventScript_StartBattle
@@ -21,12 +27,12 @@ PewterCity_Gym_EventScript_Brock::
 	goto PewterCity_Gym_EventScript_StillNot3
 
 PewterCity_Gym_EventScript_StartBattle::
-	trainerbattle_single TRAINER_LEADER_BROCK, PewterCity_Gym_Text_BrockIntro, PewterCity_Gym_Text_BrockDefeat, PewterCity_Gym_EventScript_BrockDefeated, NO_MUSIC
+	trainerbattle_single TRAINER_LEADER_BROCK, PewterCity_Gym_Text_BrockIntro, PewterCity_Gym_Text_BrockDefeat, PewterCity_Gym_EventScript_BrockDefeated, TRUE
 	release
 	end
 
 PewterCity_Gym_EventScript_StartBattle_FromPC::
-	trainerbattle_single TRAINER_LEADER_BROCK, PewterCity_Gym_Text_BrockReady, PewterCity_Gym_Text_BrockDefeat, PewterCity_Gym_EventScript_BrockDefeated, NO_MUSIC
+	trainerbattle_single TRAINER_LEADER_BROCK, PewterCity_Gym_Text_BrockReady, PewterCity_Gym_Text_BrockDefeat, PewterCity_Gym_EventScript_BrockDefeated, TRUE
 	release
 	end
 
@@ -38,6 +44,13 @@ PewterCity_Gym_EventScript_BrockDefeated::
 	setflag FLAG_HIDE_PEWTER_CITY_GYM_GUIDE
 	clearflag FLAG_HIDE_PEWTER_CITY_RUNNING_SHOES_GUY
 	set_gym_trainers 1
+	msgbox PewterCity_Gym_Text_BadgeDelivery1, MSGBOX_DEFAULT
+	playfanfare MUS_OBTAIN_BADGE
+	msgbox PewterCity_Gym_Text_BadgeDelivery2, MSGBOX_DEFAULT
+	waitfanfare
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox PewterCity_Gym_Text_BadgeDelivery3, MSGBOX_DEFAULT
+	msgbox PewterCity_Gym_Text_TakeThisWithYou, MSGBOX_DEFAULT
 	goto PewterCity_Gym_EventScript_GiveTM39
 	end
 
@@ -49,13 +62,10 @@ PewterCity_Gym_EventScript_GiveTM39::
 	msgbox PewterCity_Gym_Text_ExplainTM39, MSGBOX_DEFAULT
 	msgbox PewterCity_Gym_Text_OfferPCRetrieve, MSGBOX_YESNO
 	compare VAR_RESULT, NO
-	goto_if_eq PewterCity_Gym_EventScript_EndInteract
+	goto_if_eq PewterCity_Gym_EventScript_BrockPostBattle
 	special ShowPokemonStorageSystemPC
 	waitstate
-
-PewterCity_Gym_EventScript_EndInteract::
-	release
-	end
+	goto PewterCity_Gym_EventScript_BrockPostBattle
 
 PewterCity_Gym_EventScript_BrockPostBattle::
 	goto_if_unset FLAG_GOT_TM39_FROM_BROCK, PewterCity_Gym_EventScript_GiveTM39
@@ -77,6 +87,68 @@ PewterCity_Gym_EventScript_StillNot3::
 	msgbox PewterCity_Gym_Text_StillNot3, MSGBOX_DEFAULT
 	release
 	end
+
+PewterCity_Gym_EventScript_BrockRematchOffer::
+	getpartysize
+	compare VAR_RESULT, 4
+	goto_if_eq PewterCity_Gym_EventScript_StartRematch
+	msgbox PewterCity_Gym_Text_BrockRematchIntro, MSGBOX_DEFAULT
+	msgbox PewterCity_Gym_Text_BrockRematchRules, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq PewterCity_Gym_EventScript_RefusedRematch
+	special ShowPokemonStorageSystemPC
+	waitstate
+	getpartysize
+	compare VAR_RESULT, 4
+	goto_if_eq PewterCity_Gym_EventScript_StartRematch_FromPC
+	goto PewterCity_Gym_EventScript_StillNot4
+
+PewterCity_Gym_EventScript_StartRematch::
+	trainerbattle_double TRAINER_LEADER_BROCK_REMATCH, PewterCity_Gym_Text_BrockRematchIntro, PewterCity_Gym_Text_BrockRematchDefeat, PewterCity_Gym_RematchNotEnoughPlaceholder, PewterCity_Gym_EventScript_BrockRematchWon, TRUE
+	release
+	end
+
+PewterCity_Gym_EventScript_StartRematch_FromPC::
+	trainerbattle_double TRAINER_LEADER_BROCK_REMATCH, PewterCity_Gym_Text_BrockRematchReady, PewterCity_Gym_Text_BrockRematchDefeat, PewterCity_Gym_RematchNotEnoughPlaceholder, PewterCity_Gym_EventScript_BrockRematchWon, TRUE
+	release
+	end
+
+PewterCity_Gym_EventScript_BrockRematchWon::
+	checkitemspace ITEM_WEAKNESS_POLICY
+	goto_if_eq VAR_RESULT, FALSE, PewterCity_Gym_EventScript_NoRoomForReward
+	msgbox PewterCity_Gym_Text_BrockRematchBeforeReward, MSGBOX_DEFAULT
+	giveitem ITEM_WEAKNESS_POLICY
+	msgbox PewterCity_Gym_Text_BrockRematchAfterReward, MSGBOX_DEFAULT
+	setflag FLAG_REMATCH_BROCK
+	msgbox PewterCity_Gym_Text_BrockRematchPostBattle, MSGBOX_DEFAULT
+	msgbox PewterCity_Gym_Text_OfferPCRetrieve, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq PewterCity_Gym_EventScript_BrockPostRematchBattle
+	special ShowPokemonStorageSystemPC
+	waitstate
+	goto PewterCity_Gym_EventScript_BrockPostRematchBattle
+
+PewterCity_Gym_EventScript_BrockPostRematchBattle::
+	msgbox PewterCity_Gym_Text_BrockPostRematch, MSGBOX_DEFAULT
+	release
+	end
+
+PewterCity_Gym_EventScript_RefusedRematch::
+	msgbox PewterCity_Gym_Text_RefusedRematch, MSGBOX_DEFAULT
+	release
+	end
+
+PewterCity_Gym_EventScript_StillNot4::
+	msgbox PewterCity_Gym_Text_StillNot4, MSGBOX_DEFAULT
+	release
+	end
+
+PewterCity_Gym_EventScript_NoRoomForReward::
+	msgbox PewterCity_Gym_Text_DontHaveRoomForThis, MSGBOX_DEFAULT
+	release
+	end
+
+@Last line related to Brock
 
 PewterCity_Gym_EventScript_Liam::
 	trainerbattle_single TRAINER_CAMPER_LIAM, PewterCity_Gym_Text_LiamIntro, PewterCity_Gym_Text_LiamDefeat

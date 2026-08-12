@@ -203,36 +203,40 @@ VermilionCity_Gym_EventScript_SetBeamsOn::
 	setmetatile 7, 7, METATILE_VermilionGym_Beam_Node_BottomRight_On, 1
 	return
 
-VermilionCity_Gym_EventScript_LtSurge::
-	famechecker FAMECHECKER_LTSURGE, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
-	
-    goto_if_set FLAG_DEFEATED_LT_SURGE, VermilionCity_Gym_EventScript_LtSurgePostBattle
+@First line related to Lt Surge
 
-    getpartysize
+VermilionCity_Gym_EventScript_LtSurge::
+	lock
+	faceplayer
+	famechecker FAMECHECKER_LTSURGE, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
+	goto_if_unset FLAG_DEFEATED_LT_SURGE, VermilionCity_Gym_EventScript_LtSurgeFirstBattle
+	goto_if_unset FLAG_SYS_GAME_CLEAR, VermilionCity_Gym_EventScript_LtSurgePostBattle
+	goto_if_unset FLAG_SYS_CAN_LINK_WITH_RS, VermilionCity_Gym_EventScript_LtSurgePostBattle
+	goto_if_unset FLAG_REMATCH_SURGE, VermilionCity_Gym_EventScript_LtSurgeRematchOffer
+	goto VermilionCity_Gym_EventScript_LtSurgePostRematchBattle
+
+VermilionCity_Gym_EventScript_LtSurgeFirstBattle::
+	getpartysize
 	compare VAR_RESULT, 3
 	goto_if_eq VermilionCity_Gym_EventScript_StartBattle
-
 	msgbox VermilionCity_Gym_Text_LtSurgeIntro, MSGBOX_DEFAULT
 	msgbox VermilionCity_Gym_Text_RulesExplain, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq VermilionCity_Gym_EventScript_Refused
-
 	special ShowPokemonStorageSystemPC
-	waitstate 
-
+	waitstate
 	getpartysize
 	compare VAR_RESULT, 3
 	goto_if_eq VermilionCity_Gym_EventScript_StartBattle_FromPC
-
 	goto VermilionCity_Gym_EventScript_StillNot3
 
 VermilionCity_Gym_EventScript_StartBattle::
-	trainerbattle_single TRAINER_LEADER_LT_SURGE, VermilionCity_Gym_Text_LtSurgeIntro, VermilionCity_Gym_Text_LtSurgeDefeat, VermilionCity_Gym_EventScript_DefeatedLtSurge, NO_MUSIC
+	trainerbattle_single TRAINER_LEADER_LT_SURGE, VermilionCity_Gym_Text_LtSurgeIntro, VermilionCity_Gym_Text_LtSurgeDefeat, VermilionCity_Gym_EventScript_DefeatedLtSurge, TRUE
 	release
 	end
 
 VermilionCity_Gym_EventScript_StartBattle_FromPC::
-	trainerbattle_single TRAINER_LEADER_LT_SURGE, VermilionCity_Gym_Text_LtSurgeReady, VermilionCity_Gym_Text_LtSurgeDefeat, VermilionCity_Gym_EventScript_DefeatedLtSurge, NO_MUSIC
+	trainerbattle_single TRAINER_LEADER_LT_SURGE, VermilionCity_Gym_Text_LtSurgeReady, VermilionCity_Gym_Text_LtSurgeDefeat, VermilionCity_Gym_EventScript_DefeatedLtSurge, TRUE
 	release
 	end
 
@@ -243,26 +247,28 @@ VermilionCity_Gym_EventScript_DefeatedLtSurge::
 	setflag FLAG_DEFEATED_LT_SURGE
 	setflag FLAG_BADGE03_GET
 	set_gym_trainers 3
+	msgbox VermilionCity_Gym_Text_BadgeDelivery1, MSGBOX_DEFAULT
+	playfanfare MUS_OBTAIN_BADGE
+	msgbox VermilionCity_Gym_Text_BadgeDelivery2, MSGBOX_DEFAULT
+	waitfanfare
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox VermilionCity_Gym_Text_BadgeDelivery3, MSGBOX_DEFAULT
+	msgbox VermilionCity_Gym_Text_TakeThisWithYou, MSGBOX_DEFAULT
 	goto VermilionCity_Gym_EventScript_GiveTM34
 	end
 
 VermilionCity_Gym_EventScript_GiveTM34::
-	msgbox VermilionCity_Gym_Text_ExplainThunderBadgeTakeThis, MSGBOX_DEFAULT
 	checkitemspace ITEM_TM34
 	goto_if_eq VAR_RESULT, FALSE, VermilionCity_Gym_EventScript_NoRoomForTM34
 	giveitem_msg VermilionCity_Gym_Text_ReceivedTM34FromLtSurge, ITEM_TM34
 	setflag FLAG_GOT_TM34_FROM_SURGE
 	msgbox VermilionCity_Gym_Text_ExplainTM34, MSGBOX_DEFAULT
-	
-    msgbox VermilionCity_Gym_Text_OfferPCRetrieve, MSGBOX_YESNO
+	msgbox VermilionCity_Gym_Text_OfferPCRetrieve, MSGBOX_YESNO
 	compare VAR_RESULT, NO
-	goto_if_eq VermilionCity_Gym_EventScript_EndInteract
+	goto_if_eq VermilionCity_Gym_EventScript_LtSurgePostBattle
 	special ShowPokemonStorageSystemPC
 	waitstate
-
-VermilionCity_Gym_EventScript_EndInteract::
-	release
-	end
+	goto VermilionCity_Gym_EventScript_LtSurgePostBattle
 
 VermilionCity_Gym_EventScript_LtSurgePostBattle::
 	goto_if_unset FLAG_GOT_TM34_FROM_SURGE, VermilionCity_Gym_EventScript_GiveTM34
@@ -284,6 +290,68 @@ VermilionCity_Gym_EventScript_StillNot3::
 	msgbox VermilionCity_Gym_Text_StillNot3, MSGBOX_DEFAULT
 	release
 	end
+
+VermilionCity_Gym_EventScript_LtSurgeRematchOffer::
+	getpartysize
+	compare VAR_RESULT, 4
+	goto_if_eq VermilionCity_Gym_EventScript_StartRematch
+	msgbox VermilionCity_Gym_Text_LtSurgeRematchIntro, MSGBOX_DEFAULT
+	msgbox VermilionCity_Gym_Text_LtSurgeRematchRules, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq VermilionCity_Gym_EventScript_RefusedRematch
+	special ShowPokemonStorageSystemPC
+	waitstate
+	getpartysize
+	compare VAR_RESULT, 4
+	goto_if_eq VermilionCity_Gym_EventScript_StartRematch_FromPC
+	goto VermilionCity_Gym_EventScript_StillNot4
+
+VermilionCity_Gym_EventScript_StartRematch::
+	trainerbattle_double TRAINER_LEADER_SURGE_REMATCH, VermilionCity_Gym_Text_LtSurgeRematchIntro, VermilionCity_Gym_Text_LtSurgeRematchDefeat, VermilionCity_Gym_RematchNotEnoughPlaceholder, VermilionCity_Gym_EventScript_LtSurgeRematchWon, TRUE
+	release
+	end
+
+VermilionCity_Gym_EventScript_StartRematch_FromPC::
+	trainerbattle_double TRAINER_LEADER_SURGE_REMATCH, VermilionCity_Gym_Text_LtSurgeRematchReady, VermilionCity_Gym_Text_LtSurgeRematchDefeat, VermilionCity_Gym_RematchNotEnoughPlaceholder, VermilionCity_Gym_EventScript_LtSurgeRematchWon, TRUE
+	release
+	end
+
+VermilionCity_Gym_EventScript_LtSurgeRematchWon::
+	checkitemspace ITEM_CHOICE_SPECS
+	goto_if_eq VAR_RESULT, FALSE, VermilionCity_Gym_EventScript_NoRoomForReward
+	msgbox VermilionCity_Gym_Text_LtSurgeRematchBeforeReward, MSGBOX_DEFAULT
+	giveitem ITEM_CHOICE_SPECS
+	msgbox VermilionCity_Gym_Text_LtSurgeRematchAfterReward, MSGBOX_DEFAULT
+	setflag FLAG_REMATCH_SURGE
+	msgbox VermilionCity_Gym_Text_LtSurgeRematchPostBattle, MSGBOX_DEFAULT
+	msgbox VermilionCity_Gym_Text_OfferPCRetrieve, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq VermilionCity_Gym_EventScript_LtSurgePostRematchBattle
+	special ShowPokemonStorageSystemPC
+	waitstate
+	goto VermilionCity_Gym_EventScript_LtSurgePostRematchBattle
+
+VermilionCity_Gym_EventScript_LtSurgePostRematchBattle::
+	msgbox VermilionCity_Gym_Text_LtSurgePostRematch, MSGBOX_DEFAULT
+	release
+	end
+
+VermilionCity_Gym_EventScript_RefusedRematch::
+	msgbox VermilionCity_Gym_Text_RefusedRematch, MSGBOX_DEFAULT
+	release
+	end
+
+VermilionCity_Gym_EventScript_StillNot4::
+	msgbox VermilionCity_Gym_Text_StillNot4, MSGBOX_DEFAULT
+	release
+	end
+
+VermilionCity_Gym_EventScript_NoRoomForReward::
+	msgbox VermilionCity_Gym_Text_MakeRoomInYourBag, MSGBOX_DEFAULT
+	release
+	end
+
+@Last line related to Lt Surge
 
 VermilionCity_Gym_EventScript_ShowOaksAide::
 	clearflag FLAG_HIDE_VERMILION_CITY_OAKS_AIDE

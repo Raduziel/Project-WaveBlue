@@ -28,48 +28,34 @@ Route25_EventScript_BillStop_Trigger::
     applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
     waitmovement 0
     waitse
-    
     msgbox Route25_Text_WaitAMoment, MSGBOX_DEFAULT
     closemessage
-    
     applymovement OBJ_EVENT_ID_PLAYER, Movement_PlayerStepBack
     waitmovement 0
-    
     playse SE_EXIT
     opendoor 51, 4
     waitdooranim
-    
     addobject LOCALID_BILL_OUTSIDE
     applymovement LOCALID_BILL_OUTSIDE, Movement_BillStepsOut
     waitmovement 0
-    
     closedoor 51, 4
     waitdooranim
-    
     msgbox Route25_Text_BillIntro, MSGBOX_DEFAULT
-    
     giveitem ITEM_POKEMON_BOX_LINK, 1
     waitfanfare
-    
     textcolor NPC_TEXT_COLOR_MALE
     msgbox Route25_Text_BillExplain, MSGBOX_DEFAULT
     closemessage
-    
     playse SE_EXIT
     opendoor 51, 4
     waitdooranim
-    
     applymovement LOCALID_BILL_OUTSIDE, Movement_BillReturns
     waitmovement 0
-    
     removeobject LOCALID_BILL_OUTSIDE
-    
     closedoor 51, 4
     waitdooranim
-    
     setvar VAR_BOXLINK_BILL, 2
     setflag FLAG_HIDE_ROUTE25_BILL
-    
     releaseall
     end
 

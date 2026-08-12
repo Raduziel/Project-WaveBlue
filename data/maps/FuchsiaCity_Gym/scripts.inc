@@ -2,47 +2,49 @@ FuchsiaCity_Gym_MapScripts::
 	.byte 0
 
 FuchsiaCity_Gym_EventScript_Koga::
+	lock
+	faceplayer
 	famechecker FAMECHECKER_KOGA, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
-	
-    goto_if_set FLAG_DEFEATED_KOGA, FuchsiaCity_Gym_EventScript_KogaPostBattle
+	goto_if_unset FLAG_DEFEATED_KOGA, FuchsiaCity_Gym_EventScript_KogaFirstBattle
+	goto_if_unset FLAG_SYS_GAME_CLEAR, FuchsiaCity_Gym_EventScript_KogaPostBattle
+	goto_if_unset FLAG_SYS_CAN_LINK_WITH_RS, FuchsiaCity_Gym_EventScript_KogaPostBattle
+	goto_if_unset FLAG_REMATCH_KOGA, FuchsiaCity_Gym_EventScript_KogaRematchOffer
+	goto FuchsiaCity_Gym_EventScript_KogaPostRematchBattle
 
-    getpartysize
+FuchsiaCity_Gym_EventScript_KogaFirstBattle::
+	getpartysize
 	compare VAR_RESULT, 3
 	goto_if_eq FuchsiaCity_Gym_EventScript_StartBattle
-
 	msgbox FuchsiaCity_Gym_Text_KogaIntro, MSGBOX_DEFAULT
 	msgbox FuchsiaCity_Gym_Text_RulesExplain, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq FuchsiaCity_Gym_EventScript_Refused
-
 	special ShowPokemonStorageSystemPC
-	waitstate 
-
+	waitstate
 	getpartysize
 	compare VAR_RESULT, 3
 	goto_if_eq FuchsiaCity_Gym_EventScript_StartBattle_FromPC
-
 	goto FuchsiaCity_Gym_EventScript_StillNot3
 
 FuchsiaCity_Gym_EventScript_StartBattle::
 	goto_if_set FLAG_DEFEATED_SABRINA, FuchsiaCity_Gym_EventScript_StartBattle_PostSabrina
-	trainerbattle_single TRAINER_LEADER_KOGA, FuchsiaCity_Gym_Text_KogaIntro, FuchsiaCity_Gym_Text_KogaDefeat, FuchsiaCity_Gym_EventScript_DefeatedKoga, NO_MUSIC
+	trainerbattle_single TRAINER_LEADER_KOGA, FuchsiaCity_Gym_Text_KogaIntro, FuchsiaCity_Gym_Text_KogaDefeat, FuchsiaCity_Gym_EventScript_DefeatedKoga, TRUE
 	release
 	end
 
 FuchsiaCity_Gym_EventScript_StartBattle_PostSabrina::
-	trainerbattle_single TRAINER_LEADER_KOGA_2, FuchsiaCity_Gym_Text_KogaIntro, FuchsiaCity_Gym_Text_KogaDefeat, FuchsiaCity_Gym_EventScript_DefeatedKoga, NO_MUSIC
+	trainerbattle_single TRAINER_LEADER_KOGA_2, FuchsiaCity_Gym_Text_KogaIntro, FuchsiaCity_Gym_Text_KogaDefeat, FuchsiaCity_Gym_EventScript_DefeatedKoga, TRUE
 	release
 	end
 
 FuchsiaCity_Gym_EventScript_StartBattle_FromPC::
 	goto_if_set FLAG_DEFEATED_SABRINA, FuchsiaCity_Gym_EventScript_StartBattle_FromPC_PostSabrina
-	trainerbattle_single TRAINER_LEADER_KOGA, FuchsiaCity_Gym_Text_KogaReady, FuchsiaCity_Gym_Text_KogaDefeat, FuchsiaCity_Gym_EventScript_DefeatedKoga, NO_MUSIC
+	trainerbattle_single TRAINER_LEADER_KOGA, FuchsiaCity_Gym_Text_KogaReady, FuchsiaCity_Gym_Text_KogaDefeat, FuchsiaCity_Gym_EventScript_DefeatedKoga, TRUE
 	release
 	end
 
 FuchsiaCity_Gym_EventScript_StartBattle_FromPC_PostSabrina::
-	trainerbattle_single TRAINER_LEADER_KOGA_2, FuchsiaCity_Gym_Text_KogaReady, FuchsiaCity_Gym_Text_KogaDefeat, FuchsiaCity_Gym_EventScript_DefeatedKoga, NO_MUSIC
+	trainerbattle_single TRAINER_LEADER_KOGA_2, FuchsiaCity_Gym_Text_KogaReady, FuchsiaCity_Gym_Text_KogaDefeat, FuchsiaCity_Gym_EventScript_DefeatedKoga, TRUE
 	release
 	end
 
@@ -52,35 +54,37 @@ FuchsiaCity_Gym_EventScript_DefeatedKoga::
 	setflag FLAG_DEFEATED_KOGA
 	setflag FLAG_BADGE05_GET
 	set_gym_trainers 5
+	msgbox FuchsiaCity_Gym_Text_BadgeDelivery1, MSGBOX_DEFAULT
+	playfanfare MUS_OBTAIN_BADGE
+	msgbox FuchsiaCity_Gym_Text_BadgeDelivery2, MSGBOX_DEFAULT
+	waitfanfare
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox FuchsiaCity_Gym_Text_BadgeDelivery3, MSGBOX_DEFAULT
+	msgbox FuchsiaCity_Gym_Text_TakeThisWithYou, MSGBOX_DEFAULT
 	goto FuchsiaCity_Gym_EventScript_GiveTM06
 	end
 
 FuchsiaCity_Gym_EventScript_GiveTM06::
-	msgbox FuchsiaCity_Gym_Text_KogaExplainSoulBadge
 	checkitemspace ITEM_TM06
 	goto_if_eq VAR_RESULT, FALSE, FuchsiaCity_Gym_EventScript_NoRoomForTM06
 	giveitem_msg FuchsiaCity_Gym_Text_ReceivedTM06FromKoga, ITEM_TM06
 	setflag FLAG_GOT_TM06_FROM_KOGA
-	msgbox FuchsiaCity_Gym_Text_KogaExplainTM06
-	
-    msgbox FuchsiaCity_Gym_Text_OfferPCRetrieve, MSGBOX_YESNO
+	msgbox FuchsiaCity_Gym_Text_KogaExplainTM06, MSGBOX_DEFAULT
+	msgbox FuchsiaCity_Gym_Text_OfferPCRetrieve, MSGBOX_YESNO
 	compare VAR_RESULT, NO
-	goto_if_eq FuchsiaCity_Gym_EventScript_EndInteract
+	goto_if_eq FuchsiaCity_Gym_EventScript_KogaPostBattle
 	special ShowPokemonStorageSystemPC
 	waitstate
-
-FuchsiaCity_Gym_EventScript_EndInteract::
-	release
-	end
+	goto FuchsiaCity_Gym_EventScript_KogaPostBattle
 
 FuchsiaCity_Gym_EventScript_KogaPostBattle::
 	goto_if_unset FLAG_GOT_TM06_FROM_KOGA, FuchsiaCity_Gym_EventScript_GiveTM06
-	msgbox FuchsiaCity_Gym_Text_KogaPostBattle
+	msgbox FuchsiaCity_Gym_Text_KogaPostBattle, MSGBOX_DEFAULT
 	release
 	end
 
 FuchsiaCity_Gym_EventScript_NoRoomForTM06::
-	msgbox FuchsiaCity_Gym_Text_MakeSpaceForThis
+	msgbox FuchsiaCity_Gym_Text_MakeSpaceForThis, MSGBOX_DEFAULT
 	release
 	end
 
@@ -93,6 +97,68 @@ FuchsiaCity_Gym_EventScript_StillNot3::
 	msgbox FuchsiaCity_Gym_Text_StillNot3, MSGBOX_DEFAULT
 	release
 	end
+
+FuchsiaCity_Gym_EventScript_KogaRematchOffer::
+	getpartysize
+	compare VAR_RESULT, 4
+	goto_if_eq FuchsiaCity_Gym_EventScript_StartRematch
+	msgbox FuchsiaCity_Gym_Text_KogaRematchIntro, MSGBOX_DEFAULT
+	msgbox FuchsiaCity_Gym_Text_KogaRematchRules, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq FuchsiaCity_Gym_EventScript_RefusedRematch
+	special ShowPokemonStorageSystemPC
+	waitstate
+	getpartysize
+	compare VAR_RESULT, 4
+	goto_if_eq FuchsiaCity_Gym_EventScript_StartRematch_FromPC
+	goto FuchsiaCity_Gym_EventScript_StillNot4
+
+FuchsiaCity_Gym_EventScript_StartRematch::
+	trainerbattle_double TRAINER_LEADER_KOGA_REMATCH, FuchsiaCity_Gym_Text_KogaRematchIntro, FuchsiaCity_Gym_Text_KogaRematchDefeat, FuchsiaCity_Gym_RematchNotEnoughPlaceholder, FuchsiaCity_Gym_EventScript_KogaRematchWon, TRUE
+	release
+	end
+
+FuchsiaCity_Gym_EventScript_StartRematch_FromPC::
+	trainerbattle_double TRAINER_LEADER_KOGA_REMATCH, FuchsiaCity_Gym_Text_KogaRematchReady, FuchsiaCity_Gym_Text_KogaRematchDefeat, FuchsiaCity_Gym_RematchNotEnoughPlaceholder, FuchsiaCity_Gym_EventScript_KogaRematchWon, TRUE
+	release
+	end
+
+FuchsiaCity_Gym_EventScript_KogaRematchWon::
+	checkitemspace ITEM_FOCUS_SASH
+	goto_if_eq VAR_RESULT, FALSE, FuchsiaCity_Gym_EventScript_NoRoomForReward
+	msgbox FuchsiaCity_Gym_Text_KogaRematchBeforeReward, MSGBOX_DEFAULT
+	giveitem ITEM_FOCUS_SASH
+	msgbox FuchsiaCity_Gym_Text_KogaRematchAfterReward, MSGBOX_DEFAULT
+	setflag FLAG_REMATCH_KOGA
+	msgbox FuchsiaCity_Gym_Text_KogaRematchPostBattle, MSGBOX_DEFAULT
+	msgbox FuchsiaCity_Gym_Text_OfferPCRetrieve, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq FuchsiaCity_Gym_EventScript_KogaPostRematchBattle
+	special ShowPokemonStorageSystemPC
+	waitstate
+	goto FuchsiaCity_Gym_EventScript_KogaPostRematchBattle
+
+FuchsiaCity_Gym_EventScript_KogaPostRematchBattle::
+	msgbox FuchsiaCity_Gym_Text_KogaPostRematch, MSGBOX_DEFAULT
+	release
+	end
+
+FuchsiaCity_Gym_EventScript_RefusedRematch::
+	msgbox FuchsiaCity_Gym_Text_RefusedRematch, MSGBOX_DEFAULT
+	release
+	end
+
+FuchsiaCity_Gym_EventScript_StillNot4::
+	msgbox FuchsiaCity_Gym_Text_StillNot4, MSGBOX_DEFAULT
+	release
+	end
+
+FuchsiaCity_Gym_EventScript_NoRoomForReward::
+	msgbox FuchsiaCity_Gym_Text_MakeSpaceForThis, MSGBOX_DEFAULT
+	release
+	end
+
+@Last line related to Koga
 
 FuchsiaCity_Gym_EventScript_Phil::
 	trainerbattle_single TRAINER_TAMER_PHIL, FuchsiaCity_Gym_Text_PhilIntro, FuchsiaCity_Gym_Text_PhilDefeat

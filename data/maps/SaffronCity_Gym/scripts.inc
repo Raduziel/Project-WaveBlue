@@ -2,47 +2,49 @@ SaffronCity_Gym_MapScripts::
 	.byte 0
 
 SaffronCity_Gym_EventScript_Sabrina::
+	lock
+	faceplayer
 	famechecker FAMECHECKER_SABRINA, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
-	
-	goto_if_set FLAG_DEFEATED_SABRINA, SaffronCity_Gym_EventScript_SabrinaPostBattle
+	goto_if_unset FLAG_DEFEATED_SABRINA, SaffronCity_Gym_EventScript_SabrinaFirstBattle
+	goto_if_unset FLAG_SYS_GAME_CLEAR, SaffronCity_Gym_EventScript_SabrinaPostBattle
+	goto_if_unset FLAG_SYS_CAN_LINK_WITH_RS, SaffronCity_Gym_EventScript_SabrinaPostBattle
+	goto_if_unset FLAG_REMATCH_SABRINA, SaffronCity_Gym_EventScript_SabrinaRematchOffer
+	goto SaffronCity_Gym_EventScript_SabrinaPostRematchBattle
 
+SaffronCity_Gym_EventScript_SabrinaFirstBattle::
 	getpartysize
 	compare VAR_RESULT, 3
 	goto_if_eq SaffronCity_Gym_EventScript_StartBattle
-
 	msgbox SaffronCity_Gym_Text_SabrinaIntro, MSGBOX_DEFAULT
 	msgbox SaffronCity_Gym_Text_RulesExplain, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq SaffronCity_Gym_EventScript_Refused
-
 	special ShowPokemonStorageSystemPC
-	waitstate 
-
+	waitstate
 	getpartysize
 	compare VAR_RESULT, 3
 	goto_if_eq SaffronCity_Gym_EventScript_StartBattle_FromPC
-
 	goto SaffronCity_Gym_EventScript_StillNot3
 
 SaffronCity_Gym_EventScript_StartBattle::
 	goto_if_set FLAG_DEFEATED_KOGA, SaffronCity_Gym_EventScript_StartBattle_PostKoga
-	trainerbattle_single TRAINER_LEADER_SABRINA, SaffronCity_Gym_Text_SabrinaIntro, SaffronCity_Gym_Text_SabrinaDefeat, SaffronCity_Gym_EventScript_DefeatedSabrina, NO_MUSIC
+	trainerbattle_single TRAINER_LEADER_SABRINA, SaffronCity_Gym_Text_SabrinaIntro, SaffronCity_Gym_Text_SabrinaDefeat, SaffronCity_Gym_EventScript_DefeatedSabrina, TRUE
 	release
 	end
 
 SaffronCity_Gym_EventScript_StartBattle_PostKoga::
-	trainerbattle_single TRAINER_LEADER_SABRINA_2, SaffronCity_Gym_Text_SabrinaIntro, SaffronCity_Gym_Text_SabrinaDefeat, SaffronCity_Gym_EventScript_DefeatedSabrina, NO_MUSIC
+	trainerbattle_single TRAINER_LEADER_SABRINA_2, SaffronCity_Gym_Text_SabrinaIntro, SaffronCity_Gym_Text_SabrinaDefeat, SaffronCity_Gym_EventScript_DefeatedSabrina, TRUE
 	release
 	end
 
 SaffronCity_Gym_EventScript_StartBattle_FromPC::
 	goto_if_set FLAG_DEFEATED_KOGA, SaffronCity_Gym_EventScript_StartBattle_FromPC_PostKoga
-	trainerbattle_single TRAINER_LEADER_SABRINA, SaffronCity_Gym_Text_SabrinaReady, SaffronCity_Gym_Text_SabrinaDefeat, SaffronCity_Gym_EventScript_DefeatedSabrina, NO_MUSIC
+	trainerbattle_single TRAINER_LEADER_SABRINA, SaffronCity_Gym_Text_SabrinaReady, SaffronCity_Gym_Text_SabrinaDefeat, SaffronCity_Gym_EventScript_DefeatedSabrina, TRUE
 	release
 	end
 
 SaffronCity_Gym_EventScript_StartBattle_FromPC_PostKoga::
-	trainerbattle_single TRAINER_LEADER_SABRINA_2, SaffronCity_Gym_Text_SabrinaReady, SaffronCity_Gym_Text_SabrinaDefeat, SaffronCity_Gym_EventScript_DefeatedSabrina, NO_MUSIC
+	trainerbattle_single TRAINER_LEADER_SABRINA_2, SaffronCity_Gym_Text_SabrinaReady, SaffronCity_Gym_Text_SabrinaDefeat, SaffronCity_Gym_EventScript_DefeatedSabrina, TRUE
 	release
 	end
 
@@ -53,26 +55,28 @@ SaffronCity_Gym_EventScript_DefeatedSabrina::
 	setflag FLAG_DEFEATED_SABRINA
 	setflag FLAG_BADGE06_GET
 	set_gym_trainers 6
+	msgbox SaffronCity_Gym_Text_BadgeDelivery1, MSGBOX_DEFAULT
+	playfanfare MUS_OBTAIN_BADGE
+	msgbox SaffronCity_Gym_Text_BadgeDelivery2, MSGBOX_DEFAULT
+	waitfanfare
+	textcolor NPC_TEXT_COLOR_FEMALE
+	msgbox SaffronCity_Gym_Text_BadgeDelivery3, MSGBOX_DEFAULT
+	msgbox SaffronCity_Gym_Text_TakeThisWithYou, MSGBOX_DEFAULT
 	goto SaffronCity_Gym_EventScript_GiveTM04
 	end
 
 SaffronCity_Gym_EventScript_GiveTM04::
-	msgbox SaffronCity_Gym_Text_ExplainMarshBadgeTakeThis, MSGBOX_DEFAULT
 	checkitemspace ITEM_TM04
 	goto_if_eq VAR_RESULT, FALSE, SaffronCity_Gym_EventScript_NoRoomForTM04
 	giveitem_msg SaffronCity_Gym_Text_ReceivedTM04FromSabrina, ITEM_TM04
 	setflag FLAG_GOT_TM04_FROM_SABRINA
 	msgbox SaffronCity_Gym_Text_ExplainTM04, MSGBOX_DEFAULT
-	
 	msgbox SaffronCity_Gym_Text_OfferPCRetrieve, MSGBOX_YESNO
 	compare VAR_RESULT, NO
-	goto_if_eq SaffronCity_Gym_EventScript_EndInteract
+	goto_if_eq SaffronCity_Gym_EventScript_SabrinaPostBattle
 	special ShowPokemonStorageSystemPC
 	waitstate
-
-SaffronCity_Gym_EventScript_EndInteract::
-	release
-	end
+	goto SaffronCity_Gym_EventScript_SabrinaPostBattle
 
 SaffronCity_Gym_EventScript_SabrinaPostBattle::
 	goto_if_unset FLAG_GOT_TM04_FROM_SABRINA, SaffronCity_Gym_EventScript_GiveTM04
@@ -94,6 +98,68 @@ SaffronCity_Gym_EventScript_StillNot3::
 	msgbox SaffronCity_Gym_Text_StillNot3, MSGBOX_DEFAULT
 	release
 	end
+
+SaffronCity_Gym_EventScript_SabrinaRematchOffer::
+	getpartysize
+	compare VAR_RESULT, 4
+	goto_if_eq SaffronCity_Gym_EventScript_StartRematch
+	msgbox SaffronCity_Gym_Text_SabrinaRematchIntro, MSGBOX_DEFAULT
+	msgbox SaffronCity_Gym_Text_SabrinaRematchRules, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq SaffronCity_Gym_EventScript_RefusedRematch
+	special ShowPokemonStorageSystemPC
+	waitstate
+	getpartysize
+	compare VAR_RESULT, 4
+	goto_if_eq SaffronCity_Gym_EventScript_StartRematch_FromPC
+	goto SaffronCity_Gym_EventScript_StillNot4
+
+SaffronCity_Gym_EventScript_StartRematch::
+	trainerbattle_double TRAINER_LEADER_SABRINA_REMATCH, SaffronCity_Gym_Text_SabrinaRematchIntro, SaffronCity_Gym_Text_SabrinaRematchDefeat, SaffronCity_Gym_RematchNotEnoughPlaceholder, SaffronCity_Gym_EventScript_SabrinaRematchWon, TRUE
+	release
+	end
+
+SaffronCity_Gym_EventScript_StartRematch_FromPC::
+	trainerbattle_double TRAINER_LEADER_SABRINA_REMATCH, SaffronCity_Gym_Text_SabrinaRematchReady, SaffronCity_Gym_Text_SabrinaRematchDefeat, SaffronCity_Gym_RematchNotEnoughPlaceholder, SaffronCity_Gym_EventScript_SabrinaRematchWon, TRUE
+	release
+	end
+
+SaffronCity_Gym_EventScript_SabrinaRematchWon::
+	checkitemspace ITEM_LIFE_ORB
+	goto_if_eq VAR_RESULT, FALSE, SaffronCity_Gym_EventScript_NoRoomForReward
+	msgbox SaffronCity_Gym_Text_SabrinaRematchBeforeReward, MSGBOX_DEFAULT
+	giveitem ITEM_LIFE_ORB
+	msgbox SaffronCity_Gym_Text_SabrinaRematchAfterReward, MSGBOX_DEFAULT
+	setflag FLAG_REMATCH_SABRINA
+	msgbox SaffronCity_Gym_Text_SabrinaRematchPostBattle, MSGBOX_DEFAULT
+	msgbox SaffronCity_Gym_Text_OfferPCRetrieve, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq SaffronCity_Gym_EventScript_SabrinaPostRematchBattle
+	special ShowPokemonStorageSystemPC
+	waitstate
+	goto SaffronCity_Gym_EventScript_SabrinaPostRematchBattle
+
+SaffronCity_Gym_EventScript_SabrinaPostRematchBattle::
+	msgbox SaffronCity_Gym_Text_SabrinaPostRematch, MSGBOX_DEFAULT
+	release
+	end
+
+SaffronCity_Gym_EventScript_RefusedRematch::
+	msgbox SaffronCity_Gym_Text_RefusedRematch, MSGBOX_DEFAULT
+	release
+	end
+
+SaffronCity_Gym_EventScript_StillNot4::
+	msgbox SaffronCity_Gym_Text_StillNot4, MSGBOX_DEFAULT
+	release
+	end
+
+SaffronCity_Gym_EventScript_NoRoomForReward::
+	msgbox SaffronCity_Gym_Text_BagFullOfOtherItems, MSGBOX_DEFAULT
+	release
+	end
+
+@Last line about Sabrina
 
 SaffronCity_Gym_EventScript_Johan::
 	trainerbattle_single TRAINER_PSYCHIC_JOHAN, SaffronCity_Gym_Text_JohanIntro, SaffronCity_Gym_Text_JohanDefeat

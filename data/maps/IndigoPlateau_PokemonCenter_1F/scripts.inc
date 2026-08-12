@@ -51,16 +51,14 @@ IndigoPlateau_PokemonCenter_1F_EventScript_Clerk::
 
 	.align 2
 IndigoPlateau_PokemonCenter_1F_Items::
-	.2byte ITEM_GREAT_BALL
 	.2byte ITEM_ULTRA_BALL
 	.2byte ITEM_FULL_HEAL
 	.2byte ITEM_FULL_RESTORE
 	.2byte ITEM_MAX_POTION
-	.2byte ITEM_REVIVE
 	.2byte ITEM_MAX_REVIVE
 	.2byte ITEM_MAX_REPEL
 	.2byte ITEM_MAX_LURE
-	.2byte ITEM_ETHER
+	.2byte ITEM_MAX_ELIXIR
 	.2byte ITEM_MAX_ETHER
 	.2byte ITEM_NONE
 	release
@@ -78,25 +76,76 @@ IndigoPlateau_PokemonCenter_1F_EventScript_CapCandyGiver::
 	faceplayer
 	goto_if_set FLAG_GOT_CAP_CANDY, IndigoPlateau_PokemonCenter_1F_EventScript_CapCandyAlreadyGot
 	goto_if_set FLAG_TOGGLE_LEVEL_CAP, IndigoPlateau_PokemonCenter_1F_EventScript_CapCandyNoCapDeny
+	textcolor NPC_TEXT_COLOR_FEMALE
 	msgbox IndigoPlateau_PokemonCenter_1F_Text_CapCandyGiverPre1, MSGBOX_DEFAULT
+	checkitemspace ITEM_CAP_CANDY
+	goto_if_eq VAR_RESULT, FALSE, IndigoPlateau_PokemonCenter_1F_EventScript_CapCandyNoRoom
 	giveitem ITEM_CAP_CANDY
+	textcolor NPC_TEXT_COLOR_FEMALE
 	msgbox IndigoPlateau_PokemonCenter_1F_Text_CapCandyGiverGive, MSGBOX_DEFAULT
 	setflag FLAG_GOT_CAP_CANDY
 	release
 	end
 
 IndigoPlateau_PokemonCenter_1F_EventScript_CapCandyNoCapDeny::
+	textcolor NPC_TEXT_COLOR_FEMALE
 	msgbox IndigoPlateau_PokemonCenter_1F_Text_CapCandyGiverPre2, MSGBOX_DEFAULT
 	release
 	end
 
 IndigoPlateau_PokemonCenter_1F_EventScript_CapCandyAlreadyGot::
 	goto_if_set FLAG_TOGGLE_LEVEL_CAP, IndigoPlateau_PokemonCenter_1F_EventScript_CapCandyPostNoCap
+	textcolor NPC_TEXT_COLOR_FEMALE
 	msgbox IndigoPlateau_PokemonCenter_1F_Text_CapCandyGiverPostCap, MSGBOX_DEFAULT
 	release
 	end
 
 IndigoPlateau_PokemonCenter_1F_EventScript_CapCandyPostNoCap::
+	textcolor NPC_TEXT_COLOR_FEMALE
 	msgbox IndigoPlateau_PokemonCenter_1F_Text_CapCandyGiverPostNoCap, MSGBOX_DEFAULT
 	release
 	end
+
+IndigoPlateau_PokemonCenter_1F_EventScript_CapCandyTrigger::
+	goto_if_set FLAG_GOT_CAP_CANDY, IndigoPlateau_PokemonCenter_1F_EventScript_CapCandyTriggerDone
+	goto_if_set FLAG_TOGGLE_LEVEL_CAP, IndigoPlateau_PokemonCenter_1F_EventScript_CapCandyTriggerDone
+	setvar VAR_TEMP_0, 1
+	lockall
+	playse SE_PIN
+	applymovement LOCALID_CAP_CANDY_LADY, Common_Movement_ExclamationMark
+	waitmovement 0
+	delay 30
+	textcolor NPC_TEXT_COLOR_FEMALE
+	msgbox IndigoPlateau_PokemonCenter_1F_Text_CapCandyCallPlayer, MSGBOX_DEFAULT
+	closemessage
+	applymovement LOCALID_PLAYER, PlayerApproachCapCandyLady
+	waitmovement 0
+	call IndigoPlateau_PokemonCenter_1F_EventScript_CapCandyTryDeliver
+	releaseall
+	end
+
+IndigoPlateau_PokemonCenter_1F_EventScript_CapCandyTriggerDone::
+	end
+
+IndigoPlateau_PokemonCenter_1F_EventScript_CapCandyTryDeliver::
+	textcolor NPC_TEXT_COLOR_FEMALE
+	msgbox IndigoPlateau_PokemonCenter_1F_Text_CapCandyGiverPre1, MSGBOX_DEFAULT
+	checkitemspace ITEM_CAP_CANDY
+	goto_if_eq VAR_RESULT, FALSE, IndigoPlateau_PokemonCenter_1F_EventScript_CapCandyNoRoom
+	giveitem ITEM_CAP_CANDY
+	textcolor NPC_TEXT_COLOR_FEMALE
+	msgbox IndigoPlateau_PokemonCenter_1F_Text_CapCandyGiverGive, MSGBOX_DEFAULT
+	setflag FLAG_GOT_CAP_CANDY
+	return
+
+IndigoPlateau_PokemonCenter_1F_EventScript_CapCandyNoRoom::
+	textcolor NPC_TEXT_COLOR_FEMALE
+	msgbox IndigoPlateau_PokemonCenter_1F_Text_CapCandyGiverNoRoom, MSGBOX_DEFAULT
+	return
+
+PlayerApproachCapCandyLady::
+	walk_down
+	walk_left
+	walk_left
+	face_left
+	step_end

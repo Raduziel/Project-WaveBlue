@@ -1,37 +1,62 @@
 CeladonCity_Gym_Text_ErikaIntro::
-    .string "Hello…\n"
-    .string "Lovely weather, isn't it?\l"
+    .string "Hello… Lovely weather, isn't it?\n"
     .string "It's so pleasant…\p"
     .string "…Oh, dear…\n"
     .string "I must have dozed off. Welcome.\p"
     .string "My name is Erika.\n"
     .string "I am the Leader of Celadon Gym.\p"
-    .string "I am a student of the art of\n"
-    .string "flower arranging.\p"
-    .string "My Pokémon are solely of the\n"
-    .string "Grass type.\p"
+    .string "I am a student of the art of flower\n"
+    .string "arranging.\p"
+    .string "My Pokémon are solely of the Grass\n"
+    .string "type.\p"
     .string "…Oh, I'm sorry, I had no idea that\n"
     .string "you wished to challenge me.\p"
-    .string "Very well, but I shall not lose.{PLAY_BGM MUS_ENCOUNTER_GYM_LEADER}$"
+    .string "Very well, but I shall not lose.$"
+
+CeladonCity_Gym_Text_RulesExplain::
+    .string "Gym etiquette asks that challengers\n"
+    .string "bring exactly three Pokémon, however.\p"
+    .string "It would be unkind to let numbers\n"
+    .string "overwhelm my beautiful garden.\p"
+    .string "{COLOR DARK_GRAY}Do you want to open the Storage\n"
+    .string "System to organize your party?$"
+
+CeladonCity_Gym_Text_ErikaReady::
+    .string "You have arranged your party with\n"
+    .string "care. Good.\p"
+    .string "But a fine arrangement alone won't be\n"
+    .string "enough to best me.\p"
+    .string "Shall we begin?$"
+
+CeladonCity_Gym_Text_Refused::
+    .string "Please come back when you have\n"
+    .string "exactly three Pokémon.\p"
+    .string "My flowers will be waiting.$"
+
+CeladonCity_Gym_Text_StillNot3::
+    .string "Oh, my… You still don't have exactly\n"
+    .string "three Pokémon.\p"
+    .string "I cannot accept your challenge yet.$"
 
 CeladonCity_Gym_Text_ErikaDefeat::
-    .string "Oh!\n"
-    .string "I concede defeat.\l"
+    .string "Oh! I concede defeat.$"
+
+CeladonCity_Gym_Text_BadgeDelivery1::
     .string "You are remarkably strong.\p"
-    .string "I must confer on you the\n"
-    .string "Rainbow Badge.$"
+    .string "I must confer on you the Rainbow\n"
+    .string "Badge.$"
 
-CeladonCity_Gym_Text_ErikaPostBattle::
-    .string "You are cataloging Pokémon?\n"
-    .string "I must say I'm impressed.\p"
-    .string "I would never collect Pokémon if\n"
-    .string "they were unattractive.$"
+CeladonCity_Gym_Text_BadgeDelivery2::
+    .string "{COLOR DARK_GRAY}{PLAYER} received the Rainbow Badge\n"
+    .string "from Erika!$"
 
-CeladonCity_Gym_Text_ExplainRainbowBadgeTakeThis::
-    .string "The Rainbow Badge will make\n"
-    .string "Pokémon up to Lv. 50 obey.\p"
+CeladonCity_Gym_Text_BadgeDelivery3::
+    .string "The Rainbow Badge will make Pokémon\n"
+    .string "up to Lv. 50 obey.\p"
     .string "It also allows Pokémon to use\n"
-    .string "Strength in and out of battle.\p"
+    .string "Strength when out of battle.$"
+
+CeladonCity_Gym_Text_TakeThisWithYou::
     .string "Please also take this with you.$"
 
 CeladonCity_Gym_Text_ReceivedTM19FromErika::
@@ -40,41 +65,98 @@ CeladonCity_Gym_Text_ReceivedTM19FromErika::
 
 CeladonCity_Gym_Text_ExplainTM19::
     .string "TM19 contains Giga Drain.\p"
-    .string "Half the damage it inflicts is\n"
-    .string "drained to heal your Pokémon.\p"
+    .string "Half the damage it inflicts is drained\n"
+    .string "to heal your Pokémon.\p"
     .string "Wouldn't you agree that it's a\n"
     .string "wonderful move?$"
+
+CeladonCity_Gym_Text_ErikaPostBattle::
+    .string "You are cataloging Pokémon? I must\n"
+    .string "say I'm impressed.\p"
+    .string "I would never collect Pokémon if\n"
+    .string "they were unattractive.\p"
+    .string "In any case, you fought beautifully.$"
+
+CeladonCity_Gym_Text_ErikaRematchIntro::
+    .string "Oh… it's you.\p"
+    .string "The challenger who once stepped into\n"
+    .string "my garden.\p"
+    .string "How you have bloomed since then.\n"
+    .string "Champion now, and lovely to behold.\p"
+    .string "I have tended these grounds season\n"
+    .string "after season, waiting.\p"
+    .string "A gardener is patient. So am I.\p"
+    .string "And now the right season has come at\n"
+    .string "last.$"
+
+CeladonCity_Gym_Text_ErikaRematchRules::
+    .string "The League has asked us Leaders to\n"
+    .string "tend a new kind of battle.\p"
+    .string "They are calling it Double Battles:\n"
+    .string "Two Pokémon at each other's side.\p"
+    .string "There is a quiet harmony to it. Like\n"
+    .string "flowers sharing a single vase.\p"
+    .string "So bring me four you hold dear, and\n"
+    .string "see how they flourish together.\p"
+    .string "{COLOR DARK_GRAY}Do you want to open the Storage\n"
+    .string "System to organize your party?$"
+
+CeladonCity_Gym_Text_ErikaRematchReady::
+    .string "Your arrangement is complete. How\n"
+    .string "lovely.\p"
+    .string "But do not mistake my grace for\n"
+    .string "gentleness. Shall we?$"
+
+CeladonCity_Gym_Text_RefusedRematch::
+    .string "Leaving so soon?\p"
+    .string "A pity. I had hoped to see how you\n"
+    .string "have grown.\p"
+    .string "Return when your heart is set,\n"
+    .string "Champion. I shall be here.$"
+
+CeladonCity_Gym_Text_StillNot4::
+    .string "Oh, dear… You'd do well to gather\n"
+    .string "your thoughts before we begin.\p"
+    .string "Four Pokémon, no more, no fewer.$"
+
+CeladonCity_Gym_Text_ErikaRematchDefeat::
+    .string "Ah… I have lost.\p"
+    .string "And gracefully so. There is no shame in\n"
+    .string "falling to such strength.\p"
+    .string "You have grown magnificent, Champion.$"
+
+CeladonCity_Gym_Text_ErikaRematchBeforeReward::
+    .string "Such grace in battle calls for a\n"
+    .string "gift. Please, accept this.$"
+
+CeladonCity_Gym_Text_ErikaRematchAfterReward::
+    .string "It lends great power to a single\n"
+    .string "move, but there is a price.\p"
+    .string "To change it, you must withdraw your\n"
+    .string "Pokémon and return.$"
+
+CeladonCity_Gym_Text_ErikaRematchPostBattle::
+    .string "The seedling I once met has grown\n"
+    .string "into something truly wondrous.\p"
+    .string "You seem to carry Spring in your\n"
+    .string "heart, Champion.$"
+
+CeladonCity_Gym_Text_ErikaPostRematch::
+    .string "My garden is always open to you.\p"
+    .string "Just never forget, Champion: you reap\n"
+    .string "what you sow.$"
 
 CeladonCity_Gym_Text_ShouldMakeRoomForThis::
     .string "You should make room for this.$"
 
-CeladonCity_Gym_Text_RulesExplain::
-    .string "However, Gym battles require you to\n"
-    .string "use exactly three Pokémon.\p"
-    .string "It would be unfair to overwhelm my\n"
-    .string "plants with numbers.\p"
-    .string "{COLOR DARK_GRAY}Do you want to open the Storage\n"
-    .string "System to organize your party?$"
-
-CeladonCity_Gym_Text_Refused::
-    .string "Please come back when you have\n"
-    .string "exactly three Pokémon.\p"
-    .string "My flowers will be waiting.$"
-
-CeladonCity_Gym_Text_StillNot3::
-    .string "Oh, my… You still don't have\n"
-    .string "exactly three Pokémon.\p"
-    .string "I cannot accept your challenge yet.$"
+CeladonCity_Gym_RematchNotEnoughPlaceholder::
+    .string "$"
 
 CeladonCity_Gym_Text_OfferPCRetrieve::
-    .string "You fought beautifully.\p"
     .string "{COLOR DARK_GRAY}Do you want to open the Storage\n"
     .string "System to organize your party?$"
 
-CeladonCity_Gym_Text_ErikaReady::
-    .string "I see you have arranged your party.\n"
-    .string "Very well then.\p"
-    .string "Shall we begin the match?${PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}"     
+@Last line related to Erika 
 
 CeladonCity_Gym_Text_KayIntro::
     .string "I should tell you about this Gym.\p"

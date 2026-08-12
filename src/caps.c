@@ -25,7 +25,7 @@ u32 GetCurrentLevelCap(void)
         {FLAG_CAP_BRUNO,              56},
         {FLAG_CAP_AGATHA,             58},
         {FLAG_CAP_LANCE,              60},
-        {FLAG_CAP_CHAMPION,           63},
+        {FLAG_SYS_GAME_CLEAR,         63},
         {FLAG_DEFEATED_BOSS_GIOVANNI, 70},
         {FLAG_DEFEATED_OAK,           80},
     };

@@ -130,6 +130,7 @@
       "flag": "FLAG_HIDE_POSTGAME_GOSSIPERS"
     },
     {
+      "local_id": "LOCALID_CAP_CANDY_LADY",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_CABLE_CLUB_RECEPTIONIST",
       "x": 1,
@@ -160,6 +161,16 @@
       "dest_warp_id": "0"
     }
   ],
-  "coord_events": [],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 2,
+      "elevation": 3,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "IndigoPlateau_PokemonCenter_1F_EventScript_CapCandyTrigger"
+    }
+  ],
   "bg_events": []
 }

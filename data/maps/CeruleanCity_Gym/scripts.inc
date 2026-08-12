@@ -5,36 +5,34 @@ CeruleanCity_Gym_EventScript_Misty::
 	lock
 	faceplayer
 	famechecker FAMECHECKER_MISTY, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
-	
-	goto_if_set FLAG_DEFEATED_MISTY, CeruleanCity_Gym_EventScript_MistyPostBattle
+	goto_if_unset FLAG_DEFEATED_MISTY, CeruleanCity_Gym_EventScript_MistyFirstBattle
+	goto_if_unset FLAG_SYS_GAME_CLEAR, CeruleanCity_Gym_EventScript_MistyPostBattle
+	goto_if_unset FLAG_SYS_CAN_LINK_WITH_RS, CeruleanCity_Gym_EventScript_MistyPostBattle
+	goto_if_unset FLAG_REMATCH_MISTY, CeruleanCity_Gym_EventScript_MistyRematchOffer
+	goto CeruleanCity_Gym_EventScript_MistyPostRematchBattle
 
+CeruleanCity_Gym_EventScript_MistyFirstBattle::
 	getpartysize
 	compare VAR_RESULT, 3
-
 	goto_if_eq CeruleanCity_Gym_EventScript_StartBattle
-
 	msgbox CeruleanCity_Gym_Text_MistyIntro, MSGBOX_DEFAULT
 	msgbox CeruleanCity_Gym_Text_RulesExplain, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq CeruleanCity_Gym_EventScript_Refused
-
 	special ShowPokemonStorageSystemPC
-	waitstate 
-
+	waitstate
 	getpartysize
 	compare VAR_RESULT, 3
-
 	goto_if_eq CeruleanCity_Gym_EventScript_StartBattle_FromPC
-
 	goto CeruleanCity_Gym_EventScript_StillNot3
 
 CeruleanCity_Gym_EventScript_StartBattle::
-	trainerbattle_single TRAINER_LEADER_MISTY, CeruleanCity_Gym_Text_MistyIntro, CeruleanCity_Gym_Text_MistyDefeat, CeruleanCity_Gym_EventScript_MistyDefeated, NO_MUSIC
+	trainerbattle_single TRAINER_LEADER_MISTY, CeruleanCity_Gym_Text_MistyIntro, CeruleanCity_Gym_Text_MistyDefeat, CeruleanCity_Gym_EventScript_MistyDefeated, TRUE
 	release
 	end
 
 CeruleanCity_Gym_EventScript_StartBattle_FromPC::
-	trainerbattle_single TRAINER_LEADER_MISTY, CeruleanCity_Gym_Text_MistyReady, CeruleanCity_Gym_Text_MistyDefeat, CeruleanCity_Gym_EventScript_MistyDefeated, NO_MUSIC
+	trainerbattle_single TRAINER_LEADER_MISTY, CeruleanCity_Gym_Text_MistyReady, CeruleanCity_Gym_Text_MistyDefeat, CeruleanCity_Gym_EventScript_MistyDefeated, TRUE
 	release
 	end
 
@@ -44,30 +42,32 @@ CeruleanCity_Gym_EventScript_MistyDefeated::
 	setflag FLAG_BADGE02_GET
 	setrespawn HEAL_LOCATION_CERULEAN_CITY
 	set_gym_trainers 2
+	msgbox CeruleanCity_Gym_Text_BadgeDelivery1, MSGBOX_DEFAULT
+	playfanfare MUS_OBTAIN_BADGE
+	msgbox CeruleanCity_Gym_Text_BadgeDelivery2, MSGBOX_DEFAULT
+	waitfanfare
+	textcolor NPC_TEXT_COLOR_FEMALE
+	msgbox CeruleanCity_Gym_Text_BadgeDelivery3, MSGBOX_DEFAULT
+	msgbox CeruleanCity_Gym_Text_TakeThisWithYou, MSGBOX_DEFAULT
 	goto CeruleanCity_Gym_EventScript_GiveTM03
 	end
 
 CeruleanCity_Gym_EventScript_GiveTM03::
-	msgbox CeruleanCity_Gym_Text_ExplainCascadeBadge, MSGBOX_DEFAULT
 	checkitemspace ITEM_TM03
 	goto_if_eq VAR_RESULT, FALSE, CeruleanCity_Gym_EventScript_NoRoomForTM03
 	giveitem_msg CeruleanCity_Gym_Text_ReceivedTM03FromMisty, ITEM_TM03
 	setflag FLAG_GOT_TM03_FROM_MISTY
 	msgbox CeruleanCity_Gym_Text_ExplainTM03, MSGBOX_DEFAULT
-	
 	msgbox CeruleanCity_Gym_Text_OfferPCRetrieve, MSGBOX_YESNO
 	compare VAR_RESULT, NO
-	goto_if_eq CeruleanCity_Gym_EventScript_EndInteract
+	goto_if_eq CeruleanCity_Gym_EventScript_MistyPostBattle
 	special ShowPokemonStorageSystemPC
 	waitstate
-
-CeruleanCity_Gym_EventScript_EndInteract::
-	release
-	end
+	goto CeruleanCity_Gym_EventScript_MistyPostBattle
 
 CeruleanCity_Gym_EventScript_MistyPostBattle::
 	goto_if_unset FLAG_GOT_TM03_FROM_MISTY, CeruleanCity_Gym_EventScript_GiveTM03
-	msgbox CeruleanCity_Gym_Text_ExplainTM03, MSGBOX_DEFAULT
+	msgbox CeruleanCity_Gym_Text_MistyPostBattle, MSGBOX_DEFAULT
 	release
 	end
 
@@ -85,6 +85,68 @@ CeruleanCity_Gym_EventScript_StillNot3::
 	msgbox CeruleanCity_Gym_Text_StillNot3, MSGBOX_DEFAULT
 	release
 	end
+
+CeruleanCity_Gym_EventScript_MistyRematchOffer::
+	getpartysize
+	compare VAR_RESULT, 4
+	goto_if_eq CeruleanCity_Gym_EventScript_StartRematch
+	msgbox CeruleanCity_Gym_Text_MistyRematchIntro, MSGBOX_DEFAULT
+	msgbox CeruleanCity_Gym_Text_MistyRematchRules, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq CeruleanCity_Gym_EventScript_RefusedRematch
+	special ShowPokemonStorageSystemPC
+	waitstate
+	getpartysize
+	compare VAR_RESULT, 4
+	goto_if_eq CeruleanCity_Gym_EventScript_StartRematch_FromPC
+	goto CeruleanCity_Gym_EventScript_StillNot4
+
+CeruleanCity_Gym_EventScript_StartRematch::
+	trainerbattle_double TRAINER_LEADER_MISTY_REMATCH, CeruleanCity_Gym_Text_MistyRematchIntro, CeruleanCity_Gym_Text_MistyRematchDefeat, CeruleanCity_Gym_RematchNotEnoughPlaceholder, CeruleanCity_Gym_EventScript_MistyRematchWon, TRUE
+	release
+	end
+
+CeruleanCity_Gym_EventScript_StartRematch_FromPC::
+	trainerbattle_double TRAINER_LEADER_MISTY_REMATCH, CeruleanCity_Gym_Text_MistyRematchReady, CeruleanCity_Gym_Text_MistyRematchDefeat, CeruleanCity_Gym_RematchNotEnoughPlaceholder, CeruleanCity_Gym_EventScript_MistyRematchWon, TRUE
+	release
+	end
+
+CeruleanCity_Gym_EventScript_MistyRematchWon::
+	checkitemspace ITEM_ASSAULT_VEST
+	goto_if_eq VAR_RESULT, FALSE, CeruleanCity_Gym_EventScript_NoRoomForReward
+	msgbox CeruleanCity_Gym_Text_MistyRematchBeforeReward, MSGBOX_DEFAULT
+	giveitem ITEM_ASSAULT_VEST
+	msgbox CeruleanCity_Gym_Text_MistyRematchAfterReward, MSGBOX_DEFAULT
+	setflag FLAG_REMATCH_MISTY
+	msgbox CeruleanCity_Gym_Text_MistyRematchPostBattle, MSGBOX_DEFAULT
+	msgbox CeruleanCity_Gym_Text_OfferPCRetrieve, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq CeruleanCity_Gym_EventScript_MistyPostRematchBattle
+	special ShowPokemonStorageSystemPC
+	waitstate
+	goto CeruleanCity_Gym_EventScript_MistyPostRematchBattle
+
+CeruleanCity_Gym_EventScript_MistyPostRematchBattle::
+	msgbox CeruleanCity_Gym_Text_MistyPostRematch, MSGBOX_DEFAULT
+	release
+	end
+
+CeruleanCity_Gym_EventScript_RefusedRematch::
+	msgbox CeruleanCity_Gym_Text_RefusedRematch, MSGBOX_DEFAULT
+	release
+	end
+
+CeruleanCity_Gym_EventScript_StillNot4::
+	msgbox CeruleanCity_Gym_Text_StillNot4, MSGBOX_DEFAULT
+	release
+	end
+
+CeruleanCity_Gym_EventScript_NoRoomForReward::
+	msgbox CeruleanCity_Gym_Text_BetterMakeRoomForThis, MSGBOX_DEFAULT
+	release
+	end
+
+@Last line related to Misty
 
 CeruleanCity_Gym_EventScript_Diana::
 	trainerbattle_single TRAINER_PICNICKER_DIANA, CeruleanCity_Gym_Text_DianaIntro, CeruleanCity_Gym_Text_DianaDefeat

@@ -45,36 +45,40 @@ CinnabarIsland_Gym_OnLoadOpenDoor6::
 	call CinnabarIsland_Gym_EventScript_OpenDoor6
 	return
 
-CinnabarIsland_Gym_EventScript_Blaine::
-	famechecker FAMECHECKER_BLAINE, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
-	
-    goto_if_set FLAG_DEFEATED_BLAINE, CinnabarIsland_Gym_EventScript_BlainePostBattle
+@First line about Blaine
 
-    getpartysize
+CinnabarIsland_Gym_EventScript_Blaine::
+	lock
+	faceplayer
+	famechecker FAMECHECKER_BLAINE, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
+	goto_if_unset FLAG_DEFEATED_BLAINE, CinnabarIsland_Gym_EventScript_BlaineFirstBattle
+	goto_if_unset FLAG_SYS_GAME_CLEAR, CinnabarIsland_Gym_EventScript_BlainePostBattle
+	goto_if_unset FLAG_SYS_CAN_LINK_WITH_RS, CinnabarIsland_Gym_EventScript_BlainePostBattle
+	goto_if_unset FLAG_REMATCH_BLAINE, CinnabarIsland_Gym_EventScript_BlaineRematchOffer
+	goto CinnabarIsland_Gym_EventScript_BlainePostRematchBattle
+
+CinnabarIsland_Gym_EventScript_BlaineFirstBattle::
+	getpartysize
 	compare VAR_RESULT, 3
 	goto_if_eq CinnabarIsland_Gym_EventScript_StartBattle
-
 	msgbox CinnabarIsland_Gym_Text_BlaineIntro, MSGBOX_DEFAULT
 	msgbox CinnabarIsland_Gym_Text_RulesExplain, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq CinnabarIsland_Gym_EventScript_Refused
-
 	special ShowPokemonStorageSystemPC
-	waitstate 
-
+	waitstate
 	getpartysize
 	compare VAR_RESULT, 3
 	goto_if_eq CinnabarIsland_Gym_EventScript_StartBattle_FromPC
-
 	goto CinnabarIsland_Gym_EventScript_StillNot3
 
 CinnabarIsland_Gym_EventScript_StartBattle::
-	trainerbattle_single TRAINER_LEADER_BLAINE, CinnabarIsland_Gym_Text_BlaineIntro, CinnabarIsland_Gym_Text_BlaineDefeat, CinnabarIsland_Gym_EventScript_DefeatedBlaine, NO_MUSIC
+	trainerbattle_single TRAINER_LEADER_BLAINE, CinnabarIsland_Gym_Text_BlaineIntro, CinnabarIsland_Gym_Text_BlaineDefeat, CinnabarIsland_Gym_EventScript_DefeatedBlaine, TRUE
 	release
 	end
 
 CinnabarIsland_Gym_EventScript_StartBattle_FromPC::
-	trainerbattle_single TRAINER_LEADER_BLAINE, CinnabarIsland_Gym_Text_BlaineReady, CinnabarIsland_Gym_Text_BlaineDefeat, CinnabarIsland_Gym_EventScript_DefeatedBlaine, NO_MUSIC
+	trainerbattle_single TRAINER_LEADER_BLAINE, CinnabarIsland_Gym_Text_BlaineReady, CinnabarIsland_Gym_Text_BlaineDefeat, CinnabarIsland_Gym_EventScript_DefeatedBlaine, TRUE
 	release
 	end
 
@@ -86,7 +90,14 @@ CinnabarIsland_Gym_EventScript_DefeatedBlaine::
 	setvar VAR_MAP_SCENE_CINNABAR_ISLAND, 1
 	clearflag FLAG_HIDE_CINNABAR_BILL
 	set_gym_trainers 7
+	msgbox CinnabarIsland_Gym_Text_BadgeDelivery1, MSGBOX_DEFAULT
+	playfanfare MUS_OBTAIN_BADGE
+	msgbox CinnabarIsland_Gym_Text_BadgeDelivery2, MSGBOX_DEFAULT
+	waitfanfare
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox CinnabarIsland_Gym_Text_BadgeDelivery3, MSGBOX_DEFAULT
 	call_if_set FLAG_HIDE_POKEMON_MANSION_B1F_SECRET_KEY, CinnabarIsland_Gym_EventScript_BlaineTakeSecretKey
+	msgbox CinnabarIsland_Gym_Text_TakeThisWithYou, MSGBOX_DEFAULT
 	goto CinnabarIsland_Gym_EventScript_GiveTM38
 	end
 
@@ -99,31 +110,26 @@ CinnabarIsland_Gym_EventScript_BlaineTakeSecretKey::
 	return
 
 CinnabarIsland_Gym_EventScript_GiveTM38::
-	msgbox CinnabarIsland_Gym_Text_ExplainVolcanoBadge
 	checkitemspace ITEM_TM38
 	goto_if_eq VAR_RESULT, FALSE, CinnabarIsland_Gym_EventScript_NoRoomForTM38
 	giveitem_msg CinnabarIsland_Gym_Text_ReceivedTM38FromBlaine, ITEM_TM38
 	setflag FLAG_GOT_TM38_FROM_BLAINE
-	msgbox CinnabarIsland_Gym_Text_FireBlastIsUltimateFireMove
-	
-    msgbox CinnabarIsland_Gym_Text_OfferPCRetrieve, MSGBOX_YESNO
+	msgbox CinnabarIsland_Gym_Text_ExplainTM38, MSGBOX_DEFAULT
+	msgbox CinnabarIsland_Gym_Text_OfferPCRetrieve, MSGBOX_YESNO
 	compare VAR_RESULT, NO
-	goto_if_eq CinnabarIsland_Gym_EventScript_EndInteract
+	goto_if_eq CinnabarIsland_Gym_EventScript_BlainePostBattle
 	special ShowPokemonStorageSystemPC
 	waitstate
-
-CinnabarIsland_Gym_EventScript_EndInteract::
-	release
-	end
+	goto CinnabarIsland_Gym_EventScript_BlainePostBattle
 
 CinnabarIsland_Gym_EventScript_BlainePostBattle::
 	goto_if_unset FLAG_GOT_TM38_FROM_BLAINE, CinnabarIsland_Gym_EventScript_GiveTM38
-	msgbox CinnabarIsland_Gym_Text_BlainePostBattle
+	msgbox CinnabarIsland_Gym_Text_BlainePostBattle, MSGBOX_DEFAULT
 	release
 	end
 
 CinnabarIsland_Gym_EventScript_NoRoomForTM38::
-	msgbox CinnabarIsland_Gym_Text_MakeSpaceForThis
+	msgbox CinnabarIsland_Gym_Text_MakeSpaceForThis, MSGBOX_DEFAULT
 	release
 	end
 
@@ -136,6 +142,68 @@ CinnabarIsland_Gym_EventScript_StillNot3::
 	msgbox CinnabarIsland_Gym_Text_StillNot3, MSGBOX_DEFAULT
 	release
 	end
+
+CinnabarIsland_Gym_EventScript_BlaineRematchOffer::
+	getpartysize
+	compare VAR_RESULT, 4
+	goto_if_eq CinnabarIsland_Gym_EventScript_StartRematch
+	msgbox CinnabarIsland_Gym_Text_BlaineRematchIntro, MSGBOX_DEFAULT
+	msgbox CinnabarIsland_Gym_Text_BlaineRematchRules, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq CinnabarIsland_Gym_EventScript_RefusedRematch
+	special ShowPokemonStorageSystemPC
+	waitstate
+	getpartysize
+	compare VAR_RESULT, 4
+	goto_if_eq CinnabarIsland_Gym_EventScript_StartRematch_FromPC
+	goto CinnabarIsland_Gym_EventScript_StillNot4
+
+CinnabarIsland_Gym_EventScript_StartRematch::
+	trainerbattle_double TRAINER_LEADER_BLAINE_REMATCH, CinnabarIsland_Gym_Text_BlaineRematchIntro, CinnabarIsland_Gym_Text_BlaineRematchDefeat, CinnabarIsland_Gym_RematchNotEnoughPlaceholder, CinnabarIsland_Gym_EventScript_BlaineRematchWon, TRUE
+	release
+	end
+
+CinnabarIsland_Gym_EventScript_StartRematch_FromPC::
+	trainerbattle_double TRAINER_LEADER_BLAINE_REMATCH, CinnabarIsland_Gym_Text_BlaineRematchReady, CinnabarIsland_Gym_Text_BlaineRematchDefeat, CinnabarIsland_Gym_RematchNotEnoughPlaceholder, CinnabarIsland_Gym_EventScript_BlaineRematchWon, TRUE
+	release
+	end
+
+CinnabarIsland_Gym_EventScript_BlaineRematchWon::
+	checkitemspace ITEM_CHOICE_SCARF
+	goto_if_eq VAR_RESULT, FALSE, CinnabarIsland_Gym_EventScript_NoRoomForReward
+	msgbox CinnabarIsland_Gym_Text_BlaineRematchBeforeReward, MSGBOX_DEFAULT
+	giveitem ITEM_CHOICE_SCARF
+	msgbox CinnabarIsland_Gym_Text_BlaineRematchAfterReward, MSGBOX_DEFAULT
+	setflag FLAG_REMATCH_BLAINE
+	msgbox CinnabarIsland_Gym_Text_BlaineRematchPostBattle, MSGBOX_DEFAULT
+	msgbox CinnabarIsland_Gym_Text_OfferPCRetrieve, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq CinnabarIsland_Gym_EventScript_BlainePostRematchBattle
+	special ShowPokemonStorageSystemPC
+	waitstate
+	goto CinnabarIsland_Gym_EventScript_BlainePostRematchBattle
+
+CinnabarIsland_Gym_EventScript_BlainePostRematchBattle::
+	msgbox CinnabarIsland_Gym_Text_BlainePostRematch, MSGBOX_DEFAULT
+	release
+	end
+
+CinnabarIsland_Gym_EventScript_RefusedRematch::
+	msgbox CinnabarIsland_Gym_Text_RefusedRematch, MSGBOX_DEFAULT
+	release
+	end
+
+CinnabarIsland_Gym_EventScript_StillNot4::
+	msgbox CinnabarIsland_Gym_Text_StillNot4, MSGBOX_DEFAULT
+	release
+	end
+
+CinnabarIsland_Gym_EventScript_NoRoomForReward::
+	msgbox CinnabarIsland_Gym_Text_MakeSpaceForThis, MSGBOX_DEFAULT
+	release
+	end
+
+@Last line about Blaine
 
 CinnabarIsland_Gym_EventScript_Erik::
 	trainerbattle_single TRAINER_SUPER_NERD_ERIK, CinnabarIsland_Gym_Text_ErikIntro, CinnabarIsland_Gym_Text_ErikDefeat

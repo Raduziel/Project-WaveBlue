@@ -41,30 +41,39 @@ IndigoPlateau_PokemonCenter_1F_Text_LancesCousinGymLeaderFarAway::
     .string "a cousin who's a Gym Leader\l"
     .string "somewhere far away.$"
 
-IndigoPlateau_PokemonCenter_1F_Text_CapCandyGiverPre1:
+IndigoPlateau_PokemonCenter_1F_Text_CapCandyGiverPre1::
 	.string "Oh! You've got the look of someone\n"
 	.string "who likes a challenge…\p"
 	.string "Someone who's had a hard road and\n"
 	.string "kept walking anyway.\p"
 	.string "That spirit deserves a reward.$"
 
-IndigoPlateau_PokemonCenter_1F_Text_CapCandyGiverGive:
-	.string "This candy never runs out, and it\n"
-	.string "will raise your Pokémon's level.\p"
-	.string "But it only works for those who\n"
-	.string "fight within their limits.$"
+IndigoPlateau_PokemonCenter_1F_Text_CapCandyGiverGive::
+	.string "This candy never runs out, and it will\n"
+	.string "raise your Pokémon's level.\p"
+	.string "But it only works for those who fight\n"
+	.string "within their limits. Like you.\p"
+    .string "I won't keep you any longer.\n"
+    .string "Best of luck to you!$"
 
-IndigoPlateau_PokemonCenter_1F_Text_CapCandyGiverPre2:
+IndigoPlateau_PokemonCenter_1F_Text_CapCandyGiverPre2::
 	.string "Hmm… no.\n"
 	.string "You don't need a treat from me.\p"
-	.string "Life's been kind enough to you\n"
-	.string "already.$"
+    .string "You've had it easy enough.$"
 
-IndigoPlateau_PokemonCenter_1F_Text_CapCandyGiverPostCap:
-	.string "Don't give up.\n"
-	.string "I know you can do it!$"
+IndigoPlateau_PokemonCenter_1F_Text_CapCandyGiverPostCap::
+	.string "Don't give up. I know you can do it!$"
 
-IndigoPlateau_PokemonCenter_1F_Text_CapCandyGiverPostNoCap:
+IndigoPlateau_PokemonCenter_1F_Text_CapCandyGiverPostNoCap::
 	.string "Oh… so you're a quitter.\p"
 	.string "A shame. That candy only sweetens\n"
 	.string "those with a fighting spirit.$"
+
+IndigoPlateau_PokemonCenter_1F_Text_CapCandyCallPlayer::
+    .string "Challenger!\n"
+    .string "A word, if I may.$"
+
+IndigoPlateau_PokemonCenter_1F_Text_CapCandyGiverNoRoom::
+	.string "Your pack's fit to burst!\p"
+	.string "Make some room and come see me\n"
+	.string "again. Your reward will be waiting.$"

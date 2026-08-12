@@ -1,32 +1,61 @@
 VermilionCity_Gym_Text_LtSurgeIntro::
     .string "Hey, kid! What do you think you're\n"
     .string "doing here?\p"
-    .string "You won't live long in combat!\n"
-    .string "Not with your puny power!\p"
+    .string "You won't live long in combat! Not\n"
+    .string "with your puny power!\p"
     .string "I tell you, kid, electric Pokémon\n"
     .string "saved me during the war!\p"
     .string "They zapped my enemies into\n"
     .string "paralysis!\p"
-    .string "The same as I'll do to you!{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
+    .string "The same as I'll do to you!$"
+
+VermilionCity_Gym_Text_RulesExplain::
+    .string "But listen up, rookie! This ain't a\n"
+    .string "battlefield!\p"
+    .string "Regulation is exactly three Pokémon.\n"
+    .string "Follow it or fall out.\p"
+    .string "I don't waste my time on undisciplined\n"
+    .string "squads.\p"
+    .string "{COLOR DARK_GRAY}Do you want to access the Storage\n"
+    .string "System to organize your unit?$"
+
+VermilionCity_Gym_Text_LtSurgeReady::
+    .string "At ease!\n"
+    .string "You've organized your squad.\p"
+    .string "Now, prepare to feel the voltage!\n"
+    .string "Ten-hut!$"
+
+VermilionCity_Gym_Text_Refused::
+    .string "Dismissed!\p"
+    .string "Come back when you learn to follow\n"
+    .string "orders!$"
+
+VermilionCity_Gym_Text_StillNot3::
+    .string "Maggot!\p"
+    .string "You still don't have exactly three\n"
+    .string "Pokémon!\p"
+    .string "This is insubordination! Get out of my\n"
+    .string "face!$"
 
 VermilionCity_Gym_Text_LtSurgeDefeat::
-    .string "Now that's a shocker!\p"
-    .string "You're the real deal, kid!\p"
+    .string "Now that's a shocker!$"
+
+VermilionCity_Gym_Text_BadgeDelivery1::
+    .string "You're the real deal, kid!\n"
     .string "Fine, then, take the Thunder Badge!$"
 
-VermilionCity_Gym_Text_LtSurgePostBattle::
-    .string "A little word of advice, kid!\p"
-    .string "Electricity is sure powerful!\p"
-    .string "But, it's useless against Ground-\n"
-    .string "type Pokémon!$"
+VermilionCity_Gym_Text_BadgeDelivery2::
+    .string "{COLOR DARK_GRAY}{PLAYER} received the Thunder Badge\n"
+    .string "from Lt. Surge!$"
 
-VermilionCity_Gym_Text_ExplainThunderBadgeTakeThis::
+VermilionCity_Gym_Text_BadgeDelivery3::
     .string "The Thunder Badge cranks up your\n"
     .string "Pokémon's Speed!\p"
     .string "It also lets your Pokémon Fly\n"
-    .string "lightning-quick anytime, kid!\p"
-    .string "You're special, kid!\n"
-    .string "Take this!$"
+    .string "lightning-quick anytime, kid!$"
+
+VermilionCity_Gym_Text_TakeThisWithYou::
+    .string "You're special, kid! Take this$"
 
 VermilionCity_Gym_Text_ReceivedTM34FromLtSurge::
     .string "{PLAYER} received TM34\n"
@@ -34,43 +63,90 @@ VermilionCity_Gym_Text_ReceivedTM34FromLtSurge::
 
 VermilionCity_Gym_Text_ExplainTM34::
     .string "TM34 contains Shock Wave!\p"
-    .string "Teach it to an Electric Pokémon!$"
+    .string "Sometimes missing is not an option!$"
+
+VermilionCity_Gym_Text_LtSurgePostBattle::
+    .string "You've earned my respect, soldier!\n"
+    .string "A little word of advice!\p"
+    .string "Electricity is sure powerful! But, it's\n"
+    .string "useless against Ground-type Pokémon!$"
 
 VermilionCity_Gym_Text_MakeRoomInYourBag::
     .string "Yo, kid, make room in your Bag!$"
 
-VermilionCity_Gym_Text_RulesExplain::
-    .string "But listen up, rookie!\n"
-    .string "This is a battlefield!\p"
-    .string "Gym battles require challengers\n"
-    .string "to use exactly three Pokémon.\p"
-    .string "I don't waste my time on\n"
-    .string "undisciplined squads.\p"
+VermilionCity_Gym_Text_LtSurgeRematchIntro::
+    .string "At ease, Champion.\p"
+    .string "A soldier salutes those above him,\n"
+    .string "and you outrank me now.\p"
+    .string "I hope the base is up to your\n"
+    .string "standards.\p"
+    .string "I've been drilling hard for the day\n"
+    .string "I'd face you again.\p"
+    .string "And soldier, today is D-Day.$"
+
+VermilionCity_Gym_Text_LtSurgeRematchRules::
+    .string "The League has made Double Battles\n"
+    .string "the new rules of engagement.\p"
+    .string "Two Pokémon on the field at once,\n"
+    .string "fighting side by side.\p"
+    .string "Now this is real combat! Coordinated\n"
+    .string "strikes, covering fire, teamwork!\p"
+    .string "So muster your best four, soldier.\n"
+    .string "No reserves, no excuses.\p"
+    .string "Let's see if the Champion can command\n"
+    .string "a squad under fire.\p"
     .string "{COLOR DARK_GRAY}Do you want to access the Storage\n"
     .string "System to organize your unit?$"
 
-VermilionCity_Gym_Text_Refused::
-    .string "Dismissed!\p"
-    .string "Come back when you learn to\n"
-    .string "follow orders!$"
+VermilionCity_Gym_Text_LtSurgeRematchReady::
+    .string "Squad locked and loaded. That's what\n"
+    .string "I like to see!\p"
+    .string "Ten-hut, Champion! Back into the fray\n"
+    .string "one last time!$"
 
-VermilionCity_Gym_Text_StillNot3::
-    .string "Maggot!\p"
-    .string "You still don't have exactly\n"
-    .string "three Pokémon!\p"
-    .string "This is insubordination!\n"
-    .string "Get out of my face!$"
+VermilionCity_Gym_Text_RefusedRematch::
+    .string "Turning tail, Champion? I don't take\n"
+    .string "kindly to deserters.\p"
+    .string "Fall back and regroup. Come find me\n"
+    .string "when you've got the nerve!$"
+
+VermilionCity_Gym_Text_StillNot4::
+    .string "Get your platoon in line, soldier!\n"
+    .string "Four Pokémon only. Headcount!$"
+
+VermilionCity_Gym_Text_LtSurgeRematchDefeat::
+    .string "Outgunned and outmaneuvered!\p"
+    .string "You didn't flinch once. The mark of a\n"
+    .string "true soldier and hero!\p"
+    .string "Proud to serve by your side, Champion!$"
+
+VermilionCity_Gym_Text_LtSurgeRematchBeforeReward::
+    .string "To the victor go the spoils. You've\n"
+    .string "earned this.$"
+
+VermilionCity_Gym_Text_LtSurgeRematchAfterReward::    
+    .string "Commit to one strike and hit with\n"
+    .string "everything you've got.\p"
+    .string "No hesitation. No half measures.$"
+
+VermilionCity_Gym_Text_LtSurgeRematchPostBattle::
+    .string "The private who marched in here has\n"
+    .string "come a long way, Champion.\p"
+    .string "That was one helluva battle.\n"
+    .string "Don't ever go soft on me!$"
+
+VermilionCity_Gym_Text_LtSurgePostRematch::
+    .string "Standing by and ready, Champion.\n"
+    .string "Semper Fi!$"
+
+VermilionCity_Gym_RematchNotEnoughPlaceholder::
+    .string "$"
 
 VermilionCity_Gym_Text_OfferPCRetrieve::
-    .string "You've earned my respect, soldier.\p"
     .string "{COLOR DARK_GRAY}Do you want to access the Storage\n"
     .string "System to retrieve your team?$"
 
-VermilionCity_Gym_Text_LtSurgeReady::
-    .string "At ease!\n"
-    .string "You've organized your squad.\p"
-    .string "Now, prepare to feel the voltage!\n"
-    .string "Ten-hut!{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
+@Last line related to Lt Surge
 
 VermilionCity_Gym_Text_TuckerIntro::
     .string "When I was in the Army, Lt. Surge\n"
