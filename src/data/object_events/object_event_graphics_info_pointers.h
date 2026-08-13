@@ -287,7 +287,6 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_SABRINA]                  = &gObjectEventGraphicsInfo_Sabrina,
     [OBJ_EVENT_GFX_BLAINE]                   = &gObjectEventGraphicsInfo_Blaine,
     [OBJ_EVENT_GFX_GIOVANNI]                 = &gObjectEventGraphicsInfo_Giovanni,
-    [OBJ_EVENT_GFX_NORMAN]                   = &gObjectEventGraphicsInfo_Norman,
     [OBJ_EVENT_GFX_MOM]                      = &gObjectEventGraphicsInfo_Mom,
     [OBJ_EVENT_GFX_CELIO]                    = &gObjectEventGraphicsInfo_Celio,
     [OBJ_EVENT_GFX_TEACHY_TV_HOST]           = &gObjectEventGraphicsInfo_TeachyTVHost,
@@ -394,6 +393,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_NOLAND] =                   &gObjectEventGraphicsInfo_Noland,
     [OBJ_EVENT_GFX_SPENSER] =                  &gObjectEventGraphicsInfo_Spenser,
     [OBJ_EVENT_GFX_TUCKER] =                   &gObjectEventGraphicsInfo_Tucker,
-    [OBJ_EVENT_GFX_RED_WATERING]             = &gObjectEventGraphicsInfo_RedWatering,
-    [OBJ_EVENT_GFX_GREEN_WATERING]           = &gObjectEventGraphicsInfo_GreenWatering,
+    [OBJ_EVENT_GFX_RED_WATERING] =             &gObjectEventGraphicsInfo_RedWatering,
+    [OBJ_EVENT_GFX_GREEN_WATERING] =           &gObjectEventGraphicsInfo_GreenWatering,
+    [OBJ_EVENT_GFX_NORMAN] =                   &gObjectEventGraphicsInfo_Norman,
 };

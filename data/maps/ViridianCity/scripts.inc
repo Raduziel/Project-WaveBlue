@@ -79,20 +79,26 @@ ViridianCity_EventScript_Boy::
 
 @ Other old man, not the tutorial old man
 ViridianCity_EventScript_OldMan::
-	lock
-	faceplayer
-	goto_if_eq VAR_MAP_SCENE_VIRIDIAN_CITY_GYM_DOOR, 1, ViridianCity_EventScript_OldManGymLeaderReturned
-	msgbox ViridianCity_Text_GymClosedWonderWhoLeaderIs
-	closemessage
-	applymovement LOCALID_VIRIDIAN_OLD_MAN, Common_Movement_FaceOriginalDirection
-	waitmovement 0
-	release
-	end
+    lock
+    faceplayer
+    goto_if_set FLAG_SYS_CAN_LINK_WITH_RS, ViridianCity_EventScript_OldManGymUnderIntervention
+    goto_if_eq VAR_MAP_SCENE_VIRIDIAN_CITY_GYM_DOOR, 1, ViridianCity_EventScript_OldManGymLeaderReturned
+    msgbox ViridianCity_Text_GymClosedWonderWhoLeaderIs
+    closemessage
+    applymovement LOCALID_VIRIDIAN_OLD_MAN, Common_Movement_FaceOriginalDirection
+    waitmovement 0
+    release
+    end
 
 ViridianCity_EventScript_OldManGymLeaderReturned::
-	msgbox ViridianCity_Text_ViridiansGymLeaderReturned
-	release
-	end
+    msgbox ViridianCity_Text_ViridiansGymLeaderReturned
+    release
+    end
+
+ViridianCity_EventScript_OldManGymUnderIntervention::
+    msgbox ViridianCity_Text_OldManGymUnderIntervention
+    release
+    end
 
 ViridianCity_EventScript_TutorialOldMan::
 	lock

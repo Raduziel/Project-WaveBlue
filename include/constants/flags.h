@@ -839,8 +839,8 @@
 #define FLAG_REMATCH_KOGA                                 0x32A
 #define FLAG_REMATCH_SABRINA                              0x32B
 #define FLAG_REMATCH_BLAINE                               0x32C
-#define FLAG_DEFEATED_NORMAN                              0x32D
-#define FLAG_0x32E               0x32E
+#define FLAG_HIDE_NORMAN                                  0x32D
+#define FLAG_DEFEATED_NORMAN                              0x32E
 #define FLAG_0x32F               0x32F
 #define FLAG_0x330               0x330
 #define FLAG_0x331               0x331

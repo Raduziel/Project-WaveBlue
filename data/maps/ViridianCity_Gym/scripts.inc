@@ -1,38 +1,43 @@
 ViridianCity_Gym_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, ViridianCity_Gym_OnTransition
 	.byte 0
+
+ViridianCity_Gym_OnTransition::
+	goto_if_set FLAG_SYS_CAN_LINK_WITH_RS, ViridianCity_Gym_EventScript_RevealNorman
+	setflag FLAG_HIDE_NORMAN
+	end
+
+ViridianCity_Gym_EventScript_RevealNorman::
+	clearflag FLAG_HIDE_NORMAN
+	end
 
 ViridianCity_Gym_EventScript_Giovanni::
 	lock
 	faceplayer
 	famechecker FAMECHECKER_GIOVANNI, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
 	goto_if_set FLAG_DEFEATED_LEADER_GIOVANNI, ViridianCity_Gym_EventScript_GiovanniPostBattleSequence
-
 	getpartysize
 	compare VAR_RESULT, 3
 	goto_if_eq ViridianCity_Gym_EventScript_StartBattle
-
 	msgbox ViridianCity_Gym_Text_GiovanniIntro, MSGBOX_DEFAULT
 	msgbox ViridianCity_Gym_Text_RulesExplain, MSGBOX_YESNO
 	compare VAR_RESULT, NO
 	goto_if_eq ViridianCity_Gym_EventScript_Refused
-
 	special ShowPokemonStorageSystemPC
 	waitstate 
-
 	getpartysize
 	compare VAR_RESULT, 3
 	goto_if_eq ViridianCity_Gym_EventScript_StartBattle_FromPC
-
 	goto ViridianCity_Gym_EventScript_StillNot3
 
 ViridianCity_Gym_EventScript_StartBattle::
-	trainerbattle_single TRAINER_LEADER_GIOVANNI, ViridianCity_Gym_Text_GiovanniIntro, ViridianCity_Gym_Text_GiovanniDefeat, ViridianCity_Gym_EventScript_DefeatedGiovanni, NO_MUSIC
-	goto ViridianCity_Gym_EventScript_GiovanniPostBattleSequence
+	trainerbattle_single TRAINER_LEADER_GIOVANNI, ViridianCity_Gym_Text_GiovanniIntro, ViridianCity_Gym_Text_GiovanniDefeat, ViridianCity_Gym_EventScript_DefeatedGiovanni, TRUE
+	release
 	end
 
 ViridianCity_Gym_EventScript_StartBattle_FromPC::
-	trainerbattle_single TRAINER_LEADER_GIOVANNI, ViridianCity_Gym_Text_GiovanniReady, ViridianCity_Gym_Text_GiovanniDefeat, ViridianCity_Gym_EventScript_DefeatedGiovanni, NO_MUSIC
-	goto ViridianCity_Gym_EventScript_GiovanniPostBattleSequence
+	trainerbattle_single TRAINER_LEADER_GIOVANNI, ViridianCity_Gym_Text_GiovanniReady, ViridianCity_Gym_Text_GiovanniDefeat, ViridianCity_Gym_EventScript_DefeatedGiovanni, TRUE
+	release
 	end
 
 ViridianCity_Gym_EventScript_DefeatedGiovanni::
@@ -42,18 +47,23 @@ ViridianCity_Gym_EventScript_DefeatedGiovanni::
 	setflag FLAG_BADGE08_GET
 	setvar VAR_MAP_SCENE_ROUTE22, 3
 	set_gym_trainers 8
+	msgbox ViridianCity_Gym_Text_BadgeDelivery1, MSGBOX_DEFAULT
+	playfanfare MUS_OBTAIN_BADGE
+	msgbox ViridianCity_Gym_Text_BadgeDelivery2, MSGBOX_DEFAULT
+	waitfanfare
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox ViridianCity_Gym_Text_BadgeDelivery3, MSGBOX_DEFAULT
+	msgbox ViridianCity_Gym_Text_TakeThisWithYou, MSGBOX_DEFAULT
 	goto ViridianCity_Gym_EventScript_GiveTM26
 	end
 
 ViridianCity_Gym_EventScript_GiveTM26::
-	msgbox ViridianCity_Gym_Text_ExplainEarthBadgeTakeThis, MSGBOX_DEFAULT
 	checkitemspace ITEM_TM26
 	goto_if_eq VAR_RESULT, FALSE, ViridianCity_Gym_EventScript_NoRoomForTM26
 	giveitem_msg ViridianCity_Gym_Text_ReceivedTM26FromGiovanni, ITEM_TM26
 	setflag FLAG_GOT_TM26_FROM_GIOVANNI
 	msgbox ViridianCity_Gym_Text_ExplainTM26, MSGBOX_DEFAULT
 	goto ViridianCity_Gym_EventScript_GiovanniPostBattleSequence
-	end
 
 ViridianCity_Gym_EventScript_GiovanniPostBattleSequence::
 	goto_if_unset FLAG_GOT_TM26_FROM_GIOVANNI, ViridianCity_Gym_EventScript_GiveTM26
@@ -61,7 +71,24 @@ ViridianCity_Gym_EventScript_GiovanniPostBattleSequence::
 	closemessage
 	fadescreen FADE_TO_BLACK
 	removeobject LOCALID_VIRIDIAN_GIOVANNI
+	removeobject LOCALID_GIOVANNI_FOLLOWER_1
+	removeobject LOCALID_GIOVANNI_FOLLOWER_2
+	removeobject LOCALID_GIOVANNI_FOLLOWER_3
+	removeobject LOCALID_GIOVANNI_FOLLOWER_4
+	removeobject LOCALID_GIOVANNI_FOLLOWER_5
+	removeobject LOCALID_GIOVANNI_FOLLOWER_6
+	removeobject LOCALID_GIOVANNI_FOLLOWER_7
+	removeobject LOCALID_GIOVANNI_FOLLOWER_8
+	removeobject LOCALID_GIOVANNI_FOLLOWER_9
 	fadescreen FADE_FROM_BLACK
+	msgbox ViridianCity_Gym_Text_OfferPCRetrieve, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq ViridianCity_Gym_EventScript_GiovanniPostBattleSequenceEnd
+	special ShowPokemonStorageSystemPC
+	waitstate
+	goto ViridianCity_Gym_EventScript_GiovanniPostBattleSequenceEnd
+
+ViridianCity_Gym_EventScript_GiovanniPostBattleSequenceEnd::
 	release
 	end
 
@@ -79,6 +106,77 @@ ViridianCity_Gym_EventScript_StillNot3::
 	msgbox ViridianCity_Gym_Text_StillNot3, MSGBOX_DEFAULT
 	release
 	end
+
+@Last line about Giovanni
+
+ViridianCity_Gym_EventScript_Norman::
+	lock
+	faceplayer
+	textcolor NPC_TEXT_COLOR_MALE
+	goto_if_set FLAG_DEFEATED_NORMAN, ViridianCity_Gym_EventScript_NormanPostBattle
+	getpartysize
+	compare VAR_RESULT, 4
+	goto_if_eq ViridianCity_Gym_EventScript_StartDoubleBattle
+	msgbox ViridianCity_Gym_Text_NormanIntro, MSGBOX_DEFAULT
+	msgbox ViridianCity_Gym_Text_DoubleRulesExplain, MSGBOX_YESNO
+	compare VAR_RESULT, NO
+	goto_if_eq ViridianCity_Gym_EventScript_DoubleRefused
+	special ShowPokemonStorageSystemPC
+	waitstate 
+	getpartysize
+	compare VAR_RESULT, 4
+	goto_if_eq ViridianCity_Gym_EventScript_StartDoubleBattle_FromPC
+	goto ViridianCity_Gym_EventScript_StillNot4
+
+ViridianCity_Gym_EventScript_StartDoubleBattle::
+	trainerbattle_double TRAINER_LEADER_NORMAN, ViridianCity_Gym_Text_NormanIntro, ViridianCity_Gym_Text_NormanDefeat, ViridianCity_Gym_RematchNotEnoughPlaceholder, ViridianCity_Gym_EventScript_DefeatedNorman, TRUE
+	release
+	end
+
+ViridianCity_Gym_EventScript_StartDoubleBattle_FromPC::
+	trainerbattle_double TRAINER_LEADER_NORMAN, ViridianCity_Gym_Text_NormanReady, ViridianCity_Gym_Text_NormanDefeat, ViridianCity_Gym_RematchNotEnoughPlaceholder, ViridianCity_Gym_EventScript_DefeatedNorman, TRUE
+	release
+	end
+
+ViridianCity_Gym_EventScript_DefeatedNorman::
+	setflag FLAG_DEFEATED_NORMAN
+	goto_if_unset FLAG_HIDDEN_ITEM_VIRIDIAN_CITY_GYM_MACHO_BRACE, ViridianCity_Gym_EventScript_GiftNorman
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox ViridianCity_Gym_Text_NoGiftNorman, MSGBOX_DEFAULT
+	goto ViridianCity_Gym_EventScript_NormanPostBattle
+
+ViridianCity_Gym_EventScript_GiftNorman::
+	checkitemspace ITEM_MACHO_BRACE
+	goto_if_eq VAR_RESULT, FALSE, ViridianCity_Gym_EventScript_NoRoomForMachoBrace
+	msgbox ViridianCity_Gym_Text_GiftNorman, MSGBOX_DEFAULT
+	giveitem ITEM_MACHO_BRACE
+	setflag FLAG_HIDDEN_ITEM_VIRIDIAN_CITY_GYM_MACHO_BRACE
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox ViridianCity_Gym_Text_ExplainMachoBrace, MSGBOX_DEFAULT
+	goto ViridianCity_Gym_EventScript_NormanPostBattle
+
+ViridianCity_Gym_EventScript_NormanPostBattle::
+	goto_if_unset FLAG_HIDDEN_ITEM_VIRIDIAN_CITY_GYM_MACHO_BRACE, ViridianCity_Gym_EventScript_GiftNorman
+	msgbox ViridianCity_Gym_Text_NormanPostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+ViridianCity_Gym_EventScript_NoRoomForMachoBrace::
+	msgbox ViridianCity_Gym_Text_YouShouldMakeRoom, MSGBOX_DEFAULT
+	release
+	end
+
+ViridianCity_Gym_EventScript_DoubleRefused::
+	msgbox ViridianCity_Gym_Text_DoubleRefused, MSGBOX_DEFAULT
+	release
+	end
+
+ViridianCity_Gym_EventScript_StillNot4::
+	msgbox ViridianCity_Gym_Text_StillNot4, MSGBOX_DEFAULT
+	release
+	end
+
+@Last line about Norman
 
 ViridianCity_Gym_EventScript_Jason::
 	trainerbattle_single TRAINER_TAMER_JASON, ViridianCity_Gym_Text_JasonIntro, ViridianCity_Gym_Text_JasonDefeat

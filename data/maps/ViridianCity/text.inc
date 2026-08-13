@@ -26,6 +26,13 @@ ViridianCity_Text_GymClosedWonderWhoLeaderIs::
 ViridianCity_Text_ViridiansGymLeaderReturned::
     .string "Viridian Gym's Leader returned!$"
 
+ViridianCity_Text_OldManGymUnderIntervention::
+    .string "Did you hear? Nasty things happened\n"
+    .string "inside this Gym.\p"
+    .string "Word is the Pokémon League sent in\n"
+    .string "a fill-in Leader to run the place\l"
+    .string "while they sort it all out.$"
+
 ViridianCity_Text_WantToKnowAboutCaterpillarMons::
     .string "You want to know about the two\n"
     .string "kinds of caterpillar Pokémon?$"

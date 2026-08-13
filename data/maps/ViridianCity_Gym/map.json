@@ -16,6 +16,7 @@
   "connections": null,
   "object_events": [
     {
+      "local_id": "LOCALID_GIOVANNI_FOLLOWER_1",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
       "x": 10,
@@ -27,9 +28,10 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "ViridianCity_Gym_EventScript_Takashi",
-      "flag": "0"
+      "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS"
     },
     {
+      "local_id": "LOCALID_GIOVANNI_FOLLOWER_6",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_M",
       "x": 12,
@@ -41,9 +43,10 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "ViridianCity_Gym_EventScript_Yuji",
-      "flag": "0"
+      "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS"
     },
     {
+      "local_id": "LOCALID_GIOVANNI_FOLLOWER_7",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
       "x": 11,
@@ -55,9 +58,10 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "ViridianCity_Gym_EventScript_Atsushi",
-      "flag": "0"
+      "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS"
     },
     {
+      "local_id": "LOCALID_GIOVANNI_FOLLOWER_5",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_MAN",
       "x": 10,
@@ -69,9 +73,10 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "ViridianCity_Gym_EventScript_Jason",
-      "flag": "0"
+      "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS"
     },
     {
+      "local_id": "LOCALID_GIOVANNI_FOLLOWER_8",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_MAN",
       "x": 2,
@@ -83,9 +88,10 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "ViridianCity_Gym_EventScript_Cole",
-      "flag": "0"
+      "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS"
     },
     {
+      "local_id": "LOCALID_GIOVANNI_FOLLOWER_4",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_BLACK_BELT",
       "x": 3,
@@ -97,9 +103,10 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "2",
       "script": "ViridianCity_Gym_EventScript_Kiyo",
-      "flag": "0"
+      "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS"
     },
     {
+      "local_id": "LOCALID_GIOVANNI_FOLLOWER_3",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_M",
       "x": 6,
@@ -111,7 +118,7 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "ViridianCity_Gym_EventScript_Samuel",
-      "flag": "0"
+      "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS"
     },
     {
       "local_id": "LOCALID_VIRIDIAN_GIOVANNI",
@@ -129,6 +136,7 @@
       "flag": "FLAG_HIDE_VIRIDIAN_GIOVANNI"
     },
     {
+      "local_id": "LOCALID_GIOVANNI_FOLLOWER_2",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_COOLTRAINER_M",
       "x": 13,
@@ -140,9 +148,10 @@
       "trainer_type": "TRAINER_TYPE_NORMAL",
       "trainer_sight_or_berry_tree_id": "3",
       "script": "ViridianCity_Gym_EventScript_Warren",
-      "flag": "0"
+      "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS"
     },
     {
+      "local_id": "LOCALID_GIOVANNI_FOLLOWER_9",
       "type": "object",
       "graphics_id": "OBJ_EVENT_GFX_GYM_GUY",
       "x": 16,
@@ -154,7 +163,22 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "ViridianCity_Gym_EventScript_GymGuy",
-      "flag": "0"
+      "flag": "FLAG_HIDE_MISC_KANTO_ROCKETS"
+    },
+    {
+      "local_id": "LOCALID_VIRIDIAN_NORMAN",
+      "type": "object",
+      "graphics_id": "OBJ_EVENT_GFX_NORMAN",
+      "x": 2,
+      "y": 2,
+      "elevation": 3,
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN",
+      "movement_range_x": 1,
+      "movement_range_y": 1,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "ViridianCity_Gym_EventScript_Norman",
+      "flag": "FLAG_HIDE_NORMAN"
     }
   ],
   "warp_events": [
