@@ -1510,6 +1510,7 @@ const u8 gText_TypePsychic[]       = _("Psychic");
 const u8 gText_TypeRock[]          = _("Rock");
 const u8 gText_TypeSteel[]         = _("Steel");
 const u8 gText_TypeWater[]         = _("Water");
+const u8 gText_TypeNormal[]         = _("Normal");
 const u8 gText_YouAlreadyHaveThis[] = _("You already have this.{PAUSE_UNTIL_PRESS}");
 
 // Frontier util.

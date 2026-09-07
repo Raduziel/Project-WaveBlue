@@ -255,9 +255,9 @@ static const struct WindowTemplate sWindowTemplates[] = {
     },
     [WIN_DESCRIPTION] = {
         .bg = 0,
-        .tilemapLeft = 12,
+        .tilemapLeft = 11,
         .tilemapTop = 12,
-        .width = 18,
+        .width = 19,
         .height = 8,
         .paletteNum = 10,
         .baseBlock = 0x13f
@@ -291,7 +291,7 @@ static const struct WindowTemplate sWindowTemplates[] = {
     },
     [WIN_MOVE_INFO] = {
         .bg = 0,
-        .tilemapLeft = 7,
+        .tilemapLeft = 6,
         .tilemapTop = 13,
         .width = 5,
         .height = 6,
@@ -1573,7 +1573,7 @@ static void PrintMoveInfo(enum Item itemId)
     {
         gSprites[sTMCaseDynamicResources->typeIconSpriteId].invisible = TRUE;
         for (u32 i = 0; i < 4; i++)
-            TMCase_Print(WIN_MOVE_INFO, FONT_NORMAL_COPY_2, gText_ThreeHyphens, 7, 12 * i, 0, 0, TEXT_SKIP_DRAW, COLOR_MOVE_INFO);
+            TMCase_Print(WIN_MOVE_INFO, FONT_NORMAL_COPY_2, gText_ThreeHyphens, 10, 12 * i, 0, 0, TEXT_SKIP_DRAW, COLOR_MOVE_INFO);
         CopyWindowToVram(WIN_MOVE_INFO, COPYWIN_GFX);
     }
     else
@@ -1586,7 +1586,7 @@ static void PrintMoveInfo(enum Item itemId)
             struct Sprite *sprite = &gSprites[sTMCaseDynamicResources->typeIconSpriteId];
             StartSpriteAnim(sprite, gMovesInfo[move].type);
             sprite->oam.paletteNum = gTypesInfo[gMovesInfo[move].type].palette;
-            sprite->x = 72;
+            sprite->x = 67;
             sprite->y = 110;
             sprite->invisible = FALSE;
         }
@@ -1599,7 +1599,7 @@ static void PrintMoveInfo(enum Item itemId)
             ConvertIntToDecimalStringN(gStringVar1, gMovesInfo[move].power, STR_CONV_MODE_RIGHT_ALIGN, 3);
             str = gStringVar1;
         }
-        TMCase_Print(WIN_MOVE_INFO, FONT_NORMAL_COPY_2, str, 7, 12, 0, 0, TEXT_SKIP_DRAW, COLOR_MOVE_INFO);
+        TMCase_Print(WIN_MOVE_INFO, FONT_NORMAL_COPY_2, str, 10, 12, 0, 0, TEXT_SKIP_DRAW, COLOR_MOVE_INFO);
 
         // Print accuracy
         if (gMovesInfo[move].accuracy == 0)
@@ -1609,11 +1609,11 @@ static void PrintMoveInfo(enum Item itemId)
             ConvertIntToDecimalStringN(gStringVar1, gMovesInfo[move].accuracy, STR_CONV_MODE_RIGHT_ALIGN, 3);
             str = gStringVar1;
         }
-        TMCase_Print(WIN_MOVE_INFO, FONT_NORMAL_COPY_2, str, 7, 24, 0, 0, TEXT_SKIP_DRAW, COLOR_MOVE_INFO);
+        TMCase_Print(WIN_MOVE_INFO, FONT_NORMAL_COPY_2, str, 10, 24, 0, 0, TEXT_SKIP_DRAW, COLOR_MOVE_INFO);
 
         // Print PP
         ConvertIntToDecimalStringN(gStringVar1, gMovesInfo[move].pp, STR_CONV_MODE_RIGHT_ALIGN, 3);
-        TMCase_Print(WIN_MOVE_INFO, FONT_NORMAL_COPY_2, gStringVar1, 7, 36, 0, 0, TEXT_SKIP_DRAW, COLOR_MOVE_INFO);
+        TMCase_Print(WIN_MOVE_INFO, FONT_NORMAL_COPY_2, gStringVar1, 10, 36, 0, 0, TEXT_SKIP_DRAW, COLOR_MOVE_INFO);
 
         CopyWindowToVram(WIN_MOVE_INFO, COPYWIN_GFX);
     }

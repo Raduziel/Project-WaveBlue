@@ -1,11 +1,6 @@
 Route25_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, Route25_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, Route25_OnFrame
 	.byte 0
-
-Route25_OnTransition::
-    setflag FLAG_HIDE_ROUTE25_BILL
-    end
 
 Route25_OnFrame:
     map_script_2 VAR_BOXLINK_BILL, 1, Route25_EventScript_BillStop_Trigger
@@ -20,8 +15,7 @@ Route25_EventScript_Man::
 	end
 
 Route25_EventScript_BillStop_Trigger::
-    checkflag FLAG_GOT_SS_TICKET
-	goto_if_eq VAR_RESULT, FALSE, Route25_EventScript_BillStop_End
+    goto_if_unset FLAG_GOT_SS_TICKET, Route25_EventScript_BillStop_End
 	lockall
     textcolor NPC_TEXT_COLOR_MALE
     playse SE_PIN

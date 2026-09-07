@@ -1,9 +1,6 @@
 @ Same as Hoenn's day-care text, used by the Four Island Day-Care. Unused text translated in Emerald
 
 DayCare_Text_ImDaycareManSpeakToMyWife::
-	.string "I'm the Day-Care Man.\p"
-	.string "I help take care of the precious\n"
-	.string "Pokémon of Trainers.\p"
 	.string "If you'd like me to raise your\n"
 	.string "Pokémon, have a word with my wife.$"
 
@@ -30,10 +27,31 @@ DayCare_Text_YouHaveNoRoomForIt::
 
 DayCare_Text_ReceivedEgg::
 	.string "{PLAYER} received the Egg from\n"
-	.string "the Day-Care Man.$"
+	.string "the Nursery Man.$"
 
 DayCare_Text_TakeGoodCareOfIt::
 	.string "Take good care of it.$"
+
+DayCare_Text_NurseryWelcomeGift::
+	.string "Oh, a new face!\p"
+	.string "Welcome to the Nursery. We help\n"
+	.string "raise and hatch Pokémon here.\p"
+	.string "Hold on… aren't you the new Pokémon\n"
+	.string "League Champion?\p"
+	.string "I knew it! Trainers like you deserve\n"
+	.string "nothing but the best.\p"
+	.string "Here, take these. They'll help you\n"
+	.string "get the most from an Egg.$"
+
+DayCare_Text_NurseryGiftDeparture::
+	.string "Whenever you'd like a Pokémon raised,\n"
+	.string "just speak with my wife.\p"
+	.string "We'll take good care of it.$"
+
+DayCare_Text_NurseryMakeRoom::
+	.string "Oh? Your Bag is full.\p"
+	.string "Make some room and come see me\n"
+	.string "again, I've got something for you.$"
 
 DayCare_Text_SeeWifeIfYouWantToPickUpMon::
 	.string "ポケモンを　ひきとりたい　ときは\n"
@@ -48,7 +66,7 @@ DayCare_Text_IWillKeepDoYouWantIt::
 	.string "You do want this, yes?$"
 
 DayCare_Text_WouldYouLikeUsToRaiseMon::
-	.string "I'm the Day-Care Lady.\p"
+	.string "I'm the Nursery Lady.\p"
 	.string "We can raise Pokémon for you.\p"
 	.string "Would you like us to raise one?$"
 
@@ -111,7 +129,7 @@ DayCare_Text_HeresYourMon::
 
 DayCare_Text_TookBackMon::
 	.string "{PLAYER} took back {STR_VAR_1} from\n"
-	.string "the Day-Care Lady.$"
+	.string "the Nursery Lady.$"
 
 DayCare_Text_YouHaveJustOneMon::
 	.string "Oh? But you have just one\n"

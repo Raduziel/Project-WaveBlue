@@ -1,10 +1,5 @@
 Route24_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, Route24_OnTransition
 	.byte 0
-
-Route24_OnTransition::
-	goto_if_set FLAG_HIDE_ROUTE24_ROCKET_DISGUISE, Route24_OnTransition_End
-	setflag FLAG_HIDE_NUGGET_BRIDGE_ROCKET
 
 Route24_OnTransition_End::
 	end
@@ -65,7 +60,8 @@ Route24_EventScript_BattleRocket::
 	applymovement LOCALID_ROUTE24_ROCKET_DISGUISED, Route24_Movement_SpinReveal
 	waitmovement 0
 	removeobject LOCALID_ROUTE24_ROCKET_DISGUISED
-	clearflag FLAG_HIDE_NUGGET_BRIDGE_ROCKET
+	setflag FLAG_HIDE_ROUTE24_ROCKET_DISGUISED
+	clearflag FLAG_HIDE_ROUTE24_ROCKET_REVEALED
 	addobject LOCALID_ROUTE24_ROCKET_REVEALED
 	call_if_eq VAR_TEMP_1, 2, Route24_EventScript_RevealedFaceSouth
 	message Route24_Text_JoinTeamRocket

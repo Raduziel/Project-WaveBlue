@@ -39,7 +39,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route24_EventScript_RocketDirectApproach",
-      "flag": "FLAG_HIDE_ROUTE24_ROCKET_DISGUISE"
+      "flag": "FLAG_HIDE_ROUTE24_ROCKET_DISGUISED"
     },
     {
       "type": "object",
@@ -152,7 +152,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "Route24_EventScript_Rocket",
-      "flag": "FLAG_HIDE_NUGGET_BRIDGE_ROCKET"
+      "flag": "FLAG_HIDE_ROUTE24_ROCKET_REVEALED"
     }
   ],
   "warp_events": [],

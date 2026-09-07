@@ -15,6 +15,10 @@
 #include "task.h"
 #include "text_window.h"
 #include "trig.h"
+#include "pokemon.h"
+#include "constants/items.h"
+#include "constants/moves.h"
+#include "constants/abilities.h"
 #include "constants/songs.h"
 
 #define NUM_REELS 3
@@ -184,6 +188,7 @@ static void StopReel3(u16 whichReel);
 static bool32 TwoReelBiasCheck(s32 reel0id, s32 reel0pos, s32 reel1id, s32 reel1pos, s32 icon);
 static bool32 OneReelBiasCheck(s32, s32, s32);
 static bool32 TestReelIconAttribute(s32 attr, s32 icon);
+static u32 GetSlotJackpotLuckSources(void);
 static void CalcSlotBias(void);
 static void ResetMachineBias(void);
 static u16 CalcPayout(void);
@@ -1469,17 +1474,25 @@ static void StopReel3(u16 whichReel)
     s32 nextPos;
     s32 testPos;
     s32 pos;
+    s32 searchLen;
     u8 possiblePositions[5];
 
     nextPos = GetNextReelPosition(whichReel);
     testPos = nextPos;
     numPossiblePositions = 0;
-    for (i = 0; i < 5; i++)
+
+    searchLen = 5;
+    if (sSlotMachineState->machineBias == PAYOUT_7 && GetSlotJackpotLuckSources() != 0)
+        searchLen = REEL_LENGTH;
+
+    for (i = 0; i < searchLen; i++)
     {
         if (OneReelBiasCheck(whichReel, testPos, sSlotMachineState->machineBias))
         {
             possiblePositions[numPossiblePositions] = i;
             numPossiblePositions++;
+            if (searchLen != 5)
+                break;
         }
         testPos--;
         if (testPos < 0)
@@ -1684,16 +1697,68 @@ static u8 ReelIconToPayoutRank(s32 iconId)
     }
 }
 
+static u32 GetSlotJackpotLuckSources(void)
+{
+    bool32 futureSight = FALSE, luckyEgg = FALSE, amuletCoin = FALSE, anticipation = FALSE;
+    u32 i, j;
+
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        struct Pokemon *mon = &gPlayerParty[i];
+        u16 item;
+
+        if (GetMonData(mon, MON_DATA_SPECIES) == SPECIES_NONE || GetMonData(mon, MON_DATA_IS_EGG))
+            continue;
+
+        item = GetMonData(mon, MON_DATA_HELD_ITEM);
+        if (item == ITEM_LUCKY_EGG)
+            luckyEgg = TRUE;
+        if (item == ITEM_AMULET_COIN)
+            amuletCoin = TRUE;
+        if (GetMonAbility(mon) == ABILITY_ANTICIPATION)
+            anticipation = TRUE;
+        for (j = 0; j < MAX_MON_MOVES; j++)
+        {
+            if (GetMonData(mon, MON_DATA_MOVE1 + j) == MOVE_FUTURE_SIGHT)
+            {
+                futureSight = TRUE;
+                break;
+            }
+        }
+    }
+    return futureSight + luckyEgg + amuletCoin + anticipation;
+}
+
 static void CalcSlotBias(void)
 {
     u16 rval = Random() / 4;
     s32 i;
     const u16 * biasChances = sReelBiasChances[sSlotMachineState->machineIdx];
+    u32 sources = GetSlotJackpotLuckSources();
+
     for (i = 0; i < NUM_PAYOUT_TYPES - 1; i++)
     {
         if (rval < biasChances[i])
             break;
     }
+
+    if (sources != 0)
+    {
+        u32 num = 1, den = 1, k, jackpotChance;
+        for (k = 0; k < sources; k++)
+        {
+            num *= 3;   // 1.5 = 3/2
+            den *= 2;
+        }
+        jackpotChance = ((0x4000 - biasChances[PAYOUT_ROCKET]) * num + (den - 1)) / den;
+        if (jackpotChance > 0x4000)
+            jackpotChance = 0x4000;
+        if (i >= PAYOUT_7)
+            i = PAYOUT_ROCKET;
+        if ((Random() & 0x3FFF) < jackpotChance)
+            i = PAYOUT_7;
+    }
+
     if (sSlotMachineState->machineBias < PAYOUT_ROCKET)
     {
         if (sSlotMachineState->biasCooldown == 0)

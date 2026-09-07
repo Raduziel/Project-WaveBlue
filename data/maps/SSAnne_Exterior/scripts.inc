@@ -6,15 +6,10 @@ SSAnne_Exterior_MapScripts::
 
 SSAnne_Exterior_OnTransition::
     setworldmapflag FLAG_WORLD_MAP_SSANNE_EXTERIOR
-    
-    setflag FLAG_HIDE_SSANNE_MEW
-
     goto_if_set FLAG_FOUGHT_MEW, SSAnne_Exterior_EventScript_EndTransition
-
     goto_if_unset FLAG_SYS_GAME_CLEAR, SSAnne_Exterior_EventScript_EndTransition
     goto_if_unset FLAG_FOUGHT_MEWTWO, SSAnne_Exterior_EventScript_EndTransition
     goto_if_unset FLAG_DEFEATED_OAK, SSAnne_Exterior_EventScript_EndTransition
-
     clearflag FLAG_HIDE_SSANNE_MEW
     end
 
@@ -28,7 +23,10 @@ SSAnne_Exterior_OnResume::
 SSAnne_Exterior_EventScript_TryRemoveMew::
     specialvar VAR_RESULT, GetBattleOutcome
     goto_if_ne VAR_RESULT, B_OUTCOME_CAUGHT, SSAnne_Exterior_EventScript_ResumeReturn
+    call SSAnne_Exterior_EventScript_MarkMewFought
     removeobject VAR_LAST_TALKED
+    setflag FLAG_HIDE_SSANNE_MEW
+
 SSAnne_Exterior_EventScript_ResumeReturn::
     return
 
@@ -48,21 +46,19 @@ SSAnne_Exterior_EventScript_Mew::
     special BattleSetup_StartLegendaryBattle
     waitstate
     clearflag FLAG_SYS_SPECIAL_WILD_BATTLE
-    
     specialvar VAR_RESULT, GetBattleOutcome
     goto_if_eq VAR_RESULT, B_OUTCOME_CAUGHT, SSAnne_Exterior_EventScript_MewCaught
     goto SSAnne_Exterior_EventScript_MewRan
     end
 
 SSAnne_Exterior_EventScript_MewCaught::
-    setflag FLAG_FOUGHT_MEW
+    call SSAnne_Exterior_EventScript_MarkMewFought
     removeobject VAR_LAST_TALKED
     release
     end
 
 SSAnne_Exterior_EventScript_MewRan::
-    setflag FLAG_FOUGHT_MEW
-    
+    call SSAnne_Exterior_EventScript_MarkMewFought
     msgbox SSAnne_Exterior_Text_MewFled, MSGBOX_DEFAULT
     closemessage
     playse SE_WARP_IN
@@ -71,6 +67,11 @@ SSAnne_Exterior_EventScript_MewRan::
     removeobject VAR_LAST_TALKED
     release
     end
+
+SSAnne_Exterior_EventScript_MarkMewFought::
+    setflag FLAG_FOUGHT_MEW
+    setflag FLAG_HIDE_SSANNE_MEW
+    return
 
 SSAnne_Exterior_Movement_MewTeleport:
     set_invisible

@@ -1622,6 +1622,7 @@ extern const u8 gText_TypePsychic[];
 extern const u8 gText_TypeRock[];
 extern const u8 gText_TypeSteel[];
 extern const u8 gText_TypeWater[];
+extern const u8 gText_TypeNormal[];
 extern const u8 gText_YouAlreadyHaveThis[];
 
 extern const u8 gText_Exit[];

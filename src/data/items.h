@@ -14049,9 +14049,8 @@ const struct ItemInfo gItemsInfo[] =
         .name = ITEM_NAME("HM02"),
         .price = 0,
         .description = COMPOUND_STRING(
-            "Flies up on the "
-            "first\nturn, then "
-            "attacks next\nturn."),
+            "A swift aerial rush.\n"
+            "Raises the user's Speed."),
         .importance = 1,
         .pocket = POCKET_TM_HM,
         .type = ITEM_USE_PARTY_MENU,

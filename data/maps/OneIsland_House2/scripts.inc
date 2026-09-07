@@ -18,12 +18,10 @@ OneIsland_House2_EventScript_ShortIntro::
 
 OneIsland_House2_EventScript_ChooseType::
 	multichoicegrid 0, 0, MULTI_TM_MERCHANT_TYPES, 3, 0
-
-	compare VAR_RESULT, 17
+	compare VAR_RESULT, 18
 	goto_if_eq OneIsland_House2_EventScript_Exit
 	compare VAR_RESULT, 127
 	goto_if_eq OneIsland_House2_EventScript_Exit
-
 	compare VAR_RESULT, 0
 	goto_if_eq OneIsland_House2_EventScript_SetBug
 	compare VAR_RESULT, 1
@@ -58,7 +56,8 @@ OneIsland_House2_EventScript_ChooseType::
 	goto_if_eq OneIsland_House2_EventScript_SetSteel
 	compare VAR_RESULT, 16
 	goto_if_eq OneIsland_House2_EventScript_SetWater
-	
+	compare VAR_RESULT, 17
+	goto_if_eq OneIsland_House2_EventScript_SetNormal
 	goto OneIsland_House2_EventScript_Exit
 
 OneIsland_House2_EventScript_SetBug::
@@ -128,6 +127,10 @@ OneIsland_House2_EventScript_SetSteel::
 OneIsland_House2_EventScript_SetWater::
 	setvar VAR_0x8004, TYPE_WATER
 	goto OneIsland_House2_EventScript_OpenShop
+
+OneIsland_House2_EventScript_SetNormal::
+	setvar VAR_0x8004, TYPE_NORMAL
+	goto OneIsland_House2_EventScript_OpenShop	
 
 OneIsland_House2_EventScript_OpenShop::
 	callnative SetupOneTimeTMMart

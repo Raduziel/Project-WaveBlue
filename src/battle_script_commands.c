@@ -13607,6 +13607,15 @@ void BS_JumpIfNotBerry(void)
         gBattlescriptCurrInstr = cmd->jumpInstr;
 }
 
+void BS_JumpIfAteBerry(void)
+{
+    NATIVE_ARGS(u8 battler, const u8 *jumpInstr);
+    if (GetBattlerPartyState(GetBattlerForBattleScript(cmd->battler))->ateBerry)
+        gBattlescriptCurrInstr = cmd->jumpInstr;
+    else
+        gBattlescriptCurrInstr = cmd->nextInstr;
+}
+
 void BS_GravityOnAirborneMons(void)
 {
     NATIVE_ARGS();

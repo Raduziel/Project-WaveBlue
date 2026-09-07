@@ -739,6 +739,20 @@ BattleScript_EffectStuffCheeks::
 BattleScript_StuffCheeksEnd:
 	goto BattleScript_MoveEnd
 
+BattleScript_EffectBelch::
+	attackcanceler
+	jumpifateberry BS_ATTACKER, BattleScript_HitFromAccCheck
+	jumpifnotberry BS_ATTACKER, BattleScript_HitFromAccCheck
+	playanimation BS_ATTACKER, B_ANIM_HELD_ITEM_EFFECT
+	waitanimation
+	setbyte sBERRY_OVERRIDE, 1
+	orword gHitMarker, HITMARKER_DISABLE_ANIMATION
+	consumeberry BS_ATTACKER, TRUE
+	bicword gHitMarker, HITMARKER_DISABLE_ANIMATION
+	setbyte sBERRY_OVERRIDE, 0
+	removeitem BS_ATTACKER
+	goto BattleScript_HitFromAccCheck
+
 BattleScript_EffectDecorate::
 	attackcanceler
 	accuracycheck BattleScript_MoveMissedPause
@@ -1442,14 +1456,14 @@ BattleScript_HitSwitchTargetForceRandomSwitchFailed:
 	return
 
 BattleScript_EffectToxicThread::
-	setstatchanger STAT_SPEED, 1, TRUE
+	setstatchanger STAT_SPEED, 2, TRUE
 	attackcanceler
 	jumpifsubstituteblocks BattleScript_ButItFailed
 	checknonvolatiletrigger MOVE_EFFECT_POISON, BattleScript_EffectStatDownFromAccCheck
 	accuracycheck BattleScript_MoveMissedPause
 	attackanimation
 	waitanimation
-	setstatchanger STAT_SPEED, 1, TRUE
+	setstatchanger STAT_SPEED, 2, TRUE
 	statbuffchange BS_TARGET, STAT_CHANGE_ALLOW_PTR | STAT_CHANGE_ONLY_CHECKING, BattleScript_ToxicThreadTryPsn
 	jumpifbyte CMP_LESS_THAN, cMULTISTRING_CHOOSER, B_MSG_STAT_WONT_CHANGE, BattleScript_ToxicThreadDoAnim
 	jumpifbyte CMP_EQUAL, cMULTISTRING_CHOOSER, B_MSG_STAT_CHANGE_EMPTY, BattleScript_ToxicThreadTryPsn
@@ -5612,10 +5626,15 @@ BattleScript_CottonDownLoopIncrement:
 	return
 
 BattleScript_AnticipationActivates::
-	pause 5
 	call BattleScript_AbilityPopUp
 	printstring STRINGID_ANTICIPATIONACTIVATES
 	waitmessage B_WAIT_TIME_LONG
+	setstatchanger STAT_EVASION, 1, FALSE
+	statbuffchange BS_SCRIPTING, STAT_CHANGE_NOT_PROTECT_AFFECTED | STAT_CHANGE_CERTAIN, BattleScript_AnticipationActivatesRet
+	waitanimation
+	printstring STRINGID_SCRIPTINGABILITYSTATRAISE
+	waitmessage B_WAIT_TIME_LONG
+BattleScript_AnticipationActivatesRet:
 	return
 
 BattleScript_AftermathDmg::

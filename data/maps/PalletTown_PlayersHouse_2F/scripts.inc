@@ -5,7 +5,6 @@ PalletTown_PlayersHouse_2F_MapScripts::
 
 PalletTown_PlayersHouse_2F_OnTransition::
     call_if_eq VAR_MAP_SCENE_PALLET_TOWN_PLAYERS_HOUSE_2F, 0, PalletTown_PlayersHouse_2F_EventScript_SetRespawn
-    call_if_unset FLAG_SYS_GAME_CLEAR, PalletTown_PlayersHouse_2F_EventScript_HideBalls
     call_if_set FLAG_SYS_GAME_CLEAR, PalletTown_PlayersHouse_2F_EventScript_TryShowBalls
     end
 
@@ -20,11 +19,6 @@ PalletTown_PlayersHouse_2F_FirstWarpIn::
 
 PalletTown_PlayersHouse_2F_EventScript_SetRespawn::
     setrespawn HEAL_LOCATION_PALLET_TOWN
-    return
-
-PalletTown_PlayersHouse_2F_EventScript_HideBalls::
-    setflag FLAG_HIDE_POSTGAME_STARTER_1
-    setflag FLAG_HIDE_POSTGAME_STARTER_2
     return
 
 PalletTown_PlayersHouse_2F_EventScript_TryShowBalls::

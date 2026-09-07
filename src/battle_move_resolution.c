@@ -3573,7 +3573,7 @@ static enum MoveEndResult MoveEndThirdMoveBlock(void)
             result = MOVEEND_RESULT_RUN_SCRIPT;
         }
         break;
-    case EFFECT_NATURAL_GIFT:
+/*      case EFFECT_NATURAL_GIFT:
         if (!gBattleStruct->unableToUseMove && GetItemPocket(gBattleMons[gBattlerAttacker].item) == POCKET_BERRIES)
         {
             enum Item item = gBattleMons[gBattlerAttacker].item;
@@ -3594,7 +3594,7 @@ static enum MoveEndResult MoveEndThirdMoveBlock(void)
             if (!TrySymbiosis(gBattlerAttacker, item, TRUE))
                 result = MOVEEND_RESULT_RUN_SCRIPT;
         }
-        break;
+        break;*/
     default:
         break;
     }

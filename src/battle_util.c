@@ -1282,7 +1282,7 @@ bool32 IsBelchPreventingMove(enum BattlerId battler, enum Move move)
     if (GetMoveEffect(move) != EFFECT_BELCH)
         return FALSE;
 
-    return !GetBattlerPartyState(battler)->ateBerry;
+    return !GetBattlerPartyState(battler)->ateBerry && GetItemPocket(gBattleMons[battler].item) != POCKET_BERRIES;
 }
 
 // Dynamax bypasses all selection prevention except Taunt and Assault Vest.
@@ -3139,8 +3139,7 @@ u32 AbilityBattleEffects(enum AbilityEffect caseID, enum BattlerId battler, enum
 
                 if (effect != 0)
                 {
-                    gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_SWITCHIN_ANTICIPATION;
-                    BattleScriptCall(BattleScript_SwitchInAbilityMsg);
+                    BattleScriptCall(BattleScript_AnticipationActivates);
                 }
             }
             break;
@@ -6724,6 +6723,58 @@ static inline u32 CalcMoveBasePowerAfterModifiers(struct BattleContext *ctx)
     }
 
     return uq4_12_multiply_by_int_half_down(modifier, basePower);
+}
+
+u32 GetDisplayedMoveBasePower(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move)
+{
+    struct BattleContext ctx = {0};
+    ctx.battlerAtk = battlerAtk;
+    ctx.battlerDef = battlerDef;
+    ctx.move = ctx.chosenMove = move;
+    ctx.moveType = GetBattleMoveType(move);
+    ctx.weather = (gBattleWeather == B_WEATHER_NONE || !HasWeatherEffect()) ? B_WEATHER_NONE : gBattleWeather;
+    ctx.fieldStatuses = gFieldStatuses;
+    ctx.abilityAtk = GetBattlerAbility(battlerAtk);
+    ctx.abilityDef = GetBattlerAbility(battlerDef);
+    ctx.holdEffectAtk = GetBattlerHoldEffect(battlerAtk);
+    ctx.holdEffectDef = GetBattlerHoldEffect(battlerDef);
+
+    u32 basePower = CalcMoveBasePower(&ctx);
+
+    switch (GetMoveEffect(move))
+    {
+    case EFFECT_FACADE:
+        if (gBattleMons[battlerAtk].status1 & (STATUS1_BURN | STATUS1_PSN_ANY | STATUS1_PARALYSIS | STATUS1_FROSTBITE))
+            basePower *= 2;
+        break;
+    case EFFECT_BRINE:
+        if (gBattleMons[battlerDef].hp <= (gBattleMons[battlerDef].maxHP / 2))
+            basePower *= 2;
+        break;
+    case EFFECT_RETALIATE:
+        if (gSideTimers[GetBattlerSide(battlerAtk)].retaliateTimer == 1)
+            basePower *= 2;
+        break;
+    case EFFECT_SOLAR_BEAM:
+        if ((GetConfig(B_SANDSTORM_SOLAR_BEAM) >= GEN_3 && IsBattlerWeatherAffected(battlerAtk, B_WEATHER_LOW_LIGHT))
+         || IsBattlerWeatherAffected(battlerAtk, (B_WEATHER_RAIN | B_WEATHER_ICY_ANY | B_WEATHER_FOG)))
+            basePower /= 2;
+        break;
+    case EFFECT_STOMPING_TANTRUM:
+        if (gBattleStruct->battlerState[battlerAtk].stompingTantrumTimer == 1)
+            basePower *= 2;
+        break;
+    case EFFECT_KNOCK_OFF:
+        if (B_KNOCK_OFF_DMG >= GEN_6
+         && gBattleMons[battlerDef].item != ITEM_NONE
+         && CanBattlerGetOrLoseItem(battlerDef, battlerAtk, gBattleMons[battlerDef].item))
+            basePower = (basePower * 3) / 2;
+        break;
+    default:
+        break;
+    }
+
+    return basePower;
 }
 
 static bool32 IsRuinStatusActive(u32 fieldEffect)

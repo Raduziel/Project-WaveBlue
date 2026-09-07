@@ -80,6 +80,8 @@
     F(WILD_CHARGE) \
     F(ELECTROWEB) \
     F(THUNDER_WAVE) \
+    F(SUPERCELL_SLAM) \
+    F(ELECTRO_BALL) \
     F(ALLURING_VOICE) \
     F(DAZZLING_GLEAM) \
     F(DRAINING_KISS) \
@@ -116,6 +118,7 @@
     F(DRILL_RUN) \
     F(SCORCHING_SANDS) \
     F(MUD_SHOT) \
+    F(HIGH_HORSEPOWER) \
     F(AVALANCHE) \
     F(ICE_SPINNER) \
     F(ICICLE_SPEAR) \
@@ -130,6 +133,7 @@
     F(ZEN_HEADBUTT) \
     F(PSYSHOCK) \
     F(TRICK_ROOM) \
+    F(GRAVITY) \
     F(POWER_GEM) \
     F(ROCK_BLAST) \
     F(STEALTH_ROCK) \
@@ -139,9 +143,15 @@
     F(HEAVY_SLAM) \
     F(IRON_HEAD) \
     F(SMART_STRIKE) \
+    F(GYRO_BALL) \
     F(CHILLING_WATER) \
     F(LIQUIDATION) \
     F(SCALD) \
+    F(MUDDY_WATER) \
+    F(FLIP_TURN) \
+    F(HYPER_VOICE) \
+    F(NATURAL_GIFT) \
+    F(PAIN_SPLIT) \
     F(WEATHER_BALL) \
     F(BODY_SLAM) \
     F(DOUBLE_EDGE) \

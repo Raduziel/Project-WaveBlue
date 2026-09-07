@@ -72,12 +72,34 @@ FourIsland_EventScript_DaycareMan::
 	special QuestLog_CutRecording
 	lock
 	faceplayer
+	goto_if_unset FLAG_GOT_BREEDING_ITEMS, FourIsland_EventScript_GiveBreedingItems
 	special GetDaycareMonNicknames
 	specialvar VAR_RESULT, GetDaycareState
 	goto_if_eq VAR_RESULT, DAYCARE_EGG_WAITING, FourIsland_EventScript_DaycareEggWaiting
 	goto_if_eq VAR_RESULT, DAYCARE_ONE_MON, FourIsland_EventScript_CheckOnOneMon
 	goto_if_eq VAR_RESULT, DAYCARE_TWO_MONS, FourIsland_EventScript_CheckOnTwoMons
 	msgbox DayCare_Text_ImDaycareManSpeakToMyWife
+	release
+	end
+
+FourIsland_EventScript_GiveBreedingItems::
+	checkitemspace ITEM_DESTINY_KNOT
+	goto_if_eq VAR_RESULT, FALSE, FourIsland_EventScript_NurseryNoRoom
+	checkitemspace ITEM_EVERSTONE
+	goto_if_eq VAR_RESULT, FALSE, FourIsland_EventScript_NurseryNoRoom
+	checkitemspace ITEM_OVAL_CHARM
+	goto_if_eq VAR_RESULT, FALSE, FourIsland_EventScript_NurseryNoRoom
+	msgbox DayCare_Text_NurseryWelcomeGift
+	giveitem ITEM_DESTINY_KNOT
+	giveitem ITEM_EVERSTONE
+	giveitem ITEM_OVAL_CHARM
+	setflag FLAG_GOT_BREEDING_ITEMS
+	msgbox DayCare_Text_NurseryGiftDeparture
+	release
+	end
+
+FourIsland_EventScript_NurseryNoRoom::
+	msgbox DayCare_Text_NurseryMakeRoom
 	release
 	end
 

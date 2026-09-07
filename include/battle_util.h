@@ -260,6 +260,7 @@ u32 GetBattlerWeight(enum BattlerId battler);
 s32 CalcCritChanceStage(struct BattleContext *ctx);
 s32 CalcCritChanceStageGen1(struct BattleContext *ctx);
 s32 CalculateMoveDamage(struct BattleContext *ctx);
+u32 GetDisplayedMoveBasePower(enum BattlerId battlerAtk, enum BattlerId battlerDef, enum Move move);
 s32 CalculateMoveDamageVars(struct BattleContext *ctx);
 s32 DoFixedDamageMoveCalc(struct BattleContext *ctx);
 s32 ApplyModifiersAfterDmgRoll(struct BattleContext *ctx, s32 dmg);

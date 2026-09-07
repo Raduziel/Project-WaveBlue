@@ -20,7 +20,7 @@ CeladonCity_Condominiums_RoofRoom_Text_WirelessAdapterLecture::
 CeladonCity_Condominiums_RoofRoom_Text_PamphletOnTMs::
     .string "It's a pamphlet on TMs.\p"
     .string "… …\p"
-    .string "There are 155 TMs in all.\p"
+    .string "There are 165 TMs in all.\p"
     .string "There are also seven HMs that\n"
     .string "can also be used repeatedly.\p"
     .string "Silph Co.$"

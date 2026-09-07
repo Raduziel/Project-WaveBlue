@@ -1788,6 +1788,12 @@
 	.4byte \jumpInstr
 	.endm
 
+	.macro jumpifateberry battler:req, jumpInstr:req
+	callnative BS_JumpIfAteBerry
+	.byte \battler
+	.4byte \jumpInstr
+	.endm
+
 	.macro gravityonairbornemons
 	callnative BS_GravityOnAirborneMons
 	.endm

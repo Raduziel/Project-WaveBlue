@@ -1856,7 +1856,6 @@ static void TryMoveSelectionDisplayMoveDescription(enum BattlerId battler)
         MoveSelectionDisplayMoveDescription(battler);
 }
 
-
 static uq4_12_t GetMoveEffectivenessMultiplier(u32 battlerAtk, u32 battlerDef, u16 move)
 {
     struct BattleContext ctx = {0};
@@ -1873,99 +1872,238 @@ static uq4_12_t GetMoveEffectivenessMultiplier(u32 battlerAtk, u32 battlerDef, u
     return CalcTypeEffectivenessMultiplier(&ctx);
 }
 
+static void AppendPwrForTarget(u8 *out, enum BattlerId battler, u32 target, enum Move move, enum DamageCategory cat)
+{
+    if (cat == DAMAGE_CATEGORY_STATUS)
+    {
+        StringAppend(out, gText_ThreeHyphens);
+    }
+    else if (!IsBattlerAlive(target))
+    {
+        StringAppend(out, (u8[]){CHAR_HYPHEN, EOS});
+    }
+    else
+    {
+        u16 pwr = GetDisplayedMoveBasePower(battler, target, move);
+        if (pwr < 2)
+        {
+            StringAppend(out, gText_ThreeHyphens);
+        }
+        else
+        {
+            u8 num[4];
+            u8 n = (pwr >= 100) ? 3 : (pwr >= 10) ? 2 : 1;
+            ConvertIntToDecimalStringN(num, pwr, STR_CONV_MODE_LEFT_ALIGN, n);
+            StringAppend(out, num);
+        }
+    }
+}
+
+static u16 BuildEffForTarget(u8 *out, enum BattlerId battler, u32 target, enum Move move, enum DamageCategory cat)
+{
+    if (!IsBattlerAlive(target))
+    {
+        StringCopy(out, (u8[]){CHAR_HYPHEN, EOS});
+        return 13;
+    }
+
+    uq4_12_t mult = GetMoveEffectivenessMultiplier(battler, target, move);
+
+    if (cat == DAMAGE_CATEGORY_STATUS)
+    {
+        if (mult == 0) { StringCopy(out, (u8[]){CHAR_x, CHAR_0, EOS}); return 7; }
+        StringCopy(out, gText_ThreeHyphens);
+        return 13;
+    }
+
+    if (mult == 0)
+    {
+        StringCopy(out, (u8[]){CHAR_x, CHAR_0, EOS});
+        return 7;
+    }
+    else if (mult >= UQ_4_12(2.0))
+    {
+        if (mult >= UQ_4_12(4.0)) StringCopy(out, (u8[]){CHAR_x, CHAR_4, EOS});
+        else                      StringCopy(out, (u8[]){CHAR_x, CHAR_2, EOS});
+        return 6;
+    }
+    else if (mult <= UQ_4_12(0.5))
+    {
+        if (mult <= UQ_4_12(0.25)) StringCopy(out, (u8[]){CHAR_x, CHAR_0, CHAR_PERIOD, CHAR_2, CHAR_5, EOS});
+        else                       StringCopy(out, (u8[]){CHAR_x, CHAR_0, CHAR_PERIOD, CHAR_5, EOS});
+        return 7;
+    }
+    else
+    {
+        StringCopy(out, (u8[]){CHAR_x, CHAR_1, EOS});
+        return 13;
+    }
+}
+
 static void MoveSelectionDisplayMoveDescription(enum BattlerId battler)
 {
     struct ChooseMoveStruct *moveInfo = (struct ChooseMoveStruct*)(&gBattleResources->bufferA[battler][4]);
     enum Move move = moveInfo->moves[gMoveSelectionCursor[battler]];
-    u16 pwr = GetMovePower(move);
-    u16 acc = GetMoveAccuracy(move);
     enum DamageCategory cat = GetBattleMoveCategory(move);
-    u32 target = GetOpposingSideBattler(battler);
+    u16 acc = GetMoveAccuracy(move);
 
-    if (GetActiveGimmick(battler) == GIMMICK_DYNAMAX || IsGimmickSelected(battler, GIMMICK_DYNAMAX))
+    u32 targetL = GetBattlerAtPosition(B_POSITION_OPPONENT_LEFT);
+    u32 targetR = GetBattlerAtPosition(B_POSITION_OPPONENT_RIGHT);
+    u32 target  = GetOpposingSideBattler(battler);
+
+    bool32 dynamaxed = (GetActiveGimmick(battler) == GIMMICK_DYNAMAX || IsGimmickSelected(battler, GIMMICK_DYNAMAX));
+
+    if (acc != 0 && CanMoveSkipAccuracyCalc(battler, target, GetBattlerAbility(battler), GetBattlerAbility(target), move, CHECK_TRIGGER))
+        acc = 0;
+
+    u16 maxPwr = 0;
+    if (dynamaxed)
     {
-        pwr = GetMaxMovePower(move);
+        maxPwr = GetMaxMovePower(move);
         move = GetMaxMove(battler, move);
         acc = 0;
     }
 
-    u8 pwrStr[10];
-    if (pwr < 2 || cat == DAMAGE_CATEGORY_STATUS) 
-        StringCopy(pwrStr, gText_ThreeHyphens);
-    else 
-        ConvertIntToDecimalStringN(pwrStr, pwr, STR_CONV_MODE_RIGHT_ALIGN, 3);
-
     u8 accStr[10];
-    if (acc == 0) 
-        StringCopy(accStr, gText_ThreeHyphens);
-    else 
-        ConvertIntToDecimalStringN(accStr, acc, STR_CONV_MODE_RIGHT_ALIGN, 3);
-
-    const u16 sEffColors[] = {RGB(2, 22, 2), RGB(28, 4, 4)}; 
-    LoadPalette(sEffColors, BG_PLTT_ID(5) + 6, sizeof(sEffColors));
-
-    u8 effStr[20];
-    u16 effPaletteIndex = 13;
-
-    if (cat == DAMAGE_CATEGORY_STATUS)
+    if (acc == 0)
     {
-        uq4_12_t mult = GetMoveEffectivenessMultiplier(battler, target, move);
-        if (mult == 0) {
-            StringCopy(effStr, (u8[]){CHAR_x, CHAR_0, EOS});
-            effPaletteIndex = 7;
-        } else {
-            StringCopy(effStr, gText_ThreeHyphens);
-        }
+        StringCopy(accStr, gText_ThreeHyphens);
     }
     else
     {
-        uq4_12_t mult = GetMoveEffectivenessMultiplier(battler, target, move);
-        if (mult == 0) {
-            StringCopy(effStr, (u8[]){CHAR_x, CHAR_0, EOS});
-            effPaletteIndex = 7;
-        } else if (mult >= UQ_4_12(2.0)) { 
-            if (mult >= UQ_4_12(4.0)) StringCopy(effStr, (u8[]){CHAR_x, CHAR_4, EOS}); 
-            else StringCopy(effStr, (u8[]){CHAR_x, CHAR_2, EOS});
-            effPaletteIndex = 6;
-        } else if (mult <= UQ_4_12(0.5)) { 
-            if (mult <= UQ_4_12(0.25)) StringCopy(effStr, (u8[]){CHAR_0, CHAR_PERIOD, CHAR_2, CHAR_5, EOS}); 
-            else StringCopy(effStr, (u8[]){CHAR_0, CHAR_PERIOD, CHAR_5, EOS});
-            effPaletteIndex = 7;
-        } else { 
-            StringCopy(effStr, (u8[]){CHAR_x, CHAR_1, EOS}); 
-            effPaletteIndex = 13;
-        }
+        u8 n = (acc >= 100) ? 3 : (acc >= 10) ? 2 : 1;
+        ConvertIntToDecimalStringN(accStr, acc, STR_CONV_MODE_LEFT_ALIGN, n);
     }
+
+    const u16 sEffColors[] = {RGB(2, 22, 2), RGB(28, 4, 4)};
+    LoadPalette(sEffColors, BG_PLTT_ID(5) + 6, sizeof(sEffColors));
 
     LoadMessageBoxAndBorderGfx();
     DrawStdWindowFrame(B_WIN_MOVE_DESCRIPTION, FALSE);
     FillWindowPixelRect(B_WIN_MOVE_DESCRIPTION, 14, 0, 0, 208, 48);
 
-    u8 colLabel[] = {14, 13, 15}; 
-    u8 colVal[]   = {14, 13, 15}; 
-    u8 colEff[]   = {14, effPaletteIndex, 15};
-    u8 colDesc[]  = {14, 13, 15}; 
+    u8 colLabel[] = {14, 13, 15};
+    u8 colVal[]   = {14, 13, 15};
+    u8 colDesc[]  = {14, 13, 15};
+    s32 lvGap = 2;
 
-    AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, 4, 2, 0, 0, colLabel, 0, (u8[]){CHAR_C, CHAR_A, CHAR_T, CHAR_COLON, EOS});
+    bool32 useDual = (IsDoubleBattle() && cat != DAMAGE_CATEGORY_STATUS && !dynamaxed);
 
-    AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, 56, 2, 0, 0, colLabel, 0, (u8[]){CHAR_P, CHAR_W, CHAR_R, CHAR_COLON, EOS});
-    AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, 78, 2, 0, 0, colVal, 0, pwrStr);
+    if (useDual)
+    {
+        u8 pwrLabel[] = {CHAR_P, CHAR_W, CHAR_R, CHAR_COLON, EOS};
+        u8 accLabel[] = {CHAR_A, CHAR_C, CHAR_C, CHAR_COLON, EOS};
+        u8 effLabel[] = {CHAR_E, CHAR_F, CHAR_F, CHAR_COLON, EOS};
+        u8 slash[]    = {CHAR_SLASH, EOS};
 
-    AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, 108, 2, 0, 0, colLabel, 0, (u8[]){CHAR_A, CHAR_C, CHAR_C, CHAR_COLON, EOS});
-    AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, 130, 2, 0, 0, colVal, 0, accStr);
+        u8 pwrStr[12];
+        pwrStr[0] = EOS;
+        AppendPwrForTarget(pwrStr, battler, targetL, move, cat);
+        StringAppend(pwrStr, slash);
+        AppendPwrForTarget(pwrStr, battler, targetR, move, cat);
 
-    AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, 160, 2, 0, 0, colLabel, 0, (u8[]){CHAR_E, CHAR_F, CHAR_F, CHAR_COLON, EOS});
-    AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, 182, 2, 0, 0, colEff, 0, effStr);
+        u8 effL[8], effR[8];
+        u16 palL = BuildEffForTarget(effL, battler, targetL, move, cat);
+        u16 palR = BuildEffForTarget(effR, battler, targetR, move, cat);
+        u8 colEffL[] = {14, palL, 15};
+        u8 colEffR[] = {14, palR, 15};
 
-    const u8* desc = gBattleMoveDescriptionsWide[move]; 
+        s32 wPLabel = GetStringWidth(FONT_SMALL, pwrLabel, 0);
+        s32 wALabel = GetStringWidth(FONT_SMALL, accLabel, 0);
+        s32 wELabel = GetStringWidth(FONT_SMALL, effLabel, 0);
+        s32 wSlash  = GetStringWidth(FONT_SMALL, slash, 0);
+        s32 wEffL   = GetStringWidth(FONT_SMALL, effL, 0);
+        s32 wEffR   = GetStringWidth(FONT_SMALL, effR, 0);
+        s32 wAccVal = GetStringWidth(FONT_SMALL, accStr, 0);
+
+        s32 pwrLabelX = 18;
+        s32 pwrValX   = pwrLabelX + wPLabel + lvGap;
+        s32 pwrEnd    = pwrValX + GetStringWidth(FONT_SMALL, pwrStr, 0);
+
+        s32 effWidth  = wELabel + lvGap + wEffL + wSlash + wEffR;
+        s32 effStart  = 206 - effWidth;
+
+        s32 accWidth  = wALabel + lvGap + wAccVal;
+        s32 accX      = pwrEnd + ((effStart - pwrEnd) - accWidth) / 2;
+        if (accX < pwrEnd + 2)
+            accX = pwrEnd + 2;
+
+        AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, pwrLabelX, 2, 0, 0, colLabel, 0, pwrLabel);
+        AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, pwrValX, 2, 0, 0, colVal, 0, pwrStr);
+
+        AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, accX, 2, 0, 0, colLabel, 0, accLabel);
+        AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, accX + wALabel + lvGap, 2, 0, 0, colVal, 0, accStr);
+
+        s32 x = effStart;
+        AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, x, 2, 0, 0, colLabel, 0, effLabel);
+        x += wELabel + lvGap;
+        AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, x, 2, 0, 0, colEffL, 0, effL);
+        x += wEffL;
+        AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, x, 2, 0, 0, colVal, 0, slash);
+        x += wSlash;
+        AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, x, 2, 0, 0, colEffR, 0, effR);
+    }
+    else
+    {
+        u8 pwrLabel[] = {CHAR_P, CHAR_W, CHAR_R, CHAR_COLON, EOS};
+        u8 accLabel[] = {CHAR_A, CHAR_C, CHAR_C, CHAR_COLON, EOS};
+        u8 effLabel[] = {CHAR_E, CHAR_F, CHAR_F, CHAR_COLON, EOS};
+
+        u16 pwr = dynamaxed ? maxPwr : GetDisplayedMoveBasePower(battler, target, move);
+
+        u8 pwrStr[10];
+        if (pwr < 2 || cat == DAMAGE_CATEGORY_STATUS)
+        {
+            StringCopy(pwrStr, gText_ThreeHyphens);
+        }
+        else
+        {
+            u8 n = (pwr >= 100) ? 3 : (pwr >= 10) ? 2 : 1;
+            ConvertIntToDecimalStringN(pwrStr, pwr, STR_CONV_MODE_LEFT_ALIGN, n);
+        }
+
+        u8 effStr[8];
+        u16 effPaletteIndex = BuildEffForTarget(effStr, battler, target, move, cat);
+        u8 colEff[] = {14, effPaletteIndex, 15};
+
+        s32 wPLabel = GetStringWidth(FONT_SMALL, pwrLabel, 0);
+        s32 wALabel = GetStringWidth(FONT_SMALL, accLabel, 0);
+        s32 wELabel = GetStringWidth(FONT_SMALL, effLabel, 0);
+        s32 wAccVal = GetStringWidth(FONT_SMALL, accStr, 0);
+        s32 wEffVal = GetStringWidth(FONT_SMALL, effStr, 0);
+
+        s32 pwrLabelX = 34;
+        s32 pwrValX   = pwrLabelX + wPLabel + lvGap;
+        s32 pwrEnd    = pwrValX + GetStringWidth(FONT_SMALL, pwrStr, 0);
+
+        s32 effWidth  = wELabel + lvGap + wEffVal;
+        s32 effStart  = 206 - effWidth;
+
+        s32 accWidth  = wALabel + lvGap + wAccVal;
+        s32 accX      = pwrEnd + ((effStart - pwrEnd) - accWidth) / 2;
+        if (accX < pwrEnd + 2)
+            accX = pwrEnd + 2;
+
+        AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, pwrLabelX, 2, 0, 0, colLabel, 0, pwrLabel);
+        AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, pwrValX, 2, 0, 0, colVal, 0, pwrStr);
+
+        AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, accX, 2, 0, 0, colLabel, 0, accLabel);
+        AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, accX + wALabel + lvGap, 2, 0, 0, colVal, 0, accStr);
+
+        AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, effStart, 2, 0, 0, colLabel, 0, effLabel);
+        AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_SMALL, effStart + wELabel + lvGap, 2, 0, 0, colEff, 0, effStr);
+    }
+    const u8* desc = gBattleMoveDescriptionsWide[move];
+    if (move == MOVE_CURSE && IS_BATTLER_OF_TYPE(battler, TYPE_GHOST))
+        desc = sMoveDescription_CurseGhost;
     AddTextPrinterParameterized4(B_WIN_MOVE_DESCRIPTION, FONT_NORMAL, 2, 18, 0, 0, colDesc, 0, desc);
 
-    u8 iconX = 47; 
-    u8 iconY = 65; 
+    u8 iconX = 24;
+    u8 iconY = 65;
 
     if (gCategoryIconSpriteId == 0xFF)
         gCategoryIconSpriteId = CreateSprite(&gSpriteTemplate_CategoryIcons, iconX, iconY, 0);
-    else 
+    else
     {
         gSprites[gCategoryIconSpriteId].x = iconX;
         gSprites[gCategoryIconSpriteId].y = iconY;

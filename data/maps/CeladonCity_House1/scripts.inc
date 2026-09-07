@@ -1,13 +1,5 @@
 CeladonCity_House1_MapScripts::
-	map_script MAP_SCRIPT_ON_TRANSITION, CeladonCity_House1_OnTransition
 	.byte 0
-
-CeladonCity_House1_OnTransition::
-	goto_if_set FLAG_CELADON_HOUSE1_ROCKETS_FLED, CeladonCity_House1_OnTransition_End
-	setflag FLAG_HIDE_WEIRD_FLUTE
-
-CeladonCity_House1_OnTransition_End::
-	end
 
 CeladonCity_House1_EventScript_RocketChief::
 	lock
@@ -17,6 +9,7 @@ CeladonCity_House1_EventScript_RocketChief::
 	msgbox CeladonCity_House1_Text_ChiefFlee
 	fadescreen FADE_TO_BLACK
 	closemessage
+	setflag FLAG_CELADON_HOUSE1_ROCKETS_FLED
 	removeobject LOCALID_CELADON_ROCKET_CHIEF
 	removeobject LOCALID_CELADON_ROCKET_1
 	removeobject LOCALID_CELADON_ROCKET_2

@@ -3,7 +3,7 @@ VictoryRoad_2F_EventScript_DoubleEdgeTutor::
 	faceplayer
 	goto_if_set FLAG_TUTOR_DOUBLE_EDGE, EventScript_DoubleEdgeTaught
 	msgbox Text_DoubleEdgeTeach, MSGBOX_DEFAULT
-	giveitem ITEM_TM143
+	giveitem ITEM_TM153
     compare VAR_RESULT, FALSE
     goto_if_eq EventScript_BagIsFull
     setflag FLAG_TUTOR_DOUBLE_EDGE
@@ -18,7 +18,7 @@ EventScript_WeatherBallTutor::
 	faceplayer
 	goto_if_set FLAG_TUTOR_WEATHER_BALL, EventScript_WeatherBallTaught
 	msgbox Text_WeatherBallTeach, MSGBOX_DEFAULT
-	giveitem ITEM_TM141
+	giveitem ITEM_TM151
     compare VAR_RESULT, FALSE
     goto_if_eq EventScript_BagIsFull
 	setflag FLAG_TUTOR_WEATHER_BALL
@@ -33,7 +33,7 @@ RockTunnel_B1F_EventScript_RockSlideTutor::
 	faceplayer
 	goto_if_set FLAG_TUTOR_ROCK_SLIDE, EventScript_RockSlideTaught
 	msgbox Text_RockSlideTeach, MSGBOX_DEFAULT
-	giveitem ITEM_TM155
+	giveitem ITEM_TM165
     compare VAR_RESULT, FALSE
     goto_if_eq EventScript_BagIsFull
 	setflag FLAG_TUTOR_ROCK_SLIDE
@@ -48,7 +48,7 @@ MtEmber_Exterior_EventScript_ExplosionTutor::
 	faceplayer
 	goto_if_set FLAG_TUTOR_EXPLOSION, EventScript_ExplosionTaught
 	msgbox Text_ExplosionTeach, MSGBOX_DEFAULT
-	giveitem ITEM_TM144
+	giveitem ITEM_TM154
     compare VAR_RESULT, FALSE
     goto_if_eq EventScript_BagIsFull
 	setflag FLAG_TUTOR_EXPLOSION
@@ -63,7 +63,7 @@ Route4_EventScript_MegaPunchTutor::
 	faceplayer
 	goto_if_set FLAG_TUTOR_MEGA_PUNCH, EventScript_MegaPunchTaught
 	msgbox Text_MegaPunchTeach, MSGBOX_DEFAULT
-	giveitem ITEM_TM146
+	giveitem ITEM_TM156
     compare VAR_RESULT, FALSE
     goto_if_eq EventScript_BagIsFull
 	setflag FLAG_TUTOR_MEGA_PUNCH
@@ -78,7 +78,7 @@ Route4_EventScript_MegaKickTutor::
 	faceplayer
 	goto_if_set FLAG_TUTOR_MEGA_KICK, EventScript_MegaKickTaught
 	msgbox Text_MegaKickTeach, MSGBOX_DEFAULT
-	giveitem ITEM_TM145
+	giveitem ITEM_TM155
     compare VAR_RESULT, FALSE
     goto_if_eq EventScript_BagIsFull
 	setflag FLAG_TUTOR_MEGA_KICK
@@ -93,7 +93,7 @@ EventScript_DreamEaterTutor::
 	faceplayer
 	goto_if_set FLAG_TUTOR_DREAM_EATER, EventScript_DreamEaterTaught
 	msgbox Text_DreamEaterTeach, MSGBOX_DEFAULT
-	giveitem ITEM_TM154
+	giveitem ITEM_TM164
     compare VAR_RESULT, FALSE
     goto_if_eq EventScript_BagIsFull
 	setflag FLAG_TUTOR_DREAM_EATER
@@ -108,7 +108,7 @@ EventScript_SoftboiledTutor::
 	faceplayer
 	goto_if_set FLAG_TUTOR_SOFT_BOILED, EventScript_SoftboiledTaught
 	msgbox Text_SoftboiledTeach, MSGBOX_DEFAULT
-	giveitem ITEM_TM149
+	giveitem ITEM_TM159
     compare VAR_RESULT, FALSE
     goto_if_eq EventScript_BagIsFull
 	setflag FLAG_TUTOR_SOFT_BOILED
@@ -123,7 +123,7 @@ FuchsiaCity_EventScript_SubstituteTutor::
 	faceplayer
 	goto_if_set FLAG_TUTOR_SUBSTITUTE, EventScript_SubstituteTaught
 	msgbox Text_SubstituteTeach, MSGBOX_DEFAULT
-	giveitem ITEM_TM150
+	giveitem ITEM_TM160
     compare VAR_RESULT, FALSE
     goto_if_eq EventScript_BagIsFull
 	setflag FLAG_TUTOR_SUBSTITUTE
@@ -138,7 +138,7 @@ SevenIsland_EventScript_SwordsDanceTutor::
 	faceplayer
 	goto_if_set FLAG_TUTOR_SWORDS_DANCE, EventScript_SwordsDanceTaught
 	msgbox Text_SwordsDanceTeach, MSGBOX_DEFAULT
-	giveitem ITEM_TM151
+	giveitem ITEM_TM161
     compare VAR_RESULT, FALSE
     goto_if_eq EventScript_BagIsFull
 	setflag FLAG_TUTOR_SWORDS_DANCE
@@ -153,7 +153,7 @@ PewterCity_Museum_1F_EventScript_SeismicTossTutor::
 	faceplayer
 	goto_if_set FLAG_TUTOR_SEISMIC_TOSS, EventScript_SeismicTossTaught
 	msgbox Text_SeismicTossTeach, MSGBOX_DEFAULT
-	giveitem ITEM_TM153
+	giveitem ITEM_TM163
     compare VAR_RESULT, FALSE
     goto_if_eq EventScript_BagIsFull
 	setflag FLAG_TUTOR_SEISMIC_TOSS
@@ -168,7 +168,7 @@ EventScript_CounterTutor::
 	faceplayer
 	goto_if_set FLAG_TUTOR_COUNTER, EventScript_CounterTaught
 	msgbox Text_CounterTeach, MSGBOX_DEFAULT
-	giveitem ITEM_TM152
+	giveitem ITEM_TM162
     compare VAR_RESULT, FALSE
     goto_if_eq EventScript_BagIsFull
 	setflag FLAG_TUTOR_COUNTER
@@ -183,7 +183,7 @@ EventScript_MetronomeTutor::
 	faceplayer
 	goto_if_set FLAG_TUTOR_METRONOME, EventScript_MetronomeTaught
 	msgbox Text_MetronomeTeach, MSGBOX_DEFAULT
-	giveitem ITEM_TM147
+	giveitem ITEM_TM157
     compare VAR_RESULT, FALSE
     goto_if_eq EventScript_BagIsFull
 	setflag FLAG_TUTOR_METRONOME
@@ -203,7 +203,7 @@ EventScript_MimicTutor::
     msgbox Text_MimicTeach, MSGBOX_YESNO
     compare VAR_RESULT, NO
     goto_if_eq EventScript_MimicDeclined
-    giveitem ITEM_TM148
+    giveitem ITEM_TM158
     compare VAR_RESULT, FALSE
     goto_if_eq EventScript_BagIsFull
     removeitem ITEM_POKE_DOLL
@@ -241,7 +241,7 @@ FourIsland_House1_EventScript_BodySlamTutor::
 	faceplayer
 	goto_if_set FLAG_TUTOR_BODY_SLAM, EventScript_BodySlamTaught
 	msgbox Text_BodySlamTeach, MSGBOX_DEFAULT
-	giveitem ITEM_TM142
+	giveitem ITEM_TM152
     compare VAR_RESULT, FALSE
     goto_if_eq EventScript_BagIsFull
 	setflag FLAG_TUTOR_BODY_SLAM

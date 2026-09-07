@@ -487,6 +487,10 @@ ThreeIsland_EventScript_ItemZinc::
 	finditem ITEM_ZINC
 	end
 
+ThreeIsland_EventScript_ItemTerrainExtender::
+	finditem ITEM_TERRAIN_EXTENDER
+	end
+
 VermilionCity_EventScript_ItemElectirizer::
 	finditem ITEM_ELECTIRIZER
 	end	

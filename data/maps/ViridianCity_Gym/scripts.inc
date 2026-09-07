@@ -4,7 +4,6 @@ ViridianCity_Gym_MapScripts::
 
 ViridianCity_Gym_OnTransition::
 	goto_if_set FLAG_SYS_CAN_LINK_WITH_RS, ViridianCity_Gym_EventScript_RevealNorman
-	setflag FLAG_HIDE_NORMAN
 	end
 
 ViridianCity_Gym_EventScript_RevealNorman::

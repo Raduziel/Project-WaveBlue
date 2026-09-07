@@ -381,6 +381,7 @@ static const struct MenuAction sMultichoiceList_TMMerchantTypes[] = {
     { gText_TypeRock },
     { gText_TypeSteel },
     { gText_TypeWater },
+    { gText_TypeNormal },
     { gOtherText_Exit }
 };
 

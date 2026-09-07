@@ -401,6 +401,7 @@ static void Overworld_ResetStateAfterWhitingOut(void)
 static void Overworld_ResetStateOnContinue(void)
 {
     FlagClear(FLAG_SYS_SAFARI_MODE);
+    FlagClear(FLAG_TOGGLE_HAUL_BELT);
     VarSet(VAR_MAP_SCENE_FUCHSIA_CITY_SAFARI_ZONE_ENTRANCE, 0);
     ChooseAmbientCrySpecies();
     UpdateLocationHistoryForRoamer();

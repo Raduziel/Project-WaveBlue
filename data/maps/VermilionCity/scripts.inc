@@ -10,7 +10,6 @@ VermilionCity_OnFrame::
 VermilionCity_OnTransition::
 	setworldmapflag FLAG_WORLD_MAP_VERMILION_CITY
 	call_if_set FLAG_TALKED_TO_OAKS_AIDE_IN_VERMILION, VermilionCity_EventScript_HideOaksAide
-	setflag FLAG_HIDE_VERMILLION_FUJI
 	end
 
 VermilionCity_EventScript_ExitSSAnne::
