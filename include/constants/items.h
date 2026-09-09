@@ -171,7 +171,6 @@ enum __attribute__((packed)) Item
     ITEM_X_SP_DEF = 124,
     ITEM_X_SPEED = 125,
     ITEM_X_ACCURACY = 126,
-
     ITEM_DIRE_HIT = 127,
     ITEM_GUARD_SPEC = 128,
 
@@ -179,7 +178,6 @@ enum __attribute__((packed)) Item
     ITEM_POKE_DOLL = 129,
     ITEM_FLUFFY_TAIL = 130,
     ITEM_POKE_TOY = 131,
-
     ITEM_MAX_MUSHROOMS = 132,
 
     // Treasures
