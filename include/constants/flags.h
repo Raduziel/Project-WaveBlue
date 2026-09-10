@@ -547,7 +547,7 @@
 #define FLAG_HIDE_ROUTE21_ABSORB_BULB               0x20D
 #define FLAG_DELIVERED_SILPH_SCOPE                  0x20E
 #define FLAG_HIDE_CERULEAN_LANCE                    0x20F
-#define FLAG_0x210               0x210
+#define FLAG_HIDE_ROCKET_HIDEOUT_B1F_BINDING_BAND   0x210
 #define FLAG_0x211               0x211
 #define FLAG_0x212               0x212
 #define FLAG_0x213               0x213

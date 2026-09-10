@@ -127,6 +127,10 @@ RocketHideout_B1F_EventScript_ItemGripClaw::
 	finditem ITEM_GRIP_CLAW
 	end
 
+RocketHideout_B1F_EventScript_ItemBindingBand::
+	finditem ITEM_BINDING_BAND
+	end
+
 RocketHideout_B1F_EventScript_ItemTM23::
 	finditem ITEM_TM23
 	end
