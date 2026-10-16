@@ -13451,74 +13451,69 @@ Class: Elite Four
 Pic: Elite Four Lorelei
 Gender: Male
 Music: Elite Four
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Status Moves / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Powerful Status / Prefer Status Moves / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch
 Mugshot: Purple
 
-Ninetales-Alola (M) @ Light Clay
+Ninetales-Alola @ Light Clay
 Ability: Snow Warning
 Level: 66
-EVs: 252 SpA / 4 SpD / 252 Spe
-Timid Nature
-IVs: 0 Atk
+EVs: 252 HP / 252 Def / 4 SpD
+Bold Nature
 - Dazzling Gleam
 - Aurora Veil
-- Fake Tears
+- Blizzard
+- Protect
+
+Froslass @ Bright Powder
+Ability: Snow Cloak
+Level: 66
+EVs: 4 HP / 252 SpA / 252 Spe
+Timid Nature
+- Destiny Bond
+- Double Team
+- Will-O-Wisp
 - Blizzard
 
-Dewgong (M) @ Leftovers
-Ability: Ice Body
+Cloyster @ White Herb
+Ability: Skill Link
 Level: 66
-EVs: 252 HP / 120 SpA / 116 Spe
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Icicle Spear
+- Shell Smash
+- Rock Blast
+- Protect
+
+Lapras @ Chesto Berry
+Ability: Water Absorb
+Level: 66
+EVs: 252 HP / 100 SpA / 156 SpD
 Calm Nature
-IVs: 0 Atk
 - Perish Song
-- Aqua Ring
-- Blizzard
-- Surf
-
-Jynx (F) @ Sitrus Berry
-Ability: Dry Skin
-Level: 66
-EVs: 160 HP / 200 SpA / 28 SpD / 120 Spe
-Modest Nature
-IVs: 0 Atk
-- Rain Dance
-- Ice Beam
-- Grass Knot
-- Psychic
-
-Lapras (F) @ Damp Rock  
-Ability: Hydration  
-Level: 66
-EVs: 252 HP / 100 SpA / 156 SpD  
-Calm Nature  
-IVs: 0 Atk  
-- Weather Ball
 - Freeze-Dry
-- Rain Dance  
+- Protect
 - Rest
 
-Glaceon (F) @ Icy Rock  
-Ability: Snow Cloak  
+Walrein @ Sitrus Berry
+Ability: Thick Fat
 Level: 66
-EVs: 16 HP / 120 Def / 252 SpA / 120 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Freeze-Dry  
-- Snowscape
-- Blizzard  
-- Yawn  
+EVs: 248 HP / 252 Atk / 8 Def
+Adamant Nature
+- Belly Drum
+- Rock Slide
+- Waterfall
+- Facade
 
-Mamoswine (M) @ Assault Vest  
-Ability: Thick Fat  
+Mamoswine @ Assault Vest
+Ability: Thick Fat
 Level: 66
-EVs: 96 HP / 168 Atk / 244 Def  
-Adamant Nature  
-- Earthquake  
-- Heavy Slam  
+EVs: 96 HP / 168 Atk / 244 Def
+Adamant Nature
+- Earthquake
+- Heavy Slam
 - Body Press
-- Icicle Crash  
+- Avalanche
 
 === TRAINER_ELITE_FOUR_BRUNO_2 ===
 Name: Bruno
@@ -13526,68 +13521,74 @@ Class: Elite Four
 Pic: Elite Four Bruno
 Gender: Male
 Music: Elite Four
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch
 Mugshot: Green
 
-Hitmontop (F) @ White Herb  
-Ability: Intimidate  
-Level: 65  
-EVs: 56 HP / 200 Atk / 252 Spe  
-Adamant Nature  
-- Sucker Punch  
-- Close Combat  
-- Ice Spinner  
-- Endeavor  
+Hariyama @ Flame Orb
+Ability: Guts
+Level: 68
+EVs: 252 HP / 252 Atk / 4 Def
+IVs: 0 Spe
+Brave Nature
+- Drain Punch
+- Iron Head
+- Fake Out
+- Facade
 
-Hitmonchan (F) @ Punching Glove  
-Ability: Iron Fist  
-Level: 65 
-EVs: 96 HP / 252 Atk / 160 Spe  
-Adamant Nature  
-- Drain Punch  
-- Bullet Punch  
-- Ice Punch  
+Medicham @ Iron Ball
+Ability: Pure Power
+Level: 68
+EVs: 252 HP / 252 Atk / 4 Def
+IVs: 0 Spe
+Brave Nature
+- Close Combat
+- Zen Headbutt
+- Trick Room
+- Ice Punch
+
+Annihilape @ Leftovers
+Ability: Defiant
+Level: 68
+EVs: 252 HP / 252 Atk / 4 Def
+IVs: 0 Spe
+Brave Nature
+- Throat Chop
+- Drain Punch
+- Rage Fist
+- U-turn
+
+Poliwrath @ Sitrus Berry
+Ability: Water Absorb
+Level: 68
+EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
+Brave Nature
+- Close Combat
+- Liquidation
+- Belly Drum
 - Poison Jab
 
-Hitmonlee (M) @ Sitrus Berry  
-Ability: Reckless  
-Level: 65  
-EVs: 96 HP / 252 Atk / 160 Spe  
-Adamant Nature  
-- High Jump Kick  
-- Sucker Punch  
-- Poison Jab  
-- Reversal  
+Breloom @ Toxic Orb
+Ability: Poison Heal
+Level: 68
+EVs: 252 HP / 252 Atk / 4 SpD
+IVs: 0 Spe
+Brave Nature
+- Drain Punch
+- Substitute
+- Seed Bomb
+- Spore
 
-Heracross (F) @ Flame Orb  
-Ability: Guts  
-Level: 66  
-EVs: 120 HP / 252 Atk / 16 Def / 120 Spe  
-Serious Nature  
-- Close Combat  
-- Megahorn  
-- Protect
-- Facade 
-
-Sirfetch'd (M) @ Leek  
-Ability: Scrappy  
-Level: 66  
-EVs: 138 HP / 252 Atk / 120 Spe
-Adamant Nature
-- First Impression
-- Swords Dance
-- Superpower
-- Brave Bird  
-
-Machamp (M) @ Assault Vest  
-Ability: No Guard  
-Level: 68  
-EVs: 120 HP / 252 Atk / 136 Spe  
-Adamant Nature  
-- Dynamic Punch  
-- Bullet Punch  
-- Stone Edge  
+Machamp @ Clear Amulet
+Ability: No Guard
+Level: 68
+EVs: 252 HP / 252 Atk / 4 Def
+IVs: 0 Spe
+Brave Nature
+- Dynamic Punch
+- Stone Edge
+- Poison Jab
 - Knock Off
 
 === TRAINER_ELITE_FOUR_AGATHA_2 ===
@@ -13596,74 +13597,69 @@ Class: Elite Four
 Pic: Elite Four Agatha
 Gender: Male
 Music: Elite Four
-Double Battle: No
+Double Battle: Yes
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Status Moves / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch
 Mugshot: Pink
 
-Murkrow (M) @ Eviolite  
-Ability: Prankster  
-Level: 65  
-EVs: 252 HP / 160 SpA / 96 Spe  
-Calm Nature  
-IVs: 0 Atk
-- Perish Song
-- U-turn
-- Mean Look
-- Roost 
+Gengar @ Life Orb
+Ability: Cursed Body
+Level: 70
+EVs: 4 HP / 252 SpA / 252 Spe
+Timid Nature
+- Shadow Ball
+- Sludge Bomb
+- Hypnosis
+- Protect
 
-Houndoom (F) @ Expert Belt  
-Ability: Unnerve  
-Level: 65  
-EVs: 136 HP / 252 SpA / 120 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Flamethrower  
-- Sludge Bomb  
-- Dark Pulse  
-- Nasty Plot 
+Sableye @ Sitrus Berry
+Ability: Prankster
+Level: 70
+EVs: 252 HP / 116 Def / 140 SpD
+Bold Nature
+- Light Screen
+- Foul Play
+- Gravity
+- Snarl
 
-Mismagius (F) @ Fairy Feather  
-Ability: Levitate  
-Level: 66  
-EVs: 108 HP / 200 SpA / 80 SpD / 108 Spe  
-Timid Nature  
-IVs: 0 Atk  
-- Dazzling Gleam  
-- Destiny Bond  
-- Shadow Ball  
-- Fake Tears  
-
-Umbreon (F) @ Mago Berry  
-Ability: Synchronize  
-Level: 66  
-EVs: 108 HP / 192 SpA / 36 SpD / 120 Spe  
-Calm Nature  
-IVs: 0 Atk  
-- Fake Tears  
-- Dark Pulse  
-- Moonlight  
-- Yawn
-
-Annihilape (M) @ Leftovers  
-Ability: Defiant  
-Level: 68  
-EVs: 252 HP / 160 Atk / 96 Spe  
-Impish Nature  
-- Drain Punch  
-- Rage Fist  
-- Bulk Up
-- U-turn  
-
-Gengar (M) @ Life Orb  
-Ability: Cursed Body  
-Level: 70  
-EVs: 160 HP / 252 SpA / 96 Spe  
-Modest Nature  
-IVs: 0 Atk  
-- Dazzling Gleam  
-- Sludge Bomb  
-- Shadow Ball  
+Mismagius @ Fairy Feather
+Ability: Levitate
+Level: 70
+EVs: 4 HP / 252 SpA / 252 Spe
+Timid Nature
+- Dazzling Gleam
+- Destiny Bond
+- Shadow Ball
 - Nasty Plot
+
+Dusclops @ Eviolite
+Ability: Pressure
+Level: 70
+EVs: 252 HP / 128 Def / 128 SpD
+Careful Nature
+- Will-O-Wisp
+- Night Shade
+- Pain Split
+- Curse
+
+Houndoom @ Expert Belt
+Ability: Unnerve
+Level: 70
+EVs: 4 HP / 252 SpA / 252 Spe
+Timid Nature
+- Flamethrower
+- Sludge Bomb
+- Dark Pulse
+- Nasty Plot
+
+Honchkrow @ Scope Lens
+Ability: Super Luck
+Level: 70
+EVs: 4 HP / 252 Atk / 252 Spe
+Jolly Nature
+- Dual Wingbeat
+- Night Slash
+- Tailwind
+- U-turn
 
 === TRAINER_ELITE_FOUR_LANCE_2 ===
 Name: Lance
@@ -13671,69 +13667,69 @@ Class: Elite Four
 Pic: Elite Four Lance
 Gender: Male
 Music: Elite Four
-Double Battle: No
+Double Battle: Yes
 AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Prefer Highest Damage Move / HP Aware / Try to 2HKO / Weigh Ability Prediction / Predict Switch
 Mugshot: Blue
 
-Gyarados (M) @ Wacan Berry  
-Ability: Intimidate  
-Level: 68  
-EVs: 4 HP / 252 Atk / 252 Spe  
-Jolly Nature  
-- Dragon Dance
-- Earthquake  
-- Aqua Tail  
-- Ice Fang  
-
-Aerodactyl (M) @ Life Orb  
-Ability: Unnerve  
-Level: 70  
-EVs: 160 HP / 200 Atk / 28 SpD / 120 Spe  
-Jolly Nature  
-- Earthquake  
-- Rock Slide
-- Iron Head  
-- Tailwind  
-
-Charizard (F) @ Heavy-Duty Boots  
-Ability: Blaze  
-Level: 66  
-EVs: 136 HP / 252 Atk / 120 Spe  
-Lonely Nature  
-IVs: 0 Atk
-- Belly Drum
-- Acrobatics
-- Dragon Claw
-- Flare Blitz
-
-Kingdra (F) @ Scope Lens  
-Ability: Sniper  
-Level: 66  
-IVs: 0 Atk  
-- Focus Energy  
-- Flash Cannon 
-- Draco Meteor  
-- Surf  
-
-Tyranitar (M) @ Assault Vest  
-Ability: Sand Stream  
-Level: 70  
-EVs: 76 HP / 180 Atk / 252 Spe  
-Jolly Nature  
-- Earthquake  
-- Stone Edge 
-- Body Press
+Gyarados @ Assault Vest
+Ability: Intimidate
+Level: 72
+EVs: 252 HP / 252 Atk / 4 Spe
+Adamant Nature
+- Earthquake
+- Waterfall
+- Ice Fang
 - Crunch
 
-Dragonite (F) @ Loaded Dice  
-Ability: Multiscale  
-Level: 72  
-EVs: 76 HP / 252 Atk / 180 Spe  
-Adamant Nature  
-- Extreme Speed 
-- Dragon Dance  
-- Scale Shot 
-- Iron Head 
+Salamence @ Life Orb
+Ability: Intimidate
+Level: 72
+EVs: 4 HP / 252 Atk / 252 Spe
+Adamant Nature
+- Dual Wingbeat
+- Dragon Claw
+- Earthquake
+- Protect
+
+Dragonite @ Loaded Dice
+Ability: Multiscale
+Level: 72
+EVs: 76 HP / 252 Atk / 180 Spe
+Adamant Nature
+- Extreme Speed
+- Dragon Dance
+- Scale Shot
+- Iron Head
+
+Kingdra @ Scope Lens
+Ability: Sniper
+Level: 72
+EVs: 4 HP / 252 SpA / 252 Spe
+Modest Nature
+- Focus Energy
+- Dragon Pulse
+- Protect
+- Scald
+
+Flygon @ Choice Band
+Ability: Levitate
+Level: 72
+EVs: 4 HP / 252 Atk / 252 Spe
+Jolly Nature
+- Dragon Claw
+- Earthquake
+- Rock Slide
+- U-turn
+
+Aerodactyl @ Weakness Policy
+Ability: Unnerve
+Level: 72
+EVs: 252 HP / 128 Def / 128 SpD
+Adamant Nature
+- Stone Edge
+- Earthquake
+- Iron Head
+- Tailwind
 
 === TRAINER_CHAMPION_REMATCH_SQUIRTLE ===
 Name: Terry
@@ -13741,29 +13737,19 @@ Class: Champion
 Pic: Champion Rival
 Gender: Male
 Music: Male
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO
 Mugshot: Yellow
-
-Heracross (F) @ Flame Orb
-Ability: Guts
-Level: 72
-EVs: 252 Atk / 252 Spe
-Jolly Nature
-- Close Combat
-- Megahorn
-- Facade
-- Protect
 
 Alakazam (M) @ Life Orb
 Ability: Magic Guard
 Level: 75
-EVs: 200 HP / 252 SpA / 56 Spe
-Modest Nature
+EVs: 4 HP / 252 SpA / 252 Spe
+Timid Nature
 IVs: 0 Atk
 - Dazzling Gleam
+- Nasty Plot
 - Shadow Ball
-- Thunder Wave
 - Psychic
 
 Tyranitar (M) @ Assault Vest
@@ -13771,42 +13757,50 @@ Ability: Sand Stream
 Level: 75
 EVs: 252 HP / 252 Atk / 4 SpD
 Adamant Nature
-- Stone Edge
-- Earthquake
+- Rock Slide
+- Iron Head
 - Ice Fang
 - Crunch
 
-Arcanine (F) @ Choice Scarf
+Heracross (F) @ Flame Orb
+Ability: Guts
+Level: 75
+EVs: 4 HP / 252 Atk / 252 Spe
+Jolly Nature
+- Close Combat
+- Megahorn
+- Protect
+- Facade
+
+Arcanine (F) @ Clear Amulet
 Ability: Intimidate
 Level: 75
-EVs: 56 HP / 252 Atk / 100 Def / 100 SpD
-Jolly Nature
+EVs: 120 HP / 252 Atk / 138 Spe
+Adamant Nature
+- Extreme Speed
 - Close Combat
 - Wild Charge
 - Flare Blitz
-- Play Rough
 
-Exeggutor (M) @ Sitrus Berry
-Ability: Harvest
+Tangrowth (M) @ Leftovers
+Ability: Regenerator
 Level: 75
-EVs: 100 HP / 200 SpA / 208 Spe
-Timid Nature
-IVs: 0 Atk
-- Sludge Bomb
-- Solar Beam
-- Sunny Day
-- Psychic
+EVs: 252 HP / 252 Atk / 6 Spe
+Adamant Nature
+- Swords Dance
+- Power Whip
+- Rock Slide
+- Knock Off
 
 Blastoise (F) @ White Herb
 Ability: Torrent
 Level: 75
-EVs: 248 SpA / 4 SpD / 252 Spe
-Modest Nature
-IVs: 0 Atk
+EVs: 252 Atk / 6 SpD / 252 Spe
+Jolly Nature
 - Shell Smash
-- Dragon Pulse
-- Ice Beam
-- Surf
+- Liquidation
+- Ice Spinner
+- Rock Slide
 
 === TRAINER_CHAMPION_REMATCH_BULBASAUR ===
 Name: Terry
@@ -13814,28 +13808,18 @@ Class: Champion
 Pic: Champion Rival
 Gender: Male
 Music: Male
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO
 Mugshot: Yellow
-
-Heracross (F) @ Flame Orb
-Ability: Guts
-Level: 75
-EVs: 252 Atk / 252 Spe
-Jolly Nature
-- Close Combat
-- Megahorn
-- Facade
-- Protect
 
 Alakazam (M) @ Life Orb
 Ability: Magic Guard
-Level:75
-EVs: 200 HP / 252 SpA / 56 Spe
-Modest Nature
+Level: 75
+EVs: 4 HP / 252 SpA / 252 Spe
+Timid Nature
 IVs: 0 Atk
-- Thunder Wave
 - Dazzling Gleam
+- Nasty Plot
 - Shadow Ball
 - Psychic
 
@@ -13844,41 +13828,51 @@ Ability: Sand Stream
 Level: 75
 EVs: 252 HP / 252 Atk / 4 SpD
 Adamant Nature
-- Stone Edge
-- Earthquake
+- Rock Slide
+- Iron Head
 - Ice Fang
 - Crunch
 
-Gyarados (M) @ Wacan Berry
-Ability: Intimidate
+Heracross (F) @ Flame Orb
+Ability: Guts
 Level: 75
-EVs: 56 HP / 252 Atk / 200 Spe
-Adamant Nature
-- Dragon Dance
-- Earthquake
-- Waterfall
-- Ice Fang
-
-Arcanine (F) @ Choice Scarf
-Ability: Intimidate
-Level: 75
-EVs: 56 HP / 252 Atk / 100 Def / 100 SpD
+EVs: 4 HP / 252 Atk / 252 Spe
 Jolly Nature
+- Close Combat
+- Megahorn
+- Protect
+- Facade
+
+Milotic (F) @ Weakness Policy
+Ability: Competitive
+Level: 75
+EVs: 138 HP / 252 SpA / 120 Spe
+IVs: 0 Atk
+Modest Nature
+- Dazzling Gleam
+- Calm Mind
+- Recover
+- Scald
+
+Arcanine (F) @ Clear Amulet
+Ability: Intimidate
+Level: 75
+EVs: 120 HP / 252 Atk / 138 Spe
+Adamant Nature
+- Extreme Speed
 - Close Combat
 - Wild Charge
 - Flare Blitz
-- Play Rough
 
-Venusaur (F) @ Leftovers
+Venusaur (F) @ Rocky Helmet
 Ability: Chlorophyll
 Level: 75
-EVs: 252 SpA / 4 SpD / 252 Spe
-Timid Nature
-IVs: 0 Atk
-- Sludge Bomb
+EVs: 252 HP / 120 SpA / 138 Def
+Bold Nature
 - Sleep Powder
-- Leech Seed
+- Sludge Bomb
 - Giga Drain
+- Knock Off
 
 === TRAINER_CHAMPION_REMATCH_CHARMANDER ===
 Name: Terry
@@ -13886,29 +13880,19 @@ Class: Champion
 Pic: Champion Rival
 Gender: Male
 Music: Male
-Double Battle: No
-AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Ace Pokemon / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO
+Double Battle: Yes
+AI: Check Bad Move / Try To Faint / Check Viability / Smart Switching / Force Setup First Turn / Powerful Status / Prefer Highest Damage Move / HP Aware / Try to 2HKO
 Mugshot: Yellow
-
-Heracross (F) @ Flame Orb
-Ability: Guts
-Level: 75
-EVs: 252 Atk / 252 Spe
-Jolly Nature
-- Close Combat
-- Megahorn
-- Facade
-- Protect
 
 Alakazam (M) @ Life Orb
 Ability: Magic Guard
 Level: 75
-EVs: 200 HP / 252 SpA / 56 Spe
-Modest Nature
+EVs: 4 HP / 252 SpA / 252 Spe
+Timid Nature
 IVs: 0 Atk
 - Dazzling Gleam
+- Nasty Plot
 - Shadow Ball
-- Thunder Wave
 - Psychic
 
 Tyranitar (M) @ Assault Vest
@@ -13916,41 +13900,50 @@ Ability: Sand Stream
 Level: 75
 EVs: 252 HP / 252 Atk / 4 SpD
 Adamant Nature
-- Stone Edge
-- Earthquake
+- Rock Slide
+- Iron Head
 - Ice Fang
 - Crunch
 
-Exeggutor (M) @ Sitrus Berry
-Ability: Harvest
+Heracross (F) @ Flame Orb
+Ability: Guts
 Level: 75
-EVs: 100 HP / 200 SpA / 208 Spe
-Timid Nature
-IVs: 0 Atk
-- Sludge Bomb
-- Solar Beam
-- Sunny Day
-- Psychic
+EVs: 4 HP / 252 Atk / 252 Spe
+Jolly Nature
+- Close Combat
+- Megahorn
+- Protect
+- Facade
 
-Gyarados (M) @ Wacan Berry
-Ability: Intimidate
+Tangrowth (M) @ Leftovers
+Ability: Regenerator
 Level: 75
-EVs: 56 HP / 252 Atk / 200 Spe
+EVs: 252 HP / 252 Atk / 6 Spe
 Adamant Nature
-- Dragon Dance
-- Earthquake
-- Waterfall
-- Ice Fang
+- Swords Dance
+- Power Whip
+- Rock Slide
+- Knock Off
 
-Charizard (F) @ Charti Berry
+Milotic (F) @ Weakness Policy
+Ability: Competitive
+Level: 75
+EVs: 138 HP / 252 SpA / 120 Spe
+IVs: 0 Atk
+Modest Nature
+- Dazzling Gleam
+- Calm Mind
+- Recover
+- Scald
+
+Charizard (F) @ Heavy-Duty Boots
 Ability: Solar Power
 Level: 75
-EVs: 8 HP / 252 SpA / 248 Spe
-Timid Nature
-IVs: 0 Atk
-- Scorching Sands
-- Flamethrower
+EVs: 4 HP / 252 SpA / 252 Spe
+Modest Nature
+- Solar Beam
 - Sunny Day
+- Heat Wave
 - Air Slash
 
 === TRAINER_CUE_BALL_PAXTON ===
